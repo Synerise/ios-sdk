@@ -1,0 +1,25 @@
+{
+  "name": "SyneriseSDK",
+  "version": "0.1.0",
+  "summary": "A short description of SyneriseSDK.",
+  "description": "                       An optional longer description of SyneriseSDK\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SyneriseSDK",
+  "license": "MIT",
+  "authors": {
+    "Milosz Balus": "milosz.balus@humanoitgroup.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SyneriseSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SyneriseSDK": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

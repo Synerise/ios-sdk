@@ -1,0 +1,6 @@
+framework module Pods_SyneriseSDK_Example {
+  umbrella header "Pods-SyneriseSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

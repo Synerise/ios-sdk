@@ -1,0 +1,6 @@
+framework module Pods_SyneriseSDK_Tests {
+  umbrella header "Pods-SyneriseSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

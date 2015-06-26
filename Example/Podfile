@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SyneriseSDK_Example', :exclusive => true do
+  pod "SyneriseSDK", :path => "../"
+end
+
+target 'SyneriseSDK_Tests', :exclusive => true do
+  pod "SyneriseSDK", :path => "../"
+
+  
+end

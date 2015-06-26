@@ -1,0 +1,14 @@
+PODS:
+  - SyneriseSDK (0.1.0)
+
+DEPENDENCIES:
+  - SyneriseSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SyneriseSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SyneriseSDK: bc935588d9c98d182414fc2d692d8e77cf8da580
+
+COCOAPODS: 0.37.2
