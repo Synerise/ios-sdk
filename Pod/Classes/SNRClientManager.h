@@ -8,43 +8,131 @@
 #import "SNRAbstractManager.h"
 #import "SNRClientModel.h"
 
+/**
+ *  Success block
+ */
 typedef void(^ClientManagerSuccessBlock)(void);
+
+
+/**
+ *  Error block
+ *
+ */
 typedef void(^ClientManagerFailedBlock)(NSError *error, UIAlertView *alertView);
+
+
+/**
+ *  Retry block
+ */
 typedef void(^ClientManagerRetryBlock)();
+
+
 
 @interface SNRClientManager : SNRAbstractManager
 
+/**
+ *  Object with user information
+ */
 @property (nonatomic, strong) SNRClientModel *loggedClientData;
+
+
+/**
+ *  Client email used for autologin
+ */
 @property (nonatomic, strong, readonly) NSString *autologinEmail;
+
+
+/**
+ *  Client password used for autlologin
+ */
 @property (nonatomic, strong, readonly) NSString *autologinPassword;
+
+
+/**
+ *  Persistent UUID assigned to client
+ */
 @property (nonatomic, strong, readonly) NSString *clientPersistantUUID;
+
+
+/**
+ *  Login token
+ */
 @property (nonatomic, strong, readonly) NSString *loginToken;
 
+
+/**
+ *  Flag for checking user login status
+ */
 @property (nonatomic, assign, readonly, getter = isClientLoggedIn) BOOL clientLoggedIn;
+
+
+/**
+ *  Flat for anonymous client
+ */
 @property (nonatomic, assign, readonly, getter = isAnonymousClient) BOOL anonymousClient;
+
+
+/**
+ *  Flag for client autologin
+ */
 @property (nonatomic, assign) BOOL autologin;
 
+
+
+/**
+ *
+ * Verifty client email.
+ *  
+ */
 - (NSString*)verifyEmail:(NSString*)email;
 
 
 
+/**
+ *
+ * Register client by email
+ *
+ */
 - (void)registerClientWithEmail:(NSString*)email
                        password:(NSString*)password
                    successBlock:(ClientManagerSuccessBlock)successBlock
                      retryBlock:(ClientManagerRetryBlock)retryBlock
                  andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
+
+
+/**
+ *
+ * Login client by email
+ *
+ */
 - (void)loginClientWithEmail:(NSString*)email
                     password:(NSString*)password
                 successBlock:(ClientManagerSuccessBlock)successBlock
                   retryBlock:(ClientManagerRetryBlock)retryBlock
               andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
+
+
+
+/**
+ *
+ *  Reste client password
+ *
+ */
 - (void)resetPassordByEmail:(NSString*)email
                successBlock:(ClientManagerSuccessBlock)successBlock
                  retryBlock:(ClientManagerRetryBlock)retryBlock
              andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
+
+
+
+/**
+ *  
+ * Update client profil information.
+ *
+ */
 - (void)updateClientWithFirstname:(NSString*)firstname
                          lastname:(NSString*)lastname
                           address:(NSString*)address
@@ -54,6 +142,11 @@ typedef void(^ClientManagerRetryBlock)();
                      successBlock:(APISuccessBlock)successBlock
                     andErrorBlock:(APIErrorBlock)errorBlock;
 
+
+
+/**
+ *  Logout client. Delete session and token.
+ */
 -(void) clientLoggedOut;
 
 @end

@@ -11,6 +11,7 @@
 
 @class SNRPushNotificationManager;
 
+
 typedef enum NSFetchedResultsType {
     FetchedResultsAsImage = 1,
     FetchedResultsAsURL = 2,
@@ -20,18 +21,47 @@ typedef enum NSFetchedResultsType {
 
 @protocol SNRPushNotificationManagerDelegate <NSObject>
 
+/**
+ *  Disptach push notyfication
+ *
+ */
 - (void)pushNotificationHandleResult:(id)result andFetchType:(FetchedResultsType)fetchType;
 
 @end
 
 @interface SNRPushNotificationManager : SNRAbstractManager
 
+/**
+ *  Delegate
+ */
 @property (assign, nonatomic) id <SNRPushNotificationManagerDelegate> delegate;
 
+
+/**
+ *  Device token
+ *
+ *  @param deviceToken <#deviceToken description#>
+ */
 -(void) setDeviceToken:(NSData*)deviceToken;
+
+
+/**
+ *  Handler for recive remote notyfication
+ */
 -(void) receiveRemoteNotificationWithUserInfo:(NSDictionary*)userInfo
                                 startDispatch:(BOOL)dispatch;
+
+
+
+/**
+ *  Register device to push notyfication
+ */
 -(void) registerToReceivePushNotification;
+
+
+/**
+ *  Resume receive user info
+ */
 -(void)resumeDispatch;
 
 @end

@@ -18,16 +18,27 @@ typedef void(^TrackerManagerRetryBlock)();
 @property (strong, nonatomic, readonly) NSString *uniqueDeviceId;
 @property (strong, nonatomic, readonly) NSString *deviceToken;
 
+/**
+ *  Create event for tracking user screen activity
+ */
 - (void)createBeaconEventWithUUID:(NSString*)uuid
                             major:(NSNumber*)major
                             minor:(NSNumber*)minor
                      andProximity:(NSString*)proximity;
 
+
+/**
+ *  Traking used with beacon activity
+ */
 - (void)createEventWithCategory:(NSString*)category
                          action:(NSString*)action
                           label:(NSString*)label
                          params:(NSDictionary*)params;
 
+/**
+ *  Add device in order to receive push messages
+ *
+ */
 - (void)addDevice:(NSData*)token;
 
 
