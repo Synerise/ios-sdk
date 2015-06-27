@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A843391B3E289C00303C51 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A843381B3E289C00303C51 /* SyneriseSDK.framework */; };
 		45D764FB9007FE9225EBAAA3 /* Pods_SyneriseSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8982AA8A0D56E500F5D96814 /* Pods_SyneriseSDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,9 +39,10 @@
 /* Begin PBXFileReference section */
 		00AA534CA74EC47A31F2DE2D /* Pods_SyneriseSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B74BD07C26A3CA3DDDCEED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		35A843381B3E289C00303C51 /* SyneriseSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyneriseSDK.framework; path = ../SyneriseSDK/SyneriseSDK.framework; sourceTree = "<group>"; };
 		4F3DCBE9CB0D212933CCED3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		59F3BC2EC323958A029C7E52 /* Pods-SyneriseSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SyneriseSDK_Example/Pods-SyneriseSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* SyneriseSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SyneriseSDK.app; path = SyneriseSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* SyneriseSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyneriseSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A843391B3E289C00303C51 /* SyneriseSDK.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,7 +122,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* SyneriseSDK.app */,
+				6003F58A195388D20070C39A /* SyneriseSDK_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -128,6 +131,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35A843381B3E289C00303C51 /* SyneriseSDK.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -213,7 +217,7 @@
 			);
 			name = SyneriseSDK_Example;
 			productName = SyneriseSDK;
-			productReference = 6003F58A195388D20070C39A /* SyneriseSDK.app */;
+			productReference = 6003F58A195388D20070C39A /* SyneriseSDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* SyneriseSDK_Tests */ = {
@@ -512,6 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/milosz/Projects/synerise-sdk-github/SyneriseSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SyneriseSDK/SyneriseSDK-Prefix.pch";
 				INFOPLIST_FILE = "SyneriseSDK/SyneriseSDK-Info.plist";
@@ -527,6 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/milosz/Projects/synerise-sdk-github/SyneriseSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SyneriseSDK/SyneriseSDK-Prefix.pch";
 				INFOPLIST_FILE = "SyneriseSDK/SyneriseSDK-Info.plist";

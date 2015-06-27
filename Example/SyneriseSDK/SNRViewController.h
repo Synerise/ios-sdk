@@ -1,10 +1,11 @@
 //
 //  SNRViewController.h
-//  SyneriseSDK
+//  SyneriseExample
 //
-//  Created by Milosz Balus on 06/27/2015.
-//  Copyright (c) 2014 Milosz Balus. All rights reserved.
+//  Created by Milosz Balus on 24.06.2015.
+//  Copyright (c) 2015 HG Intelligence. All rights reserved.
 //
+
 
 @import UIKit;
 

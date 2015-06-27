@@ -8,6 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		29A51AB42B5A9212A5EC17EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E036FC780C600F1AF9176F /* Foundation.framework */; };
+		35A8430C1B3E282200303C51 /* SNRAbstractManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E21B3E282200303C51 /* SNRAbstractManager.h */; };
+		35A8430D1B3E282200303C51 /* SNRApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E31B3E282200303C51 /* SNRApi.h */; };
+		35A8430E1B3E282200303C51 /* SNRBeaconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E41B3E282200303C51 /* SNRBeaconManager.h */; };
+		35A8430F1B3E282200303C51 /* SNRCategoriesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E51B3E282200303C51 /* SNRCategoriesManager.h */; };
+		35A843101B3E282200303C51 /* SNRCategoriesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E61B3E282200303C51 /* SNRCategoriesModel.h */; };
+		35A843111B3E282200303C51 /* SNRClientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E71B3E282200303C51 /* SNRClientManager.h */; };
+		35A843121B3E282200303C51 /* SNRClientModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E81B3E282200303C51 /* SNRClientModel.h */; };
+		35A843131B3E282200303C51 /* SNRCouponModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842E91B3E282200303C51 /* SNRCouponModel.h */; };
+		35A843141B3E282200303C51 /* SNRCouponsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842EA1B3E282200303C51 /* SNRCouponsManager.h */; };
+		35A843151B3E282200303C51 /* SNRHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842EB1B3E282200303C51 /* SNRHTTPSessionManager.h */; };
+		35A843161B3E282200303C51 /* SNRLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842EC1B3E282200303C51 /* SNRLocationManager.h */; };
+		35A843171B3E282200303C51 /* SNRLocationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842ED1B3E282200303C51 /* SNRLocationModel.h */; };
+		35A843181B3E282200303C51 /* SNRProductModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842EE1B3E282200303C51 /* SNRProductModel.h */; };
+		35A843191B3E282200303C51 /* SNRProductsAvailabilityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842EF1B3E282200303C51 /* SNRProductsAvailabilityModel.h */; };
+		35A8431A1B3E282200303C51 /* SNRProductsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F01B3E282200303C51 /* SNRProductsManager.h */; };
+		35A8431B1B3E282200303C51 /* SNRProductsSizesAvailModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F11B3E282200303C51 /* SNRProductsSizesAvailModel.h */; };
+		35A8431C1B3E282200303C51 /* SNRProfileLocationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F21B3E282200303C51 /* SNRProfileLocationsManager.h */; };
+		35A8431D1B3E282200303C51 /* SNRPromotionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F31B3E282200303C51 /* SNRPromotionModel.h */; };
+		35A8431E1B3E282200303C51 /* SNRPromotionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F41B3E282200303C51 /* SNRPromotionsManager.h */; };
+		35A8431F1B3E282200303C51 /* SNRPushNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F51B3E282200303C51 /* SNRPushNotificationManager.h */; };
+		35A843201B3E282200303C51 /* SNRRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F61B3E282200303C51 /* SNRRegion.h */; };
+		35A843211B3E282200303C51 /* SNRSyneriseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F71B3E282200303C51 /* SNRSyneriseManager.h */; };
+		35A843221B3E282200303C51 /* SNRTrackerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F81B3E282200303C51 /* SNRTrackerManager.h */; };
+		35A843231B3E282200303C51 /* SRAbstractManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842F91B3E282200303C51 /* SRAbstractManager.h */; };
+		35A843241B3E282200303C51 /* SRApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FA1B3E282200303C51 /* SRApi.h */; };
+		35A843251B3E282200303C51 /* SRCategoriesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FB1B3E282200303C51 /* SRCategoriesManager.h */; };
+		35A843261B3E282200303C51 /* SRCategoriesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FC1B3E282200303C51 /* SRCategoriesModel.h */; };
+		35A843271B3E282200303C51 /* SRClientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FD1B3E282200303C51 /* SRClientManager.h */; };
+		35A843281B3E282200303C51 /* SRClientModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FE1B3E282200303C51 /* SRClientModel.h */; };
+		35A843291B3E282200303C51 /* SRCouponsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A842FF1B3E282200303C51 /* SRCouponsManager.h */; };
+		35A8432A1B3E282200303C51 /* SRHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843001B3E282200303C51 /* SRHTTPSessionManager.h */; };
+		35A8432B1B3E282200303C51 /* SRLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843011B3E282200303C51 /* SRLocationManager.h */; };
+		35A8432C1B3E282200303C51 /* SRLocationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843021B3E282200303C51 /* SRLocationModel.h */; };
+		35A8432D1B3E282200303C51 /* SRProductModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843031B3E282200303C51 /* SRProductModel.h */; };
+		35A8432E1B3E282200303C51 /* SRProductsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843041B3E282200303C51 /* SRProductsManager.h */; };
+		35A8432F1B3E282200303C51 /* SRPromotionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843051B3E282200303C51 /* SRPromotionModel.h */; };
+		35A843301B3E282200303C51 /* SRPromotionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843061B3E282200303C51 /* SRPromotionsManager.h */; };
+		35A843311B3E282200303C51 /* SRPushNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843071B3E282200303C51 /* SRPushNotificationManager.h */; };
+		35A843321B3E282200303C51 /* SRSyneriseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843081B3E282200303C51 /* SRSyneriseManager.h */; };
+		35A843331B3E282200303C51 /* SRTrackerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A843091B3E282200303C51 /* SRTrackerManager.h */; };
+		35A843341B3E282200303C51 /* SyneriseSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A8430A1B3E282200303C51 /* SyneriseSDK.h */; };
+		35A843351B3E282200303C51 /* UIAlertView+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A8430B1B3E282200303C51 /* UIAlertView+Blocks.h */; };
 		3C35941B2CD6ABA5786C2323 /* Pods-SyneriseSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E223D116062246A9637B8 /* Pods-SyneriseSDK_Tests-dummy.m */; };
 		4C336DD387CB7C6187CEEF83 /* SyneriseSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FBF9EB86F827223E962FBE3 /* SyneriseSDK.bundle */; };
 		4CFDF96622DA2C413BEBD9DD /* SyneriseSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88ABF597B1327D8746F3AA6E /* SyneriseSDK.bundle */; };
@@ -15,14 +57,12 @@
 		6AE3C179A6AB18633F8025A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E036FC780C600F1AF9176F /* Foundation.framework */; };
 		6DA6A05F0865B9537185DCC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E036FC780C600F1AF9176F /* Foundation.framework */; };
 		A80C287666F5B1B615FD374C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E036FC780C600F1AF9176F /* Foundation.framework */; };
-		B150C15E5E15502E49EC20FD /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 358DBED24D058F5CF02AF9C1 /* ReplaceMe.m */; };
 		B6A4A80BF07D5A809D5B9720 /* Pods-SyneriseSDK_Example-SyneriseSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE68491E584DCC2B6D12EDE /* Pods-SyneriseSDK_Example-SyneriseSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9A0C5551868F3F31141D5D6 /* Pods-SyneriseSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A333EAC43D55A54C31FB9B /* Pods-SyneriseSDK_Example-dummy.m */; };
 		C25AA6ED0E7B3845BAD88F56 /* Pods-SyneriseSDK_Example-SyneriseSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BD26D89DCA5C773F0523A3 /* Pods-SyneriseSDK_Example-SyneriseSDK-dummy.m */; };
 		E2D5036378E75A687BA4F9EE /* Pods-SyneriseSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 615ECD6567CE4CE664183B0F /* Pods-SyneriseSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6A715856C05CEFE35CFC43E /* Pods-SyneriseSDK_Tests-SyneriseSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1CCA39E1BEE86CA546836B /* Pods-SyneriseSDK_Tests-SyneriseSDK-dummy.m */; };
 		F1A74F59AA811481D16C66AE /* Pods-SyneriseSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9055EF5030FBBF03F58965C /* Pods-SyneriseSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F57EE374192E717C28439DC4 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 358DBED24D058F5CF02AF9C1 /* ReplaceMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +106,48 @@
 		1DECF0D19C63467C0CE3E106 /* Pods-SyneriseSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SyneriseSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		241E223D116062246A9637B8 /* Pods-SyneriseSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SyneriseSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		2525526F7C0D69F3CE84AE75 /* SyneriseSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SyneriseSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		358DBED24D058F5CF02AF9C1 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		35A842E21B3E282200303C51 /* SNRAbstractManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRAbstractManager.h; sourceTree = "<group>"; };
+		35A842E31B3E282200303C51 /* SNRApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRApi.h; sourceTree = "<group>"; };
+		35A842E41B3E282200303C51 /* SNRBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRBeaconManager.h; sourceTree = "<group>"; };
+		35A842E51B3E282200303C51 /* SNRCategoriesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRCategoriesManager.h; sourceTree = "<group>"; };
+		35A842E61B3E282200303C51 /* SNRCategoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRCategoriesModel.h; sourceTree = "<group>"; };
+		35A842E71B3E282200303C51 /* SNRClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRClientManager.h; sourceTree = "<group>"; };
+		35A842E81B3E282200303C51 /* SNRClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRClientModel.h; sourceTree = "<group>"; };
+		35A842E91B3E282200303C51 /* SNRCouponModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRCouponModel.h; sourceTree = "<group>"; };
+		35A842EA1B3E282200303C51 /* SNRCouponsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRCouponsManager.h; sourceTree = "<group>"; };
+		35A842EB1B3E282200303C51 /* SNRHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRHTTPSessionManager.h; sourceTree = "<group>"; };
+		35A842EC1B3E282200303C51 /* SNRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRLocationManager.h; sourceTree = "<group>"; };
+		35A842ED1B3E282200303C51 /* SNRLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRLocationModel.h; sourceTree = "<group>"; };
+		35A842EE1B3E282200303C51 /* SNRProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRProductModel.h; sourceTree = "<group>"; };
+		35A842EF1B3E282200303C51 /* SNRProductsAvailabilityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRProductsAvailabilityModel.h; sourceTree = "<group>"; };
+		35A842F01B3E282200303C51 /* SNRProductsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRProductsManager.h; sourceTree = "<group>"; };
+		35A842F11B3E282200303C51 /* SNRProductsSizesAvailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRProductsSizesAvailModel.h; sourceTree = "<group>"; };
+		35A842F21B3E282200303C51 /* SNRProfileLocationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRProfileLocationsManager.h; sourceTree = "<group>"; };
+		35A842F31B3E282200303C51 /* SNRPromotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRPromotionModel.h; sourceTree = "<group>"; };
+		35A842F41B3E282200303C51 /* SNRPromotionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRPromotionsManager.h; sourceTree = "<group>"; };
+		35A842F51B3E282200303C51 /* SNRPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRPushNotificationManager.h; sourceTree = "<group>"; };
+		35A842F61B3E282200303C51 /* SNRRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRRegion.h; sourceTree = "<group>"; };
+		35A842F71B3E282200303C51 /* SNRSyneriseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRSyneriseManager.h; sourceTree = "<group>"; };
+		35A842F81B3E282200303C51 /* SNRTrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRTrackerManager.h; sourceTree = "<group>"; };
+		35A842F91B3E282200303C51 /* SRAbstractManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRAbstractManager.h; sourceTree = "<group>"; };
+		35A842FA1B3E282200303C51 /* SRApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRApi.h; sourceTree = "<group>"; };
+		35A842FB1B3E282200303C51 /* SRCategoriesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCategoriesManager.h; sourceTree = "<group>"; };
+		35A842FC1B3E282200303C51 /* SRCategoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCategoriesModel.h; sourceTree = "<group>"; };
+		35A842FD1B3E282200303C51 /* SRClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClientManager.h; sourceTree = "<group>"; };
+		35A842FE1B3E282200303C51 /* SRClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRClientModel.h; sourceTree = "<group>"; };
+		35A842FF1B3E282200303C51 /* SRCouponsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCouponsManager.h; sourceTree = "<group>"; };
+		35A843001B3E282200303C51 /* SRHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHTTPSessionManager.h; sourceTree = "<group>"; };
+		35A843011B3E282200303C51 /* SRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLocationManager.h; sourceTree = "<group>"; };
+		35A843021B3E282200303C51 /* SRLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLocationModel.h; sourceTree = "<group>"; };
+		35A843031B3E282200303C51 /* SRProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRProductModel.h; sourceTree = "<group>"; };
+		35A843041B3E282200303C51 /* SRProductsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRProductsManager.h; sourceTree = "<group>"; };
+		35A843051B3E282200303C51 /* SRPromotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPromotionModel.h; sourceTree = "<group>"; };
+		35A843061B3E282200303C51 /* SRPromotionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPromotionsManager.h; sourceTree = "<group>"; };
+		35A843071B3E282200303C51 /* SRPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPushNotificationManager.h; sourceTree = "<group>"; };
+		35A843081B3E282200303C51 /* SRSyneriseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSyneriseManager.h; sourceTree = "<group>"; };
+		35A843091B3E282200303C51 /* SRTrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTrackerManager.h; sourceTree = "<group>"; };
+		35A8430A1B3E282200303C51 /* SyneriseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyneriseSDK.h; sourceTree = "<group>"; };
+		35A8430B1B3E282200303C51 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		35D124B5E24BA88DC12379B7 /* Pods-SyneriseSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SyneriseSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3B9E53088FA636D52B74D86C /* Pods-SyneriseSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SyneriseSDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		439B960E722E91F04D1B5584 /* Pods_SyneriseSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +294,48 @@
 		948FF9802CE24626461870E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				358DBED24D058F5CF02AF9C1 /* ReplaceMe.m */,
+				35A842E21B3E282200303C51 /* SNRAbstractManager.h */,
+				35A842E31B3E282200303C51 /* SNRApi.h */,
+				35A842E41B3E282200303C51 /* SNRBeaconManager.h */,
+				35A842E51B3E282200303C51 /* SNRCategoriesManager.h */,
+				35A842E61B3E282200303C51 /* SNRCategoriesModel.h */,
+				35A842E71B3E282200303C51 /* SNRClientManager.h */,
+				35A842E81B3E282200303C51 /* SNRClientModel.h */,
+				35A842E91B3E282200303C51 /* SNRCouponModel.h */,
+				35A842EA1B3E282200303C51 /* SNRCouponsManager.h */,
+				35A842EB1B3E282200303C51 /* SNRHTTPSessionManager.h */,
+				35A842EC1B3E282200303C51 /* SNRLocationManager.h */,
+				35A842ED1B3E282200303C51 /* SNRLocationModel.h */,
+				35A842EE1B3E282200303C51 /* SNRProductModel.h */,
+				35A842EF1B3E282200303C51 /* SNRProductsAvailabilityModel.h */,
+				35A842F01B3E282200303C51 /* SNRProductsManager.h */,
+				35A842F11B3E282200303C51 /* SNRProductsSizesAvailModel.h */,
+				35A842F21B3E282200303C51 /* SNRProfileLocationsManager.h */,
+				35A842F31B3E282200303C51 /* SNRPromotionModel.h */,
+				35A842F41B3E282200303C51 /* SNRPromotionsManager.h */,
+				35A842F51B3E282200303C51 /* SNRPushNotificationManager.h */,
+				35A842F61B3E282200303C51 /* SNRRegion.h */,
+				35A842F71B3E282200303C51 /* SNRSyneriseManager.h */,
+				35A842F81B3E282200303C51 /* SNRTrackerManager.h */,
+				35A842F91B3E282200303C51 /* SRAbstractManager.h */,
+				35A842FA1B3E282200303C51 /* SRApi.h */,
+				35A842FB1B3E282200303C51 /* SRCategoriesManager.h */,
+				35A842FC1B3E282200303C51 /* SRCategoriesModel.h */,
+				35A842FD1B3E282200303C51 /* SRClientManager.h */,
+				35A842FE1B3E282200303C51 /* SRClientModel.h */,
+				35A842FF1B3E282200303C51 /* SRCouponsManager.h */,
+				35A843001B3E282200303C51 /* SRHTTPSessionManager.h */,
+				35A843011B3E282200303C51 /* SRLocationManager.h */,
+				35A843021B3E282200303C51 /* SRLocationModel.h */,
+				35A843031B3E282200303C51 /* SRProductModel.h */,
+				35A843041B3E282200303C51 /* SRProductsManager.h */,
+				35A843051B3E282200303C51 /* SRPromotionModel.h */,
+				35A843061B3E282200303C51 /* SRPromotionsManager.h */,
+				35A843071B3E282200303C51 /* SRPushNotificationManager.h */,
+				35A843081B3E282200303C51 /* SRSyneriseManager.h */,
+				35A843091B3E282200303C51 /* SRTrackerManager.h */,
+				35A8430A1B3E282200303C51 /* SyneriseSDK.h */,
+				35A8430B1B3E282200303C51 /* UIAlertView+Blocks.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -312,7 +434,49 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A8431E1B3E282200303C51 /* SNRPromotionsManager.h in Headers */,
+				35A8430C1B3E282200303C51 /* SNRAbstractManager.h in Headers */,
+				35A843161B3E282200303C51 /* SNRLocationManager.h in Headers */,
+				35A843251B3E282200303C51 /* SRCategoriesManager.h in Headers */,
+				35A843191B3E282200303C51 /* SNRProductsAvailabilityModel.h in Headers */,
+				35A843341B3E282200303C51 /* SyneriseSDK.h in Headers */,
+				35A843201B3E282200303C51 /* SNRRegion.h in Headers */,
+				35A8432C1B3E282200303C51 /* SRLocationModel.h in Headers */,
+				35A843331B3E282200303C51 /* SRTrackerManager.h in Headers */,
+				35A843281B3E282200303C51 /* SRClientModel.h in Headers */,
+				35A8432D1B3E282200303C51 /* SRProductModel.h in Headers */,
+				35A8431C1B3E282200303C51 /* SNRProfileLocationsManager.h in Headers */,
+				35A843291B3E282200303C51 /* SRCouponsManager.h in Headers */,
+				35A843121B3E282200303C51 /* SNRClientModel.h in Headers */,
+				35A843211B3E282200303C51 /* SNRSyneriseManager.h in Headers */,
+				35A843231B3E282200303C51 /* SRAbstractManager.h in Headers */,
+				35A8431B1B3E282200303C51 /* SNRProductsSizesAvailModel.h in Headers */,
+				35A843141B3E282200303C51 /* SNRCouponsManager.h in Headers */,
+				35A843271B3E282200303C51 /* SRClientManager.h in Headers */,
+				35A8432B1B3E282200303C51 /* SRLocationManager.h in Headers */,
 				E2D5036378E75A687BA4F9EE /* Pods-SyneriseSDK_Example-umbrella.h in Headers */,
+				35A8432A1B3E282200303C51 /* SRHTTPSessionManager.h in Headers */,
+				35A843261B3E282200303C51 /* SRCategoriesModel.h in Headers */,
+				35A8430E1B3E282200303C51 /* SNRBeaconManager.h in Headers */,
+				35A8431D1B3E282200303C51 /* SNRPromotionModel.h in Headers */,
+				35A843111B3E282200303C51 /* SNRClientManager.h in Headers */,
+				35A8432F1B3E282200303C51 /* SRPromotionModel.h in Headers */,
+				35A843171B3E282200303C51 /* SNRLocationModel.h in Headers */,
+				35A843181B3E282200303C51 /* SNRProductModel.h in Headers */,
+				35A8430F1B3E282200303C51 /* SNRCategoriesManager.h in Headers */,
+				35A843101B3E282200303C51 /* SNRCategoriesModel.h in Headers */,
+				35A8431A1B3E282200303C51 /* SNRProductsManager.h in Headers */,
+				35A8432E1B3E282200303C51 /* SRProductsManager.h in Headers */,
+				35A843221B3E282200303C51 /* SNRTrackerManager.h in Headers */,
+				35A843151B3E282200303C51 /* SNRHTTPSessionManager.h in Headers */,
+				35A843351B3E282200303C51 /* UIAlertView+Blocks.h in Headers */,
+				35A843241B3E282200303C51 /* SRApi.h in Headers */,
+				35A8431F1B3E282200303C51 /* SNRPushNotificationManager.h in Headers */,
+				35A843321B3E282200303C51 /* SRSyneriseManager.h in Headers */,
+				35A843301B3E282200303C51 /* SRPromotionsManager.h in Headers */,
+				35A8430D1B3E282200303C51 /* SNRApi.h in Headers */,
+				35A843311B3E282200303C51 /* SRPushNotificationManager.h in Headers */,
+				35A843131B3E282200303C51 /* SNRCouponModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +699,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25AA6ED0E7B3845BAD88F56 /* Pods-SyneriseSDK_Example-SyneriseSDK-dummy.m in Sources */,
-				B150C15E5E15502E49EC20FD /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +707,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6A715856C05CEFE35CFC43E /* Pods-SyneriseSDK_Tests-SyneriseSDK-dummy.m in Sources */,
-				F57EE374192E717C28439DC4 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +926,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/milosz/Projects/synerise-sdk-github/Pod",
+				);
 				INFOPLIST_FILE = "Target Support Files/Pods-SyneriseSDK_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -793,6 +959,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/milosz/Projects/synerise-sdk-github/Pod",
+				);
 				INFOPLIST_FILE = "Target Support Files/Pods-SyneriseSDK_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

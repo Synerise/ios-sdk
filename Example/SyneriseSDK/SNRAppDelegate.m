@@ -1,18 +1,58 @@
 //
 //  SNRAppDelegate.m
-//  SyneriseSDK
+//  SyneriseExample
 //
-//  Created by CocoaPods on 06/27/2015.
-//  Copyright (c) 2014 Milosz Balus. All rights reserved.
+//  Created by Milosz Balus on 24.06.2015.
+//  Copyright (c) 2015 HG Intelligence. All rights reserved.
 //
 
+
 #import "SNRAppDelegate.h"
+#import <SyneriseSDK/SyneriseSDK.h>
+
+
+@interface SNRAppDelegate () <SNRBeaconManagerDelegate>
+
+@property SNRBeaconManager *beaconManager;
+
+@end
 
 @implementation SNRAppDelegate
 
+- (id)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _beaconManager = [SNRBeaconManager new];
+        _beaconManager.delegate = self;
+    }
+    
+    return self;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+ 
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.2157 green:0.7255 blue:0.7804 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                           NSFontAttributeName: [UIFont systemFontOfSize:18]}];
+    
+    
+    [SNRSyneriseManager provideAPIKey:@"3DF69D1C-20E9-6AB7-573E-C8D3D6671402"];
+    [SNRSyneriseManager debugModeEnabled:YES];
+    
+    
+    if([SNRBeaconManager isBeaconMonitoringEnabled]){
+        
+        SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"e0357084-d48e-49ff-b014-bf6e6c61b193"];
+        
+        [_beaconManager addRegions:@[region]];
+        [_beaconManager startMonitoring];
+    }
+    
     return YES;
 }
 							
@@ -42,5 +82,19 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    [[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    [[SNRPushNotificationManager sharedInstance] receiveRemoteNotificationWithUserInfo:userInfo
+                                                                         startDispatch:NO];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
 
 @end
