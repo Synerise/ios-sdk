@@ -11,10 +11,28 @@
 
 @interface SNRSyneriseManager : SNRAbstractManager
 
+
+#pragma mark properties
+/**
+ *  Synerise API Key
+ */
 @property (nonatomic, strong, readonly) NSString *apiKey;
 
+
+/**
+ *  Set API Key
+ *
+ *  @param apiKey
+ */
 + (void)provideAPIKey: (NSString*)apiKey;
+
+/**
+ *  Switch on debug mode
+ *
+ *  @param enabled
+ */
 + (void)debugModeEnabled: (BOOL)enabled;
-- (void)setDebugModeEnable: (BOOL)enabled;
+
+
 
 @end

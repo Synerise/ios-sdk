@@ -13,6 +13,7 @@
 #import "SNRApiProductsProtocol.h"
 #import "SNRApiPromotionsProtocol.h"
 #import "SNRApiTrackerProtocol.h"
+#import "SNRApiProfileLocationsProtocol.h"
 
 
 @interface SNRApi: NSObject <SNRApiPromotionsProtocol,
@@ -21,6 +22,7 @@
                             SNRApiProductsProtocol,
                             SNRApiCouponsProtocol,
                             SNRApiCategoriesProtocol,
-                            SNRApiClientProtocol>
+                            SNRApiClientProtocol,
+                            SNRApiProfileLocationsProtocol>
 
 @end
