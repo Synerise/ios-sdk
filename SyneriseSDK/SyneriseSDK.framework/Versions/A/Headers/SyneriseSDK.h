@@ -10,7 +10,9 @@
 
 // Synerise Manager
 #import <SyneriseSDK/SNRSyneriseManager.h>
+#import <SyneriseSDK/SNRCategoriesManager.h>
 #import <SyneriseSDK/SNRClientManager.h>
+#import <SyneriseSDK/SNRFavouritesManager.h>
 #import <SyneriseSDK/SNRTrackerManager.h>
 #import <SyneriseSDK/SNRPushNotificationManager.h>
 #import <SyneriseSDK/SNRProfileLocationsManager.h>
@@ -21,8 +23,10 @@
 
 // Synerise Models
 #import <SyneriseSDK/SNRCategoriesModel.h>
+#import <SyneriseSDK/SNRDynamicScreenModel.h>
 #import <SyneriseSDK/SNRProductsSizesAvailModel.h>
 #import <SyneriseSDK/SNRProductsAvailabilityModel.h>
+#import <SyneriseSDK/SNRProfileLocationModel.h>
 #import <SyneriseSDK/SNRCouponModel.h>
 #import <SyneriseSDK/SNRProductModel.h>
 #import <SyneriseSDK/SNRLocationModel.h>

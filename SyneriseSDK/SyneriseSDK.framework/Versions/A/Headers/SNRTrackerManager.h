@@ -13,33 +13,103 @@ typedef void(^TrackerManagerSuccessBlock)(void);
 typedef void(^TrackerManagerFailedBlock)(NSError *error, UIAlertView *alertView);
 typedef void(^TrackerManagerRetryBlock)();
 
-@interface SNRTrackerManager : SNRAbstractManager
+@interface SNRTrackerManager : NSObject
+
++ (SNRTrackerManager*)sharedInstance;
 
 @property (strong, nonatomic, readonly) NSString *uniqueDeviceId;
+
 @property (strong, nonatomic, readonly) NSString *deviceToken;
 
 /**
- *  Create event for tracking user screen activity
+ *  Set events flush buffer size.
+ *  30 is default value.
+ *
  */
-- (void)createBeaconEventWithUUID:(NSString*)uuid
-                            major:(NSNumber*)major
-                            minor:(NSNumber*)minor
-                     andProximity:(NSString*)proximity;
+@property (assign, nonatomic) NSUInteger flushBufforSize;
+
+
+/**
+ * Set the dispatch interval in seconds.
+ * 60 seconds is the default value.
+ *
+ */
+@property (nonatomic) float dispatchInterval;
+
+
+-(void)customIdentify:(NSString*)identify;
 
 
 /**
  *  Traking used with beacon activity
  */
+- (void)createBeaconEventWithUUID:(NSString*)uuid
+                            major:(NSNumber*)major
+                            minor:(NSNumber*)minor
+                     andProximity:(NSString*)proximity  __attribute__((deprecated("Use trackEventBeaconWithUUID:major:minor:andProximity method.")));
+
+/**
+ *  Create event for tracking user screen activity
+ */
 - (void)createEventWithCategory:(NSString*)category
                          action:(NSString*)action
                           label:(NSString*)label
-                         params:(NSDictionary*)params;
+                         params:(NSDictionary*)params  __attribute__((deprecated("Use track:screenName:withParams method.")));
+
 
 /**
- *  Add device in order to receive push messages
+ *  Register device in Synerise for Push Messages purpose.
  *
  */
 - (void)addDevice:(NSData*)token;
+
+
+/**
+ *  Tracking custom event in application like button press, submit forms etc.
+ */
+-(void)trackEvent:(NSString*)eventName withParams:(id)params;
+
+
+/**
+ *  Track iBeacon events.
+ */
+-(void)trackEventBeaconWithUUID:(NSString*)uuid
+                          major:(NSNumber*)major
+                          minor:(NSNumber*)minor
+                   andProximity:(NSString*)proximity;
+
+/**
+ *  Traking screen visit.
+ */
+-(void)trackScreen:(NSString*)screenName withParams:(id)params;
+
+
+/**
+ *  Provide tracker with Client custom properties and data.
+ */
+-(void)client:(NSDictionary*)clientData;
+
+/**
+ *  Set geolocation for device. You can use this for geofencing features in Synerise.
+ */
+-(void)setLatitude:(float)latitude
+         longitude:(float)longitude
+horizontalAccuracy:(float)hAccuracy
+  verticalAccuracy:(float)vAccuracy;
+
+/**
+ *  Create pure event.
+ */
+-(void)event:(NSString*)category
+      action:(NSString*)action
+       label:(NSString*)label
+  withParams:(NSDictionary*)params;
+
+
+/**
+ *  Flush all events
+ */
+-(void) forceFlushEvents;
 
 
 @end

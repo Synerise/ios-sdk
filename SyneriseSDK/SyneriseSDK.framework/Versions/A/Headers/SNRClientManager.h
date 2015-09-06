@@ -20,6 +20,12 @@ typedef void(^ClientManagerSuccessBlock)(void);
  */
 typedef void(^ClientManagerFailedBlock)(NSError *error, UIAlertView *alertView);
 
+/**
+ *  Simple Error block
+ *
+ */
+typedef void(^ClientManagerSimpleFailedBlock)();
+
 
 /**
  *  Retry block
@@ -113,7 +119,26 @@ typedef void(^ClientManagerRetryBlock)();
               andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
 
+/**
+ *
+ * Login client by facebook
+ *
+ */
+- (void)loginClientByFacebook:(NSString*)facebookAppId
+                facebookToken:(NSString*)facebookAccessToken
+                 clientParams:(NSDictionary*)clientParams
+                 successBlock:(ClientManagerSuccessBlock)successBlock
+                   retryBlock:(ClientManagerRetryBlock)retryBlock
+               andFailedBlock:(ClientManagerSimpleFailedBlock)failedBlock;
 
+
+/**
+ *
+ * Autologin client
+ *
+ */
+- (void)autoLoginClientWithSuccessBlock:(ClientManagerSuccessBlock)successBlock
+                         andFailedBlock:(ClientManagerSimpleFailedBlock)failedBlock;
 
 /**
  *
@@ -143,6 +168,13 @@ typedef void(^ClientManagerRetryBlock)();
                     andErrorBlock:(APIErrorBlock)errorBlock;
 
 
+
+- (void)changePasswordWithToken:(NSString*)loginToken
+                    oldPassword:(NSString*)oldPassword
+                    newPassword:(NSString*)newPassword
+                   successBlock:(ClientManagerSuccessBlock)successBlock
+                     retryBlock:(ClientManagerRetryBlock)retryBlock
+                 andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
 /**
  *  Logout client. Delete session and token.

@@ -1,4 +1,4 @@
-# SyneriseSDK (Beta)
+# SyneriseSDK
 
 The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate SyneriseSDK software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com)
 
@@ -14,14 +14,15 @@ Base SDK support: iOS 8
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Quickstart
 
-## Installation
+
+### Step 1: Install the SDK
 
 SyneriseSDK is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+```
 pod "SyneriseSDK"
 ```
 
@@ -29,7 +30,7 @@ Under your application targets "Build Settings" configuration find the "Other Li
 
 You'll need to import the <SyneriseSDK/SyneriseSDK.h> header into the files that contain code relating to Synerise. You can either add them to individual files or include it in your AppName-Prefix.pch file.
 
-	#import "<SyneriseSDK/SyneriseSDK.h>"
+#import "<SyneriseSDK/SyneriseSDK.h>"
 
 
 In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs:
@@ -38,13 +39,171 @@ In your application plist file (often called "Info.plist") add a row for "Requir
 
 To support updates in iOS 8 you need to add the following Cocoa Keys to the plist.
 
-```ruby
+```objectivec
 <key>NSLocationAlwaysUsageDescription</key>
 <string>Required for ios 8 compatibilty</string>
 ```
 
-### Get Synerise API Key
+### Step 2: Setup SyneriseSDK
+
 If you haven't done so already, login to Synerise to get your Synerise API Key.
+Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDelegate and provide API Key.
+
+```objectivec
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+// Provide API Key for setup SyneriseSDK
+[SNRSyneriseManager provideAPIKey:@"<your api key>"];
+
+// Optional you can turn on debugging mode
+[SNRSyneriseManager debugModeEnabled:YES];
+
+return YES;
+}
+```
+
+### Step 3:  Track events
+Using SyneriseTracker is the way how you tell Synerise about which actions your users are performing inside your app. You can track custom events or screen activity by two separate methods.
+
+```objectivec
+SNRTrackerManager *synerise = [SNRTrackerManager sharedInstance];
+
+// #1. You can track application screen view with params. 
+[synerise trackScreen:@"ProductViewScreen" withParams:@{
+@"Category": @"Sport",
+@"Brand": @"Noname",
+@"Price":@"99.99"
+}];
+
+// #2. Traking custom event like form submit, buttons tap, purchased item etc.
+[synerise trackEvent:@"AddToFavourites" withParams:@{
+@"ProductName": @"iPhone 6",
+@"ProductCategory": @"Smartphones"
+}];
+```
+
+### Step 4:  Identify Users
+SyneriseSDK has own build in session manager, which take care about unique user identity. You can provide tracker with custom client data. Basic call of this might look like:
+
+```objectivec
+[[SNRTrackerManager sharedInstance] client:@{@"email": @"john.smith@mail.com",
+@"firstname":@"John",
+@"secondname":@"Smith",
+@"age":@"33"}];
+```
+
+You should know that Synerise has it own predefined Client model which is build with parameters:
+* email
+* firstname
+* secondname
+* adress
+* city
+* region
+* phone
+* sex
+* birthday 
+
+That mean you can overwrite user profile with parameters send by tracker.
+Of course you can also add more client data but they would be dipatch as custom fields tide to your Customer profile.
+
+If you want using your own identity for user application call `-customIdentify:`. It might look like:
+
+```objectivec
+[[SNRTrackerManager sharedInstance] customIdentify:@"<custom clientID>"];
+```
+After that all events generated in application will be signed in this identity.
+
+## Customer location
+Use information from the CLLocationManager to specify the location of the Customer session.
+
+```objectivec
+CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+[locationManager startUpdatingLocation];
+CLLocation *location = locationManager.location;
+
+[[SNRTrackerManager sharedInstance] setLatitude:location.coordinate.latitude
+longitude:location.coordinate.longitude
+horizontalAccuracy:location.horizontalAccuracy
+verticalAccuracy:location.verticalAccuracy];
+```
+
+## Push Messages
+
+Go to https://app.synerise.com. Login and setup your accout to connection with APN. Go to Settings -> Integration and upload pem certificate for APN. Now you can define your first Push Message campaign.
+
+SyneriseSDK  has own Push Meassage handle API. Using `SNRPushNotificationManagerDelegate` you can dipatch push message in your own way. In Synerise push messages might be triggered by:
+* iBeacon
+* sheduled campaign
+* in one to one communication 
+* autmation rule
+
+In your mobile appliaction configure AppDelegate file.
+```objectivec
+//AppDelegate.m
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+[[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+
+[[SNRPushNotificationManager sharedInstance] receiveRemoteNotificationWithUserInfo:userInfo
+startDispatch:NO];
+completionHandler(UIBackgroundFetchResultNewData);
+}
+```
+
+Now you can handle push messages. In this case use `SNRPushNotificationManagerDelegate`.
+
+
+```objectivec
+
+// ViewController.h 
+@interface ViewController () <SNRPushNotificationManagerDelegate>
+
+@end
+
+
+// ViewController.m
+- (void)viewDidLoad {
+[super viewDidLoad];
+
+[[SRPushNotificationManager sharedInstance] registerToReceivePushNotification];
+[[SRPushNotificationManager sharedInstance] setDelegate:self];
+
+}
+
+#pragma - mark SNRPushNotificationManagerDelegate
+-(void)pushNotificationHandleResult:(id)result andFetchType:(FetchedResultsType)fetchType {
+if(fetchType == FetchedResultsAsImage){
+NSLog(@"URL to image: %@", result);
+}
+
+if(fetchType == FetchedResultsAsURL){
+NSLog(@"URL to website: %@", result);
+}
+
+if(fetchType == FetchedResultsAsPromotionScreen){
+NSLog(@"Open promotion screen: %@", result);
+}
+
+if(fetchType == FetchedResultsAsText){
+NSLog(@"Plain text: %@", result);
+}
+
+}
+```
+
+## iBeacons Events
+Use `createBeaconEventWithUUID` for traking activity triggered by iBeacon.
+
+```
+[[SNRTrackerManager sharedInstance] createBeaconEventWithUUID:<#uuid#>
+major:<#beacon major#>
+minor:<#beacon minorr#>
+andProximity:<#proximity#>];
+```
 
 ## Author
 
@@ -53,13 +212,3 @@ Synerise, developer@synerie.com
 ## License
 
 SyneriseSDK is available under the MIT license. See the LICENSE file for more info.
-
-
-
-
-
-
-
-
-
-
