@@ -9,10 +9,11 @@ Valid Architectures: armv7 armv7s i386 arm64
 Minimum iOS Deployment Target: 5.1
 Base SDK support: iOS 8
 
-
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+---
 
 ## Quickstart
 
@@ -258,7 +259,7 @@ If you wish implement custom flow for iBeacon based on primary iOS SDK and `Core
 
 ## Author
 
-Synerise, developer@synerie.com
+Synerise, developer@synerie.com. If you need support please feel free and contact us.
 
 ## License
 
