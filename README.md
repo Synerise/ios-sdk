@@ -22,7 +22,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 SyneriseSDK is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+```
 pod "SyneriseSDK"
 ```
 
@@ -30,9 +30,8 @@ Under your application targets "Build Settings" configuration find the "Other Li
 
 You'll need to import the <SyneriseSDK/SyneriseSDK.h> header into the files that contain code relating to Synerise. You can either add them to individual files or include it in your AppName-Prefix.pch file.
 
-```ruby
 #import "<SyneriseSDK/SyneriseSDK.h>"
-```
+
 
 In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs:
 
@@ -40,7 +39,7 @@ In your application plist file (often called "Info.plist") add a row for "Requir
 
 To support updates in iOS 8 you need to add the following Cocoa Keys to the plist.
 
-```ruby
+```objectivec
 <key>NSLocationAlwaysUsageDescription</key>
 <string>Required for ios 8 compatibilty</string>
 ```
@@ -48,9 +47,10 @@ To support updates in iOS 8 you need to add the following Cocoa Keys to the plis
 ### Step 2: Setup SyneriseSDK
 
 If you haven't done so already, login to Synerise to get your Synerise API Key.
-Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDelegate and provide API Key.
+Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDelegate and provide API Key. When your application to to backgorud all events should be flush. Therefore you should add `forceFlushEvents` in  `applicationDidEnterBackground:`.
 
-```ruby
+### AppDelegate.m
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 // Provide API Key for setup SyneriseSDK
@@ -61,23 +61,28 @@ Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDe
 
 return YES;
 }
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+[[SNRTrackerManager sharedInstance] forceFlushEvents];
+}
+
 ```
 
 ### Step 3:  Track events
 Using SyneriseTracker is the way how you tell Synerise about which actions your users are performing inside your app. You can track custom events or screen activity by two separate methods.
 
-```ruby
-SNRTrackerManager *synerise = [SNRTrackerManager sharedInstance];
+```objectivec
+SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
 
 // #1. You can track application screen view with params. 
-[synerise trackScreen:@"ProductViewScreen" withParams:@{
+[syneriseTracker trackScreen:@"ProductViewScreen" withParams:@{
 @"Category": @"Sport",
 @"Brand": @"Noname",
 @"Price":@"99.99"
 }];
 
 // #2. Traking custom event like form submit, buttons tap, purchased item etc.
-[synerise trackEvent:@"AddToFavourites" withParams:@{
+[syneriseTracker trackEvent:@"AddToFavourites" withParams:@{
 @"ProductName": @"iPhone 6",
 @"ProductCategory": @"Smartphones"
 }];
@@ -86,7 +91,7 @@ SNRTrackerManager *synerise = [SNRTrackerManager sharedInstance];
 ### Step 4:  Identify Users
 SyneriseSDK has own build in session manager, which take care about unique user identity. You can provide tracker with custom client data. Basic call of this might look like:
 
-```ruby
+```objectivec
 [[SNRTrackerManager sharedInstance] client:@{@"email": @"john.smith@mail.com",
 @"firstname":@"John",
 @"secondname":@"Smith",
@@ -109,15 +114,15 @@ Of course you can also add more client data but they would be dipatch as custom 
 
 If you want using your own identity for user application call `-customIdentify:`. It might look like:
 
-```ruby
+```objectivec
 [[SNRTrackerManager sharedInstance] customIdentify:@"<custom clientID>"];
 ```
 After that all events generated in application will be signed in this identity.
 
-## Customer location
+### Step 5: Log customer location (optional)
 Use information from the CLLocationManager to specify the location of the Customer session.
 
-```ruby
+```objectivec
 CLLocationManager *locationManager = [[CLLocationManager alloc] init];
 [locationManager startUpdatingLocation];
 CLLocation *location = locationManager.location;
@@ -127,6 +132,7 @@ longitude:location.coordinate.longitude
 horizontalAccuracy:location.horizontalAccuracy
 verticalAccuracy:location.verticalAccuracy];
 ```
+Now you can target campaign by customer location. You can send them email, sms or push messages. 
 
 ## Push Messages
 
@@ -139,9 +145,9 @@ SyneriseSDK  has own Push Meassage handle API. Using `SNRPushNotificationManager
 * autmation rule
 
 In your mobile appliaction configure AppDelegate file.
-```ruby
-//AppDelegate.m
 
+### AppDelegate.m
+```objectivec
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
 [[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
@@ -157,15 +163,17 @@ completionHandler(UIBackgroundFetchResultNewData);
 
 Now you can handle push messages. In this case use `SNRPushNotificationManagerDelegate`.
 
-
-```ruby
+#### ViewController.h
+```objectivec
 
 // ViewController.h 
 @interface ViewController () <SNRPushNotificationManagerDelegate>
 
 @end
+```
 
-
+#### ViewController.m
+```objectivec
 // ViewController.m
 - (void)viewDidLoad {
 [super viewDidLoad];
@@ -196,14 +204,58 @@ NSLog(@"Plain text: %@", result);
 }
 ```
 
-## iBeacon Events
-Use `createBeaconEventWithUUID` for traking activity triggered by iBeacon.
+## Synerise and iBeacon
+
+Use `SNRBeaconManager` for hendle iBeacon interaction and add delegate `SNRBeaconManagerDelegate` to your class. It should look like the following:
+
+#### AppDelegate.m
+```
+@interface AppDelegate () <SNRBeaconManagerDelegate>
+
+@property SNRBeaconManager *beaconManager;
+
+@end
+
+@implementation AppDelegate
+
+- (id)init {
+self = [super init];
+if (self){
+_beaconManager = [SNRBeaconManager new];
+_beaconManager.delegate = self;
+}
+return self;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+// 1. Setup API Key
+[SNRSyneriseManager provideAPIKey:@"<#Synerise API Key#>"];
+[SNRSyneriseManager debugModeEnabled:YES];
+
+// 2. Start monitor your iBeacon regions
+if([SNRBeaconManager isBeaconMonitoringEnabled]){
+SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"<#UUID#>"];
+[_beaconManager addRegions:@[region]];
+[_beaconManager startMonitoring];
+}
+//....
+return YES;
+}
+```
+Use `SNRPushNotificationManager` described above in order to deliver targeting messages. 
+
+### Custom flow for iBeacon
+
+If you wish implement custom flow for iBeacon based on primary iOS SDK and `CoreLocation` you can use only `createBeaconEventWithUUID` for traking activity triggered by iBeacon.
 
 ```
-[[SNRTrackerManager sharedInstance] createBeaconEventWithUUID:<#uuid#>
-major:<#beacon major#>
-minor:<#beacon minorr#>
-andProximity:<#proximity#>];
+-(void) clientEnterRegion{
+SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
+[syneriseTracker createBeaconEventWithUUID:@"942c21a6-e50c-49c8-acf6-2250198b17d1"
+major:@1234
+minor:@1234
+andProximity:@"1"];
+}
 ```
 
 ## Author
