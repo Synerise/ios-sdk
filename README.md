@@ -50,21 +50,21 @@ To support updates in iOS 8 you need to add the following Cocoa Keys to the plis
 If you haven't done so already, login to Synerise to get your Synerise API Key.
 Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDelegate and provide API Key. When your application to to backgorud all events should be flush. Therefore you should add `forceFlushEvents` in  `applicationDidEnterBackground:`.
 
-#### AppDelegate.m
+##### AppDelegate.m
 ```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Provide API Key for setup SyneriseSDK
+    [SNRSyneriseManager provideAPIKey:@"<your api key>"];
 
-// Provide API Key for setup SyneriseSDK
-[SNRSyneriseManager provideAPIKey:@"<your api key>"];
+    // Optional you can turn on debugging mode
+    [SNRSyneriseManager debugModeEnabled:YES];
 
-// Optional you can turn on debugging mode
-[SNRSyneriseManager debugModeEnabled:YES];
-
-return YES;
+    return YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-[[SNRTrackerManager sharedInstance] forceFlushEvents];
+    [[SNRTrackerManager sharedInstance] forceFlushEvents];
 }
 
 ```
@@ -77,15 +77,15 @@ SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
 
 // #1. You can track application screen view with params. 
 [syneriseTracker trackScreen:@"ProductViewScreen" withParams:@{
-@"Category": @"Sport",
-@"Brand": @"Noname",
-@"Price":@"99.99"
+    @"Category": @"Sport",
+    @"Brand": @"Noname",
+    @"Price":@"99.99"
 }];
 
 // #2. Traking custom event like form submit, buttons tap, purchased item etc.
 [syneriseTracker trackEvent:@"AddToFavourites" withParams:@{
-@"ProductName": @"iPhone 6",
-@"ProductCategory": @"Smartphones"
+    @"ProductName": @"iPhone 6",
+    @"ProductCategory": @"Smartphones"
 }];
 ```
 
@@ -94,9 +94,9 @@ SyneriseSDK has own build in session manager, which take care about unique user 
 
 ```Objective-C
 [[SNRTrackerManager sharedInstance] client:@{@"email": @"john.smith@mail.com",
-@"firstname":@"John",
-@"secondname":@"Smith",
-@"age":@"33"}];
+                                         @"firstname":@"John",
+                                        @"secondname":@"Smith",
+                                               @"age":@"33"}];
 ```
 
 You should know that Synerise has it own predefined Client model which is build with parameters:
@@ -124,14 +124,14 @@ After that all events generated in application will be signed in this identity.
 Use information from the CLLocationManager to specify the location of the Customer session.
 
 ```Objective-C
-CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-[locationManager startUpdatingLocation];
-CLLocation *location = locationManager.location;
-
-[[SNRTrackerManager sharedInstance] setLatitude:location.coordinate.latitude
-longitude:location.coordinate.longitude
-horizontalAccuracy:location.horizontalAccuracy
-verticalAccuracy:location.verticalAccuracy];
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    [locationManager startUpdatingLocation];
+    CLLocation *location = locationManager.location;
+    
+    [[SNRTrackerManager sharedInstance] setLatitude:location.coordinate.latitude
+              longitude:location.coordinate.longitude
+     horizontalAccuracy:location.horizontalAccuracy
+       verticalAccuracy:location.verticalAccuracy];
 ```
 Now you can target campaign by customer location. You can send them email, sms or push messages. 
 
@@ -147,18 +147,18 @@ SyneriseSDK  has own Push Meassage handle API. Using `SNRPushNotificationManager
 
 In your mobile appliaction configure AppDelegate file.
 
-#### AppDelegate.m
+##### AppDelegate.m
 ```Objective-C
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
-[[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
+    [[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-
-[[SNRPushNotificationManager sharedInstance] receiveRemoteNotificationWithUserInfo:userInfo
-startDispatch:NO];
-completionHandler(UIBackgroundFetchResultNewData);
+    
+    [[SNRPushNotificationManager sharedInstance] receiveRemoteNotificationWithUserInfo:userInfo
+                                                                         startDispatch:NO];
+    completionHandler(UIBackgroundFetchResultNewData);
 }
 ```
 
@@ -174,30 +174,30 @@ Now you can handle push messages. In this case use `SNRPushNotificationManagerDe
 ##### ViewController.m
 ```Objective-C
 - (void)viewDidLoad {
-[super viewDidLoad];
+    [super viewDidLoad];
 
-[[SRPushNotificationManager sharedInstance] registerToReceivePushNotification];
-[[SRPushNotificationManager sharedInstance] setDelegate:self];
-
+    [[SRPushNotificationManager sharedInstance] registerToReceivePushNotification];
+    [[SRPushNotificationManager sharedInstance] setDelegate:self];
+    
 }
 
 #pragma - mark SNRPushNotificationManagerDelegate
 -(void)pushNotificationHandleResult:(id)result andFetchType:(FetchedResultsType)fetchType {
-if(fetchType == FetchedResultsAsImage){
-NSLog(@"URL to image: %@", result);
-}
-
-if(fetchType == FetchedResultsAsURL){
-NSLog(@"URL to website: %@", result);
-}
-
-if(fetchType == FetchedResultsAsPromotionScreen){
-NSLog(@"Open promotion screen: %@", result);
-}
-
-if(fetchType == FetchedResultsAsText){
-NSLog(@"Plain text: %@", result);
-}
+    if(fetchType == FetchedResultsAsImage){
+        NSLog(@"URL to image: %@", result);
+    }
+    
+    if(fetchType == FetchedResultsAsURL){
+        NSLog(@"URL to website: %@", result);
+    }
+    
+    if(fetchType == FetchedResultsAsPromotionScreen){
+        NSLog(@"Open promotion screen: %@", result);
+    }
+    
+    if(fetchType == FetchedResultsAsText){
+        NSLog(@"Plain text: %@", result);
+    }
 
 }
 ```
@@ -217,27 +217,27 @@ Use `SNRBeaconManager` for hendle iBeacon interaction and add delegate `SNRBeaco
 @implementation AppDelegate
 
 - (id)init {
-self = [super init];
-if (self){
-_beaconManager = [SNRBeaconManager new];
-_beaconManager.delegate = self;
-}
-return self;
+    self = [super init];
+    if (self){
+        _beaconManager = [SNRBeaconManager new];
+        _beaconManager.delegate = self;
+    }
+    return self;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-// 1. Setup API Key
-[SNRSyneriseManager provideAPIKey:@"<#Synerise API Key#>"];
-[SNRSyneriseManager debugModeEnabled:YES];
+    // 1. Setup API Key
+    [SNRSyneriseManager provideAPIKey:@"<#Synerise API Key#>"];
+    [SNRSyneriseManager debugModeEnabled:YES];
 
-// 2. Start monitor your iBeacon regions
-if([SNRBeaconManager isBeaconMonitoringEnabled]){
-SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"<#UUID#>"];
-[_beaconManager addRegions:@[region]];
-[_beaconManager startMonitoring];
-}
-//....
-return YES;
+    // 2. Start monitor your iBeacon regions
+    if([SNRBeaconManager isBeaconMonitoringEnabled]){
+        SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"<#UUID#>"];
+        [_beaconManager addRegions:@[region]];
+        [_beaconManager startMonitoring];
+    }
+    //....
+    return YES;
 }
 ```
 Use `SNRPushNotificationManager` described above in order to deliver targeting messages. 
@@ -248,11 +248,11 @@ If you wish implement custom flow for iBeacon based on primary iOS SDK and `Core
 
 ```Objective-C
 -(void) clientEnterRegion{
-SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
-[syneriseTracker createBeaconEventWithUUID:@"942c21a6-e50c-49c8-acf6-2250198b17d1"
-major:@1234
-minor:@1234
-andProximity:@"1"];
+    SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
+    [syneriseTracker createBeaconEventWithUUID:@"942c21a6-e50c-49c8-acf6-2250198b17d1"
+                                major:@1234
+                                minor:@1234
+                         andProximity:@"1"];
 }
 ```
 
