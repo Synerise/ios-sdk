@@ -22,7 +22,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 SyneriseSDK is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```
+```Objective-C
 pod "SyneriseSDK"
 ```
 
@@ -30,8 +30,9 @@ Under your application targets "Build Settings" configuration find the "Other Li
 
 You'll need to import the <SyneriseSDK/SyneriseSDK.h> header into the files that contain code relating to Synerise. You can either add them to individual files or include it in your AppName-Prefix.pch file.
 
+```Objective-C
 #import "<SyneriseSDK/SyneriseSDK.h>"
-
+```
 
 In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs:
 
@@ -39,7 +40,7 @@ In your application plist file (often called "Info.plist") add a row for "Requir
 
 To support updates in iOS 8 you need to add the following Cocoa Keys to the plist.
 
-```objectivec
+```Objective-C
 <key>NSLocationAlwaysUsageDescription</key>
 <string>Required for ios 8 compatibilty</string>
 ```
@@ -49,8 +50,8 @@ To support updates in iOS 8 you need to add the following Cocoa Keys to the plis
 If you haven't done so already, login to Synerise to get your Synerise API Key.
 Go into the `-application:didFinishLaunchingWithOptions:` method of your XXAppDelegate and provide API Key. When your application to to backgorud all events should be flush. Therefore you should add `forceFlushEvents` in  `applicationDidEnterBackground:`.
 
-### AppDelegate.m
-```objectivec
+#### AppDelegate.m
+```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 // Provide API Key for setup SyneriseSDK
@@ -71,7 +72,7 @@ return YES;
 ### Step 3:  Track events
 Using SyneriseTracker is the way how you tell Synerise about which actions your users are performing inside your app. You can track custom events or screen activity by two separate methods.
 
-```objectivec
+```Objective-C
 SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
 
 // #1. You can track application screen view with params. 
@@ -91,7 +92,7 @@ SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
 ### Step 4:  Identify Users
 SyneriseSDK has own build in session manager, which take care about unique user identity. You can provide tracker with custom client data. Basic call of this might look like:
 
-```objectivec
+```Objective-C
 [[SNRTrackerManager sharedInstance] client:@{@"email": @"john.smith@mail.com",
 @"firstname":@"John",
 @"secondname":@"Smith",
@@ -114,7 +115,7 @@ Of course you can also add more client data but they would be dipatch as custom 
 
 If you want using your own identity for user application call `-customIdentify:`. It might look like:
 
-```objectivec
+```Objective-C
 [[SNRTrackerManager sharedInstance] customIdentify:@"<custom clientID>"];
 ```
 After that all events generated in application will be signed in this identity.
@@ -122,7 +123,7 @@ After that all events generated in application will be signed in this identity.
 ### Step 5: Log customer location (optional)
 Use information from the CLLocationManager to specify the location of the Customer session.
 
-```objectivec
+```Objective-C
 CLLocationManager *locationManager = [[CLLocationManager alloc] init];
 [locationManager startUpdatingLocation];
 CLLocation *location = locationManager.location;
@@ -146,8 +147,8 @@ SyneriseSDK  has own Push Meassage handle API. Using `SNRPushNotificationManager
 
 In your mobile appliaction configure AppDelegate file.
 
-### AppDelegate.m
-```objectivec
+#### AppDelegate.m
+```Objective-C
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
 [[SNRPushNotificationManager sharedInstance] setDeviceToken:deviceToken];
@@ -163,18 +164,15 @@ completionHandler(UIBackgroundFetchResultNewData);
 
 Now you can handle push messages. In this case use `SNRPushNotificationManagerDelegate`.
 
-#### ViewController.h
-```objectivec
-
-// ViewController.h 
+##### ViewController.h
+```Objective-C
 @interface ViewController () <SNRPushNotificationManagerDelegate>
 
 @end
 ```
 
-#### ViewController.m
-```objectivec
-// ViewController.m
+##### ViewController.m
+```Objective-C
 - (void)viewDidLoad {
 [super viewDidLoad];
 
@@ -208,8 +206,8 @@ NSLog(@"Plain text: %@", result);
 
 Use `SNRBeaconManager` for hendle iBeacon interaction and add delegate `SNRBeaconManagerDelegate` to your class. It should look like the following:
 
-#### AppDelegate.m
-```
+##### AppDelegate.m
+```Objective-C
 @interface AppDelegate () <SNRBeaconManagerDelegate>
 
 @property SNRBeaconManager *beaconManager;
@@ -248,7 +246,7 @@ Use `SNRPushNotificationManager` described above in order to deliver targeting m
 
 If you wish implement custom flow for iBeacon based on primary iOS SDK and `CoreLocation` you can use only `createBeaconEventWithUUID` for traking activity triggered by iBeacon.
 
-```
+```Objective-C
 -(void) clientEnterRegion{
 SNRTrackerManager *syneriseTracker = [SNRTrackerManager sharedInstance];
 [syneriseTracker createBeaconEventWithUUID:@"942c21a6-e50c-49c8-acf6-2250198b17d1"
