@@ -14,9 +14,11 @@
 #import "SNRApiPromotionsProtocol.h"
 #import "SNRApiTrackerProtocol.h"
 #import "SNRApiProfileLocationsProtocol.h"
+#import "SNRApiBeaconProtocol.h"
 
 
-@interface SNRApi: NSObject <SNRApiPromotionsProtocol,
+@interface SNRApi: NSObject <SNRApiBeaconProtocol,
+                            SNRApiPromotionsProtocol,
                             SNRApiLocationsProtocol,
                             SNRApiTrackerProtocol,
                             SNRApiProductsProtocol,

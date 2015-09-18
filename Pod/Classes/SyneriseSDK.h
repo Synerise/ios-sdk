@@ -13,6 +13,7 @@
 #import <SyneriseSDK/SNRCategoriesManager.h>
 #import <SyneriseSDK/SNRClientManager.h>
 #import <SyneriseSDK/SNRFavouritesManager.h>
+#import <SyneriseSDK/SNRLocalNotificationManager.h>
 #import <SyneriseSDK/SNRTrackerManager.h>
 #import <SyneriseSDK/SNRPushNotificationManager.h>
 #import <SyneriseSDK/SNRProfileLocationsManager.h>

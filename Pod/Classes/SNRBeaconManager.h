@@ -11,9 +11,7 @@
 
 @class SNRBeaconManager;
 
-
 @protocol SNRBeaconManagerDelegate <NSObject>
-
 
 /*
  *  locationManager:didEnterRegion:
@@ -57,6 +55,8 @@
 
 @interface SNRBeaconManager : NSObject <CLLocationManagerDelegate>
 
++ (SNRBeaconManager*)sharedInstance;
+
 #pragma mark - class methods
 
 + (BOOL)isBeaconMonitoringEnabled;
@@ -68,10 +68,11 @@
 
 #pragma mark - public methods
 
-- (void)addRegions:(NSArray *)regions;
+-(void)addRegions:(NSArray *)regions;
 
 -(void)startMonitoring;
 
 -(void)stopMonitoring;
+
 
 @end

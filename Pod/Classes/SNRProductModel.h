@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NSString *unit;
+@property (nonatomic, strong) NSString *productDesc;
 @property (nonatomic, strong) NSDecimalNumber *regularPriceWithTax;
 @property (nonatomic, strong) NSDecimalNumber *regularPriceWithoutTax;
 @property (nonatomic, strong) NSDecimalNumber *finalPriceWithTax;
@@ -42,6 +43,7 @@
             name:(NSString*)name
              url:(NSString*)url
             unit:(NSString*)unit
+     productDesc:(NSString*)productDesc
 regularPriceWithTax:(NSDecimalNumber*)regularPriceWithTax
 regularPriceWithoutTax:(NSDecimalNumber*)regularPriceWithoutTax
 finalPriceWithTax:(NSDecimalNumber*)finalPriceWithTax

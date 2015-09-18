@@ -12,26 +12,25 @@
 
 @property (nonatomic, assign) NSInteger promotionId;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *start;
-@property (nonatomic, strong) NSString *end;
+@property (nonatomic, strong) NSDate *availableFrom;
+@property (nonatomic, strong) NSDate *availableTo;
 @property (nonatomic, strong) NSString *promoDescription;
 @property (nonatomic, strong) NSString *path;
-@property (nonatomic, strong) NSString *value;
-@property (nonatomic, strong) NSString *unit;
+@property (nonatomic, strong) NSString *discountValue;
+@property (nonatomic, strong) NSString *discountType;
 @property (nonatomic, strong) NSString *discountCode;
-@property (nonatomic, strong) NSString *nearestDistance;
 
 
 - (id)initWithId:(NSInteger)promotionId
             name:(NSString*)name
-           start:(NSString*)start
-             end:(NSString*)end
+   availableFrom:(NSDate*)availableFrom
+     availableTo:(NSDate*)availableTo
 promoDescription:(NSString*)promoDescription
             path:(NSString*)path
-           value:(NSString*)value
-            unit:(NSString*)unit
-    discountCode:(NSString*)discountCode
- nearestDistance:(NSString*)nearestDistance;
+   discountValue:(NSString*)discountValue
+    discountType:(NSString*)discountType
+    discountCode:(NSString*)discountCode;
+
 
 
 @end

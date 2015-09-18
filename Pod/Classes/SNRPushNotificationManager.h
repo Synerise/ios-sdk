@@ -64,4 +64,5 @@ typedef enum NSFetchedResultsType {
  */
 -(void)resumeDispatch;
 
+
 @end
