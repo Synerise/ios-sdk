@@ -232,11 +232,9 @@ Use `SNRBeaconManager` for hendle iBeacon interaction and add delegate `SNRBeaco
     [SNRSyneriseManager debugModeEnabled:YES];
 
     // 2. Start monitor your iBeacon regions
-    if([SNRBeaconManager isBeaconMonitoringEnabled]){
-        SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"<#UUID#>"];
-        [_beaconManager addRegions:@[region]];
-        [_beaconManager startMonitoring];
-    }
+    SNRRegion *region = [[SNRRegion alloc] initWithUUID:@"<#UUID#>"];
+    [_beaconManager addRegions:@[region]];
+    [_beaconManager startMonitoring];
     //....
     return YES;
 }
