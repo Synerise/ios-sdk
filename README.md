@@ -46,6 +46,27 @@ To support updates in iOS 8 you need to add the following Cocoa Keys to the plis
 <string>Required for ios 8 compatibilty</string>
 ```
 
+#####For iOS 9 only: Whitelist Synerise Servers
+
+If you compile your app with iOS SDK 9.0, you will be affected by App Transport Security. Currently, you will need to whitelist Synerise domains in your app by adding the following to your application's plist:
+
+```Objective-C
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>synerise.com</key>
+        <dict>
+            <key>NSIncludesSubdomains</key> 
+            <true/>        
+            <key>NSExceptionRequiresForwardSecrecy</key> 
+            <false/>
+        </dict>
+    </dict>
+</dict>
+```
+
+
 ### Step 2: Setup SyneriseSDK
 
 If you haven't done so already, login to Synerise to get your Synerise API Key.
@@ -257,7 +278,7 @@ If you wish implement custom flow for iBeacon based on primary iOS SDK and `Core
 
 ## Author
 
-Synerise, developer@synerie.com. If you need support please feel free and contact us.
+Synerise, developer@synerise.com. If you need support please feel free and contact us.
 
 ## License
 
