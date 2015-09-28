@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 // Synerise Manager
-#import <SyneriseSDK/SNRSyneriseManager.h>
+#import <SyneriseSDK/SNRBeaconManager.h>
+#import <SyneriseSDK/SNRCouponsManager.h>
 #import <SyneriseSDK/SNRCategoriesManager.h>
 #import <SyneriseSDK/SNRClientManager.h>
 #import <SyneriseSDK/SNRFavouritesManager.h>
@@ -19,8 +20,8 @@
 #import <SyneriseSDK/SNRProfileLocationsManager.h>
 #import <SyneriseSDK/SNRPromotionsManager.h>
 #import <SyneriseSDK/SNRProductsManager.h>
-#import <SyneriseSDK/SNRCouponsManager.h>
-#import <SyneriseSDK/SNRBeaconManager.h>
+#import <SyneriseSDK/SNRScreenBlockManager.h>
+#import <SyneriseSDK/SNRSyneriseManager.h>
 
 // Synerise Models
 #import <SyneriseSDK/SNRCategoriesModel.h>
@@ -32,7 +33,8 @@
 #import <SyneriseSDK/SNRProductModel.h>
 #import <SyneriseSDK/SNRLocationModel.h>
 #import <SyneriseSDK/SNRPromotionModel.h>
-#import <SyneriseSDK/SNRClientModel.h>
+#import <SyneriseSDK/SNRScreensModel.h>
+#import <SyneriseSDK/SNRBlocksModel.h>
 
 
 // Categories
