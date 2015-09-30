@@ -39,24 +39,6 @@ typedef void(^TrackerManagerRetryBlock)();
 
 -(void)customIdentify:(NSString*)identify;
 
-
-/**
- *  Traking used with beacon activity
- */
-- (void)createBeaconEventWithUUID:(NSString*)uuid
-                            major:(NSNumber*)major
-                            minor:(NSNumber*)minor
-                     andProximity:(NSString*)proximity  __attribute__((deprecated("Use trackEventBeaconWithUUID:major:minor:andProximity method.")));
-
-/**
- *  Create event for tracking user screen activity
- */
-- (void)createEventWithCategory:(NSString*)category
-                         action:(NSString*)action
-                          label:(NSString*)label
-                         params:(NSDictionary*)params  __attribute__((deprecated("Use track:screenName:withParams method.")));
-
-
 /**
  *  Register device in Synerise for Push Messages purpose.
  *
