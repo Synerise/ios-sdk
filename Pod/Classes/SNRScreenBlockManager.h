@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SNRBlocksModel.h"
 
 typedef void(^ScreenBlockManagerSuccessBlock)(void);
 typedef void(^ScreenBlockManagerFailedBlock)(NSError *error);
@@ -15,7 +16,7 @@ typedef void(^ScreenBlockManagerFailedBlock)(NSError *error);
 @interface SNRScreenBlockManager : NSObject
 
 @property (nonatomic, strong) NSArray *screens;
-@property (nonatomic, strong) NSArray *blocks;
+@property (nonatomic, strong) SNRBlocksModel *blockDetailObject;
 
 + (SNRScreenBlockManager*)sharedInstance;
 
