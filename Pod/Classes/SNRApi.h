@@ -16,6 +16,7 @@
 #import "SNRApiProfileLocationsProtocol.h"
 #import "SNRApiBeaconProtocol.h"
 #import "SNRApiScreenBlockProtocol.h"
+#import "SNRApiNewsfeedProtocol.h"
 
 
 @interface SNRApi: NSObject <SNRApiBeaconProtocol,
@@ -27,6 +28,7 @@
                             SNRApiCategoriesProtocol,
                             SNRApiClientProtocol,
                             SNRApiProfileLocationsProtocol,
-                            SNRApiScreenBlockProtocol>
+                            SNRApiScreenBlockProtocol,
+                            SNRApiNewsfeedProtocol>
 
 @end

@@ -16,7 +16,8 @@ typedef enum NSFetchedResultsType {
     FetchedResultsAsImage = 1,
     FetchedResultsAsURL = 2,
     FetchedResultsAsPromotionScreen = 3,
-    FetchedResultsAsText = 4
+    FetchedResultsAsText = 4,
+    FetchedResultsAsNewsScreen = 5,
 } FetchedResultsType;
 
 @protocol SNRPushNotificationManagerDelegate <NSObject>

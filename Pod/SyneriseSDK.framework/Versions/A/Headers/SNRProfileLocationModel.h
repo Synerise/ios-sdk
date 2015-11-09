@@ -20,8 +20,8 @@
 @property (nonatomic, strong) NSString *lat;
 @property (nonatomic, strong) NSString *lng;
 @property (nonatomic, strong) NSString *website;
-@property (nonatomic, strong) NSString *state;
-@property (nonatomic, strong) NSString *vatNum;
+@property (nonatomic, strong) NSString *region;
+@property (nonatomic, strong) NSString *country;
 @property (nonatomic, strong) NSString *locationDescription;
 @property (nonatomic, strong) NSString *logoMobile;
 @property (nonatomic, strong) NSString *logoWebsite;
@@ -45,8 +45,8 @@
         lat:(NSString*) lat
         lng:(NSString*) lng
         website:(NSString*) website
-        state:(NSString*) state
-        vatNum:(NSString*) vatNum
+        region:(NSString*) region
+        country:(NSString*) country
         locationDescription:(NSString*) locationDescription
         logoMobile:(NSString*) logoMobile
         logoWebsite:(NSString*) logoWebsite

@@ -25,6 +25,9 @@ typedef void(^ProfileLocationManagerRetryBlock)();
 
 - (void)getListLocationWithLatitude:(NSString*)latitude
                           longitude:(NSString*)longitude
+                        maxDistance:(NSNumber*)maxDistance
+                              limit:(NSNumber*)limit
+                             offset:(NSNumber*)offset
                        successBlock:(ProfileLocationManagerSuccessBlock)successBlock
                          retryBlock:(ProfileLocationManagerRetryBlock)retryBlock
                      andFailedBlock:(ProfileLocationManagerFailedBlock)failedBlock;
