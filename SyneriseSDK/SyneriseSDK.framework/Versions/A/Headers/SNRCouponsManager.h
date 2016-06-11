@@ -34,4 +34,9 @@ typedef void(^CouponManagerRetryBlock)();
                       retryBlock:(CouponManagerRetryBlock)retryBlock
                   andFailedBlock:(CouponManagerFailedBlock)failedBlock;
 
+
+- (void)activeCouponWithUUID:(NSString*)uuid
+                successBlock:(CouponManagerSuccessBlock)successBlock
+              andFailedBlock:(CouponManagerFailedBlock)failedBlock;
+
 @end

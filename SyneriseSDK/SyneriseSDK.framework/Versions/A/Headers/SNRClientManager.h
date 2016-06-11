@@ -92,6 +92,13 @@ typedef void(^ClientManagerRetryBlock)();
  */
 - (NSString*)verifyEmail:(NSString*)email;
 
+/**
+ *
+ * Get client information.
+ *
+ */
+-(void)getClientProfileInfo:(ClientManagerSuccessBlock)successBlock
+  andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
 
 /**
@@ -169,8 +176,7 @@ typedef void(^ClientManagerRetryBlock)();
 
 
 
-- (void)changePasswordWithToken:(NSString*)loginToken
-                    oldPassword:(NSString*)oldPassword
+- (void)changePassword:(NSString*)oldPassword
                     newPassword:(NSString*)newPassword
                    successBlock:(ClientManagerSuccessBlock)successBlock
                      retryBlock:(ClientManagerRetryBlock)retryBlock

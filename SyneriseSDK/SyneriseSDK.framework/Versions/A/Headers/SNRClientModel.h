@@ -26,7 +26,10 @@
 @property (nonatomic, strong) NSString *facebookId;
 @property (nonatomic, strong) NSString *locale;
 @property (nonatomic, strong) NSData *custom;
-
+@property (nonatomic, strong) NSString *clubcard;
+@property (nonatomic, strong) NSString *company;
+@property (nonatomic, strong) NSString *customIdentify;
+@property (nonatomic, strong) NSString *newsletter;
 
 - (id)initWithId:(NSString*)guid
       loginToken:(NSString*)loginToken
@@ -43,5 +46,9 @@
  facebookConnect:(NSString*)facebookConnect
       facebookId:(NSString*)facebookId
           locale:(NSString*)locale
-          custom:(NSData*)custom;
+          custom:(NSData*)custom
+          clubcard:(NSString*)clubcard
+          company:(NSString*)company
+  customIdentify:(NSString*)customIdentify
+      newsletter:(NSString*)newsletter;
 @end
