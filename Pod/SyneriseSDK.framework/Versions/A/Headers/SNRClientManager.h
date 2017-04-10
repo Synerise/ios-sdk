@@ -53,12 +53,10 @@ typedef void(^ClientManagerRetryBlock)();
  */
 @property (nonatomic, strong, readonly) NSString *autologinPassword;
 
-
 /**
- *  Persistent UUID assigned to client
+ *  Client UUID
  */
-@property (nonatomic, strong, readonly) NSString *clientPersistantUUID;
-
+@property (nonatomic, strong, readonly) NSString *clientUUID;
 
 /**
  *  Login token
@@ -84,6 +82,12 @@ typedef void(^ClientManagerRetryBlock)();
 @property (nonatomic, assign) BOOL autologin;
 
 
+/**
+ *
+ * Set client UUID.
+ *
+ */
+- (void) setClientUUID:(NSString *)clientUUID;
 
 /**
  *
