@@ -187,6 +187,15 @@ typedef void(^ClientManagerRetryBlock)();
                  andFailedBlock:(ClientManagerFailedBlock)failedBlock;
 
 /**
+ *
+ * Update client marketing agreement.
+ *
+ */
+- (void)enableEmailAgreement:(BOOL*)isEnabled;
+
+- (void)enableSmsAgreement:(BOOL*)isEnabled;
+
+/**
  *  Logout client. Delete session and token.
  */
 -(void) clientLoggedOut;
