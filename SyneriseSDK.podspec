@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks    = 'UIKit', 'Foundation'
   s.vendored_frameworks = 'Pod/SyneriseSDK.framework'
   s.requires_arc        = true
-  s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)SyneriseSDK"' }
+  s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/SyneriseSDK"' }
 end
 
 

@@ -68,7 +68,7 @@
 - (void)sendAddedToCartEvent {
     SNREvent *event;
     SNRUnitPrice *price = [[SNRUnitPrice alloc] initWithAmount:10.99];
-    event = [[SNRAddedProductToCartEvent alloc] initWithLabel:@"label" sku:@"sku" finalPrice:price quantity:12];
+    event = [[SNRAddedProductToCartEvent alloc] initWithLabel:@"label" sku:@"sku" finalPrice:price quantity:12 andParams:nil];
     [(SNRAddedProductToCartEvent *)event setDiscountedPrice:[[SNRUnitPrice alloc] initWithAmount:10.0]];
     [SNRTracker send: event];
 }
@@ -76,7 +76,7 @@
 - (void)sendRemovedFromCartEvent {
     SNREvent *event;
     SNRUnitPrice *price = [[SNRUnitPrice alloc] initWithAmount:10.99];
-    event = [[SNRRemovedProductFromCartEvent alloc] initWithLabel:@"label" sku:@"sku" finalPrice:price quantity:53];
+    event = [[SNRRemovedProductFromCartEvent alloc] initWithLabel:@"label" sku:@"sku" finalPrice:price quantity:53 andParams:nil];
     [(SNRRemovedProductFromCartEvent *)event setDiscountedPrice:[[SNRUnitPrice alloc] initWithAmount:19.99]];
     [SNRTracker send:event];
 }
