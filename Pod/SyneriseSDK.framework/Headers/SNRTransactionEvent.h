@@ -28,7 +28,7 @@
  @attention Raises an @c NSInvalidArgumentException if object is not JSON encodable.
  @param paymentInfo payment info.
  */
-- (void)setPaymentInfo:(id _Nonnull)paymentInfo; // TODO: specify payment info object
+- (void)setPaymentInfo:(id _Nonnull)paymentInfo;
 - (void)setProducts:(NSArray <SNREventProduct *>* _Nonnull)products;
 - (void)setRecordedAt:(NSDate * _Nonnull)recordedAt;
 - (void)setRevenue:(SNRUnitPrice * _Nonnull)revenue;

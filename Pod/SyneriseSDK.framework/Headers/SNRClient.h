@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param email client's email
  @param password client's password
- @param deviceId deviceId // TODO: add deviceId description
+ @param deviceId deviceId
  @param success success block
  @param failure failure block
  */
