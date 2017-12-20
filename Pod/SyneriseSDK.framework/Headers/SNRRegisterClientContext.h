@@ -6,14 +6,14 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SNRBaseContext.h"
 #import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
 
 /**
  Register context to @c [SNRClient registerClient] metod
  */
-@interface SNRRegisterClientContext : NSObject
+@interface SNRRegisterClientContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *address;
 @property (nonatomic, nullable, copy) SNRClientAgreementsContext *agreements;

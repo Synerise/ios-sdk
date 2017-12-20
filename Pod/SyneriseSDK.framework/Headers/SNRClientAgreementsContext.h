@@ -6,9 +6,9 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SNRBaseContext.h"
 
-@interface SNRClientAgreementsContext : NSObject <NSCopying>
+@interface SNRClientAgreementsContext : SNRBaseContext <NSCopying>
 
 @property (nonatomic) BOOL email;
 @property (nonatomic) BOOL sms;

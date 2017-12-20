@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-// In this header, you should import all the public headers of your framework using statements like #import <SyneriseSDK/PublicHeader.h>
-
 #import <SyneriseSDK/SNRTracker.h>
 
 // core
@@ -61,3 +59,7 @@
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 
 #import <SyneriseSDK/SNRClientSex.h>
+
+// injector
+#import <SyneriseSDK/SNRInjector.h>
+

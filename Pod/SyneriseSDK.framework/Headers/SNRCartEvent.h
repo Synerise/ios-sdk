@@ -18,6 +18,11 @@
                              quantity:(NSInteger)quantity
                             andParams:(SNRTrackerParams * _Nullable)params;
 
+- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
+                                  sku:(NSString * _Nonnull)sku
+                           finalPrice:(SNRUnitPrice * _Nonnull)unitPrice
+                             quantity:(NSInteger)quantity;
+
 - (void)setName:(NSString * _Nonnull)name;
 - (void)setCategory:(NSString * _Nonnull)category;
 - (void)setCategories:(NSArray<NSString *> * _Nonnull)categories;

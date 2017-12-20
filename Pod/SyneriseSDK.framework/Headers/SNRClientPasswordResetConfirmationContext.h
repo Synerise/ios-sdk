@@ -6,11 +6,11 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SNRBaseContext.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SNRClientPasswordResetConfirmationContext : NSObject
+@interface SNRClientPasswordResetConfirmationContext : SNRBaseContext
 
 @property (readonly, nonatomic, nonnull, copy) NSString *password;
 @property (readonly, nonatomic, nonnull, copy) NSString *token;

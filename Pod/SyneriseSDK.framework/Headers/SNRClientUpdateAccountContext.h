@@ -6,11 +6,11 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SNRBaseContext.h"
 
 @class SNRClientSex;
 
-@interface SNRClientUpdateAccountContext : NSObject
+@interface SNRClientUpdateAccountContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *address;
 @property (nonatomic, nullable, copy) NSDate *birthDate;

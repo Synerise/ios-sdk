@@ -13,6 +13,8 @@ typedef NSDictionary<NSString *, NSObject *> SNRDictionary;
 
 /**
  Represents event that can be tracked by @c SNRTracker.
+
+ @note this is an abstract class and it is not meant to be instantiated directly. You should use concrete SNREvent subclasses instead.
  */
 @interface SNREvent : NSObject <NSCopying>
 

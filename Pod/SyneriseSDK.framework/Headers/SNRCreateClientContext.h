@@ -6,11 +6,11 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SNRBaseContext.h"
 #import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
 
-@interface SNRCreateClientContext : NSObject
+@interface SNRCreateClientContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *email;
 @property (nonatomic, nullable, copy) NSString *phone;

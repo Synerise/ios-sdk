@@ -54,8 +54,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Forces sending unsent events to Synerise server.
+
+ @param completion A block object to be executed when @c SNRTracler has finished flushing events to Synerise servers, no matter the result.
  */
-+ (void)flushEvents;
++ (void)flushEventsWithCompletionHandler:(void (^ _Nullable)(void))completion;
+
+#pragma mark - Deprecated methods
+/**
+ Forces sending unsent events to Synerise server.
+ */
++ (void)flushEvents __deprecated_msg("Use [SNRTracker flushEventsWithCompletionHandler:] method instead.");
 
 @end
 
