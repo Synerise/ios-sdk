@@ -80,6 +80,14 @@ NS_ASSUME_NONNULL_BEGIN
               success:(nullable void (^)(BOOL isSuccess))success
               failure:(nullable void (^)(NSError *error))failure;
 
+/**
+ Retrieves currrent Client authentication token. This method provide valid token if Client is logged in and current token is not expired.
+
+ @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Client authentication token.
+ @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
+ */
++ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
+                    failure:(nullable void (^)(NSError * _Nonnull error))failure;
 
 /**
  This method enables/disables console logs from Client SDK.

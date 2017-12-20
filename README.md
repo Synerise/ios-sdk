@@ -329,6 +329,16 @@ Logs out client
 [SNRClient logOut];
 ```
 
+### Get token
+Retrieves currrent Client authentication token. This method provide valid token if Client is logged in and current token is not expired.
+```Objective-C
+[SNRClient getTokenWithSuccess:^(NSString *token) {
+    // successfully retrieved client authentication token
+} failure:^(NSError * _Nonnull error) {
+    // error occured
+}];
+```
+
 ### Logging ###
 This method enables/disables console logs from `SNRClient`. It is not recommended to use this debug mode in release version of your application.
 ```Objective-C

@@ -28,7 +28,8 @@
     if (indexPath.section == 1 && indexPath.row == 0) { [self loginClient]; }
     if (indexPath.section == 2 && indexPath.row == 0) { [self getClientAccount]; }
     if (indexPath.section == 3 && indexPath.row == 0) { [self updateClientAccount] ;}
-    if (indexPath.section == 4 && indexPath.row == 0) { [self logoutClient]; }
+    if (indexPath.section == 4 && indexPath.row == 0) { [self getClientToken]; }
+    if (indexPath.section == 5 && indexPath.row == 0) { [self logoutClient]; }
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -62,6 +63,14 @@
     [SNRClient updateAccount:context success:^(BOOL isSuccess) {
         NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
+        NSLog(@"Failure: %@", error);
+    }];
+}
+
+- (void)getClientToken {
+    [SNRClient getTokenWithSuccess:^(NSString *token) {
+        NSLog(@"Success");
+    } failure:^(NSError *error) {
         NSLog(@"Failure: %@", error);
     }];
 }
