@@ -15,21 +15,6 @@
 
 @implementation ProfileTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)cancelTapped:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
@@ -60,9 +45,9 @@
     context.sex = [SNRClientSex male];
 
     [SNRProfile createClient:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
@@ -77,28 +62,28 @@
     context.phone = @"123123123";
 
     [SNRProfile registerClient:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
 - (void)deleteClient {
     [SNRProfile deleteClient:0 success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
 - (void)updateClient {
     SNRUpdateClientContext *context = [[SNRUpdateClientContext alloc] init];
-    context.email = @"invalid_email.";
+    context.email = @"test.email2@example.com";
 
     [SNRProfile updateClient:10 context:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 
 }
@@ -106,34 +91,34 @@
 - (void)resetPassword {
     SNRClientPasswordResetRequestContext *context = [[SNRClientPasswordResetRequestContext alloc] init:@"test.email@example.com"];
     [SNRProfile resetPassword:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
 - (void)confirmResetPassword {
     SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetConfirmationContext alloc] init:@"testPassword1!" token:@"token"];
     [SNRProfile confirmResetPassword:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
 - (void)registerForPushWithClientId {
     [SNRProfile registerForPush:@"test" clientId:123 success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 
 - (void)registerForPushWithClientUUID {
     [SNRProfile registerForPush:@"test" success:^(BOOL isSuccess) {
-        NSLog(@"yes");
+        NSLog(@"Success!");
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
+        NSLog(@"Failure: %@", error);
     }];
 }
 @end

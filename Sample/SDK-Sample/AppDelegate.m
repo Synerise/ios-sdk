@@ -9,54 +9,91 @@
 #import "AppDelegate.h"
 #import <SyneriseSDK/SyneriseSDK.h>
 
-@interface AppDelegate ()
+@import UserNotifications;
+
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // initialize Tracker module
+    [SNRTracker initialize:<#Your Business Profile API Key#>];
 
-    NSString *businessProfileApiKey = <#Your Business Profile API Key#>;
-    NSString *clientApiKey = <#Your Client API Key#>;
+    // initialize Profile module
+    [SNRProfile initialize:<#Your Business Profile API Key#>];
 
-    [SNRTracker initialize:businessProfileApiKey];
-    [SNRTracker setLoggingEnabled:YES];
+    // initialize Injector module
+    [SNRInjector initialize:<#Your Business Profile API Key#>];
 
-    [SNRProfile initialize:businessProfileApiKey];
-    [SNRClient initialize:clientApiKey];
+    // initialize Client module
+    [SNRClient initialize:<#Your Synerise Client API Key#>];
+
+    // For iOS 10 display notification (sent via APNS)
+    if (@available(iOS 10.0, *)) {
+        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+        UNAuthorizationOptions authOptions =
+        UNAuthorizationOptionAlert
+        | UNAuthorizationOptionSound
+        | UNAuthorizationOptionBadge;
+        [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        }];
+    } else {
+        UIUserNotificationType allNotificationTypes =
+        (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
+        UIUserNotificationSettings *settings =
+        [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
+
+    [application registerForRemoteNotifications];
 
     return YES;
 }
 
+#pragma mark - Incoming push notifications handling
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // retrieve token string
+    NSString *deviceTokenString = [deviceToken description];
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    // register this token in Synerise
+    [SNRProfile registerForPush:deviceTokenString success:^(BOOL isSuccess) {
+        NSLog(@"Synerise push registration finished with success");
+    } failure:^(NSError *error) {
+        NSLog(@"Synerise push registration failed: %@", error);
+    }];
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [SNRInjector handlePushNotification:userInfo];
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    [SNRInjector handlePushNotification:userInfo];
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    // your own push handling code
+
+    completionHandler(UIBackgroundFetchResultNoData);
 }
 
+#pragma mark - UNUserNotificationCenterDelegate methods
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler NS_AVAILABLE_IOS(10) {
+    NSDictionary *userInfo = response.notification.request.content.userInfo;
+    [SNRInjector handlePushNotification:userInfo];
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // your own push handling code
+
+    completionHandler();
 }
 
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler NS_AVAILABLE_IOS(10) {
+    NSDictionary *userInfo = notification.request.content.userInfo;
+    [SNRInjector handlePushNotification:userInfo];
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // your own push handling code
+
+    completionHandler(UNNotificationPresentationOptionNone);
 }
-
 
 @end

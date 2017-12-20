@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61CD91CE1FEA5129000F6799 /* InjectorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CD91CD1FEA5128000F6799 /* InjectorTableViewController.m */; };
 		61D48BAB1FE2C16E007EBBB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D48B9B1FE2C16D007EBBB4 /* AppDelegate.m */; };
 		61D48BAC1FE2C16E007EBBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D48B9C1FE2C16D007EBBB4 /* Assets.xcassets */; };
 		61D48BAD1FE2C16E007EBBB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D48B9D1FE2C16D007EBBB4 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615000681FEA5DAB009D5ED6 /* SDK-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SDK-Sample.entitlements"; sourceTree = "<group>"; };
+		61CD91CC1FEA5128000F6799 /* InjectorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectorTableViewController.h; sourceTree = "<group>"; };
+		61CD91CD1FEA5128000F6799 /* InjectorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorTableViewController.m; sourceTree = "<group>"; };
 		61D48B801FE2C0D7007EBBB4 /* SDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D48B9A1FE2C16D007EBBB4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61D48B9B1FE2C16D007EBBB4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		61D48B991FE2C16D007EBBB4 /* SDK-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				615000681FEA5DAB009D5ED6 /* SDK-Sample.entitlements */,
 				61D48B9A1FE2C16D007EBBB4 /* AppDelegate.h */,
 				61D48B9B1FE2C16D007EBBB4 /* AppDelegate.m */,
 				61D48B9C1FE2C16D007EBBB4 /* Assets.xcassets */,
@@ -82,6 +87,8 @@
 				61D48BA21FE2C16D007EBBB4 /* ClientTableViewController.m */,
 				61D48BA31FE2C16D007EBBB4 /* EventsTableViewController.h */,
 				61D48BA41FE2C16D007EBBB4 /* EventsTableViewController.m */,
+				61CD91CC1FEA5128000F6799 /* InjectorTableViewController.h */,
+				61CD91CD1FEA5128000F6799 /* InjectorTableViewController.m */,
 				61D48BA51FE2C16D007EBBB4 /* Info.plist */,
 				61D48BA61FE2C16D007EBBB4 /* main.m */,
 			);
@@ -140,6 +147,14 @@
 					61D48B7F1FE2C0D7007EBBB4 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -196,9 +211,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SDK-Sample/Pods-SDK-Sample-frameworks.sh",
+				"${PODS_ROOT}/SyneriseSDK/Pod/SyneriseSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SyneriseSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -235,6 +253,7 @@
 				61D48BB21FE2C16E007EBBB4 /* main.m in Sources */,
 				61D48BB31FE2C16E007EBBB4 /* ProfileTableViewController.m in Sources */,
 				61D48BAB1FE2C16E007EBBB4 /* AppDelegate.m in Sources */,
+				61CD91CE1FEA5129000F6799 /* InjectorTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +388,13 @@
 			baseConfigurationReference = CB9A9572C46034757D211243 /* Pods-SDK-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SDK-Sample/SDK-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "SDK-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sample.SDK-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,11 +405,13 @@
 			baseConfigurationReference = A90DB38C8D9E6A83A857A935 /* Pods-SDK-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SDK-Sample/SDK-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "SDK-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sample.SDK-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

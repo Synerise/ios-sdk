@@ -15,16 +15,6 @@
 
 @implementation EventsTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // custom
     if (indexPath.section == 0 && indexPath.row == 0) { [self sendCustomEvent]; }
@@ -178,7 +168,9 @@
 }
 
 - (IBAction)forceSendEvents:(id)sender {
-    [SNRTracker flushEvents];
+    [SNRTracker flushEventsWithCompletionHandler:^{
+        NSLog(@"Flushing events finished");
+    }];
 }
 - (IBAction)cancelTapped:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
