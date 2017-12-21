@@ -28,6 +28,7 @@
     if (indexPath.section == 5 && indexPath.row == 0) { [self confirmResetPassword]; }
     if (indexPath.section == 6 && indexPath.row == 0) { [self registerForPushWithClientId]; }
     if (indexPath.section == 7 && indexPath.row == 0) { [self registerForPushWithClientUUID]; }
+    if (indexPath.section == 8 && indexPath.row == 0) { [self getProfileToken]; }
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -121,4 +122,13 @@
         NSLog(@"Failure: %@", error);
     }];
 }
+
+- (void)getProfileToken {
+    [SNRProfile getTokenWithSuccess:^(NSString *token) {
+        NSLog(@"Success!");
+    } failure:^(NSError *error) {
+        NSLog(@"Failure: %@", error);
+    }];
+}
+
 @end

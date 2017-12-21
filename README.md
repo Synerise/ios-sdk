@@ -458,6 +458,16 @@ Registers app identified by `clientId` for push notifications in Synerise.
 }];
 ```
 
+### Get token
+Retrieves currrent Profile authentication token. This method provide valid token if Profile is correctly.
+```Objective-C
+[SNRProfile getTokenWithSuccess:^(NSString *token) {
+    // successfully retrieved profile authentication token
+} failure:^(NSError * _Nonnull error) {
+    // error occured
+}];
+```
+
 ### Logging ###
 This method enables/disables console logs from `SNRProfile`. It is not recommended to use this debug mode in release version of your application.
 ```Objective-C

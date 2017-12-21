@@ -128,6 +128,15 @@ NS_ASSUME_NONNULL_BEGIN
                 failure:(nullable void (^)(NSError *error))failure;
 
 /**
+ Retrieves currrent Profile authentication token. This method provide valid token if Profile is initialized.
+
+ @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Profile authentication token.
+ @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
+ */
++ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
+                    failure:(nullable void (^)(NSError * _Nonnull error))failure;
+
+/**
  Enables/disables console logs from SNRProfile.
 
  @note It is not recommended to use debug mode in release version of your application.
