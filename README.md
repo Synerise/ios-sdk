@@ -438,6 +438,26 @@ SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetCon
 }];
 ```
 
+### Register for push
+Registers app for push notifications in Synerise.
+```Objective-C
+[SNRProfile registerForPush:@"deviceToken/fcmToken" success:^(BOOL isSuccess) {
+    // successfully registered for push
+} failure:^(NSError * _Nonnull error) {
+    // error occured
+}];
+```
+
+### Register for push with clientId
+Registers app identified by `clientId` for push notifications in Synerise.
+```Objective-C
+[SNRProfile registerForPush:@"deviceToken/fcmToken" clientId:123 success:^(BOOL isSuccess) {
+    // successfully registered for push
+} failure:^(NSError * _Nonnull error) {
+    // error occured
+}];
+```
+
 ### Logging ###
 This method enables/disables console logs from `SNRProfile`. It is not recommended to use this debug mode in release version of your application.
 ```Objective-C
