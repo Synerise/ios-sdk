@@ -330,7 +330,7 @@ Logs out client
 ```
 
 ### Get token
-Retrieves currrent Client authentication token. This method provide valid token if Client is logged in and current token is not expired.
+Retrieves currrent Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
 ```Objective-C
 [SNRClient getTokenWithSuccess:^(NSString *token) {
     // successfully retrieved client authentication token
@@ -459,7 +459,7 @@ Registers app identified by `clientId` for push notifications in Synerise.
 ```
 
 ### Get token
-Retrieves currrent Profile authentication token. This method provide valid token if Profile is correctly.
+Retrieves currrent Profile authentication token. This method provides valid token if Profile is correctly initialized.
 ```Objective-C
 [SNRProfile getTokenWithSuccess:^(NSString *token) {
     // successfully retrieved profile authentication token
