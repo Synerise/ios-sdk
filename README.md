@@ -31,6 +31,8 @@ Then, run the following command:
 $ pod install
 ```
 
+### Carthage
+
 ### Configuration
 
 Under your application targets "Build Settings" configuration find the *Other Linker Flags* property and set it to `-ObjC`.
