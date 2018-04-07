@@ -6,8 +6,6 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface SNRBaseContext : NSObject
 
 @end

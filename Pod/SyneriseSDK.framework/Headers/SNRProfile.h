@@ -6,8 +6,6 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @class UIDevice;
 
 @class SNRUpdateClientContext;
@@ -22,8 +20,18 @@
 @interface SNRProfile : NSObject
 
 NS_ASSUME_NONNULL_BEGIN
+
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
+
+/**
+ Enables/disables console logs from SNRProfile.
+ 
+ @note It is not recommended to use debug mode in release version of your application.
+ 
+ @param enabled Enables/disables console logs.
+ */
++ (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
  Initializes SNRProfile module.
@@ -136,14 +144,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
                     failure:(nullable void (^)(NSError * _Nonnull error))failure;
 
-/**
- Enables/disables console logs from SNRProfile.
-
- @note It is not recommended to use debug mode in release version of your application.
-
- @param enabled Enables/disables console logs.
- */
-+ (void)setLoggingEnabled:(BOOL)enabled;
 NS_ASSUME_NONNULL_END
 
 @end

@@ -8,6 +8,13 @@
 
 @class SNREvent;
 
+typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
+    SNRTrackerAutoTrackModeEager,
+    SNRTrackerAutoTrackModePlain,
+    SNRTrackerAutoTrackModeFine,
+    SNRTrackerAutoTrackModeDisabled
+};
+
 /**
  SNTracker is responsible for tracking various SNREvents.
  */
@@ -19,6 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)new __unavailable;
 
 /**
+ Enables/disables console logs from SNRTracker.
+ 
+ @note It is not recommended to use debug mode in release version of your application.
+ 
+ @param enabled Enables/disables console logs.
+ */
++ (void)setLoggingEnabled:(BOOL)enabled;
+
+/**
  Initializes tracker.
 
  @note This method needs to be called before any other method of SNRTracker class and only once during application lifecycle.
@@ -28,22 +44,22 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)initialize:(NSString *)apiKey;
 
 /**
- Enables/disables console logs from SNRTracker.
-
- @note It is not recommended to use debug mode in release version of your application.
-
- @param enabled Enables/disables console logs.
- */
-+ (void)setLoggingEnabled:(BOOL)enabled;
-
-/**
  Sets clientId of tracked user.
 
  @note Synerise Client ID may be obtained after integration with Synerise API.
 
- @param clientId clientId of tracker user.
+ @param clientId of tracker user.
  */
 + (void)setClientId:(NSNumber * _Nullable)clientId;
+
+/**
+ Sets mode of AutoTrack
+ 
+ @note AutoTrack is disabled by default - mode is set up to SNRTrackerAutoTrackModeDisabled
+ 
+ @param mode of AutoTrack functionality
+ */
++ (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
 
 /**
  Adds new event to queue and sends available events to server if possible.
@@ -65,6 +81,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)flushEvents __deprecated_msg("Use [SNRTracker flushEventsWithCompletionHandler:] method instead.");
 
-@end
-
 NS_ASSUME_NONNULL_END
+
+@end

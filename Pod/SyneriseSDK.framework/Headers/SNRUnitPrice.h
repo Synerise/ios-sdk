@@ -6,8 +6,6 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface SNRUnitPrice : NSObject <NSCopying>
 
 - (nonnull instancetype)init __unavailable;

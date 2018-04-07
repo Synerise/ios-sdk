@@ -6,7 +6,6 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "SNRTrackerParams.h"
 
 typedef NSDictionary<NSString *, NSObject *> SNRDictionary;

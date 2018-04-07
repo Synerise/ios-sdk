@@ -6,8 +6,6 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface SNRTrackerParamsBuilder : NSObject
 
 /**
@@ -82,6 +80,6 @@ __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
  @param buildBlock A block object with one @c SNRTrackerParamsBuilder param that acts as builder.
  @return initialized @c SNTTrackerParams object.
  */
-+ (nonnull instancetype) makeWithBuilder:(void (^ _Nonnull)(SNRTrackerParamsBuilder * _Nonnull))buildBlock;
++ (nonnull instancetype)makeWithBuilder:(void (^ _Nonnull)(SNRTrackerParamsBuilder * _Nonnull))buildBlock;
 
 @end

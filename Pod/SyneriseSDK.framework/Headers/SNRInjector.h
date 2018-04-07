@@ -6,17 +6,24 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
 /**
  SNRInjector is responsible for intergration with Synerise mobile content methods.
  */
 @interface SNRInjector : NSObject
 
+NS_ASSUME_NONNULL_BEGIN
+
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
+
+/**
+ Enables/disables console logs from SNRInjector.
+ 
+ @note It is not recommended to use debug mode in release version of your application.
+ 
+ @param enabled Enables/disables console logs.
+ */
++ (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
  Initializes SNRInjector.
@@ -27,33 +34,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)initialize:(NSString *)apiKey;
 
-/**
- Handles incoming push notification containing mobile content data.
-
- @param userInfo Push notification incoming to the system.
- */
-+ (void)handlePushNotification:(NSDictionary *)userInfo;
-
-/**
- Gets onboarding from bucket identified by @c bucketName and displays it if no error has occured.
-
- Onboarding is like tutorial for the application. It consists of series of screens which introduces the application to the user.
-
- @param bucketName Bucket name. Bucket is the primary storage unit for your content.
- @param completion A block object to be executed when onboarding has finished presenting or an error occured.
- */
-+ (void)showOnboardingIfPresentForBucket:(NSString *)bucketName completion:(void (^ __nullable)(void))completion;
-
-/**
- Gets welcome screen from bucket identified by @c bucketName and displays it if no error has occured.
-
- Welcome screen is just a screen displayed just after opening the application.
-
- @param bucketName Bucket name. Bucket is the primary storage unit for your content.
- @param completion A block object to be executed when welcome screen has finished presenting or an error occured.
- */
-+ (void)showWelcomeScreenIfPresentForBucket:(NSString *)bucketName completion:(void (^ __nullable)(void))completion;
+NS_ASSUME_NONNULL_END
 
 @end
-
-NS_ASSUME_NONNULL_END

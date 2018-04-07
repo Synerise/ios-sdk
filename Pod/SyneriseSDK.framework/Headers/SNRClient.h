@@ -6,18 +6,27 @@
 //  Copyright © 2017 Synerise. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @class SNRClientUpdateAccountContext;
 @class SNRClientAccountInformation;
 @class SNRClientAuthConfig;
 
-NS_ASSUME_NONNULL_BEGIN
-
+/**
+ SNRClient is responsible for tracking various SNREvents.
+ */
 @interface SNRClient : NSObject
+
+NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
+
+/**
+ This method enables/disables console logs from Client SDK.
+ It is not recommended to use debug mode in release version of your application.
+ 
+ @param enabled specified is console logs are enabled
+ */
++ (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
  Initializes SNRClient module.
@@ -89,14 +98,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
                     failure:(nullable void (^)(NSError * _Nonnull error))failure;
 
-/**
- This method enables/disables console logs from Client SDK.
- It is not recommended to use debug mode in release version of your application.
-
- @param enabled specified is console logs are enabled
- */
-+ (void)setLoggingEnabled:(BOOL)enabled;
+NS_ASSUME_NONNULL_END
 
 @end
-
-NS_ASSUME_NONNULL_END
