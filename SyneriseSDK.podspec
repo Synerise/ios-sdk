@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT" }
   s.authors       = "Synerise"
   s.platform      = :ios, "9.0"
-  s.source        = { :git => 'https://github.com/Synerise/ios-sdk.gi', :branch => 'v3.1.5-rc1' }
+  s.source        = { :git => 'https://github.com/Synerise/ios-sdk.git', :branch => 'v3.1.5-rc1' }
   s.frameworks    = 'UIKit', 'Foundation'
   s.vendored_frameworks = 'Pod/SyneriseSDK.framework'
   s.requires_arc        = true

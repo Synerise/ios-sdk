@@ -26,7 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)isSyneriseNotification:(NSDictionary*)userInfo;
 + (void)handleNotification:(NSDictionary*)userInfo;
-+ (void)handleNotification:(NSDictionary*)userInfo withActionIdentifier:(NSString*)actionIdentifier;
 
 @end
 
