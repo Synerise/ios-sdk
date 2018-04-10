@@ -60,7 +60,7 @@ SyneriseSDK requires Firebase with Messaging module so you have to import these 
 
 1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
 2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
-3. You will need to whitelist Synerise domains in your app by adding the following to your application's plist (often called "Info.plist"):
+3. You will need to change whitelist domains in your app by adding the following to your application's plist (often called "Info.plist"):
 
 ```
 <key>NSAppTransportSecurity</key>
