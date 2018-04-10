@@ -16,19 +16,7 @@
 		617D3BD61FA21D2A00AC0440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D3BD41FA21D2A00AC0440 /* LaunchScreen.storyboard */; };
 		617D3BD91FA21D2A00AC0440 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 617D3BD81FA21D2A00AC0440 /* main.m */; };
 		619942311FCD935F00FC057D /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619942301FCD935F00FC057D /* EventsTableViewController.m */; };
-		61BC151C1FE4033B000B594A /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6104CA621FA75E86002F3660 /* SyneriseSDK.framework */; };
-		61BC151D1FE4033B000B594A /* SyneriseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6104CA621FA75E86002F3660 /* SyneriseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6104CA611FA75E86002F3660 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6104CA5D1FA75E86002F3660 /* SyneriseSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 617D3BB21FA21C7200AC0440;
-			remoteInfo = SyneriseSDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		34FFF9471FE05D7F008BA7F1 /* Embed Frameworks */ = {
@@ -37,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				61BC151D1FE4033B000B594A /* SyneriseSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +37,6 @@
 		2DC067A5205FFCC0003B43B1 /* ViewTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTrackingViewController.m; sourceTree = "<group>"; };
 		2DC0D8FD20794624006DEE9E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
 		2DC0D8FF20794624006DEE9E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		6104CA5D1FA75E86002F3660 /* SyneriseSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SyneriseSDK.xcodeproj; path = ../SyneriseSDK/SyneriseSDK.xcodeproj; sourceTree = "<group>"; };
 		613DE04C1FD0489A002D1C2F /* ProfileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
 		613DE04D1FD0489A002D1C2F /* ProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
 		613DE04F1FD048AA002D1C2F /* ClientTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientTableViewController.h; sourceTree = "<group>"; };
@@ -73,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61BC151C1FE4033B000B594A /* SyneriseSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,18 +115,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		6104CA5E1FA75E86002F3660 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6104CA621FA75E86002F3660 /* SyneriseSDK.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		617D3BBD1FA21D2A00AC0440 = {
 			isa = PBXGroup;
 			children = (
-				6104CA5D1FA75E86002F3660 /* SyneriseSDK.xcodeproj */,
 				617D3BC81FA21D2A00AC0440 /* Sample */,
 				617D3BC71FA21D2A00AC0440 /* Products */,
 			);
@@ -224,28 +200,12 @@
 			mainGroup = 617D3BBD1FA21D2A00AC0440;
 			productRefGroup = 617D3BC71FA21D2A00AC0440 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6104CA5E1FA75E86002F3660 /* Products */;
-					ProjectRef = 6104CA5D1FA75E86002F3660 /* SyneriseSDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				617D3BC51FA21D2A00AC0440 /* Sample */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6104CA621FA75E86002F3660 /* SyneriseSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SyneriseSDK.framework;
-			remoteRef = 6104CA611FA75E86002F3660 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		617D3BC41FA21D2A00AC0440 /* Resources */ = {
