@@ -36,7 +36,7 @@ end
 
 Add following line to your Cartfile:
 ```
-github "synerise/ios-sdk
+github "synerise/ios-sdk"
 ```
 
 After that please update carthage:
