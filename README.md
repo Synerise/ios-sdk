@@ -476,10 +476,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	application.registerForRemoteNotifications()
 }
 
-func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-	let deviceTokenString: String = deviceToken.map({ String(format: "%02.2hhx", $0)}).joined()
-        
-	SNRProfile .register(forPush: deviceTokenString, success: {
+//MARK: MessagingDelegate
+
+func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+	SNRProfile .register(forPush: fcmToken, success: {
 		(success) in
 		//...
 	}) {
@@ -513,18 +513,14 @@ func application(_ application: UIApplication, didRegisterForRemoteNotifications
     //...
 }
 
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSString *deviceTokenString = [deviceToken description];
-    
-    [SNRProfile registerForPush:deviceTokenString success:^(BOOL isSuccess) {
-        
-    } failure:^(NSError * _Nonnull error) {
-        
-    }];
-}
+#pragma mark - FIRMessagingDelegate
 
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    //...
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
+    [SNRProfile registerForPush:fcmToken success:^(BOOL isSuccess) {
+        //...
+    } failure:^(NSError * _Nonnull error) {
+        //...
+    }];
 }
 
 ```
