@@ -65,16 +65,7 @@ SyneriseSDK requires Firebase with Messaging module so you have to import these 
 ```
 <key>NSAppTransportSecurity</key>
 <dict>
-    <key>NSExceptionDomains</key>
-    <dict>
-        <key>synerise.com</key>
-        <dict>
-            <key>NSIncludesSubdomains</key> 
-            <true/>        
-            <key>NSExceptionRequiresForwardSecrecy</key> 
-            <false/>
-        </dict>
-    </dict>
+	<key>NSAllowsArbitraryLoads</key><true/>
 </dict>
 ```
 
