@@ -172,7 +172,7 @@ func syneriseUserInteraction(with url: URL) {
 	}
 }
     
-func syneriseUserInteraction(withDeepLink url: URL) {
+func syneriseUserInteraction(withDeepLink deepLink: String) {
 	// application deeplink handled
 	// deeplink custom implementation
 }
@@ -193,7 +193,7 @@ func syneriseUserInteraction(withDeepLink url: URL) {
     }
 }
 
-- (void)syneriseUserInteractionWithDeepLink:(NSURL*)url {
+- (void)syneriseUserInteractionWithDeepLink:(NSString*)deepLink {
 	// application deeplink handled
     // deeplink custom implementation
 }
