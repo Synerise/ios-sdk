@@ -1,598 +1,698 @@
-# SyneriseSDK
+# Synerise iOS SDK
 
-The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate SyneriseSDK software into your apps.
+The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate SyneriseSDK software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com).
 
-For more info about Synerise visit the [Synerise Website](http://synerise.com)
 
-## Requirements
+# Requirements
 
-- iOS 9.0+
-- Xcode 9.0+
+* Xcode 9 and iOS SDK 11
+* iOS 9.0+ target deployment
+* Valid architectures: armv7, armv7s, arm64 devices and i386, x86_64 simulators
 
-## Installation
 
-### CocoaPods
+# Installation
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+## Install SyneriseSDK from CocoaPods
 
-```bash
-$ gem install cocoapods
-```
-
-To integrate  into your Xcode project using CocoaPods, specify it in your `Podfile`:
+CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```
-pod 'SyneriseSDK', :git => 'https://github.com/Synerise/ios-sdk.git', :branch => 'v3.0.0'
+gem install cocoapods
 ```
 
-Then, run the following command:
+Once you have CocoaPods installed you should add below code into your Podfile in Xcode:
 
-```bash
-$ pod install
+```
+platform :ios, '9.0'
+use_frameworks!
+
+target YOUR_PROJECT_TARGET do
+  pod 'SyneriseSDK'
+end
 ```
 
-### Carthage
 
-### Configuration
+## Install SyneriseSDK from Carthage
 
-Under your application targets "Build Settings" configuration find the *Other Linker Flags* property and set it to `-ObjC`.
-
-In your application plist file (often called `Info.plist`) add a row for `Required background modes` of type Array. It then needs:
-
-`App downloads content in response to push notifications`
-
-### Integration
-
-Objective-C:
-```Objective-C
-#import "<SyneriseSDK/SyneriseSDK.h>"
+Add following line to your Cartfile:
+```
+github "synerise/ios-sdk
 ```
 
-Swift:
-```Swift
+After that please update carthage:
+```
+carthage update
+```
+
+Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SyneriseSDK.framework` to the "Embedded Binaries" section in Xcode.
+
+Make sure `Copy items if needed` is selected and click `Finish`.
+
+
+## Dependencies
+
+SyneriseSDK requires Firebase with Messaging module so you have to import these dependencies for CocoaPods or Carthage.
+
+
+# Quick Start
+
+## Configuration
+
+1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
+2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
+3. You will need to whitelist Synerise domains in your app by adding the following to your application's plist (often called "Info.plist"):
+
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>synerise.com</key>
+        <dict>
+            <key>NSIncludesSubdomains</key> 
+            <true/>        
+            <key>NSExceptionRequiresForwardSecrecy</key> 
+            <false/>
+        </dict>
+    </dict>
+</dict>
+```
+
+4. You will need to import the SyneriseSDK header into the files that contain code relating to SyneriseSDK. 
+
+**Swift:**
+```
 import SyneriseSDK
 ```
 
-## Setup SyneriseSDK
+**Objective-C:**
+```
+<SyneriseSDK/SyneriseSDK.h>
+```
 
-If you haven't done so already, login to Synerise to get your Synerise API Key(s).
+In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
-To get `Api Key` sign in to your Synerise account and go to https://app.synerise.com/api/.
-There you can generate API Keys for `Business Profile` and `Client`.
 
-Then you have to initialize SyneriseSDK in `application:didFinishLaunchingWithOptions:` method in `AppDelegate`.
+## Initialize
 
-Please note that you may initialize only these modules in which you are interested in, eg. `SNRClient` and `SNRTracker`.
+First of all, you need to initialize Synerise iOS SDK with `SNRSynerise` class in your AppDelegate and provide `Business Api Key`, `Client Api Key`.
+To get `Business Api Key` and  `Client Api Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
+Then, generate new `Api Key` for `Business Profile` audience and new `Api Key` for `Client` audience.
 
-```Objective-C
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    // Initialize SNRTracker module
-    [SNRTracker initialize:@"<your Business Profile API key>"];
+**Swift:**
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	let businessProfileApiKey = "DAA341FD-B541-F894-A28D-77B2F9A8055B";
+	let clientApiKey = "622376F8-4A8F-8B24-D7F9-070FA956E963";
 
-    // Initialize SNRProfile module
-    [SNRProfile initialize:@"<your Business Profile API key>"];
-
-    // Initialize SNRClient module
-    [SNRClient initialize:@"<your Client API key>"];
-
-    // Initialize SNRInjector module
-    [SNRInjector initialize:@"<your Business Profile API key>"];
-
-    return YES;
+	SNRSynerise.initialize(withBusinessProfileApiKey: businessProfileApiKey, andClientApiKey: clientApiKey)
 }
 ```
 
-## Event Tracker
+**Objective-C:**
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	static NSString *businessProfileApiKey = @"DAA341FD-B541-F894-A28D-77B2F9A8055B";
+	static NSString *clientApiKey = @"622376F8-4A8F-8B24-D7F9-070FA956E963";
 
-You can log events from your mobile app to Synerise platform with SNRTracker class. You need to initialize SNRTracker with `[SNRTracker initialize:@"<your Business Profile API key>"];`. Initialize method can be called only once during whole application lifecycle.
-
-### Sending events
-
-To send Event simply use `SNRTracker` method
-```Objective-C
-[SNRTracker send: [[SNRCustomEvent alloc] initWithLabel:@"customLabel" action:@"customAction"]];
+	[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey];
+}
 ```
 
-You can also pass your custom optional parameters to events:
-```Objective-C
-SNRTrackerParams *params = [SNRTrackerParams makeWithBuilder:^(SNRTrackerParamsBuilder * _Nonnull builder) {
-    [builder setDouble:1.023 forKey:@"someKey"];
-    [builder setObject:@[@{@"someKey":@"someValue"}] forKey:@"anotherKey"]; // note: must be JSON encodable object
-    [builder setString:@"String" forKey:@"importantString"];
-    [builder setInt:42 forKey:@"answer"];
+
+## Setup
+
+Configuration for SyneriseSDK should be completely resolved before end of `AppDelegate` `didFinishLaunchingWithOptions` method.
+
+For example:
+
+**Swift:**
+```swift
+let businessProfileApiKey = "DAA341FD-B541-F894-A28D-77B2F9A8055B";
+let clientApiKey = "622376F8-4A8F-8B24-D7F9-070FA956E963";
+       
+SNRSynerise.initialize(withBusinessProfileApiKey: businessProfileApiKey, andClientApiKey: clientApiKey)
+SNRSynerise.setDelegate(self)
+        
+SNRTracker.setLoggingEnabled(true)
+SNRTracker.setAutoTrackMode(.fine)
+        
+SNRClient.setLoggingEnabled(true)
+        
+SNRProfile.setLoggingEnabled(true)
+
+SNRInjector.setLoggingEnabled(true)
+```
+
+**Objective-C:**
+```objective-c
+static NSString *businessProfileApiKey = @"DAA341FD-B541-F894-A28D-77B2F9A8055B";
+static NSString *clientApiKey = @"622376F8-4A8F-8B24-D7F9-070FA956E963";
+
+[SNRSynerise initializeWithBusinessProfileApiKey:kBusinessProfileApiKey andClientApiKey:kClientApiKey];
+[SNRSynerise setDelegate:self];
+    
+[SNRTracker setLoggingEnabled:YES];
+[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine];
+
+[SNRClient setLoggingEnabled:YES];
+
+[SNRProfile setLoggingEnabled:YES];
+
+[SNRInjector setLoggingEnabled:YES];
+```
+
+
+### Implement SyneriseSDK delegate methods
+
+You can specify your custom action when user clicks on your banner, welcome screen, simple push button or walkthrough page.<br>
+There are 2 main actions user may choose so far - Open url and Deep link.<br>
+
+**Swift:**
+```swift
+//MARK: SNRSyneriseDelegate
+    
+func syneriseUserInteraction(with url: URL) {
+	// web url handled
+	// sample implementation
+        
+	if UIApplication.shared.canOpenURL(url) {
+		UIApplication.shared.open(url, options:[:], completionHandler:nil)
+	}
+}
+    
+func syneriseUserInteraction(withDeepLink url: URL) {
+	// application deeplink handled
+	// deeplink custom implementation
+}
+```
+
+**Objective-C:**
+```objective-c
+#pragma mark - SNRSyneriseDelegate
+
+- (void)syneriseUserInteractionWithURL:(NSURL*)url {
+	// web url handled
+	// sample implementation
+
+    if ([[UIApplication sharedApplication] canOpenURL:url ]) {
+        [[UIApplication sharedApplication] openURL:url options:nil completionHandler:^(BOOL success) {
+            
+        }];
+    }
+}
+
+- (void)syneriseUserInteractionWithDeepLink:(NSURL*)url {
+	// application deeplink handled
+    // deeplink custom implementation
+}
+```
+
+
+### Debug logs
+
+You can enable debug logs for SyneriseSDK modules, such as: SNRTracker, SNRProfile, SNRClient, SNRInjector.
+It is not recommended to use debug mode in release version of your app.
+
+- SNRTracker: you can receive some simple logs about sending events (like success, failure etc.) by enabling debug mode, which is disabled by default.
+- SNRProfile: you can receive some simple logs about profile actions (like registration etc.) by enabling debug mode, which is disabled by default.
+- SNRClient: you can receive some simple logs about client actions (like login etc.) by enabling debug mode, which is disabled by default.
+- SNRInjector: you can receive some simple logs about Injector actions (like walkthrough or welcome screen availability) by enabling debug mode, which is disabled by default.
+
+It can be enabled by method `setLoggingEnabled` for each module. For example:
+
+**Swift:**
+```swift
+SNRTracker.setLoggingEnabled(true)
+```
+
+**Objective-C:**
+```objective-c
+[SNRTracker setLoggingEnabled(YES];
+```
+
+
+
+## Event Tracking
+
+Synerise SDK provides you with powerful features for User Activity Tracking that you can use within your mobile application.
+
+### Auto-tracking
+
+Auto-tracking is functionality available in our SDK that can attach to nearly everything within your application and log events automatically that you can then make use of within Synerise.
+
+By default functionality is disabled and in order to enable it you need to use code like this:
+
+**Swift:**
+```swift
+SNRTracker.setAutoTrackMode(.fine)
+```
+
+**Objective-C:**
+```objective-c
+[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine];
+```
+
+#### Accepted values for setAutoTrackMode(mode) method:
+
+**EAGER** - listeners are set to on touch events only<br>
+**PLAIN** - listeners are set to on click events only<br>
+**FINE** - listeners are attached to nearly everything in your app (even to activities and fragments `viewDidAppear:` method to record VisitedScreen events)<br>
+**DISABLED** - listeners are disabled<br>
+
+
+### Tracking events
+
+To send some evens just use `SNRTracker` `send(YOUR_EVENT)` method:
+
+**Swift:**
+```swift
+let event: SNRCustomEvent = SNRCustomEvent(label: "YOUR_LABEL", action: "YOUR_ACTION")
+SNRTracker.send(event)
+```
+
+**Objective-C:**
+```objective-c
+SNRCustomEvent *event = [[SNRCustomEvent alloc] initWithLabel:@"YOUR_LABEL" action:@"YOUR_ACTION"];
+[SNRTracker send:event];
+```
+
+You can also pass your custom parameters:
+
+**Swift:**
+```swift
+let parameters: SNRTrackerParams = SNRTrackerParams.make {
+	builder in
+	
+	builder.setString("John", forKey: "name")
+	builder.setInt(27, forKey: "age")
+	builder.setBool(true, forKey: "isGreat")
+	builder.setDouble(384.28, forKey: "lastOrder")
+	builder.setInt(10, forKey: "count")
+	builder.setObject(SampleObject(), forKey: "someObject")
+}
+        
+let event: SNRCustomEvent = SNRCustomEvent(label: "YOUR_LABEL", action: "YOUR_ACTION", andParams: parameters)
+SNRTracker.send(event)
+```
+
+**Objective-C:**
+```objective-c
+SNRTrackerParams *parameters = [SNRTrackerParams makeWithBuilder:^(SNRTrackerParamsBuilder *builder) {
+	[builder setString:@"John" forKey:@"name"];
+	[builder setInt:27 forKey:@"age"];
+	[builder setBool:YES forKey:@"isGreat"];
+	[builder setDouble:384.28 forKey:@"lastOrder"];
+	[builder setInt:10 forKey:@"count"];
+	[builder setObject:[SampleObject new] forKey:@"someObject"];
 }];
-
-[SNRTracker send: [[SNRCustomEvent alloc] initWithLabel:@"customLabel" action:@"customAction" andParams:params];
+    
+SNRCustomEvent *event = [[SNRCustomEvent alloc] initWithLabel:@"YOUR_LABEL" action:@"YOUR_ACTION" andParams:parameters];
+[SNRTracker send:event];
 ```
 
-### Logging
+Tracker caches and enqueues all your events locally, so they all will be send when available.
 
-This method enables/disables console logs from `SNRTracker`. It is not recommended to use this debug mode in release version of your application.
-
-```Objective-C
-[SNRTracker setLoggingEnabled:YES]; // enables logging
-```
-
-### Flushing events
-`SNRTracker` will handle sending events to Synerise at regular intervals with no other action being necessary to trigger this process. However, sometimes it may be required to to send events 'right now'. `SNRTracker` has `flushEventsWithCompletionHandler:` method to force send tracked events to Synerise servers.
-
-```Objective-C
-[SNRTracker flushEventsWithCompletionHandler:^{
-    // called when sending events has ended
-}];
-```
-
-## Events ###
-
-### Session Events ###
+#### - Session Events
 Group of events related to user's session.
 
-#### LoggedInEvent ####
+##### SNRLoggedInEvent
 Record a 'client logged in' event.
-```Objective-C
-SNREvent *event = [[SNRLoggedInEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-#### LoggedOutEvent ####
+##### SNRLoggedOutEvent
 Record a 'client logged out' event.
-```Objective-C
-SNREvent *event = [[SNRLoggedOutEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-#### Registered Event ####
+##### SNRRegisteredEvent
 Record a 'client registered' event.
-```Objective-C
-SNREvent *event = [[SNRRegisteredEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-### Products Events ###
+#### - Products Events
 Group of events related to products and cart.
 
-#### AddedToCartEvent ####
-Record a 'client added product to cart' event.
-```Objective-C
-SNRUnitPrice *price = [[SNRUnitPrice alloc] initWithAmount:10.99];
-SNRAddedProductToCartEvent *event = [[SNRAddedProductToCartEvent alloc] initWithLabel:@"yourLabel" sku:@"sku" finalPrice:price quantity:12];
-
-// additional product parameters
-[event setProducer:@"Producer"];
-[event setName:@"name"];
-[event setRegularPrice:[[SNRUnitPrice alloc] initWithAmount:9.99]];
-
-[SNRTracker send:event];
-```
-
-#### RemovedFromCartEvent ####
-Record a 'client removed product from cart' event.
-```Objective-C
-SNRUnitPrice *price = [[SNRUnitPrice alloc] initWithAmount:10.99];
-SNRRemovedProductFromCartEvent *event = [[SNRRemovedProductFromCartEvent alloc] initWithLabel:@"yourLabel" sku:@"sku" finalPrice:price quantity:12];
-
-// additional product parameters
-[event setProducer:@"Producer"];
-[event setName:@"name"];
-[event setRegularPrice:[[SNRUnitPrice alloc] initWithAmount:9.99]];
-
-[SNRTracker send:event];
-```
-
-#### AddedToFavoritesEvent ####
+##### SNRAddedProductToFavoritesEvent
 Record a 'client added product to favorites' event.
-```Objective-C
-SNREvent *event = [[SNRAddedProductToFavoritesEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
+##### SNRAddedProductToCartEvent
+Record a 'client added product to cart' event.
 
-### Transaction Events ###
+##### SNRRemovedProductFromCartEvent
+Record a 'client removed product from cart' event.
+
+#### - Transaction Events
 Group of events related to user's transactions.
 
-#### CompletedTransactionEvent ####
-Record a 'client completed transaction' event.
-```Objective-C
-// setup product (optional)
-SNREventProduct *product = [SNREventProduct new];
-product.sku = @"completedProduct";
-product.tax = 0.23;
-product.regularPrice = [[SNRUnitPrice alloc] initWithAmount:10.23];
-
-SNRCompletedTransactionEvent *event = [[SNRCompletedTransactionEvent alloc] initWithLabel:@"yourLabel"];
-[event setProducts:@[product]];
-[event setOrderId:@"completedOrderId"];
-[event setRecordedAt:[NSDate date]];
-
-[SNRTracker send:event];
-```
-
-#### CancelledTransactionEvent ####
+##### SNRCancelledTransactionEvent
 Record a 'client cancelled transaction' event.
-```Objective-C
-// setup product (optional)
-SNREventProduct *product = [SNREventProduct new];
-product.sku = @"cancelledProduct";
-product.tax = 0.08;
-product.quantity = 20;
-product.regularPrice = [[SNRUnitPrice alloc] initWithAmount:230.23];
 
-SNRCancelledTransactionEvent *event = [[SNRCancelledTransactionEvent alloc] initWithLabel:@"yourLabel"];
-[event setProducts:@[product]];
-[event setOrderId:@"cancelledOrderId"];
-[event setRecordedAt:[NSDate date]];
+##### SNRCompletedTransactionEvent
+Record a 'client completed transaction' event.
 
-[SNRTracker send:event];
-```
-
-### Other Events ###
+#### - Other Events
 Group of uncategorized events related to user's location and actions.
 
-#### AppearedInLocationEvent ####
-Record a 'client appeared in location' event. You have to provide user's location by your self, using `CoreLocation`.
-```Objective-C
-CLLocation *loc; // location object
-SNREvent *event = [[SNRAppearedInLocationEvent alloc] initWithLabel:@"yourLabel" andLocation:loc];
+##### SNRAppearedInLocationEvent
+Record a 'client appeared in location' event.
 
-[SNRTracker send:event];
-```
-
-#### HitTimerEvent ###
+##### SNRHitTimerEvent
 Record a 'client hit timer' event. This could be used for profiling or activity time monitoring - you can send "hit timer" when your client starts doing something and send it once again when finishes, but this time with different time signature. Then you can use our analytics engine to measure e.g. average activity time.
-```Objective-C
-SNREvent *event = [[SNRHitTimerEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-#### SearchedEvent ###
+##### SNRSearchedEvent
 Record a 'client searched' event.
-```Objective-C
-SNREvent *event = [[SNRSearchedEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-#### SharedEvent ###
+##### SNRSharedEvent
 Record a 'client shared' event.
-```Objective-C
-SNREvent *event = [[SNRSharedEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
-
-#### VisitedScreenEvent ###
+##### SNRVisitedScreenEvent
 Record a 'client visited screen' event.
-```Objective-C
-SNREvent *event = [[SNRVisitedScreenEvent alloc] initWithLabel:@"yourLabel"];
 
-[SNRTracker send:event];
-```
+##### SNRCustomEvent
+This is the only event which requires `action` field.
 
-### Custom Event ###
-This is the only event which requires `action` field. 
-```Objective-C
-SNREvent *event = [[SNRCustomEvent alloc] initWithLabel:@"custom" action: @"customAction"];
+Log your custom data with TrackerParams class.
 
-[SNRTracker send:event];
-```
+
+### Other features
+
+#### `SNRTracker` `flushEvents` and `flushEventsWithCompletionHandler`
+Flush method forces sending events from queue to server.
+
+#### `SNRTracker` `setClientId(id)`
+Synerise Client ID may be obtained after integration with Synerise API.
+
 
 ## Client
-`SNRClient` module is responsible for integrating with Synerise Client API. You need to initialize SNRClient with `[SNRClient initialize:@"<your Client API key>"];`. Initialize method can be called only once during whole application lifecycle.
 
-### Login ###
-Log in a client in order to obtain the JWT token, which could be used in subsequent requests. The token is valid for 1 hour. This SDK will refresh token before each call if it is expiring (but not expired).
-Method requires valid and non-null email and password. DeviceID is optional. // todo: what is deviceId
-```Objective-C
-[SNRClient logIn:login password:password deviceId:nil 
-	success:^(BOOL isSuccess) {
-		// successfully logged in
-	} failure:^(NSError * _Nonnull error) {
-		// error occured
-	}];
+#### `Client` `logIn:password:deviceId:success:`
+Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
+The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
+Method requires valid and non-null email and password. Device ID is optional.<br>
+
+#### `Client` `logOut`
+Signing client out causes in generating new UUID for a new anonymous one.
+
+#### `Client` `getAccountWithSuccess:failure:`
+Use this method to get client's account information.<br>
+This method pass `SNRClientAccountInformation` with success block execution.
+
+#### `Client` `updateAccount:success:failure:`
+Use this method to update client's account information.<br>
+This method pass `SNRClientUpdateAccountContext` with success block execution.
+
+#### `Client` `getTokenWithSuccess:failure:`
+Get valid JWT login token.<br>
+This method pass `NSString` token with success block execution.
+
+
+You can also provide your custom Client `Authorization Configuration`. At this moment, configuration handles `Base URL` changes.
+
+**Swift:**
+```swift
+let clientBaseURL: URL! = URL(string: "YOUR_BASE_URL")
+let clientAuthConfig: SNRClientAuthConfig = SNRClientAuthConfig(baseURL: clientBaseURL)
+SNRClient.initialize("YOUR_API_KEY", config: clientAuthConfig)
 ```
 
-### Get Account ###
-Use this method to get client's account information.
-```Objective-C
-[SNRClient getAccountWithSuccess:^(SNRClientAccountInformation * _Nonnull information) {
-	// successfully retrieved account information
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
+**Objective-C:**
+```objective-c
+NSURL *clientBaseURL = [NSURL URLWithString:@"YOUR_BASE_URL"];
+SNRClientAuthConfig *clientAuthConfig = [[SNRClientAuthConfig alloc] initWithBaseURL:clientBaseURL];
+[SNRClient initialize:@"YOUR_API_KEY" config:clientAuthConfig];
 ```
 
-### Update Account ###
-Use this method to update client's account information. Not provided fields are not modified.
-
-This methods requires `SNRClientUpdateAccountContext` object which is initialized as follows:
-```Objective-C
-SNRClientUpdateAccountContext *context = [SNRClientUpdateAccountContext new];
-context.firstName = @"firstname";
-context.lastName = @"lastname";
-context.city = @"newCity";
-```
-Execute account update:
-```Objective-C
-[SNRClient updateAccount:context success:^(BOOL isSuccess) {
-	// successfully updated client account
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
-```
-
-### Logout
-Logs out client
-```Objective-C
-[SNRClient logOut];
-```
-
-### Get token
-Retrieves currrent Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
-```Objective-C
-[SNRClient getTokenWithSuccess:^(NSString *token) {
-    // successfully retrieved client authentication token
-} failure:^(NSError * _Nonnull error) {
-    // error occured
-}];
-```
-
-### Logging ###
-This method enables/disables console logs from `SNRClient`. It is not recommended to use this debug mode in release version of your application.
-```Objective-C
-[SNRClient setLoggingEnabled:YES] // enables logging
-```
 
 ## Profile
-`SNRProfile` module is responsible for integrating with Synerise Profile API. You need to initialize SNRProfile with `[SNRClient initialize:@"<your Business Profile API key>"];`. Initialize method can be called only once during whole application lifecycle.
 
-### Create client ###
-Create a new client record if no Synerise identifier has been assigned for him before. Not provided fields are not modified.
-```Objective-C
-SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
-agreements.rfid = NO;
-agreements.push = YES;
+#### `SNRProfile` `createClient:success:failure:`
+Create a new client record if no identifier has been assigned for him before in Synerise.
+This method requires `SNRCreateClientContext`
 
-SNRCreateClientContext *context = [[SNRCreateClientContext alloc] init];
-context.email = @"test.email@example.com";
-context.agreements = agreements;
-context.sex = [SNRClientSex male];
-```
-Execute client creation:
-```Objective-C
-[SNRProfile createClient:context success:^(BOOL isSuccess) {
-	// successfully created client
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
-```
+#### `SNRProfile` `registerClient:success:failure:`
+Register new Client with email, password and optional data.
+This method requires `SNRRegisterClientContext`
 
-### Register client ###
-Register new Client with email, password and optional data. Not provided fields are not modified.
-```Objective-C
-SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
-agreements.rfid = NO;
-agreements.push = YES;
+#### `SNRProfile` `updateClient:context:success:failure:`
+Update client with ID and optional data.
+This method requires `SNRUpdateClientContext`
 
-SNRRegisterClientContext *context = [[SNRRegisterClientContext alloc] init:@"test.email2@example.com" password:@"testPass1!"];
-context.agreements = agreements;
-context.sex = [SNRClientSex male];
-```
-Execute client registration:
-```Objective-C
-[SNRProfile registerClient:context success:^(BOOL isSuccess) {
-	// successfully registered client
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
-```
+#### `SNRProfile` `deleteClient:success:failure:`
+Delete client with ID.
+This method requires client's id.
 
-### Update client ###
-Update client with provided ID and optional data.
-```Objective-C
-SNRUpdateClientContext *context = [[SNRUpdateClientContext alloc] init];
-context.firstName = @"newName";
-```
-Execute client update:
-```Objective-C
-    [SNRProfile updateClient:10 context:context success:^(BOOL isSuccess) {
-        NSLog(@"yes");
-    } failure:^(NSError * _Nonnull error) {
-        NSLog(@"noo");
-    }];
-```
+#### `SNRProfile` `resetPassword:success:failure:`
+Request client's password reset with email. Client will receive a token on provided email address in order to use Profile.confirmResetPassword(password, token).
+This method requires `SNRClientPasswordResetRequestContext`
 
-### Delete client ###
-Delete client with provided ID.
-```Objective-C
-[SNRProfile deleteClient:1000 success:^(BOOL isSuccess) {
-    // successfully deleted client
-} failure:^(NSError * _Nonnull error) {
-    // error occured
-}];
-```
+#### `SNRProfile` `confirmResetPassword:success:failure:`
+Confirm client's password reset with new password and token provided by Profile.requestPasswordReset(email).
+This method requires `SNRClientPasswordResetConfirmationContext`
 
-### Request password reset ###
-Request client's password reset with email. Client will receive a token on a provided email address in order to use `[SNRProfile confirmResetPassword:success:failure]` method.
-```Objective-C
-SNRClientPasswordResetRequestContext *context = [[SNRClientPasswordResetRequestContext alloc] init:@"test.email@example.com"];
+#### `SNRProfile` `getTokenWithSuccess:failure:` 
+Get valid JWT login token.<br>
+This method pass `NSString` token with success block execution.
 
-[SNRProfile resetPassword:context success:^(BOOL isSuccess) {
-	// successfully sent password reset request
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
-```
-
-### Confirm password reset ###
-Confirm client's password reset with new password and token provided sent in an e-mail sent by calling `[SNRProfile resetPassword:success:failure]` method;
-```Objective-C
-SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetConfirmationContext alloc] init:@"testPassword1!" token:@"token"];
-
-[SNRProfile confirmResetPassword:context success:^(BOOL isSuccess) {
-	// successfully reset password
-} failure:^(NSError * _Nonnull error) {
-	// error occured
-}];
-```
-
-### Register for push
-Registers app for push notifications in Synerise.
-```Objective-C
-[SNRProfile registerForPush:@"deviceToken/fcmToken" success:^(BOOL isSuccess) {
-    // successfully registered for push
-} failure:^(NSError * _Nonnull error) {
-    // error occured
-}];
-```
-
-### Register for push with clientId
-Registers app identified by `clientId` for push notifications in Synerise.
-```Objective-C
-[SNRProfile registerForPush:@"deviceToken/fcmToken" clientId:123 success:^(BOOL isSuccess) {
-    // successfully registered for push
-} failure:^(NSError * _Nonnull error) {
-    // error occured
-}];
-```
-
-### Get token
-Retrieves currrent Profile authentication token. This method provides valid token if Profile is correctly initialized.
-```Objective-C
-[SNRProfile getTokenWithSuccess:^(NSString *token) {
-    // successfully retrieved profile authentication token
-} failure:^(NSError * _Nonnull error) {
-    // error occured
-}];
-```
-
-### Logging ###
-This method enables/disables console logs from `SNRProfile`. It is not recommended to use this debug mode in release version of your application.
-```Objective-C
-[SNRProfile setLoggingEnabled:YES] // enables logging
-```
 
 ## Injector
 
-### Banners
+Injector is designed to be simple to develop with, allowing you to integrate Synerise Mobile Content into your apps easily.<br>
 
-To integrate handling Mobile Content banners you have to register your app for push notifications first. Incoming push notifications have to be passed to `SNRInjector`. `SNRInjector` will then handle payload and display banner if provided payload is correctly validated.
+### Configure Push Notifications
 
-If payload validation is not successful `SNRInjector` will print a console error.
+You have to run Firebase service and register for Apple Push Notifications. 
 
-#### Handling push notifications
+**Swift:**
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	FirebaseApp.configure()
+        
+	if #available(iOS 10, *) {
+		UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+		//...
+		}
 
-You have to pass incoming push notification payload to `SNRInjector`
-
-##### iOS 10 and higher
-
-`UNUserNotificationCenterDelegate`:
-
-Objective-C:
-```Objective-C
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-didReceiveNotificationResponse:(UNNotificationResponse *)response
-         withCompletionHandler:(void (^)(void))completionHandler {
-    NSDictionary *userInfo = response.notification.request.content.userInfo;
-    [SNRInjector handlePushNotification:userInfo];
-
-    // call completion handler after handling push notification
-    completionHandler();
+    } else {
+		let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+		application.registerUserNotificationSettings(settings)
+	}
+        
+	application.registerForRemoteNotifications()
 }
 
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-       willPresentNotification:(UNNotification *)notification
-         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
-    NSDictionary *userInfo = notification.request.content.userInfo;
-    [SNRInjector handlePushNotification:userInfo];
-
-    // call completion handler after handling push notification with desired UNNotificationPresentationOption
-    completionHandler(UNNotificationPresentationOption);
+func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+	let deviceTokenString: String = deviceToken.map({ String(format: "%02.2hhx", $0)}).joined()
+        
+	SNRProfile .register(forPush: deviceTokenString, success: {
+		(success) in
+		//...
+	}) {
+		(error) in
+		//...
+	}
 }
 ```
 
+**Objective-C:**
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [FIRApp configure];
+    
+    if (@available(iOS 10, *)) {
+        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+        UNAuthorizationOptions authOptions = (UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge);
+        [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            //...
+        }];
+    
+    } else {
+        UIUserNotificationType allNotificationTypes = (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    }
+    
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    //...
+    //...
+}
 
-Swift:
-```Swift
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *deviceTokenString = [deviceToken description];
+    
+    [SNRProfile registerForPush:deviceTokenString success:^(BOOL isSuccess) {
+        
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    //...
+}
+
+```
+
+
+### Handling Push Notifications
+
+**Swift:**
+```swift
+// iOS 9
+
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+	let isSyneriseNotification: Bool = SNRSynerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		SNRSynerise.handleNotification(userInfo)
+
+	} else {
+		//...
+	}
+}
+    
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+	let isSyneriseNotification: Bool = SNRSynerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		SNRSynerise.handleNotification(userInfo)
+		completionHandler(.noData)
+            
+	} else {
+		//...
+	}
+}
+    
+func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
+	let isSyneriseNotification: Bool = SNRSynerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		SNRSynerise.handleNotification(userInfo)
+		completionHandler()
+            
+	} else {
+		//...
+	}
+}
+
+// iOS 10 and above
+// MARK: UNUserNotificationCenterDelegate
+
 @available(iOS 10.0, *)
 func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-    let userInfo = response.notification.request.content.userInfo
-    SNRInjector.handlePushNotification(userInfo)
-
-    // call completion handler after handling push notification
-    completionHandler()
+	let userInfo = response.notification.request.content.userInfo
+        
+	let isSyneriseNotification: Bool = SNRSynerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		SNRSynerise.handleNotification(userInfo)
+		completionHandler()
+            
+	} else {
+		//...
+	}
 }
-
+    
 @available(iOS 10.0, *)
 func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-    let userInfo = notification.request.content.userInfo
-    SNRInjector.handlePushNotification(userInfo)
-
-    // call completion handler after handling push notification with desired UNNotificationPresentationOption
-    completionHandler(UNNotificationPresentationOptions)
+	let userInfo = notification.request.content.userInfo
+        
+	let isSyneriseNotification: Bool = SNRSynerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		SNRSynerise.handleNotification(userInfo)
+		completionHandler(UNNotificationPresentationOptions.init(rawValue: 0))
+            
+	} else {
+		//...
+	}
 }
 ```
 
-##### iOS 9
-Objective-C:
-```Objective-C
+**Objective-C:**
+```objective-c
+// iOS 9
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [SNRInjector handlePushNotification:userInfo];
+    BOOL isSyneriseNotification = [SNRSynerise isSyneriseNotification:userInfo];
+    if (isSyneriseNotification) {
+        [SNRSynerise handleNotification:userInfo];
+        
+    } else {
+        //...
+    }
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    [SNRInjector handlePushNotification:userInfo];
+    BOOL isSyneriseNotification = [SNRSynerise isSyneriseNotification:userInfo];
+    if (isSyneriseNotification) {
+        [SNRSynerise handleNotification:userInfo];
+        completionHandler(UIBackgroundFetchResultNoData);
 
-    // call completion handler after handling push notification with desired UIBackgroundFetchResult
-    completionHandler(UIBackgroundFetchResult);
+    } else {
+        //...
+    }
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void(^)())completionHandler {
+    BOOL isSyneriseNotification = [SNRSynerise isSyneriseNotification:userInfo];
+    if (isSyneriseNotification) {
+        [SNRSynerise handleNotification:userInfo];
+        completionHandler();
+    } else {
+        //...
+    }
+}
+
+
+// iOS 10 and above
+// pragma mark - UNUserNotificationCenterDelegate
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler NS_AVAILABLE_IOS(10) {
+    NSDictionary *userInfo = response.notification.request.content.userInfo;
+    
+    BOOL isSyneriseNotification = [SNRSynerise isSyneriseNotification:userInfo];
+    if (isSyneriseNotification) {
+        [SNRSynerise handleNotification:userInfo];
+        completionHandler();
+        
+    } else {
+        //...
+    }
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler NS_AVAILABLE_IOS(10) {
+    NSDictionary *userInfo = notification.request.content.userInfo;
+    
+    BOOL isSyneriseNotification = [SNRSynerise isSyneriseNotification:userInfo];
+    if (isSyneriseNotification) {
+        [SNRSynerise handleNotification:userInfo];
+        completionHandler(UNNotificationPresentationOptionNone);
+        
+    } else {
+        //...
+    }
 }
 ```
 
-Swift:
-```Swift
-func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-    SNRInjector.handlePushNotification(userInfo)
-}
 
-func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-    SNRInjector.handlePushNotification(userInfo)
 
-    // call completion handler after handling push notification with desired UIBackgroundFetchResult
-    completionHandler(UIBackgroundFetchResult)
-}
-```
+### Mobile Content integration
 
-#### Welcome Screen and Onboarding
+#### Campaign banner
+If app was invisible to user (minimized or destroyed) and campaign banner came in - Synerise SDK makes it neat and simple.
+Simple push message is presented to the user and launcher activity is fired after click on push.
+It is a prefect moment for you to pass this data and SDK will verify whether it is campaign banner
+and if so, banner will be presented within the app.
 
-Welcome Screen and Onboarding methods are called on demand.
+#### Walkthrough
+Walkthrough is called automatically during Injector initialization.<br>
+The moment SDK gets successful response with walkthrough data, activity is started (naturally atop of activities stack).<br>
+Note, that all intents to start new activities from your launcher activity are blocked in order to not cover walkthrough.
+These intents are first distincted and then launched in order they were fired after walkthrough finishes.<br>
+Note, that explained mechanism only works for support activities (extending AppCompatActivity) and it *does not* handle starting activities for result.<br>
+Moreover, walkthrough with given id may be launched only once. This id is saved locally when activity is created and will be checked whether received walkthrough is not the same.
 
-Objective-C:
-```Objective-C
-[SNRInjector showOnboardingIfPresentForBucket:@"<your bucket name>" completion:^{
-    // completion handler to be executed when onboarding has finished presenting or an error occured
-}];
+#### Welcome screen
+Welcome screen is called automatically during SDK initialization.<br>
+The moment SDK gets successful response with welcome screen data, activity is started (naturally atop of activities stack).<br>
+Note, that all intents to start new activities from your launcher activity are blocked in order to not cover welcome screen.
+These intents are first distincted and then launched in order they were fired after welcome screen finishes.<br>
+Note, that explained mechanism only works for support activities (extending AppCompatActivity) and it *does not* handle starting activities for result.<br>
+Moreover, welcome screen may be launched only once. Simple flag is saved locally when activity is created and SDK will not attempt to retrieve welcome screen from API again.
 
-[SNRInjector showWelcomeScreenIfPresentForBucket:@"<your bucket name>" completion:^{
-    // completion handler to be executed when welcome screen has finished presenting or an error occured
-}];
-```
 
-### Logging
-
-This method enables/disables console logs from `SNRInjector`. It is not recommended to use this debug mode in release version of your application.
-
-```Objective-C
-[SNRTracker setLoggingEnabled:YES]; // enables logging
-```
 
 ## Author
-
-Synerise, developer@synerise.com. If you need support please feel free and contact us.
-
-## License
-
-InjectorSDK is available under the MIT license. See the LICENSE file for more info.
+Synerise, developer@synerise.com. If you need support please feel free to contact us.
