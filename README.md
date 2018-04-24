@@ -1,4 +1,4 @@
-# Synerise iOS SDK (v3.1.64)
+# Synerise iOS SDK (v3.1.65)
 
 The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate SyneriseSDK software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com).
 
