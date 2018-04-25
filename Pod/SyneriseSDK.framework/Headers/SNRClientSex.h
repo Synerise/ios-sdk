@@ -2,10 +2,10 @@
 //  SNRClientSex.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
+NS_SWIFT_NAME(ClientSex)
 @interface SNRClientSex : NSObject <NSCopying>
 
 - (instancetype)init __unavailable;

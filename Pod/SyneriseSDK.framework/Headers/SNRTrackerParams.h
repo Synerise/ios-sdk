@@ -2,10 +2,10 @@
 //  SNRTrackerParams.h
 //  SyneriseSDK
 //
-//  Created on 20/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
+NS_SWIFT_NAME(TrackerParamsBuilder)
 @interface SNRTrackerParamsBuilder : NSObject
 
 /**
@@ -66,6 +66,8 @@
 /**
  Represents custom parameters that may be added to tracked events.
  */
+
+NS_SWIFT_NAME(TrackerParams)
 @interface SNRTrackerParams : NSObject
 
 - (nullable instancetype)init __unavailable

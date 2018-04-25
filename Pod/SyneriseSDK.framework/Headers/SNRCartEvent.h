@@ -2,26 +2,26 @@
 //  SNRCartEvent.h
 //  SyneriseSDK
 //
-//  Created on 21/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNREvent.h"
 
 @class SNRUnitPrice;
 
+NS_SWIFT_NAME(CartEvent)
 @interface SNRCartEvent : SNREvent
 
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
                                   sku:(NSString * _Nonnull)sku
                            finalPrice:(SNRUnitPrice * _Nonnull)unitPrice
                              quantity:(NSInteger)quantity
-                            andParams:(SNRTrackerParams * _Nullable)params;
+                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:sku:finalPrice:quantity:params:));
 
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
                                   sku:(NSString * _Nonnull)sku
                            finalPrice:(SNRUnitPrice * _Nonnull)unitPrice
-                             quantity:(NSInteger)quantity;
+                             quantity:(NSInteger)quantity NS_SWIFT_NAME(init(label:sku:finalPrice:quantity:));
 
 - (void)setName:(NSString * _Nonnull)name;
 - (void)setCategory:(NSString * _Nonnull)category;

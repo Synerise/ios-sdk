@@ -2,14 +2,14 @@
 //  SNRClientUpdateAccountContext.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
 
 @class SNRClientSex;
 
+NS_SWIFT_NAME(ClientUpdateAccountContext)
 @interface SNRClientUpdateAccountContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *address;

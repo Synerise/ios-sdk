@@ -2,8 +2,7 @@
 //  SNRAppearedInLocationEvent.h
 //  SyneriseSDK
 //
-//  Created on 10/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNREvent.h"
@@ -12,6 +11,8 @@
 /**
  Represents a 'client appeared in location' event.
  */
+
+NS_SWIFT_NAME(AppearedInLocationEvent)
 @interface SNRAppearedInLocationEvent : SNREvent
 
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
@@ -29,7 +30,7 @@ __attribute__((unavailable("Use initWithLabel:andLocation instead")));
  @return initialized @c SNRAppearedInLocationEvent object.
  */
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                          andLocation:(CLLocation  * _Nonnull)location;
+                          andLocation:(CLLocation  * _Nonnull)location NS_SWIFT_NAME(init(label:location:));
 
 /**
  Initializes @c SNRAppearedInLocationEvent object with provided location, label and optional @c SNRTrackerParams object;
@@ -41,6 +42,6 @@ __attribute__((unavailable("Use initWithLabel:andLocation instead")));
  */
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
                           andLocation:(CLLocation  * _Nonnull)location
-                            andParams:(SNRTrackerParams * _Nullable)params;
+                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:location:params:));
 
 @end

@@ -2,8 +2,7 @@
 //  SNRTransactionEvent.h
 //  SyneriseSDK
 //
-//  Created on 21/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNREvent.h"
@@ -14,6 +13,8 @@
 /**
  Base class for transaction related events.
  */
+
+NS_SWIFT_NAME(TransactionEvent)
 @interface SNRTransactionEvent : SNREvent
 
 - (void)setDiscountAmount:(SNRUnitPrice * _Nonnull)amount;

@@ -2,8 +2,7 @@
 //  SNRCustomEvent.h
 //  SyneriseSDK
 //
-//  Created on 10/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNREvent.h"
@@ -11,11 +10,13 @@
 /**
  Represents a custom event.
  */
+
+NS_SWIFT_NAME(CustomEvent)
 @interface SNRCustomEvent : SNREvent
 
 - (nonnull instancetype)__unavailable initWithLabel:(NSString * _Nonnull)label
-andParams:(SNRTrackerParams * _Nullable)params;
-- (nonnull instancetype)__unavailable initWithLabel:(NSString * _Nonnull)label;
+andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:params:));
+- (nonnull instancetype)__unavailable initWithLabel:(NSString * _Nonnull)label NS_SWIFT_NAME(init(label:));
 
 /**
  Initializes SNRCustomEvent object with provided label, action and parameters.
@@ -28,7 +29,7 @@ andParams:(SNRTrackerParams * _Nullable)params;
  */
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
                                action:(NSString * _Nonnull)action
-                            andParams:(SNRTrackerParams * _Nullable)params;
+                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:action:params:));
 
 /**
  Initializes SNRCustomEvent object with provided label and action.
@@ -39,6 +40,6 @@ andParams:(SNRTrackerParams * _Nullable)params;
  @return initialized @c SNREvent object.
  */
 - (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                               action:(NSString * _Nonnull)action;
+                               action:(NSString * _Nonnull)action NS_SWIFT_NAME(init(label:action:));
 
 @end

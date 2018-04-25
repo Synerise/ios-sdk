@@ -2,12 +2,12 @@
 //  SNRClientAuthConfig.h
 //  SyneriseSDK
 //
-//  Created on 04/12/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRAuthConfig.h"
 
+NS_SWIFT_NAME(ClientAuthConfig)
 @interface SNRClientAuthConfig : SNRAuthConfig
 
 - (instancetype)initWithBaseURL:(NSURL *)baseURL;
