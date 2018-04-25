@@ -2,12 +2,12 @@
 //  SNRClientAgreementsContext.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
 
+NS_SWIFT_NAME(ClientAgreementsContext)
 @interface SNRClientAgreementsContext : SNRBaseContext <NSCopying>
 
 @property (nonatomic) BOOL email;

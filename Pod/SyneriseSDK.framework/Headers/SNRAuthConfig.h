@@ -2,8 +2,7 @@
 //  SNRAuthConfig.h
 //  SyneriseSDK
 //
-//  Created on 06/12/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN

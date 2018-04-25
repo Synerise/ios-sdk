@@ -32,7 +32,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D404F3B206D345A001C4AEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DC067A4205FFCC0003B43B1 /* ViewTrackingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTrackingViewController.h; sourceTree = "<group>"; };
 		2DC067A5205FFCC0003B43B1 /* ViewTrackingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTrackingViewController.m; sourceTree = "<group>"; };
 		2DC0D8FD20794624006DEE9E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -92,7 +91,6 @@
 			children = (
 				61BC15271FE418ED000B594A /* Sample.entitlements */,
 				617D3BD71FA21D2A00AC0440 /* Info.plist */,
-				2D404F3B206D345A001C4AEA /* GoogleService-Info.plist */,
 				617D3BD81FA21D2A00AC0440 /* main.m */,
 			);
 			path = "Supporting Files";

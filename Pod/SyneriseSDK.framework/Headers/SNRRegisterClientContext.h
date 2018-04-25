@@ -2,8 +2,7 @@
 //  SNRClientRegisterContext.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
@@ -13,6 +12,8 @@
 /**
  Register context to @c [SNRClient registerClient] metod
  */
+
+NS_SWIFT_NAME(RegisterClientContext)
 @interface SNRRegisterClientContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *address;

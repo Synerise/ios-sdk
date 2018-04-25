@@ -2,14 +2,14 @@
 //  SNRClientPasswordResetConfirmationContext.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 @interface SNRClientPasswordResetConfirmationContext : SNRBaseContext
 
 @property (readonly, nonatomic, nonnull, copy) NSString *password;

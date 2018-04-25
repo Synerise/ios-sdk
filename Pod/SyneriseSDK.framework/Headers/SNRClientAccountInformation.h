@@ -2,13 +2,13 @@
 //  SNRClientAccountInformation.h
 //  SyneriseSDK
 //
-//  Created by on 04/12/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRClientSex.h"
 #import "SNRBaseContext.h"
 
+NS_SWIFT_NAME(ClientAccountInformation)
 @interface SNRClientAccountInformation : NSObject
 
 - (nonnull instancetype)init __unavailable;

@@ -2,8 +2,7 @@
 //  SNRVisitedScreenEvent.h
 //  SyneriseSDK
 //
-//  Created on 10/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNREvent.h"
@@ -13,6 +12,8 @@
 
  @note This could be used for mobile screen usage tracking.
  */
+
+NS_SWIFT_NAME(VisitedScreenEvent)
 @interface SNRVisitedScreenEvent : SNREvent
 
 @end

@@ -26,9 +26,8 @@
     if (indexPath.section == 4 && indexPath.row == 0) { [self updateClient]; }
     if (indexPath.section == 5 && indexPath.row == 0) { [self resetPassword]; }
     if (indexPath.section == 6 && indexPath.row == 0) { [self confirmResetPassword]; }
-    if (indexPath.section == 7 && indexPath.row == 0) { [self registerForPushWithClientId]; }
-    if (indexPath.section == 8 && indexPath.row == 0) { [self registerForPushWithClientUUID]; }
-    if (indexPath.section == 9 && indexPath.row == 0) { [self getProfileToken]; }
+    if (indexPath.section == 7 && indexPath.row == 0) { [self registerForPushWithClientUUID]; }
+    if (indexPath.section == 8 && indexPath.row == 0) { [self getProfileToken]; }
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -105,14 +104,6 @@
 - (void)confirmResetPassword {
     SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetConfirmationContext alloc] init:@"testPassword1!" token:@"token"];
     [SNRProfile confirmResetPassword:context success:^(BOOL isSuccess) {
-
-    } failure:^(NSError * _Nonnull error) {
-
-    }];
-}
-
-- (void)registerForPushWithClientId {
-    [SNRProfile registerForPush:@"test" clientId:123 success:^(BOOL isSuccess) {
 
     } failure:^(NSError * _Nonnull error) {
 

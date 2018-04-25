@@ -2,14 +2,14 @@
 //  SNRProfileCreateClientContext.h
 //  SyneriseSDK
 //
-//  Created on 27/11/2017.
-//  Copyright © 2017 Synerise. All rights reserved.
+//  Copyright © 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
 #import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
 
+NS_SWIFT_NAME(CreateClientContext)
 @interface SNRCreateClientContext : SNRBaseContext
 
 @property (nonatomic, nullable, copy) NSString *email;
