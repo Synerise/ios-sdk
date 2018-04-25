@@ -27,8 +27,7 @@
     if (indexPath.section == 5 && indexPath.row == 0) { [self resetPassword]; }
     if (indexPath.section == 6 && indexPath.row == 0) { [self confirmResetPassword]; }
     if (indexPath.section == 7 && indexPath.row == 0) { [self registerForPushWithClientId]; }
-    if (indexPath.section == 8 && indexPath.row == 0) { [self registerForPushWithClientUUID]; }
-    if (indexPath.section == 9 && indexPath.row == 0) { [self getProfileToken]; }
+    if (indexPath.section == 8 && indexPath.row == 0) { [self getProfileToken]; }
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
