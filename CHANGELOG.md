@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.1.72] - 2018-05-04
+
+### Changed
+- Images load before showing mobile campaign (walkthrough, banner)
+
+
 ## [3.1.71] - 2018-04-26
 
 ### Changed
