@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.1.72)
+# Synerise iOS SDK (v3.2.0)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.1.72-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.0-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -894,7 +894,8 @@ Fortunately, you can control incoming banners by implementing an optional delega
 //MARK: InjectorBannerDelegate
 
 // this method will be called when SyneriseSDK asks if it can display a banner at the moment
-func snr_shouldBannerAppear() -> Bool {
+// bannerDictionary parameter is dictionary representation of banner. If you don't want to show banner in the moment, you can return false. Then, do it later by calling Injector.showBanner(_: Dictionary, markPresented: Bool) to show banner with provided data.
+func snr_shouldBannerAppear(bannerDictionary: Dictionary) -> Bool {
 	return true
 }
 
@@ -914,7 +915,8 @@ func snr_bannerDidDisappear() {
 #pragma mark - SNRInjectorBannerDelegate
 
 // this method will be called when SyneriseSDK asks if it can display a banner at the moment
-- (BOOL)SNR_shouldBannerAppear {
+// bannerDictionary parameter is dictionary representation of banner. If you don't want to show banner in the moment, you can return NO. Then, do it later by calling [SNRInjector showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented] to show banner with provided data.
+- (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary {
     return YES;
 }
 
@@ -929,8 +931,29 @@ func snr_bannerDidDisappear() {
 }
 ```
 
+### Triggers
+
+In order to show banner immediately after certain event occuration, you can send your banners from our panel with a trigger value.
+
+First of all, calling `Injector.fetchBanners(success:failure:)` will fetch available banners and then SDK will cache valid ones. On success closure you get Array of banners in dictionary representation.
+
+This method is also called during SDK initialization, so use it only when you wish to overwrite current banners in SDK cache. `Injector.getBanners()` provides valid banners right from SDK cache.
+
+**Note**, that exact same banners are being searched for eventual campaign triggers.
+
+You can keep banners data from: 
+1. `Injector.fetchBanners(success:failure:)` - fetch available banners (SDK will refresh cache).
+2. `Injector.getBanners()` - get available banners from SDK cache.
+3. `snr_shouldBannerAppear(bannerDictionary: Dictionary)` - optional delegate method. See **Banner campaign** section above for more information.
+
+Then, call `Injector.showBanner(_: Dictionary)` to show banner immediately. In this case, delegate method `snr_shouldBannerAppear(bannerDictionary: Dictionary)` will not be called. 
+
+**Note**, that banner will appear even though your View Controller implements **SyneriseActivityNotAllowed** protocol. See **Common features** section for more information.
+
 
 ## Common features
+
+### `SyneriseActivityNotAllowed` protocol
 
 In additional, if there are View Controllers in your application that should never to be covered by Synerise activity (for example banner), you can add **SyneriseActivityNotAllowed** protocol to your class.
 
@@ -956,6 +979,9 @@ class SampleViewController: UIViewController, SyneriseActivityNotAllowed {
 
 This is it. When presented View Controller implementing that protocol, Synerise activities are skipped.
 
+### Campaign Pushes information
+
+`Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure you get Array of push notifications in dictionary representation.
 
 
 # Author
