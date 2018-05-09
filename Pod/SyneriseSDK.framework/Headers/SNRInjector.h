@@ -53,8 +53,10 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 /**
  * This method will be called when Banner has been loaded and SyneriseSDK asks for permission to show it.
+ *
+ * @param bannerDictionary is banner instance representation.
  */
-- (BOOL)SNR_shouldBannerAppear NS_SWIFT_NAME(snr_shouldBannerAppear());
+- (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
 /**
  * This method will be called when Banner has been appeared.
@@ -138,6 +140,29 @@ NS_ASSUME_NONNULL_BEGIN
  * Checks that Walkthrough is unique than previous one.
  */
 + (BOOL)isLoadedWalkthroughUnique;
+
+/**
+ * This method provides valid banners right from SDK cache.
+ */
++ (NSArray*)getBanners;
+
+/**
+ * This method fetches banners set for mobile campaigns and caches valid ones.
+ *
+ */
++ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
+
+/**
+ * This method fetches Push Notifications set for mobile campaigns.
+ */
++ (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
+
+/**
+ * Show banner immediately.
+ *
+ * @param markPresented sets banner as presented and this banner instance representation will notappear second time.
+ */
++ (void)showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));
 
 NS_ASSUME_NONNULL_END
 
