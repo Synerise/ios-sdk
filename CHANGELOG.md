@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.0] - 2018-05-09
+
+### Added
+- Preloading campaign banners
+- Preloaded campaign banners can be triggered by events
+
+### Changed
+- Banner optional delegate methods
+
+
 ## [3.1.72] - 2018-05-04
 
 ### Changed
