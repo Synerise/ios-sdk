@@ -235,7 +235,7 @@ static NSString * const kClientApiKey = @"YOUR_API_KEY";
 #pragma mark - SNRInjectorBannerDelegate
 
 // this method will be called when SyneriseSDK asks if it can display a banner at the moment
-- (BOOL)SNR_shouldBannerAppear {
+- (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary {
     return YES;
 }
 
