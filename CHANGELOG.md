@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.1] - 2018-05-10
+
+### Changed
+- property type 'clientId' changed from NSInteger to NSNumber in SNRCreateClientContext model
+- property type 'birthDate' changed from NSDate to NSString in few models: SNRClientAccountInformation, SNRClientUpdateAccountContext, SNRUpdateClientContext, SNRCreateClientContext
+
+
 ## [3.2.0] - 2018-05-09
 
 ### Added

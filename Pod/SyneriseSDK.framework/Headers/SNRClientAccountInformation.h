@@ -15,7 +15,7 @@ NS_SWIFT_NAME(ClientAccountInformation)
 + (nonnull instancetype)new __unavailable;
 
 @property (nonatomic, nullable, copy) NSString *address;
-@property (nonatomic, nullable, copy) NSDate *birthDate;
+@property (nonatomic, nullable, copy) NSString *birthDate;
 @property (nonatomic, nullable, copy) NSString *city;
 @property (nonatomic, nullable, copy) NSString *company;
 @property (nonatomic, nullable, copy) NSString *countryCode;

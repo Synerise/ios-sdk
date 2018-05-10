@@ -20,7 +20,7 @@ NS_SWIFT_NAME(CreateClientContext)
 @property (nonatomic, nullable, copy) NSString *displayName;
 @property (nonatomic, nullable, copy) NSUUID *uuid;
 @property (nonatomic, nullable, copy) NSURL *avatarUrl;
-@property (nonatomic, nullable, copy) NSDate *birthDate;
+@property (nonatomic, nullable, copy) NSString *birthDate;
 @property (nonatomic, nullable, copy) NSString *company;
 @property (nonatomic, nullable, copy) NSString *city;
 @property (nonatomic, nullable, copy) NSString *address;
