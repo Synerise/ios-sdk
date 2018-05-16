@@ -60,6 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
  * @param deviceId deviceId.
  * @param success success block.
  * @param failure failure block.
+ *
+ * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
+ * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
  */
 + (void)logIn:(NSString *)email
      password:(NSString *)password

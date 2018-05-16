@@ -7,6 +7,7 @@
 
 @class UIDevice;
 
+@class SNRClientProfileContext;
 @class SNRUpdateClientContext;
 @class SNRCreateClientContext;
 @class SNRRegisterClientContext;
@@ -42,6 +43,21 @@ NS_ASSUME_NONNULL_BEGIN
  * @param apiKey Synerise API Key.
  */
 + (void)initialize:(NSString *)apiKey;
+
+/**
+ * Get client with email.
+ * Note, that you have to be logged in as business profile and use Api Key, which has REALM_CLIENT scope assigned
+ * or you have to be logged in as user and have ROLE_CLIENT_SHOW role assigned.
+ *
+ * @param clientEmail - client’s email
+ * @param success success block.
+ * @param failure failure block.
+ *
+ * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
+ */
++ (void)getClient:(NSString*)clientEmail
+                 success:(nullable void (^)(SNRClientProfileContext * profile))success
+                 failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Creates a new client record if no identifier has been assigned for him before in Synerise.

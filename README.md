@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.1)
+# Synerise iOS SDK (v3.2.2)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.1-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.2-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -721,6 +721,7 @@ This method pass `SNRClientUpdateAccountContext` with success block execution.
 Get valid JWT login token.<br>
 This method pass token with success block execution.
 
+Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Sample App).
 
 ## Custom authorization configuration
 
@@ -745,6 +746,9 @@ SNRClientAuthConfig *clientAuthConfig = [[SNRClientAuthConfig alloc] initWithBas
 # Profile
 
 ## Features
+
+#### `Profile.getClient:success:failure:`
+Get client profile information with email.
 
 #### `Profile.createClient:success:failure:`
 Create a new client record if no identifier has been assigned for him before in Synerise.
@@ -774,6 +778,7 @@ This method requires `ClientPasswordResetConfirmationContext`
 Get valid JWT login token.
 This method pass token with success block execution.
 
+Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Profile.getClient:success:failure:`. Use try/catch in some operations (see Sample App).
 
 
 # Injector
