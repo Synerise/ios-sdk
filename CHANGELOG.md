@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.2] - 2018-05-16
+
+### Added
+- validation for email, password, birthdate, phone number in SDK methods (SDK throws exceptions)
+- new method for fetching client profile information: Profile.getClient() 
+
+
 ## [3.2.1] - 2018-05-10
 
 ### Changed
