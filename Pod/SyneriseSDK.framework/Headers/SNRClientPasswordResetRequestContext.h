@@ -17,6 +17,9 @@ NS_SWIFT_NAME(ClientPasswordResetRequestContext)
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
 
+/**
+ * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
+ */
 - (instancetype)init:(NSString *)email;
 
 @end
