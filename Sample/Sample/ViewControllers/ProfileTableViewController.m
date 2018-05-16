@@ -34,43 +34,55 @@
 
 #pragma mark - Profile SDK methods
 - (void)createClient {
-    NSString *login = _emailTextField.text;
+    @try {
+        NSString *login = _emailTextField.text;
     
-    SNRCreateClientContext *context = [[SNRCreateClientContext alloc] init];
+        SNRCreateClientContext *context = [[SNRCreateClientContext alloc] init];
 
-    SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
-    agreements.rfid = NO;
-    agreements.push = YES;
+        SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
+        agreements.rfid = NO;
+        agreements.push = YES;
 
-    context.email = login;
-    context.agreements = agreements;
-    context.sex = [SNRClientSex male];
+        context.email = login;
+        context.agreements = agreements;
+        context.sex = [SNRClientSex male];
 
-    [SNRProfile createClient:context success:^(BOOL isSuccess) {
+        [SNRProfile createClient:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {}
 }
 
 - (void)registerClient {
-    NSString *login = _emailTextField.text;
-    NSString *password = _passwordTextField.text;
+    @try {
+        NSString *login = _emailTextField.text;
+        NSString *password = _passwordTextField.text;
     
-    SNRRegisterClientContext *context = [[SNRRegisterClientContext alloc] init:login password:password];
-    SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
-    agreements.rfid = NO;
-    agreements.push = YES;
+        SNRRegisterClientContext *context = [[SNRRegisterClientContext alloc] init:login password:password];
+        SNRClientAgreementsContext *agreements = [SNRClientAgreementsContext new];
+        agreements.rfid = NO;
+        agreements.push = YES;
 
-    context.agreements = agreements;
-    context.password = password;
-    context.phone = @"123123123";
+        context.agreements = agreements;
+        context.password = password;
+        context.phone = @"123123123";
 
-    [SNRProfile registerClient:context success:^(BOOL isSuccess) {
+        [SNRProfile registerClient:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {}
 }
 
 - (void)deleteClient {
@@ -82,32 +94,50 @@
 }
 
 - (void)updateClient {
-    SNRUpdateClientContext *context = [[SNRUpdateClientContext alloc] init];
-    context.email = @"invalid_email.";
+    @try {
+        SNRUpdateClientContext *context = [[SNRUpdateClientContext alloc] init];
+        context.email = @"invalid_email.";
 
-    [SNRProfile updateClient:10 context:context success:^(BOOL isSuccess) {
+        [SNRProfile updateClient:10 context:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {}
 }
 
 - (void)resetPassword {
-    SNRClientPasswordResetRequestContext *context = [[SNRClientPasswordResetRequestContext alloc] init:@"test.email@example.com"];
-    [SNRProfile resetPassword:context success:^(BOOL isSuccess) {
+    @try {
+        SNRClientPasswordResetRequestContext *context = [[SNRClientPasswordResetRequestContext alloc] init:@"test.email@example.com"];
+        [SNRProfile resetPassword:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+
+    }
+    @finally {}
 }
 
 - (void)confirmResetPassword {
-    SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetConfirmationContext alloc] init:@"testPassword1!" token:@"token"];
-    [SNRProfile confirmResetPassword:context success:^(BOOL isSuccess) {
+    @try {
+        SNRClientPasswordResetConfirmationContext *context = [[SNRClientPasswordResetConfirmationContext alloc] init:@"testPassword1!" token:@"token"];
+        [SNRProfile confirmResetPassword:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {}
 }
 
 - (void)registerForPushWithClientUUID {

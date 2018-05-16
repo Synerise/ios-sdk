@@ -31,13 +31,19 @@
 
 #pragma mark - Client SDK methods
 - (void)loginClient {
-    NSString *login = _emailTextField.text;
-    NSString *password = _passwordTextField.text;
-    [SNRClient logIn:login password:password deviceId:nil success:^(BOOL isSuccess) {
+    @try {
+        NSString *login = _emailTextField.text;
+        NSString *password = _passwordTextField.text;
+        [SNRClient logIn:login password:password deviceId:nil success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+
+    }
+    @finally {}
 }
 
 - (void)getClientAccount {
@@ -49,14 +55,20 @@
 }
 
 - (void)updateClientAccount {
-    SNRClientUpdateAccountContext *context = [SNRClientUpdateAccountContext new];
-    context.firstName = @"firstname";
+    @try {
+        SNRClientUpdateAccountContext *context = [SNRClientUpdateAccountContext new];
+        context.firstName = @"firstname";
 
-    [SNRClient updateAccount:context success:^(BOOL isSuccess) {
+        [SNRClient updateAccount:context success:^(BOOL isSuccess) {
 
-    } failure:^(NSError * _Nonnull error) {
+        } failure:^(NSError * _Nonnull error) {
 
-    }];
+        }];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {}
 }
 
 - (void)getClientToken {
