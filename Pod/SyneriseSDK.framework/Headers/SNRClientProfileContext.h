@@ -9,6 +9,7 @@
 #import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
 
+NS_SWIFT_NAME(ClientProfileContext)
 @interface SNRClientProfileContext : SNRBaseContext
 
 - (nonnull instancetype)init __unavailable;

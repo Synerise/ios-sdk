@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.4] - 2018-05-16
+
+### Changed
+- Swift naming convenction for some classes
+
 ## [3.2.3] - 2018-05-16
 
 ### Fixed
