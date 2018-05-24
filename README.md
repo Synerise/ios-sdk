@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.4)
+# Synerise iOS SDK (v3.2.5)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.4-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.5-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -706,6 +706,11 @@ Sign in a client in order to obtain the JWT token, which could be used in subseq
 The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
 Method requires valid and non-null email and password. Device ID is optional.<br>
 
+#### `Client.login(phone:password:deviceId:success:)`
+Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
+The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
+Method requires valid and non-null email and password. Device ID is optional.<br>
+
 #### `Client.logOut()`
 Signing client out causes in generating new UUID for a new anonymous one.
 
@@ -755,8 +760,11 @@ Create a new client record if no identifier has been assigned for him before in 
 This method requires `CreateClientContext`
 
 #### `Profile.registerClient(success:failure:)`
-Register new Client with email, password and optional data.
+Register new Client with email or phone (depending on context model), password and optional data.
 This method requires `RegisterClientContext`
+
+#### `Client.confirmAccount(phone:confirmationCode:success:failure:)`
+Confirm client's account with confirmation code received by phone.
 
 #### `Profile.updateClient(context:success:failure:)`
 Update client with ID and optional data.

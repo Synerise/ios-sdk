@@ -68,7 +68,28 @@ NS_ASSUME_NONNULL_BEGIN
      password:(NSString *)password
      deviceId:(NSString * _Nullable)deviceId
       success:(nullable void (^)(BOOL isSuccess))success
-      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(email:password:deviceId:sucess:failure:));
+      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(email:password:deviceId:success:failure:));
+
+/**
+ * Log in a client in order to obtain the JWT token, which could be used in subsequent requests. The token is valid for 1 hour.
+ * This SDK will refresh token before each call if it is expiring (but not expired).
+ * Please note that you should NOT allow to sign in again (or sign up) when user is already signed in. Please sign out user first.
+ * Moreover, please do not create multiple instances nor call this method multiple times before execution.
+ *
+ * @param phone client's phone.
+ * @param password client's password.
+ * @param deviceId deviceId.
+ * @param success success block.
+ * @param failure failure block.
+ *
+ * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ */
++ (void)logInWithPhone:(NSString *)phone
+     password:(NSString *)password
+     deviceId:(NSString * _Nullable)deviceId
+      success:(nullable void (^)(BOOL isSuccess))success
+      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(phone:password:deviceId:success:failure:));
 
 /**
  * Logs out client.
