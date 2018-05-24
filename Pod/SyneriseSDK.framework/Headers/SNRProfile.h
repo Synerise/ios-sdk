@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
              failure:(nullable void (^)(NSError *error))failure;
 
 /**
- * Registers new Client with email, password and optional data.
+ * Registers new Client with email or phone (depending on context model), password and optional data.
  * Please note that you should NOT allow to sign in again (or sign up) when user is already signed in. Please sign out user first.
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
@@ -82,6 +82,21 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)registerClient:(SNRRegisterClientContext *)context
                success:(nullable void (^)(BOOL isSuccess))success
                failure:(nullable void (^)(NSError *error))failure;
+
+/**
+ * Confirm account with confirmation code received by phone.
+ *
+ * @param phone client's phone.
+ * @param confirmationCode client's confirmation code received by phone.
+ * @param success success block.
+ * @param failure failure block.
+ *
+ * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ */
++ (void)confirmAccountWithPhone:(NSString *)phone
+               confirmationCode:(NSString*)confirmationCode
+                        success:(nullable void (^)(BOOL isSuccess))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
 
 /**
  * Updates client with id and optional data.

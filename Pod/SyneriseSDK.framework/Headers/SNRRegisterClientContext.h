@@ -10,6 +10,14 @@
 #import "SNRClientSex.h"
 
 /**
+ * @enum SNRRegisterClientContextRegistrationType
+ */
+typedef NS_ENUM(NSInteger, SNRRegisterClientContextRegistrationType) {
+    SNRRegisterClientContextRegistrationTypeByEmail,
+    SNRRegisterClientContextRegistrationTypeByPhone
+} NS_SWIFT_NAME(RegistrationType);
+
+/**
  Register context to @c [SNRClient registerClient] metod
  */
 
@@ -33,7 +41,7 @@ NS_SWIFT_NAME(RegisterClientContext)
 // Country code, e.g. "pl" (ISO  nullable,3166-1 alpha-2)
 @property (nonatomic, nullable, copy) NSString *countryCode;
 @property (nonatomic, nullable, copy) NSString *customId;
-@property (nonatomic, nonnull, copy) NSString *email;
+@property (nonatomic, nullable, copy) NSString *email;
 @property (nonatomic, nullable, copy) NSString *firstName;
 @property (nonatomic, nullable, copy) NSString *lastName;
 @property (nonatomic, nonnull, copy) NSString *password;
@@ -43,6 +51,8 @@ NS_SWIFT_NAME(RegisterClientContext)
 @property (nonatomic, nullable, copy) NSString *tags;
 @property (nonatomic, nullable, copy) NSString *zipCode;
 
+@property (nonatomic, assign) SNRRegisterClientContextRegistrationType registrationType;
+
 - (nullable instancetype)init __unavailable;
 + (nullable instancetype)new __unavailable;
 
@@ -51,6 +61,13 @@ NS_SWIFT_NAME(RegisterClientContext)
  * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
  */
 - (nonnull instancetype)init:(NSString * _Nonnull)email
+                    password:(NSString * _Nonnull)password;
+
+/**
+ * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ */
+- (nonnull instancetype)initWithPhoneNumber:(NSString * _Nonnull)phoneNumber
                     password:(NSString * _Nonnull)password;
 
 @end
