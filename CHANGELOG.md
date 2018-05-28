@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.7] - 2018-05-28
+
+### Changed
+- Default settings for event sending.
+
+
 ## [3.2.6] - 2018-05-24
 
 ### Changed
