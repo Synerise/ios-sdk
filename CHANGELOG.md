@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.8] - 2018-05-29
+
+### Added
+- Configuration options for Tracker.
+
+### Changed
+- clientId in Tracker is String object by now.
+
+
 ## [3.2.7] - 2018-05-28
 
 ### Changed

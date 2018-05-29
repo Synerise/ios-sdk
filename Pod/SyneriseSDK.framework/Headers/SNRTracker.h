@@ -7,6 +7,27 @@
 
 @class SNREvent;
 
+typedef struct {
+    //This parameter sets minimum number of events in queue required to send them.
+    //Note, that adding any event to queue runs auto flush, so even queue with less than minimum number of required events will attempt to be sent.
+    //
+    //Minimum batch size is 10 by default.
+    NSInteger minBathSize;
+    
+    //This parameter sets maximum number of events, which may be sent in a single batch.
+    //
+    //Maximum batch size is 100 by default.
+    NSInteger maxBathSize;
+    
+    //This parameter sets time required to elapse before event's queue will attempt to be sent.
+    //Please provide your timeout in millis and by default timeout equals 5 seconds.
+    //Note, that adding any event to queue runs auto flush, so even queue with less than minimum number of required events will attempt to be sent.
+    //
+    //Auto Flush Timeout is 5 seconds by default.
+    NSTimeInterval autoFlushTimeout;
+    
+} SNRTrackerConfiguration NS_SWIFT_NAME(TrackerConfiguration);
+
 typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
     
     /// Autotracking is set to on touch events only.
@@ -54,13 +75,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)initialize:(NSString *)apiKey;
 
 /**
- * Sets clientId of tracked user.
+ * Sets configuration of tracker
  *
- * @note Synerise Client ID may be obtained after integration with Synerise API.
- *
- * @param clientId of tracker user.
+ * @param configuration of tracker.
  */
-+ (void)setClientId:(NSNumber * _Nullable)clientId;
++ (void)setConfiguration:(SNRTrackerConfiguration)configuration;
 
 /**
  * Sets mode of AutoTrack.
@@ -70,6 +89,15 @@ NS_ASSUME_NONNULL_BEGIN
  * @param mode of AutoTrack functionality.
  */
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
+
+/**
+ * Sets clientId of tracked user.
+ *
+ * @note Synerise Client ID may be obtained after integration with Synerise API.
+ *
+ * @param clientId of tracker user.
+ */
++ (void)setClientId:(NSString * _Nullable)clientId;
 
 /**
  * Adds new event to queue and sends available events to server if possible.
