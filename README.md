@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.8)
+# Synerise iOS SDK (v3.2.9)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.8-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.9-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -550,6 +550,35 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 
 Synerise SDK provides you with powerful features for User Activity Tracking that you can use within your mobile application.
 
+## Tracker Configuration
+
+**Swift:**
+```swift
+var trackerConfiguration: TrackerConfiguration = TrackerConfiguration();
+trackerConfiguration.minBathSize = 1;
+trackerConfiguration.maxBathSize = 100;
+trackerConfiguration.autoFlushTimeout = 2.0;
+    
+[Tracker setConfiguration:trackerConfiguration];
+```
+
+**Objective-C:**
+```objective-c
+SNRTrackerConfiguration trackerConfiguration;
+trackerConfiguration.minBathSize = 1;
+trackerConfiguration.maxBathSize = 100;
+trackerConfiguration.autoFlushTimeout = 2.0f;
+    
+[SNRTracker setConfiguration:trackerConfiguration];
+```
+
+**MIN BATH SIZE** - This parameter sets minimum number of events in queue required to send them.
+
+**MAX BATH SIZE** - This parameter sets maximum number of events, which may be sent in a single batch.
+
+**AUTO FLUSH TIMEOUT** - This parameter sets time required to elapse before event's queue will attempt to be sent.
+
+
 ## View tracking
 
 Auto-tracking is functionality available in SyneriseSDK that can attach to nearly everything within your application and log events automatically that you can then make use of within Synerise.
@@ -692,12 +721,35 @@ This is the only event which requires `action` field.
 #### `Tracker.flushEvents()` and `Tracker.flushEvents(completionHandler:)`
 Flush method forces sending events from queue to server.
 
-#### `Tracker.setClientId(id)`
-Synerise Client ID may be obtained after integration with Synerise API.
+#### `Tracker.setCustomIdentifier(customIdentifier)`
+Sets your custom identifier that will be sent within every event in event params.
 
+#### `Tracker.setCustomEmail(customEmail)`
+Sets your custom email that will be sent within every event in event params.
 
 
 # Client
+
+## Client Configuration
+
+**Swift:**
+```swift
+var clientConfiguration: ClientConfiguration = ClientConfiguration();
+clientConfiguration.autoClientRefresh = true;
+    
+[Client setConfiguration:clientConfiguration];
+```
+
+**Objective-C:**
+```objective-c
+SNRClientConfiguration clientConfiguration;
+clientConfiguration.autoClientRefresh = YES;
+    
+[SNRClient setConfiguration:clientConfiguration];
+```
+
+**AUTO CLIENT REFRESH** - Enables automatic client's token refresh.
+
 
 ## Features
 
