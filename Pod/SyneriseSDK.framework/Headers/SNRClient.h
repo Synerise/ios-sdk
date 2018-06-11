@@ -9,6 +9,17 @@
 @class SNRClientAccountInformation;
 @class SNRClientAuthConfig;
 
+typedef struct {
+    //Enables automatic client's token refresh.
+    //By default, client's token is valid for one hour. Synerise SDK will refresh this token when it is expiring (not expired).
+    //Enabling this feature causes in saving user's password internally within SDK! Password is obviously stored encrypted.
+    //Note, that business profile's token will always be refreshed automatically, even when it is expired.
+    //
+    //It is disabled by default.
+    BOOL autoClientRefresh;
+    
+} SNRClientConfiguration NS_SWIFT_NAME(ClientConfiguration);
+
 /**
  * SNRClient is responsible for tracking various SNREvents.
  */
@@ -48,6 +59,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)initialize:(NSString * _Nonnull)apiKey
             config:(SNRClientAuthConfig * _Nonnull)config;
+
+/**
+ * Sets configuration of client
+ *
+ * @param configuration of client.
+ */
++ (void)setConfiguration:(SNRClientConfiguration)configuration;
 
 /**
  * Log in a client in order to obtain the JWT token, which could be used in subsequent requests. The token is valid for 1 hour.

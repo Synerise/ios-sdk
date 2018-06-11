@@ -91,13 +91,18 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
 
 /**
- * Sets clientId of tracked user.
+ * Your custom identifier will be sent within every event in event params.
  *
- * @note Synerise Client ID may be obtained after integration with Synerise API.
- *
- * @param clientId of tracker user.
+ * @param customIdentifier Client's custom identifier
  */
-+ (void)setClientId:(NSString * _Nullable)clientId;
++ (void)setCustomIdentifier:(NSString * _Nullable)customIdentifier;
+
+/**
+ * Your custom email will be sent within every event in event params.
+ *
+ * @param customEmail Client's email
+ */
++ (void)setCustomEmail:(NSString * _Nullable)customEmail;
 
 /**
  * Adds new event to queue and sends available events to server if possible.

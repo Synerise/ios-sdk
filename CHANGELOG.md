@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.9] - 2018-06-11
+
+### Added
+- Configuration options for Client (client auto refresh).
+- Option to auto refresh client's login.
+- Method to set client's email for Tracker.
+
+### Changed
+- Method to set client identifier in Tracker.
+- Improvement in SDK logging (framework version information added).
+
 ## [3.2.8] - 2018-05-29
 
 ### Added
