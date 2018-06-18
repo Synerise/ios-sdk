@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.9)
+# Synerise iOS SDK (v3.2.10)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.9-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.10-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -777,6 +777,15 @@ This method pass `SNRClientUpdateAccountContext` with success block execution.
 #### `Client.getToken(success:failure:)`
 Get valid JWT login token.<br>
 This method pass token with success block execution.
+
+#### `Client.isSignedIn()`
+Retrieve whether client is signed in (is client's token not expired).<br>
+
+#### `Client.getAnalytics(success:failure:)`
+Get all available Analytics metrics for the client.<br>
+
+#### `Client.getAnalytics(name:success:failure:)`
+Fetch all available Analytics metrics for the client and return the first metric, which matches provided name<br>
 
 Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Sample App).
 

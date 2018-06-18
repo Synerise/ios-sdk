@@ -124,6 +124,27 @@ NS_ASSUME_NONNULL_BEGIN
                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
 
 /**
+ * Get all available Analytics metrics for the client.
+ * Please note that in order to use this method, Client must be signed in first.
+ *
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getAnalyticsWithSuccess:(nullable void (^)(NSArray *analyticsMetrics))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(success:failure:));
+
+/**
+ * Fetch all available Analytics metrics for the client and return the first metric, which matches provided name.
+ * Please note that in order to use this method, Client must be signed in first.
+ *
+ * @param name metrics data's name to filter through all available metrics.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getAnalyticsWithName:(NSString*)name success:(nullable void (^)(NSArray *analyticsMetrics))success
+                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(name:success:failure:));
+
+/**
  * Update client's account information with optional data.
  *
  * @param context object with client's account information to be modified.
@@ -142,6 +163,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
                     failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
+
+/**
+ * Retrieve whether client is signed in (is client's token not expired).
+ */
++ (BOOL)isSignedIn;
 
 NS_ASSUME_NONNULL_END
 

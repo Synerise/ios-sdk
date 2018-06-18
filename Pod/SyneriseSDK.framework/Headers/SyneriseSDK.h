@@ -47,4 +47,5 @@
 #import <SyneriseSDK/SNRClientAgreementsContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
+#import <SyneriseSDK/SNRAnalyticsMetrics.h>
 #import <SyneriseSDK/SNRClientSex.h>

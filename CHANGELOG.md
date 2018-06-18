@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.10] - 2018-06-18
+
+### Added
+- Added analytic matrics support.
+- Method to check client is signed in.
+
 ## [3.2.9] - 2018-06-11
 
 ### Added
