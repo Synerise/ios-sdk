@@ -24,10 +24,10 @@ typedef struct {
  * SNRClient is responsible for tracking various SNREvents.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(Client)
 @interface SNRClient : NSObject
-
-NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param apiKey Synerise API Key.
  */
-+ (void)initialize:(NSString * _Nonnull)apiKey;
++ (void)initialize:(nonnull NSString *)apiKey;
 
 /**
  * Initializes SNRClient module.
@@ -57,8 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param apiKey Synerise API Key.
  * @param config Custom configuration for Synerise Client Authorization API.
  */
-+ (void)initialize:(NSString * _Nonnull)apiKey
-            config:(SNRClientAuthConfig * _Nonnull)config;
++ (void)initialize:(nonnull NSString *)apiKey config:(nonnull SNRClientAuthConfig *)config;
 
 /**
  * Sets configuration of client
@@ -82,11 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
  * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
  */
-+ (void)logIn:(NSString *)email
-     password:(NSString *)password
-     deviceId:(NSString * _Nullable)deviceId
-      success:(nullable void (^)(BOOL isSuccess))success
-      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(email:password:deviceId:success:failure:));
++ (void)logIn:(NSString *)email password:(NSString *)password deviceId:(nullable NSString *)deviceId success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(email:password:deviceId:success:failure:));
 
 /**
  * Log in a client in order to obtain the JWT token, which could be used in subsequent requests. The token is valid for 1 hour.
@@ -103,11 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
  * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
  */
-+ (void)logInWithPhone:(NSString *)phone
-     password:(NSString *)password
-     deviceId:(NSString * _Nullable)deviceId
-      success:(nullable void (^)(BOOL isSuccess))success
-      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(phone:password:deviceId:success:failure:));
++ (void)logInWithPhone:(NSString *)phone password:(NSString *)password deviceId:(nullable NSString *)deviceId success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(phone:password:deviceId:success:failure:));
 
 /**
  * Logs out client.
@@ -120,8 +111,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success success block.
  * @param failure failure block.
  */
-+ (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation * information))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
++ (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation * information))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
 
 /**
  * Get all available Analytics metrics for the client.
@@ -130,8 +120,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success success block.
  * @param failure failure block.
  */
-+ (void)getAnalyticsWithSuccess:(nullable void (^)(NSArray *analyticsMetrics))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(success:failure:));
++ (void)getAnalyticsWithSuccess:(nullable void (^)(NSArray *analyticsMetrics))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(success:failure:));
 
 /**
  * Fetch all available Analytics metrics for the client and return the first metric, which matches provided name.
@@ -141,8 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success success block.
  * @param failure failure block.
  */
-+ (void)getAnalyticsWithName:(NSString*)name success:(nullable void (^)(NSArray *analyticsMetrics))success
-                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(name:success:failure:));
++ (void)getAnalyticsWithName:(NSString*)name success:(nullable void (^)(NSArray *analyticsMetrics))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(name:success:failure:));
 
 /**
  * Update client's account information with optional data.
@@ -151,8 +139,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success success block.
  * @param failure failure block.
  */
-+ (void)updateAccount:(SNRClientUpdateAccountContext *)context
-              success:(nullable void (^)(BOOL isSuccess))success
++ (void)updateAccount:(SNRClientUpdateAccountContext *)context success:(nullable void (^)(BOOL isSuccess))success
               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
 
 /**
@@ -161,14 +148,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Client authentication token.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
-                    failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
++ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
 
 /**
  * Retrieve whether client is signed in (is client's token not expired).
  */
 + (BOOL)isSignedIn;
 
-NS_ASSUME_NONNULL_END
-
 @end
+
+NS_ASSUME_NONNULL_END

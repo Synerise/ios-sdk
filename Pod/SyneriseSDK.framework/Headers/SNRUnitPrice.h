@@ -27,6 +27,6 @@ NS_SWIFT_NAME(UnitPrice)
 
  @note This method will throw @c NSInvalidArgumentException if invalid Locale objects is provided.
  */
-- (nonnull instancetype)initWithAmount:(float)amount locale:(NSLocale * _Nonnull)locale;
+- (nonnull instancetype)initWithAmount:(float)amount locale:(nonnull NSLocale *)locale;
 
 @end

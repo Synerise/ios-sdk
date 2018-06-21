@@ -1,11 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.11] - 2018-06-21
+
+### Fixed
+- Profile.deleteClient
+
+
 ## [3.2.10] - 2018-06-18
 
 ### Added
 - Added analytic matrics support.
 - Method to check client is signed in.
+
 
 ## [3.2.9] - 2018-06-11
 
@@ -17,6 +24,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Method to set client identifier in Tracker.
 - Improvement in SDK logging (framework version information added).
+
 
 ## [3.2.8] - 2018-05-29
 
@@ -98,6 +106,7 @@ All notable changes to this project will be documented in this file.
 
 
 ## [3.1.70] - 2018-04-25
+
 ### Added
 - Injector starts automatically or manually.
 - Walkthrough optional delegate methods.

@@ -12,6 +12,7 @@
  *
  * Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
  */
+
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 @protocol SNRInjectorWalkthroughDelegate
 
@@ -25,7 +26,7 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 /**
  * This method will be called when an error occured while Walkthrough loading.
  */
-- (void)SNR_walkthroughLoadingError:(NSError* _Nonnull)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
+- (void)SNR_walkthroughLoadingError:(nonnull NSError*)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
 
 /**
  * This method will be called when Walkthrough has been appeared.
@@ -39,13 +40,13 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 
 @end
 
-
 /**
  * A protocol to handle events from Injector for banner campaigns.
  *
  * It is not always suitable for you to cover your Activities with any banners which may come.
  * Fortunately, we have put this into deep consideration and as for now, we'd like to present our optional banner delegate methods.
  */
+
 NS_SWIFT_NAME(InjectorBannerDelegate)
 @protocol SNRInjectorBannerDelegate
 
@@ -70,14 +71,14 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 @end
 
-
 /**
-* SNRInjector is responsible for intergration with Synerise mobile content methods.
-*/
-NS_SWIFT_NAME(Injector)
-@interface SNRInjector : NSObject
+ * SNRInjector is responsible for intergration with Synerise mobile content methods.
+ */
 
 NS_ASSUME_NONNULL_BEGIN
+
+NS_SWIFT_NAME(Injector)
+@interface SNRInjector : NSObject
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
@@ -164,6 +165,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));
 
+@end
+
 NS_ASSUME_NONNULL_END
 
-@end

@@ -18,10 +18,10 @@
  * SNRProfile is responsible for integration with Synerise profile methods.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(Profile)
 @interface SNRProfile : NSObject
-
-NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
@@ -55,9 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
  */
-+ (void)getClient:(NSString*)clientEmail
-                 success:(nullable void (^)(SNRClientProfileContext * profile))success
-                 failure:(nullable void (^)(NSError *error))failure;
++ (void)getClient:(NSString*)clientEmail success:(nullable void (^)(SNRClientProfileContext * profile))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Creates a new client record if no identifier has been assigned for him before in Synerise.
@@ -66,9 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)createClient:(SNRCreateClientContext *)context
-             success:(nullable void (^)(BOOL isSuccess))success
-             failure:(nullable void (^)(NSError *error))failure;
++ (void)createClient:(SNRCreateClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Registers new Client with email or phone (depending on context model), password and optional data.
@@ -79,9 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)registerClient:(SNRRegisterClientContext *)context
-               success:(nullable void (^)(BOOL isSuccess))success
-               failure:(nullable void (^)(NSError *error))failure;
++ (void)registerClient:(SNRRegisterClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Confirm account with confirmation code received by phone.
@@ -93,10 +87,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
  */
-+ (void)confirmAccountWithPhone:(NSString *)phone
-               confirmationCode:(NSString*)confirmationCode
-                        success:(nullable void (^)(BOOL isSuccess))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
++ (void)confirmAccountWithPhone:(NSString *)phone confirmationCode:(NSString*)confirmationCode success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
 
 /**
  * Updates client with id and optional data.
@@ -106,10 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)updateClient:(NSInteger)clientId
-             context:(SNRUpdateClientContext *)context
-             success:(nullable void (^)(BOOL isSuccess))success
-             failure:(nullable void (^)(NSError *error))failure;
++ (void)updateClient:(NSInteger)clientId context:(SNRUpdateClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Deletes client with provided id
@@ -118,9 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)deleteClient:(NSInteger)clientId
-             success:(nullable void (^)(BOOL isSuccess))success
-             failure:(nullable void (^)(NSError *error))failure;
++ (void)deleteClient:(NSInteger)clientId success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Requests client's password reset with email. Client will receive a token on provided email address in order to use.
@@ -130,9 +116,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)resetPassword:(SNRClientPasswordResetRequestContext *)context
-              success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure;
++ (void)resetPassword:(SNRClientPasswordResetRequestContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Confirms client's password reset with new password and token provided.
@@ -141,9 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context
-                     success:(nullable void (^)(BOOL isSuccess))success
-                     failure:(nullable void (^)(NSError *error))failure;
++ (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Registers user for push notifications.
@@ -152,9 +134,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)registerForPush:(NSString *)registrationToken
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
++ (void)registerForPush:(NSString *)registrationToken success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
 
 /**
  * Retrieves currrent Profile authentication token. This method provide valid token if Profile is initialized.
@@ -162,9 +142,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Profile authentication token.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success
-                    failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
-
-NS_ASSUME_NONNULL_END
++ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
 
 @end
+
+NS_ASSUME_NONNULL_END

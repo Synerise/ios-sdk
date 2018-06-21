@@ -14,7 +14,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param string @c NSString object to be saved.
  @param key @c NSString object representing key under which @c string will be stored.
  */
-- (void)setString:(NSString * _Nonnull)string forKey:(NSString * _Nonnull)key;
+- (void)setString:(nonnull NSString *)string forKey:(nonnull NSString *)key;
 
 /**
  Adds provided @c NSInteger value to the parameters.
@@ -22,7 +22,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param integer @c NSInteger value to be saved.
  @param key @c NSString object representing key under which @c integer will be stored.
  */
-- (void)setInt:(NSInteger)integer forKey:(NSString * _Nonnull)key;
+- (void)setInt:(NSInteger)integer forKey:(nonnull NSString *)key;
 
 /**
  Adds provided @c double value to the parameters.
@@ -30,7 +30,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param doubleValue @c double value to be saved.
  @param key @c NSString object representing key under which @c doubleValue will be stored.
  */
-- (void)setDouble:(double)doubleValue forKey:(NSString * _Nonnull)key;
+- (void)setDouble:(double)doubleValue forKey:(nonnull NSString *)key;
 
 /**
  Adds provided @c float value to the parameters.
@@ -38,7 +38,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param floatValue @c float value to be saved.
  @param key @c NSString object representing key under which @c floatValue will be stored.
  */
-- (void)setFloat:(float)floatValue forKey:(NSString * _Nonnull)key;
+- (void)setFloat:(float)floatValue forKey:(nonnull NSString *)key;
 
 /**
  Adds provided @c BOOL value to the parameters.
@@ -46,7 +46,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param boolValue @c BOOL value to be saved.
  @param key @c NSString object representing key under which @c boolValue will be stored.
  */
-- (void)setBool:(BOOL)boolValue forKey:(NSString * _Nonnull)key;
+- (void)setBool:(BOOL)boolValue forKey:(nonnull NSString *)key;
 
 /**
  Adds a given key-value pair to the parameters.
@@ -59,7 +59,7 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
  @param object JSON encodable object
  @param key The key for @c object
  */
-- (void)setObject:(id _Nonnull)object forKey:(NSString * _Nonnull)key;
+- (void)setObject:(nonnull id)object forKey:(nonnull NSString *)key;
 
 @end
 

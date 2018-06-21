@@ -27,7 +27,7 @@ NS_SWIFT_NAME(Event)
  @param label event label.
  @return initialized @c SNREvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label NS_SWIFT_NAME(init(label:));
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label NS_SWIFT_NAME(init(label:));
 
 /**
  Initializes SNREvent object with provided label and parameters.
@@ -36,7 +36,7 @@ NS_SWIFT_NAME(Event)
  @param params @c SNTRackerParams object.
  @return initialized @c SNREvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:params:));;
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                            andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:params:));;
 
 @end

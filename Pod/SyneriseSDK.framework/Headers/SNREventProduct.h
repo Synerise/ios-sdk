@@ -10,17 +10,17 @@
 NS_SWIFT_NAME(EventProduct)
 @interface SNREventProduct : NSObject
 
-@property (nonatomic, copy) NSArray *categories;
+@property (copy, nonatomic) NSArray *categories;
 @property (nonatomic) float discountPercent;
-@property (nonatomic, copy) SNRUnitPrice *discountPrice;
-@property (nonatomic, copy) SNRUnitPrice *finalPrice;
-@property (nonatomic, copy) NSURL *imageURL;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) SNRUnitPrice *netPrice;
+@property (copy, nonatomic) SNRUnitPrice *discountPrice;
+@property (copy, nonatomic) SNRUnitPrice *finalPrice;
+@property (copy, nonatomic) NSURL *imageURL;
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) SNRUnitPrice *netPrice;
 @property (nonatomic) NSInteger quantity;
-@property (nonatomic, copy) SNRUnitPrice *regularPrice;
-@property (nonatomic, copy) NSString *sku;
+@property (copy, nonatomic) SNRUnitPrice *regularPrice;
+@property (copy, nonatomic) NSString *sku;
 @property (nonatomic) float tax;
-@property (nonatomic, copy) NSURL *url;
+@property (copy, nonatomic) NSURL *url;
 
 @end
