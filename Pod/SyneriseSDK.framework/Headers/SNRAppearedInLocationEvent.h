@@ -15,11 +15,11 @@
 NS_SWIFT_NAME(AppearedInLocationEvent)
 @interface SNRAppearedInLocationEvent : SNREvent
 
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                             andParams:(SNRTrackerParams * _Nullable)params
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                             andParams:(nullable SNRTrackerParams *)params
 __attribute__((unavailable("Use initWithLabel:andLocation:andParams instead")));
 
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
 __attribute__((unavailable("Use initWithLabel:andLocation instead")));
 
 /**
@@ -29,8 +29,8 @@ __attribute__((unavailable("Use initWithLabel:andLocation instead")));
  @param location @c CLLocation object representing client's location.
  @return initialized @c SNRAppearedInLocationEvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                          andLocation:(CLLocation  * _Nonnull)location NS_SWIFT_NAME(init(label:location:));
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                          andLocation:(nonnull CLLocation  *)location NS_SWIFT_NAME(init(label:location:));
 
 /**
  Initializes @c SNRAppearedInLocationEvent object with provided location, label and optional @c SNRTrackerParams object;
@@ -40,8 +40,8 @@ __attribute__((unavailable("Use initWithLabel:andLocation instead")));
  @param params @c SNTRackerParams object.
  @return initialized @c SNRAppearedInLocationEvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                          andLocation:(CLLocation  * _Nonnull)location
-                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:location:params:));
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                          andLocation:(nonnull CLLocation  *)location
+                            andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:location:params:));
 
 @end

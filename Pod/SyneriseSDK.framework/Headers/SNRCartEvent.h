@@ -9,27 +9,32 @@
 
 @class SNRUnitPrice;
 
+
+
 NS_SWIFT_NAME(CartEvent)
+
+NS_ASSUME_NONNULL_BEGIN
 @interface SNRCartEvent : SNREvent
 
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                                  sku:(NSString * _Nonnull)sku
-                           finalPrice:(SNRUnitPrice * _Nonnull)unitPrice
+- (instancetype)initWithLabel:(NSString *)label
+                                  sku:(NSString *)sku
+                           finalPrice:(SNRUnitPrice *)unitPrice
                              quantity:(NSInteger)quantity
-                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:sku:finalPrice:quantity:params:));
+                            andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:sku:finalPrice:quantity:params:));
 
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                                  sku:(NSString * _Nonnull)sku
-                           finalPrice:(SNRUnitPrice * _Nonnull)unitPrice
+- (instancetype)initWithLabel:(NSString *)label
+                                  sku:(NSString *)sku
+                           finalPrice:(SNRUnitPrice *)unitPrice
                              quantity:(NSInteger)quantity NS_SWIFT_NAME(init(label:sku:finalPrice:quantity:));
 
-- (void)setName:(NSString * _Nonnull)name;
-- (void)setCategory:(NSString * _Nonnull)category;
-- (void)setCategories:(NSArray<NSString *> * _Nonnull)categories;
+- (void)setName:(NSString *)name;
+- (void)setCategory:(NSString *)category;
+- (void)setCategories:(NSArray<NSString *> *)categories;
 - (void)setOffline:(BOOL)isOffline;
-- (void)setRegularPrice:(SNRUnitPrice * _Nonnull)price;
-- (void)setDiscountedPrice:(SNRUnitPrice * _Nonnull)price;
-- (void)setURL:(NSURL * _Nonnull)url;
-- (void)setProducer:(NSString * _Nonnull)producer;
+- (void)setRegularPrice:(SNRUnitPrice *)price;
+- (void)setDiscountedPrice:(SNRUnitPrice *)price;
+- (void)setURL:(NSURL *)url;
+- (void)setProducer:(NSString *)producer;
 
 @end
+NS_ASSUME_NONNULL_END

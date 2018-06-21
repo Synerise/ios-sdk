@@ -48,10 +48,10 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
  * SNTracker is responsible for tracking various SNREvents.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(Tracker)
 @interface SNRTracker : NSObject
-
-NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
@@ -95,14 +95,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param customIdentifier Client's custom identifier
  */
-+ (void)setCustomIdentifier:(NSString * _Nullable)customIdentifier;
++ (void)setCustomIdentifier:(nullable NSString *)customIdentifier;
 
 /**
  * Your custom email will be sent within every event in event params.
  *
  * @param customEmail Client's email
  */
-+ (void)setCustomEmail:(NSString * _Nullable)customEmail;
++ (void)setCustomEmail:(nullable NSString *)customEmail;
 
 /**
  * Adds new event to queue and sends available events to server if possible.
@@ -124,6 +124,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)flushEvents __deprecated_msg("Use [SNRTracker flushEventsWithCompletionHandler:] method instead.");
 
-NS_ASSUME_NONNULL_END
-
 @end
+
+NS_ASSUME_NONNULL_END

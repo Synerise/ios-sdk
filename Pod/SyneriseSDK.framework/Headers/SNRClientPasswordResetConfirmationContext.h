@@ -7,13 +7,13 @@
 
 #import "SNRBaseContext.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
+
+NS_ASSUME_NONNULL_BEGIN
 @interface SNRClientPasswordResetConfirmationContext : SNRBaseContext
 
-@property (readonly, nonatomic, nonnull, copy) NSString *password;
-@property (readonly, nonatomic, nonnull, copy) NSString *token;
+@property (copy, nonatomic, nonnull, readonly) NSString *password;
+@property (copy, nonatomic, nonnull, readonly) NSString *token;
 
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
@@ -24,5 +24,4 @@ NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 - (instancetype)init:(NSString *)password token:(NSString *)token;
 
 @end
-
 NS_ASSUME_NONNULL_END

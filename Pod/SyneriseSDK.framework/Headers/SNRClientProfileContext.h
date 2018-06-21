@@ -15,21 +15,21 @@ NS_SWIFT_NAME(ClientProfileContext)
 - (nonnull instancetype)init __unavailable;
 + (nonnull instancetype)new __unavailable;
 
-@property (nonatomic, nullable, copy) NSNumber *clientId;
-@property (nonatomic, nullable, copy) NSDate *lastActivityDate;
-@property (nonatomic, nullable, copy) NSString *email;
-@property (nonatomic, nullable, copy) NSString *phone;
-@property (nonatomic, nullable, copy) NSString *firstName;
-@property (nonatomic, nullable, copy) NSString *lastName;
-@property (nonatomic, nullable, copy) NSString *displayName;
-@property (nonatomic, nullable, copy) NSUUID *uuid;
-@property (nonatomic, nullable, copy) NSURL *avatarUrl;
-@property (nonatomic, nullable, copy) NSString *birthDate;
-@property (nonatomic, nullable, copy) NSString *company;
-@property (nonatomic, nullable, copy) NSString *city;
-@property (nonatomic, nullable, copy) NSString *address;
-@property (nonatomic, nullable, copy) NSString *zipCode;
-@property (nonatomic, nullable, copy) NSString *province;
-@property (nonatomic, nullable, copy) NSString *countryCode;
+@property (copy, nonatomic, nullable) NSNumber *clientId;
+@property (copy, nonatomic, nullable) NSDate *lastActivityDate;
+@property (copy, nonatomic, nullable) NSString *email;
+@property (copy, nonatomic, nullable) NSString *phone;
+@property (copy, nonatomic, nullable) NSString *firstName;
+@property (copy, nonatomic, nullable) NSString *lastName;
+@property (copy, nonatomic, nullable) NSString *displayName;
+@property (copy, nonatomic, nullable) NSUUID *uuid;
+@property (copy, nonatomic, nullable) NSURL *avatarUrl;
+@property (copy, nonatomic, nullable) NSString *birthDate;
+@property (copy, nonatomic, nullable) NSString *company;
+@property (copy, nonatomic, nullable) NSString *city;
+@property (copy, nonatomic, nullable) NSString *address;
+@property (copy, nonatomic, nullable) NSString *zipCode;
+@property (copy, nonatomic, nullable) NSString *province;
+@property (copy, nonatomic, nullable) NSString *countryCode;
 
 @end

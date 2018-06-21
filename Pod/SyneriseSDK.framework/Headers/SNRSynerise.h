@@ -101,6 +101,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  */
 NS_SWIFT_NAME(SyneriseActivityNotAllowed)
 @protocol SNRSyneriseActivityNotAllowed
+
 @end
 
 /**
@@ -144,5 +145,4 @@ NS_SWIFT_NAME(Synerise)
 + (void)handleNotification:(NSDictionary*)userInfo;
 
 @end
-
 NS_ASSUME_NONNULL_END

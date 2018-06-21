@@ -21,17 +21,17 @@ NS_SWIFT_NAME(ClientAccountInformation)
  * @throws NSInvalidArgumentException if @property birthdate is invalid - birthdate should match matching \d{4}-\d{2}-\d{2} regex pattern. Use YYYY-MM-DD format (1985-11-09).
  */
 
-@property (nonatomic, nullable, copy) NSString *address;
-@property (nonatomic, nullable, copy) NSString *birthDate;
-@property (nonatomic, nullable, copy) NSString *city;
-@property (nonatomic, nullable, copy) NSString *company;
-@property (nonatomic, nullable, copy) NSString *countryCode;
-@property (nonatomic, nullable, copy) NSString *displayName;
-@property (nonatomic, nullable, copy) NSString *firstName;
-@property (nonatomic, nullable, copy) NSString *lastName;
-@property (nonatomic, nullable, copy) NSString *phoneNumber;
-@property (nonatomic, nullable, copy) NSString *province;
-@property (nonatomic, nullable, copy) SNRClientSex *sex;
-@property (nonatomic, nullable, copy) NSString *zipCode;
+@property (copy, nonatomic, nullable) NSString *address;
+@property (copy, nonatomic, nullable) NSString *birthDate;
+@property (copy, nonatomic, nullable) NSString *city;
+@property (copy, nonatomic, nullable) NSString *company;
+@property (copy, nonatomic, nullable) NSString *countryCode;
+@property (copy, nonatomic, nullable) NSString *displayName;
+@property (copy, nonatomic, nullable) NSString *firstName;
+@property (copy, nonatomic, nullable) NSString *lastName;
+@property (copy, nonatomic, nullable) NSString *phoneNumber;
+@property (copy, nonatomic, nullable) NSString *province;
+@property (copy, nonatomic, nullable) SNRClientSex *sex;
+@property (copy, nonatomic, nullable) NSString *zipCode;
 
 @end

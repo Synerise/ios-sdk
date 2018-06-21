@@ -14,9 +14,9 @@
 NS_SWIFT_NAME(CustomEvent)
 @interface SNRCustomEvent : SNREvent
 
-- (nonnull instancetype)__unavailable initWithLabel:(NSString * _Nonnull)label
-andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:params:));
-- (nonnull instancetype)__unavailable initWithLabel:(NSString * _Nonnull)label NS_SWIFT_NAME(init(label:));
+- (nonnull instancetype)__unavailable initWithLabel:(nonnull NSString *)label
+andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:params:));
+- (nonnull instancetype)__unavailable initWithLabel:(nonnull NSString *)label NS_SWIFT_NAME(init(label:));
 
 /**
  Initializes SNRCustomEvent object with provided label, action and parameters.
@@ -27,9 +27,9 @@ andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:params:)
 
  @return initialized @c SNREvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                               action:(NSString * _Nonnull)action
-                            andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:action:params:));
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                               action:(nonnull NSString *)action
+                            andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:action:params:));
 
 /**
  Initializes SNRCustomEvent object with provided label and action.
@@ -39,7 +39,7 @@ andParams:(SNRTrackerParams * _Nullable)params NS_SWIFT_NAME(init(label:params:)
 
  @return initialized @c SNREvent object.
  */
-- (nonnull instancetype)initWithLabel:(NSString * _Nonnull)label
-                               action:(NSString * _Nonnull)action NS_SWIFT_NAME(init(label:action:));
+- (nonnull instancetype)initWithLabel:(nonnull NSString *)label
+                               action:(nonnull NSString *)action NS_SWIFT_NAME(init(label:action:));
 
 @end

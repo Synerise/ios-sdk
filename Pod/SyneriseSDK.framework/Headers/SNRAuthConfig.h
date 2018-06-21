@@ -2,14 +2,16 @@
 //  SNRAuthConfig.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 /**
  Abstract class representing authentication config.
  */
+NS_ASSUME_NONNULL_BEGIN
 @interface SNRAuthConfig : NSObject <NSCopying>
 
 @property (readonly, nonatomic, copy) NSURL *baseURL;
@@ -20,5 +22,4 @@ __attribute__((unavailable("Use initWithBaseURL: instead")));
 __attribute__((unavailable("Use initWithBaseURL: instead")));
 
 @end
-
 NS_ASSUME_NONNULL_END
