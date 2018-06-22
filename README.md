@@ -851,7 +851,7 @@ Get all available Analytics metrics for the client.<br>
 #### `Client.getAnalytics(name:success:failure:)`
 Fetch all available Analytics metrics for the client and return the first metric, which matches provided name<br>
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Sample App).
+Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Exceptions/Errors handling section).
 
 ## Custom authorization configuration
 
@@ -911,7 +911,7 @@ This method requires `ClientPasswordResetConfirmationContext`
 Get valid JWT login token.
 This method pass token with success block execution.
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Profile.getClient:success:failure:`. Use try/catch in some operations (see Sample App).
+Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Profile.getClient:success:failure:`. Use try/catch in some operations (see Exceptions/Errors handling section).
 
 
 # Injector
