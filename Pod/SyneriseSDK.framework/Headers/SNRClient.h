@@ -151,6 +151,11 @@ NS_SWIFT_NAME(Client)
 + (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
 
 /**
+ * Retrieve current client's UUID.
+ */
++ (NSString*)getUUID;
+
+/**
  * Retrieve whether client is signed in (is client's token not expired).
  */
 + (BOOL)isSignedIn;

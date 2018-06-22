@@ -16,6 +16,7 @@ NS_SWIFT_NAME(ClientProfileContext)
 + (nonnull instancetype)new __unavailable;
 
 @property (copy, nonatomic, nullable) NSNumber *clientId;
+@property (copy, nonatomic, nullable) NSString *customId;
 @property (copy, nonatomic, nullable) NSDate *lastActivityDate;
 @property (copy, nonatomic, nullable) NSString *email;
 @property (copy, nonatomic, nullable) NSString *phone;
