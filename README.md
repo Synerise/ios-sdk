@@ -545,6 +545,67 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 ```
 
 
+# Exceptions/Errors handling
+
+SyneriseSDK throws exceptions in some method when provided data is not valid. For example, framework checks if email is valid email address and throw exception if not. That is why we should wrap some operations in SyneriseSDK in try/catch blocks. Example of client logging is below.
+
+### Example of exceptions/errros handling in Objective-C and Swift:
+
+**Swift:**
+```swift
+private func loginWithPhone(phone: String, password: String) {
+    do {
+        try SNRExceptionHandler.catchException {
+            Client.login(phone: phone, password: password, deviceId: nil, success: { (success) in
+            	//...
+            }, failure: { (error) in
+            	//...
+            })
+        }
+    } catch let error as SNRError {
+        if error is SNRInvalidPhoneNumberError {
+            //...
+        } else if error is SNRInvalidPasswordError {
+        	//...
+        }
+    } catch {
+        //...
+    }
+}
+```
+
+**Objective-C:**
+```objective-c
+- (void)loginClientByPhone {
+    @try {
+        NSString *phone = @"123456789";
+        NSString *password = @"pass!1test";
+        [SNRClient logInWithPhone:phone password:password deviceId:nil success:^(BOOL isSuccess) {
+        	//...
+        } failure:^(NSError * _Nonnull error) {
+        	//...
+        }];
+    }
+    @catch (SNRInvalidPhoneNumberException *exception) {
+    	//...
+    }
+    @catch (SNRInvalidPasswordException *exception) {
+		//...
+    }
+    @finally {}
+}
+```
+
+### Objective-C exceptions and their errors in swift:
+
+**SNRInvalidEmailException** - **SNRInvalidEmailError**
+
+**SNRInvalidPasswordException** - **SNRInvalidPasswordError**
+
+**SNRInvalidPhoneNumberException** - **SNRInvalidPhoneNumberError**
+
+**SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
+
 
 # Tracker
 
@@ -777,6 +838,9 @@ This method pass `SNRClientUpdateAccountContext` with success block execution.
 #### `Client.getToken(success:failure:)`
 Get valid JWT login token.<br>
 This method pass token with success block execution.
+
+#### `Client.getUUID()`
+Retrieve current client's UUID.<br>
 
 #### `Client.isSignedIn()`
 Retrieve whether client is signed in (is client's token not expired).<br>
@@ -1056,6 +1120,10 @@ This is it. When presented View Controller implementing that protocol, Synerise 
 ### Campaign Pushes information
 
 `Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure you get Array of push notifications in dictionary representation.
+
+### Analytics Metrics
+
+`Client.getAnalytics(success:failure:)`, `Client.getAnalytics(name:success:failure:)` - method to retrieve analytical metrics from Synerise backend.
 
 
 # Author
