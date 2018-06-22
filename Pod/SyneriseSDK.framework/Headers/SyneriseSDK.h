@@ -49,3 +49,15 @@
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRAnalyticsMetrics.h>
 #import <SyneriseSDK/SNRClientSex.h>
+
+#import <SyneriseSDK/SNRExceptionHandler.h>
+#import <SyneriseSDK/SNRException.h>
+#import <SyneriseSDK/SNRInvalidEmailException.h>
+#import <SyneriseSDK/SNRInvalidPasswordException.h>
+#import <SyneriseSDK/SNRInvalidPhoneNumberException.h>
+#import <SyneriseSDK/SNRInvalidBirthdateException.h>
+#import <SyneriseSDK/SNRError.h>
+#import <SyneriseSDK/SNRInvalidEmailError.h>
+#import <SyneriseSDK/SNRInvalidPasswordError.h>
+#import <SyneriseSDK/SNRInvalidPhoneNumberError.h>
+#import <SyneriseSDK/SNRInvalidBirthdateError.h>
