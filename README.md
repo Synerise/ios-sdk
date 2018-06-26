@@ -115,18 +115,18 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	Tracker.setAutoTrackMode(.fine) // 4
 
 	let trackerConfiguration = TrackerConfiguration();
-    trackerConfiguration.minBathSize = 10;
-    trackerConfiguration.maxBathSize = 100;
-    trackerConfiguration.autoFlushTimeout = 10.0;
+	trackerConfiguration.minBathSize = 10;
+	trackerConfiguration.maxBathSize = 100;
+	trackerConfiguration.autoFlushTimeout = 10.0;
 
-    Tracker.setConfiguration(trackerConfiguration); // 5
+	Tracker.setConfiguration(trackerConfiguration); // 5
 
 	Client.setLoggingEnabled(true) // 6
 
 	let clientConfiguration = ClientConfiguration();
-    clientConfiguration.autoClientRefresh = true;
-    
-    Client.setConfiguration(clientConfiguration); // 7
+	clientConfiguration.autoClientRefresh = true;
+
+	Client.setConfiguration(clientConfiguration); // 7
 
 	Profile.setLoggingEnabled(true) // 8
 	Profile.setPoolUuid("YOUR_POOL_UUID"); // 9
@@ -146,23 +146,23 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 	[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey]; // 1
 	[SNRSynerise setDelegate:self]; // 2
-    
+	
 	[SNRTracker setLoggingEnabled:YES]; // 3
 	[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine]; // 4
 
 	SNRTrackerConfiguration trackerConfiguration;
-    trackerConfiguration.minBathSize = 10;
-    trackerConfiguration.maxBathSize = 100;
-    trackerConfiguration.autoFlushTimeout = 10.0f;
-    
-    [SNRTracker setConfiguration:trackerConfiguration]; // 5
+	trackerConfiguration.minBathSize = 10;
+	trackerConfiguration.maxBathSize = 100;
+	trackerConfiguration.autoFlushTimeout = 10.0f;
+	
+	[SNRTracker setConfiguration:trackerConfiguration]; // 5
 
 	[SNRClient setLoggingEnabled:YES]; // 6
 
 	SNRClientConfiguration clientConfiguration;
-    clientConfiguration.autoClientRefresh = YES;
-    
-    [SNRClient setConfiguration:clientConfiguration]; // 7
+	clientConfiguration.autoClientRefresh = YES;
+	
+	[SNRClient setConfiguration:clientConfiguration]; // 7
 
 	[SNRProfile setLoggingEnabled:YES]; // 8
 	[SNRProfile setPoolUuid:@"YOUR_POOL_UUID"]; // 9
