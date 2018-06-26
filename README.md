@@ -114,14 +114,27 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	Tracker.setLoggingEnabled(true) // 3
 	Tracker.setAutoTrackMode(.fine) // 4
 
-	Client.setLoggingEnabled(true) // 5
+	let trackerConfiguration = TrackerConfiguration();
+    trackerConfiguration.minBathSize = 10;
+    trackerConfiguration.maxBathSize = 100;
+    trackerConfiguration.autoFlushTimeout = 10.0;
 
-	Profile.setLoggingEnabled(true) // 6
+    Tracker.setConfiguration(trackerConfiguration); // 5
 
-	Injector.setLoggingEnabled(true) // 7
-	Injector.setAutomatic(true) // 8
-	Injector.setWalkthroughDelegate(self) // 9
-	Injector.setBannerDelegate(self) // 10
+	Client.setLoggingEnabled(true) // 6
+
+	let clientConfiguration = ClientConfiguration();
+    clientConfiguration.autoClientRefresh = true;
+    
+    Client.setConfiguration(clientConfiguration); // 7
+
+	Profile.setLoggingEnabled(true) // 8
+	Profile.setPoolUuid("YOUR_POOL_UUID"); // 9
+
+	Injector.setLoggingEnabled(true) // 10
+	Injector.setAutomatic(true) // 11
+	Injector.setWalkthroughDelegate(self) // 12
+	Injector.setBannerDelegate(self) // 13
 }
 ```
 
@@ -137,14 +150,27 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRTracker setLoggingEnabled:YES]; // 3
 	[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine]; // 4
 
-	[SNRClient setLoggingEnabled:YES]; // 5
+	SNRTrackerConfiguration trackerConfiguration;
+    trackerConfiguration.minBathSize = 10;
+    trackerConfiguration.maxBathSize = 100;
+    trackerConfiguration.autoFlushTimeout = 10.0f;
+    
+    [SNRTracker setConfiguration:trackerConfiguration]; // 5
 
-	[SNRProfile setLoggingEnabled:YES]; // 6
+	[SNRClient setLoggingEnabled:YES]; // 6
 
-	[SNRInjector setLoggingEnabled:YES]; // 7
-	[SNRInjector setAutomatic:YES]; // 8
-	[SNRInjector setWalkthroughDelegate:self]; // 9
-	[SNRInjector setBannerDelegate:self]; // 10
+	SNRClientConfiguration clientConfiguration;
+    clientConfiguration.autoClientRefresh = YES;
+    
+    [SNRClient setConfiguration:clientConfiguration]; // 7
+
+	[SNRProfile setLoggingEnabled:YES]; // 8
+	[SNRProfile setPoolUuid:@"YOUR_POOL_UUID"]; // 9
+
+	[SNRInjector setLoggingEnabled:YES]; // 10
+	[SNRInjector setAutomatic:YES]; // 11
+	[SNRInjector setWalkthroughDelegate:self]; // 12
+	[SNRInjector setBannerDelegate:self]; // 13
 }
 ```
 
@@ -153,12 +179,15 @@ Let's dive into some configurable functionalities:
 2. `Synerise.setDelegate` - Sets delegate to handle actions from SyneriseSDK. See **SyneriseSDK delegate** section for more information.
 3. `Tracker.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.
 4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.
-5. `Client.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.
-6. `Profile.setLoggingEnabled` - Enables logs for Profile module. See **Debug logs** section for more information.
-7. `Injector.setLoggingEnabled` - Enables logs for Injector module. See **Debug logs** section for more information.
-8. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.
-9. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.
-10. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.
+5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.
+6. `Client.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.
+7. `Client.setConfiguration` - Sets custom configuration for Client module.
+8. `Profile.setLoggingEnabled` - Enables logs for Profile module. See **Debug logs** section for more information.
+9. `Profile.setPoolUuid` - Sets your pool's universally unique identifier. See **Profile** section for more information.
+10. `Injector.setLoggingEnabled` - Enables logs for Injector module. See **Debug logs** section for more information.
+11. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.
+12. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.
+13. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.
 
 
 ## Debug logs
