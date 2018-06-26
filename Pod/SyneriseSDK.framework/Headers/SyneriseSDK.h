@@ -56,8 +56,10 @@
 #import <SyneriseSDK/SNRInvalidPasswordException.h>
 #import <SyneriseSDK/SNRInvalidPhoneNumberException.h>
 #import <SyneriseSDK/SNRInvalidBirthdateException.h>
+#import <SyneriseSDK/SNRIllegalArgumentException.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRInvalidEmailError.h>
 #import <SyneriseSDK/SNRInvalidPasswordError.h>
 #import <SyneriseSDK/SNRInvalidPhoneNumberError.h>
 #import <SyneriseSDK/SNRInvalidBirthdateError.h>
+#import <SyneriseSDK/SNRIllegalArgumentError.h>

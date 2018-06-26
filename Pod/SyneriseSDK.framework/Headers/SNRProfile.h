@@ -36,6 +36,15 @@ NS_SWIFT_NAME(Profile)
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
+ * Sets pool's universally unique identifier.
+ *
+ * Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.
+ *
+ * @param poolUuid pool's universally unique identifier.
+ */
++ (void)setPoolUuid:(NSString*)poolUuid;
+
+/**
  * Initializes SNRProfile module.
  *
  * @note This method needs to be called before any other method of SNRProfile class and only once during application lifecycle.
@@ -74,6 +83,8 @@ NS_SWIFT_NAME(Profile)
  * @param context SNRRegisterClientContext object with client's email, password and other optional data. Not provided fields are not modified.
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
+ *
+ * @throws NSIllegalArgumentException if unable to obtain code from poolUuid (either pool is empty or other problem has occurred).
  */
 + (void)registerClient:(SNRRegisterClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
 

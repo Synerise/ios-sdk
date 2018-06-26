@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.13] - 2018-06-26
+
+### Added
+- Automated customId assignation from code pool upon client registration.
+
+
 ## [3.2.12] - 2018-06-22
 
 ### Added

@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.12)
+# Synerise iOS SDK (v3.2.13)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.12-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.13-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -876,6 +876,9 @@ SNRClientAuthConfig *clientAuthConfig = [[SNRClientAuthConfig alloc] initWithBas
 # Profile
 
 ## Features
+
+#### `Profile.setPoolUuid(_ )`
+Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.<br>
 
 #### `Profile.getClient:success:failure:`
 Get client profile information with email.
