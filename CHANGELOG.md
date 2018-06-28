@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.14] - 2018-06-28
+
+### Fixed
+- Email validator to support all TLDs.
+
+
 ## [3.2.13] - 2018-06-26
 
 ### Added
