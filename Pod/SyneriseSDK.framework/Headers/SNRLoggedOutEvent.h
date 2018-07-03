@@ -11,7 +11,11 @@
  Record a 'client logged out' event.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(LoggedOutEvent)
 @interface SNRLoggedOutEvent : SNREvent
 
 @end
+
+NS_ASSUME_NONNULL_END

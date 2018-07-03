@@ -8,11 +8,13 @@
 #import "SNRClientSex.h"
 #import "SNRBaseContext.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(ClientAccountInformation)
 @interface SNRClientAccountInformation : NSObject
 
-- (nonnull instancetype)init __unavailable;
-+ (nonnull instancetype)new __unavailable;
+- (instancetype)init __unavailable;
++ (instancetype)new __unavailable;
 
 /**
  * @attention setters can throw exception
@@ -21,17 +23,19 @@ NS_SWIFT_NAME(ClientAccountInformation)
  * @throws NSInvalidArgumentException if @property birthdate is invalid - birthdate should match matching \d{4}-\d{2}-\d{2} regex pattern. Use YYYY-MM-DD format (1985-11-09).
  */
 
-@property (copy, nonatomic, nullable) NSString *address;
-@property (copy, nonatomic, nullable) NSString *birthDate;
-@property (copy, nonatomic, nullable) NSString *city;
-@property (copy, nonatomic, nullable) NSString *company;
-@property (copy, nonatomic, nullable) NSString *countryCode;
-@property (copy, nonatomic, nullable) NSString *displayName;
-@property (copy, nonatomic, nullable) NSString *firstName;
-@property (copy, nonatomic, nullable) NSString *lastName;
-@property (copy, nonatomic, nullable) NSString *phoneNumber;
-@property (copy, nonatomic, nullable) NSString *province;
-@property (copy, nonatomic, nullable) SNRClientSex *sex;
-@property (copy, nonatomic, nullable) NSString *zipCode;
+@property (copy, nonatomic, nullable, readwrite) NSString *address;
+@property (copy, nonatomic, nullable, readwrite) NSString *birthDate;
+@property (copy, nonatomic, nullable, readwrite) NSString *city;
+@property (copy, nonatomic, nullable, readwrite) NSString *company;
+@property (copy, nonatomic, nullable, readwrite) NSString *countryCode;
+@property (copy, nonatomic, nullable, readwrite) NSString *displayName;
+@property (copy, nonatomic, nullable, readwrite) NSString *firstName;
+@property (copy, nonatomic, nullable, readwrite) NSString *lastName;
+@property (copy, nonatomic, nullable, readwrite) NSString *phoneNumber;
+@property (copy, nonatomic, nullable, readwrite) NSString *province;
+@property (copy, nonatomic, nullable, readwrite) SNRClientSex *sex;
+@property (copy, nonatomic, nullable, readwrite) NSString *zipCode;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -11,7 +11,11 @@
  Represents a 'client added product to cart' event.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(AddedProductToCartEvent)
 @interface SNRAddedProductToCartEvent : SNRCartEvent
 
 @end
+
+NS_ASSUME_NONNULL_END

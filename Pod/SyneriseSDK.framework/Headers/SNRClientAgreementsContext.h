@@ -7,14 +7,18 @@
 
 #import "SNRBaseContext.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(ClientAgreementsContext)
 @interface SNRClientAgreementsContext : SNRBaseContext <NSCopying>
 
-@property (nonatomic) BOOL email;
-@property (nonatomic) BOOL sms;
-@property (nonatomic) BOOL push;
-@property (nonatomic) BOOL bluetooth;
-@property (nonatomic) BOOL rfid;
-@property (nonatomic) BOOL wifi;
+@property (assign, nonatomic, readwrite) BOOL email;
+@property (assign, nonatomic, readwrite) BOOL sms;
+@property (assign, nonatomic, readwrite) BOOL push;
+@property (assign, nonatomic, readwrite) BOOL bluetooth;
+@property (assign, nonatomic, readwrite) BOOL rfid;
+@property (assign, nonatomic, readwrite) BOOL wifi;
 
 @end
+
+NS_ASSUME_NONNULL_END

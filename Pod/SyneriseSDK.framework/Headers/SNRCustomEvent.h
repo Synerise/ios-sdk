@@ -11,12 +11,13 @@
  Represents a custom event.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(CustomEvent)
 @interface SNRCustomEvent : SNREvent
 
-- (nonnull instancetype)__unavailable initWithLabel:(nonnull NSString *)label
-andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:params:));
-- (nonnull instancetype)__unavailable initWithLabel:(nonnull NSString *)label NS_SWIFT_NAME(init(label:));
+- (instancetype)__unavailable initWithLabel:(NSString *)label andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:params:));
+- (instancetype)__unavailable initWithLabel:(NSString *)label NS_SWIFT_NAME(init(label:));
 
 /**
  Initializes SNRCustomEvent object with provided label, action and parameters.
@@ -43,3 +44,5 @@ andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:params:))
                                action:(nonnull NSString *)action NS_SWIFT_NAME(init(label:action:));
 
 @end
+
+NS_ASSUME_NONNULL_END

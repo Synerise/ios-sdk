@@ -11,7 +11,11 @@
  Represents a 'client completed transaction' event
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(CompletedTransactionEvent)
 @interface SNRCompletedTransactionEvent : SNRTransactionEvent
 
 @end
+
+NS_ASSUME_NONNULL_END

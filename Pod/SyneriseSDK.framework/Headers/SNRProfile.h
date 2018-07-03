@@ -42,7 +42,7 @@ NS_SWIFT_NAME(Profile)
  *
  * @param poolUuid pool's universally unique identifier.
  */
-+ (void)setPoolUuid:(NSString*)poolUuid;
++ (void)setPoolUuid:(NSString *)poolUuid;
 
 /**
  * Initializes SNRProfile module.
@@ -55,16 +55,18 @@ NS_SWIFT_NAME(Profile)
 
 /**
  * Get client with email.
- * Note, that you have to be logged in as business profile and use Api Key, which has REALM_CLIENT scope assigned
- * or you have to be logged in as user and have ROLE_CLIENT_SHOW role assigned.
+ * Note, that you have to be logged in as business profile and use API Key, which has REALM_CLIENT scope assigned
+ * or you have to be logged in as a user and have a ROLE_CLIENT_SHOW role assigned.
  *
  * @param clientEmail - client’s email
  * @param success success block.
  * @param failure failure block.
  *
- * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
+ * @throws NSInvalidArgumentException if an email is invalid. Email should be valid.
  */
-+ (void)getClient:(NSString*)clientEmail success:(nullable void (^)(SNRClientProfileContext * profile))success failure:(nullable void (^)(NSError *error))failure;
++ (void)getClient:(NSString *)clientEmail
+          success:(nullable void (^)(SNRClientProfileContext *context))success
+          failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Creates a new client record if no identifier has been assigned for him before in Synerise.
@@ -73,20 +75,24 @@ NS_SWIFT_NAME(Profile)
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)createClient:(SNRCreateClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)createClient:(SNRCreateClientContext *)context
+             success:(nullable void (^)(BOOL isSuccess))success
+             failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Registers new Client with email or phone (depending on context model), password and optional data.
- * Please note that you should NOT allow to sign in again (or sign up) when user is already signed in. Please sign out user first.
+ * Please note that you should NOT allow to sign in again (or sign up) when a user is already signed in. Please sign out user first.
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
- * @param context SNRRegisterClientContext object with client's email, password and other optional data. Not provided fields are not modified.
+ * @param context SNRRegisterClientContext object with client's email, password, and other optional data. Not provided fields are not modified.
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  *
- * @throws NSIllegalArgumentException if unable to obtain code from poolUuid (either pool is empty or other problem has occurred).
+ * @throws NSIllegalArgumentException if unable to obtain a code from poolUuid (either pool is the empty or other problem has occurred).
  */
-+ (void)registerClient:(SNRRegisterClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)registerClient:(SNRRegisterClientContext *)context
+               success:(nullable void (^)(BOOL isSuccess))success
+               failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Confirm account with confirmation code received by phone.
@@ -98,7 +104,10 @@ NS_SWIFT_NAME(Profile)
  *
  * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
  */
-+ (void)confirmAccountWithPhone:(NSString *)phone confirmationCode:(NSString*)confirmationCode success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
++ (void)confirmAccountWithPhone:(NSString *)phone
+               confirmationCode:(NSString *)confirmationCode
+                        success:(nullable void (^)(BOOL isSuccess))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
 
 /**
  * Updates client with id and optional data.
@@ -108,7 +117,10 @@ NS_SWIFT_NAME(Profile)
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)updateClient:(NSInteger)clientId context:(SNRUpdateClientContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)updateClient:(NSInteger)clientId
+             context:(SNRUpdateClientContext *)context
+             success:(nullable void (^)(BOOL isSuccess))success
+             failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Deletes client with provided id
@@ -117,17 +129,21 @@ NS_SWIFT_NAME(Profile)
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)deleteClient:(NSInteger)clientId success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)deleteClient:(NSInteger)clientId
+             success:(nullable void (^)(BOOL isSuccess))success
+             failure:(nullable void (^)(NSError *error))failure;
 
 /**
- * Requests client's password reset with email. Client will receive a token on provided email address in order to use.
+ * Requests client's password reset with email. A client will receive a token on the provided email address in order to use.
  * @c [SNRProfile confirmResetPassword:success:failure] method.
  *
  * @param context SNRClientPasswordResetRequestContext object with client's email.
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)resetPassword:(SNRClientPasswordResetRequestContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)resetPassword:(SNRClientPasswordResetRequestContext *)context
+              success:(nullable void (^)(BOOL isSuccess))success
+              failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Confirms client's password reset with new password and token provided.
@@ -136,24 +152,29 @@ NS_SWIFT_NAME(Profile)
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure;
++ (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context
+                     success:(nullable void (^)(BOOL isSuccess))success
+                     failure:(nullable void (^)(NSError *error))failure;
 
 /**
  * Registers user for push notifications.
  *
- * @param registrationToken device token string returned after successful push notifications registration on device or @c fcmToken from Firebase.
+ * @param registrationToken device token string returned after successful push notifications registration on a device or @c fcmToken from Firebase.
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)registerForPush:(NSString *)registrationToken success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
++ (void)registerForPush:(NSString *)registrationToken
+                success:(nullable void (^)(BOOL isSuccess))success
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
 
 /**
- * Retrieves currrent Profile authentication token. This method provide valid token if Profile is initialized.
+ * Retrieves current Profile authentication token. This method provides valid token if Profile is initialized.
  *
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Profile authentication token.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)getTokenWithSuccess:(nullable void (^)(NSString * _Nonnull token))success failure:(nullable void (^)(NSError * _Nonnull error))failure NS_SWIFT_NAME(getToken(success:failure:));
++ (void)getTokenWithSuccess:(nullable void (^)(NSString *token))success
+                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:));
 
 @end
 

@@ -7,10 +7,9 @@
 
 #import "SNRBaseContext.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(ClientPasswordResetRequestContext)
-
-NS_ASSUME_NONNULL_BEGIN
 @interface SNRClientPasswordResetRequestContext : SNRBaseContext
 
 @property (copy, nonatomic, nonnull, readonly) NSString *email;
@@ -24,4 +23,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init:(NSString *)email;
 
 @end
+
 NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 
 @class SNRClientSex;
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(ClientUpdateAccountContext)
 @interface SNRClientUpdateAccountContext : SNRBaseContext
 
@@ -19,17 +21,19 @@ NS_SWIFT_NAME(ClientUpdateAccountContext)
  * @throws NSInvalidArgumentException if @property phoneNumber is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
  */
 
-@property (nonatomic, nullable, copy) NSString *address;
-@property (nonatomic, nullable, copy) NSString *birthDate;
-@property (nonatomic, nullable, copy) NSString *city;
-@property (nonatomic, nullable, copy) NSString *company;
-@property (nonatomic, nullable, copy) NSString *countryCode;
-@property (nonatomic, nullable, copy) NSString *displayName;
-@property (nonatomic, nullable, copy) NSString *firstName;
-@property (nonatomic, nullable, copy) NSString *lastName;
-@property (nonatomic, nullable, copy) NSString *phoneNumber;
-@property (nonatomic, nullable, copy) NSString *province;
-@property (nonatomic, nullable, copy) SNRClientSex *sex;
-@property (nonatomic, nullable, copy) NSString *zipCode;
+@property (nonatomic, nullable, copy, readwrite) NSString *address;
+@property (nonatomic, nullable, copy, readwrite) NSString *birthDate;
+@property (nonatomic, nullable, copy, readwrite) NSString *city;
+@property (nonatomic, nullable, copy, readwrite) NSString *company;
+@property (nonatomic, nullable, copy, readwrite) NSString *countryCode;
+@property (nonatomic, nullable, copy, readwrite) NSString *displayName;
+@property (nonatomic, nullable, copy, readwrite) NSString *firstName;
+@property (nonatomic, nullable, copy, readwrite) NSString *lastName;
+@property (nonatomic, nullable, copy, readwrite) NSString *phoneNumber;
+@property (nonatomic, nullable, copy, readwrite) NSString *province;
+@property (nonatomic, nullable, copy, readwrite) SNRClientSex *sex;
+@property (nonatomic, nullable, copy, readwrite) NSString *zipCode;
 
 @end
+
+NS_ASSUME_NONNULL_END

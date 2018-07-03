@@ -7,6 +7,8 @@
 
 @class SNRUnitPrice;
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(EventProduct)
 @interface SNREventProduct : NSObject
 
@@ -24,3 +26,5 @@ NS_SWIFT_NAME(EventProduct)
 @property (copy, nonatomic) NSURL *url;
 
 @end
+
+NS_ASSUME_NONNULL_END

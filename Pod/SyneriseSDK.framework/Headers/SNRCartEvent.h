@@ -9,11 +9,9 @@
 
 @class SNRUnitPrice;
 
-
+NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(CartEvent)
-
-NS_ASSUME_NONNULL_BEGIN
 @interface SNRCartEvent : SNREvent
 
 - (instancetype)initWithLabel:(NSString *)label
@@ -37,4 +35,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setProducer:(NSString *)producer;
 
 @end
+
 NS_ASSUME_NONNULL_END

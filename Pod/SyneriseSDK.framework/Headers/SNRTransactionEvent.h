@@ -14,14 +14,16 @@
  Base class for transaction related events.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(TransactionEvent)
 @interface SNRTransactionEvent : SNREvent
 
-- (void)setDiscountAmount:(nonnull SNRUnitPrice *)amount;
-- (void)setDiscountCode:(nonnull NSString *)code;
+- (void)setDiscountAmount:(SNRUnitPrice *)amount;
+- (void)setDiscountCode:(NSString *)code;
 - (void)setDiscountPercent:(float)percent;
-- (void)setOrderId:(nonnull NSString *)orderId;
-- (void)setOrderStatus:(nonnull NSString *)status;
+- (void)setOrderId:(NSString *)orderId;
+- (void)setOrderStatus:(NSString *)status;
 
 /**
  Sets Payment info.
@@ -29,10 +31,13 @@ NS_SWIFT_NAME(TransactionEvent)
  @attention Raises an @c NSInvalidArgumentException if object is not JSON encodable.
  @param paymentInfo payment info.
  */
-- (void)setPaymentInfo:(nonnull id)paymentInfo;
-- (void)setProducts:(nonnull NSArray <SNREventProduct *>*)products;
-- (void)setRecordedAt:(nonnull NSDate *)recordedAt;
-- (void)setRevenue:(nonnull SNRUnitPrice *)revenue;
-- (void)setValue:(nonnull SNRUnitPrice *)value;
+
+- (void)setPaymentInfo:(id)paymentInfo;
+- (void)setProducts:(NSArray <SNREventProduct *> *)products;
+- (void)setRecordedAt:(NSDate *)recordedAt;
+- (void)setRevenue:(SNRUnitPrice *)revenue;
+- (void)setValue:(SNRUnitPrice *)value;
 
 @end
+
+NS_ASSUME_NONNULL_END
