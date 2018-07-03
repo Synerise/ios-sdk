@@ -5,6 +5,8 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(TrackerParamsBuilder)
 @interface SNRTrackerParamsBuilder : NSObject
 
@@ -63,18 +65,20 @@ NS_SWIFT_NAME(TrackerParamsBuilder)
 
 @end
 
+NS_ASSUME_NONNULL_END
+
 /**
  Represents custom parameters that may be added to tracked events.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(TrackerParams)
 @interface SNRTrackerParams : NSObject
 
-- (nullable instancetype)init __unavailable
-__attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
+- (nullable instancetype)init __unavailable __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
 
-+ (nullable instancetype)new
-__attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
++ (nullable instancetype)new __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
 
 /**
  Initializes @c SNRTrackerParams object with @c SNRTrackerParamsBuilder.
@@ -82,6 +86,8 @@ __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
  @param buildBlock A block object with one @c SNRTrackerParamsBuilder param that acts as builder.
  @return initialized @c SNTTrackerParams object.
  */
-+ (nonnull instancetype)makeWithBuilder:(void (^ _Nonnull)(SNRTrackerParamsBuilder * _Nonnull))buildBlock;
++ (instancetype)makeWithBuilder:(void (^)(SNRTrackerParamsBuilder *builder))buildBlock;
 
 @end
+
+NS_ASSUME_NONNULL_END

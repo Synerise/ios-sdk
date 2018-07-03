@@ -5,6 +5,8 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(AnalyticsMetrics)
 @interface SNRAnalyticsMetrics : NSObject
 
@@ -15,3 +17,5 @@ NS_SWIFT_NAME(AnalyticsMetrics)
 @property (nullable, nonatomic, copy, readonly) NSDictionary *metricData;
 
 @end
+
+NS_ASSUME_NONNULL_END

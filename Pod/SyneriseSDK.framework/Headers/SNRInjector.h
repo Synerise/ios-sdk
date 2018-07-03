@@ -13,6 +13,8 @@
  * Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 @protocol SNRInjectorWalkthroughDelegate
 
@@ -26,7 +28,7 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 /**
  * This method will be called when an error occured while Walkthrough loading.
  */
-- (void)SNR_walkthroughLoadingError:(nonnull NSError*)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
+- (void)SNR_walkthroughLoadingError:(NSError *)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
 
 /**
  * This method will be called when Walkthrough has been appeared.
@@ -57,7 +59,7 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
  *
  * @param bannerDictionary is banner instance representation.
  */
-- (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
+- (BOOL)SNR_shouldBannerAppear:(NSDictionary *)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
 /**
  * This method will be called when Banner has been appeared.
@@ -71,8 +73,10 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 @end
 
+NS_ASSUME_NONNULL_END
+
 /**
- * SNRInjector is responsible for intergration with Synerise mobile content methods.
+ * SNRInjector is responsible for integration with Synerise mobile content methods.
  */
 
 NS_ASSUME_NONNULL_BEGIN
@@ -145,25 +149,28 @@ NS_SWIFT_NAME(Injector)
 /**
  * This method provides valid banners right from SDK cache.
  */
-+ (NSArray*)getBanners;
++ (NSArray *)getBanners;
 
 /**
  * This method fetches banners set for mobile campaigns and caches valid ones.
  *
  */
-+ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
++ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
  * This method fetches Push Notifications set for mobile campaigns.
  */
-+ (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
++ (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success
+                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
  * Show banner immediately.
  *
  * @param markPresented sets banner as presented and this banner instance representation will notappear second time.
  */
-+ (void)showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));
++ (void)showBanner:(NSDictionary *)bannerDictionary
+     markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));
 
 @end
 

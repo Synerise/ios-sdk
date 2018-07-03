@@ -13,7 +13,11 @@
  @note This could be used for mobile screen usage tracking.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(VisitedScreenEvent)
 @interface SNRVisitedScreenEvent : SNREvent
 
 @end
+
+NS_ASSUME_NONNULL_END

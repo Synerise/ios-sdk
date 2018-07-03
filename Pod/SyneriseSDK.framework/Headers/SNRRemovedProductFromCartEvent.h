@@ -11,7 +11,11 @@
  Represents a 'client removed product from cart' event.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(RemovedProductFromCartEvent)
 @interface SNRRemovedProductFromCartEvent : SNRCartEvent
 
 @end
+
+NS_ASSUME_NONNULL_END

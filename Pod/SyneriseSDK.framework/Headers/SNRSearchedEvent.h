@@ -11,7 +11,11 @@
  Represents a 'client searched' event.
  */
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_SWIFT_NAME(SearchedEvent)
 @interface SNRSearchedEvent : SNREvent
 
 @end
+
+NS_ASSUME_NONNULL_END
