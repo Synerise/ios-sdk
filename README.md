@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.14)
+# Synerise iOS SDK (v3.2.15)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.14-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.15-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -95,12 +95,12 @@ In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
 ## Setup
 
-First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Business Api Key` with `Client Api Key`.
+First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Business API Key` with `Client API Key`.
 
-To get `Business Api Key` and  `Client Api Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
-Then, generate new `Api Key` for `Business Profile` audience and new `Api Key` for `Client` audience.
+To get `Business API Key` and  `Client API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
+Then, generate new `API Key` for `Business Profile` audience and new `API Key` for `Client` audience.
 
-Configuration for SyneriseSDK should be completely resolved before end of `AppDelegate` `didFinishLaunchingWithOptions` method.
+Configuration for SyneriseSDK should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
 
 **Swift:**
 ```swift
@@ -192,8 +192,8 @@ Let's dive into some configurable functionalities:
 
 ## Debug logs
 
-You can enable debug logs for SyneriseSDK modules, such as: Tracker, Client, Profile and Injector.
-It is not recommended to use debug mode in release version of your app.
+You can enable debug logs for SyneriseSDK modules, such as Tracker, Client, Profile and Injector.
+It is not recommended to use debug mode in a release version of your app.
 
 - Tracker: you can receive some simple logs about sending events (like success, failure etc.) by enabling debug mode, which is disabled by default.
 - Profile: you can receive some simple logs about profile actions (like registration etc.) by enabling debug mode, which is disabled by default.
@@ -215,7 +215,7 @@ Tracker.setLoggingEnabled(true)
 
 ## SyneriseSDK delegate
 
-You can specify your custom action when user clicks on simple push, banner or walkthrough.
+You can specify your custom action when a user clicks on simple push, banner or walkthrough.
 SyneriseSDK implements two main actions that user may invoke - open URL and Deeplink.
 
 There is one more method when SyneriseSDK needs re-registration for push notifications.
@@ -364,7 +364,7 @@ func snr_handledAction(deepLink: String, activity: SyneriseActivity, completionH
 
 ## Configure push notifications
 
-When you want to use full functionality of SyneriseSDK, you have to configure Push Notifications. It works with help Firebase Messaging service. 
+When you want to use the full functionality of SyneriseSDK, you have to configure Push Notifications. It works with help Firebase Messaging service. 
 
 Following steps must be done:
 1. Start Firebase service.
@@ -662,11 +662,11 @@ trackerConfiguration.autoFlushTimeout = 2.0f;
 [SNRTracker setConfiguration:trackerConfiguration];
 ```
 
-**MIN BATH SIZE** - This parameter sets minimum number of events in queue required to send them.
+**MIN BATH SIZE** - This parameter sets a minimum number of events in queue required to send them.
 
-**MAX BATH SIZE** - This parameter sets maximum number of events, which may be sent in a single batch.
+**MAX BATH SIZE** - This parameter sets a maximum number of events, which may be sent in a single batch.
 
-**AUTO FLUSH TIMEOUT** - This parameter sets time required to elapse before event's queue will attempt to be sent.
+**AUTO FLUSH TIMEOUT** - This parameter sets the time required to elapse before event's queue will attempt to be sent.
 
 
 ## View tracking
@@ -746,7 +746,7 @@ SNRCustomEvent *event = [[SNRCustomEvent alloc] initWithLabel:@"YOUR_LABEL" acti
 [SNRTracker send:event];
 ```
 
-Tracker caches and enqueues all your events locally, so they all will be send when possible.
+Tracker caches and enqueues all your events locally, so they all will be sent when possible.
 
 
 ## Events
@@ -791,7 +791,7 @@ Group of uncategorized events related to user's location and actions.
 Record a 'client appeared in location' event.
 
 #### HitTimerEvent
-Record a 'client hit timer' event. This could be used for profiling or activity time monitoring - you can send "hit timer" when your client starts doing something and send it once again when finishes, but this time with different time signature. Then you can use our analytics engine to measure e.g. average activity time.
+Record a 'client hit timer' event. This could be used for profiling or activity time monitoring - you can send "hit timer" when your client starts doing something and send it once again when finishes, but this time with the different time signature. Then you can use our analytics engine to measure e.g. average activity time.
 
 #### SearchedEvent
 Record a 'client searched' event.
@@ -846,12 +846,12 @@ clientConfiguration.autoClientRefresh = YES;
 #### `Client.login(email:password:deviceId:success:)`
 Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
 The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
-Method requires valid and non-null email and password. Device ID is optional.<br>
+The method requires valid and non-null email and password. The device ID is optional.<br>
 
 #### `Client.login(phone:password:deviceId:success:)`
 Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
 The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
-Method requires valid and non-null email and password. Device ID is optional.<br>
+The method requires valid and non-null email and password. The device ID is optional.<br>
 
 #### `Client.logOut()`
 Signing client out causes in generating new UUID for a new anonymous one.
@@ -909,10 +909,10 @@ SNRClientAuthConfig *clientAuthConfig = [[SNRClientAuthConfig alloc] initWithBas
 #### `Profile.setPoolUuid(_ )`
 Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.<br>
 
-#### `Profile.getClient:success:failure:`
+#### `Profile.getClient(success:failure:)`
 Get client profile information with email.
 
-#### `Profile.createClient:success:failure:`
+#### `Profile.createClient(success:failure:)`
 Create a new client record if no identifier has been assigned for him before in Synerise.
 This method requires `CreateClientContext`
 
@@ -972,11 +972,11 @@ To control this behavior please fetch your Walkthrough manually with `Injector.g
 
 You can check if Walkthrough is already loaded with `Injector.isWalkthroughLoaded()` method, which returns true if Walkthrough is already loaded.
 
-Moreover, there is an enhanced method to check if Walkthrough is loaded. `Injector.isLoadedWalkthroughUnique()` verifies whether loaded Walkthrough is different than previously presented. Every time any Walkthrough is presented it's id is cached locally, therefore you can control your flow more precisely. In summary, method will return true if loaded Walkthrough is different than previously presented, false otherwise or if Walkthrough is not loaded.
+Moreover, there is an enhanced method to check if Walkthrough is loaded. `Injector.isLoadedWalkthroughUnique()` verifies whether loaded Walkthrough is different than previously presented. Every time any Walkthrough is presented its id is cached locally, therefore you can control your flow more precisely. In summary, the method will return true if loaded Walkthrough is different than previously presented, false otherwise or if Walkthrough is not loaded.
 
 Finally, `Injector.showWalkthrough()` shows Walkthrough if loaded. This method may be called wherever in your application as many times you want. It also returns true if Walkthrough was loaded, false otherwise.
 
-When you choose to load and present Walkthrough manually, you may be interested in sample implementation of **InjectorWalkthroughDelegate**:
+When you choose to load and present Walkthrough manually, you may be interested in a sample implementation of **InjectorWalkthroughDelegate**:
 
 **Swift:**
 ```swift
@@ -1039,13 +1039,13 @@ func snr_walkthroughDidDisappear() {
 
 ## Simple push campaign
 
-Simple push are served by simple push notifications. 
+Simple push is served by simple push notifications. 
 
 Note: You have to configure push notifications before. See sections: **Configure push notifications** and **Handling push notifications** for information.
 
-If app was not active (closed or in background) and campaign came in - push notification is appeared in notification center. When user clicks the notification, he is moved to the application and simple push is presented.
+If an app was not active (closed or in the background) and the campaign came in - push notification is appeared in notification center. When a user clicks the notification, he is moved to the application and simple push is presented.
 
-If app is active, simple push is presented right away.
+If an app is active, a simple push is presented right away.
 
 
 ## Banner campaign
@@ -1064,7 +1064,7 @@ Fortunately, you can control incoming banners by implementing an optional delega
 //MARK: InjectorBannerDelegate
 
 // this method will be called when SyneriseSDK asks if it can display a banner at the moment
-// bannerDictionary parameter is dictionary representation of banner. If you don't want to show banner in the moment, you can return false. Then, do it later by calling Injector.showBanner(_: Dictionary, markPresented: Bool) to show banner with provided data.
+// bannerDictionary parameter is dictionary representation of banner. If you don't want to show a banner at the moment, you can return false. Then, do it later by calling Injector.showBanner(_: Dictionary, markPresented: Bool) to show banner with provided data.
 func snr_shouldBannerAppear(bannerDictionary: Dictionary) -> Bool {
 	return true
 }
@@ -1085,7 +1085,7 @@ func snr_bannerDidDisappear() {
 #pragma mark - SNRInjectorBannerDelegate
 
 // this method will be called when SyneriseSDK asks if it can display a banner at the moment
-// bannerDictionary parameter is dictionary representation of banner. If you don't want to show banner in the moment, you can return NO. Then, do it later by calling [SNRInjector showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented] to show banner with provided data.
+// bannerDictionary parameter is dictionary representation of banner. If you don't want to show a banner at the moment, you can return NO. Then, do it later by calling [SNRInjector showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented] to show banner with provided data.
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary {
     return YES;
 }
@@ -1103,9 +1103,9 @@ func snr_bannerDidDisappear() {
 
 ### Triggers
 
-In order to show banner immediately after certain event occuration, you can send your banners from our panel with a trigger value.
+In order to show banner immediately after certain event occured, you can send your banners from our panel with a trigger value.
 
-First of all, calling `Injector.fetchBanners(success:failure:)` will fetch available banners and then SDK will cache valid ones. On success closure you get Array of banners in dictionary representation.
+First of all, calling `Injector.fetchBanners(success:failure:)` will fetch available banners and then SDK will cache valid ones. On success closure, you get Array of banners in dictionary representation.
 
 This method is also called during SDK initialization, so use it only when you wish to overwrite current banners in SDK cache. `Injector.getBanners()` provides valid banners right from SDK cache.
 
@@ -1125,7 +1125,7 @@ Then, call `Injector.showBanner(_: Dictionary)` to show banner immediately. In t
 
 ### `SyneriseActivityNotAllowed` protocol
 
-In additional, if there are View Controllers in your application that should never to be covered by Synerise activity (for example banner), you can add **SyneriseActivityNotAllowed** protocol to your class.
+In addition, if there are View Controllers in your application that should never to be covered by Synerise activity (for example banner), you can add **SyneriseActivityNotAllowed** protocol to your class.
 
 For example:
 
@@ -1151,7 +1151,7 @@ This is it. When presented View Controller implementing that protocol, Synerise 
 
 ### Campaign Pushes information
 
-`Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure you get Array of push notifications in dictionary representation.
+`Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure, you get Array of push notifications in dictionary representation.
 
 ### Analytics Metrics
 
