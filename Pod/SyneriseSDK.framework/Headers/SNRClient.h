@@ -5,7 +5,6 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
-@class SNRClientAuthConfig;
 @class SNRClientUpdateAccountContext;
 @class SNRClientAccountInformation;
 
@@ -48,16 +47,6 @@ NS_SWIFT_NAME(Client)
  * @param apiKey Synerise API Key.
  */
 + (void)initialize:(NSString *)apiKey;
-
-/**
- * Initializes SNRClient module.
- *
- * @note This method needs to be called before any other method of SNRTracker class and only once during application lifecycle.
- *
- * @param apiKey Synerise API Key.
- * @param config Custom configuration for Synerise Client Authorization API.
- */
-+ (void)initialize:(NSString *)apiKey config:(SNRClientAuthConfig *)config;
 
 /**
  * Sets configuration of client

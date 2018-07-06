@@ -127,6 +127,17 @@ NS_SWIFT_NAME(Synerise)
 + (void)initializeWithBusinessProfileApiKey:(NSString *)businessProfileApiKey andClientApiKey:(NSString *)clientApiKey NS_SWIFT_NAME(initialize(businessProfileApiKey:clientApiKey:));
 
 /**
+ Initializes SyneriseSDK.
+ 
+ @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
+ 
+ @param businessProfileApiKey Synerise API Key for Business Profile.
+ @param clientApiKey Synerise API Key for Business Profile.
+ @param baseUrl Synerise API custom environment base URL.
+ */
++ (void)initializeWithBusinessProfileApiKey:(NSString *)businessProfileApiKey andClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(businessProfileApiKey:clientApiKey:baseUrl:));
+
+/**
  * This method sets object for Synerise delegate methods.
  *
  * @param delegate object that implement SNRSyneriseDelegate protocol.

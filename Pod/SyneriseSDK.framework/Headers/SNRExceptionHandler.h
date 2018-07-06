@@ -8,6 +8,6 @@
 
 @interface SNRExceptionHandler : NSObject
 
-+ (BOOL)catchException:(nonnull void(^)(void))tryBlock error:(__autoreleasing NSError * _Nonnull *)error;
++ (BOOL)catchException:(nonnull void(^)(void))tryBlock error:(__autoreleasing NSError **)error;
 
 @end

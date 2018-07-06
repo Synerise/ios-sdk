@@ -43,7 +43,6 @@
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRCreateClientContext.h>
 #import <SyneriseSDK/SNRClientProfileContext.h>
-#import <SyneriseSDK/SNRClientAuthConfig.h>
 #import <SyneriseSDK/SNRClientAgreementsContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
