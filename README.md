@@ -197,20 +197,20 @@ One thing you have to do for that is using different initialization method:
 
 **Swift:**
 ```swift
-	let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
-	let clientApiKey = "YOUR_CLIENT_API_KEY"
-	let apiBaseUrl = "YOUR_API_BASE_URL"
+let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
+let clientApiKey = "YOUR_CLIENT_API_KEY"
+let apiBaseUrl = "YOUR_API_BASE_URL"
 
-	Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey, baseUrl: apiBaseUrl)
+Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey, baseUrl: apiBaseUrl)
 ```
 
 **Objective-C:**
 ```objective-c
-	static NSString *businessProfileApiKey = @"YOUR_BUSINESS_API_KEY";
-	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
-	static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
+static NSString *businessProfileApiKey = @"YOUR_BUSINESS_API_KEY";
+static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
+static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
 
-	[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey andBaseUrl:apiBaseUrl];
+[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey andBaseUrl:apiBaseUrl];
 ```
 
 
