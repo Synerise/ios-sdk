@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.15)
+# Synerise iOS SDK (v3.2.16)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.15-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.16-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -105,8 +105,8 @@ Configuration for SyneriseSDK should be completely resolved before the end of `A
 **Swift:**
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-	let businessProfileApiKey = "YOUR_BUSINESS_API_KEY";
-	let clientApiKey = "YOUR_CLIENT_API_KEY";
+	let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
+	let clientApiKey = "YOUR_CLIENT_API_KEY"
 
 	Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey) // 1
 	Synerise.setDelegate(self) // 2
@@ -188,6 +188,30 @@ Let's dive into some configurable functionalities:
 11. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.
 12. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.
 13. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.
+
+## Setup with custom API environment
+
+There is option to change API baseURL for on-premise installations.  
+
+One thing you have to do for that is using different initialization method:
+
+**Swift:**
+```swift
+let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
+let clientApiKey = "YOUR_CLIENT_API_KEY"
+let apiBaseUrl = "YOUR_API_BASE_URL"
+
+Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey, baseUrl: apiBaseUrl)
+```
+
+**Objective-C:**
+```objective-c
+static NSString *businessProfileApiKey = @"YOUR_BUSINESS_API_KEY";
+static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
+static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
+
+[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey andBaseUrl:apiBaseUrl];
+```
 
 
 ## Debug logs
@@ -591,7 +615,7 @@ private func loginWithPhone(phone: String, password: String) {
             	//...
             })
         }
-    } catch let error as SNRError {
+    } catch let error as NSError {
         if error is SNRInvalidPhoneNumberError {
             //...
         } else if error is SNRInvalidPasswordError {
@@ -881,25 +905,6 @@ Get all available Analytics metrics for the client.<br>
 Fetch all available Analytics metrics for the client and return the first metric, which matches provided name<br>
 
 Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Exceptions/Errors handling section).
-
-## Custom authorization configuration
-
-You can also provide your custom Client `Authorization Configuration`. At this moment, configuration handles `Base URL` changes.
-
-**Swift:**
-```swift
-let clientBaseURL: URL! = URL(string: "YOUR_BASE_URL")
-let clientAuthConfig: ClientAuthConfig = ClientAuthConfig(baseURL: clientBaseURL)
-Client.initialize("YOUR_API_KEY", config: clientAuthConfig)
-```
-
-**Objective-C:**
-```objective-c
-NSURL *clientBaseURL = [NSURL URLWithString:@"YOUR_BASE_URL"];
-SNRClientAuthConfig *clientAuthConfig = [[SNRClientAuthConfig alloc] initWithBaseURL:clientBaseURL];
-[SNRClient initialize:@"YOUR_API_KEY" config:clientAuthConfig];
-```
-
 
 
 # Profile

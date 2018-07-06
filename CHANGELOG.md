@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.16] - 2018-07-06
+
+### Added
+- Bitcode support
+- Option to change API baseURL for on-premise installations.
+
+### Fixed
+- Campaign Banners appearance.
+
+
 ## [3.2.15] - 2018-07-03
 
 ### Changed
