@@ -48,6 +48,11 @@
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRAnalyticsMetrics.h>
 #import <SyneriseSDK/SNRClientSex.h>
+#import <SyneriseSDK/SNRProfilePromotionResponse.h>
+#import <SyneriseSDK/SNRProfilePromotion.h>
+#import <SyneriseSDK/SNRClientPromotionResponse.h>
+#import <SyneriseSDK/SNRClientPromotion.h>
+
 
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>

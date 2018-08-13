@@ -13,6 +13,8 @@
 @class SNRRegisterClientContext;
 @class SNRClientPasswordResetRequestContext;
 @class SNRClientPasswordResetConfirmationContext;
+@class SNRProfilePromotionResponse;
+@class SNRProfilePromotion;
 
 /**
  * SNRProfile is responsible for integration with Synerise profile methods.
@@ -155,6 +157,133 @@ NS_SWIFT_NAME(Profile)
 + (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context
                      success:(nullable void (^)(BOOL isSuccess))success
                      failure:(nullable void (^)(NSError *error))failure;
+
+/**
+ * Use this method to get all available promotions that are defined for your business profile.
+ *
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsWithSuccess:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
+
+/**
+ * Use this method to get promotions with external ID specified as externalId param.
+ *
+ * @param externalId specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsByExternalId:(NSString *)externalId
+                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(externalId:success:failure:));
+
+/**
+ * Use this method to get promotions with phone number specified as phoneNumber param.
+ *
+ * @param phoneNumber specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsByPhoneNumber:(NSString *)phoneNumber
+                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(phoneNumber:success:failure:));
+
+/**
+ * Use this method to get promotions with client ID specified as clientId param.
+ *
+ * @param clientId specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsByClientId:(NSString *)clientId
+                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(clientId:success:failure:));
+
+/**
+ * Use this method to get promotions with email specified as email param.
+ *
+ * @param email specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsByEmail:(NSString *)email
+                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(email:success:failure:));
+
+/**
+ * Use this method to get promotion with UUID specified as uuid param.
+ *
+ * @param uuid specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionByUuid:(NSString *)uuid
+                   success:(nullable void (^)(SNRProfilePromotion *promotion))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(uuid:success:failure:));
+
+/**
+ * Use this method to get promotion with code specified as code param.
+ *
+ * @param code specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionByCode:(NSString *)code
+                   success:(nullable void (^)(SNRProfilePromotion *promotion))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
+
+/**
+ * Use this method to redeem promotion with specified phone number and promotion code.
+ *
+ * @param phoneNumber specified in promotion.
+ * @param promotionCode specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)redeemPromotionByPhoneNumber:(NSString *)phoneNumber
+                       promotionCode:(NSString *)promotionCode
+                             success:(nullable void (^)(BOOL isSuccess))success
+                             failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(phoneNumber:promotionCode:success:failure:));
+
+/**
+ * Use this method to redeem promotion with specified client ID and promotion code.
+ *
+ * @param clientId specified in promotion.
+ * @param promotionCode specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)redeemPromotionByClientId:(NSString *)clientId
+                    promotionCode:(NSString *)promotionCode
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(clientId:promotionCode:success:failure:));
+
+/**
+ * Use this method to redeem promotion with specified custom ID and promotion code.
+ *
+ * @param customId specified in promotion.
+ * @param promotionCode specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)redeemPromotionByCustomId:(NSString *)customId
+                    promotionCode:(NSString *)promotionCode
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(customId:promotionCode:success:failure:));
+
+/**
+ * Use this method to redeem promotion with specified email and promotion code.
+ *
+ * @param email specified in promotion.
+ * @param promotionCode specified in promotion.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)redeemPromotionByEmail:(NSString *)email
+                    promotionCode:(NSString *)promotionCode
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(email:promotionCode:success:failure:));
 
 /**
  * Registers user for push notifications.
