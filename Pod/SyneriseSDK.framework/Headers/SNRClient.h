@@ -7,6 +7,8 @@
 
 @class SNRClientUpdateAccountContext;
 @class SNRClientAccountInformation;
+@class SNRClientPromotionResponse;
+@class SNRClientPromotion;
 
 typedef struct {
     //Enables automatic client's token refresh.
@@ -132,6 +134,59 @@ NS_SWIFT_NAME(Client)
 + (void)getAnalyticsWithName:(NSString *)name
                      success:(nullable void (^)(NSArray *analyticsMetrics))success
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAnalytics(name:success:failure:));
+
+/**
+ * Use this method to get all available promotions that are defined for this client.
+ *
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)getPromotionsWithSuccess:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
+                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
+
+/**
+ * Use this method to activate promotion that has uuid passed as parameter.
+ *
+ * @param uuid uuid of promotion that will be activated.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)activatePromotionByUuid:(NSString *)uuid
+                        success:(nullable void (^)(BOOL isSuccess))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(uuid:success:failure:));
+
+/**
+ * Use this method to activate promotion that has code passed as parameter.
+ *
+ * @param code code of promotion that will be activated.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)activatePromotionByCode:(NSString *)code
+                        success:(nullable void (^)(BOOL isSuccess))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
+
+/**
+ * Use this method to get promotion that has uuid passed as parameter.
+ *
+ * @param uuid uuid of promotion.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)getPromotionByUuid:(NSString *)uuid
+                   success:(nullable void (^)(SNRClientPromotion *promotion))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(uuid:success:failure:));
+
+/**
+ * Use this method to get promotion that has code passed as parameter.
+ *
+ * @param code code of promotion.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)getPromotionByCode:(NSString *)code
+                   success:(nullable void (^)(SNRClientPromotion *promotion))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
 
 /**
  * Update client's account information with optional data.
