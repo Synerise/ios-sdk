@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.17)
+# Synerise iOS SDK (v3.2.18)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.17-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.18-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -901,8 +901,20 @@ Retrieve whether client is signed in (is client's token not expired).<br>
 #### `Client.getAnalytics(success:failure:)`
 Get all available Analytics metrics for the client.<br>
 
-#### `Client.getAnalytics(name:success:failure:)`
-Fetch all available Analytics metrics for the client and return the first metric, which matches provided name<br>
+#### `Client.getPromotions(success:failure:)`
+Use this method to get all available promotions that are defined for this client.<br>
+
+#### `Client.activatePromotion(uuid:success:failure:)`
+Use this method to activate promotion that has uuid passed as parameter.<br>
+
+#### `Client.activatePromotion(code:success:failure:)`
+Use this method to activate promotion that has code passed as parameter.<br>
+
+#### `Client.getPromotion(uuid:success:failure:)`
+Use this method to get promotion that has uuid passed as parameter.<br>
+
+#### `Client.getPromotion(code:success:failure:)`
+Use this method to get promotion that has code passed as parameter.<br>
 
 Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Exceptions/Errors handling section).
 
@@ -943,6 +955,41 @@ This method requires `ClientPasswordResetRequestContext`
 #### `Profile.confirmResetPassword(success:failure:)`
 Confirm client's password reset with new password and token provided by Profile.requestPasswordReset(email).
 This method requires `ClientPasswordResetConfirmationContext`
+
+#### `Profile.getPromotions(success:failure:)`
+Use this method to get all available promotions that are defined for your business profile.
+
+#### `Profile.getPromotions(externalId:success:failure:)`
+Use this method to get promotions with external ID specified as externalId param.
+
+#### `Profile.getPromotions(phoneNumber:success:failure:)`
+Use this method to get promotions with phone number specified as phoneNumber param.
+
+#### `Profile.getPromotions(clientId:success:failure:)`
+Use this method to get promotions with client ID specified as clientId param.
+
+#### `Profile.getPromotions(email:success:failure:)`
+Use this method to get promotions with email specified as email param.
+
+#### `Profile.getPromotion(uuid:success:failure:)`
+Use this method to get promotion with UUID specified as uuid param.
+
+#### `Profile.getPromotion(code:success:failure:)`
+Use this method to get promotion with code specified as code param.
+
+#### `Profile.redeemPromotion(phoneNumber:promotionCode:success:failure:)`
+Use this method to redeem promotion with specified phone number and promotion code.
+
+#### `Profile.redeemPromotion(clientId:promotionCode:success:failure:)`
+Use this method to redeem promotion with specified client ID and promotion code.
+
+#### `Profile.redeemPromotion(customId:promotionCode:success:failure:)`
+Use this method to redeem promotion with specified custom ID and promotion code.
+
+#### `Profile.redeemPromotion(email:promotionCode:success:failure:)`
+Use this method to redeem promotion with specified email and promotion code.
+
+
 
 #### `Profile.getToken(success:failure:)` 
 Get valid JWT login token.

@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.18] - 2018-08-13
+
+### Added
+- Promotions API integration.
+
 ## [3.2.17] - 2018-08-02
 
 ### Changed
