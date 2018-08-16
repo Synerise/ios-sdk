@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.19] - 2018-08-16
+
+### Added
+- Method to request update of phone number.
+- Method to confirm update of phone number.
+- Method to activate account manually.
+
 ## [3.2.18] - 2018-08-13
 
 ### Added
