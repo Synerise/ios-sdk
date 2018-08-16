@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.18)
+# Synerise iOS SDK (v3.2.19)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.18-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.19-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -884,6 +884,12 @@ Signing client out causes in generating new UUID for a new anonymous one.
 Use this method to get client's account information.<br>
 This method pass `SNRClientAccountInformation` with success block execution.
 
+#### `Client.updatePhoneNumber(phoneNumber:success:failure:)`
+Update client's phone number request.
+
+#### `Client.confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:)`
+Confirm client's phone number update.
+
 #### `Client.updateAccount(success:failure:)`
 Use this method to update client's account information.<br>
 This method pass `SNRClientUpdateAccountContext` with success block execution.
@@ -936,6 +942,9 @@ This method requires `CreateClientContext`
 #### `Profile.registerClient(success:failure:)`
 Register new Client with email or phone (depending on context model), password and optional data.
 This method requires `RegisterClientContext`
+
+#### `Profile.activateAccount(email:success:failure:)`
+Activates client's account.
 
 #### `Profile.confirmAccount(phone:confirmationCode:success:failure:)`
 Confirm client's account with confirmation code received by phone.
