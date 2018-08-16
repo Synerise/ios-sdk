@@ -199,6 +199,32 @@ NS_SWIFT_NAME(Client)
               success:(nullable void (^)(BOOL isSuccess))success
               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
 
+/*
+ * Update client's phone number request.
+ *
+ * @param phoneNumber client's phone.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)updatePhoneNumber:(NSString *)phoneNumber
+                  success:(nullable void (^)(BOOL isSuccess))success
+                  failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updatePhoneNumber(phoneNumber:success:failure:));
+
+/*
+ * Confirm client's phone number update.
+ *
+ * @param phoneNumber client's phone.
+ * @param confirmationCode client's confirmation code received by phone.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)confirmPhoneNumber:(NSString *)phoneNumber
+          confirmationCode: (NSString *)confirmationCode
+                   success:(nullable void (^)(BOOL isSuccess))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:));
+
+
+
 /**
  * Retrieves current Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
  *

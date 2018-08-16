@@ -96,6 +96,20 @@ NS_SWIFT_NAME(Profile)
                success:(nullable void (^)(BOOL isSuccess))success
                failure:(nullable void (^)(NSError *error))failure;
 
+/*
+ * Activates client's account.
+ *
+ * @param email - client’s email.
+ * @param success - success block.
+ * @param failure - failure block.
+ *
+ * @throws NSInvalidArgumentException if an email is invalid. Email should be valid.
+ *
+ */
++ (void)activateAccount:(NSString *)email
+                success:(nullable void (^)(BOOL isSuccess))success
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
+
 /**
  * Confirm account with confirmation code received by phone.
  *
