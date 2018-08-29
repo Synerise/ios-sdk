@@ -82,7 +82,7 @@ NS_SWIFT_NAME(Profile)
              failure:(nullable void (^)(NSError *error))failure;
 
 /**
- * Registers new Client with email or phone (depending on context model), password and optional data.
+ * Register new Client with email with activation, with email without activation or with phone (depending on context model), password and optional data.
  * Please note that you should NOT allow to sign in again (or sign up) when a user is already signed in. Please sign out user first.
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
