@@ -1,4 +1,4 @@
-# Synerise iOS SDK (v3.2.19)
+# Synerise iOS SDK (v3.2.20)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
@@ -890,6 +890,9 @@ Update client's phone number request.
 #### `Client.confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:)`
 Confirm client's phone number update.
 
+#### `Client.changePassword(password:success:failure:)`
+Change client's password.
+
 #### `Client.updateAccount(success:failure:)`
 Use this method to update client's account information.<br>
 This method pass `SNRClientUpdateAccountContext` with success block execution.
@@ -940,8 +943,8 @@ Create a new client record if no identifier has been assigned for him before in 
 This method requires `CreateClientContext`
 
 #### `Profile.registerClient(success:failure:)`
-Register new Client with email or phone (depending on context model), password and optional data.
-This method requires `RegisterClientContext`
+Register new client with an email with activation, with email without activation or with a phone (depending on context model), password and optional data.
+This method requires `RegisterClientContext(context:sucess:failure:)`
 
 #### `Profile.activateAccount(email:success:failure:)`
 Activates client's account.
