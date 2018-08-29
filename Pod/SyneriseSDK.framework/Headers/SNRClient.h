@@ -187,7 +187,16 @@ NS_SWIFT_NAME(Client)
 + (void)getPromotionByCode:(NSString *)code
                    success:(nullable void (^)(SNRClientPromotion *promotion))success
                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
-
+/*
+ * Change client's password.
+ *
+ * @param password - new client's password.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)changePassword:(NSString *)password
+                  success:(nullable void (^)(BOOL isSuccess))success
+                  failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
 /**
  * Update client's account information with optional data.
  *

@@ -13,6 +13,7 @@
  * @enum SNRRegisterClientContextRegistrationType
  */
 typedef NS_ENUM(NSInteger, SNRRegisterClientContextRegistrationType) {
+    SNRRegisterClientContextRegistrationTypeByEmailWithoutActivation,
     SNRRegisterClientContextRegistrationTypeByEmail,
     SNRRegisterClientContextRegistrationTypeByPhone
 } NS_SWIFT_NAME(RegistrationType);
@@ -63,6 +64,14 @@ NS_SWIFT_NAME(RegisterClientContext)
  * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
  */
 - (instancetype)init:(NSString *)email
+            password:(NSString *)password;
+
+
+/**
+ * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
+ * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ */
+- (instancetype)initWithEmailWithoutActivation:(NSString *)email
             password:(NSString *)password;
 
 /**
