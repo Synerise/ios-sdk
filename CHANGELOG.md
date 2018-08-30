@@ -1,11 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.21] - 2018-08-30
+
+### Fixed
+- Registration with pool ID.
+
+
 ## [3.2.20] - 2018-08-29
 
 ### Added
-- New Client change password feature
-- New method to create account without activation
+- New Client change password feature.
+- New method to create account without activation.
 
 ## [3.2.19] - 2018-08-16
 

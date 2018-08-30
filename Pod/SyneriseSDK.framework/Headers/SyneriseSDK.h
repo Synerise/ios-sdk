@@ -34,6 +34,7 @@
 #import <SyneriseSDK/SNRVisitedScreenEvent.h>
 #import <SyneriseSDK/SNRTrackerParams.h>
 
+#import <SyneriseSDK/SNRBaseModel.h>
 #import <SyneriseSDK/SNRUnitPrice.h>
 #import <SyneriseSDK/SNREventProduct.h>
 #import <SyneriseSDK/SNRCreateClientContext.h>
@@ -52,7 +53,6 @@
 #import <SyneriseSDK/SNRProfilePromotion.h>
 #import <SyneriseSDK/SNRClientPromotionResponse.h>
 #import <SyneriseSDK/SNRClientPromotion.h>
-
 
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>
