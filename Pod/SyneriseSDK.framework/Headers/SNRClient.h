@@ -197,6 +197,16 @@ NS_SWIFT_NAME(Client)
 + (void)changePassword:(NSString *)password
                   success:(nullable void (^)(BOOL isSuccess))success
                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
+
+/**
+ * Delete client's account information.
+ *
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)deleteAccountWithSuccess:(nullable void (^)(BOOL isSuccess))success
+                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(success:failure:));
+
 /**
  * Update client's account information with optional data.
  *
