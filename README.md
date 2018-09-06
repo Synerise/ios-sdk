@@ -893,6 +893,9 @@ Confirm client's phone number update.
 #### `Client.changePassword(password:success:failure:)`
 Change client's password.
 
+#### `Client.changePassword(newPassword:oldPassword:success:failure:)`
+Change client's password with old password validation.
+
 #### `Client.updateAccount(success:failure:)`
 Use this method to update client's account information.<br>
 This method pass `SNRClientUpdateAccountContext` with success block execution.
