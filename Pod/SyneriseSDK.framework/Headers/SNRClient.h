@@ -197,7 +197,15 @@ NS_SWIFT_NAME(Client)
 + (void)changePassword:(NSString *)password
                   success:(nullable void (^)(BOOL isSuccess))success
                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
-
+/*
+ * Change client's password. Check oldPassword with client's current password.
+ *
+ * @param newPassword - new client's password.
+ * @param oldPassword - old client's password.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)changePasswordWithNewPassword:(NSString *)newPassword oldPassword:(NSString *)oldPassword success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(newPassword:oldPassword:success:failure:));
 /**
  * Delete client's account information.
  *
