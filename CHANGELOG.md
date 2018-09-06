@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.23] - 2018-09-06
+
+### Added
+- New Client change password feature (old password validation).
+
+### Fixed
+- Improving SDK stability.
+
+
 ## [3.2.22] - 2018-09-03
 
 ### Fixed
