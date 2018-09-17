@@ -894,7 +894,9 @@ Confirm client's phone number update.
 Change client's password.
 
 #### `Client.changePassword(newPassword:oldPassword:success:failure:)`
-Change client's password with old password validation.
+Change client's password.<br>
+Old password will be compared with the one stored within SDK if and only if auto client refresh is true in client configuration.<br>
+New password will be saved automatically if auto client refresh is true.<br>
 
 #### `Client.updateAccount(success:failure:)`
 Use this method to update client's account information.<br>
