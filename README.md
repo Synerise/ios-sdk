@@ -659,6 +659,10 @@ private func loginWithPhone(phone: String, password: String) {
 
 **SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
 
+**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
+
+**SNRPasswordIsNotEqualToSavedPasswordException** - **SNRPasswordIsNotEqualToSavedPasswordError**
+
 
 # Tracker
 
@@ -937,7 +941,7 @@ Note, that some methods can throw exceptions from validation, for example, if yo
 
 ## Features
 
-#### `Profile.setPoolUuid(_ )`
+#### `Profile.setPoolUuid(_:)`
 Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.<br>
 
 #### `Profile.getClient(success:failure:)`
@@ -1005,8 +1009,6 @@ Use this method to redeem promotion with specified custom ID and promotion code.
 
 #### `Profile.redeemPromotion(email:promotionCode:success:failure:)`
 Use this method to redeem promotion with specified email and promotion code.
-
-
 
 #### `Profile.getToken(success:failure:)` 
 Get valid JWT login token.
