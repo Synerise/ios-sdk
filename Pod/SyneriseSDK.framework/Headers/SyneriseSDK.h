@@ -51,6 +51,9 @@
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRProfilePromotionResponse.h>
 #import <SyneriseSDK/SNRProfilePromotion.h>
+#import <SyneriseSDK/SNRVoucherInformation.h>
+#import <SyneriseSDK/SNRVoucherCodesResponse.h>
+#import <SyneriseSDK/SNRVoucherCodesData.h>
 #import <SyneriseSDK/SNRClientPromotionResponse.h>
 #import <SyneriseSDK/SNRClientPromotion.h>
 
@@ -63,6 +66,7 @@
 #import <SyneriseSDK/SNRIllegalArgumentException.h>
 #import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordException.h>
 #import <SyneriseSDK/SNRError.h>
+#import <SyneriseSDK/SNRErrorsList.h>
 #import <SyneriseSDK/SNRInvalidEmailError.h>
 #import <SyneriseSDK/SNRInvalidPasswordError.h>
 #import <SyneriseSDK/SNRInvalidPhoneNumberError.h>

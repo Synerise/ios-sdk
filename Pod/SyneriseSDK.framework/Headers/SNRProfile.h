@@ -15,6 +15,8 @@
 @class SNRClientPasswordResetConfirmationContext;
 @class SNRProfilePromotionResponse;
 @class SNRProfilePromotion;
+@class SNRVoucherInformation;
+@class SNRVoucherCodesResponse;
 
 /**
  * SNRProfile is responsible for integration with Synerise profile methods.
@@ -189,8 +191,8 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByExternalId:(NSString *)externalId
-                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(externalId:success:failure:));
+                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(externalId:success:failure:));
 
 /**
  * Use this method to get promotions with phone number specified as phoneNumber param.
@@ -200,8 +202,8 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByPhoneNumber:(NSString *)phoneNumber
-                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(phoneNumber:success:failure:));
+                           success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(phoneNumber:success:failure:));
 
 /**
  * Use this method to get promotions with client ID specified as clientId param.
@@ -211,8 +213,8 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByClientId:(NSString *)clientId
-                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(clientId:success:failure:));
+                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(clientId:success:failure:));
 
 /**
  * Use this method to get promotions with email specified as email param.
@@ -222,8 +224,8 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByEmail:(NSString *)email
-                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(email:success:failure:));
+                     success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(email:success:failure:));
 
 /**
  * Use this method to get promotion with UUID specified as uuid param.
@@ -295,9 +297,9 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)redeemPromotionByEmail:(NSString *)email
-                    promotionCode:(NSString *)promotionCode
-                          success:(nullable void (^)(BOOL isSuccess))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(email:promotionCode:success:failure:));
+                 promotionCode:(NSString *)promotionCode
+                       success:(nullable void (^)(BOOL isSuccess))success
+                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(email:promotionCode:success:failure:));
 
 /**
  * Registers user for push notifications.
