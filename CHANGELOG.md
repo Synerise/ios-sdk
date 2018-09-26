@@ -1,6 +1,23 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.24] - 2018-09-26
+
+### Added
+- Assign voucher Profile and Client API methods.
+- Get assigned vouchers Profile and Client API methods.
+- Get or assign voucher Profile and Client API methods.
+- New method to deactivate promotion by uuid.
+- New method to deactivate promotion by code.
+- New method to fetch promotions data with limit parameter.
+- New method to fetch promotions data with statuses and expiration options.
+
+### Changed
+- Promotions API models structure (ClientPromotion, ProfilePromotion).
+- Method Profile.activateAccount changed to Profile.activateClient.
+- Method Profile.confirmAccount changed to Profile.confirmPhoneRegistration.
+- Method Profile.resetPassword changed to Profile.requestPasswordReset.
+
 ## [3.2.24] - 2018-09-18
 
 ### Changed

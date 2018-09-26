@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.24)
+# Synerise iOS SDK (v3.2.25)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.24-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.25-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -922,6 +922,9 @@ Get all available Analytics metrics for the client.<br>
 #### `Client.getPromotions(success:failure:)`
 Use this method to get all available promotions that are defined for this client.<br>
 
+#### `Client.getPromotions(statuses:excludeExpired:success:failure:)`
+Use this method to get all possible combinations of promotions statuses, which are defined for this client.<br>
+
 #### `Client.activatePromotion(uuid:success:failure:)`
 Use this method to activate promotion that has uuid passed as parameter.<br>
 
@@ -933,6 +936,21 @@ Use this method to get promotion that has uuid passed as parameter.<br>
 
 #### `Client.getPromotion(code:success:failure:)`
 Use this method to get promotion that has code passed as parameter.<br>
+
+#### `Client.deactivatePromotion(uuid:success:failure:)`
+Use this method to deactivate promotion that has uuid passed as parameter.<br>
+
+#### `Client.deactivatePromotion(code:success:failure:)`
+Use this method to deactivate promotion that has code passed as parameter.<br>
+
+#### `Client.getOrAssignVoucher(poolUUID:success:failure:)`
+Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.<br>
+
+#### `Client.assignVoucherCode(poolUUID:success:failure:)`
+Use this method to assign voucher with provided pool uuid for the client.<br>
+
+#### `Client.getAssignedVoucherCodes(success:failure:)`
+Use this method to get client's voucher codes.<br>
 
 Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Exceptions/Errors handling section).
 
@@ -955,10 +973,10 @@ This method requires `CreateClientContext`
 Register new client with an email with activation, with email without activation or with a phone (depending on context model), password and optional data.
 This method requires `RegisterClientContext(context:sucess:failure:)`
 
-#### `Profile.activateAccount(email:success:failure:)`
+#### `Profile.activateClient(email:success:failure:)`
 Activates client's account.
 
-#### `Profile.confirmAccount(phone:confirmationCode:success:failure:)`
+#### `Profile.confirmPhoneRegistration(phone:confirmationCode:success:failure:)`
 Confirm client's account with confirmation code received by phone.
 
 #### `Profile.updateClient(context:success:failure:)`
@@ -969,7 +987,7 @@ This method requires `UpdateClientContext`
 Delete client with ID.
 This method requires client's id.
 
-#### `Profile.resetPassword(success:failure:)`
+#### `Profile.requestPasswordReset(success:failure:)`
 Request client's password reset with email. Client will receive a token on provided email address in order to use Profile.confirmResetPassword(password, token).
 This method requires `ClientPasswordResetRequestContext`
 
@@ -979,6 +997,9 @@ This method requires `ClientPasswordResetConfirmationContext`
 
 #### `Profile.getPromotions(success:failure:)`
 Use this method to get all available promotions that are defined for your business profile.
+
+#### `Profile.getPromotions(limit:success:failure:)`
+Use this method to get specified number of available promotions that are defined for your business profile.
 
 #### `Profile.getPromotions(externalId:success:failure:)`
 Use this method to get promotions with external ID specified as externalId param.
@@ -1009,6 +1030,15 @@ Use this method to redeem promotion with specified custom ID and promotion code.
 
 #### `Profile.redeemPromotion(email:promotionCode:success:failure:)`
 Use this method to redeem promotion with specified email and promotion code.
+
+#### `Profile.getOrAssignVoucher(poolUUID:clientUUID:success:failure:)`
+Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
+
+#### `Profile.getClientVoucherCodes(clientUUID:success:failure:)`
+Use this method to get client's voucher codes.
+
+#### `Profile.assignVoucherCode(poolUUID:clientUUID:success:failure:)`
+Use this method to assign voucher with provided pool uuid for the client.
 
 #### `Profile.getToken(success:failure:)` 
 Get valid JWT login token.

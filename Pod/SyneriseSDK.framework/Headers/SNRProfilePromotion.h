@@ -6,39 +6,48 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
+#import "SNRPromotion.h"
+
+/**
+ * @enum SNRProfilePromotionStatus
+ */
+typedef NS_ENUM(NSInteger, SNRProfilePromotionStatus) {
+    SNRProfilePromotionStatusPublish = 0,
+    SNRProfilePromotionStatusDraft,
+    SNRProfilePromotionStatusHidden
+} NS_SWIFT_NAME(ProfilePromotionStatus);
+
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(ProfilePromotion)
-@interface SNRProfilePromotion : NSObject
+@interface SNRProfilePromotion : SNRPromotion
 
-@property (copy, nonatomic, nullable, readonly) NSNumber *promotionId;
-@property (copy, nonatomic, nullable, readonly) NSString *uuid;
-@property (copy, nonatomic, nullable, readonly) NSString *code;
-@property (assign, nonatomic, readonly) BOOL isVisible;
-@property (copy, nonatomic, nullable, readonly) NSString *status;
-@property (copy, nonatomic, nullable, readonly) NSString *type;
+@property (copy, nonatomic, nonnull, readonly) NSString *uuid;
+@property (copy, nonatomic, nonnull, readonly) NSString *code;
+@property (assign, nonatomic, readonly) SNRProfilePromotionStatus status;
+@property (assign, nonatomic, readonly) SNRPromotionType type;
+
 @property (copy, nonatomic, nullable, readonly) NSNumber *redeemLimitPerClient;
-@property (copy, nonatomic, nullable, readonly) NSNumber *redeemLimitGlobal;
 @property (copy, nonatomic, nullable, readonly) NSNumber *currentRedeemedQuantity;
-@property (copy, nonatomic, nullable, readonly) NSString *discountType;
-@property (copy, nonatomic, nullable, readonly) NSString *discountValue;
-@property (copy, nonatomic, nullable, readonly) NSString *preDiscountValue;
+@property (assign, nonatomic, readonly) SNRPromotionDiscountType discountType;
+@property (copy, nonatomic, nonnull, readonly) NSNumber *discountValue;
 @property (copy, nonatomic, nullable, readonly) NSNumber *requireRedeemedPoints;
-@property (copy, nonatomic, nullable, readonly) NSString *name;
+
+@property (copy, nonatomic, nonnull, readonly) NSString *name;
 @property (copy, nonatomic, nullable, readonly) NSString *headline;
 @property (copy, nonatomic, nullable, readonly) NSString *descriptionText;
-@property (copy, nonatomic, nullable, readonly) NSString *images; // json
+@property (copy, nonatomic, nullable, readonly) NSArray<NSString *> *images;
+
 @property (copy, nonatomic, nullable, readonly) NSDate *startAt;
 @property (copy, nonatomic, nullable, readonly) NSDate *expireIn;
-@property (copy, nonatomic, nullable, readonly) NSDate *lastingAt;
 @property (copy, nonatomic, nullable, readonly) NSNumber *lastingTime;
-@property (copy, nonatomic, nullable, readonly) NSString *catalog;
-@property (copy, nonatomic, nullable, readonly) NSString *catalogIndexItems; // json
-@property (copy, nonatomic, nullable, readonly) NSString *targetSegment; // json
-@property (copy, nonatomic, nullable, readonly) NSString *customAudience; // json
-@property (copy, nonatomic, nullable, readonly) NSString *params; // json
-@property (copy, nonatomic, nullable, readonly) NSNumber *userId;
-@property (copy, nonatomic, nullable, readonly) NSNumber *businessProfileId;
+
+@property (copy, nonatomic, nullable, readonly) NSDictionary *params;
+@property (copy, nonatomic, nullable, readonly) NSArray<NSString *> *catalogIndexItems;
+@property (copy, nonatomic, nullable, readonly) NSNumber *price;
+
++ (NSString *)NSStringFromProfilePromotionStatus:(SNRProfilePromotionStatus)profilePromotionStatus NS_SWIFT_NAME(stringFromProfilePromotionStatus(_:));
++ (SNRProfilePromotionStatus)profilePromotionStatusFromNSString:(NSString *)string NS_SWIFT_NAME(profilePromotionStatusFromString(_:));
 
 @end
 

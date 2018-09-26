@@ -49,13 +49,16 @@
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRAnalyticsMetrics.h>
 #import <SyneriseSDK/SNRClientSex.h>
+#import <SyneriseSDK/SNRPromotion.h>
 #import <SyneriseSDK/SNRProfilePromotionResponse.h>
 #import <SyneriseSDK/SNRProfilePromotion.h>
-#import <SyneriseSDK/SNRVoucherInformation.h>
-#import <SyneriseSDK/SNRVoucherCodesResponse.h>
-#import <SyneriseSDK/SNRVoucherCodesData.h>
 #import <SyneriseSDK/SNRClientPromotionResponse.h>
 #import <SyneriseSDK/SNRClientPromotion.h>
+#import <SyneriseSDK/SNRVoucherInformation.h>
+#import <SyneriseSDK/SNRAssignVoucherResponse.h>
+#import <SyneriseSDK/SNRAssignVoucherData.h>
+#import <SyneriseSDK/SNRVoucherCodesResponse.h>
+#import <SyneriseSDK/SNRVoucherCodesData.h>
 
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>

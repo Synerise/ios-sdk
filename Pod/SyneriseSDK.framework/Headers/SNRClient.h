@@ -9,6 +9,8 @@
 @class SNRClientAccountInformation;
 @class SNRClientPromotionResponse;
 @class SNRClientPromotion;
+@class SNRAssignVoucherResponse;
+@class SNRVoucherCodesResponse;
 
 typedef struct {
     //Enables automatic client's token refresh.
@@ -145,6 +147,17 @@ NS_SWIFT_NAME(Client)
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
 
 /**
+ * Use this method to get all possible combinations of promotions statuses, which are defined for this client.
+ * Method returns promotions with statuses provided in the list. A special query is build upon this list.
+ *
+ * @param statuses - decide status of promotions which you want to get in response.
+ * @param excludeExpired - decide whether include or exclude already expired promotions.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)getPromotionsWithStatuses:(NSArray<NSNumber *> *)statuses excludeExpired:(BOOL)excludeExpired success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:excludeExpired:success:failure:));
+
+/**
  * Use this method to activate promotion that has uuid passed as parameter.
  *
  * @param uuid uuid of promotion that will be activated.
@@ -187,6 +200,29 @@ NS_SWIFT_NAME(Client)
 + (void)getPromotionByCode:(NSString *)code
                    success:(nullable void (^)(SNRClientPromotion *promotion))success
                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
+
+/**
+ * Use this method to deactivate promotion that has uuid passed as parameter.
+ *
+ * @param uuid - uuid of promotion that will be deactivated.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)deactivatePromotionByUuid:(NSString *)uuid
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(uuid:success:failure:));
+
+/**
+ * Use this method to deactivate promotion that has code passed as parameter.
+ *
+ * @param code - code of promotion that will be deactivated.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)deactivatePromotionByCode:(NSString *)code
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
+
 /*
  * Change client's password.
  *
@@ -197,6 +233,39 @@ NS_SWIFT_NAME(Client)
 + (void)changePassword:(NSString *)password
                   success:(nullable void (^)(BOOL isSuccess))success
                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
+
+/**
+ * Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
+ *
+ * @param poolUUID pool's universally unique identifier.
+ * @param success success block. This block return AssignVoucherResponse object.
+ * @param failure failure block.
+ */
++ (void)getOrAssignVoucherWithPoolUUID:(NSString *)poolUUID
+                               success:(nullable void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
+                               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:success:failure:));
+
+/**
+ * Use this method to assign voucher with provided pool uuid for the client.
+ * Every request returns different code until the pool is empty.
+ * 416 Http status code is returned when pool is empty.
+ *
+ * @param poolUUID pool's universally unique identifier.
+ * @param success - success block. This block return AssignVoucherResponse object.
+ * @param failure - failure block.
+ */
++ (void)assignVoucherCodeWithPoolUUID:(NSString *)poolUUID success:(void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success failure:(nullable void (^)(NSError *error))failure
+    NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
+
+/**
+ * Use this method to get client's voucher codes.
+ *
+ * @param success - success block. This block return VoucherCodesResponse object.
+ * @param failure - failure block.
+ */
++ (void)getAssignedVoucherCodesWithSuccess:(void (^)(SNRVoucherCodesResponse *voucherCodesResponse))success failure:(nullable void (^)(NSError *error))failure
+    NS_SWIFT_NAME(getAssignedVoucherCodes(success:failure:));
+
 /*
  * Change client's password. Check oldPassword with client's current password.
  *
