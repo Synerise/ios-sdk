@@ -15,8 +15,11 @@
 @class SNRClientPasswordResetConfirmationContext;
 @class SNRProfilePromotionResponse;
 @class SNRProfilePromotion;
+@class SNRClientPromotionResponse;
+@class SNRClientPromotion;
 @class SNRVoucherInformation;
 @class SNRVoucherCodesResponse;
+@class SNRAssignVoucherResponse;
 
 /**
  * SNRProfile is responsible for integration with Synerise profile methods.
@@ -108,9 +111,9 @@ NS_SWIFT_NAME(Profile)
  * @throws NSInvalidArgumentException if an email is invalid. Email should be valid.
  *
  */
-+ (void)activateAccount:(NSString *)email
++ (void)activateClient:(NSString *)email
                 success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateClient(email:success:failure:));
 
 /**
  * Confirm account with confirmation code received by phone.
@@ -122,10 +125,10 @@ NS_SWIFT_NAME(Profile)
  *
  * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
  */
-+ (void)confirmAccountWithPhone:(NSString *)phone
++ (void)confirmPhoneRegistrationWithPhone:(NSString *)phone
                confirmationCode:(NSString *)confirmationCode
                         success:(nullable void (^)(BOOL isSuccess))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(phone:confirmationCode:success:failure:));
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneRegistration(phone:confirmationCode:success:failure:));
 
 /**
  * Updates client with id and optional data.
@@ -159,9 +162,10 @@ NS_SWIFT_NAME(Profile)
  * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one BOOL argument.
  * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
  */
-+ (void)resetPassword:(SNRClientPasswordResetRequestContext *)context
++ (void)requestPasswordReset:(SNRClientPasswordResetRequestContext *)context
               success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure;
+              failure:(nullable void (^)(NSError *error))failure
+              NS_SWIFT_NAME(requestPasswordReset(context:success:failure:));
 
 /**
  * Confirms client's password reset with new password and token provided.
@@ -184,6 +188,17 @@ NS_SWIFT_NAME(Profile)
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
 
 /**
+ * Use this method to get specified number of available promotions that are defined for your business profile.
+ *
+ * @param limit maximum number of returned items.
+ * @param success success block.
+ * @param failure failure block.
+ */
++ (void)getPromotionsWithLimit:(NSInteger)limit
+                       success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(limit:success:failure:));
+
+/**
  * Use this method to get promotions with external ID specified as externalId param.
  *
  * @param externalId specified in promotion.
@@ -191,7 +206,7 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByExternalId:(NSString *)externalId
-                          success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                          success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(externalId:success:failure:));
 
 /**
@@ -202,7 +217,7 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByPhoneNumber:(NSString *)phoneNumber
-                           success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                           success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
                            failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(phoneNumber:success:failure:));
 
 /**
@@ -213,7 +228,7 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByClientId:(NSString *)clientId
-                        success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                        success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(clientId:success:failure:));
 
 /**
@@ -224,7 +239,7 @@ NS_SWIFT_NAME(Profile)
  * @param failure failure block.
  */
 + (void)getPromotionsByEmail:(NSString *)email
-                     success:(nullable void (^)(SNRProfilePromotionResponse *promotionResponse))success
+                     success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(email:success:failure:));
 
 /**
@@ -278,12 +293,12 @@ NS_SWIFT_NAME(Profile)
 /**
  * Use this method to redeem promotion with specified custom ID and promotion code.
  *
- * @param customId specified in promotion.
+ * @param externalId specified in promotion.
  * @param promotionCode specified in promotion.
  * @param success success block.
  * @param failure failure block.
  */
-+ (void)redeemPromotionByCustomId:(NSString *)customId
++ (void)redeemPromotionByExternalId:(NSString *)externalId
                     promotionCode:(NSString *)promotionCode
                           success:(nullable void (^)(BOOL isSuccess))success
                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(customId:promotionCode:success:failure:));
@@ -300,6 +315,45 @@ NS_SWIFT_NAME(Profile)
                  promotionCode:(NSString *)promotionCode
                        success:(nullable void (^)(BOOL isSuccess))success
                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(redeemPromotion(email:promotionCode:success:failure:));
+
+/**
+ * Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
+ *
+ * @param poolUUID pool's universally unique identifier.
+ * @param clientUUID current client uuid will be used if provided uuid is null.
+ * @param success success block. This block return AssignVoucherResponse object.
+ * @param failure failure block.
+ */
++ (void)getOrAssignVoucherWithPoolUUID:(NSString *)poolUUID
+                            clientUUID:(nullable NSString *)clientUUID
+                               success:(nullable void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
+                               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:clientUUID:success:failure:));
+
+/**
+* Use this method to get client's voucher codes.
+*
+* @param clientUUID current client uuid will be used if provided uuid is null.
+* @param success success block. This block return VoucherCodesResponse with VoucherCodesData object array.
+* @param failure failure block.
+*/
++ (void)getClientVoucherCodesWithClientUUID:(nullable NSString *)clientUUID
+                               success:(nullable void (^)(SNRVoucherCodesResponse *voucherInformation))success
+                               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getClientVoucherCodes(clientUUID:success:failure:));
+
+/**
+ * Use this method to assign voucher with provided pool uuid for the client.
+ * Every request returns different code until the pool is empty.
+ * 416 Http status code is returned when pool is empty.
+ *
+ * @param poolUUID   pool's universally unique identifier.
+ * @param clientUUID current client uuid will be used if provided uuid is null.
+ * @param success success block. This block return AssignVoucherResponse object.
+ * @param failure failure block.
+ */
++ (void)assignVoucherCodeWithPoolUUID:(NSString *)poolUUID
+                            clientUUID:(nullable NSString *)clientUUID
+                               success:(nullable void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
+                               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:clientUUID:success:failure:));
 
 /**
  * Registers user for push notifications.
