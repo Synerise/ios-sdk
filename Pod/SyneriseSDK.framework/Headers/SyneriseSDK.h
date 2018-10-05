@@ -76,3 +76,6 @@
 #import <SyneriseSDK/SNRInvalidBirthdateError.h>
 #import <SyneriseSDK/SNRIllegalArgumentError.h>
 #import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordError.h>
+
+#import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
+#import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>

@@ -57,7 +57,7 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 /**
  * This method will be called when Banner has been loaded and SyneriseSDK asks for permission to show it.
  *
- * @param bannerDictionary is banner instance representation.
+ * @param bannerDictionary - it is banner instance representation.
  */
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary *)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
@@ -92,14 +92,14 @@ NS_SWIFT_NAME(Injector)
  *
  * @note It is not recommended to use debug mode in release version of your application.
  *
- * @param enabled Enables/disables console logs.
+ * @param enabled - specified is console logs are enabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
  * Enables/disables automatic for SNRInjector.
  *
- * @param automatic enables/disables automatic.
+ * @param automatic - specified is automatic mode is enabled.
  */
 + (void)setAutomatic:(BOOL)automatic;
 
@@ -108,21 +108,21 @@ NS_SWIFT_NAME(Injector)
  *
  * @note This method needs to be called before any other method of SNRInjector class and only once during application lifecycle.
  *
- * @param apiKey Synerise API Key for Business Profile.
+ * @param apiKey - Synerise API Key for Business Profile.
  */
 + (void)initialize:(NSString *)apiKey;
 
 /**
  * This method sets object for Walkthrough delegate methods.
  *
- * @param delegate object that implement SNRInjectorWalkthroughDelegate protocol.
+ * @param delegate - object that implement SNRInjectorWalkthroughDelegate protocol.
  */
 + (void)setWalkthroughDelegate:(id<SNRInjectorWalkthroughDelegate>)delegate;
 
 /**
  * This method sets object for Banner delegate methods.
  *
- * @param delegate object that implement SNRInjectorBannerDelegate protocol.
+ * @param delegate - object that implement SNRInjectorBannerDelegate protocol.
  */
 + (void)setBannerDelegate:(id<SNRInjectorBannerDelegate>)delegate;
 
@@ -167,7 +167,7 @@ NS_SWIFT_NAME(Injector)
 /**
  * Show banner immediately.
  *
- * @param markPresented sets banner as presented and this banner instance representation will notappear second time.
+ * @param markPresented - sets banner as presented and this banner instance representation will not appear second time.
  */
 + (void)showBanner:(NSDictionary *)bannerDictionary
      markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));

@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, SNRRegisterClientContextRegistrationType) {
 } NS_SWIFT_NAME(RegistrationType);
 
 /**
- Register context to @c [SNRClient registerClient] metod
+ Register context to @c [SNRClient registerClient] method
  */
 
 NS_ASSUME_NONNULL_BEGIN
@@ -28,11 +28,13 @@ NS_SWIFT_NAME(RegisterClientContext)
 @interface SNRRegisterClientContext : SNRBaseContext
 
 /**
- * @attention setters can throw exception
+ * @attention Setters can throw exception.
  *
- * @throws NSInvalidArgumentException if @property email is invalid - email should be valid email address.
- * @throws NSInvalidArgumentException if @property password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
- * @throws NSInvalidArgumentException if @property phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ * @note Email should be valid email address.
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 
 @property (copy, nonatomic, nullable, readwrite) NSString *address;
@@ -60,23 +62,26 @@ NS_SWIFT_NAME(RegisterClientContext)
 + (instancetype)new __unavailable;
 
 /**
- * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
- * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ * @note Email should be valid email address.
+ *
+ * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 - (instancetype)init:(NSString *)email
             password:(NSString *)password;
 
 
 /**
- * @throws NSInvalidArgumentException if email is invalid - email should be valid email address.
- * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ * @note Email should be valid email address.
+ *
+ * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 - (instancetype)initWithEmailWithoutActivation:(NSString *)email
-            password:(NSString *)password;
+                                      password:(NSString *)password;
 
 /**
- * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 - (instancetype)initWithPhoneNumber:(NSString *)phoneNumber
                            password:(NSString *)password;
