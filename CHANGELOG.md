@@ -1,7 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [3.2.24] - 2018-09-26
+## [3.2.26] - 2018-10-05
+
+### Added
+- Client method to obtain external client's authorization token.
+- Simple Push campaign sends events to Synerise.
+- Password validation is removed in the entire SDK.
+
+### Changed
+- Synerise SDK can be initialized at any moment of the application's lifecycle.
+
+### Fixed
+- Public methods are more orderly and better described.
+
+
+## [3.2.25] - 2018-09-26
 
 ### Added
 - Assign voucher Profile and Client API methods.
