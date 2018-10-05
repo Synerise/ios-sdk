@@ -39,7 +39,7 @@ NS_SWIFT_NAME(Client)
  * This method enables/disables console logs from Client SDK.
  * It is not recommended to use debug mode in release version of your application.
  *
- * @param enabled specified is console logs are enabled.
+ * @param enabled - specified is console logs are enabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 
@@ -48,14 +48,14 @@ NS_SWIFT_NAME(Client)
  *
  * @note This method needs to be called before any other method of SNRTracker class and only once during application lifecycle.
  *
- * @param apiKey Synerise API Key.
+ * @param apiKey - Synerise API Key.
  */
 + (void)initialize:(NSString *)apiKey;
 
 /**
- * Sets configuration of client
+ * Sets configuration of client.
  *
- * @param configuration of client.
+ * @param configuration - configuration of client.
  */
 + (void)setConfiguration:(SNRClientConfiguration)configuration;
 
@@ -71,8 +71,9 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @throws NSInvalidArgumentException if an email is invalid. Email should be valid.
- * @throws NSInvalidArgumentException if a password is invalid. The password should consist of at least one uppercase, one lowercase, one special character and be at least 8 characters long.
+ * @note Email should be valid email address.
+ *
+ * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)logIn:(NSString *)email
      password:(NSString *)password
@@ -86,20 +87,79 @@ NS_SWIFT_NAME(Client)
  * Please note that you should NOT allow to sign in again (or sign up) when a user is already signed in. Please sign out user first.
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
- * @param phone - client's phone.
+ * @param phone - client's phone number.
  * @param password - client's password.
  * @param deviceId - deviceId.
  * @param success - success block.
  * @param failure - failure block.
  *
- * @throws NSInvalidArgumentException if phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- * @throws NSInvalidArgumentException if a password is invalid. The password should consist of at least one uppercase, one lowercase, one special character and be at least 8 characters long.
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)logInWithPhone:(NSString *)phone
               password:(NSString *)password
               deviceId:(nullable NSString *)deviceId
                success:(nullable void (^)(BOOL isSuccess))success
                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(login(phone:password:deviceId:success:failure:));
+
+/**
+ * Use this method to obtain unregistered client's authorization token.
+ *
+ * @note 401 http status code is returned if you used this method for the client already existing in Synerise database.
+ *
+ * @param uuid - client's uuid.
+ *
+ * @throws SNRIllegalArgumentException for Obj-C and SNRIllegalArgumentError if a uuid is invalid string.
+ */
++ (void)createAuthTokenByUuid:(NSString *)uuid
+                      success:(nullable void (^)(BOOL isSuccess))success
+                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(createAuthToken(uuid:success:failure:));
+
+/**
+ * Use this method to obtain unregistered client's authorization token.
+ *
+ * @note 401 http status code is returned if you used this method for the client already existing in Synerise database.
+ *
+ * @note Email should be valid email address.
+ *
+ * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
+ */
++ (void)createAuthTokenByEmail:(NSString *)email
+                       success:(nullable void (^)(BOOL isSuccess))success
+                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(createAuthToken(email:success:failure:));
+
+/**
+ * Use this method to obtain unregistered client's authorization token.
+ *
+ * @note 401 http status code is returned if you used this method for the client already existing in Synerise database.
+ *
+ * @param customId - client's custom identifier.
+ *
+ * @throws SNRIllegalArgumentException for Obj-C and SNRIllegalArgumentError if a customId is invalid string.
+ */
++ (void)createAuthTokenByCustomId:(NSString *)customId
+                          success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(createAuthToken(customId:success:failure:));
+
+/**
+ * Retrieves current Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
+ *
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)getTokenWithSuccess:(nullable void (^)(NSString *token))success
+                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:));
+
+/**
+ * Retrieve current client's UUID.
+ */
++ (NSString *)getUUID;
+
+/**
+ * Retrieve whether client is signed in (is client's token not expired).
+ */
++ (BOOL)isSignedIn;
 
 /**
  * Logs out client.
@@ -109,11 +169,89 @@ NS_SWIFT_NAME(Client)
 /**
  * Get client's account information.
  *
- * @param success success block.
- * @param failure failure block.
+ * @param success - success block.
+ * @param failure - failure block.
  */
 + (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation *accountInformation))success
                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
+
+/**
+ * Update client's account information with optional data.
+ *
+ * @param context - context object with client's account information to be modified.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)updateAccount:(SNRClientUpdateAccountContext *)context
+              success:(nullable void (^)(BOOL isSuccess))success
+              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
+
+/**
+ * Delete client's account information.
+ *
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)deleteAccountWithSuccess:(nullable void (^)(BOOL isSuccess))success
+                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(success:failure:));
+
+/**
+ * Change client's password.
+ *
+ * @param password - new client's password.
+ * @param success - success block.
+ * @param failure - failure block.
+ */
++ (void)changePassword:(NSString *)password
+               success:(nullable void (^)(BOOL isSuccess))success
+               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
+
+/**
+ * Change client's password. Check oldPassword with client's current password.
+ *
+ * @param newPassword - new client's password.
+ * @param oldPassword - old client's password.
+ * @param success - success block.
+ * @param failure - failure block.
+ *
+ * @throws SNRPasswordIsNotEqualToSavedPasswordException for Obj-C and SNRPasswordIsNotEqualToSavedPasswordError for Swift if a new password is not equal as old password.
+ */
++ (void)changePasswordWithNewPassword:(NSString *)newPassword
+                          oldPassword:(nullable NSString *)oldPassword
+                              success:(nullable void (^)(BOOL isSuccess))success
+                              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(newPassword:oldPassword:success:failure:));
+
+/**
+ * Update client's phone number request.
+ *
+ * @param phoneNumber - client's phone number.
+ * @param success - success block.
+ * @param failure - failure block.
+ *
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
+ */
++ (void)updatePhoneNumber:(NSString *)phoneNumber
+                  success:(nullable void (^)(BOOL isSuccess))success
+                  failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updatePhoneNumber(phoneNumber:success:failure:));
+
+/**
+ * Confirm client's phone number update.
+ *
+ * @param phoneNumber - client's phone number.
+ * @param confirmationCode - client's confirmation code received by phone.
+ * @param success - success block.
+ * @param failure - failure block.
+ *
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
+ */
++ (void)confirmPhoneNumber:(NSString *)phoneNumber
+          confirmationCode:(NSString *)confirmationCode
+                   success:(nullable void (^)(BOOL isSuccess))success
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:));
 
 /**
  * Get all available Analytics metrics for the client.
@@ -129,7 +267,7 @@ NS_SWIFT_NAME(Client)
  * Fetch all available Analytics metrics for the client and return the first metric, which matches provided name.
  * Please note that in order to use this method, Client must be signed in first.
  *
- * @param name metrics data's name to filter through all available metrics.
+ * @param name - metrics data's name to filter through all available metrics.
  * @param success - success block.
  * @param failure - failure block.
  */
@@ -155,12 +293,15 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  */
-+ (void)getPromotionsWithStatuses:(NSArray<NSNumber *> *)statuses excludeExpired:(BOOL)excludeExpired success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:excludeExpired:success:failure:));
++ (void)getPromotionsWithStatuses:(NSArray<NSNumber *> *)statuses
+                   excludeExpired:(BOOL)excludeExpired
+                          success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:excludeExpired:success:failure:));
 
 /**
  * Use this method to activate promotion that has uuid passed as parameter.
  *
- * @param uuid uuid of promotion that will be activated.
+ * @param uuid - uuid of promotion that will be activated.
  * @param success - success block.
  * @param failure - failure block.
  */
@@ -171,7 +312,7 @@ NS_SWIFT_NAME(Client)
 /**
  * Use this method to activate promotion that has code passed as parameter.
  *
- * @param code code of promotion that will be activated.
+ * @param code - code of promotion that will be activated.
  * @param success - success block.
  * @param failure - failure block.
  */
@@ -182,7 +323,7 @@ NS_SWIFT_NAME(Client)
 /**
  * Use this method to get promotion that has uuid passed as parameter.
  *
- * @param uuid uuid of promotion.
+ * @param uuid - uuid of promotion.
  * @param success - success block.
  * @param failure - failure block.
  */
@@ -193,7 +334,7 @@ NS_SWIFT_NAME(Client)
 /**
  * Use this method to get promotion that has code passed as parameter.
  *
- * @param code code of promotion.
+ * @param code - code of promotion.
  * @param success - success block.
  * @param failure - failure block.
  */
@@ -223,23 +364,12 @@ NS_SWIFT_NAME(Client)
                           success:(nullable void (^)(BOOL isSuccess))success
                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
 
-/*
- * Change client's password.
- *
- * @param password - new client's password.
- * @param success - success block.
- * @param failure - failure block.
- */
-+ (void)changePassword:(NSString *)password
-                  success:(nullable void (^)(BOOL isSuccess))success
-                  failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:success:failure:));
-
 /**
  * Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
  *
- * @param poolUUID pool's universally unique identifier.
- * @param success success block. This block return AssignVoucherResponse object.
- * @param failure failure block.
+ * @param poolUUID - pool's universally unique identifier.
+ * @param success - success block.
+ * @param failure - failure block.
  */
 + (void)getOrAssignVoucherWithPoolUUID:(NSString *)poolUUID
                                success:(nullable void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
@@ -248,97 +378,25 @@ NS_SWIFT_NAME(Client)
 /**
  * Use this method to assign voucher with provided pool uuid for the client.
  * Every request returns different code until the pool is empty.
- * 416 Http status code is returned when pool is empty.
  *
- * @param poolUUID pool's universally unique identifier.
- * @param success - success block. This block return AssignVoucherResponse object.
+ * @note 416 HTTP status code is returned when pool is empty.
+ *
+ * @param poolUUID - pool's universally unique identifier.
+ * @param success - success block.
  * @param failure - failure block.
  */
-+ (void)assignVoucherCodeWithPoolUUID:(NSString *)poolUUID success:(void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success failure:(nullable void (^)(NSError *error))failure
-    NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
++ (void)assignVoucherCodeWithPoolUUID:(NSString *)poolUUID
+                              success:(nullable void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
+                              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
 
 /**
  * Use this method to get client's voucher codes.
  *
- * @param success - success block. This block return VoucherCodesResponse object.
- * @param failure - failure block.
- */
-+ (void)getAssignedVoucherCodesWithSuccess:(void (^)(SNRVoucherCodesResponse *voucherCodesResponse))success failure:(nullable void (^)(NSError *error))failure
-    NS_SWIFT_NAME(getAssignedVoucherCodes(success:failure:));
-
-/*
- * Change client's password. Check oldPassword with client's current password.
- *
- * @param newPassword - new client's password.
- * @param oldPassword - old client's password.
  * @param success - success block.
  * @param failure - failure block.
  */
-+ (void)changePasswordWithNewPassword:(NSString *)newPassword oldPassword:(NSString *)oldPassword success:(nullable void (^)(BOOL isSuccess))success failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(newPassword:oldPassword:success:failure:));
-/**
- * Delete client's account information.
- *
- * @param success success block.
- * @param failure failure block.
- */
-+ (void)deleteAccountWithSuccess:(nullable void (^)(BOOL isSuccess))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(success:failure:));
-
-/**
- * Update client's account information with optional data.
- *
- * @param context object with client's account information to be modified.
- * @param success - success block.
- * @param failure - failure block.
- */
-+ (void)updateAccount:(SNRClientUpdateAccountContext *)context
-              success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
-
-/*
- * Update client's phone number request.
- *
- * @param phoneNumber client's phone.
- * @param success - success block.
- * @param failure - failure block.
- */
-+ (void)updatePhoneNumber:(NSString *)phoneNumber
-                  success:(nullable void (^)(BOOL isSuccess))success
-                  failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updatePhoneNumber(phoneNumber:success:failure:));
-
-/*
- * Confirm client's phone number update.
- *
- * @param phoneNumber client's phone.
- * @param confirmationCode client's confirmation code received by phone.
- * @param success - success block.
- * @param failure - failure block.
- */
-+ (void)confirmPhoneNumber:(NSString *)phoneNumber
-          confirmationCode: (NSString *)confirmationCode
-                   success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:));
-
-
-
-/**
- * Retrieves current Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
- *
- * @param success A block object to be executed when the request finishes successfully. This block has no return value and takes one argument containing Client authentication token.
- * @param failure A block object to be executed when the request fails. This block has no return value and takes one @c NSError argument.
- */
-+ (void)getTokenWithSuccess:(nullable void (^)(NSString *token))success
-                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:));
-
-/**
- * Retrieve current client's UUID.
- */
-+ (NSString*)getUUID;
-
-/**
- * Retrieve whether client is signed in (is client's token not expired).
- */
-+ (BOOL)isSignedIn;
++ (void)getAssignedVoucherCodesWithSuccess:(nullable void (^)(SNRVoucherCodesResponse *voucherCodesResponse))success
+                                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAssignedVoucherCodes(success:failure:));
 
 @end
 

@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.25)
+# Synerise iOS SDK (v3.2.26)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.25-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.26-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -115,8 +115,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	Tracker.setAutoTrackMode(.fine) // 4
 
 	let trackerConfiguration = TrackerConfiguration();
-	trackerConfiguration.minBathSize = 10;
-	trackerConfiguration.maxBathSize = 100;
+	trackerConfiguration.minBatchSize = 10;
+	trackerConfiguration.maxBatchSize = 100;
 	trackerConfiguration.autoFlushTimeout = 10.0;
 
 	Tracker.setConfiguration(trackerConfiguration); // 5
@@ -151,8 +151,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine]; // 4
 
 	SNRTrackerConfiguration trackerConfiguration;
-	trackerConfiguration.minBathSize = 10;
-	trackerConfiguration.maxBathSize = 100;
+	trackerConfiguration.minBatchSize = 10;
+	trackerConfiguration.maxBatchSize = 100;
 	trackerConfiguration.autoFlushTimeout = 10.0f;
 	
 	[SNRTracker setConfiguration:trackerConfiguration]; // 5
@@ -618,8 +618,6 @@ private func loginWithPhone(phone: String, password: String) {
     } catch let error as NSError {
         if error is SNRInvalidPhoneNumberError {
             //...
-        } else if error is SNRInvalidPasswordError {
-        	//...
         }
     } catch {
         //...
@@ -642,24 +640,19 @@ private func loginWithPhone(phone: String, password: String) {
     @catch (SNRInvalidPhoneNumberException *exception) {
     	//...
     }
-    @catch (SNRInvalidPasswordException *exception) {
-		//...
-    }
     @finally {}
 }
 ```
 
-### Objective-C exceptions and their errors in swift:
+### Objective-C exceptions and Swift Errors:
+
+**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
 
 **SNRInvalidEmailException** - **SNRInvalidEmailError**
-
-**SNRInvalidPasswordException** - **SNRInvalidPasswordError**
 
 **SNRInvalidPhoneNumberException** - **SNRInvalidPhoneNumberError**
 
 **SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
-
-**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
 
 **SNRPasswordIsNotEqualToSavedPasswordException** - **SNRPasswordIsNotEqualToSavedPasswordError**
 
@@ -673,8 +666,8 @@ Synerise SDK provides you with powerful features for User Activity Tracking that
 **Swift:**
 ```swift
 var trackerConfiguration: TrackerConfiguration = TrackerConfiguration();
-trackerConfiguration.minBathSize = 1;
-trackerConfiguration.maxBathSize = 100;
+trackerConfiguration.minBatchSize = 1;
+trackerConfiguration.maxBatchSize = 100;
 trackerConfiguration.autoFlushTimeout = 2.0;
     
 [Tracker setConfiguration:trackerConfiguration];
@@ -683,16 +676,16 @@ trackerConfiguration.autoFlushTimeout = 2.0;
 **Objective-C:**
 ```objective-c
 SNRTrackerConfiguration trackerConfiguration;
-trackerConfiguration.minBathSize = 1;
-trackerConfiguration.maxBathSize = 100;
+trackerConfiguration.minBatchSize = 1;
+trackerConfiguration.maxBatchSize = 100;
 trackerConfiguration.autoFlushTimeout = 2.0f;
     
 [SNRTracker setConfiguration:trackerConfiguration];
 ```
 
-**MIN BATH SIZE** - This parameter sets a minimum number of events in queue required to send them.
+**MIN BATCH SIZE** - This parameter sets a minimum number of events in queue required to send them.
 
-**MAX BATH SIZE** - This parameter sets a maximum number of events, which may be sent in a single batch.
+**MAX BATCH SIZE** - This parameter sets a maximum number of events, which may be sent in a single batch.
 
 **AUTO FLUSH TIMEOUT** - This parameter sets the time required to elapse before event's queue will attempt to be sent.
 
@@ -872,87 +865,104 @@ clientConfiguration.autoClientRefresh = YES;
 ## Features
 
 #### `Client.login(email:password:deviceId:success:)`
-Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
-The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
-The method requires valid and non-null email and password. The device ID is optional.<br>
+Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.  
+The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
+The method requires valid and non-null email and password. The device ID is optional.  
 
 #### `Client.login(phone:password:deviceId:success:)`
-Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.<br>
-The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).<br>
-The method requires valid and non-null email and password. The device ID is optional.<br>
+Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.  
+The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
+The method requires valid and non-null email and password. The device ID is optional.  
+
+#### `Client.createAuthToken(uuid:success:failure:)`
+Use this method to obtain unregistered client's authorization token.
+
+#### `Client.createAuthToken(email:success:failure:)`
+Use this method to obtain unregistered client's authorization token.
+
+#### `Client.createAuthToken(customId:success:failure:)`
+Use this method to obtain unregistered client's authorization token.
+
+#### `Client.getToken(success:failure:)`
+Get valid JWT login token. This method pass token with success block execution.
+
+#### `Client.getUUID()`
+Retrieve current client's UUID.
+
+#### `Client.isSignedIn()`
+Retrieve whether client is signed in (is client's token not expired).
 
 #### `Client.logOut()`
 Signing client out causes in generating new UUID for a new anonymous one.
 
 #### `Client.getAccount(success:failure:)`
-Use this method to get client's account information.<br>
-This method pass `SNRClientAccountInformation` with success block execution.
-
-#### `Client.updatePhoneNumber(phoneNumber:success:failure:)`
-Update client's phone number request.
-
-#### `Client.confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:)`
-Confirm client's phone number update.
-
-#### `Client.changePassword(password:success:failure:)`
-Change client's password.
-
-#### `Client.changePassword(newPassword:oldPassword:success:failure:)`
-Change client's password.<br>
-Old password will be compared with the one stored within SDK if and only if auto client refresh is true in client configuration.<br>
-New password will be saved automatically if auto client refresh is true.<br>
+Use this method to get client's account information.  
 
 #### `Client.updateAccount(success:failure:)`
-Use this method to update client's account information.<br>
-This method pass `SNRClientUpdateAccountContext` with success block execution.
+Use this method to update client's account information.  
 
-#### `Client.getToken(success:failure:)`
-Get valid JWT login token.<br>
-This method pass token with success block execution.
+#### `Client.deleteAccount(success:failure:)`
+Use this method to delete client's account information.
 
-#### `Client.getUUID()`
-Retrieve current client's UUID.<br>
+#### `Client.changePassword(password:success:failure:)`
+Use this method to change client's password.  
 
-#### `Client.isSignedIn()`
-Retrieve whether client is signed in (is client's token not expired).<br>
+#### `Client.changePassword(newPassword:oldPassword:success:failure:)`
+Use this method to change client's password.  
+Old password will be compared with the one stored within SDK if and only if auto client refresh is true in client configuration.  
+New password will be saved automatically if auto client refresh is true.  
+
+#### `Client.updatePhoneNumber(phoneNumber:success:failure:)`
+Use this method to create client's phone number update request.
+
+#### `Client.confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:)`
+Use this method to confirm client's phone number update request.
 
 #### `Client.getAnalytics(success:failure:)`
-Get all available Analytics metrics for the client.<br>
+Use this method to get all available analytics metrics for the client.
+
+#### `Client.getAnalytics(name:success:failure:)`
+Use this method to get analytics metrics matches provided name.
 
 #### `Client.getPromotions(success:failure:)`
-Use this method to get all available promotions that are defined for this client.<br>
+Use this method to get all available promotions that are defined for this client.
 
 #### `Client.getPromotions(statuses:excludeExpired:success:failure:)`
-Use this method to get all possible combinations of promotions statuses, which are defined for this client.<br>
+Use this method to get all possible combinations of promotions statuses, which are defined for this client.
 
 #### `Client.activatePromotion(uuid:success:failure:)`
-Use this method to activate promotion that has uuid passed as parameter.<br>
+Use this method to activate promotion that has uuid passed as parameter.
 
 #### `Client.activatePromotion(code:success:failure:)`
-Use this method to activate promotion that has code passed as parameter.<br>
+Use this method to activate promotion that has code passed as parameter.
 
 #### `Client.getPromotion(uuid:success:failure:)`
-Use this method to get promotion that has uuid passed as parameter.<br>
+Use this method to get promotion that has uuid passed as parameter.
 
 #### `Client.getPromotion(code:success:failure:)`
-Use this method to get promotion that has code passed as parameter.<br>
+Use this method to get promotion that has code passed as parameter.
 
 #### `Client.deactivatePromotion(uuid:success:failure:)`
-Use this method to deactivate promotion that has uuid passed as parameter.<br>
+Use this method to deactivate promotion that has uuid passed as parameter.
 
 #### `Client.deactivatePromotion(code:success:failure:)`
-Use this method to deactivate promotion that has code passed as parameter.<br>
+Use this method to deactivate promotion that has code passed as parameter.
 
 #### `Client.getOrAssignVoucher(poolUUID:success:failure:)`
-Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.<br>
+Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
 
 #### `Client.assignVoucherCode(poolUUID:success:failure:)`
-Use this method to assign voucher with provided pool uuid for the client.<br>
+Use this method to assign voucher with provided pool uuid for the client.
 
 #### `Client.getAssignedVoucherCodes(success:failure:)`
-Use this method to get client's voucher codes.<br>
+Use this method to get client's voucher codes.
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`. Use try/catch in some operations (see Exceptions/Errors handling section).
+**IMPORTANT**
+
+Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
+Every method or property that can throw exception is marked by `@throws` annotation above method.
+
+See **Exceptions/Errors handling** section for more information.
 
 
 # Profile
@@ -960,40 +970,41 @@ Note, that some methods can throw exceptions from validation, for example, if yo
 ## Features
 
 #### `Profile.setPoolUuid(_:)`
-Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.<br>
+Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.
+
+#### `Profile.getToken(success:failure:)` 
+Get valid JWT login token.  
+This method pass token with success block execution.
 
 #### `Profile.getClient(success:failure:)`
-Get client profile information with email.
+Use this method to get client profile information.
 
 #### `Profile.createClient(success:failure:)`
-Create a new client record if no identifier has been assigned for him before in Synerise.
-This method requires `CreateClientContext`
+Use this method to create a new client record if no identifier has been assigned for him before in Synerise.
 
 #### `Profile.registerClient(success:failure:)`
-Register new client with an email with activation, with email without activation or with a phone (depending on context model), password and optional data.
-This method requires `RegisterClientContext(context:sucess:failure:)`
+Use this method to register new client with an email with activation, with email without activation or with a phone (depending on context model), password and optional data.
+
+#### `Profile.registerForPush(registrationToken:success:failure:)`
+Use this method to register user for push notifications.
 
 #### `Profile.activateClient(email:success:failure:)`
-Activates client's account.
+Use this method to activate client's account.
 
 #### `Profile.confirmPhoneRegistration(phone:confirmationCode:success:failure:)`
-Confirm client's account with confirmation code received by phone.
+Use this method to confirm client's account with confirmation code received by phone.
 
 #### `Profile.updateClient(context:success:failure:)`
-Update client with ID and optional data.
-This method requires `UpdateClientContext`
+Use this method to update client with ID and optional data.
 
 #### `Profile.deleteClient(success:failure:)`
-Delete client with ID.
-This method requires client's id.
+Use this method to delete client with ID.
 
 #### `Profile.requestPasswordReset(success:failure:)`
-Request client's password reset with email. Client will receive a token on provided email address in order to use Profile.confirmResetPassword(password, token).
-This method requires `ClientPasswordResetRequestContext`
+Use this method to request client's password reset with email. Client will receive a token on provided email address in order to use Profile.confirmResetPassword(password, token).
 
 #### `Profile.confirmResetPassword(success:failure:)`
-Confirm client's password reset with new password and token provided by Profile.requestPasswordReset(email).
-This method requires `ClientPasswordResetConfirmationContext`
+Use this method to confirm client's password reset with new password and token provided by Profile.requestPasswordReset(email).
 
 #### `Profile.getPromotions(success:failure:)`
 Use this method to get all available promotions that are defined for your business profile.
@@ -1040,11 +1051,13 @@ Use this method to get client's voucher codes.
 #### `Profile.assignVoucherCode(poolUUID:clientUUID:success:failure:)`
 Use this method to assign voucher with provided pool uuid for the client.
 
-#### `Profile.getToken(success:failure:)` 
-Get valid JWT login token.
-This method pass token with success block execution.
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Profile.getClient:success:failure:`. Use try/catch in some operations (see Exceptions/Errors handling section).
+**IMPORTANT**
+
+Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
+Every method or property that can throw exception is marked by `@throws` annotation above method.
+
+See **Exceptions/Errors handling** section for more information.
 
 
 # Injector

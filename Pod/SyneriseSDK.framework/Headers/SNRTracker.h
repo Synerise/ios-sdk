@@ -12,12 +12,12 @@ typedef struct {
     //Note, that adding any event to queue runs auto flush, so even queue with less than minimum number of required events will attempt to be sent.
     //
     //Minimum batch size is 10 by default.
-    NSInteger minBathSize;
+    NSInteger minBatchSize;
     
     //This parameter sets a maximum number of events, which may be sent in a single batch.
     //
     //Maximum batch size is 100 by default.
-    NSInteger maxBathSize;
+    NSInteger maxBatchSize;
     
     //This parameter sets the time required to elapse before event's queue will attempt to be sent.
     //Please provide your timeout in milliseconds and by default timeout equals 5 seconds.
@@ -61,7 +61,7 @@ NS_SWIFT_NAME(Tracker)
  *
  * @note It is not recommended to use debug mode in release version of your application.
  *
- * @param enabled Enables/disables console logs.
+ * @param enabled - specified is console logs are enabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 
@@ -70,14 +70,14 @@ NS_SWIFT_NAME(Tracker)
  *
  * @note This method needs to be called before any other method of SNRTracker class and only once during application lifecycle.
  *
- * @param apiKey Synerise API Key.
+ * @param apiKey - Synerise API Key.
  */
 + (void)initialize:(NSString *)apiKey;
 
 /**
- * Sets configuration of tracker
+ * Sets configuration of tracker.
  *
- * @param configuration of tracker.
+ * @param configuration - configuration of tracker.
  */
 + (void)setConfiguration:(SNRTrackerConfiguration)configuration;
 
@@ -86,39 +86,37 @@ NS_SWIFT_NAME(Tracker)
  *
  * @note AutoTrack is disabled by default - mode is set up to SNRTrackerAutoTrackModeDisabled.
  *
- * @param mode of AutoTrack functionality.
+ * @param mode - mode of AutoTrack functionality.
  */
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
 
 /**
  * Your custom identifier will be sent within every event in event params.
  *
- * @param customIdentifier Client's custom identifier
+ * @param customIdentifier - client's custom identifier.
  */
 + (void)setCustomIdentifier:(NSString *)customIdentifier;
 
 /**
  * Your custom email will be sent within every event in event params.
  *
- * @param customEmail Client's email
+ * @param customEmail - client's email.
  */
 + (void)setCustomEmail:(NSString *)customEmail;
 
 /**
  * Adds new event to queue and sends available events to server if possible.
  *
- * @param event @c SNREvent object.
+ * @param event - @c SNREvent object.
  */
 + (void)send:(SNREvent *)event;
 
 /**
  * Forces sending unsent events to Synerise server.
  *
- * @param completion A block object to be executed when @c SNRTracler has finished flushing events to Synerise servers, no matter the result.
+ * @param completion - a block object to be executed when @c SNRTracler has finished flushing events to Synerise servers, no matter the result.
  */
 + (void)flushEventsWithCompletionHandler:(nullable void (^)(void))completion NS_SWIFT_NAME(flushEvents(completionHandler:));
-
-#pragma mark - Deprecated methods
 
 /**
  * Forces sending unsent events to Synerise server.

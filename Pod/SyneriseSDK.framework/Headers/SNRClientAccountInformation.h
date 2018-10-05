@@ -17,10 +17,13 @@ NS_SWIFT_NAME(ClientAccountInformation)
 + (instancetype)new __unavailable;
 
 /**
- * @attention setters can throw exception
+ * @attention Setters can throw exception.
  *
- * @throws NSInvalidArgumentException if @property phone is invalid - phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- * @throws NSInvalidArgumentException if @property birthdate is invalid - birthdate should match matching \d{4}-\d{2}-\d{2} regex pattern. Use YYYY-MM-DD format (1985-11-09).
+ * @note Birthdate should match matching \d{4}-\d{2}-\d{2} regex pattern. Use YYYY-MM-DD format (1985-11-09).
+ * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
+ *
+ * @throws SNRInvalidBirthdateException for Obj-C and SNRInvalidBirthdateError for Swift if a birthdate is invalid.
+ * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 
 @property (copy, nonatomic, nullable, readwrite) NSString *address;

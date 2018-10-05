@@ -18,9 +18,6 @@ NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
 
-/**
- * @throws NSInvalidArgumentException if password is invalid - password that consists of at least one uppercase, one lowercase, one special character and is at least 8 characters long.
- */
 - (instancetype)init:(NSString *)password token:(NSString *)token;
 
 @end

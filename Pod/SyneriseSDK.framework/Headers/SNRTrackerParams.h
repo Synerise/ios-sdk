@@ -76,9 +76,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(TrackerParams)
 @interface SNRTrackerParams : NSObject
 
-- (nullable instancetype)init __unavailable __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
+- (instancetype)init __unavailable __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
 
-+ (nullable instancetype)new __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
++ (instancetype)new __attribute__((unavailable("Use [SNTRackerParams makeWithBuilder:] instead")));
 
 /**
  Initializes @c SNRTrackerParams object with @c SNRTrackerParamsBuilder.
