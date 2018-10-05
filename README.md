@@ -959,8 +959,8 @@ Use this method to get client's voucher codes.
 
 **IMPORTANT**
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`.  
-Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.
+Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
+Every method or property that can throw exception is marked by `@throws` annotation above method.
 
 See **Exceptions/Errors handling** section for more information.
 
@@ -1054,8 +1054,8 @@ Use this method to assign voucher with provided pool uuid for the client.
 
 **IMPORTANT**
 
-Note, that some methods can throw exceptions from validation, for example, if you pass invalid email for `Client.login(email:password:deviceId:success:)`.  
-Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.
+Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
+Every method or property that can throw exception is marked by `@throws` annotation above method.
 
 See **Exceptions/Errors handling** section for more information.
 
