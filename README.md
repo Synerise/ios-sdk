@@ -618,8 +618,6 @@ private func loginWithPhone(phone: String, password: String) {
     } catch let error as NSError {
         if error is SNRInvalidPhoneNumberError {
             //...
-        } else if error is SNRInvalidPasswordError {
-        	//...
         }
     } catch {
         //...
@@ -642,24 +640,19 @@ private func loginWithPhone(phone: String, password: String) {
     @catch (SNRInvalidPhoneNumberException *exception) {
     	//...
     }
-    @catch (SNRInvalidPasswordException *exception) {
-		//...
-    }
     @finally {}
 }
 ```
 
-### Objective-C exceptions and their errors in swift:
+### Objective-C exceptions and Swift Errors:
+
+**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
 
 **SNRInvalidEmailException** - **SNRInvalidEmailError**
-
-**SNRInvalidPasswordException** - **SNRInvalidPasswordError**
 
 **SNRInvalidPhoneNumberException** - **SNRInvalidPhoneNumberError**
 
 **SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
-
-**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
 
 **SNRPasswordIsNotEqualToSavedPasswordException** - **SNRPasswordIsNotEqualToSavedPasswordError**
 
