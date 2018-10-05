@@ -874,16 +874,16 @@ Sign in a client in order to obtain the JWT token, which could be used in subseq
 The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
 The method requires valid and non-null email and password. The device ID is optional.  
 
-### `Client.createAuthToken(uuid:success:failure:)`
+#### `Client.createAuthToken(uuid:success:failure:)`
 Use this method to obtain unregistered client's authorization token.
 
-### `Client.createAuthToken(email:success:failure:)`
+#### `Client.createAuthToken(email:success:failure:)`
 Use this method to obtain unregistered client's authorization token.
 
-### `Client.createAuthToken(customId:success:failure:)`
+#### `Client.createAuthToken(customId:success:failure:)`
 Use this method to obtain unregistered client's authorization token.
 
-### `Client.getToken(success:failure:)`
+#### `Client.getToken(success:failure:)`
 Get valid JWT login token. This method pass token with success block execution.
 
 #### `Client.getUUID()`
