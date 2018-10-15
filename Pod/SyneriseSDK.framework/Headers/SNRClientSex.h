@@ -6,16 +6,15 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
-NS_SWIFT_NAME(ClientSex)
-@interface SNRClientSex : NSObject <NSCopying>
+/**
+ * @enum SNRClientSex
+ */
+typedef NS_ENUM(NSUInteger, SNRClientSex) {
+    SNRClientSexNotSpecified = 0,
+    SNRClientSexMale,
+    SNRClientSexFemale,
+} NS_SWIFT_NAME(ClientSex);
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
+extern inline NSString * SNR_ClientSexToString(SNRClientSex type);
+extern inline SNRClientSex SNR_StringToClientSex(NSString *string);
 
-+ (instancetype)male;
-+ (instancetype)female;
-+ (instancetype)notSpecified;
-
-+ (instancetype)sexFromString:(NSString *)sexString;
-
-@end

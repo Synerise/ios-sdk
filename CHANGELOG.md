@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.27] - 2018-10-15
+
+### Added
+- Option to disable In App Push Notification Alerts.
+
+### Changed
+- Client models structure (ClientAccountInformation, ClientUpdateContext).
+- ClientSex is now enum type instead of object.
+
+### Removed
+- ClientAgreeementsContext model (use ClientAgreeementsContext instead).
+
+
 ## [3.2.26] - 2018-10-05
 
 ### Added

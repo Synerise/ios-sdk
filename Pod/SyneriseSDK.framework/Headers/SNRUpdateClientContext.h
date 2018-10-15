@@ -6,8 +6,8 @@
 //
 
 #import "SNRBaseContext.h"
-#import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
+#import "SNRClientAgreements.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -42,8 +42,8 @@ NS_SWIFT_NAME(UpdateClientContext)
 @property (copy, nonatomic, nullable, readwrite) NSString *zipCode;
 @property (copy, nonatomic, nullable, readwrite) NSString *province;
 @property (copy, nonatomic, nullable, readwrite) NSString *countryCode;
-@property (copy, nonatomic, nullable, readwrite) NSString *sex;
-@property (copy, nonatomic, nullable, readwrite) SNRClientAgreementsContext *agreements;
+@property (assign, nonatomic, readwrite) SNRClientSex sex;
+@property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 
 /**
  @attention Raises an @c NSInvalidArgumentException if object is not JSON encodable.

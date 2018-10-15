@@ -6,16 +6,11 @@
 //
 
 #import "SNRBaseContext.h"
-#import "SNRClientAgreementsContext.h"
-#import "SNRClientSex.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(ClientProfileContext)
 @interface SNRClientProfileContext : SNRBaseContext
-
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
 
 @property (copy, nonatomic, nullable, readwrite) NSNumber *clientId;
 @property (copy, nonatomic, nullable, readwrite) NSString *customId;
@@ -34,6 +29,9 @@ NS_SWIFT_NAME(ClientProfileContext)
 @property (copy, nonatomic, nullable, readwrite) NSString *zipCode;
 @property (copy, nonatomic, nullable, readwrite) NSString *province;
 @property (copy, nonatomic, nullable, readwrite) NSString *countryCode;
+
+- (instancetype)init __unavailable;
++ (instancetype)new __unavailable;
 
 @end
 
