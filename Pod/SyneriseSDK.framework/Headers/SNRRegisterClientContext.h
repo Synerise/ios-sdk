@@ -6,8 +6,8 @@
 //
 
 #import "SNRBaseContext.h"
-#import "SNRClientAgreementsContext.h"
 #import "SNRClientSex.h"
+#import "SNRClientAgreements.h"
 
 /**
  * @enum SNRRegisterClientContextRegistrationType
@@ -38,7 +38,7 @@ NS_SWIFT_NAME(RegisterClientContext)
  */
 
 @property (copy, nonatomic, nullable, readwrite) NSString *address;
-@property (copy, nonatomic, nullable, readwrite) SNRClientAgreementsContext *agreements;
+@property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
 @property (copy, nonatomic, nullable, readwrite) NSString *city;
 @property (copy, nonatomic, nullable, readwrite) NSString *company;
@@ -52,7 +52,7 @@ NS_SWIFT_NAME(RegisterClientContext)
 @property (copy, nonatomic, nonnull, readwrite) NSString *password;
 @property (copy, nonatomic, nullable, readwrite) NSString *phone;
 @property (copy, nonatomic, nullable, readwrite) NSString *province;
-@property (copy, nonatomic, nullable, readwrite) SNRClientSex *sex;
+@property (assign, nonatomic, readwrite) SNRClientSex sex;
 @property (copy, nonatomic, nullable, readwrite) NSString *tags;
 @property (copy, nonatomic, nullable, readwrite) NSString *zipCode;
 

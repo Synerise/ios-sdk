@@ -5,6 +5,8 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+@class SNRNotificationServiceSettings;
+
 /**
  * @enum SNRSyneriseActivity
  */
@@ -112,6 +114,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(Synerise)
 @interface SNRSynerise : NSObject
+
+@property (class, nonatomic, nonnull, readonly) SNRNotificationServiceSettings *notificationServiceSettings;
 
 + (instancetype)new __unavailable;
 - (instancetype)init __unavailable;

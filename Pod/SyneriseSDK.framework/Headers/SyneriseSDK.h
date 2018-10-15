@@ -14,6 +14,8 @@
 #import <SyneriseSDK/SNRProfile.h>
 #import <SyneriseSDK/SNRInjector.h>
 
+#import <SyneriseSDK/SNRNotificationServiceSettings.h>
+
 #import <SyneriseSDK/SNREvent.h>
 #import <SyneriseSDK/SNRCustomEvent.h>
 #import <SyneriseSDK/SNRLoggedInEvent.h>
@@ -35,6 +37,10 @@
 #import <SyneriseSDK/SNRTrackerParams.h>
 
 #import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRBaseContext.h>
+#import <SyneriseSDK/SNRClientAgreements.h>
+#import <SyneriseSDK/SNRClientSex.h>
+
 #import <SyneriseSDK/SNRUnitPrice.h>
 #import <SyneriseSDK/SNREventProduct.h>
 #import <SyneriseSDK/SNRCreateClientContext.h>
@@ -44,11 +50,10 @@
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRCreateClientContext.h>
 #import <SyneriseSDK/SNRClientProfileContext.h>
-#import <SyneriseSDK/SNRClientAgreementsContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRAnalyticsMetrics.h>
-#import <SyneriseSDK/SNRClientSex.h>
+
 #import <SyneriseSDK/SNRPromotion.h>
 #import <SyneriseSDK/SNRProfilePromotionResponse.h>
 #import <SyneriseSDK/SNRProfilePromotion.h>
