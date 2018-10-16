@@ -608,12 +608,23 @@ Just set one configuration option in two ways.
 Synerise.notificationServiceSettings.disableInAppAlerts = true
 ```
 
+**Objective-C:**
+```objective-c
+SNRSynerise.notificationServiceSettings.disableInAppAlerts = YES;
+```
+
 or
 
 **Swift:**
 ```swift
 NotificationServiceSettings.shared.disableInAppAlerts = true
 ```
+
+**Objective-C:**
+```objective-c
+[SNRNotificationServiceSettings sharedInstance].disableInAppAlerts = YES;
+```
+
 
 # Exceptions/Errors handling
 
