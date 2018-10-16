@@ -603,6 +603,8 @@ If you have your own Push Notifications implementation, you can disable In App N
 
 Just set one configuration option in two ways.
 
+First approach:
+
 **Swift:**
 ```swift
 Synerise.notificationServiceSettings.disableInAppAlerts = true
@@ -613,7 +615,7 @@ Synerise.notificationServiceSettings.disableInAppAlerts = true
 SNRSynerise.notificationServiceSettings.disableInAppAlerts = YES;
 ```
 
-or
+Second approach:
 
 **Swift:**
 ```swift
