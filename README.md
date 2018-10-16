@@ -601,7 +601,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 
 If you have your own Push Notifications implementation, you can disable In App Notification Alerts from Synerise SDK.  
 
-Just set one configuration option in two ways.
+Just set one configuration option in two ways.  
 
 First approach:
 
