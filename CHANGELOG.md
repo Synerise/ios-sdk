@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.28] - 2018-10-18
+
+### Fixed
+- Improving SDK stability.
+
+
 ## [3.2.27] - 2018-10-15
 
 ### Added

@@ -2,19 +2,22 @@
 //  SNRAnalyticsMetrics.h
 //  SyneriseSDK
 //
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Created by Synerise
+//  Copyright (c) 2018 Synerise. All rights reserved.
 //
+
+#import "SNRBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(AnalyticsMetrics)
-@interface SNRAnalyticsMetrics : NSObject
+@interface SNRAnalyticsMetrics : SNRBaseModel
 
-@property (nullable, nonatomic, copy, readonly) NSNumber *result;
-@property (nullable, nonatomic, copy, readonly) NSArray<NSNumber*> *clientMetrics;
-@property (nullable, nonatomic, copy, readonly) NSArray<NSNumber*> *eventMetrics;
-@property (nullable, nonatomic, copy, readonly) NSArray<NSNumber*> *numberMetrics;
-@property (nullable, nonatomic, copy, readonly) NSDictionary *metricData;
+@property (copy, nonatomic, nullable, readonly) NSNumber *result;
+@property (copy, nonatomic, nullable, readonly) NSArray<NSNumber *> *clientMetrics;
+@property (copy, nonatomic, nullable, readonly) NSArray<NSNumber *> *eventMetrics;
+@property (copy, nonatomic, nullable, readonly) NSArray<NSNumber *> *numberMetrics;
+@property (copy, nonatomic, nullable, readonly) NSDictionary *metricData;
 
 @end
 
