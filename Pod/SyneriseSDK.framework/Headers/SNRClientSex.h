@@ -15,6 +15,6 @@ typedef NS_ENUM(NSUInteger, SNRClientSex) {
     SNRClientSexFemale,
 } NS_SWIFT_NAME(ClientSex);
 
-extern inline NSString * SNR_ClientSexToString(SNRClientSex type);
-extern inline SNRClientSex SNR_StringToClientSex(NSString *string);
+NSString * SNR_ClientSexToString(SNRClientSex type);
+SNRClientSex SNR_StringToClientSex(NSString *string);
 

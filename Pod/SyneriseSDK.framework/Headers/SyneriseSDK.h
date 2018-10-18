@@ -75,6 +75,7 @@
 #import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordException.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRErrorsList.h>
+#import <SyneriseSDK/SNRApiError.h>
 #import <SyneriseSDK/SNRInvalidEmailError.h>
 #import <SyneriseSDK/SNRInvalidPasswordError.h>
 #import <SyneriseSDK/SNRInvalidPhoneNumberError.h>
