@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientAccountInformation)
 @interface SNRClientAccountInformation : SNRBaseModel
 
-@property (copy, nonatomic, nullable, readonly) NSNumber *clientId;
+@property (assign, nonatomic, readonly) NSInteger clientId;
 @property (copy, nonatomic, nullable, readonly) NSString *email;
 @property (copy, nonatomic, nullable, readonly) NSString *phone;
 @property (copy, nonatomic, nullable, readonly) NSString *customId;

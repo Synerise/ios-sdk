@@ -143,6 +143,16 @@ NS_SWIFT_NAME(Client)
                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(createAuthToken(customId:success:failure:));
 
 /**
+ * Use this method to obtain client's authorization token by Facebook.
+ *
+ * @param facebookToken - token from Facebook active session.
+ *
+ */
++ (void)authenticateByFacebookToken:(NSString *)facebookToken
+                              success:(nullable void (^)(BOOL isSuccess))success
+                              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticate(facebookToken:success:failure:));
+
+/**
  * Retrieves current Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
  *
  * @param success - success block.
