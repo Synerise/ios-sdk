@@ -40,7 +40,6 @@
 #import <SyneriseSDK/SNRBaseContext.h>
 #import <SyneriseSDK/SNRClientAgreements.h>
 #import <SyneriseSDK/SNRClientSex.h>
-
 #import <SyneriseSDK/SNRUnitPrice.h>
 #import <SyneriseSDK/SNREventProduct.h>
 #import <SyneriseSDK/SNRCreateClientContext.h>
@@ -53,7 +52,6 @@
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRAnalyticsMetrics.h>
-
 #import <SyneriseSDK/SNRPromotion.h>
 #import <SyneriseSDK/SNRProfilePromotionResponse.h>
 #import <SyneriseSDK/SNRProfilePromotion.h>
