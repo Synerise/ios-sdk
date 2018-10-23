@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.28)
+# Synerise iOS SDK (v3.2.29)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.28-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.2.29-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -684,6 +684,41 @@ private func loginWithPhone(phone: String, password: String) {
 **SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
 
 **SNRPasswordIsNotEqualToSavedPasswordException** - **SNRPasswordIsNotEqualToSavedPasswordError**
+
+
+### API Errors
+
+When we use the SDK functionality, we usually wait for a response in callbacks - success or failure block. 
+
+Often when we receive an error, we can read detailed information and get a list of all errors that occurred. Therefore, you can better integrate your own application with the Synerise SDK.
+
+Below is an example of error debugging:
+
+**Swift:**
+```swift
+Client.login(phone: phone, password: password, deviceId: nil, success: { (success) in
+	//...
+}, failure: { (error) in
+	if let apiError = error as? SNRApiError {
+		print (apiError.localizedFailureReason) //print information string about all issues
+		print(apiError.errors) //print list of error objects about issues that occured
+	}
+})
+```
+
+**Objective-C:**
+```objective-c
+[SNRClient logInWithPhone:phone password:password deviceId:nil success:^(BOOL isSuccess) {
+
+} failure:^(NSError * _Nonnull error) {
+	if ([error isKindOfClass:[SNRApiError class]]) {
+		SNRApiError *apiError = (SNRApiError *)error;
+
+		NSLog(apiError.localizedFailureReason) //print information string about all issues
+		NSLog(apiError.errors) //print list of error objects about issues that occured
+	}
+}];
+```
 
 
 # Tracker

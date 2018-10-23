@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.29] - 2018-10-23
+
+### Fixed
+- Issue with logout and client's auto refresh.
+
+### Added
+- Client method to obtain client's authorization token by Facebook token.
+- SNRApiError class with more information from backend system.
+
+
 ## [3.2.28] - 2018-10-18
 
 ### Fixed
