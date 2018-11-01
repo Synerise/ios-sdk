@@ -12,6 +12,7 @@ NS_SWIFT_NAME(NotificationServiceSettings)
 @interface SNRNotificationServiceSettings : NSObject
 
 @property (assign, nonatomic, readwrite) BOOL disableInAppAlerts;
+@property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
 
 + (SNRNotificationServiceSettings *)sharedInstance NS_SWIFT_NAME(shared());
 

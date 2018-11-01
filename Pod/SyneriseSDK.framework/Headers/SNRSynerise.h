@@ -162,6 +162,11 @@ NS_SWIFT_NAME(Synerise)
  */
 + (void)handleNotification:(NSDictionary *)userInfo;
 
+/**
+ * This method handles push message action identifeir and execute its action if is set.
+ */
++ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
+
 @end
 
 NS_ASSUME_NONNULL_END

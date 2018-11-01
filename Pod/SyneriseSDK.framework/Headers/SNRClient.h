@@ -71,9 +71,6 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)logIn:(NSString *)email
      password:(NSString *)password
@@ -93,9 +90,6 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)logInWithPhone:(NSString *)phone
               password:(NSString *)password
@@ -121,9 +115,6 @@ NS_SWIFT_NAME(Client)
  *
  * @note 401 http status code is returned if you used this method for the client already existing in Synerise database.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)createAuthTokenByEmail:(NSString *)email
                        success:(nullable void (^)(BOOL isSuccess))success
@@ -238,9 +229,6 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)updatePhoneNumber:(NSString *)phoneNumber
                   success:(nullable void (^)(BOOL isSuccess))success
@@ -254,9 +242,6 @@ NS_SWIFT_NAME(Client)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)confirmPhoneNumber:(NSString *)phoneNumber
           confirmationCode:(NSString *)confirmationCode

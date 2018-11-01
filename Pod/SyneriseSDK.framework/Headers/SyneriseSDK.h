@@ -65,19 +65,13 @@
 
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>
-#import <SyneriseSDK/SNRInvalidEmailException.h>
-#import <SyneriseSDK/SNRInvalidPasswordException.h>
-#import <SyneriseSDK/SNRInvalidPhoneNumberException.h>
-#import <SyneriseSDK/SNRInvalidBirthdateException.h>
+#import <SyneriseSDK/SNRInvalidArgumentException.h>
 #import <SyneriseSDK/SNRIllegalArgumentException.h>
 #import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordException.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRErrorsList.h>
 #import <SyneriseSDK/SNRApiError.h>
-#import <SyneriseSDK/SNRInvalidEmailError.h>
-#import <SyneriseSDK/SNRInvalidPasswordError.h>
-#import <SyneriseSDK/SNRInvalidPhoneNumberError.h>
-#import <SyneriseSDK/SNRInvalidBirthdateError.h>
+#import <SyneriseSDK/SNRInvalidArgumentError.h>
 #import <SyneriseSDK/SNRIllegalArgumentError.h>
 #import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordError.h>
 
