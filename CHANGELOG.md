@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.30] - 2018-11-01
+
+### Added
+- Notifications with Rich Media now can have URL actions.
+
+### Changed
+- Removed validation for email, birthdate and phone number in several functions in the SDK.
+- Added argument validation for nonnull argument in Client and Profile modules (SDK throw SNRInvalidArgumentException).
+
+
 ## [3.2.29] - 2018-10-23
 
 ### Fixed
