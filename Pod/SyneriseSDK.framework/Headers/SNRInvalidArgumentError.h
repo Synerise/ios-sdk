@@ -1,5 +1,5 @@
-// 
-//  SNRInvalidPhoneNumberError.h
+//
+//  SNRInvalidArgumentError.h
 //  SyneriseSDK
 //
 //  Created by Synerise
@@ -8,6 +8,7 @@
 
 #import "SNRError.h"
 
-@interface SNRInvalidPhoneNumberError : SNRError
+@interface SNRInvalidArgumentError : SNRError
 
 @end
+

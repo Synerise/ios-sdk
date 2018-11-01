@@ -27,16 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(RegisterClientContext)
 @interface SNRRegisterClientContext : SNRBaseContext
 
-/**
- * @attention Setters can throw exception.
- *
- * @note Email should be valid email address.
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
- */
-
 @property (copy, nonatomic, nullable, readwrite) NSString *address;
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
@@ -61,30 +51,9 @@ NS_SWIFT_NAME(RegisterClientContext)
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
 
-/**
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
- */
-- (instancetype)init:(NSString *)email
-            password:(NSString *)password;
-
-
-/**
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
- */
-- (instancetype)initWithEmailWithoutActivation:(NSString *)email
-                                      password:(NSString *)password;
-
-/**
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
- */
-- (instancetype)initWithPhoneNumber:(NSString *)phoneNumber
-                           password:(NSString *)password;
+- (instancetype)init:(NSString *)email password:(NSString *)password;
+- (instancetype)initWithEmailWithoutActivation:(NSString *)email password:(NSString *)password;
+- (instancetype)initWithPhoneNumber:(NSString *)phoneNumber password:(NSString *)password;
 
 @end
 

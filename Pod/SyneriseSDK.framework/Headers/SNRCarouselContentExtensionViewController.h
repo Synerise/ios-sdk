@@ -10,9 +10,10 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
+extern NSString * const SNRCarouselContentExtensionViewControllerCategoryIdentifier;
 extern NSString * const SNRCarouselContentExtensionViewControllerPreviousItemIdentifier;
 extern NSString * const SNRCarouselContentExtensionViewControllerNextItemIdentifier;
-extern NSString * const SNRCarouselContentExtensionViewControllerCategoryIdentifier;
+extern NSString * const SNRCarouselContentExtensionViewControllerChooseItemIdentifier;
 
 NS_ASSUME_NONNULL_BEGIN
 

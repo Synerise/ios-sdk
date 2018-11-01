@@ -78,9 +78,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)getClient:(NSString *)clientEmail
           success:(nullable void (^)(SNRClientProfileContext *context))success
@@ -130,10 +127,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
- *
  */
 + (void)activateClient:(NSString *)email
                success:(nullable void (^)(BOOL isSuccess))success
@@ -147,9 +140,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)confirmPhoneRegistrationWithPhone:(NSString *)phone
                          confirmationCode:(NSString *)confirmationCode
@@ -241,9 +231,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)getPromotionsByPhoneNumber:(NSString *)phoneNumber
                            success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
@@ -267,9 +254,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)getPromotionsByEmail:(NSString *)email
                      success:(nullable void (^)(SNRClientPromotionResponse *promotionResponse))success
@@ -305,9 +289,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- *
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
  */
 + (void)redeemPromotionByPhoneNumber:(NSString *)phoneNumber
                        promotionCode:(NSString *)promotionCode
@@ -348,9 +329,6 @@ NS_SWIFT_NAME(Profile)
  * @param success - success block.
  * @param failure - failure block.
  *
- * @note Email should be valid email address.
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
  */
 + (void)redeemPromotionByEmail:(NSString *)email
                  promotionCode:(NSString *)promotionCode

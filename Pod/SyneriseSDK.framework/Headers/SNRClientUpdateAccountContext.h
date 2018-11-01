@@ -15,18 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientUpdateAccountContext)
 @interface SNRClientUpdateAccountContext : SNRBaseContext
 
-/**
- * @attention Setters can throw exception.
- *
- * @note Email should be valid email address.
- * @note Phone number should match ^(\\+[0-9]{6,19})|([0-9]{6,20})$ regex pattern.
- * @note Birthdate should match matching \d{4}-\d{2}-\d{2} regex pattern. Use YYYY-MM-DD format (1985-11-09).
- *
- * @throws SNRInvalidEmailException for Obj-C and SNRInvalidEmailError for Swift if an email is invalid.
- * @throws SNRInvalidPhoneNumberException for Obj-C and SNRInvalidPhoneNumberError for Swift if a phone number is invalid.
- * @throws SNRInvalidBirthdateException for Obj-C and SNRInvalidBirthdateError for Swift if a birthdate is invalid.
- */
-
 @property (copy, nonatomic, nullable, readwrite) NSString *email;
 @property (copy, nonatomic, nullable, readwrite) NSString *phone;
 @property (copy, nonatomic, nullable, readwrite) NSString *customId;

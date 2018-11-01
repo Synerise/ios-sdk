@@ -14,6 +14,7 @@ static NSString * const SNRErrorDomain = @"com.synerise.sdk.error";
 
 static NSInteger const SNRErrorCodeUnknownError = -101;
 static NSInteger const SNRErrorCodeUnknownApiError = -102;
+static NSInteger const SNRErrorCodeInvalidApiRequestError = -103;
 
 static NSInteger const SNRErrorCodeInvalidEmail = 3010;
 static NSInteger const SNRErrorCodeInvalidPassword = 3020;

@@ -1,5 +1,5 @@
-// 
-//  SNRInvalidBirthdateException.h
+//
+//  SNRInvalidArgumentException.h
 //  SyneriseSDK
 //
 //  Created by Synerise
@@ -8,6 +8,6 @@
 
 #import "SNRException.h"
 
-@interface SNRInvalidBirthdateException : SNRException
+@interface SNRInvalidArgumentException : SNRException
 
 @end
