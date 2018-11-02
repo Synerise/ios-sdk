@@ -1873,7 +1873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample.swift.extension-singlemedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Single Media Content Extension DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1896,7 +1896,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample.swift.extension-singlemedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Single Media Content Extension DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1919,7 +1919,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample.swift.extension-carousel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Carousel Content Extension DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1942,7 +1942,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample.swift.extension-carousel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Carousel Content Extension DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2081,8 +2081,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synerise.sdk.sample.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9170ffb4-163b-4d24-93b7-3b7c34653a90";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Sample App Swift DEV";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -2108,8 +2108,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synerise.sdk.sample.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ce0c4372-1c29-4d66-86ec-8d52091b9e3e";
-				PROVISIONING_PROFILE_SPECIFIER = "Synerise Sample App Swift DEV";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
