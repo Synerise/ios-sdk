@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  SampleAppSwift
+ 
+  Created by Synerise
+  Copyright (c) 2018 Synerise. All rights reserved.
+*/
+
+"VIEW_CONTROLLER_SECTION_LIST_BACK_TITLE" = "Sections";
+
+"VIEW_CONTROLLER_CONFIGURATION_TITLE" = "Configuration";
+
+"VIEW_CONTROLLER_DASHBOARD_TITLE" = "Dashboard";
+
+"VIEW_CONTROLLER_MY_PROFILE_TITLE" = "My Profile";
+
+"VIEW_CONTROLLER_DEVELOPER_MENU_TITLE" = "Developer Tools";
+
+"VIEW_CONTROLLER_TRACKER_API_TITLE" = "Tracker API";
+
+"VIEW_CONTROLLER_EVENTS_TRACKER_TITLE" = "UI Controls";
+
+"VIEW_CONTROLLER_REGISTRATION_TITLE" = "Registration";
+
+"VIEW_CONTROLLER_LOGIN_TITLE" = "Sign in";
+
+"VIEW_CONTROLLER_COMMON_EVENTS_TITLE" = "Common Events";
+
+"VIEW_CONTROLLER_CUSTOM_EVENT_TITLE" = "Custom Event";
+
+"VIEW_CONTROLLER_PROFILE_API_TITLE" = "Profile API";
+
+"VIEW_CONTROLLER_CLIENT_API_TITLE" = "Client API";
+
+"VIEW_CONTROLLER_INJECTOR_API_TITLE" = "Injector API";
+
+"VIEW_CONTROLLER_PRO_TITLE" = "Custom Event";
+
+"VIEW_CONTROLLER_CART_TITLE" = "Cart";
+
+"VIEW_CONTROLLER_SETTINGS_TITLE" = "Settings";
+
+"LEFT_MENU_SHOP" = "Shop";
+"LEFT_MENU_CART" = "Cart";
+"LEFT_MENU_DEVELOPER_TOOLS" = "Developer Tools";
+"LEFT_MENU_REGISTRATION" = "Registration";
+"LEFT_MENU_LOGIN" = "Sign in";
+"LEFT_MENU_LOGOUT" = "Sign out";
+"LEFT_MENU_SETTINGS" = "Settings";
+"LEFT_MENU_PROFILE" = "Profile";

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SampleAppSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="facebookLoginContainerView" destination="QGS-La-IdE" id="Grq-0H-Xx1"/>
+                <outlet property="userLoginFormView" destination="3vf-2H-4iI" id="ASI-iu-pcf"/>
+                <outlet property="view" destination="jqB-DT-7pu" id="4DO-Ah-fc5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jqB-DT-7pu">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R33-eW-Uop">
+                    <rect key="frame" x="0.0" y="20" width="414" height="980"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oo2-Qg-s2N">
+                            <rect key="frame" x="0.0" y="30" width="414" height="550"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Signing Flow/login_image" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-HW-ilS" customClass="DefaultImageView" customModule="SampleAppSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="iax-S1-C5u"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vf-2H-4iI" customClass="UserLoginFormView" customModule="SampleAppSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="160" width="414" height="250"/>
+                                    <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="sS9-0D-EBS"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGS-La-IdE">
+                                    <rect key="frame" x="0.0" y="420" width="414" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="zpV-aM-AG7"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ea7-eR-n78">
+                                    <rect key="frame" x="0.0" y="490" width="414" height="60"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP5-ae-jZT" customClass="RoundedButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="16" width="414" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Create new account">
+                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="createNewAccountButtonWasClicked:" destination="-1" eventType="touchUpInside" id="s6X-hl-KuK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="COY-ez-9dU"/>
+                                        <constraint firstItem="mP5-ae-jZT" firstAttribute="leading" secondItem="Ea7-eR-n78" secondAttribute="leading" id="c4r-Kk-Ic2"/>
+                                        <constraint firstAttribute="trailing" secondItem="mP5-ae-jZT" secondAttribute="trailing" id="pE6-SH-cXe"/>
+                                        <constraint firstItem="mP5-ae-jZT" firstAttribute="centerY" secondItem="Ea7-eR-n78" secondAttribute="centerY" id="y89-u9-bzG"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Lah-HW-ilS" firstAttribute="top" secondItem="oo2-Qg-s2N" secondAttribute="top" id="6no-6j-HIT"/>
+                                <constraint firstItem="Lah-HW-ilS" firstAttribute="leading" secondItem="oo2-Qg-s2N" secondAttribute="leading" id="mDo-JY-R1h"/>
+                                <constraint firstAttribute="trailing" secondItem="Lah-HW-ilS" secondAttribute="trailing" id="pZA-ha-wF0"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oo2-Qg-s2N" firstAttribute="leading" secondItem="R33-eW-Uop" secondAttribute="leading" id="NqA-ty-tp2"/>
+                        <constraint firstItem="oo2-Qg-s2N" firstAttribute="top" secondItem="R33-eW-Uop" secondAttribute="top" constant="30" id="QoA-Yc-6cE"/>
+                        <constraint firstAttribute="trailing" secondItem="oo2-Qg-s2N" secondAttribute="trailing" id="ivz-YW-riU"/>
+                        <constraint firstAttribute="bottom" secondItem="oo2-Qg-s2N" secondAttribute="bottom" id="xzj-OK-1Jl"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="R33-eW-Uop" firstAttribute="top" secondItem="sTQ-SM-SYe" secondAttribute="top" id="5ji-Ut-UOf"/>
+                <constraint firstItem="sTQ-SM-SYe" firstAttribute="trailing" secondItem="R33-eW-Uop" secondAttribute="trailing" id="IOP-XX-l3E"/>
+                <constraint firstItem="sTQ-SM-SYe" firstAttribute="bottom" secondItem="R33-eW-Uop" secondAttribute="bottom" id="ZUX-EB-kAB"/>
+                <constraint firstItem="oo2-Qg-s2N" firstAttribute="width" secondItem="jqB-DT-7pu" secondAttribute="width" id="gho-Ce-Utf"/>
+                <constraint firstItem="R33-eW-Uop" firstAttribute="leading" secondItem="sTQ-SM-SYe" secondAttribute="leading" id="idj-oY-8Y3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sTQ-SM-SYe"/>
+            <point key="canvasLocation" x="48" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Signing Flow/login_image" width="280.5" height="279"/>
+    </resources>
+</document>

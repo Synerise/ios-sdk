@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q95-N6-YnR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Injector-->
+        <scene sceneID="V1e-Me-fTe">
+            <objects>
+                <viewController title="Injector" id="Q95-N6-YnR" customClass="InjectorAPIViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9k-pN-AjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-2x-IlE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KE6-ce-Baj">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="140"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-7q-gWm">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-r5-R8I" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="a5N-zH-gzv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Simple Push">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="9kJ-nb-rQX" kind="show" id="ms0-mT-L22"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="2Z2-r5-R8I" firstAttribute="centerY" secondItem="gsE-7q-gWm" secondAttribute="centerY" id="ITE-4E-ebJ"/>
+                                                    <constraint firstAttribute="height" constant="65" id="ezv-Zu-Tr6"/>
+                                                    <constraint firstItem="2Z2-r5-R8I" firstAttribute="leading" secondItem="gsE-7q-gWm" secondAttribute="leading" constant="16" id="jUZ-Bg-GBz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Z2-r5-R8I" secondAttribute="trailing" constant="16" id="tEb-Vd-Fmu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlI-cY-3Ps">
+                                                <rect key="frame" x="0.0" y="75" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYq-g7-DgK" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="grp-bT-0TM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Rich Media Push">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="kRE-gm-CmN" kind="show" id="X06-Ui-oV8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="oYq-g7-DgK" firstAttribute="centerY" secondItem="GlI-cY-3Ps" secondAttribute="centerY" id="2W0-hS-RmO"/>
+                                                    <constraint firstAttribute="height" constant="65" id="Q6a-3d-2Tn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oYq-g7-DgK" secondAttribute="trailing" constant="16" id="VYB-aP-UIH"/>
+                                                    <constraint firstItem="oYq-g7-DgK" firstAttribute="leading" secondItem="GlI-cY-3Ps" secondAttribute="leading" constant="16" id="iTv-Sp-CaI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KE6-ce-Baj" secondAttribute="bottom" id="4Je-Dj-qym"/>
+                                    <constraint firstItem="KE6-ce-Baj" firstAttribute="width" secondItem="wdk-2x-IlE" secondAttribute="width" id="58S-rO-74G"/>
+                                    <constraint firstAttribute="trailing" secondItem="KE6-ce-Baj" secondAttribute="trailing" id="Sel-XK-BAl"/>
+                                    <constraint firstItem="KE6-ce-Baj" firstAttribute="leading" secondItem="wdk-2x-IlE" secondAttribute="leading" id="ZZ2-uT-eKb"/>
+                                    <constraint firstItem="KE6-ce-Baj" firstAttribute="top" secondItem="wdk-2x-IlE" secondAttribute="top" constant="24" id="eej-Ej-6qs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wdk-2x-IlE" firstAttribute="top" secondItem="u16-vx-zvp" secondAttribute="top" id="IpV-8J-Ahs"/>
+                            <constraint firstItem="wdk-2x-IlE" firstAttribute="bottom" secondItem="u16-vx-zvp" secondAttribute="bottom" id="Q6N-VI-XaE"/>
+                            <constraint firstItem="wdk-2x-IlE" firstAttribute="leading" secondItem="u16-vx-zvp" secondAttribute="leading" id="VLG-oz-Uzg"/>
+                            <constraint firstItem="wdk-2x-IlE" firstAttribute="trailing" secondItem="u16-vx-zvp" secondAttribute="trailing" id="q6i-pm-8ir"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u16-vx-zvp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwh-W1-mCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-25"/>
+        </scene>
+        <!--Simple Push View Controller-->
+        <scene sceneID="UCz-m3-6Yn">
+            <objects>
+                <viewController id="9kJ-nb-rQX" customClass="SimplePushViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGR-ts-ZME">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsD-7a-VX7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6wJ-Iy-Axq">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="260"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIW-2q-okn">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5H-Kt-OGU" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="kyA-sT-QHt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Simple Push (OPEN_APP)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="simplePush1" destination="9kJ-nb-rQX" eventType="touchUpInside" id="lEu-4N-rB3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="A5H-Kt-OGU" firstAttribute="leading" secondItem="aIW-2q-okn" secondAttribute="leading" constant="16" id="3wu-xW-KE9"/>
+                                                    <constraint firstAttribute="height" constant="65" id="Oax-2c-sRB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="A5H-Kt-OGU" secondAttribute="trailing" constant="16" id="TmA-YY-QRt"/>
+                                                    <constraint firstItem="A5H-Kt-OGU" firstAttribute="centerY" secondItem="aIW-2q-okn" secondAttribute="centerY" id="vbu-fJ-SOe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaE-Md-eI5">
+                                                <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpM-qi-dLS" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="DYD-Su-7j7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Simple Push (OPEN_URL)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="simplePush2" destination="9kJ-nb-rQX" eventType="touchUpInside" id="3Zb-du-rvl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IpM-qi-dLS" firstAttribute="centerY" secondItem="NaE-Md-eI5" secondAttribute="centerY" id="CsK-TW-e8k"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IpM-qi-dLS" secondAttribute="trailing" constant="16" id="XWa-XY-xSV"/>
+                                                    <constraint firstItem="IpM-qi-dLS" firstAttribute="leading" secondItem="NaE-Md-eI5" secondAttribute="leading" constant="16" id="ZUb-Ox-arJ"/>
+                                                    <constraint firstAttribute="height" constant="65" id="q2T-4x-pvc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-pY-kkA">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-5o-OpM" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="9OR-GI-MVT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Simple Push (OPEN_DEEPLINK)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="simplePush3" destination="9kJ-nb-rQX" eventType="touchUpInside" id="FuT-6B-151"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dhR-5o-OpM" secondAttribute="trailing" constant="16" id="FEF-ok-vfQ"/>
+                                                    <constraint firstItem="dhR-5o-OpM" firstAttribute="centerY" secondItem="UAY-pY-kkA" secondAttribute="centerY" id="UwP-fy-gVL"/>
+                                                    <constraint firstAttribute="height" constant="65" id="X8n-dk-6ns"/>
+                                                    <constraint firstItem="dhR-5o-OpM" firstAttribute="leading" secondItem="UAY-pY-kkA" secondAttribute="leading" constant="16" id="ytg-nv-SSo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryj-Np-FvJ">
+                                                <rect key="frame" x="0.0" y="195" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3q-NM-0DK" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="HCX-W4-c6o"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Simple Push (BUTTONS)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="u3q-NM-0DK" secondAttribute="trailing" constant="16" id="7Y5-gW-NYV"/>
+                                                    <constraint firstItem="u3q-NM-0DK" firstAttribute="leading" secondItem="ryj-Np-FvJ" secondAttribute="leading" constant="16" id="Tcz-WF-sN0"/>
+                                                    <constraint firstItem="u3q-NM-0DK" firstAttribute="centerY" secondItem="ryj-Np-FvJ" secondAttribute="centerY" id="jJA-uo-rNO"/>
+                                                    <constraint firstAttribute="height" constant="65" id="wBM-xt-E3W"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6wJ-Iy-Axq" firstAttribute="width" secondItem="TsD-7a-VX7" secondAttribute="width" id="8b6-xI-sHr"/>
+                                    <constraint firstItem="6wJ-Iy-Axq" firstAttribute="top" secondItem="TsD-7a-VX7" secondAttribute="top" constant="24" id="9q9-Rp-GTR"/>
+                                    <constraint firstAttribute="bottom" secondItem="6wJ-Iy-Axq" secondAttribute="bottom" id="dVH-N0-HGp"/>
+                                    <constraint firstItem="6wJ-Iy-Axq" firstAttribute="leading" secondItem="TsD-7a-VX7" secondAttribute="leading" id="o6E-Vc-LKS"/>
+                                    <constraint firstAttribute="trailing" secondItem="6wJ-Iy-Axq" secondAttribute="trailing" id="uDH-Jr-dai"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TsD-7a-VX7" firstAttribute="leading" secondItem="2TQ-PW-2Km" secondAttribute="leading" id="0h0-yy-AOf"/>
+                            <constraint firstAttribute="trailing" secondItem="TsD-7a-VX7" secondAttribute="trailing" id="H5m-Lw-xJq"/>
+                            <constraint firstItem="TsD-7a-VX7" firstAttribute="top" secondItem="eGR-ts-ZME" secondAttribute="top" id="YBH-Zw-AhI"/>
+                            <constraint firstItem="2TQ-PW-2Km" firstAttribute="bottom" secondItem="TsD-7a-VX7" secondAttribute="bottom" id="e96-Oi-Ay2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2TQ-PW-2Km"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iie-ne-Mjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="-319"/>
+        </scene>
+        <!--Rich Media Push View Controller-->
+        <scene sceneID="ugw-TF-vYT">
+            <objects>
+                <viewController id="kRE-gm-CmN" customClass="RichMediaPushViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAT-HS-t6o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-Zt-7ns">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Owx-hX-SO5">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="195"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrj-ZJ-ai4">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-fG-nvq" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="NM9-Zv-3Dy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Rich Media (SINGLE IMAGE)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="richMedia1" destination="kRE-gm-CmN" eventType="touchUpInside" id="CYZ-cP-mji"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="OP2-fG-nvq" firstAttribute="leading" secondItem="hrj-ZJ-ai4" secondAttribute="leading" constant="16" id="4lI-s9-8CA"/>
+                                                    <constraint firstItem="OP2-fG-nvq" firstAttribute="centerY" secondItem="hrj-ZJ-ai4" secondAttribute="centerY" id="Grw-pS-Sxb"/>
+                                                    <constraint firstAttribute="height" constant="65" id="n0v-JK-lOl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OP2-fG-nvq" secondAttribute="trailing" constant="16" id="vvJ-is-Z2D"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-T3-Ta6">
+                                                <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjf-H7-iKE" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="b83-YH-dlf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Rich Media (CAROUSEL PORTRAIT)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="richMedia2" destination="kRE-gm-CmN" eventType="touchUpInside" id="dhi-nX-Xhh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="YAw-zu-hOx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kjf-H7-iKE" secondAttribute="trailing" constant="16" id="mZd-U4-fPb"/>
+                                                    <constraint firstItem="Kjf-H7-iKE" firstAttribute="leading" secondItem="ypm-T3-Ta6" secondAttribute="leading" constant="16" id="qjZ-Zo-CSM"/>
+                                                    <constraint firstItem="Kjf-H7-iKE" firstAttribute="centerY" secondItem="ypm-T3-Ta6" secondAttribute="centerY" id="yHy-mV-eYd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLU-6Q-ZLl">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T14-eq-yuT" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="r6T-hP-nGy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Rich Media (CAROUSEL LANDSCAPE)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="richMedia3" destination="kRE-gm-CmN" eventType="touchUpInside" id="yHL-FB-Kca"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="8U0-5a-QUk"/>
+                                                    <constraint firstItem="T14-eq-yuT" firstAttribute="leading" secondItem="dLU-6Q-ZLl" secondAttribute="leading" constant="16" id="XU4-Qc-UZv"/>
+                                                    <constraint firstItem="T14-eq-yuT" firstAttribute="centerY" secondItem="dLU-6Q-ZLl" secondAttribute="centerY" id="heF-WF-3uD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="T14-eq-yuT" secondAttribute="trailing" constant="16" id="mCa-SZ-Bih"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Owx-hX-SO5" secondAttribute="trailing" id="N76-4j-jR1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Owx-hX-SO5" secondAttribute="bottom" id="aaD-m6-rhg"/>
+                                    <constraint firstItem="Owx-hX-SO5" firstAttribute="width" secondItem="rjv-Zt-7ns" secondAttribute="width" id="dBT-nP-JVW"/>
+                                    <constraint firstItem="Owx-hX-SO5" firstAttribute="top" secondItem="rjv-Zt-7ns" secondAttribute="top" constant="24" id="oKM-2T-Eg1"/>
+                                    <constraint firstItem="Owx-hX-SO5" firstAttribute="leading" secondItem="rjv-Zt-7ns" secondAttribute="leading" id="rhA-yz-ghn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eqW-Zv-vj0" firstAttribute="bottom" secondItem="rjv-Zt-7ns" secondAttribute="bottom" id="2uG-dG-g0X"/>
+                            <constraint firstItem="rjv-Zt-7ns" firstAttribute="leading" secondItem="eqW-Zv-vj0" secondAttribute="leading" id="3AW-7j-hbe"/>
+                            <constraint firstItem="rjv-Zt-7ns" firstAttribute="top" secondItem="KAT-HS-t6o" secondAttribute="top" id="Vew-6w-OPC"/>
+                            <constraint firstAttribute="trailing" secondItem="rjv-Zt-7ns" secondAttribute="trailing" id="nFo-tD-VrM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eqW-Zv-vj0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNo-g1-i2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="385"/>
+        </scene>
+    </scenes>
+</document>

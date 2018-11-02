@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="SampleAppSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="profileFormView" destination="zH3-nx-d7W" id="YZ0-IB-TbP"/>
+                <outlet property="view" destination="bE2-cM-Lbl" id="11C-9p-1B5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bE2-cM-Lbl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at4-9S-dfW">
+                    <rect key="frame" x="0.0" y="20" width="414" height="580"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LdF-E5-7xK">
+                            <rect key="frame" x="0.0" y="30" width="414" height="750"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zH3-nx-d7W" customClass="ProfileFormView" customModule="SampleAppSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                                    <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LdF-E5-7xK" secondAttribute="trailing" id="NlU-O4-v7c"/>
+                        <constraint firstItem="LdF-E5-7xK" firstAttribute="top" secondItem="at4-9S-dfW" secondAttribute="top" constant="30" id="iAr-uz-ITT"/>
+                        <constraint firstAttribute="bottom" secondItem="LdF-E5-7xK" secondAttribute="bottom" id="sw4-U8-bPA"/>
+                        <constraint firstItem="LdF-E5-7xK" firstAttribute="leading" secondItem="at4-9S-dfW" secondAttribute="leading" id="u1i-D8-gQl"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LdF-E5-7xK" firstAttribute="width" secondItem="bE2-cM-Lbl" secondAttribute="width" id="DHD-og-JvI"/>
+                <constraint firstItem="UeP-GP-3Qn" firstAttribute="trailing" secondItem="at4-9S-dfW" secondAttribute="trailing" id="Dda-da-U9F"/>
+                <constraint firstItem="UeP-GP-3Qn" firstAttribute="bottom" secondItem="at4-9S-dfW" secondAttribute="bottom" id="RdW-5E-8aj"/>
+                <constraint firstItem="at4-9S-dfW" firstAttribute="top" secondItem="UeP-GP-3Qn" secondAttribute="top" id="gdJ-0j-bck"/>
+                <constraint firstItem="at4-9S-dfW" firstAttribute="leading" secondItem="UeP-GP-3Qn" secondAttribute="leading" id="zFi-IV-Vw3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="UeP-GP-3Qn"/>
+            <point key="canvasLocation" x="48" y="128"/>
+        </view>
+    </objects>
+</document>
