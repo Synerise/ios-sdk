@@ -1863,7 +1863,7 @@
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1886,7 +1886,7 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1909,7 +1909,7 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1932,7 +1932,7 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2073,7 +2073,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SampleAppSwift/Supporting Files/SampleAppSwift.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2100,7 +2100,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SampleAppSwift/Supporting Files/SampleAppSwift.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
