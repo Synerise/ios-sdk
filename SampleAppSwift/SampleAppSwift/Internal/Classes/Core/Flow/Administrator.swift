@@ -19,7 +19,7 @@ class Administrator {
         return assembly
     }()
 
-    static let shared = Administrator.resolve()
+    static let shared: Administrator = Administrator.resolve()
 
     var serviceProvider: ServiceProvider!
 
@@ -39,31 +39,21 @@ class Administrator {
 
     func launched() {
         prepareDefaultSettings()
-        setup()
     }
-
-    func getNotificationService() -> NotificationService {
-        return serviceProvider.getNotificationService()
+    
+    func setupFirebase() {
+        FirebaseApp.configure()
+    }
+    
+    func setupNotifications() {
+        let notificationService: NotificationService = self.serviceProvider.getNotificationService()
+        notificationService.setup()
     }
 
     // MARK: - Private
 
     private func prepareDefaultSettings() {
     
-    }
-
-    private func setup() {
-        //setupFirebase()
-        //registerForNotifications()
-    }
-
-    private func setupFirebase() {
-        FirebaseApp.configure()
-    }
-
-    private func registerForNotifications() {
-        let notificationService: NotificationService = serviceProvider.getNotificationService()
-        notificationService.setup()
     }
 }
 
@@ -80,9 +70,9 @@ extension Administrator: Registerable {
 }
 
 extension Administrator: Resolvable {
-    typealias ObjectType = ServiceProvider
+    typealias ObjectType = Administrator
 
     static func resolve() -> ObjectType {
-        return Administrator.assembly.resolve(ServiceProvider.self)!
+        return Administrator.assembly.resolve(Administrator.self)!
     }
 }

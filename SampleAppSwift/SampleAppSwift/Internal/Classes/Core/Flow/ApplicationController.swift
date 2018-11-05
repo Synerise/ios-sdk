@@ -39,7 +39,8 @@ class ApplicationController {
         syneriseManager = SyneriseManager.resolve()
         syneriseManager.initialize()
         
-        administrator.getNotificationService().addDelegate(syneriseManager)
+        let notificationService: NotificationService = serviceProvider.getNotificationService()
+        notificationService.addDelegate(syneriseManager)
     }
     
     func addDependency(_ coordinator: Coordinator) {

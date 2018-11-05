@@ -22,7 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        //comment lines below if you don't want to use Firebase and notifications
+        Administrator.shared.setupFirebase()
+        Administrator.shared.setupNotifications()
+        
         applicationController.run()
+        
         return true
     }
     
@@ -36,17 +41,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let notificationService = Administrator.shared.getNotificationService()
+        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.applicationRegistrationStatus(NotificationService.RegistrationStatus.success(deviceToken: deviceToken))
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        let notificationService = Administrator.shared.getNotificationService()
+        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.applicationRegistrationStatus(NotificationService.RegistrationStatus.fail(error: error))
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        let notificationService = Administrator.shared.getNotificationService()
+        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.handleNotificationUserInfo(userInfo)
         
         completionHandler(.noData)
