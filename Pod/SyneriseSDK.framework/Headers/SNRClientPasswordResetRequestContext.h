@@ -2,7 +2,8 @@
 //  SNRClientPasswordResetRequestContext.h
 //  SyneriseSDK
 //
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Created by Synerise
+//  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
@@ -17,7 +18,7 @@ NS_SWIFT_NAME(ClientPasswordResetRequestContext)
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
 
-- (instancetype)init:(NSString *)email;
+- (instancetype)initWithEmail:(NSString *)email NS_SWIFT_NAME(init(email:));
 
 @end
 

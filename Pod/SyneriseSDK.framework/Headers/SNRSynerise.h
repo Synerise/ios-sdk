@@ -2,6 +2,7 @@
 //  SNRSynerise.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
@@ -121,30 +122,31 @@ NS_SWIFT_NAME(Synerise)
 - (instancetype)init __unavailable;
 
 /**
- Initializes SyneriseSDK.
- 
- @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
- 
- @param businessProfileApiKey Synerise API Key for Business Profile.
- @param clientApiKey Synerise API Key for Business Profile.
+ * Initializes SyneriseSDK.
+ *
+ * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
+ *
+ * @param clientApiKey Synerise API Key for Business Profile.
+ *
  */
-+ (void)initializeWithBusinessProfileApiKey:(NSString *)businessProfileApiKey andClientApiKey:(NSString *)clientApiKey NS_SWIFT_NAME(initialize(businessProfileApiKey:clientApiKey:));
++ (void)initializeWithClientApiKey:(NSString *)clientApiKey NS_SWIFT_NAME(initialize(clientApiKey:));
 
 /**
- Initializes SyneriseSDK.
- 
- @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
- 
- @param businessProfileApiKey Synerise API Key for Business Profile.
- @param clientApiKey Synerise API Key for Business Profile.
- @param baseUrl Synerise API custom environment base URL.
+ *Initializes SyneriseSDK.
+ *
+ * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
+ *
+ * @param clientApiKey Synerise API Key for Business Profile.
+ * @param baseUrl Synerise API custom environment base URL.
+ *
  */
-+ (void)initializeWithBusinessProfileApiKey:(NSString *)businessProfileApiKey andClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(businessProfileApiKey:clientApiKey:baseUrl:));
++ (void)initializeWithClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(clientApiKey:baseUrl:));
 
 /**
  * This method sets object for Synerise delegate methods.
  *
  * @param delegate object that implement SNRSyneriseDelegate protocol.
+ *
  */
 + (void)setDelegate:(id<SNRSyneriseDelegate>)delegate;
 
@@ -152,6 +154,7 @@ NS_SWIFT_NAME(Synerise)
  * This method checkes that notification's sender is Synerise.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
+ *
  */
 + (BOOL)isSyneriseNotification:(NSDictionary *)userInfo;
 
@@ -159,6 +162,7 @@ NS_SWIFT_NAME(Synerise)
  * This method handles new push message and starts activity, which build proper views from provided data.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
+ *
  */
 + (void)handleNotification:(NSDictionary *)userInfo;
 

@@ -2,7 +2,8 @@
 //  SNRClientPasswordResetConfirmationContext.h
 //  SyneriseSDK
 //
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Created by Synerise
+//  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
 #import "SNRBaseContext.h"
@@ -18,7 +19,7 @@ NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 - (instancetype)init __unavailable;
 + (instancetype)new __unavailable;
 
-- (instancetype)init:(NSString *)password token:(NSString *)token;
+- (instancetype)initWithPassword:(NSString *)password andToken:(NSString *)token NS_SWIFT_NAME(init(password:token:));
 
 @end
 

@@ -1,4 +1,4 @@
-// 
+//
 //  SNRVoucherCodesResponse.h
 //  SyneriseSDK
 //
@@ -8,12 +8,14 @@
 
 #import "SNRBaseModel.h"
 
+@class SNRVoucherCodesData;
+
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(VoucherCodesResponse)
 @interface SNRVoucherCodesResponse : SNRBaseModel
 
-@property (strong, nonatomic, nonnull, readonly) NSArray *vouchers;
+@property (strong, nonatomic, nonnull, readonly) NSArray<SNRVoucherCodesData *> *items;
 
 @end
 

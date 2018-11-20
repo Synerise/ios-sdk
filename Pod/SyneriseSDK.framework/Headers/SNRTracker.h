@@ -2,6 +2,7 @@
 //  SNRTracker.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
@@ -44,9 +45,6 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
     
 } NS_SWIFT_NAME(AutoTrackMode);
 
-/**
- * SNTracker is responsible for tracking various SNREvents.
- */
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -64,15 +62,6 @@ NS_SWIFT_NAME(Tracker)
  * @param enabled - specified is console logs are enabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
-
-/**
- * Initializes tracker.
- *
- * @note This method needs to be called before any other method of SNRTracker class and only once during application lifecycle.
- *
- * @param apiKey - Synerise API Key.
- */
-+ (void)initialize:(NSString *)apiKey;
 
 /**
  * Sets configuration of tracker.

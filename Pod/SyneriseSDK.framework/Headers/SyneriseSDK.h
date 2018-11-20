@@ -2,6 +2,7 @@
 //  SyneriseSDK.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
@@ -11,10 +12,12 @@
 #import <SyneriseSDK/SNRSynerise.h>
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
-#import <SyneriseSDK/SNRProfile.h>
 #import <SyneriseSDK/SNRInjector.h>
+#import <SyneriseSDK/SNRLoyalty.h>
 
 #import <SyneriseSDK/SNRNotificationServiceSettings.h>
+
+#import <SyneriseSDK/SNRCacheService.h>
 
 #import <SyneriseSDK/SNREvent.h>
 #import <SyneriseSDK/SNRCustomEvent.h>
@@ -42,22 +45,17 @@
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRUnitPrice.h>
 #import <SyneriseSDK/SNREventProduct.h>
-#import <SyneriseSDK/SNRCreateClientContext.h>
-#import <SyneriseSDK/SNRUpdateClientContext.h>
-#import <SyneriseSDK/SNRRegisterClientContext.h>
+#import <SyneriseSDK/SNRClientRegisterAccountContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
-#import <SyneriseSDK/SNRCreateClientContext.h>
-#import <SyneriseSDK/SNRClientProfileContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
-#import <SyneriseSDK/SNRAnalyticsMetrics.h>
+#import <SyneriseSDK/SNRPromotionStatus.h>
+#import <SyneriseSDK/SNRPromotionType.h>
+#import <SyneriseSDK/SNRPromotionDiscountType.h>
+#import <SyneriseSDK/SNRPromotionResponse.h>
 #import <SyneriseSDK/SNRPromotion.h>
-#import <SyneriseSDK/SNRProfilePromotionResponse.h>
-#import <SyneriseSDK/SNRProfilePromotion.h>
-#import <SyneriseSDK/SNRClientPromotionResponse.h>
-#import <SyneriseSDK/SNRClientPromotion.h>
-#import <SyneriseSDK/SNRVoucherInformation.h>
+#import <SyneriseSDK/SNRVoucherStatus.h>
 #import <SyneriseSDK/SNRAssignVoucherResponse.h>
 #import <SyneriseSDK/SNRAssignVoucherData.h>
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
@@ -67,13 +65,11 @@
 #import <SyneriseSDK/SNRException.h>
 #import <SyneriseSDK/SNRInvalidArgumentException.h>
 #import <SyneriseSDK/SNRIllegalArgumentException.h>
-#import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordException.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRErrorsList.h>
 #import <SyneriseSDK/SNRApiError.h>
 #import <SyneriseSDK/SNRInvalidArgumentError.h>
 #import <SyneriseSDK/SNRIllegalArgumentError.h>
-#import <SyneriseSDK/SNRPasswordIsNotEqualToSavedPasswordError.h>
 
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
 #import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>
