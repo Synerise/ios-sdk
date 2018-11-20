@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.2.30)
+# Synerise iOS SDK (v3.3.0)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.2.30-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.3.0-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -95,20 +95,19 @@ In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
 ## Setup
 
-First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Business API Key` with `Client API Key`.
+First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Client API Key`.
 
-To get `Business API Key` and  `Client API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
-Then, generate new `API Key` for `Business Profile` audience and new `API Key` for `Client` audience.
+To get `Client API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
+Then, generate new `API Key` for `Client` audience.
 
 Configuration for SyneriseSDK should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
 
 **Swift:**
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-	let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
 	let clientApiKey = "YOUR_CLIENT_API_KEY"
 
-	Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey) // 1
+	Synerise.initialize(clientApiKey: clientApiKey) // 1
 	Synerise.setDelegate(self) // 2
 
 	Tracker.setLoggingEnabled(true) // 3
@@ -123,28 +122,19 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 	Client.setLoggingEnabled(true) // 6
 
-	let clientConfiguration = ClientConfiguration();
-	clientConfiguration.autoClientRefresh = true;
-
-	Client.setConfiguration(clientConfiguration); // 7
-
-	Profile.setLoggingEnabled(true) // 8
-	Profile.setPoolUuid("YOUR_POOL_UUID"); // 9
-
-	Injector.setLoggingEnabled(true) // 10
-	Injector.setAutomatic(true) // 11
-	Injector.setWalkthroughDelegate(self) // 12
-	Injector.setBannerDelegate(self) // 13
+	Injector.setLoggingEnabled(true) // 7
+	Injector.setAutomatic(true) // 8
+	Injector.setWalkthroughDelegate(self) // 9
+	Injector.setBannerDelegate(self) // 10
 }
 ```
 
 **Objective-C:**
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	static NSString *businessProfileApiKey = @"YOUR_BUSINESS_API_KEY";
 	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
 
-	[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey]; // 1
+	[SNRSynerise initializeWithClientApiKey:clientApiKey]; // 1
 	[SNRSynerise setDelegate:self]; // 2
 	
 	[SNRTracker setLoggingEnabled:YES]; // 3
@@ -159,35 +149,24 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 	[SNRClient setLoggingEnabled:YES]; // 6
 
-	SNRClientConfiguration clientConfiguration;
-	clientConfiguration.autoClientRefresh = YES;
-	
-	[SNRClient setConfiguration:clientConfiguration]; // 7
-
-	[SNRProfile setLoggingEnabled:YES]; // 8
-	[SNRProfile setPoolUuid:@"YOUR_POOL_UUID"]; // 9
-
-	[SNRInjector setLoggingEnabled:YES]; // 10
-	[SNRInjector setAutomatic:YES]; // 11
-	[SNRInjector setWalkthroughDelegate:self]; // 12
-	[SNRInjector setBannerDelegate:self]; // 13
+	[SNRInjector setLoggingEnabled:YES]; // 7
+	[SNRInjector setAutomatic:YES]; // 8
+	[SNRInjector setWalkthroughDelegate:self]; // 9
+	[SNRInjector setBannerDelegate:self]; // 10
 }
 ```
 
-Let's dive into some configurable functionalities:
-1. `Synerise.initialize` - Initializes SyneriseSDK.
-2. `Synerise.setDelegate` - Sets delegate to handle actions from SyneriseSDK. See **SyneriseSDK delegate** section for more information.
-3. `Tracker.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.
-4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.
-5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.
-6. `Client.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.
-7. `Client.setConfiguration` - Sets custom configuration for Client module.
-8. `Profile.setLoggingEnabled` - Enables logs for Profile module. See **Debug logs** section for more information.
-9. `Profile.setPoolUuid` - Sets your pool's universally unique identifier. See **Profile** section for more information.
-10. `Injector.setLoggingEnabled` - Enables logs for Injector module. See **Debug logs** section for more information.
-11. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.
-12. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.
-13. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.
+Let's dive into some configurable functionalities:  
+1. `Synerise.initialize` - Initializes SyneriseSDK.  
+2. `Synerise.setDelegate` - Sets delegate to handle actions from SyneriseSDK. See **SyneriseSDK delegate** section for more information.  
+3. `Tracker.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.  
+4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.  
+5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.  
+6. `Client.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.  
+7. `Injector.setLoggingEnabled` - Enables logs for Injector module. See **Debug logs** section for more information.  
+8. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.  
+9. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
+10. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
 
 ## Setup with custom API environment
 
@@ -197,32 +176,30 @@ One thing you have to do for that is using different initialization method:
 
 **Swift:**
 ```swift
-let businessProfileApiKey = "YOUR_BUSINESS_API_KEY"
 let clientApiKey = "YOUR_CLIENT_API_KEY"
 let apiBaseUrl = "YOUR_API_BASE_URL"
 
-Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey, baseUrl: apiBaseUrl)
+Synerise.initialize(clientApiKey: clientApiKey, baseUrl: apiBaseUrl)
 ```
 
 **Objective-C:**
 ```objective-c
-static NSString *businessProfileApiKey = @"YOUR_BUSINESS_API_KEY";
 static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
 static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
 
-[SNRSynerise initializeWithBusinessProfileApiKey:businessProfileApiKey andClientApiKey:clientApiKey andBaseUrl:apiBaseUrl];
+[SNRSynerise initializeWithClientApiKey:clientApiKey andBaseUrl:apiBaseUrl];
 ```
 
 
 ## Debug logs
 
-You can enable debug logs for SyneriseSDK modules, such as Tracker, Client, Profile and Injector.
+You can enable debug logs for SyneriseSDK modules, such as Tracker, Client, Loyalty and Injector.
 It is not recommended to use debug mode in a release version of your app.
 
-- Tracker: you can receive some simple logs about sending events (like success, failure etc.) by enabling debug mode, which is disabled by default.
-- Profile: you can receive some simple logs about profile actions (like registration etc.) by enabling debug mode, which is disabled by default.
-- Client: you can receive some simple logs about client actions (like login etc.) by enabling debug mode, which is disabled by default.
-- Injector: you can receive some simple logs about Injector actions (like walkthrough or welcome screen availability) by enabling debug mode, which is disabled by default.
+- Tracker: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
+- Client: you can receive some simple logs about client actions by enabling debug mode, which is disabled by default.
+- Loyalty: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
+- Injector: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
 
 It can be enabled by method `setLoggingEnabled` for each module. For example:
 
@@ -631,60 +608,6 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 SyneriseSDK throws exceptions in some method when provided data is not valid. For example, framework checks if an email address is valid and throws an exception if not. That is why we should wrap some operations in SyneriseSDK in try/catch blocks. Example of client logging below.
 
-### Example of exceptions/errros handling in Objective-C and Swift:
-
-**Swift:**
-```swift
-private func loginWithPhone(phone: String, password: String) {
-    do {
-        try SNRExceptionHandler.catchException {
-            Client.login(phone: phone, password: password, deviceId: nil, success: { (success) in
-            	//...
-            }, failure: { (error) in
-            	//...
-            })
-        }
-    } catch let error as NSError {
-        if error is SNRInvalidPhoneNumberError {
-            //...
-        }
-    } catch {
-        //...
-    }
-}
-```
-
-**Objective-C:**
-```objective-c
-- (void)loginClientByPhone {
-    @try {
-        NSString *phone = @"123456789";
-        NSString *password = @"pass!1test";
-        [SNRClient logInWithPhone:phone password:password deviceId:nil success:^(BOOL isSuccess) {
-        	//...
-        } failure:^(NSError * _Nonnull error) {
-        	//...
-        }];
-    }
-    @catch (SNRInvalidPhoneNumberException *exception) {
-    	//...
-    }
-    @finally {}
-}
-```
-
-### Objective-C exceptions and Swift Errors:
-
-**SNRIllegalArgumentException** - **SNRIllegalArgumentError**
-
-**SNRInvalidEmailException** - **SNRInvalidEmailError**
-
-**SNRInvalidPhoneNumberException** - **SNRInvalidPhoneNumberError**
-
-**SNRInvalidBirthdateException** - **SNRInvalidBirthdateError**
-
-**SNRPasswordIsNotEqualToSavedPasswordException** - **SNRPasswordIsNotEqualToSavedPasswordError**
-
 
 ### API Errors
 
@@ -905,47 +828,15 @@ Sets your custom email that will be sent within every event in event params.
 
 # Client
 
-## Client Configuration
-
-**Swift:**
-```swift
-var clientConfiguration: ClientConfiguration = ClientConfiguration();
-clientConfiguration.autoClientRefresh = true;
-    
-[Client setConfiguration:clientConfiguration];
-```
-
-**Objective-C:**
-```objective-c
-SNRClientConfiguration clientConfiguration;
-clientConfiguration.autoClientRefresh = YES;
-    
-[SNRClient setConfiguration:clientConfiguration];
-```
-
-**AUTO CLIENT REFRESH** - Enables automatic client's token refresh.
-
-
 ## Features
 
-#### `Client.login(email:password:deviceId:success:)`
+#### `Client.signIn(email:password:deviceId:success:failure:)`
 Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.  
 The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
 The method requires valid and non-null email and password. The device ID is optional.  
 
-#### `Client.login(phone:password:deviceId:success:)`
-Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.  
-The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
-The method requires valid and non-null email and password. The device ID is optional.  
-
-#### `Client.createAuthToken(uuid:success:failure:)`
-Use this method to obtain unregistered client's authorization token.
-
-#### `Client.createAuthToken(email:success:failure:)`
-Use this method to obtain unregistered client's authorization token.
-
-#### `Client.createAuthToken(customId:success:failure:)`
-Use this method to obtain unregistered client's authorization token.
+#### `Client.authenticate(facebookToken:success:failure:)`
+Use this method to obtain client's authorization token by Facebook.
 
 #### `Client.getToken(success:failure:)`
 Get valid JWT login token. This method pass token with success block execution.
@@ -956,7 +847,7 @@ Retrieve current client's UUID.
 #### `Client.isSignedIn()`
 Retrieve whether client is signed in (is client's token not expired).
 
-#### `Client.logOut()`
+#### `Client.signOut()`
 Signing client out causes in generating new UUID for a new anonymous one.
 
 #### `Client.getAccount(success:failure:)`
@@ -968,161 +859,57 @@ Use this method to update client's account information.
 #### `Client.deleteAccount(success:failure:)`
 Use this method to delete client's account information.
 
-#### `Client.changePassword(password:success:failure:)`
-Use this method to change client's password.  
+#### `Client.changePassword(password:oldPassword:success:failure:)`
+Change client's password.
 
-#### `Client.changePassword(newPassword:oldPassword:success:failure:)`
-Use this method to change client's password.  
-Old password will be compared with the one stored within SDK if and only if auto client refresh is true in client configuration.  
-New password will be saved automatically if auto client refresh is true.  
-
-#### `Client.updatePhoneNumber(phoneNumber:success:failure:)`
+#### `Client.requestPhoneUpdate(phone:success:failure:)`
 Use this method to create client's phone number update request.
 
-#### `Client.confirmPhoneNumber(phoneNumber:confirmationCode:success:failure:)`
+#### `Client.confirmPhoneNumber(phone:confirmationCode:success:failure:)`
 Use this method to confirm client's phone number update request.
 
-#### `Client.getAnalytics(success:failure:)`
-Use this method to get all available analytics metrics for the client.
-
-#### `Client.getAnalytics(name:success:failure:)`
-Use this method to get analytics metrics matches provided name.
-
-#### `Client.getPromotions(success:failure:)`
-Use this method to get all available promotions that are defined for this client.
-
-#### `Client.getPromotions(statuses:excludeExpired:success:failure:)`
-Use this method to get all possible combinations of promotions statuses, which are defined for this client.
-
-#### `Client.activatePromotion(uuid:success:failure:)`
-Use this method to activate promotion that has uuid passed as parameter.
-
-#### `Client.activatePromotion(code:success:failure:)`
-Use this method to activate promotion that has code passed as parameter.
-
-#### `Client.getPromotion(uuid:success:failure:)`
-Use this method to get promotion that has uuid passed as parameter.
-
-#### `Client.getPromotion(code:success:failure:)`
-Use this method to get promotion that has code passed as parameter.
-
-#### `Client.deactivatePromotion(uuid:success:failure:)`
-Use this method to deactivate promotion that has uuid passed as parameter.
-
-#### `Client.deactivatePromotion(code:success:failure:)`
-Use this method to deactivate promotion that has code passed as parameter.
-
-#### `Client.getOrAssignVoucher(poolUUID:success:failure:)`
-Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
-
-#### `Client.assignVoucherCode(poolUUID:success:failure:)`
-Use this method to assign voucher with provided pool uuid for the client.
-
-#### `Client.getAssignedVoucherCodes(success:failure:)`
-Use this method to get client's voucher codes.
-
-**IMPORTANT**
-
-Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
-Every method or property that can throw exception is marked by `@throws` annotation above method.
-
-See **Exceptions/Errors handling** section for more information.
-
-
-# Profile
+# Loyalty
 
 ## Features
 
-#### `Profile.setPoolUuid(_:)`
-Provide your pool's universally unique identifier to assign available voucher to the customer right before registration.
+#### `Loyalty.getPromotions(success:failure:)`
+Use this method to get all available promotions that are defined for this client.
 
-#### `Profile.getToken(success:failure:)` 
-Get valid JWT login token.  
-This method pass token with success block execution.
+#### `Loyalty.getPromotions(statuses:types:page:success:failure:)`
+Use this method to get promotions that are matched for parameters.
 
-#### `Profile.getClient(success:failure:)`
-Use this method to get client profile information.
+#### `Loyalty.getPromotions(statuses:types:limit:page:success:failure:)`
+Use this method to get promotions that are matched for parameters.
 
-#### `Profile.createClient(success:failure:)`
-Use this method to create a new client record if no identifier has been assigned for him before in Synerise.
+#### `Loyalty.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
+Use this method to get promotions that are matched for parameters.
 
-#### `Profile.registerClient(success:failure:)`
-Use this method to register new client with an email with activation, with email without activation or with a phone (depending on context model), password and optional data.
+#### `Loyalty.getPromotion(uuid:success:failure:)`
+Use this method to get promotion that has uuid passed as parameter.
 
-#### `Profile.registerForPush(registrationToken:success:failure:)`
-Use this method to register user for push notifications.
+#### `Loyalty.getPromotion(code:success:failure:)`
+Use this method to get promotion that has code passed as parameter.
 
-#### `Profile.activateClient(email:success:failure:)`
-Use this method to activate client's account.
+#### `Loyalty.activatePromotion(uuid:success:failure:)`
+Use this method to activate promotion that has uuid passed as parameter.
 
-#### `Profile.confirmPhoneRegistration(phone:confirmationCode:success:failure:)`
-Use this method to confirm client's account with confirmation code received by phone.
+#### `Loyalty.activatePromotion(code:success:failure:)`
+Use this method to activate promotion that has code passed as parameter.
 
-#### `Profile.updateClient(context:success:failure:)`
-Use this method to update client with ID and optional data.
+#### `Loyalty.deactivatePromotion(uuid:success:failure:)`
+Use this method to deactivate promotion that has uuid passed as parameter.
 
-#### `Profile.deleteClient(success:failure:)`
-Use this method to delete client with ID.
+#### `Loyalty.deactivatePromotion(code:success:failure:)`
+Use this method to deactivate promotion that has code passed as parameter.
 
-#### `Profile.requestPasswordReset(success:failure:)`
-Use this method to request client's password reset with email. Client will receive a token on provided email address in order to use Profile.confirmResetPassword(password, token).
-
-#### `Profile.confirmResetPassword(success:failure:)`
-Use this method to confirm client's password reset with new password and token provided by Profile.requestPasswordReset(email).
-
-#### `Profile.getPromotions(success:failure:)`
-Use this method to get all available promotions that are defined for your business profile.
-
-#### `Profile.getPromotions(limit:success:failure:)`
-Use this method to get specified number of available promotions that are defined for your business profile.
-
-#### `Profile.getPromotions(externalId:success:failure:)`
-Use this method to get promotions with external ID specified as externalId param.
-
-#### `Profile.getPromotions(phoneNumber:success:failure:)`
-Use this method to get promotions with phone number specified as phoneNumber param.
-
-#### `Profile.getPromotions(clientId:success:failure:)`
-Use this method to get promotions with client ID specified as clientId param.
-
-#### `Profile.getPromotions(email:success:failure:)`
-Use this method to get promotions with email specified as email param.
-
-#### `Profile.getPromotion(uuid:success:failure:)`
-Use this method to get promotion with UUID specified as uuid param.
-
-#### `Profile.getPromotion(code:success:failure:)`
-Use this method to get promotion with code specified as code param.
-
-#### `Profile.redeemPromotion(phoneNumber:promotionCode:success:failure:)`
-Use this method to redeem promotion with specified phone number and promotion code.
-
-#### `Profile.redeemPromotion(clientId:promotionCode:success:failure:)`
-Use this method to redeem promotion with specified client ID and promotion code.
-
-#### `Profile.redeemPromotion(customId:promotionCode:success:failure:)`
-Use this method to redeem promotion with specified custom ID and promotion code.
-
-#### `Profile.redeemPromotion(email:promotionCode:success:failure:)`
-Use this method to redeem promotion with specified email and promotion code.
-
-#### `Profile.getOrAssignVoucher(poolUUID:clientUUID:success:failure:)`
+#### `Loyalty.getOrAssignVoucher(poolUUID:success:failure:)`
 Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
 
-#### `Profile.getClientVoucherCodes(clientUUID:success:failure:)`
-Use this method to get client's voucher codes.
-
-#### `Profile.assignVoucherCode(poolUUID:clientUUID:success:failure:)`
+#### `Loyalty.assignVoucherCode(poolUUID:success:failure:)`
 Use this method to assign voucher with provided pool uuid for the client.
 
-
-**IMPORTANT**
-
-Note, that some methods can throw exceptions. Use @try/@catch for Objective-C or `SNRExceptionHandler.catchException` for Swift.  
-Every method or property that can throw exception is marked by `@throws` annotation above method.
-
-See **Exceptions/Errors handling** section for more information.
-
+#### `Loyalty.getAssignedVoucherCodes(success:failure:)`
+Use this method to get client's voucher codes.
 
 # Injector
 
@@ -1330,11 +1117,6 @@ This is it. When presented View Controller implementing that protocol, Synerise 
 ### Campaign Pushes information
 
 `Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure, you get Array of push notifications in dictionary representation.
-
-### Analytics Metrics
-
-`Client.getAnalytics(success:failure:)`, `Client.getAnalytics(name:success:failure:)` - method to retrieve analytical metrics from Synerise backend.
-
 
 # Author
 Synerise, developer@synerise.com. If you need support please feel free to contact us.

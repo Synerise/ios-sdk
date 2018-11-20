@@ -2,6 +2,7 @@
 //  SNRClientAccountInformation.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
@@ -15,12 +16,12 @@ NS_SWIFT_NAME(ClientAccountInformation)
 @interface SNRClientAccountInformation : SNRBaseModel
 
 @property (assign, nonatomic, readonly) NSInteger clientId;
-@property (copy, nonatomic, nullable, readonly) NSString *email;
+@property (copy, nonatomic, nonnull, readonly) NSString *email;
 @property (copy, nonatomic, nullable, readonly) NSString *phone;
 @property (copy, nonatomic, nullable, readonly) NSString *customId;
-@property (copy, nonatomic, nullable, readonly) NSString *uuid;
-@property (copy, nonatomic, nullable, readonly) NSString *firstName;
-@property (copy, nonatomic, nullable, readonly) NSString *lastName;
+@property (copy, nonatomic, nonnull, readonly) NSString *uuid;
+@property (copy, nonatomic, nonnull, readonly) NSString *firstName;
+@property (copy, nonatomic, nonnull, readonly) NSString *lastName;
 @property (copy, nonatomic, nullable, readonly) NSString *displayName;
 @property (copy, nonatomic, nullable, readonly) NSString *company;
 @property (copy, nonatomic, nullable, readonly) NSString *address;
@@ -29,7 +30,7 @@ NS_SWIFT_NAME(ClientAccountInformation)
 @property (copy, nonatomic, nullable, readonly) NSString *zipCode;
 @property (copy, nonatomic, nullable, readonly) NSString *countryCode;
 @property (copy, nonatomic, nullable, readonly) NSString *birthDate;
-@property (copy, nonatomic, nullable, readonly) NSDate *lastActivityDate;
+@property (copy, nonatomic, nonnull, readonly) NSDate *lastActivityDate;
 @property (assign, nonatomic, readonly) SNRClientSex sex;
 @property (copy, nonatomic, nullable, readonly) NSString *avatarUrl;
 @property (assign, nonatomic, readonly) BOOL anonymous;

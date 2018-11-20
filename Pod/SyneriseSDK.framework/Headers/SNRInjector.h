@@ -2,6 +2,7 @@
 //  SNRInjector.h
 //  SyneriseSDK
 //
+//  Created by Synerise
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
@@ -75,9 +76,6 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 NS_ASSUME_NONNULL_END
 
-/**
- * SNRInjector is responsible for integration with Synerise mobile content methods.
- */
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -102,15 +100,6 @@ NS_SWIFT_NAME(Injector)
  * @param automatic - specified is automatic mode is enabled.
  */
 + (void)setAutomatic:(BOOL)automatic;
-
-/**
- * Initializes SNRInjector.
- *
- * @note This method needs to be called before any other method of SNRInjector class and only once during application lifecycle.
- *
- * @param apiKey - Synerise API Key for Business Profile.
- */
-+ (void)initialize:(NSString *)apiKey;
 
 /**
  * This method sets object for Walkthrough delegate methods.

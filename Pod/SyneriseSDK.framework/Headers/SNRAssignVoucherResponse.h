@@ -7,7 +7,8 @@
 //
 
 #import "SNRBaseModel.h"
-#import "SNRAssignVoucherData.h"
+
+@class SNRAssignVoucherData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_SWIFT_NAME(AssignVoucherResponse)
 @interface SNRAssignVoucherResponse : SNRBaseModel
 
 @property (copy, nonatomic, nullable, readonly) NSString *message;
-@property (copy, nonatomic, nullable, readonly) SNRAssignVoucherData *data;
+@property (copy, nonatomic, nullable, readonly) SNRAssignVoucherData *assignVoucherData;
 
 @end
 
