@@ -1,6 +1,39 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.0] - 2018-11-20
+
+### Added
+- Loyalty module.
+- CacheService to obtain cached API models.
+
+### Changed
+- SDK callbacks executes on main thread.
+- Some Promotion entity fields types.
+- Some Promotion enum types (PromotionStatus, PromotionType, PromotionDiscountValue).
+- Major parts of authorization module.
+- Client.changePassword() now requires old client's password.
+- Profile methods were distributed between Client and Loyalty.
+- Client.getPromotions -> Loyalty.getPromotions.
+- Client.getPromotion -> Loyalty.getPromotion.
+- Client.activatePromotionBy -> Loyalty.activatePromotionBy.
+- Client.deactivatePromotionBy -> Loyalty.deactivatePromotionBy.
+- Client.getOrAssignVoucher -> Loyalty.getOrAssignVoucher.
+- Client.assignVoucherCode -> Loyalty.assignVoucherCode.
+- Client.getAssignedVoucherCodes -> Loyalty.getAssignedVoucherCodes.
+- Profile.registerClient -> Client.registerAccount.
+- Profile.registerForPush -> Client.registerForPush.
+- Profile.activateClient -> Client.activateAccount.
+- Profile.requestPasswordReset -> Client.requestPasswordReset.
+- Profile.confirmResetPassword -> Client.confirmPasswordReset.
+
+### Removed
+- Overall validation.
+- Profile module.
+- Client.getAnalytics method.
+- Client.setConfiguration method.
+- Client.createAuthToken method.
+
 ## [3.2.30] - 2018-11-01
 
 ### Added
