@@ -72,7 +72,7 @@ class ApplicationController {
     
     private func keysAreEmpty() -> Bool {
         let settingsService = serviceProvider.getSettingsService()
-        if let syneriseBusinessAPI: String = settingsService.get(SettingsServiceKey.syneriseBusinessAPIKey), let syneriseClientAPI: String = settingsService.get(SettingsServiceKey.syneriseClientAPIKey), !syneriseClientAPI.isEmpty, !syneriseBusinessAPI.isEmpty {
+        if let syneriseClientAPI: String = settingsService.get(SettingsServiceKey.syneriseClientAPIKey), !syneriseClientAPI.isEmpty {
                 return false
         }
         

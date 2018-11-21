@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRClientPasswordResetConfirmationContext
+ */
+
 NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 @interface SNRClientPasswordResetConfirmationContext : SNRBaseContext
 

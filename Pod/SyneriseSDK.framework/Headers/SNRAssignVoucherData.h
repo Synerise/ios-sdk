@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRAssignVoucherData
+ */
+
 NS_SWIFT_NAME(AssignVoucherData)
 @interface SNRAssignVoucherData : SNRBaseModel
 

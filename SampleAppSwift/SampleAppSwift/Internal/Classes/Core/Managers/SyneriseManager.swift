@@ -14,21 +14,19 @@ class SyneriseManager {
     
     var settingsService: SettingsService!
     
-    private let businessApiKey: String
     private let clientApiKey: String
 
     // MARK: - Initializers
 
-    init(businessApiKey: String, clientApiKey: String) {
-        self.businessApiKey = businessApiKey
+    init(clientApiKey: String) {
         self.clientApiKey = clientApiKey
     }
 
     // MARK: - Public
 
     func initialize() {
-        DebugUtils.print("SyneriseSDK initializing | BP: \(businessApiKey), CK: \(clientApiKey)")
-        Synerise.initialize(businessProfileApiKey: businessApiKey, clientApiKey: clientApiKey)
+        DebugUtils.print("SyneriseSDK initializing | Client API Key: \(clientApiKey)")
+        Synerise.initialize(clientApiKey: clientApiKey)
         Synerise.setDelegate(self)
         
         Synerise.notificationServiceSettings.disableInAppAlerts = settingsService.get(.syneriseDisableInAppAlertsKey) ?? false
@@ -37,14 +35,7 @@ class SyneriseManager {
         Tracker.setLoggingEnabled(true)
         Tracker.setAutoTrackMode(.fine)
         
-        var clientConfiguration = ClientConfiguration()
-        clientConfiguration.autoClientRefresh = true
-        
-        Client.setConfiguration(clientConfiguration)
         Client.setLoggingEnabled(true)
-
-        Profile.setLoggingEnabled(true)
-        Profile.setPoolUuid("c6624bad-57fb-4e9d-a5e7-665027e1eb4e")
 
         Injector.setLoggingEnabled(true)
         Injector.setAutomatic(true)
@@ -64,7 +55,7 @@ class SyneriseManager {
     }
     
     func signOut() {
-        Client.logout()
+        Client.signOut()
     }
 }
 
@@ -93,7 +84,7 @@ extension SyneriseManager: NotificationServiceDelegate {
 
     func notificationService(_ notificationService: NotificationService, didReceiveToken token: String, origin: NotificationService.TokenOrigin) {
         if origin == NotificationService.TokenOrigin.firebase {
-            Profile.registerForPush(registrationToken: token,
+            Client.registerForPush(registrationToken: token,
                                     success: { (_) in
                                         DebugUtils.print("Synerise push registration success")
             },
@@ -128,16 +119,11 @@ extension SyneriseManager: Registerable {
             let serviceProvider = container.resolve(ServiceProvider.self)
             let settingsService = serviceProvider!.getSettingsService()
             
-            guard let businessApiKey: String = settingsService.get(SettingsServiceKey.syneriseBusinessAPIKey) else {
-                fatalError()
-            }
-            
             guard let clientApiKey: String = settingsService.get(SettingsServiceKey.syneriseClientAPIKey) else {
                 fatalError()
             }
             
             return SyneriseManager(
-                businessApiKey: businessApiKey,
                 clientApiKey: clientApiKey
             )
         }

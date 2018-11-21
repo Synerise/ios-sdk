@@ -42,8 +42,6 @@ class DeveloperToolsCoordinator: Coordinator {
 extension DeveloperToolsCoordinator: DeveloperMenuViewControllerDelegate {
     func resetApplicationWasPressed(_ developerMenuViewController: DeveloperMenuViewController) {
         let settingsService = self.applicationController.serviceProvider.getSettingsService()
-        
-        settingsService.remove(forKey: SettingsServiceKey.syneriseBusinessAPIKey)
         settingsService.remove(forKey: SettingsServiceKey.syneriseClientAPIKey)
     }
 }

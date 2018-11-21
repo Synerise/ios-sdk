@@ -10,15 +10,33 @@
 #import <UIKit/UIKit.h>
 
 #import <SyneriseSDK/SNRSynerise.h>
+
+// Modules
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRLoyalty.h>
 
+// Settings
 #import <SyneriseSDK/SNRNotificationServiceSettings.h>
 
+// Errors
+#import <SyneriseSDK/SNRErrorsList.h>
+#import <SyneriseSDK/SNRError.h>
+#import <SyneriseSDK/SNRApiError.h>
+#import <SyneriseSDK/SNRInvalidArgumentError.h>
+#import <SyneriseSDK/SNRIllegalArgumentError.h>
+
+// Exceptions
+#import <SyneriseSDK/SNRExceptionHandler.h>
+#import <SyneriseSDK/SNRException.h>
+#import <SyneriseSDK/SNRInvalidArgumentException.h>
+#import <SyneriseSDK/SNRIllegalArgumentException.h>
+
+// Services
 #import <SyneriseSDK/SNRCacheService.h>
 
+// Events
 #import <SyneriseSDK/SNREvent.h>
 #import <SyneriseSDK/SNRCustomEvent.h>
 #import <SyneriseSDK/SNRLoggedInEvent.h>
@@ -39,12 +57,15 @@
 #import <SyneriseSDK/SNRVisitedScreenEvent.h>
 #import <SyneriseSDK/SNRTrackerParams.h>
 
+// Events Models
+#import <SyneriseSDK/SNRUnitPrice.h>
+#import <SyneriseSDK/SNREventProduct.h>
+
+// API Models
 #import <SyneriseSDK/SNRBaseModel.h>
 #import <SyneriseSDK/SNRBaseContext.h>
 #import <SyneriseSDK/SNRClientAgreements.h>
 #import <SyneriseSDK/SNRClientSex.h>
-#import <SyneriseSDK/SNRUnitPrice.h>
-#import <SyneriseSDK/SNREventProduct.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
@@ -61,15 +82,6 @@
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
 #import <SyneriseSDK/SNRVoucherCodesData.h>
 
-#import <SyneriseSDK/SNRExceptionHandler.h>
-#import <SyneriseSDK/SNRException.h>
-#import <SyneriseSDK/SNRInvalidArgumentException.h>
-#import <SyneriseSDK/SNRIllegalArgumentException.h>
-#import <SyneriseSDK/SNRError.h>
-#import <SyneriseSDK/SNRErrorsList.h>
-#import <SyneriseSDK/SNRApiError.h>
-#import <SyneriseSDK/SNRInvalidArgumentError.h>
-#import <SyneriseSDK/SNRIllegalArgumentError.h>
-
+// Content Extensions
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
 #import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>

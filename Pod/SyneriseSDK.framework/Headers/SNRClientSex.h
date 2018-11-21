@@ -9,6 +9,7 @@
 /**
  * @enum SNRClientSex
  */
+
 typedef NS_ENUM(NSUInteger, SNRClientSex) {
     SNRClientSexNotSpecified = 0,
     SNRClientSexMale,

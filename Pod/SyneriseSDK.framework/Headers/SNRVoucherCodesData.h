@@ -11,6 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRVoucherCodesData
+ */
+
 NS_SWIFT_NAME(VoucherCodesData)
 @interface SNRVoucherCodesData : SNRBaseModel
 

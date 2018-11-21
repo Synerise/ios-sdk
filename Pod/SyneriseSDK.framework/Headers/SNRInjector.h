@@ -6,15 +6,17 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
+ * @protocol SNRInjectorWalkthroughDelegate
+ *
  * A protocol to handle events from Injector for Walkthrough campaigns.
  *
  * When you choose to load and present Walkthrough manually, you may be interested in following delegate methods.
  *
  * Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
  */
-
-NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 @protocol SNRInjectorWalkthroughDelegate
@@ -43,7 +45,13 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 
 @end
 
+NS_ASSUME_NONNULL_END
+
+NS_ASSUME_NONNULL_BEGIN
+
 /**
+ * @protocol SNRInjectorBannerDelegate
+ *
  * A protocol to handle events from Injector for banner campaigns.
  *
  * It is not always suitable for you to cover your Activities with any banners which may come.
@@ -58,7 +66,7 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 /**
  * This method will be called when Banner has been loaded and SyneriseSDK asks for permission to show it.
  *
- * @param bannerDictionary - it is banner instance representation.
+ * @param bannerDictionary It is banner instance representation.
  */
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary *)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
@@ -76,8 +84,11 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 NS_ASSUME_NONNULL_END
 
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRInjector
+ */
 
 NS_SWIFT_NAME(Injector)
 @interface SNRInjector : NSObject
@@ -88,30 +99,30 @@ NS_SWIFT_NAME(Injector)
 /**
  * Enables/disables console logs from SNRInjector.
  *
- * @note It is not recommended to use debug mode in release version of your application.
+ * @param enabled Specifies that console logs are enabled/disabled.
  *
- * @param enabled - specified is console logs are enabled.
+ * @note It is not recommended to use debug mode in release version of your application.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
  * Enables/disables automatic for SNRInjector.
  *
- * @param automatic - specified is automatic mode is enabled.
+ * @param automatic Specifies that automatic mode is enabled/disabled.
  */
 + (void)setAutomatic:(BOOL)automatic;
 
 /**
  * This method sets object for Walkthrough delegate methods.
  *
- * @param delegate - object that implement SNRInjectorWalkthroughDelegate protocol.
+ * @param delegate Object that implement SNRInjectorWalkthroughDelegate protocol.
  */
 + (void)setWalkthroughDelegate:(id<SNRInjectorWalkthroughDelegate>)delegate;
 
 /**
  * This method sets object for Banner delegate methods.
  *
- * @param delegate - object that implement SNRInjectorBannerDelegate protocol.
+ * @param delegate Object that implement SNRInjectorBannerDelegate protocol.
  */
 + (void)setBannerDelegate:(id<SNRInjectorBannerDelegate>)delegate;
 
@@ -143,12 +154,17 @@ NS_SWIFT_NAME(Injector)
 /**
  * This method fetches banners set for mobile campaigns and caches valid ones.
  *
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
  * This method fetches Push Notifications set for mobile campaigns.
+ *
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
@@ -156,7 +172,7 @@ NS_SWIFT_NAME(Injector)
 /**
  * Show banner immediately.
  *
- * @param markPresented - sets banner as presented and this banner instance representation will not appear second time.
+ * @param markPresented Sets banner as presented and this banner instance representation will not appear second time.
  */
 + (void)showBanner:(NSDictionary *)bannerDictionary
      markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));

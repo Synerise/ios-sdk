@@ -9,11 +9,13 @@
 #import "SNREvent.h"
 #import <CoreLocation/CLLocation.h>
 
-/**
- Represents a 'client appeared in location' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRAppearedInLocationEvent
+ *
+ * Represents a 'client appeared in location' event.
+ */
 
 NS_SWIFT_NAME(AppearedInLocationEvent)
 @interface SNRAppearedInLocationEvent : SNREvent

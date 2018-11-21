@@ -10,12 +10,16 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
-extern NSString * const SNRCarouselContentExtensionViewControllerCategoryIdentifier;
-extern NSString * const SNRCarouselContentExtensionViewControllerPreviousItemIdentifier;
-extern NSString * const SNRCarouselContentExtensionViewControllerNextItemIdentifier;
-extern NSString * const SNRCarouselContentExtensionViewControllerChooseItemIdentifier;
+FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerCategoryIdentifier;
+FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerPreviousItemIdentifier;
+FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerNextItemIdentifier;
+FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerChooseItemIdentifier;
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRCarouselContentExtensionViewController
+ */
 
 API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(CarouselContentExtensionViewController)

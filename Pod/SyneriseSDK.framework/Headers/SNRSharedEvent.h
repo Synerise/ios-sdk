@@ -8,11 +8,13 @@
 
 #import "SNREvent.h"
 
-/**
- Represents a 'client shared' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRSharedEvent
+ *
+ * Represents a 'client shared' event.
+ */
 
 NS_SWIFT_NAME(SharedEvent)
 @interface SNRSharedEvent : SNREvent

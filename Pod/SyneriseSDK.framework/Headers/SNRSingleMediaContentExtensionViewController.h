@@ -10,9 +10,13 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
-extern NSString * const SNRSingleMediaContentExtensionViewControllerCategoryIdentifier;
+FOUNDATION_EXPORT NSString * const SNRSingleMediaContentExtensionViewControllerCategoryIdentifier;
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRSingleMediaContentExtensionViewController
+ */
 
 API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(SingleMediaContentExtensionViewController)

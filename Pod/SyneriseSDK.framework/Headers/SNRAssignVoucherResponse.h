@@ -12,6 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRAssignVoucherResponse
+ */
+
 NS_SWIFT_NAME(AssignVoucherResponse)
 @interface SNRAssignVoucherResponse : SNRBaseModel
 

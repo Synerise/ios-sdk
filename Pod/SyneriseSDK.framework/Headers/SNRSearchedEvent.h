@@ -8,11 +8,13 @@
 
 #import "SNREvent.h"
 
-/**
- Represents a 'client searched' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRSearchedEvent
+ *
+ * Represents a 'client searched' event.
+ */
 
 NS_SWIFT_NAME(SearchedEvent)
 @interface SNRSearchedEvent : SNREvent

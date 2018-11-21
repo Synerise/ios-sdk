@@ -11,6 +11,7 @@
 /**
  * @enum SNRSyneriseActivity
  */
+
 typedef NS_ENUM(NSInteger, SNRSyneriseActivity) {
     /// Simple Push campaign activity
     SNRSyneriseActivitySimplePush,
@@ -27,12 +28,13 @@ typedef NS_ENUM(NSInteger, SNRSyneriseActivity) {
 /**
  * @enum SNRSyneriseActivityAction
  */
+
 typedef NS_ENUM(NSInteger, SNRSyneriseActivityAction) {
-    /// Activity should be stay on screen
-    /// note that Simple Push disappears always by default
+    /// Activity should be stay on screen.
+    /// Note that Simple Push disappears always by default.
     SNRSyneriseActivityActionNone,
     
-    /// Activity should disappear from screen
+    /// Activity should disappear from screen.
     SNRSyneriseActivityActionHide
     
 } NS_SWIFT_NAME(SyneriseActivityAction);
@@ -40,14 +42,15 @@ typedef NS_ENUM(NSInteger, SNRSyneriseActivityAction) {
 typedef void (^SNRSyneriseActivityActionCompletionBlock)(void) NS_SWIFT_NAME(SyneriseActivityActionCompletionBlock);
 typedef void (^SNRSyneriseActivityCompletionHandler)(SNRSyneriseActivityAction, __nullable SNRSyneriseActivityActionCompletionBlock) NS_SWIFT_NAME(SyneriseActivityCompletionHandler);
 
+NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * @protocol SNRSyneriseDelegate
+ *
  * A protocol to handle actions from SyneriseSDK.
  *
  * @note Note that if optional methods are not implemented, Synerise has got default behaviour only for url action - it is redirected to a browser.
  */
-
-NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(SyneriseDelegate)
 @protocol SNRSyneriseDelegate
@@ -56,14 +59,15 @@ NS_SWIFT_NAME(SyneriseDelegate)
 /**
  * This method will be called when registration for push notifications is needed.
  *
- * @note You should invoke '[SNRProfile registerForPush:success:failure:]' method again.
+ * @note You should invoke '[SNRClient registerForPush:success:failure:]' method again.
  */
 - (void)SNR_registerForPushNotificationsIsNeeded NS_SWIFT_NAME(snr_registerForPushNotificationsIsNeeded());
 
 /**
  * This method will call when Synerise handles url action from campaign Activity.
  *
- * @param url is network address value from activity.
+ * @param url URL address value from activity.
+ *
  * @note This method will be invoke when method 'SNR_handledActionWithURL:activity:completionHandler:' is not implemented.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url NS_SWIFT_NAME(snr_handledAction(url:));
@@ -71,7 +75,8 @@ NS_SWIFT_NAME(SyneriseDelegate)
 /**
  * This method will call when Synerise handles deeplink action from campaign Activity.
  *
- * @param deepLink is literal text value from activity.
+ * @param deepLink Literal text value from activity.
+ *
  * @note This method will be invoke when method 'SNR_handledActionWithDeepLink:activity:completionHandler:' is not implemented.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink NS_SWIFT_NAME(snr_handledAction(deepLink:));
@@ -79,18 +84,18 @@ NS_SWIFT_NAME(SyneriseDelegate)
 /**
  * This method will call when Synerise handles url action from campaign Activity.
  *
- * @param url is network address value from activity.
- * @param activity identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param url URL address value from activity.
+ * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
+ * @param completionHandler A block that should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(url:activity:completionHandler:));
 
 /**
  * This method will call when Synerise handles deeplink action from campaign Activity.
  *
- * @param deepLink is literal text value from activity.
- * @param activity identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param deepLink Literal text value from activity.
+ * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
+ * @param completionHandler A block that should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(deepLink:activity:completionHandler:));
 
@@ -98,20 +103,29 @@ NS_SWIFT_NAME(SyneriseDelegate)
 
 NS_ASSUME_NONNULL_END
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
+ * @protocol SyneriseActivityNotAllowed
+ *
  * A protocol to block Synerise Activities.
- * Implement this protocol in ViewController that cannot be covered by Synerise Activity.
+ * Implement this protocol in View Controller that cannot be covered by Synerise Activity.
  */
+
 NS_SWIFT_NAME(SyneriseActivityNotAllowed)
 @protocol SNRSyneriseActivityNotAllowed
 
 @end
 
-/**
- * SNRSynerise is responsible for initialization SyneriseSDK and its main actions.
- */
+NS_ASSUME_NONNULL_END
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRSynerise
+ *
+ * SNRSynerise is responsible for initialization SyneriseSDK and its main actions.
+ */
 
 NS_SWIFT_NAME(Synerise)
 @interface SNRSynerise : NSObject
@@ -124,29 +138,26 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Initializes SyneriseSDK.
  *
+ * @param clientApiKey Synerise Client API Key.
+ *
  * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
- *
- * @param clientApiKey Synerise API Key for Business Profile.
- *
  */
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey NS_SWIFT_NAME(initialize(clientApiKey:));
 
 /**
- *Initializes SyneriseSDK.
+ * Initializes SyneriseSDK.
  *
- * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
- *
- * @param clientApiKey Synerise API Key for Business Profile.
+ * @param clientApiKey Synerise Client API Key.
  * @param baseUrl Synerise API custom environment base URL.
  *
+ * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
  */
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(clientApiKey:baseUrl:));
 
 /**
  * This method sets object for Synerise delegate methods.
  *
- * @param delegate object that implement SNRSyneriseDelegate protocol.
- *
+ * @param delegate Object that implement SNRSyneriseDelegate protocol.
  */
 + (void)setDelegate:(id<SNRSyneriseDelegate>)delegate;
 
@@ -154,7 +165,6 @@ NS_SWIFT_NAME(Synerise)
  * This method checkes that notification's sender is Synerise.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
- *
  */
 + (BOOL)isSyneriseNotification:(NSDictionary *)userInfo;
 
@@ -162,12 +172,14 @@ NS_SWIFT_NAME(Synerise)
  * This method handles new push message and starts activity, which build proper views from provided data.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
- *
  */
 + (void)handleNotification:(NSDictionary *)userInfo;
 
 /**
  * This method handles push message action identifeir and execute its action if is set.
+ *
+ * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
+ * @param actionIdentifier Identifier of action received from notification response.
  */
 + (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
 

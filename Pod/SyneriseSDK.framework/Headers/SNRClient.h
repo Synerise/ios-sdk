@@ -14,6 +14,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRClient
+ */
+
 NS_SWIFT_NAME(Client)
 @interface SNRClient : NSObject
 
@@ -24,7 +28,7 @@ NS_SWIFT_NAME(Client)
  * This method enables/disables console logs from Client SDK.
  * It is not recommended to use debug mode in release version of your application.
  *
- * @param enabled - specified is console logs are enabled.
+ * @param enabled Specifies that console logs are enabled/disabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 
@@ -34,39 +38,35 @@ NS_SWIFT_NAME(Client)
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
  * @param context SNRClientRegisterAccountContext object with client's email, password, and other optional data. Not provided fields are not modified.
- * @param success - success block.
- * @param failure - failure block.
- *
- * @note SNRIllegalArgumentError is returned in failure block when you have previously set an pool UUID (setPoolUuuid method) for which you can not register an account (either pool is the empty or other problem has occurred).
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)registerAccount:(SNRClientRegisterAccountContext *)context
                 success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure;
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerAccount(context:success:failure:));
 
 /*
  * Activates client's account.
  *
- * @param email - client’s email.
- * @param success - success block.
- * @param failure - failure block.
- *
+ * @param email Client’s email.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)activateAccount:(NSString *)email
                 success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateClient(email:success:failure:));
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
 
 /**
  * Log in a client in order to obtain the JWT token, which could be used in subsequent requests. The token is valid for 1 hour.
  * This SDK will refresh token before each call if it is expiring (but not expired).
- * Please note that you should NOT allow to sign in again (or sign up) when a user is already signed in. Please sign out user first.
+ * Please note that you should not allow to sign in again (or sign up) when a user is already signed in. Please sign out user first.
  * Moreover, please do not create multiple instances nor call this method multiple times before execution.
  *
- * @param email - client's email.
- * @param password - client's password.
- * @param deviceId - deviceId.
- * @param success - success block.
- * @param failure - failure block.
- *
+ * @param email Client's email.
+ * @param password Client's password.
+ * @param deviceId Device identificator.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
@@ -77,8 +77,9 @@ NS_SWIFT_NAME(Client)
 /**
  * Use this method to obtain client's authorization token by Facebook.
  *
- * @param facebookToken - token from Facebook active session.
- *
+ * @param facebookToken Token from Facebook active session.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)authenticateByFacebookToken:(NSString *)facebookToken
                             success:(nullable void (^)(BOOL isSuccess))success
@@ -95,10 +96,10 @@ NS_SWIFT_NAME(Client)
 + (void)signOut NS_SWIFT_NAME(signOut());
 
 /**
- * Retrieves current Client authentication token. This method provides valid token if Client is logged in and current token is not expired.
+ * Retrieves current client authentication token. This method provides valid token if client is logged in and current token is not expired.
  *
- * @param success - success block.
- * @param failure - failure block.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)getTokenWithSuccess:(nullable void (^)(NSString *token))success
                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:));
@@ -111,8 +112,8 @@ NS_SWIFT_NAME(Client)
 /**
  * Get client's account information.
  *
- * @param success - success block.
- * @param failure - failure block.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation *accountInformation))success
                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
@@ -120,9 +121,9 @@ NS_SWIFT_NAME(Client)
 /**
  * Update client's account information with optional data.
  *
- * @param context - context object with client's account information to be modified.
- * @param success - success block.
- * @param failure - failure block.
+ * @param context SNRClientUpdateAccountContext object with client's account information to be modified. Not provided fields are not modified.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)updateAccount:(SNRClientUpdateAccountContext *)context
               success:(nullable void (^)(BOOL isSuccess))success
@@ -130,11 +131,10 @@ NS_SWIFT_NAME(Client)
 
 /**
  * Requests client's password reset with email. A client will receive a token on the provided email address in order to use.
- * @c [SNRProfile confirmResetPassword:success:failure] method.
  *
- * @param context - SNRClientPasswordResetRequestContext object with client's email.
- * @param success - success block.
- * @param failure - failure block.
+ * @param context SNRClientPasswordResetRequestContext object with client's email.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)requestPasswordReset:(SNRClientPasswordResetRequestContext *)context
                      success:(nullable void (^)(BOOL isSuccess))success
@@ -143,20 +143,21 @@ NS_SWIFT_NAME(Client)
 /**
  * Confirms client's password reset with new password and token provided.
  *
- * @param context - SNRClientPasswordResetRequestContext object with client's password and token.
- * @param success - success block.
- * @param failure - failure block.
+ * @param context SNRClientPasswordResetConfirmationContext object with client's password and token.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context
                      success:(nullable void (^)(BOOL isSuccess))success
-                     failure:(nullable void (^)(NSError *error))failure;
+                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmResetPassword(context:success:failure:));
 
 /**
  * Change client's password.
  *
- * @param password - new client's password.
- * @param success - success block.
- * @param failure - failure block.
+ * @param password Client's new password.
+ * @param oldPassword Client's old password.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)changePassword:(NSString *)password
            oldPassword:(NSString *)oldPassword
@@ -166,10 +167,9 @@ NS_SWIFT_NAME(Client)
 /**
  * Update client's phone number request.
  *
- * @param phone - client's phone number.
- * @param success - success block.
- * @param failure - failure block.
- *
+ * @param phone Client's phone number.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)requestPhoneUpdate:(NSString *)phone
                    success:(nullable void (^)(BOOL isSuccess))success
@@ -178,22 +178,21 @@ NS_SWIFT_NAME(Client)
 /**
  * Confirm client's phone number update.
  *
- * @param phone - client's phone number.
- * @param confirmationCode - client's confirmation code received by phone.
- * @param success - success block.
- * @param failure - failure block.
- *
+ * @param phone Client's phone number.
+ * @param confirmationCode Client's confirmation code received by phone.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)confirmPhoneUpdate:(NSString *)phone
           confirmationCode:(NSString *)confirmationCode
                    success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneNumber(phone:confirmationCode:success:failure:));
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneUpdate(phone:confirmationCode:success:failure:));
 
 /**
  * Delete client's account information.
  *
- * @param success - success block.
- * @param failure - failure block.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)deleteAccountWithSuccess:(nullable void (^)(BOOL isSuccess))success
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(success:failure:));
@@ -201,9 +200,9 @@ NS_SWIFT_NAME(Client)
 /**
  * Registers user for push notifications.
  *
- * @param registrationToken - Firebase FCM Token returned after successful push notifications registration from Firebase.
- * @param success - success block.
- * @param failure - failure block.
+ * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
+ * @param success A block when operation is success.
+ * @param failure A block when operation is failure.
  */
 + (void)registerForPush:(NSString *)registrationToken
                 success:(nullable void (^)(BOOL isSuccess))success

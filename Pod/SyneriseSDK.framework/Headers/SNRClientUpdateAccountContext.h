@@ -12,6 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRClientUpdateAccountContext
+ */
+
 NS_SWIFT_NAME(ClientUpdateAccountContext)
 @interface SNRClientUpdateAccountContext : SNRBaseContext
 

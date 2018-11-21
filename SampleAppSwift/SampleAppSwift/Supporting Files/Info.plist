@@ -32,11 +32,13 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>28</string>
+	<string>45</string>
 	<key>FacebookAppID</key>
 	<string>2276466452573053</string>
 	<key>FacebookDisplayName</key>
 	<string>Synerise Sample App</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>

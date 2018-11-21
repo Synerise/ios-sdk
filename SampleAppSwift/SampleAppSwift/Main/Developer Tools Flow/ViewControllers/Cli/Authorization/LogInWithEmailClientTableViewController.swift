@@ -49,7 +49,7 @@ class LogInWithEmailClientTableViewController: DefaultTableViewController {
         do {
             showLoading()
             try SNRExceptionHandler.catchException {
-                Client.login(email: email, password: password, deviceId: deviceID, success: { (success) in
+                Client.signIn(email: email, password: password, deviceId: deviceID, success: { (success) in
                     if success {
                         self.hideLoading()
                         self.showSuccessInfo()

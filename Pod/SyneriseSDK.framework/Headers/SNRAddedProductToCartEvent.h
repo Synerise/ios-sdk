@@ -8,11 +8,13 @@
 
 #import "SNRCartEvent.h"
 
-/**
- Represents a 'client added product to cart' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRAddedProductToCartEvent
+ *
+ * Represents a 'client added product to cart' event.
+ */
 
 NS_SWIFT_NAME(AddedProductToCartEvent)
 @interface SNRAddedProductToCartEvent : SNRCartEvent

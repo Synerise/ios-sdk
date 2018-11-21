@@ -6,11 +6,15 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
-extern NSString * const SNRErrorUserInfoPathKey;
-extern NSString * const SNRErrorUserInfoRejectedValueKey;
-extern NSString * const SNRErrorUserInfoMessageKey;
+FOUNDATION_EXPORT NSString * const SNRErrorUserInfoPathKey;
+FOUNDATION_EXPORT NSString * const SNRErrorUserInfoRejectedValueKey;
+FOUNDATION_EXPORT NSString * const SNRErrorUserInfoMessageKey;
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRError
+ */
 
 @interface SNRError: NSError
 

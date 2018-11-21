@@ -29,48 +29,11 @@ class ClientAPIViewController: DefaultViewController {
         sender.animateTapping()
     }
     
-    @IBAction func getAccountButtonWasPressed(_ sender: DefaultButton) {
-        showLoading()
-        Client.getAccount(success: { (clientAccountInformation) in
-            self.hideLoading()
-            
-            DispatchQueue.main.async {
-                let accountInformation = self.makeAccountInformation(clientAccountInformation)
-                self.pushToShowClientAccountInformation(accountInformation: accountInformation)
-            }
-        }, failure: { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
-        })
-        
-        sender.animateTapping()
-    }
-    
-    @IBAction func getAnalyticsButtonWasPressed(_ sender: DefaultButton) {
-        showLoading()
-        Client.getAnalytics(success: { (array) in
-            self.hideLoading()
-            
-            guard let analyticsMetrics = array as? [AnalyticsMetrics] else { return }
-            guard let stringRepresentation = AnalyticsMetricsUtils(analyticsMetrics: analyticsMetrics).getStringRepresentation() else { return }
-            
-            DispatchQueue.main.async {
-                self.pushToShowClientAnalytics(accountInformation: stringRepresentation)
-            }
-            
-        }, failure: { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
-        })
-        
-        sender.animateTapping()
-    }
-    
     @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
         self.showLoading()
         
         Client.deleteAccount(success: { (_) in
-            Client.logout()
+            Client.signOut()
             
             self.hideLoading()
             self.showSuccessInfo()
@@ -103,12 +66,6 @@ class ClientAPIViewController: DefaultViewController {
     
     private func pushToShowClientAccountInformation(accountInformation: String) {
         let debugTextViewController = makeDebugTextViewController(labelText: accountInformation, barTitle: "Show Client Account Information")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
-    
-    private func pushToShowClientAnalytics(accountInformation: String) {
-        let debugTextViewController = makeDebugTextViewController(labelText: accountInformation, barTitle: "Show Client Analytics Info", copyEnable: false)
         
         self.navigationController?.pushViewController(debugTextViewController, animated: true)
     }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zpG-zF-gGN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zpG-zF-gGN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,40 +88,8 @@
                                                     <constraint firstAttribute="height" constant="65" id="LrX-Oq-2mz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikO-Aq-Ysg">
-                                                <rect key="frame" x="0.0" y="150" width="375" height="65"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elv-bK-ECn" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="ljI-vo-WoL"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <state key="normal" title="Profile API">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <segue destination="uGm-6w-jpZ" kind="show" id="Pcu-Kh-F0K"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="elv-bK-ECn" firstAttribute="centerY" secondItem="ikO-Aq-Ysg" secondAttribute="centerY" id="9rG-Q0-g5T"/>
-                                                    <constraint firstAttribute="height" constant="65" id="Ek6-qR-bT8"/>
-                                                    <constraint firstItem="elv-bK-ECn" firstAttribute="leading" secondItem="ikO-Aq-Ysg" secondAttribute="leading" constant="16" id="Fp3-so-2Iz"/>
-                                                    <constraint firstItem="elv-bK-ECn" firstAttribute="centerX" secondItem="ikO-Aq-Ysg" secondAttribute="centerX" id="cS3-Wd-R6z"/>
-                                                    <constraint firstAttribute="trailing" secondItem="elv-bK-ECn" secondAttribute="trailing" constant="16" id="giI-4j-au2"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-Gc-Qzg">
-                                                <rect key="frame" x="0.0" y="225" width="375" height="65"/>
+                                                <rect key="frame" x="0.0" y="150" width="375" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9I-dL-aHO" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
@@ -149,6 +118,38 @@
                                                     <constraint firstItem="l9I-dL-aHO" firstAttribute="centerX" secondItem="PGK-Gc-Qzg" secondAttribute="centerX" id="McW-gY-YEf"/>
                                                     <constraint firstAttribute="trailing" secondItem="l9I-dL-aHO" secondAttribute="trailing" constant="16" id="kAh-v3-PhY"/>
                                                     <constraint firstItem="l9I-dL-aHO" firstAttribute="centerY" secondItem="PGK-Gc-Qzg" secondAttribute="centerY" id="zKT-dd-cJY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFp-JY-iZk">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWl-Tt-dgA" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="gWY-m5-2EE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Loyalty API">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="zSa-4a-flb" kind="show" id="MCS-hb-rKC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="rWl-Tt-dgA" secondAttribute="trailing" constant="16" id="6Kk-nq-oUe"/>
+                                                    <constraint firstItem="rWl-Tt-dgA" firstAttribute="centerY" secondItem="RFp-JY-iZk" secondAttribute="centerY" id="dEk-nT-Jhg"/>
+                                                    <constraint firstItem="rWl-Tt-dgA" firstAttribute="leading" secondItem="RFp-JY-iZk" secondAttribute="leading" constant="16" id="e4k-9n-OWd"/>
+                                                    <constraint firstItem="rWl-Tt-dgA" firstAttribute="centerX" secondItem="RFp-JY-iZk" secondAttribute="centerX" id="pbR-Fe-9tQ"/>
+                                                    <constraint firstAttribute="height" constant="65" id="rZA-sc-TRa"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sH4-Db-AL0">
@@ -216,7 +217,7 @@
                 <viewControllerPlaceholder storyboardName="TrackerAPI" id="Pym-kV-OJq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOl-1N-f1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000" y="-111"/>
+            <point key="canvasLocation" x="886" y="-299"/>
         </scene>
         <!--ProfileAPI-->
         <scene sceneID="gpu-5W-QD5">
@@ -224,7 +225,7 @@
                 <viewControllerPlaceholder storyboardName="ProfileAPI" id="uGm-6w-jpZ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWs-nP-9T1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="93"/>
+            <point key="canvasLocation" x="934" y="-171"/>
         </scene>
         <!--ClientAPI-->
         <scene sceneID="X0L-B6-68R">
@@ -232,7 +233,7 @@
                 <viewControllerPlaceholder storyboardName="ClientAPI" id="yB9-VB-j4i" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jb3-9E-7LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="258"/>
+            <point key="canvasLocation" x="996" y="-55"/>
         </scene>
         <!--InjectorAPI-->
         <scene sceneID="iQL-LC-3rn">
@@ -240,7 +241,23 @@
                 <viewControllerPlaceholder storyboardName="InjectorAPI" id="O8S-aL-Yjg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPG-Ng-Vgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="440"/>
+            <point key="canvasLocation" x="929" y="84"/>
+        </scene>
+        <!--LoyaltyAPI-->
+        <scene sceneID="0Yn-tM-prh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoyaltyAPI" id="zSa-4a-flb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byN-Ig-h1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="256"/>
+        </scene>
+        <!--AnalyticsAPI-->
+        <scene sceneID="w9L-lW-MvK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnalyticsAPI" id="Pr5-CV-jJT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8U-ly-3ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="375"/>
         </scene>
     </scenes>
 </document>

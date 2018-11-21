@@ -9,6 +9,7 @@
 /**
  * @enum SNRPromotionDiscountType
  */
+
 typedef NS_ENUM(NSUInteger, SNRPromotionDiscountType) {
     SNRPromotionDiscountTypeNone = 0,
     SNRPromotionDiscountTypePercent,

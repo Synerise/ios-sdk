@@ -24,7 +24,6 @@ class ConfigurationViewController: DefaultViewController {
                                       AVMetadataObject.ObjectType.qr]
     
     @IBOutlet weak var cameraView: UIView!
-    @IBOutlet weak var businessAPIKeyTextField: BindingTextField!
     @IBOutlet weak var clientAPIKeyTextField: BindingTextField!
     
     // MARK: - Deinit
@@ -96,7 +95,6 @@ class ConfigurationViewController: DefaultViewController {
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            viewModel.businessAPIKey.value = Configuration.SyneriseSDK.businessAPIKey
             viewModel.clientAPIKey.value = Configuration.SyneriseSDK.clientAPIKey
         }
     }
@@ -128,17 +126,13 @@ class ConfigurationViewController: DefaultViewController {
     }
     
     private func bindTextFields() {
-        businessAPIKeyTextField.text = viewModel.businessAPIKey.value
         clientAPIKeyTextField.text = viewModel.clientAPIKey.value
-        
-        businessAPIKeyTextField.bind(to: viewModel.businessAPIKey)
         clientAPIKeyTextField.bind(to: viewModel.clientAPIKey)
     }
     
     private func setupTextFields() {
-        businessAPIKeyTextField.delegate = self
         clientAPIKeyTextField.delegate = self
-        activeTextField = businessAPIKeyTextField
+        activeTextField = clientAPIKeyTextField
     }
     
     @objc private func keyboardWillShow(notification: NSNotification) {

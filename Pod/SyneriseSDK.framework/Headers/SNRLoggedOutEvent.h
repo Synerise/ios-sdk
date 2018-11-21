@@ -8,11 +8,13 @@
 
 #import "SNREvent.h"
 
-/**
- Record a 'client logged out' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRLoggedOutEvent
+ *
+ * Record a 'client logged out' event.
+ */
 
 NS_SWIFT_NAME(LoggedOutEvent)
 @interface SNRLoggedOutEvent : SNREvent

@@ -12,6 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRClientAccountInformation
+ */
+
 NS_SWIFT_NAME(ClientAccountInformation)
 @interface SNRClientAccountInformation : SNRBaseModel
 
