@@ -19,24 +19,24 @@ class Administrator {
         return assembly
     }()
 
-    static let shared: Administrator = Administrator.resolve()
+    static let shared = Administrator.resolve()
 
     var serviceProvider: ServiceProvider!
-
+    
     // MARK: - Deinit
-
+    
     deinit {
-
+        
     }
-
+    
     // MARK: - Initializators
-
+    
     init() {
-
+        
     }
-
+    
     // MARK: - Public
-
+    
     func launched() {
         prepareDefaultSettings()
     }
@@ -49,11 +49,11 @@ class Administrator {
         let notificationService: NotificationService = self.serviceProvider.getNotificationService()
         notificationService.setup()
     }
-
-    // MARK: - Private
-
-    private func prepareDefaultSettings() {
     
+    // MARK: - Private
+    
+    private func prepareDefaultSettings() {
+        
     }
 }
 

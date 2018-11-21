@@ -83,21 +83,4 @@ class DefaultTableViewController: UITableViewController {
             DebugUtils.print("\(title) \(error.code) \(error.localizedDescription)")
         }
     }
-    
-    public func printClientContext(_ clientContext: SNRBaseContext) {
-        switch clientContext {
-        case let clientProfileContext as ClientProfileContext:
-            DebugUtils.print("""
-                Email: \(String(describing: clientProfileContext.email))
-                Phone number: \(String(describing: clientProfileContext.phone))
-                First Name: \(String(describing: clientProfileContext.firstName))
-                Last Name: \(String(describing: clientProfileContext.lastName))\
-                CustomID: \(String(describing: clientProfileContext.customId))
-                Display Name: \(String(describing: clientProfileContext.displayName))
-                """
-            )
-        default:
-            DebugUtils.print("Error with type casting")
-        }
-    }
 }

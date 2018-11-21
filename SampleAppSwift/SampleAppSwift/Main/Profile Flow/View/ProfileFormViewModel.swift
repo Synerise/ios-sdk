@@ -77,8 +77,27 @@ class ProfileFormViewModel {
                 self.isProcessing(false)
             }
         }, failure: { (error) in
+            if let clientAccountInformation = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation {
+                self.firstName.value = clientAccountInformation.firstName
+                self.lastName.value = clientAccountInformation.lastName
+                self.email.value = clientAccountInformation.email
+                self.phone.value = clientAccountInformation.phone
+                self.birthdate.value = clientAccountInformation.birthDate
+                self.company.value = clientAccountInformation.company
+                self.address.value = clientAccountInformation.address
+                self.zipCode.value = clientAccountInformation.zipCode
+                self.city.value = clientAccountInformation.city
+                self.countryCode.value = clientAccountInformation.countryCode
+                
+                self.isProcessing(false)
+                
+                return
+            }
+            
             let errorMessage: String? = "\((error as NSError).code) \((error as NSError).localizedDescription)"
             UserInfoMessageManager.shared.error("Error", errorMessage)
+        
+            self.isProcessing(false)
         })
     }
     

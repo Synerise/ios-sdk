@@ -1,25 +1,26 @@
 //
-//  ClientAPI.swift
+//  ClientAccountViewController.swift
 //  SampleAppSwift
 //
-//  Created by Synerise
-//  Copyright (c) 2018 Synerise. All rights reserved.
+// Created by Synerise
+// Copyright (c) 2018 Synerise. All rights reserved.
 //
 
 import UIKit
 import SyneriseSDK
 
-class ClientAPIViewController: DefaultViewController {
-    
+class ClientAccountViewController: DefaultViewController {
+
     // MARK: - IBAction
     
-    @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
+    @IBAction func getAccountButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
-        Client.getToken(success: { (token) in
+        Client.getAccount(success: { (clientAccountInformation) in
             self.hideLoading()
             
             DispatchQueue.main.async {
-                self.pushToShowToken(token: token)
+                let accountInformation = self.makeAccountInformation(clientAccountInformation)
+                self.pushToShowClientAccountInformation(accountInformation: accountInformation)
             }
         }, failure: { (error) in
             self.hideLoading()
@@ -53,16 +54,10 @@ class ClientAPIViewController: DefaultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "VIEW_CONTROLLER_CLIENT_API_TITLE".localized()
+        self.navigationItem.title = "Client Account"
     }
     
     // MARK: - Private
-    
-    private func pushToShowToken(token: String) {
-        let debugTextViewController = makeDebugTextViewController(labelText: token, barTitle: "Get Client Token")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
     
     private func pushToShowClientAccountInformation(accountInformation: String) {
         let debugTextViewController = makeDebugTextViewController(labelText: accountInformation, barTitle: "Show Client Account Information")

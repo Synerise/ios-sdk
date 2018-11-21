@@ -22,12 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        //comment lines below if you don't want to use Firebase and notifications
-        Administrator.shared.setupFirebase()
-        Administrator.shared.setupNotifications()
+        //uncomment lines below if you want to use Firebase and notifications
+        //Administrator.shared.setupFirebase()
+        //Administrator.shared.setupNotifications()
         
         applicationController.run()
-        
         return true
     }
     
@@ -41,17 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
+        let notificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.applicationRegistrationStatus(NotificationService.RegistrationStatus.success(deviceToken: deviceToken))
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
+        let notificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.applicationRegistrationStatus(NotificationService.RegistrationStatus.fail(error: error))
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        let notificationService: NotificationService = Administrator.shared.serviceProvider.getNotificationService()
+        let notificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.handleNotificationUserInfo(userInfo)
         
         completionHandler(.noData)

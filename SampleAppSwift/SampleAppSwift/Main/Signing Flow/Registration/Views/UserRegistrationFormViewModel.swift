@@ -16,7 +16,6 @@ class UserRegistrationFormViewModel {
 
     enum RegistrationType: Int {
         case email = 0
-        case phone = 1
     }
 
     var isProcessing: ObservingType<Bool> = ObservingType.init(false)
@@ -77,7 +76,7 @@ class UserRegistrationFormViewModel {
 
             do {
                 if let registerClientContext = try self.makeRegisterClientContext() {
-                    Profile.registerClient(registerClientContext, success: { (success) in
+                    Client.registerAccount(context: registerClientContext, success: { (success) in
                         DispatchQueue.main.async {
                             self.registrationSuccess(response: success)
                         }
@@ -96,7 +95,7 @@ class UserRegistrationFormViewModel {
         isProcessing.value = boolean
     }
 
-    private func makeRegisterClientContext() throws -> RegisterClientContext? {
+    private func makeRegisterClientContext() throws -> ClientRegisterAccountContext? {
         guard let registrationTypeRawValue = registrationType.value, let registrationType = RegistrationType.init(rawValue: registrationTypeRawValue) else {
             return nil
         }
@@ -105,13 +104,12 @@ class UserRegistrationFormViewModel {
             return nil
         }
 
-        var registerClientContext: RegisterClientContext!
+        var registerClientContext: ClientRegisterAccountContext!
 
         do {
             try SNRExceptionHandler.catchException {
                 switch registrationType {
-                case .email: registerClientContext = RegisterClientContext.init(login, password: password)
-                case .phone: registerClientContext = RegisterClientContext.init(phoneNumber: login, password: password)
+                case .email: registerClientContext = ClientRegisterAccountContext.init(email: login, password: password)
                 }
 
                 let agreements: ClientAgreements = ClientAgreements()

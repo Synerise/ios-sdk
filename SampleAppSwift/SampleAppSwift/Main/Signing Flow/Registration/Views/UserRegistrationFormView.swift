@@ -52,7 +52,6 @@ class UserRegistrationFormView: InputView {
     @IBOutlet var textLabels: [DefaultLabel]!
     @IBOutlet var strokes: [UIView]!
     @IBOutlet var contentView: UIView!
-    @IBOutlet weak var registrationTypeSegmentedControl: BindingSegmentedControl!
     @IBOutlet weak var firstNameTextField: BindingTextField!
     @IBOutlet weak var lastNameTextField: BindingTextField!
     @IBOutlet weak var loginLabel: DefaultLabel!
@@ -95,17 +94,11 @@ class UserRegistrationFormView: InputView {
     func setViewModel(_ viewModel: UserRegistrationFormViewModel) {
         self.viewModel = viewModel
 
-        guard let registrationType = viewModel.registrationType.value, registrationType < registrationTypeSegmentedControl.numberOfSegments else {
-            fatalError()
-        }
-
-        registrationTypeSegmentedControl.selectedSegmentIndex = viewModel.registrationType.value!
         firstNameTextField.text = viewModel.firstName.value
         lastNameTextField.text = viewModel.lastName.value
         loginTextField.text = viewModel.login.value
         passwordTextField.text = viewModel.password.value
         
-        registrationTypeSegmentedControl.bind(to: viewModel.registrationType)
         firstNameTextField.bind(to: viewModel.firstName)
         lastNameTextField.bind(to: viewModel.lastName)
         loginTextField.bind(to: viewModel.login)

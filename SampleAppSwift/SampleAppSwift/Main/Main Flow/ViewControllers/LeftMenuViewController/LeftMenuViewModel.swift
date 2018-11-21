@@ -55,18 +55,11 @@ class LeftMenuViewModel {
     }()
     
     lazy var syneriseSDKConfigurationInfoString: String = {
-        guard let businessApiKey: String = self.settingsService.get(SettingsServiceKey.syneriseBusinessAPIKey) else {
-            fatalError()
-        }
-        
         guard let clientApiKey: String = self.settingsService.get(SettingsServiceKey.syneriseClientAPIKey) else {
             fatalError()
         }
         
         return """
-        SyneriseSDK Business API Key:
-        \(businessApiKey)
-        
         SyneriseSDK Client API Key:
         \(clientApiKey)
         """

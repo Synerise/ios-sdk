@@ -15,7 +15,7 @@ target 'SampleAppSwift' do
   pod 'AnimatedCollectionViewLayout'
   pod 'Cosmos', '~> 16.0'
   pod 'FBSDKLoginKit'
-  pod 'SyneriseSDK'
+  pod 'SyneriseSDK', '~> 3.3.0'
 
 end
 

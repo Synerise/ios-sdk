@@ -16,7 +16,6 @@ class UserLoginFormViewModel {
 
     enum LoginType: Int {
         case email = 0
-        case phone = 1
     }
 
     var isProcessing: ObservingType<Bool> = ObservingType.init(false)
@@ -88,33 +87,13 @@ class UserLoginFormViewModel {
         switch loginType {
         case .email:
             loginWithEmail(email: login, password: password)
-        case .phone:
-            loginWithPhone(phone: login, password: password)
-        }
-    }
-
-    private func loginWithPhone(phone: String, password: String) {
-        do {
-            try SNRExceptionHandler.catchException {
-                Client.login(phone: phone, password: password, deviceId: nil, success: { (success) in
-                    DispatchQueue.main.async {
-                        self.loginSuccess(response: success)
-                    }
-                }, failure: { (error) in
-                    DispatchQueue.main.async {
-                        self.loginError(error: error)
-                    }
-                })
-            }
-        } catch let error as NSError {
-            self.loginError(error: error)
         }
     }
 
     private func loginWithEmail(email: String, password: String) {
         do {
             try SNRExceptionHandler.catchException {
-                Client.login(email: email, password: password, deviceId: nil, success: { (success) in
+                Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
                     DispatchQueue.main.async {
                         self.loginSuccess(response: success)
                     }

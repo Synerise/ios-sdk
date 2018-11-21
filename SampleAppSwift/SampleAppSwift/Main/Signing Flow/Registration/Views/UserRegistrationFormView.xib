@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +17,6 @@
                 <outlet property="loginLabel" destination="5DX-PW-Tvb" id="h03-3i-MMw"/>
                 <outlet property="loginTextField" destination="dKg-mF-K79" id="Nhf-bs-JRI"/>
                 <outlet property="passwordTextField" destination="UQd-vY-2rE" id="xar-6n-qJz"/>
-                <outlet property="registrationTypeSegmentedControl" destination="DR8-c1-bva" id="iT2-gL-zw8"/>
                 <outlet property="signButton" destination="k6H-YP-X5m" id="EJy-pv-7UN"/>
                 <outletCollection property="textFields" destination="2Gc-lj-83g" collectionClass="NSMutableArray" id="4dL-Ye-L8a"/>
                 <outletCollection property="textFields" destination="PhT-M7-oQx" collectionClass="NSMutableArray" id="8gY-9C-iFo"/>
@@ -140,7 +140,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-mF-K79" customClass="BindingTextField" customModule="SampleAppSwift" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="15" width="268" height="30"/>
+                                            <rect key="frame" x="0.0" y="15" width="378" height="30"/>
                                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="k0E-J5-QC8"/>
@@ -149,21 +149,8 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-c1-bva" customClass="BindingSegmentedControl" customModule="SampleAppSwift" customModuleProvider="target">
-                                            <rect key="frame" x="278" y="16" width="100" height="29"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="qvl-uG-Ed2"/>
-                                            </constraints>
-                                            <segments>
-                                                <segment title="Email"/>
-                                                <segment title="Phone"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="segmentDidChange:" destination="-1" eventType="valueChanged" id="W17-sB-edx"/>
-                                            </connections>
-                                        </segmentedControl>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-o6-OdB">
-                                            <rect key="frame" x="0.0" y="44" width="268" height="1"/>
+                                            <rect key="frame" x="0.0" y="44" width="378" height="1"/>
                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="vT3-qJ-wbf"/>
@@ -172,20 +159,17 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="DR8-c1-bva" firstAttribute="centerY" secondItem="dKg-mF-K79" secondAttribute="centerY" id="2cv-t2-HgG"/>
-                                        <constraint firstAttribute="trailing" secondItem="DR8-c1-bva" secondAttribute="trailing" id="4NH-j7-cM9"/>
-                                        <constraint firstItem="DR8-c1-bva" firstAttribute="leading" secondItem="dKg-mF-K79" secondAttribute="trailing" constant="10" id="7gh-rP-qG1"/>
+                                        <constraint firstItem="rUS-o6-OdB" firstAttribute="leading" secondItem="KdG-bw-OzB" secondAttribute="leading" id="B1d-Sl-7vf"/>
+                                        <constraint firstAttribute="trailing" secondItem="rUS-o6-OdB" secondAttribute="trailing" id="B5G-LC-mMi"/>
                                         <constraint firstAttribute="trailing" secondItem="5DX-PW-Tvb" secondAttribute="trailing" id="DkO-56-gxo"/>
                                         <constraint firstItem="5DX-PW-Tvb" firstAttribute="leading" secondItem="KdG-bw-OzB" secondAttribute="leading" id="RdL-OC-ACQ"/>
                                         <constraint firstAttribute="height" constant="45" id="awm-KD-f5D"/>
                                         <constraint firstAttribute="bottom" secondItem="dKg-mF-K79" secondAttribute="bottom" id="b7Y-xp-3Ky"/>
                                         <constraint firstAttribute="bottom" secondItem="rUS-o6-OdB" secondAttribute="bottom" id="cDA-g3-bnw"/>
-                                        <constraint firstItem="dKg-mF-K79" firstAttribute="top" secondItem="5DX-PW-Tvb" secondAttribute="bottom" id="hcl-r5-E7o"/>
                                         <constraint firstItem="5DX-PW-Tvb" firstAttribute="top" secondItem="KdG-bw-OzB" secondAttribute="top" id="hyH-TR-RdJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="dKg-mF-K79" secondAttribute="trailing" id="jud-By-GAO"/>
                                         <constraint firstItem="dKg-mF-K79" firstAttribute="top" secondItem="5DX-PW-Tvb" secondAttribute="bottom" id="l6Q-pA-wBO"/>
-                                        <constraint firstItem="rUS-o6-OdB" firstAttribute="width" secondItem="dKg-mF-K79" secondAttribute="width" id="mC2-Se-Xma"/>
                                         <constraint firstItem="dKg-mF-K79" firstAttribute="leading" secondItem="KdG-bw-OzB" secondAttribute="leading" id="zJW-bK-qJT"/>
-                                        <constraint firstItem="rUS-o6-OdB" firstAttribute="leading" secondItem="dKg-mF-K79" secondAttribute="leading" id="zOa-fi-p94"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVN-B9-GY8">

@@ -12,12 +12,12 @@
 		<key>SyneriseCarouselNotificationContentExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>23</integer>
 		</dict>
 		<key>SyneriseSingleMediaNotificationContentExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>22</integer>
 		</dict>
 	</dict>
 </dict>

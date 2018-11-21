@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationViewController" customModule="SampleAppSwift" customModuleProvider="target">
             <connections>
-                <outlet property="businessAPIKeyTextField" destination="wZW-sj-LhM" id="42r-fp-fQi"/>
                 <outlet property="cameraView" destination="oqo-Ye-x6r" id="EJO-Ur-g4N"/>
                 <outlet property="clientAPIKeyTextField" destination="OkG-Fa-DKa" id="6PU-uZ-2m9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,38 +28,13 @@
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjP-Hi-NQm">
-                    <rect key="frame" x="0.0" y="485" width="375" height="182"/>
+                    <rect key="frame" x="0.0" y="540" width="375" height="127"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-cf-8Px">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHN-hg-PVP" customClass="DefaultView" customModule="SampleAppSwift" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="16" width="343" height="40"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Business API Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZW-sj-LhM" customClass="BindingTextField" customModule="SampleAppSwift" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="8" width="327" height="24"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="wZW-sj-LhM" firstAttribute="leading" secondItem="WHN-hg-PVP" secondAttribute="leading" constant="8" id="9KZ-Sr-UKy"/>
-                                        <constraint firstItem="wZW-sj-LhM" firstAttribute="top" secondItem="WHN-hg-PVP" secondAttribute="top" constant="8" id="BwO-Ig-PCn"/>
-                                        <constraint firstAttribute="trailing" secondItem="wZW-sj-LhM" secondAttribute="trailing" constant="8" id="J2P-mT-pmy"/>
-                                        <constraint firstAttribute="bottom" secondItem="wZW-sj-LhM" secondAttribute="bottom" constant="8" id="TSj-ge-3qF"/>
-                                        <constraint firstAttribute="height" constant="40" id="YqL-28-chO"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-ia-mAi" customClass="DefaultView" customModule="SampleAppSwift" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="71" width="343" height="40"/>
+                                    <rect key="frame" x="16" y="16" width="343" height="40"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Client API Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-Fa-DKa" customClass="BindingTextField" customModule="SampleAppSwift" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="327" height="24"/>
@@ -85,7 +59,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-Ox-ElC" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="126" width="343" height="40"/>
+                                    <rect key="frame" x="16" y="71" width="343" height="40"/>
                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="YeT-Af-LE0"/>
