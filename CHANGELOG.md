@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.0] - 2018-11-21
+
+### Fixed
+- Method name for Swift: Client.registerClient -> Client.registerAccount
+- Improving SDK stability.
+
 ## [3.3.0] - 2018-11-20
 
 ### Added
