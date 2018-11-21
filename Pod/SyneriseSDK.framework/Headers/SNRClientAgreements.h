@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRClientAgreements
+ */
+
 NS_SWIFT_NAME(ClientAgreements)
 @interface SNRClientAgreements : SNRBaseModel <NSCopying>
 

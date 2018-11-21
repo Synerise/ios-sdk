@@ -9,6 +9,7 @@
 /**
  * @enum SNRPromotionStatus
  */
+
 typedef NS_ENUM(NSUInteger, SNRPromotionStatus) {
     SNRPromotionStatusActive = 0,
     SNRPromotionStatusAssigned,

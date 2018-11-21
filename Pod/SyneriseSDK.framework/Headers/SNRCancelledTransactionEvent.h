@@ -8,11 +8,13 @@
 
 #import "SNRTransactionEvent.h"
 
-/**
- Represents a 'client cancelled transaction' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRCancelledTransactionEvent
+ *
+ * Represents a 'client cancelled transaction' event.
+ */
 
 NS_SWIFT_NAME(CancelledTransactionEvent)
 @interface SNRCancelledTransactionEvent : SNRTransactionEvent

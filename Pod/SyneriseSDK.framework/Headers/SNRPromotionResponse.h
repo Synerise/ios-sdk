@@ -12,6 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRPromotionResponse
+ */
+
 NS_SWIFT_NAME(PromotionResponse)
 @interface SNRPromotionResponse : SNRBaseModel
 

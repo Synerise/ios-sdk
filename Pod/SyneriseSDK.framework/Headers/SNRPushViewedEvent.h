@@ -8,11 +8,13 @@
 
 #import "SNREvent.h"
 
-/**
- Represents a 'client viewed push' event. It is used for push message interaction tracking.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRPushViewedEvent
+ *
+ * Represents a 'client viewed push' event. It is used for push message interaction tracking.
+ */
 
 NS_SWIFT_NAME(PushViewedEvent)
 @interface SNRPushViewedEvent : SNREvent

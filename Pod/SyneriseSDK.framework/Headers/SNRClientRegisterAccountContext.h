@@ -13,12 +13,17 @@
 /**
  * @enum SNRClientRegisterAccountContextRegistrationType
  */
+
 typedef NS_ENUM(NSInteger, SNRClientRegisterAccountContextRegistrationType) {
     SNRClientRegisterAccountContextRegistrationTypeByEmail,
     SNRClientRegisterAccountContextRegistrationTypeByEmailWithoutActivation
 } NS_SWIFT_NAME(RegistrationType);
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRClientRegisterAccountContext
+ */
 
 NS_SWIFT_NAME(ClientRegisterAccountContext)
 @interface SNRClientRegisterAccountContext : SNRBaseContext

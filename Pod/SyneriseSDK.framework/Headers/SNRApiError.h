@@ -8,11 +8,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRApiError
+ */
+
 @interface SNRApiError : SNRError
 
 @property (strong, nonatomic, nonnull, readonly) NSArray<SNRError *> *errors;
 
-- (instancetype)initWithDomain:(NSErrorDomain)domain code:(NSInteger)code userInfo:(nullable NSDictionary<NSErrorUserInfoKey, id> *)dict errors:(NSArray *)errors;
+- (instancetype)initWithDomain:(NSErrorDomain)domain
+                          code:(NSInteger)code
+                      userInfo:(nullable NSDictionary<NSErrorUserInfoKey, id> *)dict
+                        errors:(NSArray *)errors;
 
 @end
 

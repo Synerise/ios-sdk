@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRException
+ */
+
 @interface SNRException : NSException
 
 @property (strong, nonatomic, nonnull, readwrite) SNRError *error;

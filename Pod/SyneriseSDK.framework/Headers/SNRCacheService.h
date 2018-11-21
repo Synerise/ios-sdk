@@ -8,6 +8,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRCacheService
+ */
+
 NS_SWIFT_NAME(CacheService)
 @interface SNRCacheService : NSObject
 

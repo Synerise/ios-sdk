@@ -8,11 +8,13 @@
 
 #import "SNREvent.h"
 
-/**
- Represents a 'client added product to favorites' event.
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRAddedProductToFavoritesEvent
+ *
+ * Represents a 'client added product to favorites' event.
+ */
 
 NS_SWIFT_NAME(AddedProductToFavoritesEvent)
 @interface SNRAddedProductToFavoritesEvent : SNREvent

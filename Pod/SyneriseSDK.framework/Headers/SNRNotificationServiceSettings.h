@@ -8,6 +8,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRNotificationServiceSettings
+ */
+
 NS_SWIFT_NAME(NotificationServiceSettings)
 @interface SNRNotificationServiceSettings : NSObject
 

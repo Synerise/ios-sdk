@@ -8,6 +8,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRBaseModel
+ */
+
 @interface SNRBaseModel : NSObject
 
 @end

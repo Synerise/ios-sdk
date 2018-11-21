@@ -8,11 +8,13 @@
 
 #import "SNRTransactionEvent.h"
 
-/**
- Represents a 'client completed transaction' event
- */
-
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @class SNRCompletedTransactionEvent
+ *
+ * Represents a 'client completed transaction' event
+ */
 
 NS_SWIFT_NAME(CompletedTransactionEvent)
 @interface SNRCompletedTransactionEvent : SNRTransactionEvent
