@@ -604,10 +604,7 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 ```
 
 
-# Exceptions/Errors handling
-
-SyneriseSDK throws exceptions in some method when provided data is not valid. For example, framework checks if an email address is valid and throws an exception if not. That is why we should wrap some operations in SyneriseSDK in try/catch blocks. Example of client logging below.
-
+## Errors handling
 
 ### API Errors
 
