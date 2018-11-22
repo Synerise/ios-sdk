@@ -6,7 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
-The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate SyneriseSDK software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com).
+The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate **Synerise SDK** software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com).
 
 
 
@@ -20,7 +20,7 @@ The Synerise iOS SDK is designed to be simple to develop with, allowing you to e
 
 # Installation
 
-## Install SyneriseSDK from CocoaPods
+## Install Synerise SDK from CocoaPods
 
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -40,7 +40,7 @@ end
 ```
 
 
-## Install SyneriseSDK from Carthage
+## Install Synerise SDK from Carthage
 
 Add following line to your Cartfile:
 ```
@@ -59,7 +59,7 @@ Make sure `Copy items if needed` is selected and click `Finish`.
 
 ## Dependencies
 
-SyneriseSDK requires Firebase with Messaging service so you have to import these dependencies for CocoaPods or Carthage.
+**Synerise SDK** requires Firebase with Messaging service so you have to import these dependencies for CocoaPods or Carthage.
 
 Note: more about Firebase configuration - [get started with Firebase iOS](https://firebase.google.com/docs/storage/ios/start).
 
@@ -78,7 +78,7 @@ Note: more about Firebase configuration - [get started with Firebase iOS](https:
 </dict>
 ```
 
-4. You will need to import the SyneriseSDK header into the files that contain code relating to SyneriseSDK. 
+4. You will need to import the **Synerise SDK** header into the files that contain code relating to **Synerise SDK**. 
 
 **Swift:**
 ```
@@ -100,7 +100,7 @@ First of all, you need to initialize Synerise iOS SDK in your AppDelegate and pr
 To get `Client API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
 Then, generate new `API Key` for `Client` audience.
 
-Configuration for SyneriseSDK should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
+Configuration for **Synerise SDK** should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
 
 **Swift:**
 ```swift
@@ -157,8 +157,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 Let's dive into some configurable functionalities:  
-1. `Synerise.initialize` - Initializes SyneriseSDK.  
-2. `Synerise.setDelegate` - Sets delegate to handle actions from SyneriseSDK. See **SyneriseSDK delegate** section for more information.  
+1. `Synerise.initialize` - Initializes **Synerise SDK**.  
+2. `Synerise.setDelegate` - Sets delegate to handle actions from **Synerise SDK**. See **Synerise SDK delegate** section for more information.  
 3. `Tracker.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.  
 4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.  
 5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.  
@@ -193,7 +193,7 @@ static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
 
 ## Debug logs
 
-You can enable debug logs for SyneriseSDK modules, such as Tracker, Client, Loyalty and Injector.
+You can enable debug logs for **Synerise SDK** modules, such as Tracker, Client, Loyalty and Injector.
 It is not recommended to use debug mode in a release version of your app.
 
 - Tracker: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
@@ -216,18 +216,18 @@ Tracker.setLoggingEnabled(true)
 ```
 
 
-## SyneriseSDK delegate
+## Synerise SDK delegate
 
 You can specify your custom action when a user clicks on simple push, banner or walkthrough.
-SyneriseSDK implements two main actions that user may invoke - open URL and Deeplink.
+**Synerise SDK** implements two main actions that user may invoke - open URL and Deeplink.
 
-There is one more method when SyneriseSDK needs re-registration for push notifications.
+There is one more method when **Synerise SDK** needs re-registration for push notifications.
 
 **Swift:**
 ```swift
 //MARK: SyneriseDelegate
     
-//optional method - SyneriseSDK needs registration for push notifications again
+//optional method - Synerise SDK needs registration for push notifications again
 //it is optional but if you use push notifications, it is required
 //propable implementation
 func snr_registerForPushNotificationsIsNeeded() {
@@ -297,7 +297,7 @@ func snr_handledAction(deepLink: String, activity: SyneriseActivity, completionH
 ```objective-c
 #pragma mark - SNRSyneriseDelegate
 
-//optional method - SyneriseSDK needs registration for push notifications again
+//optional method - Synerise SDK needs registration for push notifications again
 //it is optional but if you use push notifications, it is required
 //propable implementation
 - (void)SNR_registerForPushNotificationsIsNeeded {
@@ -367,14 +367,14 @@ func snr_handledAction(deepLink: String, activity: SyneriseActivity, completionH
 
 ## Configure push notifications
 
-When you want to use the full functionality of SyneriseSDK, you have to configure Push Notifications. It works with help Firebase Messaging service. 
+When you want to use the full functionality of **Synerise SDK**, you have to configure Push Notifications. It works with help Firebase Messaging service. 
 
 Following steps must be done:
 1. Start Firebase service.
 2. Set Firebase Messaging delegate.
 3. Register for Apple Push Notifications.
 4. Implement Firebase Messaging service.
-5. Invoke SyneriseSDK method for push registration and pass FCM Token.
+5. Invoke **Synerise SDK** method for push registration and pass FCM Token.
 
 Note: more about Firebase configuration - [get started with Firebase iOS](https://firebase.google.com/docs/storage/ios/start).
 
@@ -449,7 +449,7 @@ func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: Str
 
 ## Handling push notifications
 
-In order to display push message and banners properly, you have to pass incoming push notification payload to SyneriseSDK in your AppDelegate:
+In order to display push message and banners properly, you have to pass incoming push notification payload to **Synerise SDK** in your AppDelegate:
 
 **Swift:**
 ```swift
@@ -578,7 +578,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 
 **IMPORTANT**
 
-If you have your own Push Notifications implementation, you can disable In App Notification Alerts from Synerise SDK.  
+If you have your own Push Notifications implementation, you can disable In App Notification Alerts from **Synerise SDK**.  
 Just set one configuration option in two ways.
   
 First approach:
@@ -614,7 +614,7 @@ We've created an error wrapper ```SNRApiError``` to handle API errors.
 
 When we receive an error, we can check if error is ```SNRApiError``` instance and then, there is possibility to get more information and get a list of all errors that occurred. 
 
-Therefore, you can better integrate your own application with the Synerise SDK.
+Therefore, you can better integrate your own application with the **Synerise SDK**.
 
 For example:
 
@@ -660,12 +660,12 @@ let clientAccountInformation: ClientAccountInformation? = CacheService.loadObjec
 SNRClientAccountInformation *clientAccountInformation = [SNRCacheService loadObject:ClientAccountInformation.class];
 ```
 
-At this point, Synerise SDK caches:
+At this point, **Synerise SDK** caches:
 * ```ClientAccountInformation``` after successful Client.getAccount() response.
 
 # Tracker
 
-Synerise SDK provides you with powerful features for User Activity Tracking that you can use within your mobile application.
+**Synerise SDK** provides you with powerful features for User Activity Tracking that you can use within your mobile application.
 
 ## Tracker Configuration
 
@@ -698,7 +698,7 @@ trackerConfiguration.autoFlushTimeout = 2.0f;
 
 ## View tracking
 
-Auto-tracking is functionality available in SyneriseSDK that can attach to nearly everything within your application and log events automatically that you can then make use of within Synerise.
+Auto-tracking is functionality available in **Synerise SDK** that can attach to nearly everything within your application and log events automatically that you can then make use of within Synerise.
 
 By default functionality is disabled and in order to enable it you need to use code like this:
 
@@ -940,7 +940,7 @@ Injector is designed to be simple to develop with, allowing you to integrate Syn
 
 ## Walkthrough
 
-Synerise SDK provides multiple functionalities within Walkthrough implementation.
+**Synerise SDK** provides multiple functionalities within Walkthrough implementation.
 
 First of all, you are able to specify Walkthrough behavior the moment SDK initializes:
 
@@ -1051,7 +1051,7 @@ Fortunately, you can control incoming banners by implementing an optional delega
 ```swift
 //MARK: InjectorBannerDelegate
 
-// this method will be called when SyneriseSDK asks if it can display a banner at the moment
+// this method will be called when Synerise SDK asks if it can display a banner at the moment
 // bannerDictionary parameter is dictionary representation of banner. If you don't want to show a banner at the moment, you can return false. Then, do it later by calling Injector.showBanner(_: Dictionary, markPresented: Bool) to show banner with provided data.
 func snr_shouldBannerAppear(bannerDictionary: Dictionary) -> Bool {
 	return true
@@ -1072,7 +1072,7 @@ func snr_bannerDidDisappear() {
 ```objective-c
 #pragma mark - SNRInjectorBannerDelegate
 
-// this method will be called when SyneriseSDK asks if it can display a banner at the moment
+// this method will be called when Synerise SDK asks if it can display a banner at the moment
 // bannerDictionary parameter is dictionary representation of banner. If you don't want to show a banner at the moment, you can return NO. Then, do it later by calling [SNRInjector showBanner:(NSDictionary*)bannerDictionary markPresented:(BOOL)markPresented] to show banner with provided data.
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary*)bannerDictionary {
     return YES;
