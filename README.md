@@ -608,7 +608,7 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 ### API Errors
 
-When we use the SDK functionality, we usually wait for a response in callbacks - success or failure block. 
+When we use Synerise SDK functionality, we usually wait for a response in callbacks - success or failure block. 
 
 Often when we receive an error, we can read detailed information and get a list of all errors that occurred. Therefore, you can better integrate your own application with the Synerise SDK.
 
@@ -640,6 +640,23 @@ Client.login(phone: phone, password: password, deviceId: nil, success: { (succes
 }];
 ```
 
+## Cache Service
+
+When your API request failed, you can still get cached response if available.
+
+For example:
+**Swift:**
+```swift
+let clientAccountInformation: ClientAccountInformation? = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation
+```
+
+**Objective-C:**
+```objective-c
+SNRClientAccountInformation *clientAccountInformation = [SNRCacheService loadObject:ClientAccountInformation.class];
+```
+
+At this point, Synerise SDK caches:
+* ```ClientAccountInformation``` after successful Client.getAccount() response.
 
 # Tracker
 
