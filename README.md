@@ -938,7 +938,7 @@ First of all, you are able to specify Walkthrough behavior the moment SDK initia
 
 **Swift:**
 ```swift
-Synerise.initialize(businessProfileApiKey: businessProfileApiKey, clientApiKey: clientApiKey)
+Synerise.initialize(clientApiKey: clientApiKey)
 //...
 Injector.setAutomatic(true)
 Injector.setWalkthroughDelegate(self)
