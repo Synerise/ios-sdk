@@ -102,7 +102,9 @@ Then, generate new `API Key` for `Client` audience.
 
 Configuration for SyneriseSDK should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
 
-**Swift:**
+<details><summary>**Swift:**</summary>
+<p>
+
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	let clientApiKey = "YOUR_CLIENT_API_KEY"
@@ -128,8 +130,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	Injector.setBannerDelegate(self) // 10
 }
 ```
+</p>
+</details>
 
-**Objective-C:**
+
+<details><summary>**Objective-C:**</summary>
+<p>
+
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
@@ -155,6 +162,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRInjector setBannerDelegate:self]; // 10
 }
 ```
+</p>
+</details>
+
 
 Let's dive into some configurable functionalities:  
 1. `Synerise.initialize` - Initializes SyneriseSDK.  
