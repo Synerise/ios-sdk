@@ -608,15 +608,16 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 ### API Errors
 
-When we use Synerise SDK functionality, we usually wait for a response in callbacks - success or failure block. 
+We've created an error wrapper ```SNRApiError``` to handle API errors.
 
-Often when we receive an error, we can read detailed information and get a list of all errors that occurred. Therefore, you can better integrate your own application with the Synerise SDK.
+When we receive an error, we can check if error is SNRApiError instance and then, there is possibility to get more information and get a list of all errors that occurred. 
 
-Below is an example of error debugging:
+Therefore, you can better integrate your own application with the Synerise SDK.
 
+For example:  
 **Swift:**
 ```swift
-Client.login(phone: phone, password: password, deviceId: nil, success: { (success) in
+Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
 	//...
 }, failure: { (error) in
 	if let apiError = error as? SNRApiError {
@@ -628,7 +629,7 @@ Client.login(phone: phone, password: password, deviceId: nil, success: { (succes
 
 **Objective-C:**
 ```objective-c
-[SNRClient logInWithPhone:phone password:password deviceId:nil success:^(BOOL isSuccess) {
+[SNRClient signInWithEmail:email password:password deviceId:nil success:^(BOOL isSuccess) {
 
 } failure:^(NSError * _Nonnull error) {
 	if ([error isKindOfClass:[SNRApiError class]]) {
@@ -644,7 +645,7 @@ Client.login(phone: phone, password: password, deviceId: nil, success: { (succes
 
 When your API request failed, you can still get cached response if available.
 
-For example:
+For example:  
 **Swift:**
 ```swift
 let clientAccountInformation: ClientAccountInformation? = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation
