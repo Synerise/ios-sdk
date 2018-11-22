@@ -201,7 +201,9 @@ It is not recommended to use debug mode in a release version of your app.
 - Loyalty: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
 - Injector: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
 
-It can be enabled by method `setLoggingEnabled` for each module. For example:
+It can be enabled by method `setLoggingEnabled` for each module.
+
+For example:
 
 **Swift:**
 ```swift
@@ -610,11 +612,12 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 We've created an error wrapper ```SNRApiError``` to handle API errors.
 
-When we receive an error, we can check if error is SNRApiError instance and then, there is possibility to get more information and get a list of all errors that occurred. 
+When we receive an error, we can check if error is ```SNRApiError``` instance and then, there is possibility to get more information and get a list of all errors that occurred. 
 
 Therefore, you can better integrate your own application with the Synerise SDK.
 
-For example:  
+For example:
+
 **Swift:**
 ```swift
 Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
@@ -645,7 +648,8 @@ Client.signIn(email: email, password: password, deviceId: nil, success: { (succe
 
 When your API request failed, you can still get cached response if available.
 
-For example:  
+For example:
+
 **Swift:**
 ```swift
 let clientAccountInformation: ClientAccountInformation? = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation
