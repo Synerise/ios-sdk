@@ -814,102 +814,117 @@ Record a 'client visited screen' event.
 This is the only event which requires `action` field.
 
 
-## Other features
+## Features
 
-#### `Tracker.flushEvents()` and `Tracker.flushEvents(completionHandler:)`
-Flush method forces sending events from queue to server.
+#### `Tracker.setCustomIdentifier(_:)`
+Your custom identifier will be sent within every event in event params.
 
-#### `Tracker.setCustomIdentifier(customIdentifier)`
-Sets your custom identifier that will be sent within every event in event params.
+#### `Tracker.setCustomEmail(_:)`
+Your custom email will be sent within every event in event params.
 
-#### `Tracker.setCustomEmail(customEmail)`
-Sets your custom email that will be sent within every event in event params.
+#### `Tracker.flushEvents(completionHandler:)`
+Send events from queue to server by force.
 
 
 # Client
 
 ## Features
 
+#### `Client.registerAccount(context:success:failure:)`
+Register new account with email, password and optional data.
+
+#### `Client.activateAccount(email:success:failure:)`
+Activate client's account with email.
+
 #### `Client.signIn(email:password:deviceId:success:failure:)`
-Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.  
-The token is currently valid for 1 hour and SDK will refresh token before each call if it is expiring (but not expired).  
-The method requires valid and non-null email and password. The device ID is optional.  
+Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.
 
 #### `Client.authenticate(facebookToken:success:failure:)`
-Use this method to obtain client's authorization token by Facebook.
+Sign in a client with Facebook Token
+
+#### `Client.isSignedIn`
+Check whether client is signed in (is client's token not expired).
+
+#### `Client.signOut()`
+Sign out client.
 
 #### `Client.getToken(success:failure:)`
-Get valid JWT login token. This method pass token with success block execution.
+Retrieve current client's token. This method provides valid token if client is signed in and current token is not expired.
 
 #### `Client.getUUID()`
 Retrieve current client's UUID.
 
-#### `Client.isSignedIn()`
-Retrieve whether client is signed in (is client's token not expired).
-
-#### `Client.signOut()`
-Signing client out causes in generating new UUID for a new anonymous one.
-
 #### `Client.getAccount(success:failure:)`
-Use this method to get client's account information.  
+Get client's account information.
 
 #### `Client.updateAccount(success:failure:)`
-Use this method to update client's account information.  
+Update client's account information.
 
-#### `Client.deleteAccount(success:failure:)`
-Use this method to delete client's account information.
+#### `Client.requestPasswordReset(context:success:failure:)`
+Request client's password reset with email. A client will receive a token on the provided email address in order to use.
+
+#### `Client.confirmResetPassword(context:success:failure:)`
+Confirm client's password reset with new password and token provided.
 
 #### `Client.changePassword(password:oldPassword:success:failure:)`
 Change client's password.
 
 #### `Client.requestPhoneUpdate(phone:success:failure:)`
-Use this method to create client's phone number update request.
+Request client's phone update. A client will receive a code on the provided phone in order to use.
 
 #### `Client.confirmPhoneNumber(phone:confirmationCode:success:failure:)`
-Use this method to confirm client's phone number update request.
+Confirm client's phone update with code provided.
+
+#### `Client.deleteAccount(success:failure:)`
+Delete client's account information.
+
+#### `Client.registerForPush(registrationToken:success:failure:)`
+Register user for push notifications.
+
 
 # Loyalty
 
 ## Features
 
 #### `Loyalty.getPromotions(success:failure:)`
-Use this method to get all available promotions that are defined for this client.
+Get all available promotions that are defined for this client.
 
 #### `Loyalty.getPromotions(statuses:types:page:success:failure:)`
-Use this method to get promotions that are matched for parameters.
+Get promotions that match parameters provided.
 
 #### `Loyalty.getPromotions(statuses:types:limit:page:success:failure:)`
-Use this method to get promotions that are matched for parameters.
+Get promotions that match parameters provided.
 
 #### `Loyalty.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
-Use this method to get promotions that are matched for parameters.
+Get promotions that match parameters provided.
 
 #### `Loyalty.getPromotion(uuid:success:failure:)`
-Use this method to get promotion that has uuid passed as parameter.
+Get promotion whose UUID matches parameter provided.
 
 #### `Loyalty.getPromotion(code:success:failure:)`
-Use this method to get promotion that has code passed as parameter.
+Get promotion whose code matches parameter provided.
 
 #### `Loyalty.activatePromotion(uuid:success:failure:)`
-Use this method to activate promotion that has uuid passed as parameter.
+Activate promotion whose UUID matches parameter provided.
 
 #### `Loyalty.activatePromotion(code:success:failure:)`
-Use this method to activate promotion that has code passed as parameter.
+Activate promotion whose code matches parameter provided.
 
 #### `Loyalty.deactivatePromotion(uuid:success:failure:)`
-Use this method to deactivate promotion that has uuid passed as parameter.
+Dectivate promotion whose UUID matches parameter provided.
 
 #### `Loyalty.deactivatePromotion(code:success:failure:)`
-Use this method to deactivate promotion that has code passed as parameter.
+Dectivate promotion whose code matches parameter provided.
 
 #### `Loyalty.getOrAssignVoucher(poolUUID:success:failure:)`
-Use this method to get voucher code only once or assign voucher with provided pool uuid for the client.
+Get voucher code only once or assign voucher with provided pool UUID for the client.
 
 #### `Loyalty.assignVoucherCode(poolUUID:success:failure:)`
-Use this method to assign voucher with provided pool uuid for the client.
+Assign voucher with provided pool UUID for the client.
 
 #### `Loyalty.getAssignedVoucherCodes(success:failure:)`
-Use this method to get client's voucher codes.
+Get client's voucher codes.
+
 
 # Injector
 
