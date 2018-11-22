@@ -759,59 +759,48 @@ Tracker caches and enqueues all your events locally, so they all will be sent wh
 
 ## Events
 
-### - Session Events
+### Session Events
 Group of events related to user's session.
 
-#### LoggedInEvent
-Record a 'client logged in' event.
+* `LoggedInEvent` - record a 'client logged in' event.
 
-#### LoggedOutEvent
-Record a 'client logged out' event.
+* `LoggedOutEvent` - record a 'client logged out' event.
 
-#### RegisteredEvent
-Record a 'client registered' event.
+* `RegisteredEvent` - record a 'client registered' event.
 
-### - Products Events
+
+### Products Events
 Group of events related to products and cart.
 
-#### AddedProductToFavoritesEvent
-Record a 'client added product to favorites' event.
+* `AddedProductToFavoritesEvent` - record a 'client added product to favorites' event.
 
-#### AddedProductToCartEvent
-Record a 'client added product to cart' event.
+* `AddedProductToCartEvent` - record a 'client added product to cart' event.
 
-#### RemovedProductFromCartEvent
-Record a 'client removed product from cart' event.
+* `RemovedProductFromCartEvent` - record a 'client removed product from cart' event.
 
-### - Transaction Events
+
+### Transaction Events
 Group of events related to user's transactions.
 
-#### CancelledTransactionEvent
-Record a 'client cancelled transaction' event.
+* `CancelledTransactionEvent` - record a 'client cancelled transaction' event.
 
-#### CompletedTransactionEvent
-Record a 'client completed transaction' event.
+* `CompletedTransactionEvent` - record a 'client completed transaction' event.
 
-### - Other Events
+
+### Other Events
 Group of uncategorized events related to user's location and actions.
 
-#### AppearedInLocationEvent
-Record a 'client appeared in location' event.
+* `AppearedInLocationEvent` - record a 'client appeared in location' event.
 
-#### HitTimerEvent
-Record a 'client hit timer' event. This could be used for profiling or activity time monitoring - you can send "hit timer" when your client starts doing something and send it once again when finishes, but this time with the different time signature. Then you can use our analytics engine to measure e.g. average activity time.
+* `HitTimerEvent` - record a 'client hit timer' event. This could be used for profiling or activity time monitoring - you can send "hit timer" when your client starts doing something and send it once again when finishes, but this time with the different time signature. Then you can use our analytics engine to measure e.g. average activity time.
 
-#### SearchedEvent
-Record a 'client searched' event.
+* `SearchedEvent` - record a 'client searched' event.
 
-#### SharedEvent
-Record a 'client shared' event.
+* `SharedEvent` - record a 'client shared' event.
 
-#### VisitedScreenEvent
-Record a 'client visited screen' event.
+* `VisitedScreenEvent` - record a 'client visited screen' event.
 
-#### CustomEvent
-This is the only event which requires `action` field.
+* `CustomEvent` - this is the only event which requires `action` field.
 
 
 ## Features
