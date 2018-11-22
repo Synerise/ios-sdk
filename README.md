@@ -778,7 +778,7 @@ Tracker caches and enqueues all your events locally, so they all will be sent wh
 
 ## Events
 
-### Session Events
+#### Session Events
 Group of events related to user's session.
 
 * `LoggedInEvent` - record a 'client logged in' event.
@@ -788,7 +788,7 @@ Group of events related to user's session.
 * `RegisteredEvent` - record a 'client registered' event.
 
 
-### Products Events
+#### Products Events
 Group of events related to products and cart.
 
 * `AddedProductToFavoritesEvent` - record a 'client added product to favorites' event.
@@ -798,7 +798,7 @@ Group of events related to products and cart.
 * `RemovedProductFromCartEvent` - record a 'client removed product from cart' event.
 
 
-### Transaction Events
+#### Transaction Events
 Group of events related to user's transactions.
 
 * `CancelledTransactionEvent` - record a 'client cancelled transaction' event.
@@ -806,7 +806,7 @@ Group of events related to user's transactions.
 * `CompletedTransactionEvent` - record a 'client completed transaction' event.
 
 
-### Other Events
+#### Other Events
 Group of uncategorized events related to user's location and actions.
 
 * `AppearedInLocationEvent` - record a 'client appeared in location' event.
