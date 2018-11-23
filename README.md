@@ -831,7 +831,7 @@ Your custom identifier will be sent within every event in event params.
 Your custom email will be sent within every event in event params.
 
 #### `Tracker.flushEvents(completionHandler:)`
-Send events from queue to server by force.
+Sends events from queue to server by force.
 
 
 # Client
@@ -839,55 +839,55 @@ Send events from queue to server by force.
 ## Features
 
 #### `Client.registerAccount(context:success:failure:)`
-Register new account with email, password and optional data.
+Registers new client account.
 
 #### `Client.activateAccount(email:success:failure:)`
-Activate client's account with email.
+Activates client's account.
 
 #### `Client.signIn(email:password:deviceId:success:failure:)`
-Sign in a client in order to obtain the JWT token, which could be used in subsequent requests.
+Signs in a client in order to obtain the JWT token, which could be used in subsequent requests.
 
 #### `Client.authenticate(facebookToken:success:failure:)`
-Sign in a client with Facebook Token
+Signs in a client with Facebook Token.
 
 #### `Client.isSignedIn`
-Check whether client is signed in (is client's token not expired).
+Checks whether client is signed in (is client's token not expired).
 
 #### `Client.signOut()`
-Sign out client.
+Signs out client.
 
 #### `Client.getToken(success:failure:)`
-Retrieve current client's token. This method provides valid token if client is signed in and current token is not expired.
+Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
 
 #### `Client.getUUID()`
-Retrieve current client's UUID.
+Retrieves current client's UUID.
 
 #### `Client.getAccount(success:failure:)`
 Get client's account information.
 
 #### `Client.updateAccount(success:failure:)`
-Update client's account information.
+Updates client's account information.
 
 #### `Client.requestPasswordReset(context:success:failure:)`
-Request client's password reset with email. A client will receive a token on the provided email address in order to use.
+Requests client's password reset with email. A client will receive a token on the provided email address in order to use.
 
 #### `Client.confirmResetPassword(context:success:failure:)`
-Confirm client's password reset with new password and token provided.
+Confirms client's password reset with new password and token provided.
 
 #### `Client.changePassword(password:oldPassword:success:failure:)`
-Change client's password.
+Changes client's password.
 
 #### `Client.requestPhoneUpdate(phone:success:failure:)`
-Request client's phone update. A client will receive a code on the provided phone in order to use.
+Requests client's phone update. A client will receive a code on the provided phone in order to use.
 
 #### `Client.confirmPhoneNumber(phone:confirmationCode:success:failure:)`
-Confirm client's phone update with code provided.
+Confirms client's phone update with code provided.
 
 #### `Client.deleteAccount(success:failure:)`
-Delete client's account information.
+Deletes client's account information.
 
 #### `Client.registerForPush(registrationToken:success:failure:)`
-Register user for push notifications.
+Registers user for push notifications.
 
 
 # Loyalty
@@ -895,43 +895,43 @@ Register user for push notifications.
 ## Features
 
 #### `Loyalty.getPromotions(success:failure:)`
-Get all available promotions that are defined for this client.
+Gets all available promotions that are defined for this client.
 
 #### `Loyalty.getPromotions(statuses:types:page:success:failure:)`
-Get promotions that match parameters provided.
+Gets promotions that are defined for parameters provided.
 
 #### `Loyalty.getPromotions(statuses:types:limit:page:success:failure:)`
-Get promotions that match parameters provided.
+Gets promotions that are defined for parameters provided.
 
 #### `Loyalty.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
-Get promotions that match parameters provided.
+Gets promotions that are defined for parameters provided.
 
 #### `Loyalty.getPromotion(uuid:success:failure:)`
-Get promotion whose UUID matches parameter provided.
+Gets promotion that are defined for UUID parameter provided.
 
 #### `Loyalty.getPromotion(code:success:failure:)`
-Get promotion whose code matches parameter provided.
+Gets promotion that are defined for code parameter provided.
 
 #### `Loyalty.activatePromotion(uuid:success:failure:)`
-Activate promotion whose UUID matches parameter provided.
+Activates promotion that are defined for UUID parameter provided.
 
 #### `Loyalty.activatePromotion(code:success:failure:)`
-Activate promotion whose code matches parameter provided.
+Activates promotion that are defined for code parameter provided.
 
 #### `Loyalty.deactivatePromotion(uuid:success:failure:)`
-Dectivate promotion whose UUID matches parameter provided.
+Dectivates promotion that are defined for UUID parameter provided.
 
 #### `Loyalty.deactivatePromotion(code:success:failure:)`
-Dectivate promotion whose code matches parameter provided.
+Dectivates promotion that are defined for code parameter provided.
 
 #### `Loyalty.getOrAssignVoucher(poolUUID:success:failure:)`
-Get voucher code only once or assign voucher with provided pool UUID for the client.
+Gets voucher code only once or assign voucher with provided pool UUID for the client.
 
 #### `Loyalty.assignVoucherCode(poolUUID:success:failure:)`
-Assign voucher with provided pool UUID for the client.
+Assigns voucher with provided pool UUID for the client.
 
 #### `Loyalty.getAssignedVoucherCodes(success:failure:)`
-Get client's voucher codes.
+Gets client's voucher codes.
 
 
 # Injector
