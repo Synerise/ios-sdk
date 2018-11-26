@@ -1,4 +1,4 @@
-# Synerise iOS SDK (v3.3.1)
+# Synerise iOS SDK (v3.3.1) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
@@ -827,11 +827,30 @@ Group of uncategorized events related to user's location and actions.
 #### `Tracker.setCustomIdentifier(_:)`
 Your custom identifier will be sent within every event in event params.
 
+**Swift:**
+```swift
+Tracker.setCustomIdentifier("CUSTOM_IDENTIFIER")
+```
+
+
 #### `Tracker.setCustomEmail(_:)`
 Your custom email will be sent within every event in event params.
 
+**Swift:**
+```swift
+Tracker.setCustomEmail("CUSTOM_EMAIL")
+```
+
+
 #### `Tracker.flushEvents(completionHandler:)`
 Sends events from queue to server by force.
+
+**Swift:**
+```swift
+Tracker.flushEvents {
+	// A block to be executed when SNRTracker has finished flushing events to Synerise servers, no matter the result.
+}
+```
 
 
 # Client
@@ -841,53 +860,256 @@ Sends events from queue to server by force.
 #### `Client.registerAccount(context:success:failure:)`
 Registers new client account.
 
+**Swift:**
+```swift
+let email: String = "EMAIL"
+let password: String = "PASSWORD"
+
+let agreements: ClientAgreements = ClientAgreements()
+agreements.email = true
+agreements.push = true
+
+let context: ClientRegisterAccountContext = ClientRegisterAccountContext.init(email: email, password: password)
+context.firstName = "FIRST_NAME"
+context.lastName = "LAST_NAME"
+context.agreements = agreements
+
+Client.registerAccount(context: context, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Client.activateAccount(email:success:failure:)`
 Activates client's account.
+
+**Swift:**
+```swift
+Client.activateAccount(email: email, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Client.signIn(email:password:deviceId:success:failure:)`
 Signs in a client in order to obtain the JWT token, which could be used in subsequent requests.
 
+**Swift:**
+```swift
+let email: String = "EMAIL"
+let password: String = "PASSWORD"
+
+Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Client.authenticate(facebookToken:success:failure:)`
 Signs in a client with Facebook Token.
+
+**Swift:**
+```swift
+guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+	return
+}
+        
+Client.authenticate(facebookToken: facebookToken, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Client.isSignedIn`
 Checks whether client is signed in (is client's token not expired).
 
+**Swift:**
+```swift
+func isSignedIn() -> Bool {
+	return Client.isSignedIn()
+}
+```
+
+
 #### `Client.signOut()`
 Signs out client.
+
+**Swift:**
+```swift
+func signOut() {
+	Client.signOut()
+}
+```
+
 
 #### `Client.getToken(success:failure:)`
 Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
 
+**Swift:**
+```swift
+Client.getToken(success: { (token) in
+	//success
+}) { (error) in
+	//failure
+}
+```
+
+
 #### `Client.getUUID()`
 Retrieves current client's UUID.
+
+**Swift:**
+```swift
+func getUUID() -> String {
+	return Client.getUUID()
+}
+```
+
 
 #### `Client.getAccount(success:failure:)`
 Get client's account information.
 
+**Swift:**
+```swift
+Client.getAccount(success: { (clientAccountInformation) in
+	//success
+	//print(clientAccountInformation.firstName)
+	//print(clientAccountInformation.lastName)
+}) { (error) in
+	//failure
+}
+```
+
+
 #### `Client.updateAccount(success:failure:)`
 Updates client's account information.
+
+**Swift:**
+```swift
+let context: ClientUpdateAccountContext = ClientUpdateAccountContext()
+context.firstName = "FIRST_NAME"
+context.lastName = "LAST_NAME"
+context.sex = ClientSex.male
+
+Client.updateAccount(context: context, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Client.requestPasswordReset(context:success:failure:)`
 Requests client's password reset with email. A client will receive a token on the provided email address in order to use.
 
+**Swift:**
+```swift
+let context: ClientPasswordResetRequestContext = ClientPasswordResetRequestContext(email: "EMAIL")
+
+Client.requestPasswordReset(context: context, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+}) 
+```
+
+
 #### `Client.confirmResetPassword(context:success:failure:)`
 Confirms client's password reset with new password and token provided.
+
+**Swift:**
+```swift
+let context: ClientPasswordResetConfirmationContext = ClientPasswordResetConfirmationContext(password: "PASSWORD", token: "TOKEN")
+
+Client.confirmResetPassword(context: context, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Client.changePassword(password:oldPassword:success:failure:)`
 Changes client's password.
 
+**Swift:**
+```swift
+let password: String = "PASSWORD"
+let oldPassword: String = "OLD_PASSWORD"
+
+Client.changePassword(password: password, oldPassword: oldPassword, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Client.requestPhoneUpdate(phone:success:failure:)`
 Requests client's phone update. A client will receive a code on the provided phone in order to use.
+
+**Swift:**
+```swift
+let phone: String = "123456789"
+
+Client.requestPhoneUpdate(phone: phone, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Client.confirmPhoneNumber(phone:confirmationCode:success:failure:)`
 Confirms client's phone update with code provided.
 
+**Swift:**
+```swift
+let phone: String = "123456789"
+let confirmationCode: String = "CONFIRMATION_CODE"
+
+Client.confirmPhoneUpdate(phone: phone, confirmationCode: confirmationCode, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Client.deleteAccount(success:failure:)`
 Deletes client's account information.
 
+**Swift:**
+```swift
+Client.deleteAccount(success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Client.registerForPush(registrationToken:success:failure:)`
 Registers user for push notifications.
+
+**Swift:**
+```swift
+let fcmToken: String = Messaging.messaging().fcmToken //FCM Token, it should be returned from FIRMessagingDelegate
+
+Client.registerForPush(registrationToken: fcmToken,
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
 
 
 # Loyalty
@@ -896,6 +1118,16 @@ Registers user for push notifications.
 
 #### `Loyalty.getPromotions(success:failure:)`
 Gets all available promotions that are defined for this client.
+
+**Swift:**
+```swift
+Loyalty.getPromotions(success: { (promotionResponse) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Loyalty.getPromotions(statuses:types:page:success:failure:)`
 Gets promotions that are defined for parameters provided.
@@ -906,32 +1138,164 @@ Gets promotions that are defined for parameters provided.
 #### `Loyalty.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
 Gets promotions that are defined for parameters provided.
 
+**Swift:**
+```swift
+var statuses: [NSNumber] = [NSNumber]()
+statuses.append(PromotionStatus.active.rawValue as NSNumber)
+statuses.append(PromotionStatus.assigned.rawValue as NSNumber)
+
+var types: [NSNumber] = [NSNumber]()
+types.append(PromotionType.membersOnly.rawValue as NSNumber)
+types.append(PromotionType.custom.rawValue as NSNumber)
+
+let limit: Int = 100
+let page: Int = 0
+let includeMeta: Bool = false
+
+Loyalty.getPromotions(statuses: statuses, types: types, limit: limit, page: page, includeMeta: includeMeta, success: { (promotionResponse) in
+	//success
+	//print(promotionResponse.items)
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Loyalty.getPromotion(uuid:success:failure:)`
 Gets promotion that are defined for UUID parameter provided.
+
+**Swift:**
+```swift
+let UUID: String = "UUID"
+
+Loyalty.getPromotion(uuid: UUID, success: { (promotion) in
+	//success
+	//print(promotion.code)
+	//print(promotion.discountValue)
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Loyalty.getPromotion(code:success:failure:)`
 Gets promotion that are defined for code parameter provided.
 
+**Swift:**
+```swift
+let code: String = "CODE"
+
+Loyalty.getPromotion(code: code, success: { (promotion) in
+	//success
+	//print(promotion.code)
+	//print(promotion.discountValue)
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Loyalty.activatePromotion(uuid:success:failure:)`
 Activates promotion that are defined for UUID parameter provided.
+
+**Swift:**
+```swift
+let UUID: String = "UUID"
+
+Loyalty.activatePromotion(uuid: UUID, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Loyalty.activatePromotion(code:success:failure:)`
 Activates promotion that are defined for code parameter provided.
 
+**Swift:**
+```swift
+let code: String = "CODE"
+
+Loyalty.activatePromotion(code: code, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Loyalty.deactivatePromotion(uuid:success:failure:)`
 Dectivates promotion that are defined for UUID parameter provided.
+
+**Swift:**
+```swift
+let UUID: String = "UUID"
+
+Loyalty.deactivatePromotion(uuid: UUID, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Loyalty.deactivatePromotion(code:success:failure:)`
 Dectivates promotion that are defined for code parameter provided.
 
+**Swift:**
+```swift
+let code: String = "CODE"
+
+Loyalty.deactivatePromotion(code: code, success: { (success) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Loyalty.getOrAssignVoucher(poolUUID:success:failure:)`
 Gets voucher code only once or assign voucher with provided pool UUID for the client.
+
+**Swift:**
+```swift
+let poolUUID: String = "POOL_UUID"
+
+Loyalty.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
 
 #### `Loyalty.assignVoucherCode(poolUUID:success:failure:)`
 Assigns voucher with provided pool UUID for the client.
 
+**Swift:**
+```swift
+let poolUUID: String = "POOL_UUID"
+
+Loyalty.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
+
+
 #### `Loyalty.getAssignedVoucherCodes(success:failure:)`
 Gets client's voucher codes.
+
+**Swift:**
+```swift
+Loyalty.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
+	//success
+}, failure: { (error) in
+	//failure
+})
+```
 
 
 # Injector
