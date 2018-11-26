@@ -981,8 +981,8 @@ Get client's account information.
 ```swift
 Client.getAccount(success: { (clientAccountInformation) in
 	//success
-	//print(clientAccountInformation.firstName)
-	//print(clientAccountInformation.lastName)
+	print(clientAccountInformation.firstName)
+	print(clientAccountInformation.lastName)
 }) { (error) in
 	//failure
 }
@@ -1154,7 +1154,7 @@ let includeMeta: Bool = false
 
 Loyalty.getPromotions(statuses: statuses, types: types, limit: limit, page: page, includeMeta: includeMeta, success: { (promotionResponse) in
 	//success
-	//print(promotionResponse.items)
+	print(promotionResponse.items)
 }, failure: { (error) in
 	//failure
 })
@@ -1170,8 +1170,8 @@ let UUID: String = "UUID"
 
 Loyalty.getPromotion(uuid: UUID, success: { (promotion) in
 	//success
-	//print(promotion.code)
-	//print(promotion.discountValue)
+	print(promotion.code)
+	print(promotion.discountValue)
 }, failure: { (error) in
 	//failure
 })
@@ -1187,8 +1187,8 @@ let code: String = "CODE"
 
 Loyalty.getPromotion(code: code, success: { (promotion) in
 	//success
-	//print(promotion.code)
-	//print(promotion.discountValue)
+	print(promotion.code)
+	print(promotion.discountValue)
 }, failure: { (error) in
 	//failure
 })
