@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.3.1) - User documentation
+# Synerise iOS SDK (v3.3.2) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.3.1-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.3.2-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -108,9 +108,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	let clientApiKey = "YOUR_CLIENT_API_KEY"
 
 	Synerise.initialize(clientApiKey: clientApiKey) // 1
-	Synerise.setDelegate(self) // 2
+	Synerise.setDebugModeEnabled(true) // 2
+	Synerise.setDelegate(self) // 3
 
-	Tracker.setLoggingEnabled(true) // 3
 	Tracker.setAutoTrackMode(.fine) // 4
 
 	let trackerConfiguration = TrackerConfiguration();
@@ -120,12 +120,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 	Tracker.setConfiguration(trackerConfiguration); // 5
 
-	Client.setLoggingEnabled(true) // 6
-
-	Injector.setLoggingEnabled(true) // 7
-	Injector.setAutomatic(true) // 8
-	Injector.setWalkthroughDelegate(self) // 9
-	Injector.setBannerDelegate(self) // 10
+	Injector.setAutomatic(true) // 6
+	Injector.setWalkthroughDelegate(self) // 7
+	Injector.setBannerDelegate(self) // 8
 }
 ```
 
@@ -135,9 +132,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
 
 	[SNRSynerise initializeWithClientApiKey:clientApiKey]; // 1
-	[SNRSynerise setDelegate:self]; // 2
+	[SNRSynerise setDebugModeEnabled:YES]; //2
+	[SNRSynerise setDelegate:self]; // 3
 	
-	[SNRTracker setLoggingEnabled:YES]; // 3
 	[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine]; // 4
 
 	SNRTrackerConfiguration trackerConfiguration;
@@ -147,26 +144,21 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	
 	[SNRTracker setConfiguration:trackerConfiguration]; // 5
 
-	[SNRClient setLoggingEnabled:YES]; // 6
-
-	[SNRInjector setLoggingEnabled:YES]; // 7
-	[SNRInjector setAutomatic:YES]; // 8
-	[SNRInjector setWalkthroughDelegate:self]; // 9
-	[SNRInjector setBannerDelegate:self]; // 10
+	[SNRInjector setAutomatic:YES]; // 6
+	[SNRInjector setWalkthroughDelegate:self]; // 7
+	[SNRInjector setBannerDelegate:self]; // 8
 }
 ```
 
 Let's dive into some configurable functionalities:  
 1. `Synerise.initialize` - Initializes **Synerise SDK**.  
-2. `Synerise.setDelegate` - Sets delegate to handle actions from **Synerise SDK**. See **Synerise SDK delegate** section for more information.  
-3. `Tracker.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.  
+2. `Synerise.setDebugModeEnabled` - Enables debug mode for **Synerise SDK**. See **Debug logs** section for more information.  
+3. `Synerise.setDelegate` - Sets delegate to handle actions from **Synerise SDK**. See **Synerise SDK delegate** section for more information.  
 4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.  
-5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.  
-6. `Client.setLoggingEnabled` - Enables logs for Tracker module. See **Debug logs** section for more information.  
-7. `Injector.setLoggingEnabled` - Enables logs for Injector module. See **Debug logs** section for more information.  
-8. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.  
-9. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
-10. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
+5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.
+6. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.  
+7. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
+8. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
 
 ## Setup with custom API environment
 
@@ -191,19 +183,23 @@ static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
 ```
 
 
-## Debug logs
+## Debug Logs
 
-You can enable debug logs for **Synerise SDK** modules, such as Tracker, Client, Loyalty and Injector.
 It is not recommended to use debug mode in a release version of your app.
 
-- Tracker: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
-- Client: you can receive some simple logs about client actions by enabling debug mode, which is disabled by default.
-- Loyalty: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
-- Injector: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
+You can enable debug logs for **Synerise SDK** by method `Synerise.setDebugModeEnabled`. It enables logging for all modules.
 
-It can be enabled by method `setLoggingEnabled` for each module.
+**Swift:**
+```swift
+Synerise.setDebugModeEnabled(true)
+```
 
-For example:
+**Objective-C:**
+```objective-c
+[SNRSynerise setDebugModeEnabled:YES];
+```
+
+However, it might be enabled or disabled for each module by method `setLoggingEnabled`.
 
 **Swift:**
 ```swift
@@ -214,6 +210,11 @@ Tracker.setLoggingEnabled(true)
 ```objective-c
 [SNRTracker setLoggingEnabled(YES];
 ```
+
+- Tracker: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
+- Client: you can receive some simple logs about client actions by enabling debug mode, which is disabled by default.
+- Promotions: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
+- Injector: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
 
 
 ## Synerise SDK delegate
@@ -610,24 +611,100 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 ### API Errors
 
-We've created an error wrapper ```SNRApiError``` to handle API errors.
+We've created an error wrapper `SNRApiError` to handle API errors. It inherits from standard iOS object for errors - `NSError`. 
 
-When we receive an error, we can check if error is ```SNRApiError``` instance and then, there is possibility to get more information and get a list of all errors that occurred. 
+#### Features
+
+##### `getType`
+`SNRApiErrorType.Http` - it's returned when request succeeded to execute, but something went wrong and error code is returned (e.g. 403).
+`SNRApiErrorType.Network` - it's returned when request failed to execute (e.g. due to no Internet connection).
+`SNRApiErrorType.UnauthorizedSession` - it's returned when session is invalid for given request.
+`SNRApiErrorType.Unknown` - it's returned when unknown error occurred (e.g. no response from server when expected).
+
+##### `getHttpCode`
+Returns http status code. If request failed to execute (e.g. due to no Internet connection), this value will be equal -1.
+
+##### `getBody`
+
+#### Example
+
+When we receive an error, we can check if error is `SNRApiError` instance and then, there is possibility to get more information and get a list of all errors that occurred. 
 
 Therefore, you can better integrate your own application with the **Synerise SDK**.
 
-For example:
+This example shows sample way to handle `SNRApiError`:
 
 **Swift:**
 ```swift
-Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
-	//...
-}, failure: { (error) in
+func presentAlert(title: String, message: String) {
+	let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+	let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+	alertController.addAction(okAction)
+
+	self.present(alertController, animated: true, completion: nil)
+}
+
+func showErrorInfo(_ error: NSError, title: String = "Error", debug: Bool = true) {
 	if let apiError = error as? SNRApiError {
-		print (apiError.localizedFailureReason) //print information string about all issues
-		print(apiError.errors) //print list of error objects about issues that occured
+		var apiErrorDebugInfo: String = String()
+
+		let apiErrorType: SNRApiErrorType = apiError.getType()
+
+		switch (apiErrorType) {
+		case .network: apiErrorDebugInfo.append("NETWORK ERROR")
+		case .unauthorizedSession: apiErrorDebugInfo.append("UNAUTHORIZED SESSION ERROR")
+		case .http: apiErrorDebugInfo.append("HTTP ERROR: \(apiError.getHttpCode())")
+		case .unknown: apiErrorDebugInfo.append("UNKNOWN ERROR")
+		}
+
+		apiErrorDebugInfo.append("\n\n")
+		apiErrorDebugInfo.append("\(apiError.localizedDescription)")
+
+		//first approach
+		if let apiErrorCauses = apiError.errors, !apiErrorCauses.isEmpty {
+			apiErrorDebugInfo.append("\n\n")
+
+			apiErrorCauses.forEach({ (error) in
+				let apiErrorCause: NSError = error as NSError
+
+				var apiErrorCauseString: String = String()
+				apiErrorCauseString.append("CODE: \(apiErrorCause.code)")
+				apiErrorCauseString.append("\n")
+				apiErrorCauseString.append("MESSAGE: \(apiErrorCause.localizedDescription)")
+
+				apiErrorDebugInfo.append(apiErrorCauseString)
+				apiErrorDebugInfo.append("\n\n")
+			})
+		}
+
+		//second approach
+		//apiErrorDebugInfo.append("\n\n")
+		//
+		//let apiErrorCauseString: String = apiError.getBody() ?? ""
+		//apiErrorDebugInfo.append(apiErrorCauseString)
+
+		self.presentAlert(title: "Debug SNRApiError", message: apiErrorDebugInfo)
+
+		if debug {
+			DebugUtils.print("\(title) \(apiError.code) \(apiError.localizedDescription)")
+		}
+
+		return
 	}
-})
+
+	if debug {
+		DebugUtils.print("\(title) \(error.code) \(error.localizedDescription)")
+	}
+}
+
+func signIn(email: String, password: String) {
+	Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
+		//...
+	}, failure: { (error) in
+		self.showErrorInfo(error as NSError)
+	})
+}
 ```
 
 **Objective-C:**
@@ -644,7 +721,7 @@ Client.signIn(email: email, password: password, deviceId: nil, success: { (succe
 }];
 ```
 
-## Cache Service
+## Cache Manager
 
 When your API request failed, you can still get cached response if available.
 
@@ -652,12 +729,12 @@ For example:
 
 **Swift:**
 ```swift
-let clientAccountInformation: ClientAccountInformation? = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation
+let clientAccountInformation: ClientAccountInformation? = CacheManager.get(ClientAccountInformation.self) as? ClientAccountInformation
 ```
 
 **Objective-C:**
 ```objective-c
-SNRClientAccountInformation *clientAccountInformation = [SNRCacheService loadObject:ClientAccountInformation.class];
+SNRClientAccountInformation *clientAccountInformation = [CacheManager get:ClientAccountInformation.class];
 ```
 
 At this point, **Synerise SDK** caches:
@@ -1112,16 +1189,16 @@ Client.registerForPush(registrationToken: fcmToken,
 ```
 
 
-# Loyalty
+# Promotions
 
 ## Features
 
-#### `Loyalty.getPromotions(success:failure:)`
+#### `Promotions.getPromotions(success:failure:)`
 Gets all available promotions that are defined for this client.
 
 **Swift:**
 ```swift
-Loyalty.getPromotions(success: { (promotionResponse) in
+Promotions.getPromotions(success: { (promotionResponse) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1129,13 +1206,13 @@ Loyalty.getPromotions(success: { (promotionResponse) in
 ```
 
 
-#### `Loyalty.getPromotions(statuses:types:page:success:failure:)`
+#### `Promotions.getPromotions(statuses:types:page:success:failure:)`
 Gets promotions that are defined for parameters provided.
 
-#### `Loyalty.getPromotions(statuses:types:limit:page:success:failure:)`
+#### `Promotions.getPromotions(statuses:types:limit:page:success:failure:)`
 Gets promotions that are defined for parameters provided.
 
-#### `Loyalty.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
+#### `Promotions.getPromotions(statuses:types:limit:page:includeMeta:success:failure:)`
 Gets promotions that are defined for parameters provided.
 
 **Swift:**
@@ -1152,7 +1229,7 @@ let limit: Int = 100
 let page: Int = 0
 let includeMeta: Bool = false
 
-Loyalty.getPromotions(statuses: statuses, types: types, limit: limit, page: page, includeMeta: includeMeta, success: { (promotionResponse) in
+Promotions.getPromotions(statuses: statuses, types: types, limit: limit, page: page, includeMeta: includeMeta, success: { (promotionResponse) in
 	//success
 	print(promotionResponse.items)
 }, failure: { (error) in
@@ -1161,14 +1238,14 @@ Loyalty.getPromotions(statuses: statuses, types: types, limit: limit, page: page
 ```
 
 
-#### `Loyalty.getPromotion(uuid:success:failure:)`
+#### `Promotions.getPromotion(uuid:success:failure:)`
 Gets promotion that are defined for UUID parameter provided.
 
 **Swift:**
 ```swift
 let UUID: String = "UUID"
 
-Loyalty.getPromotion(uuid: UUID, success: { (promotion) in
+Promotions.getPromotion(uuid: UUID, success: { (promotion) in
 	//success
 	print(promotion.code)
 	print(promotion.discountValue)
@@ -1178,14 +1255,14 @@ Loyalty.getPromotion(uuid: UUID, success: { (promotion) in
 ```
 
 
-#### `Loyalty.getPromotion(code:success:failure:)`
+#### `Promotions.getPromotion(code:success:failure:)`
 Gets promotion that are defined for code parameter provided.
 
 **Swift:**
 ```swift
 let code: String = "CODE"
 
-Loyalty.getPromotion(code: code, success: { (promotion) in
+Promotions.getPromotion(code: code, success: { (promotion) in
 	//success
 	print(promotion.code)
 	print(promotion.discountValue)
@@ -1195,14 +1272,14 @@ Loyalty.getPromotion(code: code, success: { (promotion) in
 ```
 
 
-#### `Loyalty.activatePromotion(uuid:success:failure:)`
+#### `Promotions.activatePromotion(uuid:success:failure:)`
 Activates promotion that are defined for UUID parameter provided.
 
 **Swift:**
 ```swift
 let UUID: String = "UUID"
 
-Loyalty.activatePromotion(uuid: UUID, success: { (success) in
+Promotions.activatePromotion(uuid: UUID, success: { (success) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1210,14 +1287,14 @@ Loyalty.activatePromotion(uuid: UUID, success: { (success) in
 ```
 
 
-#### `Loyalty.activatePromotion(code:success:failure:)`
+#### `Promotions.activatePromotion(code:success:failure:)`
 Activates promotion that are defined for code parameter provided.
 
 **Swift:**
 ```swift
 let code: String = "CODE"
 
-Loyalty.activatePromotion(code: code, success: { (success) in
+Promotions.activatePromotion(code: code, success: { (success) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1225,14 +1302,14 @@ Loyalty.activatePromotion(code: code, success: { (success) in
 ```
 
 
-#### `Loyalty.deactivatePromotion(uuid:success:failure:)`
+#### `Promotions.deactivatePromotion(uuid:success:failure:)`
 Dectivates promotion that are defined for UUID parameter provided.
 
 **Swift:**
 ```swift
 let UUID: String = "UUID"
 
-Loyalty.deactivatePromotion(uuid: UUID, success: { (success) in
+Promotions.deactivatePromotion(uuid: UUID, success: { (success) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1240,14 +1317,14 @@ Loyalty.deactivatePromotion(uuid: UUID, success: { (success) in
 ```
 
 
-#### `Loyalty.deactivatePromotion(code:success:failure:)`
+#### `Promotions.deactivatePromotion(code:success:failure:)`
 Dectivates promotion that are defined for code parameter provided.
 
 **Swift:**
 ```swift
 let code: String = "CODE"
 
-Loyalty.deactivatePromotion(code: code, success: { (success) in
+Promotions.deactivatePromotion(code: code, success: { (success) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1255,14 +1332,14 @@ Loyalty.deactivatePromotion(code: code, success: { (success) in
 ```
 
 
-#### `Loyalty.getOrAssignVoucher(poolUUID:success:failure:)`
+#### `Promotions.getOrAssignVoucher(poolUUID:success:failure:)`
 Gets voucher code only once or assign voucher with provided pool UUID for the client.
 
 **Swift:**
 ```swift
 let poolUUID: String = "POOL_UUID"
 
-Loyalty.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse) in
+Promotions.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1270,14 +1347,14 @@ Loyalty.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse
 ```
 
 
-#### `Loyalty.assignVoucherCode(poolUUID:success:failure:)`
+#### `Promotions.assignVoucherCode(poolUUID:success:failure:)`
 Assigns voucher with provided pool UUID for the client.
 
 **Swift:**
 ```swift
 let poolUUID: String = "POOL_UUID"
 
-Loyalty.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
+Promotions.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
 	//success
 }, failure: { (error) in
 	//failure
@@ -1285,12 +1362,12 @@ Loyalty.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse)
 ```
 
 
-#### `Loyalty.getAssignedVoucherCodes(success:failure:)`
+#### `Promotions.getAssignedVoucherCodes(success:failure:)`
 Gets client's voucher codes.
 
 **Swift:**
 ```swift
-Loyalty.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
+Promotions.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
 	//success
 }, failure: { (error) in
 	//failure

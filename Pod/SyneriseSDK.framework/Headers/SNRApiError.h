@@ -9,17 +9,33 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * @enum SNRApiErrorType
+ */
+
+typedef NS_ENUM(NSInteger, SNRApiErrorType) {
+    SNRApiErrorTypeUnknown,
+    SNRApiErrorTypeNetwork,
+    SNRApiErrorTypeUnauthorizedSession,
+    SNRApiErrorTypeHttp
+    
+} NS_SWIFT_NAME(SNRApiErrorType);
+
+/**
  * @class SNRApiError
  */
 
-@interface SNRApiError : SNRError
+@interface SNRApiError : NSError
 
-@property (strong, nonatomic, nonnull, readonly) NSArray<SNRError *> *errors;
+@property (strong, nonatomic, nullable, readonly) NSArray<NSError *> *errors;
 
 - (instancetype)initWithDomain:(NSErrorDomain)domain
                           code:(NSInteger)code
                       userInfo:(nullable NSDictionary<NSErrorUserInfoKey, id> *)dict
-                        errors:(NSArray *)errors;
+                        errors:(nullable NSArray *)errors;
+
+- (SNRApiErrorType)getType;
+- (NSInteger)getHttpCode;
+- (nullable NSString *)getBody;
 
 @end
 

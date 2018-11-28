@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @protocol SNRSyneriseDelegate
  *
- * A protocol to handle actions from SyneriseSDK.
+ * A protocol to handle actions from Synerise SDK.
  *
  * @note Note that if optional methods are not implemented, Synerise has got default behaviour only for url action - it is redirected to a browser.
  */
@@ -86,7 +86,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  *
  * @param url URL address value from activity.
  * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler A block that should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param completionHandler A block that should be invoked with parameters: SNRSyneriseActivityAction and completion block to execute.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(url:activity:completionHandler:));
 
@@ -95,7 +95,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  *
  * @param deepLink Literal text value from activity.
  * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler A block that should be invoke with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param completionHandler A block that should be invoked with parameters: SNRSyneriseActivityAction and completion block to execute.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(deepLink:activity:completionHandler:));
 
@@ -124,7 +124,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @class SNRSynerise
  *
- * SNRSynerise is responsible for initialization SyneriseSDK and its main actions.
+ * SNRSynerise is responsible for initialization Synerise SDK and its main actions.
  */
 
 NS_SWIFT_NAME(Synerise)
@@ -136,47 +136,56 @@ NS_SWIFT_NAME(Synerise)
 - (instancetype)init __unavailable;
 
 /**
- * Initializes SyneriseSDK.
+ * Initializes Synerise SDK.
  *
  * @param clientApiKey Synerise Client API Key.
  *
- * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
+ * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
  */
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey NS_SWIFT_NAME(initialize(clientApiKey:));
 
 /**
- * Initializes SyneriseSDK.
+ * Initializes Synerise SDK with custom environment settings.
  *
  * @param clientApiKey Synerise Client API Key.
  * @param baseUrl Synerise API custom environment base URL.
  *
- * @note This method needs to be called before any other method of SyneriseSDK and only once during application lifecycle.
+ * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
  */
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(clientApiKey:baseUrl:));
 
 /**
- * This method sets object for Synerise delegate methods.
+ * Enables/disables console logs from Synerise SDK.
  *
- * @param delegate Object that implement SNRSyneriseDelegate protocol.
+ * @param enabled Specifies that console logs are enabled/disabled.
+ *
+ * @note It is not recommended to use debug mode in release version of your application.
+ */
++ (void)setDebugModeEnabled:(BOOL)enabled;
+
+/**
+ * Sets object for Synerise delegate methods.
+ *
+ * @param delegate An object that implement SNRSyneriseDelegate protocol.
  */
 + (void)setDelegate:(id<SNRSyneriseDelegate>)delegate;
 
 /**
- * This method checkes that notification's sender is Synerise.
+ * Checks that notification's sender is Synerise.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  */
 + (BOOL)isSyneriseNotification:(NSDictionary *)userInfo;
 
 /**
- * This method handles new push message and starts activity, which build proper views from provided data.
+ * Handles new push message and starts activity, which build proper views from provided data.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  */
 + (void)handleNotification:(NSDictionary *)userInfo;
 
 /**
- * This method handles push message action identifeir and execute its action if is set.
+ * Handles push message action identifeir and execute its action if is set.
  *
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  * @param actionIdentifier Identifier of action received from notification response.

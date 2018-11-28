@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * When you choose to load and present Walkthrough manually, you may be interested in following delegate methods.
  *
- * Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
+ * @note Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
  */
 
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * A protocol to handle events from Injector for banner campaigns.
  *
- * It is not always suitable for you to cover your Activities with any banners which may come.
+ * @note It is not always suitable for you to cover your Activities with any banners which may come.
  * Fortunately, we have put this into deep consideration and as for now, we'd like to present our optional banner delegate methods.
  */
 
@@ -64,7 +64,7 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 @optional
 
 /**
- * This method will be called when Banner has been loaded and SyneriseSDK asks for permission to show it.
+ * This method will be called when Banner has been loaded and Synerise SDK asks for permission to show it.
  *
  * @param bannerDictionary It is banner instance representation.
  */
@@ -113,16 +113,16 @@ NS_SWIFT_NAME(Injector)
 + (void)setAutomatic:(BOOL)automatic;
 
 /**
- * This method sets object for Walkthrough delegate methods.
+ * Sets object for Walkthrough delegate methods.
  *
- * @param delegate Object that implement SNRInjectorWalkthroughDelegate protocol.
+ * @param delegate An object that implement SNRInjectorWalkthroughDelegate protocol.
  */
 + (void)setWalkthroughDelegate:(id<SNRInjectorWalkthroughDelegate>)delegate;
 
 /**
- * This method sets object for Banner delegate methods.
+ * Sets object for Banner delegate methods.
  *
- * @param delegate Object that implement SNRInjectorBannerDelegate protocol.
+ * @param delegate An object that implement SNRInjectorBannerDelegate protocol.
  */
 + (void)setBannerDelegate:(id<SNRInjectorBannerDelegate>)delegate;
 
@@ -147,31 +147,32 @@ NS_SWIFT_NAME(Injector)
 + (BOOL)isLoadedWalkthroughUnique;
 
 /**
- * This method provides valid banners right from SDK cache.
+ * Provides valid banners right from SDK cache.
  */
 + (NSArray *)getBanners;
 
 /**
- * This method fetches banners set for mobile campaigns and caches valid ones.
+ * Fetches banners set for mobile campaigns and caches valid ones.
  *
- * @param success A block when operation is success.
- * @param failure A block when operation is failure.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
- * This method fetches Push Notifications set for mobile campaigns.
+ * Fetches Push Notifications set for mobile campaigns.
  *
- * @param success A block when operation is success.
- * @param failure A block when operation is failure.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
- * Show banner immediately.
+ * Shows banner immediately     .
  *
+ * @param bannerDictionary Dictionary representation for banner.
  * @param markPresented Sets banner as presented and this banner instance representation will not appear second time.
  */
 + (void)showBanner:(NSDictionary *)bannerDictionary

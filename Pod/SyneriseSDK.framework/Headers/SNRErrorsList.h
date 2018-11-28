@@ -13,16 +13,14 @@ static NSString * const SNRAPIErrorDomain = @"com.synerise.sdk.api.error";
 static NSString * const SNRErrorDomain = @"com.synerise.sdk.error";
 
 static NSInteger const SNRErrorCodeUnknownError = -101;
-static NSInteger const SNRErrorCodeUnknownApiError = -102;
-static NSInteger const SNRErrorCodeInvalidApiRequestError = -103;
 
-static NSInteger const SNRErrorCodeInvalidEmail = 3010;
-static NSInteger const SNRErrorCodeInvalidPassword = 3020;
-static NSInteger const SNRErrorCodeInvalidPhoneNumber = 3030;
-static NSInteger const SNRErrorCodeInvalidBirthdate = 3040;
+static NSInteger const SNRErrorCodeUnknownApiError = -102;
+static NSInteger const SNRErrorCodeNetworkApiError = -105;
+static NSInteger const SNRErrorCodeInvalidRequestApiError = -103;
+static NSInteger const SNRErrorCodeInvalidRequestSessionApiError = -104;
+static NSInteger const SNRErrorCodeInvalidResponseApiError = -106;
+
 static NSInteger const SNRErrorCodeInvalidArgument = 3050;
-static NSInteger const SNRErrorCodePasswordIsNotEqualToSavedPassword = 3060;
-static NSInteger const SNRErrorCodePoolUuidIsEmpty = 3070;
 
 static NSInteger const SNRErrorCodeImageNotDownloaded = 3110;
 

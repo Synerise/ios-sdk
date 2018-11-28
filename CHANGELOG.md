@@ -1,7 +1,23 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [3.3.0] - 2018-11-21
+
+## [3.3.2] - 2018-11-28
+
+### Added
+- Synerise.setDebugModeEnabled to eneable logs from all modules.
+
+### Changed
+- Loyalty module is renamed to Promotions.
+- CacheService is replaced by CacheManager.
+- New functionality in SNRApiError (see Error Handling section in README).
+- Synerise SDK invokes all delegation methods on main thread
+
+### Fixed
+- Improving Synerise SDK stability.
+- Optymalizing networking in Synerise SDK.
+
+## [3.3.1] - 2018-11-21
 
 ### Fixed
 - Method name for Swift: Client.registerClient -> Client.registerAccount
