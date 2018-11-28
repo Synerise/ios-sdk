@@ -57,27 +57,9 @@ Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTO
 Make sure `Copy items if needed` is selected and click `Finish`.
 
 
+## Import Synerise SDK
 
-# Configuration
-
-## Dependencies
-
-**Synerise SDK** requires Firebase with Messaging service so you have to import these dependencies for CocoaPods or Carthage.
-
-Note: more about Firebase configuration - [get started with Firebase iOS](https://firebase.google.com/docs/storage/ios/start).
-
-1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
-2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
-3. If you are going to use http addresses (instead only https), you will need to change whitelist domains in your app by adding the following to your application's plist (often called "Info.plist"):
-
-```
-<key>NSAppTransportSecurity</key>
-<dict>
-	<key>NSAllowsArbitraryLoads</key><true/>
-</dict>
-```
-
-4. You will need to import the **Synerise SDK** header into the files that contain code relating to **Synerise SDK**. 
+You will need to import the **Synerise SDK** header into the files that contain code relating to **Synerise SDK**. 
 
 **Swift:**
 ```
@@ -92,7 +74,31 @@ import SyneriseSDK
 In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
 
+
+# Configuration
+
+## Dependencies
+
+**Synerise SDK** requires Firebase with Messaging service so you have to import these dependencies for CocoaPods or Carthage.
+
+Note: more about Firebase configuration - [get started with Firebase iOS](https://firebase.google.com/docs/storage/ios/start).
+
+
 ## Setup
+
+1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
+2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
+3. If you are going to use http addresses (instead only https), you will need to change whitelist domains in your app by adding the following to your application's plist (often called "Info.plist"):
+
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key><true/>
+</dict>
+```
+
+
+## Initialization
 
 First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Client API Key`.
 
@@ -159,7 +165,7 @@ Let's dive into some configurable functionalities:
 7. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
 8. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
 
-## Setup with custom API environment
+## Initialization with custom API environment
 
 There is option to change API baseURL for on-premise installations.  
 
