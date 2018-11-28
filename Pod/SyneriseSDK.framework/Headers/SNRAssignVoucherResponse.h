@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(AssignVoucherResponse)
 @interface SNRAssignVoucherResponse : SNRBaseModel
 
-@property (copy, nonatomic, nullable, readonly) NSString *message;
-@property (copy, nonatomic, nullable, readonly) SNRAssignVoucherData *assignVoucherData;
+@property (copy, nonatomic, nonnull, readonly) NSString *message;
+@property (copy, nonatomic, nonnull, readonly) SNRAssignVoucherData *assignVoucherData;
 
 @end
 

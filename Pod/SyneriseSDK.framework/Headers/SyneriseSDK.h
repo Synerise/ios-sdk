@@ -15,10 +15,16 @@
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
 #import <SyneriseSDK/SNRInjector.h>
-#import <SyneriseSDK/SNRLoyalty.h>
+#import <SyneriseSDK/SNRPromotions.h>
 
 // Settings
 #import <SyneriseSDK/SNRNotificationServiceSettings.h>
+
+// Exceptions
+#import <SyneriseSDK/SNRExceptionHandler.h>
+#import <SyneriseSDK/SNRException.h>
+#import <SyneriseSDK/SNRInvalidArgumentException.h>
+#import <SyneriseSDK/SNRIllegalArgumentException.h>
 
 // Errors
 #import <SyneriseSDK/SNRErrorsList.h>
@@ -27,14 +33,8 @@
 #import <SyneriseSDK/SNRInvalidArgumentError.h>
 #import <SyneriseSDK/SNRIllegalArgumentError.h>
 
-// Exceptions
-#import <SyneriseSDK/SNRExceptionHandler.h>
-#import <SyneriseSDK/SNRException.h>
-#import <SyneriseSDK/SNRInvalidArgumentException.h>
-#import <SyneriseSDK/SNRIllegalArgumentException.h>
-
-// Services
-#import <SyneriseSDK/SNRCacheService.h>
+// Managers
+#import <SyneriseSDK/SNRCacheManager.h>
 
 // Events
 #import <SyneriseSDK/SNREvent.h>

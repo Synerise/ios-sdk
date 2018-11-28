@@ -75,7 +75,7 @@ NS_SWIFT_NAME(Tracker)
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
- * Sets configuration of tracker.
+ * Sets configuration of Tracker.
  *
  * @param configuration Configuration of tracker.
  */
@@ -112,9 +112,9 @@ NS_SWIFT_NAME(Tracker)
 + (void)send:(SNREvent *)event;
 
 /**
- * Forces sending unsent events to Synerise server.
+ * Sends events from queue to server by force.
  *
- * @param completion A block to be executed when @c SNRTracler has finished flushing events to Synerise servers, no matter the result.
+ * @param completion A block to be executed when SNRTracker has finished flushing events to Synerise servers, no matter the result.
  */
 + (void)flushEventsWithCompletionHandler:(nullable void (^)(void))completion NS_SWIFT_NAME(flushEvents(completionHandler:));
 
