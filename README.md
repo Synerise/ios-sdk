@@ -372,6 +372,9 @@ func snr_handledAction(deepLink: String, activity: SyneriseActivity, completionH
 ```
 
 
+
+# Push Notifications
+
 ## Configure push notifications
 
 When you want to use the full functionality of **Synerise SDK**, you have to configure Push Notifications. It works with help Firebase Messaging service. 
@@ -612,6 +615,9 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 [SNRNotificationServiceSettings sharedInstance].disableInAppAlerts = YES;
 ```
 
+
+
+# Features
 
 ## Errors handling
 
