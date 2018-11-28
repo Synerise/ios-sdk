@@ -616,15 +616,16 @@ We've created an error wrapper `SNRApiError` to handle API errors. It inherits f
 #### Features
 
 ##### `getType`
-`SNRApiErrorType.Http` - it's returned when request succeeded to execute, but something went wrong and error code is returned (e.g. 403).
-`SNRApiErrorType.Network` - it's returned when request failed to execute (e.g. due to no Internet connection).
-`SNRApiErrorType.UnauthorizedSession` - it's returned when session is invalid for given request.
-`SNRApiErrorType.Unknown` - it's returned when unknown error occurred (e.g. no response from server when expected).
+`SNRApiErrorType.Http` - it's returned when request succeeded to execute, but something went wrong and error code is returned (e.g. 403).  
+`SNRApiErrorType.Network` - it's returned when request failed to execute (e.g. due to no Internet connection).  
+`SNRApiErrorType.UnauthorizedSession` - it's returned when session is invalid for given request.  
+`SNRApiErrorType.Unknown` - it's returned when unknown error occurred (e.g. no response from server when expected).  
 
 ##### `getHttpCode`
 Returns http status code. If request failed to execute (e.g. due to no Internet connection), this value will be equal -1.
 
 ##### `getBody`
+Returns description parsed from response's error causes list. May be null if error type is different than `SNRApiErrorType.Http`.
 
 #### Example
 
