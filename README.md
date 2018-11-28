@@ -57,15 +57,14 @@ Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTO
 Make sure `Copy items if needed` is selected and click `Finish`.
 
 
+
+# Configuration
+
 ## Dependencies
 
 **Synerise SDK** requires Firebase with Messaging service so you have to import these dependencies for CocoaPods or Carthage.
 
 Note: more about Firebase configuration - [get started with Firebase iOS](https://firebase.google.com/docs/storage/ios/start).
-
-
-
-# Configuration
 
 1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
 2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
@@ -183,7 +182,7 @@ static NSString *apiBaseUrl = @"YOUR_API_BASE_URL";
 ```
 
 
-## Debug Logs
+## Debug logs
 
 It is not recommended to use debug mode in a release version of your app.
 
@@ -199,6 +198,7 @@ Synerise.setDebugModeEnabled(true)
 [SNRSynerise setDebugModeEnabled:YES];
 ```
 
+
 However, it might be enabled or disabled for each module by method `setLoggingEnabled`.
 
 **Swift:**
@@ -211,10 +211,10 @@ Tracker.setLoggingEnabled(true)
 [SNRTracker setLoggingEnabled(YES];
 ```
 
-- Tracker: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
-- Client: you can receive some simple logs about client actions by enabling debug mode, which is disabled by default.
-- Promotions: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
-- Injector: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
+- **Tracker**: you can receive some simple logs about sending events by enabling debug mode, which is disabled by default.
+- **Client**: you can receive some simple logs about client actions by enabling debug mode, which is disabled by default.
+- **Promotions**: you can receive some simple logs about promotions and vouchers actions by enabling debug mode, which is disabled by default.
+- **Injector**: you can receive some simple logs about Injector actions by enabling debug mode, which is disabled by default.
 
 
 ## Synerise SDK delegate
@@ -226,11 +226,11 @@ There is one more method when **Synerise SDK** needs re-registration for push no
 
 **Swift:**
 ```swift
-//MARK: SyneriseDelegate
+// MARK: - SyneriseDelegate
     
-//optional method - Synerise SDK needs registration for push notifications again
-//it is optional but if you use push notifications, it is required
-//propable implementation
+// optional method - Synerise SDK needs registration for push notifications again
+// it is optional but if you use push notifications, it is required
+// sample implementation
 func snr_registerForPushNotificationsIsNeeded() {
 	if let fcmToken: String = Messaging.messaging().fcmToken {
 		Client.registerForPush(registrationToken: fcmToken, success: { (success) in
@@ -298,9 +298,9 @@ func snr_handledAction(deepLink: String, activity: SyneriseActivity, completionH
 ```objective-c
 #pragma mark - SNRSyneriseDelegate
 
-//optional method - Synerise SDK needs registration for push notifications again
-//it is optional but if you use push notifications, it is required
-//propable implementation
+// optional method - Synerise SDK needs registration for push notifications again
+// it is optional but if you use push notifications, it is required
+// sample implementation
 - (void)SNR_registerForPushNotificationsIsNeeded {
 	NSString *fcmToken = [FIRMessaging messaging].FCMToken;
 	if (fcmToken) {
@@ -400,7 +400,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	application.registerForRemoteNotifications()
 }
 
-//MARK: MessagingDelegate
+// MARK: - MessagingDelegate
 
 func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
 	Client.registerForPush(registrationToken: fcmToken, success: { (success) in
@@ -486,7 +486,7 @@ func application(_ application: UIApplication, handleActionWithIdentifier identi
 }
 
 // iOS 10 and above
-// MARK: UNUserNotificationCenterDelegate
+// MARK: - UNUserNotificationCenterDelegate
 
 @available(iOS 10.0, *)
 func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
@@ -613,21 +613,21 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 
 We've created an error wrapper `SNRApiError` to handle API errors. It inherits from standard iOS object for errors - `NSError`. 
 
-#### Features
+### Features
 
-##### `getType`
+#### `getType`
 `SNRApiErrorType.Http` - it's returned when request succeeded to execute, but something went wrong and error code is returned (e.g. 403).  
 `SNRApiErrorType.Network` - it's returned when request failed to execute (e.g. due to no Internet connection).  
 `SNRApiErrorType.UnauthorizedSession` - it's returned when session is invalid for given request.  
 `SNRApiErrorType.Unknown` - it's returned when unknown error occurred (e.g. no response from server when expected).  
 
-##### `getHttpCode`
+#### `getHttpCode`
 Returns http status code. If request failed to execute (e.g. due to no Internet connection), this value will be equal -1.
 
-##### `getBody`
+#### `getBody`
 Returns description parsed from response's error causes list. May be null if error type is different than `SNRApiErrorType.Http`.
 
-#### Example
+### Example
 
 When we receive an error, we can check if error is `SNRApiError` instance and then, there is possibility to get more information and get a list of all errors that occurred. 
 
@@ -679,11 +679,11 @@ func showErrorInfo(_ error: NSError, title: String = "Error", debug: Bool = true
 			})
 		}
 
-		//second approach
-		//apiErrorDebugInfo.append("\n\n")
+		// second approach
+		// apiErrorDebugInfo.append("\n\n")
 		//
-		//let apiErrorCauseString: String = apiError.getBody() ?? ""
-		//apiErrorDebugInfo.append(apiErrorCauseString)
+		// let apiErrorCauseString: String = apiError.getBody() ?? ""
+		// apiErrorDebugInfo.append(apiErrorCauseString)
 
 		self.presentAlert(title: "Debug SNRApiError", message: apiErrorDebugInfo)
 
@@ -716,8 +716,8 @@ func signIn(email: String, password: String) {
 	if ([error isKindOfClass:[SNRApiError class]]) {
 		SNRApiError *apiError = (SNRApiError *)error;
 
-		NSLog(apiError.localizedFailureReason) //print information string about all issues
-		NSLog(apiError.errors) //print list of error objects about issues that occured
+		NSLog(apiError.localizedFailureReason) // print information string about all issues
+		NSLog(apiError.errors) // print list of error objects about issues that occured
 	}
 }];
 ```
@@ -739,7 +739,9 @@ SNRClientAccountInformation *clientAccountInformation = [CacheManager get:Client
 ```
 
 At this point, **Synerise SDK** caches:
-* ```ClientAccountInformation``` after successful Client.getAccount() response.
+* `ClientAccountInformation` after successful Client.getAccount() response.
+
+
 
 # Tracker
 
@@ -926,9 +928,10 @@ Sends events from queue to server by force.
 **Swift:**
 ```swift
 Tracker.flushEvents {
-	// A block to be executed when SNRTracker has finished flushing events to Synerise servers, no matter the result.
+	// a block to be executed when SNRTracker has finished flushing events to Synerise servers, no matter the result.
 }
 ```
+
 
 
 # Client
@@ -953,9 +956,9 @@ context.lastName = "LAST_NAME"
 context.agreements = agreements
 
 Client.registerAccount(context: context, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -966,9 +969,9 @@ Activates client's account.
 **Swift:**
 ```swift
 Client.activateAccount(email: email, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -982,9 +985,9 @@ let email: String = "EMAIL"
 let password: String = "PASSWORD"
 
 Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -999,9 +1002,9 @@ guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
 }
         
 Client.authenticate(facebookToken: facebookToken, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1034,9 +1037,9 @@ Retrieves current client's token. This method provides valid token if client is 
 **Swift:**
 ```swift
 Client.getToken(success: { (token) in
-	//success
+	// success
 }) { (error) in
-	//failure
+	// failure
 }
 ```
 
@@ -1058,11 +1061,11 @@ Get client's account information.
 **Swift:**
 ```swift
 Client.getAccount(success: { (clientAccountInformation) in
-	//success
+	// success
 	print(clientAccountInformation.firstName)
 	print(clientAccountInformation.lastName)
 }) { (error) in
-	//failure
+	// failure
 }
 ```
 
@@ -1078,9 +1081,9 @@ context.lastName = "LAST_NAME"
 context.sex = ClientSex.male
 
 Client.updateAccount(context: context, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1093,9 +1096,9 @@ Requests client's password reset with email. A client will receive a token on th
 let context: ClientPasswordResetRequestContext = ClientPasswordResetRequestContext(email: "EMAIL")
 
 Client.requestPasswordReset(context: context, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 }) 
 ```
 
@@ -1108,9 +1111,9 @@ Confirms client's password reset with new password and token provided.
 let context: ClientPasswordResetConfirmationContext = ClientPasswordResetConfirmationContext(password: "PASSWORD", token: "TOKEN")
 
 Client.confirmResetPassword(context: context, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1124,9 +1127,9 @@ let password: String = "PASSWORD"
 let oldPassword: String = "OLD_PASSWORD"
 
 Client.changePassword(password: password, oldPassword: oldPassword, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1139,9 +1142,9 @@ Requests client's phone update. A client will receive a code on the provided pho
 let phone: String = "123456789"
 
 Client.requestPhoneUpdate(phone: phone, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1155,9 +1158,9 @@ let phone: String = "123456789"
 let confirmationCode: String = "CONFIRMATION_CODE"
 
 Client.confirmPhoneUpdate(phone: phone, confirmationCode: confirmationCode, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1168,9 +1171,9 @@ Deletes client's account information.
 **Swift:**
 ```swift
 Client.deleteAccount(success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1183,11 +1186,12 @@ Registers user for push notifications.
 let fcmToken: String = Messaging.messaging().fcmToken //FCM Token, it should be returned from FIRMessagingDelegate
 
 Client.registerForPush(registrationToken: fcmToken,
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
+
 
 
 # Promotions
@@ -1200,9 +1204,9 @@ Gets all available promotions that are defined for this client.
 **Swift:**
 ```swift
 Promotions.getPromotions(success: { (promotionResponse) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1231,10 +1235,10 @@ let page: Int = 0
 let includeMeta: Bool = false
 
 Promotions.getPromotions(statuses: statuses, types: types, limit: limit, page: page, includeMeta: includeMeta, success: { (promotionResponse) in
-	//success
+	// success
 	print(promotionResponse.items)
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1247,11 +1251,11 @@ Gets promotion that are defined for UUID parameter provided.
 let UUID: String = "UUID"
 
 Promotions.getPromotion(uuid: UUID, success: { (promotion) in
-	//success
+	// success
 	print(promotion.code)
 	print(promotion.discountValue)
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1264,11 +1268,11 @@ Gets promotion that are defined for code parameter provided.
 let code: String = "CODE"
 
 Promotions.getPromotion(code: code, success: { (promotion) in
-	//success
+	// success
 	print(promotion.code)
 	print(promotion.discountValue)
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1281,9 +1285,9 @@ Activates promotion that are defined for UUID parameter provided.
 let UUID: String = "UUID"
 
 Promotions.activatePromotion(uuid: UUID, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1296,9 +1300,9 @@ Activates promotion that are defined for code parameter provided.
 let code: String = "CODE"
 
 Promotions.activatePromotion(code: code, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1326,9 +1330,9 @@ Dectivates promotion that are defined for code parameter provided.
 let code: String = "CODE"
 
 Promotions.deactivatePromotion(code: code, success: { (success) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1341,9 +1345,9 @@ Gets voucher code only once or assign voucher with provided pool UUID for the cl
 let poolUUID: String = "POOL_UUID"
 
 Promotions.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1356,9 +1360,9 @@ Assigns voucher with provided pool UUID for the client.
 let poolUUID: String = "POOL_UUID"
 
 Promotions.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
 
@@ -1369,11 +1373,12 @@ Gets client's voucher codes.
 **Swift:**
 ```swift
 Promotions.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
-	//success
+	// success
 }, failure: { (error) in
-	//failure
+	// failure
 })
 ```
+
 
 
 # Injector
@@ -1410,7 +1415,7 @@ When you choose to load and present Walkthrough manually, you may be interested 
 
 **Swift:**
 ```swift
-//MARK: InjectorWalkthroughDelegate
+// MARK: - InjectorWalkthroughDelegate
 
 // this method will be called when Walkthrough is loaded
 func snr_walkthroughDidLoad() {
@@ -1491,7 +1496,7 @@ Fortunately, you can control incoming banners by implementing an optional delega
 
 **Swift:**
 ```swift
-//MARK: InjectorBannerDelegate
+// MARK: - InjectorBannerDelegate
 
 // this method will be called when Synerise SDK asks if it can display a banner at the moment
 // bannerDictionary parameter is dictionary representation of banner. If you don't want to show a banner at the moment, you can return false. Then, do it later by calling Injector.showBanner(_: Dictionary, markPresented: Bool) to show banner with provided data.
@@ -1582,6 +1587,8 @@ This is it. When presented View Controller implementing that protocol, Synerise 
 ### Campaign Pushes information
 
 `Injector.getPushes(success:failure:)` gets all available simple and silent pushes for this client. On success closure, you get Array of push notifications in dictionary representation.
+
+
 
 # Author
 Synerise, developer@synerise.com. If you need support please feel free to contact us.
