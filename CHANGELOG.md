@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.3] - 2018-12-06
+
+### Fixed
+- Promotions.getPromotionByUuid.
+- Promotions.getPromotionByCode.
 
 ## [3.3.2] - 2018-11-28
 
@@ -15,7 +20,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 - Improving Synerise SDK stability.
-- Optymalizing networking in Synerise SDK.
+- Optimisation of networking in Synerise SDK.
 
 ## [3.3.1] - 2018-11-21
 
