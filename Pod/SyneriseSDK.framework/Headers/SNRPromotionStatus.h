@@ -11,7 +11,8 @@
  */
 
 typedef NS_ENUM(NSUInteger, SNRPromotionStatus) {
-    SNRPromotionStatusActive = 0,
+    SNRPromotionStatusNone = 0,
+    SNRPromotionStatusActive,
     SNRPromotionStatusAssigned,
     SNRPromotionStatusRedeemed
 } NS_SWIFT_NAME(PromotionStatus);
