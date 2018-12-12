@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.4] - 2018-12-12
+
+### Fixed
+- Promotions.getPromotions.
+
 ## [3.3.3] - 2018-12-06
 
 ### Fixed
