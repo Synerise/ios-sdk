@@ -46,6 +46,17 @@ NS_SWIFT_NAME(Client)
                 failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerAccount(context:success:failure:));
 
 /*
+ * Confirms client's account.
+ *
+ * @param email Confirmation token.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)confirmAccount:(NSString *)token
+               success:(nullable void (^)(BOOL isSuccess))success
+               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(token:success:failure:));
+
+/*
  * Activates client's account.
  *
  * @param email Client’s email.
@@ -191,11 +202,12 @@ NS_SWIFT_NAME(Client)
 /**
  * Deletes client's account information.
  *
+ * @param password Client's password.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)deleteAccountWithSuccess:(nullable void (^)(BOOL isSuccess))success
-                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(success:failure:));
++ (void)deleteAccount:(NSString *)password success:(nullable void (^)(BOOL isSuccess))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
 
 /**
  * Registers user for push notifications.
