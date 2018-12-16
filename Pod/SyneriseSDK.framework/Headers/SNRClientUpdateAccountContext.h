@@ -36,7 +36,6 @@ NS_SWIFT_NAME(ClientUpdateAccountContext)
 @property (copy, nonatomic, nullable, readwrite) NSDate *lastActivityDate;
 @property (assign, nonatomic, readwrite) SNRClientSex sex;
 @property (copy, nonatomic, nullable, readwrite) NSString *avatarUrl;
-@property (assign, nonatomic, readwrite) BOOL anonymous;
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
 @property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *tags;

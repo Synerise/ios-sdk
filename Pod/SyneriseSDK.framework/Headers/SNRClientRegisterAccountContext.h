@@ -10,15 +10,6 @@
 #import "SNRClientSex.h"
 #import "SNRClientAgreements.h"
 
-/**
- * @enum SNRClientRegisterAccountContextRegistrationType
- */
-
-typedef NS_ENUM(NSInteger, SNRClientRegisterAccountContextRegistrationType) {
-    SNRClientRegisterAccountContextRegistrationTypeByEmail,
-    SNRClientRegisterAccountContextRegistrationTypeByEmailWithoutActivation
-} NS_SWIFT_NAME(RegistrationType);
-
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -27,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(ClientRegisterAccountContext)
 @interface SNRClientRegisterAccountContext : SNRBaseContext
-
-@property (assign, nonatomic, readonly) SNRClientRegisterAccountContextRegistrationType registrationType;
 
 @property (copy, nonatomic, nullable, readwrite) NSString *email;
 @property (copy, nonatomic, nonnull, readwrite) NSString *password;
@@ -55,7 +44,6 @@ NS_SWIFT_NAME(ClientRegisterAccountContext)
 + (instancetype)new __unavailable;
 
 - (instancetype)initWithEmail:(NSString *)email andPassword:(NSString *)password NS_SWIFT_NAME(init(email:password:));
-- (instancetype)initWithoutActivationWithEmail:(NSString *)email andPassword:(NSString *)password NS_SWIFT_NAME(initWithoutActivation(email:password:));
 
 @end
 
