@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.5] - 2018-12-16
+
+### Added
+- Client.confirmAccount method.
+
+### Changed
+- Client.deleteAccount method requires password.
+
+### Fixed
+- Client.updateAccount method. Unless sex property in update context is set, api request payload doesn't contain it.
+
+### Removed
+- Client.registerAccount method option to registration without email.
+
 ## [3.3.4] - 2018-12-12
 
 ### Fixed
