@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.6] - 2018-12-18
+
+### Changed
+- Client.deleteAccount method.
+
 ## [3.3.5] - 2018-12-16
 
 ### Added
