@@ -1494,6 +1494,58 @@ If an app was not active (closed or in the background) and the campaign came in 
 
 If an app is active, a simple push is presented right away.
 
+### Payload
+
+```json
+{
+  "data": {
+    "issuer": "Synerise",
+    "message-type": "static-content",
+    "content-type": "simple-push",
+    "content": {
+      "notification": {
+        "title": "Synerise Simple Push title",
+        "body": "Synerise Simple Push message",
+        "sound": "default",
+        "icon": "http://images.synerise.com/marvellous_image.jpg",
+        "priority": "HIGH",
+        "action": {
+          "item": "https://synerise.com",
+          "type": "OPEN_URL"
+        }
+      },
+      "buttons": [
+        {
+          "identifier": "button_1",
+          "action": {
+            "item": "https://synerise.com",
+            "type": "OPEN_URL"
+          },
+          "text": "Button 1"
+        },
+        {
+          "identifier": "button_2",
+          "action": {
+            "item": "syne://product?sku=el-oven",
+            "type": "DEEP_LINKING"
+          },
+          "text": "Button 2"
+        }
+      ],
+      "campaign": {
+        "variant_id": 12345,
+        "type": "Mobile push",
+        "title": "Mobile push test campaign",
+        "hash_id": "1893b5be-79c6-4432-xxxx-81e7bd4ea09d"
+      }
+    }
+  }
+}
+```
+
+Action types are: DEEP_LINKING, OPEN_URL, OPEN_APP.
+Priority types are: NORMAL, HIGH.
+
 
 ## Banner campaign
 
@@ -1547,6 +1599,75 @@ func snr_bannerDidDisappear() {
 	//...
 }
 ```
+
+### Payload
+
+```json
+{
+  "notification": {
+    "title": "Notification title if app was invisible",
+    "body": "Notification message if app was invisible"
+  },
+  "data": {
+    "issuer": "Synerise",
+    "message-type": "dynamic-content",
+    "content-type": "template-banner",
+    "content": {
+      "page": {
+        "type": "image_with_text_atop",
+        "button": {
+          "is_enabled": true,
+          "corner_radius": 40,
+          "color": "#13e413",
+          "text": "Navigate to Synerise",
+          "text_color": "#1f74d9"
+        },
+        "image": {
+          "url": "http://images.synerise.com/marvellous_image.jpg"
+        },
+        "close_button": {
+          "is_enabled": true,
+          "alignment": "LEFT"
+        },
+        "background": {
+          "color": "#d319d3",
+          "alpha": 0.5
+        },
+        "index": 0,
+        "header": {
+          "color": "#384350",
+          "size": 35,
+          "alpha": 1,
+          "text": "SYNERISE"
+        },
+        "description": {
+          "color": "#384350",
+          "size": 20,
+          "alpha": 1,
+          "text": "Click below button to open Synerise website"
+        },
+        "action": {
+          "item": "http://synerise.com",
+          "type": "OPEN_URL"
+        }
+      },
+      "auto_disappear": {
+        "is_enabled": true,
+        "timeout": 5
+      },
+      "campaign": {
+        "variant_id": 12345,
+        "type": "Mobile banner",
+        "title": "Mobile banner test campaign",
+        "hash_id": "1893b5be-79c6-4432-xxxx-81e7bd4ea09d"
+      }
+    }
+  }
+}
+```
+
+Banner types are: color_as_background, image_as_background, image_with_text_atop, image_with_text_below.
+
 
 ### Triggers
 
