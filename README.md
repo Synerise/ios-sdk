@@ -674,7 +674,7 @@ func showErrorInfo(_ error: NSError, title: String = "Error", debug: Bool = true
 		apiErrorDebugInfo.append("\n\n")
 		apiErrorDebugInfo.append("\(apiError.localizedDescription)")
 
-		//first approach
+		// first approach
 		if let apiErrorCauses = apiError.errors, !apiErrorCauses.isEmpty {
 			apiErrorDebugInfo.append("\n\n")
 
@@ -1690,6 +1690,32 @@ Then, call `Injector.showBanner(_: Dictionary)` to show banner immediately. In t
 
 
 ## Common features
+
+### Own implementation (Simple Push, Banner)
+
+You can also react to Synerise push notifications by yourself and that is why we would like to share our Synerise Simple Push and Synerise Banner payload (see corresponding sections above).
+
+You may need to know whether incoming push message comes from Synerise.
+
+`Synerise.isSyneriseNotification(_:)` - checks whether provided push data comes from Synerise. It is validated by checking if incoming push contains "issuer" key with "Synerise" value.
+
+Example:
+```swift
+func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+	let userInfo = notification.request.content.userInfo
+
+	let isSyneriseNotification: Bool = Synerise.isSyneriseNotification(userInfo)
+	if isSyneriseNotification {
+		// default implementation by Synerise SDK
+		// Synerise.handleNotification(userInfo)
+		// or
+		// your own implementation
+		completionHandler(UNNotificationPresentationOptions.init(rawValue: 0))
+	} else {
+		//...
+	}
+}
+```
 
 ### `SyneriseActivityNotAllowed` protocol
 
