@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.7] - 2019-01-09
+
+### Added
+- Synerise.locationAutomatic(boolean) method to obtain user location and send location event automatically.
+
+### Fixed
+- Improving SDK stability.
+
 ## [3.3.6] - 2018-12-18
 
 ### Changed
