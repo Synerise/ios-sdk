@@ -24,8 +24,8 @@ NS_SWIFT_NAME(ClientAccountInformation)
 @property (copy, nonatomic, nullable, readonly) NSString *phone;
 @property (copy, nonatomic, nullable, readonly) NSString *customId;
 @property (copy, nonatomic, nonnull, readonly) NSString *uuid;
-@property (copy, nonatomic, nonnull, readonly) NSString *firstName;
-@property (copy, nonatomic, nonnull, readonly) NSString *lastName;
+@property (copy, nonatomic, nullable, readonly) NSString *firstName;
+@property (copy, nonatomic, nullable, readonly) NSString *lastName;
 @property (copy, nonatomic, nullable, readonly) NSString *displayName;
 @property (copy, nonatomic, nullable, readonly) NSString *company;
 @property (copy, nonatomic, nullable, readonly) NSString *address;

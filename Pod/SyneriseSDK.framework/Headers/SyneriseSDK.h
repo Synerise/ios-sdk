@@ -24,14 +24,12 @@
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>
 #import <SyneriseSDK/SNRInvalidArgumentException.h>
-#import <SyneriseSDK/SNRIllegalArgumentException.h>
 
 // Errors
 #import <SyneriseSDK/SNRErrorsList.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRApiError.h>
 #import <SyneriseSDK/SNRInvalidArgumentError.h>
-#import <SyneriseSDK/SNRIllegalArgumentError.h>
 
 // Managers
 #import <SyneriseSDK/SNRCacheManager.h>

@@ -53,6 +53,24 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
     
 } NS_SWIFT_NAME(AutoTrackMode);
 
+/**
+ * @protocol SNRTrackerDelegate
+ *
+ * A protocol to handle events from Tracker.
+ */
+
+NS_SWIFT_NAME(TrackerDelegate)
+@protocol SNRTrackerDelegate
+
+@optional
+
+/**
+ * This method will be called when Tracker requests about location update.
+ */
+- (void)SNR_locationUpdateRequired NS_SWIFT_NAME(snr_locationUpdateRequired());
+
+@end
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -75,6 +93,13 @@ NS_SWIFT_NAME(Tracker)
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
+ * Sets object for Tracker delegate methods.
+ *
+ * @param delegate An object that implement SNRTrackerDelegate protocol.
+ */
++ (void)setDelegate:(id<SNRTrackerDelegate>)delegate;
+
+/**
  * Sets configuration of Tracker.
  *
  * @param configuration Configuration of tracker.
@@ -89,6 +114,13 @@ NS_SWIFT_NAME(Tracker)
  * @param mode Mode of AutoTrack functionality.
  */
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
+
+/**
+ * Enables/disables sending location event automatically
+ *
+ * @param enabled Specifies that sending location event is enabled/disabled.
+ */
++ (void)setLocationAutomaticEnabled:(BOOL)enabled;
 
 /**
  * Your custom identifier will be sent within every event in event params.
