@@ -149,7 +149,7 @@ NS_SWIFT_NAME(Injector)
 /**
  * Provides valid banners right from SDK cache.
  */
-+ (NSArray *)getBanners;
++ (NSArray<NSDictionary *> *)getBanners;
 
 /**
  * Fetches banners set for mobile campaigns and caches valid ones.
@@ -157,7 +157,7 @@ NS_SWIFT_NAME(Injector)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray *banners))success
++ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray<NSDictionary *> *banners))success
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
@@ -166,7 +166,7 @@ NS_SWIFT_NAME(Injector)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)getPushesWithSuccess:(nullable void (^)(NSArray *pushes))success
++ (void)getPushesWithSuccess:(nullable void (^)(NSArray<NSDictionary *> *pushes))success
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
