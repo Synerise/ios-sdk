@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.3.7) - User documentation
+# Synerise iOS SDK (v3.3.8) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.3.7-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.3.8-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -1004,7 +1004,7 @@ Client.signIn(email: email, password: password, deviceId: nil, success: { (succe
 ```
 
 
-#### `Client.authenticate(facebookToken:success:failure:)`
+#### `Client.authenticateByFacebook(facebookToken:success:failure:)`
 Signs in a client with Facebook Token.
 
 **Swift:**
@@ -1013,7 +1013,24 @@ guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
 	return
 }
         
-Client.authenticate(facebookToken: facebookToken, success: { (success) in
+Client.authenticateByFacebook(facebookToken: facebookToken, success: { (success) in
+	// success
+}, failure: { (error) in
+	// failure
+})
+```
+
+
+#### `Client.authenticateByFacebookIfRegistered(facebookToken:success:failure:)`
+Signs in a registered client with Facebook Token.
+
+**Swift:**
+```swift
+guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+	return
+}
+        
+Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success: { (success) in
 	// success
 }, failure: { (error) in
 	// failure
@@ -1145,6 +1162,36 @@ Client.changePassword(password: password, oldPassword: oldPassword, success: { (
 })
 ```
 
+#### `Client.requestEmailChange(email:success:failure:)`
+Requests client's email change.
+
+**Swift:**
+```swift
+let email = self.emailTextField.text ?? ""
+
+Client.requestEmailChange(email: email, success: { _ in
+	self.showSuccessInfo()
+}) { (error) in
+	self.showErrorInfo(error as NSError)
+}
+```
+
+
+#### `Client.confirmEmailChange(password:token:success:failure:)`
+Confirms client's email change with provided token.
+
+**Swift:**
+```swift
+let password = self.passwordTextField.text ?? ""
+let token = self.tokenTextField.text ?? ""
+
+Client.confirmEmailChange(password: password, token: token, success: { _ in
+	self.showSuccessInfo()
+}) { (error) in
+	self.showErrorInfo(error as NSError)
+}
+```
+
 
 #### `Client.requestPhoneUpdate(phone:success:failure:)`
 Requests client's phone update. A client will receive a code on the provided phone in order to use.
@@ -1186,6 +1233,25 @@ Client.deleteAccount(success: { (success) in
 	// success
 }, failure: { (error) in
 	// failure
+})
+```
+
+#### `Client.deleteAccountByFacebook(facebookToken:success:failure:)`
+Deletes client's account information by Facebook.
+
+**Swift:**
+```swift
+guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+	return
+}
+
+showLoading()
+Client.deleteAccountByFacebookToken(facebookToken: facebookToken, success: { (isSuccess) in
+	self.hideLoading()
+	self.showSuccessInfo()
+}, failure: { (error) in
+	self.hideLoading()
+	self.showErrorInfo(error as NSError)
 })
 ```
 

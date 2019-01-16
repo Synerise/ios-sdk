@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.8] - 2019-01-16
+
+### Added
+- Client.authenticateByFacebook method.
+- Client.authenticateByFacebookIfRegistered method.
+- Client.requestEmailChange method.
+- Client.confirmEmailChange method.
+- Client.deleteAccountByFacebook method.
+
+### Removed
+- Client.authenticateByFacebookToken method.
+
+### Changed
+- Client.getToken returns token and its origin (SYNERISE, FACEBOOK, OAUTH or UNKNOWN).
+
+### Fixed
+- Improving SDK stability.
+
 ## [3.3.7] - 2019-01-09
 
 ### Added
