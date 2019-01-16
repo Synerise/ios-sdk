@@ -79,6 +79,7 @@
 #import <SyneriseSDK/SNRAssignVoucherData.h>
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
 #import <SyneriseSDK/SNRVoucherCodesData.h>
+#import <SyneriseSDK/SNRTokenOrigin.h>
 
 // Content Extensions
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
