@@ -91,21 +91,11 @@ class UserLoginFormViewModel {
     }
 
     private func loginWithEmail(email: String, password: String) {
-        do {
-            try SNRExceptionHandler.catchException {
-                Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
-                    DispatchQueue.main.async {
-                        self.loginSuccess(response: success)
-                    }
-                }, failure: { (error) in
-                    DispatchQueue.main.async {
-                        self.loginError(error: error)
-                    }
-                })
-            }
-        } catch let error as NSError {
+        Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
+            self.loginSuccess(response: success)
+        }, failure: { (error) in
             self.loginError(error: error)
-        }
+        })
     }
 
     private func isProcessing(_ boolean: Bool) {

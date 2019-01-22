@@ -1,5 +1,5 @@
 //
-//  ClientAssignVoucherCodeTableViewController.swift
+//  ClientGetOrAssignVoucherTableViewController.swift
 //  SampleAppSwift
 //
 //  Created by Synerise
@@ -10,14 +10,14 @@ import UIKit
 import SyneriseSDK
 
 //swiftlint:disable type_name
-class ClientAssignVoucherCodeTableViewController: DefaultTableViewController {
+class ClientGetOrAssignVoucherTableViewController: DefaultTableViewController {
     
     @IBOutlet weak var poolUUIDTextField: UITextField!
     
     // MARK: - IBAction
     
-    @IBAction func assignVoucherCodeButtonWasPressed(_ sender: DefaultButton) {
-        assignVoucherCode()
+    @IBAction func getOrAssignVoucherButtonWasPressed(_ sender: DefaultButton) {
+        getOrAssignVoucher()
         sender.animateTapping()
     }
     
@@ -26,12 +26,12 @@ class ClientAssignVoucherCodeTableViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Client Assign Voucher Code"
+        self.navigationItem.title = "Get Or Assign Voucher"
     }
     
     // MARK: - Private
     
-    private func assignVoucherCode() {
+    private func getOrAssignVoucher() {
         
         guard let poolUUID = poolUUIDTextField.text, poolUUID != "" else {
             poolUUIDTextField.animateEmpty(withDuration: 0.3)
@@ -40,12 +40,11 @@ class ClientAssignVoucherCodeTableViewController: DefaultTableViewController {
         }
         
         showLoading()
-        Loyalty.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
+        Promotions.getOrAssignVoucher(poolUUID: poolUUID, success: { (assignVoucherResponse) in
             self.hideLoading()
             let debugInfoString = self.makeVoucherStringRepresentation(assignVoucherResponse)
-            DispatchQueue.main.async {
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+            
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -60,13 +59,13 @@ class ClientAssignVoucherCodeTableViewController: DefaultTableViewController {
     
     private func makeVoucherStringRepresentation(_ response: AssignVoucherResponse) -> String {
         
-        let message = response.message ?? "nil"
-        let code = response.assignVoucherData?.code ?? "nil"
-        let expireIn = response.assignVoucherData?.expireIn?.description ?? "nil"
-        let redeemAt = response.assignVoucherData?.redeemAt?.description ?? "nil"
-        let assignedAt = response.assignVoucherData?.assignedAt?.description ?? "nil"
-        let createdAt = response.assignVoucherData?.createdAt?.description ?? "nil"
-        let updatedAt = response.assignVoucherData?.updatedAt?.description ?? "nil"
+        let message = response.message
+        let code = response.assignVoucherData.code
+        let expireIn = response.assignVoucherData.expireIn?.description ?? "nil"
+        let redeemAt = response.assignVoucherData.redeemAt?.description ?? "nil"
+        let assignedAt = response.assignVoucherData.assignedAt?.description ?? "nil"
+        let createdAt = response.assignVoucherData.createdAt.description
+        let updatedAt = response.assignVoucherData.updatedAt.description
         
         let promotionStringRepresentation = """
         message: \(message)

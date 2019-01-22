@@ -53,23 +53,19 @@ class RegisterClientByEmailTableViewController: DefaultTableViewController {
     
     private func makeRegisterClientContext() -> ClientRegisterAccountContext? {
         guard let email = clientContextEmailTextField.text, email != "" else {
-            
             let emailRow = IndexPath(row: 0, section: 0)
-            DispatchQueue.main.async {
-                self.tableView.scrollToRow(at: emailRow, at: .middle, animated: true)
-                self.clientContextEmailTextField.becomeFirstResponder()
-            }
+
+            self.tableView.scrollToRow(at: emailRow, at: .middle, animated: true)
+            self.clientContextEmailTextField.becomeFirstResponder()
             
             return nil
         }
         
         guard let password = clientContextPasswordTextField.text, password != "" else {
-            
             let passwordRow = IndexPath(row: 0, section: 1)
-            DispatchQueue.main.async {
-                self.tableView.scrollToRow(at: passwordRow, at: .middle, animated: true)
-                self.clientContextPasswordTextField.becomeFirstResponder()
-            }
+
+            self.tableView.scrollToRow(at: passwordRow, at: .middle, animated: true)
+            self.clientContextPasswordTextField.becomeFirstResponder()
             
             return nil
         }

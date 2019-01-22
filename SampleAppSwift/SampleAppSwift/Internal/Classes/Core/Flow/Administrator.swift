@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 import Firebase
 import Swinject
 
@@ -22,6 +23,8 @@ class Administrator {
     static let shared = Administrator.resolve()
 
     var serviceProvider: ServiceProvider!
+    
+    var locationManager = CLLocationManager()
     
     // MARK: - Deinit
     
@@ -48,6 +51,10 @@ class Administrator {
     func setupNotifications() {
         let notificationService: NotificationService = self.serviceProvider.getNotificationService()
         notificationService.setup()
+    }
+    
+    func requestLocationServices() {
+        locationManager.requestAlwaysAuthorization()
     }
     
     // MARK: - Private

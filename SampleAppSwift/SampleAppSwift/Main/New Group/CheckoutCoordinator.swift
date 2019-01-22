@@ -20,6 +20,13 @@ class CheckoutCoordinator: Coordinator {
         setRootViewController()
     }
     
+    func startWithVouchers() {
+        super.start()
+        
+        let vouchersViewController: VouchersViewController = makeVouchersViewController()
+        configure.router.setRootModule(vouchersViewController, hideNavigationBar: false)
+    }
+    
     func showCartIsEmptyView() {
         let cartIsEmptyViewController: CartIsEmptyViewController = makeCartIsEmptyViewController()
         configure.router.push(cartIsEmptyViewController, animated: true, completion: nil)
@@ -29,11 +36,14 @@ class CheckoutCoordinator: Coordinator {
         let congratulationsViewController: CongratulationsViewController = makeCongratulationsViewController()
     
         congratulationsViewController.onContinueButton = {
-            congratulationsViewController.dismiss(animated: true, completion: nil)
-            self.setRootViewController()
+            congratulationsViewController.dismiss(animated: true, completion: {
+                self.checkoutViewController?.view.endEditing(true)
+            })
         }
         
         congratulationsViewController.onTrackOrderButton = {
+            CartManager.shared.placeOrder()
+            
             congratulationsViewController.dismiss(animated: true, completion: nil)
             self.setRootViewController()
         }
@@ -52,6 +62,13 @@ class CheckoutCoordinator: Coordinator {
             guard let checkoutViewController = self.checkoutViewController else { return }
             configure.router.setRootModule(checkoutViewController, hideNavigationBar: false)
         }
+    }
+    
+    private func makeVouchersViewController() -> VouchersViewController {
+        let vouchersViewController: VouchersViewController = VouchersViewController()
+        vouchersViewController.title = "Vouchers"
+        
+        return vouchersViewController
     }
     
     private func makeCartIsEmptyViewController() -> CartIsEmptyViewController {

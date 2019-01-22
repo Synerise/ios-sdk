@@ -1,5 +1,5 @@
 //
-//  LoyaltyAPIViewController.swift
+//  PromotionsAPIViewController.swift
 //  SampleAppSwift
 //
 // Created by Synerise
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class LoyaltyAPIViewController: DefaultViewController {
+class PromotionsAPIViewController: DefaultViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "VIEW_CONTROLLER_LOYALTY_API_TITLE".localized()
+        self.navigationItem.title = "VIEW_CONTROLLER_PROMOTIONS_API_TITLE".localized()
         
         prepareBackButton()
     }

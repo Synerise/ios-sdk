@@ -19,6 +19,8 @@ class ProductItemCollectionViewModel {
     let rating: Double
     let ratingCount: Int
     
+    var isPriceVisible: Bool = true
+    
     // MARK: - Init
     
     init(product: Product) {

@@ -21,21 +21,13 @@ class ChangeClientPasswordTableViewController: DefaultTableViewController {
         guard let oldPassword = oldClientPasswordTextField.text, !oldPassword.isEmpty else { return }
         
         self.showLoading()
-        
-        do {
-            try SNRExceptionHandler.catchException {
-                Client.changePassword(password: password, oldPassword: oldPassword, success: { (_) in
-                    self.hideLoading()
-                    self.showSuccessInfo()
-                }, failure: { (error) in
-                    self.hideLoading()
-                    self.showErrorInfo(error as NSError)
-                })
-            }
-        } catch let error as NSError {
+        Client.changePassword(password: password, oldPassword: oldPassword, success: { (_) in
+            self.hideLoading()
+            self.showSuccessInfo()
+        }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
-        }
+        })
     }
     
     // MARK: - Lifecycle

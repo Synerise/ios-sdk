@@ -15,6 +15,7 @@
 		2D07E15F20CFF39B005E89D5 /* LeftMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E15E20CFF39B005E89D5 /* LeftMenuItem.swift */; };
 		2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16020CFF453005E89D5 /* LeftMenuDataSource.swift */; };
 		2D07E16320CFF7F6005E89D5 /* LeftMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16220CFF7F6005E89D5 /* LeftMenuViewModel.swift */; };
+		2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */; };
 		2D24FAF020C5A519000B5B5D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24FAEF20C5A519000B5B5D /* NotificationService.swift */; };
 		2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
@@ -24,9 +25,11 @@
 		2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		2D401F27214A64430000F229 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D401F26214A64430000F229 /* NotificationViewController.swift */; };
 		2D401F2E214A64430000F229 /* SyneriseCarouselNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D401F22214A64430000F229 /* SyneriseCarouselNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
+		2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		2D42F44521512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42F44421512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift */; };
-		2D5924AB215D072B00191E8B /* LoyaltyAPI_Promotions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AA215D072B00191E8B /* LoyaltyAPI_Promotions.storyboard */; };
-		2D5924AE215D073C00191E8B /* LoyaltyAPI_Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AD215D073C00191E8B /* LoyaltyAPI_Vouchers.storyboard */; };
+		2D5924AB215D072B00191E8B /* PromotionsAPI_Promotions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AA215D072B00191E8B /* PromotionsAPI_Promotions.storyboard */; };
+		2D5924AE215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */; };
 		2D6C09652122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C09642122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift */; };
 		2D6C09672122DBBE008D178A /* ConfirmPhoneNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6C09662122DBBE008D178A /* ConfirmPhoneNumberTableViewController.swift */; };
 		2D84754C211DB51600317E30 /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84754B211DB51600317E30 /* ProfileInfoView.swift */; };
@@ -39,6 +42,12 @@
 		2DD999C6211C72A1007E24DC /* ClientGetPromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C5211C72A1007E24DC /* ClientGetPromotionTableViewController.swift */; };
 		2DD999C8211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */; };
 		2DF81EC720B8608D009AAC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF81EC620B8608D009AAC66 /* Assets.xcassets */; };
+		6F664DFD21EC969A00BCF749 /* UpdateEmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F664DFC21EC969A00BCF749 /* UpdateEmailTableViewController.swift */; };
+		6F664E0121EC96B600BCF749 /* ConfirmEmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F664E0021EC96B600BCF749 /* ConfirmEmailTableViewController.swift */; };
+		6F664E0821ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F664E0721ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift */; };
+		6F6A93BA21CD1B2700F69007 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6A93B921CD1B2700F69007 /* NSURL.swift */; };
+		6FFD723C21BFE17D00A721B3 /* DeleteAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */; };
+		6FFD724321C001F000A721B3 /* ConfirmClientAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */; };
 		A104C3D9212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */; };
 		A127138520F882CA00550CC0 /* CustomEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138420F882CA00550CC0 /* CustomEventViewController.swift */; };
 		A127138720F884BD00550CC0 /* CustomEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138620F884BD00550CC0 /* CustomEventParameter.swift */; };
@@ -131,8 +140,9 @@
 		A1D072A620F60D3A00BF9361 /* EventsTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D072A520F60D3A00BF9361 /* EventsTrackerViewController.swift */; };
 		A1E27A0020E6482A00E595B5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E279FF20E6482A00E595B5 /* Section.swift */; };
 		A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */; };
-		A1E6B71C212D7A6200A06735 /* RegisterClientByEmailWithoutActivationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6B71B212D7A6200A06735 /* RegisterClientByEmailWithoutActivationTableViewController.swift */; };
 		A1E9F1AD211DEDD6003EE067 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */; };
+		B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
+		B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68CB20C7EBFC00A8ECBE /* String.swift */; };
 		B84F68CF20C7EC4900A8ECBE /* UserRegistrationFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */; };
 		B84F68D120C7EC9900A8ECBE /* UserRegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */; };
@@ -201,8 +211,8 @@
 		FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F662180B0E500782954 /* SettingsViewController.swift */; };
 		FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAA2F672180B0E500782954 /* SettingsViewController.xib */; };
 		FFAA2F6B2180B10100782954 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F6A2180B10100782954 /* SettingsCoordinator.swift */; };
-		FFB1F02F219D637C00649A19 /* LoyaltyAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB1F02E219D637C00649A19 /* LoyaltyAPI.storyboard */; };
-		FFB1F034219D63E500649A19 /* LoyaltyAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1F033219D63E500649A19 /* LoyaltyAPIViewController.swift */; };
+		FFB1F02F219D637C00649A19 /* PromotionsAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB1F02E219D637C00649A19 /* PromotionsAPI.storyboard */; };
+		FFB1F034219D63E500649A19 /* PromotionsAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1F033219D63E500649A19 /* PromotionsAPIViewController.swift */; };
 		FFB1F039219D7BD200649A19 /* ClientAPI_Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB1F038219D7BD200649A19 /* ClientAPI_Account.storyboard */; };
 		FFB1F03B219D7C7500649A19 /* ClientAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1F03A219D7C7500649A19 /* ClientAccountViewController.swift */; };
 		FFBB87FA20ECE21A007142DF /* DeveloperToolsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB87F920ECE21A007142DF /* DeveloperToolsCoordinator.swift */; };
@@ -213,6 +223,12 @@
 		FFD08F3920C2CD880083A890 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F3820C2CD880083A890 /* StoryboardUtils.swift */; };
 		FFD08F3D20C2CF2A0083A890 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F3C20C2CF2A0083A890 /* Storyboards.swift */; };
 		FFD08F4220C2D5780083A890 /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F4120C2D5780083A890 /* DefaultViewController.swift */; };
+		FFD9C44221DF794F00B83192 /* VouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9C44121DF794F00B83192 /* VouchersViewController.swift */; };
+		FFD9C44621DF7A5700B83192 /* VouchersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD9C44521DF7A5700B83192 /* VouchersViewController.xib */; };
+		FFD9C44A21DF993900B83192 /* CheckoutVoucherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9C44821DF993900B83192 /* CheckoutVoucherTableViewCell.swift */; };
+		FFD9C44B21DF993900B83192 /* CheckoutVoucherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD9C44921DF993900B83192 /* CheckoutVoucherTableViewCell.xib */; };
+		FFD9C44D21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9C44C21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift */; };
+		FFDA615821DCC3A400D70CBD /* DeviceInfoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA615721DCC3A400D70CBD /* DeviceInfoUtils.swift */; };
 		FFDF425D20C5FA3B00892782 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF425C20C5FA3B00892782 /* Assembly.swift */; };
 		FFE4329D2189F64A0044865A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA36A2E20C74505003CFB91 /* RegistrationViewController.xib */; };
 		FFEB21F120C5C4CD00DBAF08 /* SyneriseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB21F020C5C4CD00DBAF08 /* SyneriseManager.swift */; };
@@ -222,6 +238,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D02B5AC213821340001039D;
+			remoteInfo = SyneriseSDKTests;
+		};
 		2D401F18214A64180000F229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2DF81EB420B8608B009AAC66 /* Project object */;
@@ -250,6 +273,20 @@
 			remoteGlobalIDString = 2DF81EBB20B8608B009AAC66;
 			remoteInfo = SampleAppSwift;
 		};
+		B810EC8420C6902000218B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 617D3BB21FA21C7200AC0440;
+			remoteInfo = SyneriseSDK;
+		};
+		B810EC8820C6904900218B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 617D3BB11FA21C7200AC0440;
+			remoteInfo = SyneriseSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -271,6 +308,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,8 +333,8 @@
 		2D401F26214A64430000F229 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2D401F2B214A64430000F229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D42F44421512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDeactivatePromotionTableViewController.swift; sourceTree = "<group>"; };
-		2D5924AA215D072B00191E8B /* LoyaltyAPI_Promotions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoyaltyAPI_Promotions.storyboard; sourceTree = "<group>"; };
-		2D5924AD215D073C00191E8B /* LoyaltyAPI_Vouchers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoyaltyAPI_Vouchers.storyboard; sourceTree = "<group>"; };
+		2D5924AA215D072B00191E8B /* PromotionsAPI_Promotions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromotionsAPI_Promotions.storyboard; sourceTree = "<group>"; };
+		2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromotionsAPI_Vouchers.storyboard; sourceTree = "<group>"; };
 		2D6C09642122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePhoneNumberTableViewController.swift; sourceTree = "<group>"; };
 		2D6C09662122DBBE008D178A /* ConfirmPhoneNumberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberTableViewController.swift; sourceTree = "<group>"; };
 		2D84754B211DB51600317E30 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
@@ -312,6 +350,12 @@
 		2DF81EC620B8608D009AAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F664DFC21EC969A00BCF749 /* UpdateEmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailTableViewController.swift; sourceTree = "<group>"; };
+		6F664E0021EC96B600BCF749 /* ConfirmEmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailTableViewController.swift; sourceTree = "<group>"; };
+		6F664E0721ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountByFacebookTableViewController.swift; sourceTree = "<group>"; };
+		6F6A93B921CD1B2700F69007 /* NSURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
+		6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmClientAccountTableViewController.swift; sourceTree = "<group>"; };
+		6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewController.swift; sourceTree = "<group>"; };
 		A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientPasswordTableViewController.swift; sourceTree = "<group>"; };
 		A109010320ECDD1B009A19E5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -406,8 +450,8 @@
 		A1D072A520F60D3A00BF9361 /* EventsTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTrackerViewController.swift; sourceTree = "<group>"; };
 		A1E279FF20E6482A00E595B5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataSource.swift; sourceTree = "<group>"; };
-		A1E6B71B212D7A6200A06735 /* RegisterClientByEmailWithoutActivationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientByEmailWithoutActivationTableViewController.swift; sourceTree = "<group>"; };
 		A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
+		B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SyneriseSDK.xcodeproj; path = ../SyneriseSDK/SyneriseSDK.xcodeproj; sourceTree = "<group>"; };
 		B84F68CB20C7EBFC00A8ECBE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = SampleAppSwift/Internal/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
 		B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegistrationFormView.xib; sourceTree = "<group>"; };
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
@@ -478,8 +522,8 @@
 		FFAA2F662180B0E500782954 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FFAA2F672180B0E500782954 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		FFAA2F6A2180B10100782954 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		FFB1F02E219D637C00649A19 /* LoyaltyAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoyaltyAPI.storyboard; sourceTree = "<group>"; };
-		FFB1F033219D63E500649A19 /* LoyaltyAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoyaltyAPIViewController.swift; path = "SampleAppSwift/Main/Developer Tools Flow/Storyboards/LoyaltyAPIViewController.swift"; sourceTree = SOURCE_ROOT; };
+		FFB1F02E219D637C00649A19 /* PromotionsAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromotionsAPI.storyboard; sourceTree = "<group>"; };
+		FFB1F033219D63E500649A19 /* PromotionsAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromotionsAPIViewController.swift; path = "SampleAppSwift/Main/Developer Tools Flow/Storyboards/PromotionsAPIViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FFB1F038219D7BD200649A19 /* ClientAPI_Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientAPI_Account.storyboard; sourceTree = "<group>"; };
 		FFB1F03A219D7C7500649A19 /* ClientAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAccountViewController.swift; sourceTree = "<group>"; };
 		FFBB87F920ECE21A007142DF /* DeveloperToolsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperToolsCoordinator.swift; sourceTree = "<group>"; };
@@ -490,6 +534,12 @@
 		FFD08F3820C2CD880083A890 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
 		FFD08F3C20C2CF2A0083A890 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		FFD08F4120C2D5780083A890 /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
+		FFD9C44121DF794F00B83192 /* VouchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewController.swift; sourceTree = "<group>"; };
+		FFD9C44521DF7A5700B83192 /* VouchersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VouchersViewController.xib; sourceTree = "<group>"; };
+		FFD9C44821DF993900B83192 /* CheckoutVoucherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVoucherTableViewCell.swift; sourceTree = "<group>"; };
+		FFD9C44921DF993900B83192 /* CheckoutVoucherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutVoucherTableViewCell.xib; sourceTree = "<group>"; };
+		FFD9C44C21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVoucherTableViewModel.swift; sourceTree = "<group>"; };
+		FFDA615721DCC3A400D70CBD /* DeviceInfoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoUtils.swift; sourceTree = "<group>"; };
 		FFDF425C20C5FA3B00892782 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		FFEB21F020C5C4CD00DBAF08 /* SyneriseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyneriseManager.swift; sourceTree = "<group>"; };
 		FFEB21F220C5C5A400DBAF08 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -503,6 +553,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -512,6 +563,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F23214A64430000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -521,6 +573,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +671,7 @@
 		2DF81EB320B8608B009AAC66 = {
 			isa = PBXGroup;
 			children = (
+				B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */,
 				2DF81EBE20B8608B009AAC66 /* SampleAppSwift */,
 				2D401F11214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension */,
 				2D401F25214A64430000F229 /* SyneriseCarouselNotificationContentExtension */,
@@ -649,14 +703,14 @@
 			path = SampleAppSwift;
 			sourceTree = "<group>";
 		};
-		6FA71F5C219B08C4000A45F3 /* LoyaltyAPI */ = {
+		6FA71F5C219B08C4000A45F3 /* PromotionsAPI */ = {
 			isa = PBXGroup;
 			children = (
 				A17DFF212151244600A6CBC1 /* Vouchers */,
 				2DD999C0211C7049007E24DC /* Promotions */,
-				FFB1F033219D63E500649A19 /* LoyaltyAPIViewController.swift */,
+				FFB1F033219D63E500649A19 /* PromotionsAPIViewController.swift */,
 			);
-			path = LoyaltyAPI;
+			path = PromotionsAPI;
 			sourceTree = "<group>";
 		};
 		A12653D72118797900963FF5 /* Checkout Flow */ = {
@@ -763,6 +817,7 @@
 		A142CC8B2118805300079BBD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FFD9C44721DF990900B83192 /* Voucher */,
 				A152D5412119CC2B0059D8C6 /* ShipTo */,
 				A142CC8D211880AD00079BBD /* Payment */,
 				A142CC8C211880A600079BBD /* Product */,
@@ -851,8 +906,8 @@
 				FFB1F037219D7BBB00649A19 /* Account */,
 				A198FCD32111E1520096DFD0 /* ClientAPIViewController.swift */,
 				A15C3BC1210F1B160034E98B /* RegisterClientByEmailTableViewController.swift */,
-				A1E6B71B212D7A6200A06735 /* RegisterClientByEmailWithoutActivationTableViewController.swift */,
 				FFF6C54A21244C1F009D9B80 /* ActivateClientTableViewController.swift */,
+				6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */,
 			);
 			name = ClientAPI;
 			path = Cli;
@@ -876,11 +931,20 @@
 				FF18DD29216275AD00BEF99D /* ClientAPI_Authorization.storyboard */,
 				FFB1F038219D7BD200649A19 /* ClientAPI_Account.storyboard */,
 				FF89FCE22146794700C8B4E0 /* InjectorAPI.storyboard */,
-				FFB1F02E219D637C00649A19 /* LoyaltyAPI.storyboard */,
-				2D5924AA215D072B00191E8B /* LoyaltyAPI_Promotions.storyboard */,
-				2D5924AD215D073C00191E8B /* LoyaltyAPI_Vouchers.storyboard */,
+				FFB1F02E219D637C00649A19 /* PromotionsAPI.storyboard */,
+				2D5924AA215D072B00191E8B /* PromotionsAPI_Promotions.storyboard */,
+				2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B810EC8120C6902000218B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B810EC8520C6902000218B93 /* SyneriseSDK.framework */,
+				2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E16064DE79C651DF8B25B492 /* Frameworks */ = {
@@ -931,6 +995,7 @@
 			children = (
 				FFD08F3820C2CD880083A890 /* StoryboardUtils.swift */,
 				FFA36A1820C730FB003CFB91 /* DebugUtils.swift */,
+				FFDA615721DCC3A400D70CBD /* DeviceInfoUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1016,6 +1081,7 @@
 				FFBD36C720D31817008C58D1 /* UIWindow.swift */,
 				A12BE41720CEB18600056A36 /* UIViewController.swift */,
 				A127138B20F8C51F00550CC0 /* UITextField.swift */,
+				6F6A93B921CD1B2700F69007 /* NSURL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1249,13 +1315,6 @@
 			path = Default;
 			sourceTree = "<group>";
 		};
-		FFA6FDA62186F92900310022 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		FFA6FDA721871A5E00310022 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1296,6 +1355,8 @@
 				A142CC852118801500079BBD /* CheckoutViewController.swift */,
 				A142CC862118801500079BBD /* CheckoutViewController.xib */,
 				A142CC892118802500079BBD /* CheckoutViewModel.swift */,
+				FFD9C44121DF794F00B83192 /* VouchersViewController.swift */,
+				FFD9C44521DF7A5700B83192 /* VouchersViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1351,6 +1412,10 @@
 				A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */,
 				2D6C09642122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift */,
 				2D6C09662122DBBE008D178A /* ConfirmPhoneNumberTableViewController.swift */,
+				6F664DFC21EC969A00BCF749 /* UpdateEmailTableViewController.swift */,
+				6F664E0021EC96B600BCF749 /* ConfirmEmailTableViewController.swift */,
+				6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */,
+				6F664E0721ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1359,7 +1424,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F57A4E210B523C00BC6FC2 /* Storyboards */,
-				FFA6FDA62186F92900310022 /* Utils */,
 				A127138320F8825800550CC0 /* Model */,
 				A127138820F88DC800550CC0 /* Views */,
 				FFBB87FD20ECE451007142DF /* ViewControllers */,
@@ -1375,10 +1439,20 @@
 				FF76388E21208EB800544633 /* TrackerAPI */,
 				A198FCD02111E0B40096DFD0 /* ClientAPI */,
 				FF89FCE52146797F00C8B4E0 /* InjectorAPI */,
-				6FA71F5C219B08C4000A45F3 /* LoyaltyAPI */,
+				6FA71F5C219B08C4000A45F3 /* PromotionsAPI */,
 				FFBB87FE20ECE482007142DF /* DeveloperMenuViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFD9C44721DF990900B83192 /* Voucher */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9C44821DF993900B83192 /* CheckoutVoucherTableViewCell.swift */,
+				FFD9C44921DF993900B83192 /* CheckoutVoucherTableViewCell.xib */,
+				FFD9C44C21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift */,
+			);
+			path = Voucher;
 			sourceTree = "<group>";
 		};
 		FFEB21EF20C5C4B600DBAF08 /* Managers */ = {
@@ -1550,6 +1624,12 @@
 			mainGroup = 2DF81EB320B8608B009AAC66;
 			productRefGroup = 2DF81EBD20B8608B009AAC66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B810EC8120C6902000218B93 /* Products */;
+					ProjectRef = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2DF81EBB20B8608B009AAC66 /* SampleAppSwift */,
@@ -1560,6 +1640,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SyneriseSDK_UnitTests.xctest;
+			remoteRef = 2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B810EC8520C6902000218B93 /* SyneriseSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SyneriseSDK.framework;
+			remoteRef = B810EC8420C6902000218B93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D401F0C214A64180000F229 /* Resources */ = {
@@ -1587,20 +1684,22 @@
 				A178E3202122F20900B15DE2 /* Products_6.json in Resources */,
 				A178E32E2122F21300B15DE2 /* Products_11.json in Resources */,
 				FF4612FA20EE778200A63EB5 /* SectionsListViewController.xib in Resources */,
+				FFD9C44621DF7A5700B83192 /* VouchersViewController.xib in Resources */,
 				A198FCD22111E0E40096DFD0 /* ClientAPI.storyboard in Resources */,
 				A1D0729820F3A0ED00BF9361 /* ProfileFormView.xib in Resources */,
-				FFB1F02F219D637C00649A19 /* LoyaltyAPI.storyboard in Resources */,
+				FFB1F02F219D637C00649A19 /* PromotionsAPI.storyboard in Resources */,
 				FFB1F039219D7BD200649A19 /* ClientAPI_Account.storyboard in Resources */,
 				FF18DD2A216275AD00BEF99D /* ClientAPI_Authorization.storyboard in Resources */,
 				A178E32F2122F21300B15DE2 /* Products_12.json in Resources */,
 				FF46130720EE77D700A63EB5 /* CategoryItemTableViewCell.xib in Resources */,
-				2D5924AE215D073C00191E8B /* LoyaltyAPI_Vouchers.storyboard in Resources */,
+				2D5924AE215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard in Resources */,
 				A178E3342122F21300B15DE2 /* Products_10.json in Resources */,
+				FFD9C44B21DF993900B83192 /* CheckoutVoucherTableViewCell.xib in Resources */,
 				2DF81EC720B8608D009AAC66 /* Assets.xcassets in Resources */,
 				A152D5452119CC6D0059D8C6 /* CheckoutShipToTableViewCell.xib in Resources */,
 				A1393581215546C900F689B1 /* ConfigurationViewController.xib in Resources */,
 				FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */,
-				2D5924AB215D072B00191E8B /* LoyaltyAPI_Promotions.storyboard in Resources */,
+				2D5924AB215D072B00191E8B /* PromotionsAPI_Promotions.storyboard in Resources */,
 				A178E3212122F20900B15DE2 /* Products_2.json in Resources */,
 				FF46131620EE781800A63EB5 /* ProductsListViewController.xib in Resources */,
 				A12BE43B20D13E0400056A36 /* LoginViewController.xib in Resources */,
@@ -1622,6 +1721,7 @@
 				A142CC992118812300079BBD /* CheckoutPaymentTableViewCell.xib in Resources */,
 				A12BE42720D0202F00056A36 /* UserLoginFormView.xib in Resources */,
 				FF46132720EE782400A63EB5 /* ProductViewController.xib in Resources */,
+				2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */,
 				2D07E15520CFC9B7005E89D5 /* MainViewController.xib in Resources */,
 				A142CC93211880D900079BBD /* CheckoutProductTableViewCell.xib in Resources */,
 				FF50D21720EFA2A5000379C6 /* ProfileViewController.xib in Resources */,
@@ -1682,9 +1782,11 @@
 				A1E9F1AD211DEDD6003EE067 /* CongratulationsViewController.swift in Sources */,
 				FFAA2F6B2180B10100782954 /* SettingsCoordinator.swift in Sources */,
 				FF89FCE921467B5F00C8B4E0 /* LocalNotificationSender.swift in Sources */,
+				6F664E0821ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift in Sources */,
 				2D847550211DD01100317E30 /* ProfileInfoViewModel.swift in Sources */,
 				A152D5492119DEBF0059D8C6 /* CheckoutShipToDataSource.swift in Sources */,
 				FF591C6020C55637007F831B /* RegistrationViewController.swift in Sources */,
+				FFD9C44221DF794F00B83192 /* VouchersViewController.swift in Sources */,
 				FF89FCED21468A1200C8B4E0 /* SimplePushViewController.swift in Sources */,
 				2DD999C8211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift in Sources */,
 				2DD999C2211C70B6007E24DC /* ClientPromotionsViewController.swift in Sources */,
@@ -1715,18 +1817,23 @@
 				FF46132A20EE7C3F00A63EB5 /* DefaultNavigationBar.swift in Sources */,
 				A142CC8A2118802500079BBD /* CheckoutViewModel.swift in Sources */,
 				FFA36A2720C73E08003CFB91 /* Bindable.swift in Sources */,
+				6F664DFD21EC969A00BCF749 /* UpdateEmailTableViewController.swift in Sources */,
 				FF068DEA20C1966800A508C3 /* Administrator.swift in Sources */,
 				FF50D21920EFA2DA000379C6 /* ProfileViewModel.swift in Sources */,
 				FF46132520EE782400A63EB5 /* ProductDetailsView.swift in Sources */,
 				A12BE42F20D135EB00056A36 /* UserLoginFormView.swift in Sources */,
 				FF46131420EE781800A63EB5 /* ProductItemCollectionViewCell.swift in Sources */,
 				A12BE41820CEB18600056A36 /* UIViewController.swift in Sources */,
+				FFD9C44A21DF993900B83192 /* CheckoutVoucherTableViewCell.swift in Sources */,
 				A160F53120C98D2400968D2F /* DefaultImageView.swift in Sources */,
 				FFA36A1920C730FB003CFB91 /* DebugUtils.swift in Sources */,
+				6FFD723C21BFE17D00A721B3 /* DeleteAccountTableViewController.swift in Sources */,
 				FF4612F720EE778200A63EB5 /* SectionItemCollectionViewModel.swift in Sources */,
 				A175CAF32119AE2A001E39FF /* CartSection.swift in Sources */,
 				2D8F6AD22147A7BD0081531B /* RichMediaPushViewController.swift in Sources */,
 				A193CE4F211C5B72006451E9 /* CheckoutShippingMethod.swift in Sources */,
+				6F6A93BA21CD1B2700F69007 /* NSURL.swift in Sources */,
+				FFDA615821DCC3A400D70CBD /* DeviceInfoUtils.swift in Sources */,
 				FFA36A1B20C73B42003CFB91 /* Updatable.swift in Sources */,
 				FF46132C20EE86AD00A63EB5 /* TrackerAPIViewController.swift in Sources */,
 				B84F68D120C7EC9900A8ECBE /* UserRegistrationFormView.swift in Sources */,
@@ -1751,6 +1858,7 @@
 				FF89FCEB21467F5600C8B4E0 /* LocalNotificationsUserInfoData.swift in Sources */,
 				A127138A20F88E0100550CC0 /* CustomEventTableViewCell.swift in Sources */,
 				A152D54D2119EB120059D8C6 /* CheckboxButton.swift in Sources */,
+				FFD9C44D21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift in Sources */,
 				FFDF425D20C5FA3B00892782 /* Assembly.swift in Sources */,
 				FF591C3F20C53AF4007F831B /* MainCoordinator.swift in Sources */,
 				A142CC9B2118813900079BBD /* CheckoutPaymentTableViewModel.swift in Sources */,
@@ -1774,8 +1882,8 @@
 				A12BE41E20CFEB6A00056A36 /* BindingSegmentedControl.swift in Sources */,
 				FF50D21620EFA2A5000379C6 /* ProfileViewController.swift in Sources */,
 				A14E543720E0FE3A0098A30A /* JSONHelper.swift in Sources */,
+				6FFD724321C001F000A721B3 /* ConfirmClientAccountTableViewController.swift in Sources */,
 				2D42F44521512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift in Sources */,
-				A1E6B71C212D7A6200A06735 /* RegisterClientByEmailWithoutActivationTableViewController.swift in Sources */,
 				2D847552211DD28900317E30 /* BindingLabel.swift in Sources */,
 				FF46131520EE781800A63EB5 /* ProductsListViewModel.swift in Sources */,
 				FF46130620EE77D700A63EB5 /* CategoryItemTableViewCell.swift in Sources */,
@@ -1806,7 +1914,7 @@
 				2DD999C6211C72A1007E24DC /* ClientGetPromotionTableViewController.swift in Sources */,
 				A147CC7B211B0F8F00F5FA7C /* CheckoutPaymentDataSource.swift in Sources */,
 				A17DFF262151251600A6CBC1 /* ClientGetOrAssignVoucherTableViewController.swift in Sources */,
-				FFB1F034219D63E500649A19 /* LoyaltyAPIViewController.swift in Sources */,
+				FFB1F034219D63E500649A19 /* PromotionsAPIViewController.swift in Sources */,
 				A1B93D58215941D100B899CC /* ConfigurationCoordinator.swift in Sources */,
 				FF068DEC20C1979900A508C3 /* Coordinator.swift in Sources */,
 				B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */,
@@ -1822,6 +1930,7 @@
 				A1E27A0020E6482A00E595B5 /* Section.swift in Sources */,
 				A198FCD42111E1520096DFD0 /* ClientAPIViewController.swift in Sources */,
 				FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */,
+				6F664E0121EC96B600BCF749 /* ConfirmEmailTableViewController.swift in Sources */,
 				2D6C09652122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift in Sources */,
 				FF46130820EE77D700A63EB5 /* CategoriesListViewModel.swift in Sources */,
 			);
@@ -1863,6 +1972,11 @@
 			isa = PBXTargetDependency;
 			target = 2DF81EBB20B8608B009AAC66 /* SampleAppSwift */;
 			targetProxy = 2DF81EDC20B8608D009AAC66 /* PBXContainerItemProxy */;
+		};
+		B810EC8920C6904900218B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SyneriseSDK;
+			targetProxy = B810EC8820C6904900218B93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

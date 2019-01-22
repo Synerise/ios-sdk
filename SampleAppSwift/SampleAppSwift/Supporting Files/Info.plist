@@ -32,7 +32,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>45</string>
+	<string>70</string>
 	<key>FacebookAppID</key>
 	<string>2276466452573053</string>
 	<key>FacebookDisplayName</key>
@@ -57,6 +57,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to access your camera for scanning QR code.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>LOCATION</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>LOCATION</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -67,6 +71,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
@@ -75,9 +81,8 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>

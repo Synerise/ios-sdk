@@ -62,22 +62,20 @@ class ProfileFormViewModel {
     private func updateForm() {
         self.isProcessing(true)
         Client.getAccount(success: { (clientAccountInformation) in
-            DispatchQueue.main.async {
-                self.firstName.value = clientAccountInformation.firstName
-                self.lastName.value = clientAccountInformation.lastName
-                self.email.value = clientAccountInformation.email
-                self.phone.value = clientAccountInformation.phone
-                self.birthdate.value = clientAccountInformation.birthDate
-                self.company.value = clientAccountInformation.company
-                self.address.value = clientAccountInformation.address
-                self.zipCode.value = clientAccountInformation.zipCode
-                self.city.value = clientAccountInformation.city
-                self.countryCode.value = clientAccountInformation.countryCode
-                
-                self.isProcessing(false)
-            }
+            self.firstName.value = clientAccountInformation.firstName
+            self.lastName.value = clientAccountInformation.lastName
+            self.email.value = clientAccountInformation.email
+            self.phone.value = clientAccountInformation.phone
+            self.birthdate.value = clientAccountInformation.birthDate
+            self.company.value = clientAccountInformation.company
+            self.address.value = clientAccountInformation.address
+            self.zipCode.value = clientAccountInformation.zipCode
+            self.city.value = clientAccountInformation.city
+            self.countryCode.value = clientAccountInformation.countryCode
+            
+            self.isProcessing(false)
         }, failure: { (error) in
-            if let clientAccountInformation = CacheService.loadObject(ClientAccountInformation.self) as? ClientAccountInformation {
+            if let clientAccountInformation = CacheManager.get(ClientAccountInformation.self) as? ClientAccountInformation {
                 self.firstName.value = clientAccountInformation.firstName
                 self.lastName.value = clientAccountInformation.lastName
                 self.email.value = clientAccountInformation.email
@@ -107,13 +105,9 @@ class ProfileFormViewModel {
         do {
             if let clientUpdateAccountContext = try self.makeClientUpdateAccountContext() {
                 Client.updateAccount(context: clientUpdateAccountContext, success: { (success) in
-                    DispatchQueue.main.async {
-                         self.updatingSuccess(success: success)
-                    }
+                    self.updatingSuccess(success: success)
                 }, failure: { (error) in
-                    DispatchQueue.main.async {
-                        self.updatingError(error: error)
-                    }
+                    self.updatingError(error: error)
                 })
             }
         } catch {
@@ -122,9 +116,7 @@ class ProfileFormViewModel {
     }
     
     private func isProcessing(_ boolean: Bool) {
-        DispatchQueue.main.async {
-            self.isProcessing.value = boolean
-        }
+        self.isProcessing.value = boolean
     }
     
     private func makeClientUpdateAccountContext() throws -> ClientUpdateAccountContext? {
@@ -137,52 +129,46 @@ class ProfileFormViewModel {
         
         var clientUpdateAccountContext: ClientUpdateAccountContext!
         
-        do {
-            try SNRExceptionHandler.catchException {
-                clientUpdateAccountContext = ClientUpdateAccountContext.init()
-                
-                if let firstname = self.firstName.value {
-                    clientUpdateAccountContext.firstName = firstname
-                }
-                
-                if let lastName = self.lastName.value {
-                    clientUpdateAccountContext.lastName = lastName
-                }
-                
-                if let email = self.email.value {
-                    clientUpdateAccountContext.email = email
-                }
-                
-                if let phone = self.phone.value {
-                    clientUpdateAccountContext.phone = phone
-                }
-                
-                if let birthdate = self.birthdate.value {
-                    clientUpdateAccountContext.birthDate = birthdate
-                }
-                
-                if let company = self.company.value {
-                    clientUpdateAccountContext.company = company
-                }
-                
-                if let address = self.address.value {
-                    clientUpdateAccountContext.address = address
-                }
-                
-                if let zipCode = self.zipCode.value {
-                    clientUpdateAccountContext.zipCode = zipCode
-                }
-                
-                if let city = self.city.value {
-                    clientUpdateAccountContext.city = city
-                }
-                
-                if let countryCode = self.countryCode.value {
-                    clientUpdateAccountContext.countryCode = countryCode
-                }
-            }
-        } catch let error as NSError {
-            throw error
+        clientUpdateAccountContext = ClientUpdateAccountContext.init()
+        
+        if let firstname = self.firstName.value, firstname.count > 1 {
+            clientUpdateAccountContext.firstName = firstname
+        }
+        
+        if let lastName = self.lastName.value, lastName.count > 1 {
+            clientUpdateAccountContext.lastName = lastName
+        }
+        
+        if let email = self.email.value, email.count > 1 {
+            clientUpdateAccountContext.email = email
+        }
+        
+        if let phone = self.phone.value, phone.count > 1 {
+            clientUpdateAccountContext.phone = phone
+        }
+        
+        if let birthdate = self.birthdate.value, birthdate.count > 1 {
+            clientUpdateAccountContext.birthDate = birthdate
+        }
+        
+        if let company = self.company.value, company.count > 1 {
+            clientUpdateAccountContext.company = company
+        }
+        
+        if let address = self.address.value, address.count > 1 {
+            clientUpdateAccountContext.address = address
+        }
+        
+        if let zipCode = self.zipCode.value, zipCode.count > 1 {
+            clientUpdateAccountContext.zipCode = zipCode
+        }
+        
+        if let city = self.city.value, city.count > 1 {
+            clientUpdateAccountContext.city = city
+        }
+        
+        if let countryCode = self.countryCode.value, countryCode.count > 1 {
+            clientUpdateAccountContext.countryCode = countryCode
         }
         
         return clientUpdateAccountContext

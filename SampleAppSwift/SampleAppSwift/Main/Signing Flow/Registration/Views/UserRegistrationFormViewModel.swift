@@ -77,13 +77,9 @@ class UserRegistrationFormViewModel {
             do {
                 if let registerClientContext = try self.makeRegisterClientContext() {
                     Client.registerAccount(context: registerClientContext, success: { (success) in
-                        DispatchQueue.main.async {
-                            self.registrationSuccess(response: success)
-                        }
+                        self.registrationSuccess(response: success)
                     }, failure: { (error) in
-                        DispatchQueue.main.async {
-                            self.registrationError(error: error)
-                        }
+                        self.registrationError(error: error)
                     })
                 }
             } catch {
@@ -106,32 +102,26 @@ class UserRegistrationFormViewModel {
 
         var registerClientContext: ClientRegisterAccountContext!
 
-        do {
-            try SNRExceptionHandler.catchException {
-                switch registrationType {
-                case .email: registerClientContext = ClientRegisterAccountContext.init(email: login, password: password)
-                }
+        switch registrationType {
+        case .email: registerClientContext = ClientRegisterAccountContext.init(email: login, password: password)
+        }
 
-                let agreements: ClientAgreements = ClientAgreements()
-                agreements.email = true
-                agreements.sms = true
-                agreements.push = true
-                agreements.bluetooth = true
-                agreements.rfid = true
-                agreements.wifi = true
-                
-                registerClientContext.agreements = agreements
+        let agreements: ClientAgreements = ClientAgreements()
+        agreements.email = true
+        agreements.sms = true
+        agreements.push = true
+        agreements.bluetooth = true
+        agreements.rfid = true
+        agreements.wifi = true
+        
+        registerClientContext.agreements = agreements
 
-                if let firstname = self.firstName.value {
-                    registerClientContext.firstName = firstname
-                }
+        if let firstname = self.firstName.value {
+            registerClientContext.firstName = firstname
+        }
 
-                if let lastName = self.lastName.value {
-                    registerClientContext.lastName = lastName
-                }
-            }
-        } catch let error as NSError {
-            throw error
+        if let lastName = self.lastName.value {
+            registerClientContext.lastName = lastName
         }
 
         return registerClientContext

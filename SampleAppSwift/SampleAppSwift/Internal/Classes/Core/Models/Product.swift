@@ -20,6 +20,8 @@ class Product {
     let ratingCount: Int
     let categories: String
     
+    var isPromotion: Bool = false
+    
     // MARK: - Init
     
     init(brand: String, name: String, sku: String, description: String, imageURL: URL, price: Double, rating: Double, ratingCount: Int, categories: String) {

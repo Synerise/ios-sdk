@@ -56,7 +56,11 @@ class MainCoordinator: Coordinator {
     }
 
     // MARK: - Public
-
+    
+    func didReceiveDeeplinkWithSku(_ sku: String) {
+        showShopFlowWithProductBySku(sku)
+    }
+    
     func userSignedUp() {
         showLoginFlow()
     }
@@ -80,6 +84,10 @@ class MainCoordinator: Coordinator {
             showProfileFlow()
         case .shop:
             showShopFlow()
+        case .promotions:
+            showPromotionsFlow()
+        case .vouchers:
+            showVouchersFlow()
         case .cart:
             showCheckoutFlow()
         case .developerTools:
@@ -155,6 +163,20 @@ class MainCoordinator: Coordinator {
         shopCoordinator.configure = CoordinatorConfigure(parentCoordinator: self, childCoordinators: applicationController.childCoordinators, router: mainRouter)
         shopCoordinator.startWithSections()
     }
+    
+    private func showPromotionsFlow() {
+        let shopCoordinator: ShopCoordinator = ShopCoordinator()
+        shopCoordinator.applicationController = self.applicationController
+        shopCoordinator.configure = CoordinatorConfigure(parentCoordinator: self, childCoordinators: applicationController.childCoordinators, router: mainRouter)
+        shopCoordinator.startWithPromotionsProducts()
+    }
+    
+    private func showShopFlowWithProductBySku(_ sku: String) {
+        let shopCoordinator: ShopCoordinator = ShopCoordinator()
+        shopCoordinator.applicationController = self.applicationController
+        shopCoordinator.configure = CoordinatorConfigure(parentCoordinator: self, childCoordinators: applicationController.childCoordinators, router: mainRouter)
+        shopCoordinator.startWithProductSku(sku: sku)
+    }
 
     private func showProfileFlow() {
         let profileCoordinator: ProfileCoordinator = ProfileCoordinator()
@@ -168,6 +190,13 @@ class MainCoordinator: Coordinator {
         checkoutCoordinator.applicationController = self.applicationController
         checkoutCoordinator.configure = CoordinatorConfigure(parentCoordinator: nil, childCoordinators: applicationController.childCoordinators, router: mainRouter)
         checkoutCoordinator.start()
+    }
+    
+    private func showVouchersFlow() {
+        let checkoutCoordinator: CheckoutCoordinator = CheckoutCoordinator()
+        checkoutCoordinator.applicationController = self.applicationController
+        checkoutCoordinator.configure = CoordinatorConfigure(parentCoordinator: nil, childCoordinators: applicationController.childCoordinators, router: mainRouter)
+        checkoutCoordinator.startWithVouchers()
     }
 
     private func showDeveloperToolsFlow() {

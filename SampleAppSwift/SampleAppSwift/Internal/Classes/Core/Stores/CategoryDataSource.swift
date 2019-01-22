@@ -30,9 +30,32 @@ class CategoryDataSource {
         case books = 14
         case movies = 15
         case games = 16
+        
+        case promotions = 17
     }
     
     // MARK: - Static
+    
+    static func getAllCategoriesIdentifiers() -> [Int] {
+        return [
+            CategoryIdentity.shoes.rawValue,
+            CategoryIdentity.trousers.rawValue,
+            CategoryIdentity.runningAccessories.rawValue,
+            CategoryIdentity.jackets.rawValue,
+            CategoryIdentity.hdTV.rawValue,
+            CategoryIdentity.laptopsAndTablets.rawValue,
+            CategoryIdentity.phones.rawValue,
+            CategoryIdentity.householdGoods.rawValue,
+            CategoryIdentity.vegetables.rawValue,
+            CategoryIdentity.fruits.rawValue,
+            CategoryIdentity.liquids.rawValue,
+            CategoryIdentity.dailyPoducts.rawValue,
+            CategoryIdentity.music.rawValue,
+            CategoryIdentity.books.rawValue,
+            CategoryIdentity.movies.rawValue,
+            CategoryIdentity.games.rawValue
+        ];
+    }
     
     static func getCategory(sectionId: Int) -> [Category]? {
         switch sectionId {
@@ -42,6 +65,10 @@ class CategoryDataSource {
         case 4: return cultureAndMediaCategory()
         default: return nil
         }
+    }
+    
+    static func getPromotionCategory() -> Category {
+        return Category(identificator: CategoryIdentity.promotions.rawValue, title: "Promotions", backgroundColor: #colorLiteral(red: 0.9176470588, green: 0.3176470588, blue: 0.2235294118, alpha: 1), icon: #imageLiteral(resourceName: "Categories/Sport/banner_shoes"))
     }
     
     private static func getSportCategory() -> [Category] {

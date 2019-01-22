@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -43,13 +44,16 @@
                                         <rect key="frame" x="40" y="1664" width="930" height="65"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HJQ-yn-WSO">
-                                                <rect key="frame" x="368.5" y="13" width="193.5" height="40"/>
+                                                <rect key="frame" x="368.5" y="12.5" width="193.5" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View products  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3po-JU-y7W">
                                                         <rect key="frame" x="0.0" y="7.5" width="143.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                        </variation>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop Flow/Sections/Electronic/electronic_card_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FRN-sv-llG">
                                                         <rect key="frame" x="153.5" y="0.0" width="40" height="40"/>
@@ -67,11 +71,8 @@
                                             <constraint firstItem="HJQ-yn-WSO" firstAttribute="centerY" secondItem="MEP-Nc-OT8" secondAttribute="centerY" id="tks-TX-Gi9"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop Flow/Sections/Electronic/electronic_card_image" translatesAutoresizingMaskIntoConstraints="NO" id="OA9-Z6-eUD">
-                                        <rect key="frame" x="0.0" y="0.0" width="1010" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="Eqy-vL-kwt"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop Flow/Sections/Electronic/electronic_card_image" translatesAutoresizingMaskIntoConstraints="NO" id="OA9-Z6-eUD">
+                                        <rect key="frame" x="0.0" y="0.0" width="1010" height="1749"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop Flow/Sections/Electronic/electronic_card_text" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-Ta-0iZ">
                                         <rect key="frame" x="-20" y="1549" width="225" height="125"/>
@@ -96,8 +97,10 @@
                                     <constraint firstAttribute="trailing" secondItem="cnd-41-weF" secondAttribute="trailing" id="U6i-JV-okd"/>
                                     <constraint firstAttribute="trailing" secondItem="w6O-AN-a0l" secondAttribute="trailing" id="Vcz-T1-BxQ"/>
                                     <constraint firstItem="cnd-41-weF" firstAttribute="top" secondItem="N2C-la-W88" secondAttribute="top" id="Woq-3a-Kyy"/>
+                                    <constraint firstItem="OA9-Z6-eUD" firstAttribute="top" secondItem="N2C-la-W88" secondAttribute="top" id="igA-PS-CAb"/>
                                     <constraint firstAttribute="trailing" secondItem="OA9-Z6-eUD" secondAttribute="trailing" id="ogr-VR-TtS"/>
                                     <constraint firstItem="cnd-41-weF" firstAttribute="leading" secondItem="N2C-la-W88" secondAttribute="leading" id="r0g-kZ-7ap"/>
+                                    <constraint firstAttribute="bottom" secondItem="OA9-Z6-eUD" secondAttribute="bottom" id="uEc-Qw-ybI"/>
                                     <constraint firstAttribute="bottom" secondItem="Dp8-Ta-0iZ" secondAttribute="bottom" constant="75" id="wn4-Ho-mny"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -138,10 +141,10 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Shop Flow/Sections/Electronic/electronic_card_arrow" width="32" height="32"/>
-        <image name="Shop Flow/Sections/Electronic/electronic_card_bg" width="410" height="658"/>
-        <image name="Shop Flow/Sections/Electronic/electronic_card_image" width="521" height="579"/>
-        <image name="Shop Flow/Sections/Electronic/electronic_card_pattern" width="552" height="499"/>
-        <image name="Shop Flow/Sections/Electronic/electronic_card_text" width="428" height="137"/>
+        <image name="Shop Flow/Sections/Electronic/electronic_card_arrow" width="48" height="48"/>
+        <image name="Shop Flow/Sections/Electronic/electronic_card_bg" width="615" height="987"/>
+        <image name="Shop Flow/Sections/Electronic/electronic_card_image" width="781.5" height="868.5"/>
+        <image name="Shop Flow/Sections/Electronic/electronic_card_pattern" width="828.75" height="748.5"/>
+        <image name="Shop Flow/Sections/Electronic/electronic_card_text" width="642" height="206.25"/>
     </resources>
 </document>

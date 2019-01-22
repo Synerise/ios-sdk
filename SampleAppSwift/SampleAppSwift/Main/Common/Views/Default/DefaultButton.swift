@@ -42,12 +42,15 @@ class DefaultButton: UIButton {
     // MARK: - private
 
     private func updateCornerRadius() {
+        self.layoutIfNeeded()
         self.layer.cornerRadius = self.cornerRadius
         self.layoutIfNeeded()
     }
     
     private func configureButton() {
-        self.layer.cornerRadius = 0.5 * self.bounds.size.width
+        self.layoutIfNeeded()
+        self.layer.cornerRadius = self.frame.size.width / 2
+        self.layer.masksToBounds = true
         self.layoutIfNeeded()
     }
 }

@@ -45,23 +45,16 @@ class LogInWithEmailClientTableViewController: DefaultTableViewController {
         }
         
         let deviceID = deviceIDTextField.text
-        
-        do {
-            showLoading()
-            try SNRExceptionHandler.catchException {
-                Client.signIn(email: email, password: password, deviceId: deviceID, success: { (success) in
-                    if success {
-                        self.hideLoading()
-                        self.showSuccessInfo()
-                    }
-                }, failure: { (error) in
-                    self.hideLoading()
-                    self.showErrorInfo(error as NSError)
-                })
+
+        showLoading()
+        Client.signIn(email: email, password: password, deviceId: deviceID, success: { (success) in
+            if success {
+                self.hideLoading()
+                self.showSuccessInfo()
             }
-        } catch let error as NSError {
+        }, failure: { (error) in
             self.hideLoading()
-            self.showErrorInfo(error)
-        }
+            self.showErrorInfo(error as NSError)
+        })
     }
 }

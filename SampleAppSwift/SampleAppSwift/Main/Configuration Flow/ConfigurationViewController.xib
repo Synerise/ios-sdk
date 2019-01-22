@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,6 +80,9 @@
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="A7N-fx-6zq"/>
+                            </constraints>
                             <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
                             <viewLayoutGuide key="safeArea" id="R18-32-MYx"/>
                         </stackView>
@@ -87,8 +90,10 @@
                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.6873929794520548" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="NwP-cf-8Px" secondAttribute="bottom" id="HUQ-kh-9wL"/>
-                        <constraint firstAttribute="trailing" secondItem="NwP-cf-8Px" secondAttribute="trailing" id="M7W-Ye-xtF"/>
-                        <constraint firstItem="NwP-cf-8Px" firstAttribute="leading" secondItem="pjP-Hi-NQm" secondAttribute="leading" id="W8R-aa-2bU"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NwP-cf-8Px" secondAttribute="trailing" id="M7W-Ye-xtF"/>
+                        <constraint firstItem="NwP-cf-8Px" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pjP-Hi-NQm" secondAttribute="leading" id="W8R-aa-2bU"/>
+                        <constraint firstItem="NwP-cf-8Px" firstAttribute="width" secondItem="pjP-Hi-NQm" secondAttribute="width" priority="750" id="bwS-vR-S2v"/>
+                        <constraint firstItem="NwP-cf-8Px" firstAttribute="centerX" secondItem="pjP-Hi-NQm" secondAttribute="centerX" id="cLN-lU-YY3"/>
                         <constraint firstItem="NwP-cf-8Px" firstAttribute="top" secondItem="pjP-Hi-NQm" secondAttribute="top" id="gTg-hp-Oqc"/>
                     </constraints>
                 </view>

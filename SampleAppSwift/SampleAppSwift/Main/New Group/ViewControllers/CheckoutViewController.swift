@@ -19,8 +19,6 @@ class CheckoutViewController: DefaultViewController {
     // MARK: - IBAction
     
     @IBAction func placeOrderButtonWasTapped(_ sender: DefaultButton) {
-        sendCompletedTransationEvent()
-        CartManager.shared.removeAllProducts()
         viewModel.coordinator?.placeYourOrderButtonWasTapped()
     }
     
@@ -29,6 +27,8 @@ class CheckoutViewController: DefaultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.estimatedRowHeight = 140
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -47,6 +47,7 @@ class CheckoutViewController: DefaultViewController {
     }
     
     private func registerCells() {
+        tableView.register(UINib(nibName: CheckoutVoucherTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CheckoutVoucherTableViewCell.reuseIdentifier)
         tableView.register(UINib(nibName: CheckoutProductTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CheckoutProductTableViewCell.reuseIdentifier)
         tableView.register(UINib(nibName: CheckoutShipToTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CheckoutShipToTableViewCell.reuseIdentifier)
         tableView.register(UINib(nibName: CheckoutShippingMethodTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CheckoutShippingMethodTableViewCell.reuseIdentifier)
@@ -66,36 +67,6 @@ class CheckoutViewController: DefaultViewController {
         self.tableView.beginUpdates()
         self.tableView.deleteRows(at: [indexPath], with: .automatic)
         self.tableView.endUpdates()
-    }
-    
-    private func sendCompletedTransationEvent() {
-        let completedTransactionEvent = CompletedTransactionEvent.init(label: "Cart")
-        var eventProducts = [EventProduct]()
-        var cartFinalUnitPrice: Float = 0
-        
-        let cartItems = CartManager.shared.getCartItems()
-        for cartItem in cartItems {
-            let product = cartItem.product
-            let eventProduct = EventProduct.init()
-            
-            eventProduct.imageURL = product.imageURL
-            eventProduct.name = product.name
-            eventProduct.quantity = cartItem.quantity
-            eventProduct.sku = product.sku
-            
-            let productFloatFinalPrice: Float = Float(cartItem.quantity) * Float(product.price)
-            let productFinalPrice = UnitPrice(amount: productFloatFinalPrice)
-            eventProduct.finalPrice = productFinalPrice
-            
-            cartFinalUnitPrice += productFloatFinalPrice
-            
-            eventProducts.append(eventProduct)
-        }
-        completedTransactionEvent.setProducts(eventProducts)
-        
-        let unitPrice = UnitPrice(amount: cartFinalUnitPrice)
-        completedTransactionEvent.setValue(unitPrice)
-        Tracker.send(completedTransactionEvent)
     }
 }
 
@@ -154,6 +125,13 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource {
                 
                 return cell
             }
+        case is CheckoutVoucherTableViewModel:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CheckoutVoucherTableViewCell.reuseIdentifier) as? CheckoutVoucherTableViewCell {
+                cell.update(model)
+                
+                return cell
+            }
+        
         default:
             return UITableViewCell()
         }

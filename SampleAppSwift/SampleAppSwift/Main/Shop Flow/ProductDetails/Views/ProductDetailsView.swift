@@ -11,6 +11,7 @@ import Cosmos
 
 protocol ProductDetailsViewDelegate: class {
     func addProductButtonWasTapped(_ productDetailsView: ProductDetailsView)
+    func setFavoriteButtonWasTapped(_ productDetailsView: ProductDetailsView)
 }
 
 class ProductDetailsView: DefaultView {
@@ -24,14 +25,20 @@ class ProductDetailsView: DefaultView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var skuLabel: UILabel!
     @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var addProductButton: UIButton!
+    @IBOutlet weak var setFavoriteButton: UIButton!
     @IBOutlet weak var descriptionTextView: UITextView!
     
     // MARK: - IBAction
     
     @IBAction func addProductButtonWasTapped(_ sender: Any) {
         delegate?.addProductButtonWasTapped(self)
+    }
+    
+    @IBAction func setFavoriteButtonWasTapped(_ sender: Any) {
+        delegate?.setFavoriteButtonWasTapped(self)
     }
     
     // MARK: - Init
@@ -63,11 +70,18 @@ class ProductDetailsView: DefaultView {
             }
         ratingView.rating = viewModel.rating
         brandLabel.text = viewModel.brand
+        skuLabel.text = "SKU: " + viewModel.sku
         ratingView.text = "\(viewModel.ratingCount)"
         descriptionTextView.text = viewModel.description
         
         ratingView.didFinishTouchingCosmos = { [weak self] rating in
             self?.viewModel?.sendRatingEvent(rating: rating)
+        }
+        
+        self.priceLabel.isHidden = !viewModel.isPriceVisible
+        
+        viewModel.isFavorite.observe { (isFavorite) in
+            self.isFavorite(isFavorite)
         }
     }
     
@@ -83,5 +97,13 @@ class ProductDetailsView: DefaultView {
         addProductButton.layer.shadowOpacity = 0.2
         addProductButton.layer.shadowOffset = CGSize.zero
         addProductButton.layer.shadowRadius = 8
+    }
+    
+    private func isFavorite(_ isFavorite: Bool) {
+        if isFavorite {
+            self.setFavoriteButton.setImage(UIImage(named: "Shop Flow/icon_favorite_remove"), for: .normal)
+        } else {
+            self.setFavoriteButton.setImage(UIImage(named: "Shop Flow/icon_favorite_add"), for: .normal)
+        }
     }
 }

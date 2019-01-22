@@ -15,6 +15,8 @@ class CheckoutProductTableViewModel {
     let price: Double
     var amount: Int
     
+    var isPriceVisible: Bool = true
+    
     // MARK: - Init
     
     init(cartItem: CartItem) {
@@ -23,5 +25,9 @@ class CheckoutProductTableViewModel {
         self.imageURL = cartItem.product.imageURL
         self.price = cartItem.product.price
         self.amount = cartItem.quantity
+        
+        if cartItem.product.isPromotion == true {
+            self.isPriceVisible = false
+        }
     }
 }

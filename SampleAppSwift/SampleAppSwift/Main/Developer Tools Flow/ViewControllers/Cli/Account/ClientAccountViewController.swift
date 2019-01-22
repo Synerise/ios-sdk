@@ -18,10 +18,8 @@ class ClientAccountViewController: DefaultViewController {
         Client.getAccount(success: { (clientAccountInformation) in
             self.hideLoading()
             
-            DispatchQueue.main.async {
-                let accountInformation = self.makeAccountInformation(clientAccountInformation)
-                self.pushToShowClientAccountInformation(accountInformation: accountInformation)
-            }
+            let accountInformation = self.makeAccountInformation(clientAccountInformation)
+            self.pushToShowClientAccountInformation(accountInformation: accountInformation)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -33,15 +31,13 @@ class ClientAccountViewController: DefaultViewController {
     @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
         self.showLoading()
         
-        Client.deleteAccount(success: { (_) in
+        Client.deleteAccount(password: "", success: { (_) in
             Client.signOut()
             
             self.hideLoading()
             self.showSuccessInfo()
             
-            DispatchQueue.main.async {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
+            self.navigationController?.popToRootViewController(animated: true)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)

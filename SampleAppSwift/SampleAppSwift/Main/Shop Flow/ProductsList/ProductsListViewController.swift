@@ -8,9 +8,31 @@
 
 import UIKit
 
+struct ProductsListViewControllerConfigure {
+    let itemsInRow: Int
+}
+
 class ProductsListViewController: DefaultViewController {
     
-    var viewModel: ProductsListViewModel!
+    var viewModel: ProductsListViewModel! {
+        didSet {
+            self.viewModel.isLoading.valueChanged = { isLoading in
+                if isLoading {
+                    self.showLoading()
+                } else {
+                    self.hideLoading()
+                }
+            }
+            
+            self.viewModel.onUpdateRequired = {
+                self.reloadItems()
+            }
+            
+            self.viewModel.fetchProducts()
+        }
+    }
+    
+    var configure: ProductsListViewControllerConfigure!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -30,6 +52,20 @@ class ProductsListViewController: DefaultViewController {
         collectionView.dataSource = self
         let nib = UINib(nibName: "ProductItemCollectionViewCell", bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: ProductItemCollectionViewCell.reuseIdentifier)
+    }
+    
+    private func reloadItems() {
+        guard let collectionView = self.collectionView else {
+            return
+        }
+        
+        if viewModel.numberOfItems() == 0 {
+            showInformationView(text: "There are no items here.")
+            return
+        }
+        
+        hideInformationView()
+        collectionView.reloadData()
     }
 }
 
@@ -63,7 +99,7 @@ extension ProductsListViewController: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.size.width / 2)
+        let width = (Int(collectionView.frame.size.width) / self.configure.itemsInRow)
         let height = width
 
         return CGSize(width: width, height: height)

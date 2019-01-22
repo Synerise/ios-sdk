@@ -24,6 +24,16 @@ class CheckoutViewModel {
         }
     }
     
+    var voucherCode: String {
+        guard
+            let voucherSection = self.sections[1].rows[0] as? CheckoutVoucherTableViewModel,
+            let voucherCode = voucherSection.voucherCode.value else {
+            return ""
+        }
+        
+        return voucherCode
+    }
+    
     init() {
         loadSections()
     }
@@ -50,15 +60,23 @@ class CheckoutViewModel {
     
     public func loadSections() {
         let productsSection = getProductsSection()
+        let voucherSection = getVoucherSection()
         let shippingDetailsSection = getShippingSection()
         let paymentDetailsSection = getPaymentSection()
         
-        self.sections = [productsSection, shippingDetailsSection, paymentDetailsSection]
+        self.sections = [productsSection, voucherSection, shippingDetailsSection, paymentDetailsSection]
     }
     
     private func getProductsSection() -> CartSection {
         let productViewModels = getProductViewModels()
         let productsSection = CartSection(title: "Products", rows: productViewModels)
+        
+        return productsSection
+    }
+    
+    private func getVoucherSection() -> CartSection {
+        let productViewModel = CheckoutVoucherTableViewModel()
+        let productsSection = CartSection(title: "Voucher", rows: [productViewModel])
         
         return productsSection
     }

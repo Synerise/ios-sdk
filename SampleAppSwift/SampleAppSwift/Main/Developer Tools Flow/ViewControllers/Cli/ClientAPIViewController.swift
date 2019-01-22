@@ -8,6 +8,8 @@
 
 import UIKit
 import SyneriseSDK
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class ClientAPIViewController: DefaultViewController {
     
@@ -15,12 +17,10 @@ class ClientAPIViewController: DefaultViewController {
     
     @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
-        Client.getToken(success: { (token) in
+        Client.getToken(success: { (token, origin) in
             self.hideLoading()
-            
-            DispatchQueue.main.async {
-                self.pushToShowToken(token: token)
-            }
+            let tokenDescription = SNR_TokenOriginToString(origin) + "\n\n" + token
+            self.pushToShowToken(token: tokenDescription)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -29,18 +29,24 @@ class ClientAPIViewController: DefaultViewController {
         sender.animateTapping()
     }
     
+    @IBAction func getFacebookTokenButtonWasPressed(_ sender: DefaultButton) {
+        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+            return
+        }
+        
+        self.pushToShowToken(token: facebookToken)
+    }
+    
     @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
         self.showLoading()
         
-        Client.deleteAccount(success: { (_) in
+        Client.deleteAccount(password: "", success: { (_) in
             Client.signOut()
             
             self.hideLoading()
             self.showSuccessInfo()
-            
-            DispatchQueue.main.async {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
+
+            self.navigationController?.popToRootViewController(animated: true)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)

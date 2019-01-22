@@ -34,6 +34,25 @@ class ShopCoordinator: Coordinator {
         configure.router.setRootModule(sectionsViewController, hideNavigationBar: true)
     }
     
+    func startWithProductSku(sku: String) {
+        startWithSections()
+        
+        let categories: [Int] = CategoryDataSource.getAllCategoriesIdentifiers()
+        
+        if let product = ProductDataSource.getProductBySku(sku: sku, fromCategories: categories) {
+            let productDetailsViewController: ProductViewController = makeProductViewController(product: product)
+            
+            configure.router.push(productDetailsViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func startWithPromotionsProducts() {
+        startWithSections()
+        
+        let productsViewController: ProductsListViewController = makeProductsViewController(category: CategoryDataSource.getPromotionCategory())
+        configure.router.push(productsViewController, animated: true, completion: nil)
+    }
+    
     func pushToCategories(section: Section) {
         super.start()
         
@@ -96,8 +115,13 @@ class ShopCoordinator: Coordinator {
         let viewModel: ProductsListViewModel = ProductsListViewModel(category: category)
         viewModel.coordinator = self
         
+        let configure: ProductsListViewControllerConfigure = ProductsListViewControllerConfigure(
+            itemsInRow: DeviceInfoUtils.isIpad() ? 3 : 2
+        )
+        
         let viewController: ProductsListViewController = ProductsListViewController()
         viewController.viewModel = viewModel
+        viewController.configure = configure
         viewController.title = category.title
         
         return viewController

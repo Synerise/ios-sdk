@@ -22,6 +22,22 @@ class ProductDataSource {
         return nil
     }
     
+    static func getProductBySku(sku: String, fromCategories categories: [Int]) -> Product? {
+        var productBySku: Product?
+        
+        categories.forEach { (categoryId) in
+            if let products = getProducts(categoryId: categoryId) {
+                products.forEach({ (product) in
+                    if (product.sku == sku) {
+                        productBySku = product
+                    }
+                })
+            }
+        }
+        
+        return productBySku
+    }
+    
     private static func parseJSON(_ json: JSON) -> [Product]? {
             var products = [Product]()
             for (_, subJson):(String, JSON) in json {

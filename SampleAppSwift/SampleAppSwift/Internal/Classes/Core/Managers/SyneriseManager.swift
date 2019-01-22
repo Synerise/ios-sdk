@@ -27,17 +27,17 @@ class SyneriseManager {
     func initialize() {
         DebugUtils.print("SyneriseSDK initializing | Client API Key: \(clientApiKey)")
         Synerise.initialize(clientApiKey: clientApiKey)
-        Synerise.setDelegate(self)
+        Synerise.setDebugModeEnabled(true)
         
         Synerise.notificationServiceSettings.disableInAppAlerts = settingsService.get(.syneriseDisableInAppAlertsKey) ?? false
         Synerise.notificationServiceSettings.appGroupIdentifier = "group.com.synerise.sdk.sample"
         
-        Tracker.setLoggingEnabled(true)
+        //Tracker.setLoggingEnabled(true)
         Tracker.setAutoTrackMode(.fine)
         
         Client.setLoggingEnabled(true)
 
-        Injector.setLoggingEnabled(true)
+        //Injector.setLoggingEnabled(true)
         Injector.setAutomatic(true)
         
         var trackerConfiguration = TrackerConfiguration()
@@ -46,8 +46,15 @@ class SyneriseManager {
         trackerConfiguration.maxBatchSize = 100
         
         Tracker.setConfiguration(trackerConfiguration)
-        Tracker.setLoggingEnabled(true)
+        //Tracker.setLoggingEnabled(true)
         Tracker.setAutoTrackMode(.fine)
+        Tracker.setLocationAutomaticEnabled(true)
+        
+        //Promotions.setLoggingEnabled(true)
+    }
+    
+    func setSyneriseDelegate(_ delegate: SyneriseDelegate) {
+        Synerise.setDelegate(delegate)
     }
     
     func isSignedIn() -> Bool {
@@ -56,27 +63,6 @@ class SyneriseManager {
     
     func signOut() {
         Client.signOut()
-    }
-}
-
-extension SyneriseManager: SyneriseDelegate {
-    func snr_handledAction(url: URL) {
-        if UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
-    }
-
-    func snr_handledAction(deepLink: String) {
-        let viewController = DebugTextViewController(text: "DEEP LINKING")
-        viewController.view.backgroundColor = UIColor.lightGray
-        
-        ApplicationController.resolve().appRouter.rootViewController?.present(viewController, animated: true, completion: {
-            viewController.dismiss(animated: true, completion: nil)
-        })
     }
 }
 

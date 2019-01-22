@@ -20,15 +20,21 @@ class ClientAuthorizationViewController: DefaultViewController {
             return
         }
         
-        self.showLoading()
-        Client.authenticate(facebookToken: facebookToken, success: { (success) in
-            if success {
+        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success: { isSuccess in
+            if isSuccess {
                 self.hideLoading()
                 self.showSuccessInfo()
             }
         }) { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
+            Client.authenticateByFacebook(facebookToken: facebookToken, success: { isSuccess in
+                if isSuccess {
+                    self.hideLoading()
+                    self.showSuccessInfo()
+                }
+            }, failure: { error in
+                self.hideLoading()
+                self.showErrorInfo(error as NSError)
+            })
         }
     }
     

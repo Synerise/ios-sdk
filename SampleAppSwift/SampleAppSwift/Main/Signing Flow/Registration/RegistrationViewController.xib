@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,18 +45,21 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="ptz-hK-9ce" secondAttribute="bottom" id="3U3-Z2-4wU"/>
                         <constraint firstAttribute="trailing" secondItem="ptz-hK-9ce" secondAttribute="trailing" id="Hoa-YG-OX8"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="800" id="OJb-9R-ORU"/>
                         <constraint firstItem="ptz-hK-9ce" firstAttribute="leading" secondItem="aQ0-Ta-MDl" secondAttribute="leading" id="VVT-ct-Dyv"/>
                         <constraint firstItem="ptz-hK-9ce" firstAttribute="top" secondItem="aQ0-Ta-MDl" secondAttribute="top" constant="30" id="XM2-6e-Mcf"/>
+                        <constraint firstItem="ptz-hK-9ce" firstAttribute="centerX" secondItem="aQ0-Ta-MDl" secondAttribute="centerX" id="bAT-Vl-28A"/>
                     </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="aQ0-Ta-MDl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CLT-HJ-Xdj"/>
-                <constraint firstItem="aQ0-Ta-MDl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gb5-mr-eSS"/>
+                <constraint firstItem="aQ0-Ta-MDl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gb5-mr-eSS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aQ0-Ta-MDl" secondAttribute="bottom" id="LpJ-Rd-7gl"/>
-                <constraint firstItem="ptz-hK-9ce" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Tr1-b2-VSv"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aQ0-Ta-MDl" secondAttribute="trailing" id="eRb-Y1-Ehm"/>
+                <constraint firstItem="aQ0-Ta-MDl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Yjp-eN-3lj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aQ0-Ta-MDl" secondAttribute="trailing" id="eRb-Y1-Ehm"/>
+                <constraint firstItem="aQ0-Ta-MDl" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" priority="750" id="zXT-Kr-q32"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

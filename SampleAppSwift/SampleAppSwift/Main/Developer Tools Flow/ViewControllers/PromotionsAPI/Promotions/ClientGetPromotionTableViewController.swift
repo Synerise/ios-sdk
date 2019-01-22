@@ -18,13 +18,11 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
         let uuid = self.uuidTextField.text ?? ""
         
         self.showLoading()
-        Loyalty.getPromotion(uuid: uuid, success: { (clientPromotion) in
+        Promotions.getPromotion(uuid: uuid, success: { (clientPromotion) in
             self.hideLoading()
             
-            DispatchQueue.main.async {
-                let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+            let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -35,13 +33,11 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
         let code = self.codeTextField.text ?? ""
         
         self.showLoading()
-        Loyalty.getPromotion(code: code, success: { (clientPromotion) in
+        Promotions.getPromotion(code: code, success: { (clientPromotion) in
             self.hideLoading()
             
-            DispatchQueue.main.async {
-                let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+            let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)

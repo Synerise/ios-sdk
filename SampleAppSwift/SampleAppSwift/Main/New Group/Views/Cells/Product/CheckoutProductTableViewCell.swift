@@ -24,7 +24,12 @@ class CheckoutProductTableViewCell: UITableViewCell, Updatable {
         loadImage(viewModel: viewModel)
         productNameLabel.text = viewModel.name
         brandLabel.text = viewModel.brand
-        priceLabel.text = viewModel.amount > 1 ? "\(viewModel.amount) x $\(viewModel.price)" : "$\(viewModel.price)"
+        
+        if viewModel.isPriceVisible {
+            priceLabel.text = viewModel.amount > 1 ? "\(viewModel.amount) x $\(viewModel.price)" : "$\(viewModel.price)"
+        } else {
+            priceLabel.isHidden = true
+        }
     }
     
     // MARK: - Private

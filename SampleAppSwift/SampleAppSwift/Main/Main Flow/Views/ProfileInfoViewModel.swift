@@ -32,15 +32,11 @@ class ProfileInfoViewModel {
         self.isProcessing.value = true
         
         Client.getAccount(success: { (clientAccountInformation) in
-            DispatchQueue.main.async {
-                self.isProcessing.value = false
-                self.dataDownloaded(clientAccountInformation)
-            }
+            self.isProcessing.value = false
+            self.dataDownloaded(clientAccountInformation)
         }, failure: { (error) in
-            DispatchQueue.main.async {
-                self.isProcessing.value = false
-                DebugUtils.print(error.localizedDescription)
-            }
+            self.isProcessing.value = false
+            DebugUtils.print(error.localizedDescription)
         })
     }
     

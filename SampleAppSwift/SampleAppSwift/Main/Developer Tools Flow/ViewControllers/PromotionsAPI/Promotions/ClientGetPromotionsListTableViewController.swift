@@ -26,13 +26,11 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     
     @IBAction func getPromotionsList() {
         self.showLoading()
-        Loyalty.getPromotions(success: { (promotionsList) in
+        Promotions.getPromotions(success: { (promotionsList) in
             self.hideLoading()
             
-            DispatchQueue.main.async {
-                let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+            let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -71,13 +69,11 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
         let includeMeta: Bool = includeMetaSwitch.isOn
         
         self.showLoading()
-        Loyalty.getPromotions(statuses: statuses, types: types, limit: 100, page: 1, includeMeta: includeMeta, success: { (promotionsList) in
+        Promotions.getPromotions(statuses: statuses, types: types, limit: 100, page: 1, includeMeta: includeMeta, success: { (promotionsList) in
             self.hideLoading()
             
-            DispatchQueue.main.async {
-                let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+            let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)

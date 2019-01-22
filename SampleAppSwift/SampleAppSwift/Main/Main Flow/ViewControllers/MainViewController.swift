@@ -108,7 +108,8 @@ class MainViewController: DefaultViewController {
         }
         
         self.leftMenuViewController.animateOut {
-            let translationX: CGFloat = -(self.leftMenuContainerView.frame.size.width * 1.2)
+            let screenWidth: CGFloat = UIScreen.main.bounds.size.width
+            let translationX: CGFloat = -(screenWidth * 1.2)
             let leftTranslateTransform: CGAffineTransform = CGAffineTransform(translationX: translationX, y: 0)
             
             self.leftMenuContainerView.transform = leftTranslateTransform
@@ -118,7 +119,8 @@ class MainViewController: DefaultViewController {
     }
     
     private func setLeftMenuHidden() {
-        let translationX: CGFloat = -(self.leftMenuContainerView.frame.size.width * 1.2)
+        let screenWidth: CGFloat = UIScreen.main.bounds.size.width
+        let translationX: CGFloat = -(screenWidth * 1.2)
         let leftTranslateTransform: CGAffineTransform = CGAffineTransform(translationX: translationX, y: 0)
         
         self.leftMenuContainerView.transform = leftTranslateTransform

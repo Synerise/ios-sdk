@@ -18,17 +18,11 @@ class UpdatePhoneNumberTableViewController: DefaultTableViewController {
     @IBAction func updatePhoneNumber() {
         let phoneNumber = self.phoneNumberTextField.text ?? ""
         
-        do {
-            try SNRExceptionHandler.catchException {
-                Client.requestPhoneUpdate(phone: phoneNumber, success: { _ in
-                    self.showSuccessInfo()
-                }, failure: { (error) in
-                    self.showErrorInfo(error as NSError)
-                })
-            }
-        } catch let error as NSError {
+        Client.requestPhoneUpdate(phone: phoneNumber, success: { _ in
+            self.showSuccessInfo()
+        }, failure: { (error) in
             self.showErrorInfo(error as NSError)
-        }
+        })
     }
     
     // MARK: - Lifecycle

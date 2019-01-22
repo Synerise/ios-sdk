@@ -24,12 +24,11 @@ class ClientVouchersViewController: DefaultViewController {
     @IBAction func getAssignedVoucherCodesButtonWasPressed(_ sender: UIButton) {
         showLoading()
         
-        Loyalty.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
+        Promotions.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
             self.hideLoading()
             let debugInfoString = self.makeVoucherStringRepresentation(voucherCodesResponse)
-            DispatchQueue.main.async {
-                self.pushToDebugTextViewController(string: debugInfoString)
-            }
+  
+            self.pushToDebugTextViewController(string: debugInfoString)
         }, failure: { (error) in
             self.showErrorInfo(error as NSError)
         })

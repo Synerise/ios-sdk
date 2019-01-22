@@ -22,8 +22,8 @@ class LoginViewModel {
     weak var delegate: LoginViewModelDelegate?
 
     var userLoginFormViewModel: UserLoginFormViewModel = {
-        let login = "krzysztof.kurzawa@synerise.com"
-        let password = "testPass12345!"
+        let login = "
+        let password = ""
         let loginType = UserLoginFormViewModel.LoginType.email
 
         let userLoginFormViewModel = UserLoginFormViewModel(login: login, password: password, loginType: loginType)
@@ -48,9 +48,15 @@ class LoginViewModel {
             return
         }
         
-        Client.authenticate(facebookToken: facebookToken, success: { (success) in
+        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success: { _ in
             onSuccess()
-        }, failure: nil)
+        }) { (error) in
+            Client.authenticateByFacebook(facebookToken: facebookToken, success: { _ in
+                onSuccess()
+            }, failure: { error in
+                
+            })
+        }
     }
 
     // MARK: - Private

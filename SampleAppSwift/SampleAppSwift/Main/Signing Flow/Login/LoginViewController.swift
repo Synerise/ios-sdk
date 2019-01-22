@@ -55,10 +55,8 @@ class LoginViewController: DefaultViewController {
         super.viewDidAppear(animated)
         
         viewModel.authenticateByFacebookToken {
-            DispatchQueue.main.async {
-                UserInfoMessageManager.shared.success("You are signed in!", nil)
-                self.viewModel.coordinator?.userDidLogin()
-            }
+            UserInfoMessageManager.shared.success("You are signed in!", nil)
+            self.viewModel.coordinator?.userDidLogin()
         }
     }
 
@@ -79,7 +77,7 @@ class LoginViewController: DefaultViewController {
     }
 
     private func handleRegistrationError(_ error: Error) {
-        UserInfoMessageManager.shared.error("Error", error.localizedDescription)
+        self.showErrorInfo(error as NSError)
     }
 }
 

@@ -27,6 +27,7 @@ class ProductItemCollectionViewCell: UICollectionViewCell, Updatable {
             productNameLabel.text = viewModel.name
             brandLabel.text = viewModel.brand
             priceLabel.text = viewModel.priceWithCurrency()
+            priceLabel.isHidden = !viewModel.isPriceVisible
         }
     }
     

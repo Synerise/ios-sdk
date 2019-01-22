@@ -86,7 +86,7 @@ PODS:
   - SnapKit (4.0.1)
   - SwiftyJSON (4.2.0)
   - Swinject (2.1.1)
-  - SyneriseSDK (3.3.0)
+  - SyneriseSDK (3.3.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -102,7 +102,7 @@ DEPENDENCIES:
   - SwiftyJSON (~> 4.0)
   - Swinject (~> 2.1.0)
   - SyneriseSDK
-  - SyneriseSDK (~> 3.3.0)
+  - SyneriseSDK (~> 3.3.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -159,8 +159,8 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Swinject: afea49fd95f392b41171669f165842879c48fad6
-  SyneriseSDK: 5252276e2c6ec4c2e0d06851816f9e396f9ce169
+  SyneriseSDK: 5fc143fe7d4afa1dd587e34e38359c7ea41da5f5
 
-PODFILE CHECKSUM: cc3cd83a5ff8642f3dc8c416fe2740da8d668f5c
+PODFILE CHECKSUM: 9293938bdbcecab41b99824105aaaa7187de816c
 
 COCOAPODS: 1.5.3

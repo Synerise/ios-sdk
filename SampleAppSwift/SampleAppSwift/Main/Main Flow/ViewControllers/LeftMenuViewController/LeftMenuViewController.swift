@@ -167,6 +167,7 @@ extension LeftMenuViewController: UITableViewDataSource {
         let cellViewModel: LeftMenuItemViewModel = viewModel.itemForIndex(index)
 
         cell.backgroundColor = UIColor.clear
+        cell.imageView?.contentMode = .scaleAspectFit
         cell.imageView?.image = cellViewModel.iconImageView.image
         cell.imageView?.image = cell.imageView?.image?.withRenderingMode(.alwaysTemplate)
         cell.textLabel?.text = cellViewModel.title
