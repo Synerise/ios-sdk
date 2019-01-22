@@ -15,7 +15,7 @@
 		2D07E15F20CFF39B005E89D5 /* LeftMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E15E20CFF39B005E89D5 /* LeftMenuItem.swift */; };
 		2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16020CFF453005E89D5 /* LeftMenuDataSource.swift */; };
 		2D07E16320CFF7F6005E89D5 /* LeftMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16220CFF7F6005E89D5 /* LeftMenuViewModel.swift */; };
-		2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */; };
+		2D24FAE620C59466000B5B5D /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		2D24FAF020C5A519000B5B5D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24FAEF20C5A519000B5B5D /* NotificationService.swift */; };
 		2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
@@ -25,8 +25,6 @@
 		2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		2D401F27214A64430000F229 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D401F26214A64430000F229 /* NotificationViewController.swift */; };
 		2D401F2E214A64430000F229 /* SyneriseCarouselNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D401F22214A64430000F229 /* SyneriseCarouselNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
-		2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		2D42F44521512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42F44421512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift */; };
 		2D5924AB215D072B00191E8B /* PromotionsAPI_Promotions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AA215D072B00191E8B /* PromotionsAPI_Promotions.storyboard */; };
 		2D5924AE215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */; };
@@ -141,8 +139,6 @@
 		A1E27A0020E6482A00E595B5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E279FF20E6482A00E595B5 /* Section.swift */; };
 		A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */; };
 		A1E9F1AD211DEDD6003EE067 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */; };
-		B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
-		B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68CB20C7EBFC00A8ECBE /* String.swift */; };
 		B84F68CF20C7EC4900A8ECBE /* UserRegistrationFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */; };
 		B84F68D120C7EC9900A8ECBE /* UserRegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */; };
@@ -238,13 +234,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2D02B5AC213821340001039D;
-			remoteInfo = SyneriseSDKTests;
-		};
 		2D401F18214A64180000F229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2DF81EB420B8608B009AAC66 /* Project object */;
@@ -273,20 +262,6 @@
 			remoteGlobalIDString = 2DF81EBB20B8608B009AAC66;
 			remoteInfo = SampleAppSwift;
 		};
-		B810EC8420C6902000218B93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 617D3BB21FA21C7200AC0440;
-			remoteInfo = SyneriseSDK;
-		};
-		B810EC8820C6904900218B93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 617D3BB11FA21C7200AC0440;
-			remoteInfo = SyneriseSDK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -308,7 +283,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +425,6 @@
 		A1E279FF20E6482A00E595B5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataSource.swift; sourceTree = "<group>"; };
 		A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
-		B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SyneriseSDK.xcodeproj; path = ../SyneriseSDK/SyneriseSDK.xcodeproj; sourceTree = "<group>"; };
 		B84F68CB20C7EBFC00A8ECBE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = SampleAppSwift/Internal/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
 		B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegistrationFormView.xib; sourceTree = "<group>"; };
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
@@ -553,7 +526,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -563,7 +535,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F23214A64430000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -573,7 +544,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +641,6 @@
 		2DF81EB320B8608B009AAC66 = {
 			isa = PBXGroup;
 			children = (
-				B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */,
 				2DF81EBE20B8608B009AAC66 /* SampleAppSwift */,
 				2D401F11214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension */,
 				2D401F25214A64430000F229 /* SyneriseCarouselNotificationContentExtension */,
@@ -936,15 +905,6 @@
 				2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		B810EC8120C6902000218B93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B810EC8520C6902000218B93 /* SyneriseSDK.framework */,
-				2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E16064DE79C651DF8B25B492 /* Frameworks */ = {
@@ -1624,12 +1584,6 @@
 			mainGroup = 2DF81EB320B8608B009AAC66;
 			productRefGroup = 2DF81EBD20B8608B009AAC66 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B810EC8120C6902000218B93 /* Products */;
-					ProjectRef = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2DF81EBB20B8608B009AAC66 /* SampleAppSwift */,
@@ -1640,23 +1594,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SyneriseSDK_UnitTests.xctest;
-			remoteRef = 2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B810EC8520C6902000218B93 /* SyneriseSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SyneriseSDK.framework;
-			remoteRef = B810EC8420C6902000218B93 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D401F0C214A64180000F229 /* Resources */ = {
@@ -1721,7 +1658,7 @@
 				A142CC992118812300079BBD /* CheckoutPaymentTableViewCell.xib in Resources */,
 				A12BE42720D0202F00056A36 /* UserLoginFormView.xib in Resources */,
 				FF46132720EE782400A63EB5 /* ProductViewController.xib in Resources */,
-				2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */,
+				2D24FAE620C59466000B5B5D /* BuildFile in Resources */,
 				2D07E15520CFC9B7005E89D5 /* MainViewController.xib in Resources */,
 				A142CC93211880D900079BBD /* CheckoutProductTableViewCell.xib in Resources */,
 				FF50D21720EFA2A5000379C6 /* ProfileViewController.xib in Resources */,
@@ -1972,11 +1909,6 @@
 			isa = PBXTargetDependency;
 			target = 2DF81EBB20B8608B009AAC66 /* SampleAppSwift */;
 			targetProxy = 2DF81EDC20B8608D009AAC66 /* PBXContainerItemProxy */;
-		};
-		B810EC8920C6904900218B93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SyneriseSDK;
-			targetProxy = B810EC8820C6904900218B93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

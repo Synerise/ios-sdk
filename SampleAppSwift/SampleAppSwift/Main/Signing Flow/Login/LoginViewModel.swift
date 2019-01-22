@@ -22,7 +22,7 @@ class LoginViewModel {
     weak var delegate: LoginViewModelDelegate?
 
     var userLoginFormViewModel: UserLoginFormViewModel = {
-        let login = "
+        let login = ""
         let password = ""
         let loginType = UserLoginFormViewModel.LoginType.email
 
