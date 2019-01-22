@@ -1170,9 +1170,9 @@ Requests client's email change.
 let email = self.emailTextField.text ?? ""
 
 Client.requestEmailChange(email: email, success: { _ in
-	self.showSuccessInfo()
+	// success
 }) { (error) in
-	self.showErrorInfo(error as NSError)
+	// failure
 }
 ```
 
@@ -1186,9 +1186,9 @@ let password = self.passwordTextField.text ?? ""
 let token = self.tokenTextField.text ?? ""
 
 Client.confirmEmailChange(password: password, token: token, success: { _ in
-	self.showSuccessInfo()
+	// success
 }) { (error) in
-	self.showErrorInfo(error as NSError)
+	// failure
 }
 ```
 
@@ -1247,11 +1247,9 @@ guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
 
 showLoading()
 Client.deleteAccountByFacebookToken(facebookToken: facebookToken, success: { (isSuccess) in
-	self.hideLoading()
-	self.showSuccessInfo()
+	// success
 }, failure: { (error) in
-	self.hideLoading()
-	self.showErrorInfo(error as NSError)
+	// failure
 })
 ```
 
