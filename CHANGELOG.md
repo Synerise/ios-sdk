@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.9] - 2019-01-23
+
+### Added
+- Synerise.isSyneriseSimplePush method.
+- Synerise.isSyneriseSilentCommand method.
+- Synerise.isSyneriseSilentSDKCommand method.
+- Synerise.isSyneriseBanner method.
+
+### Changed
+- Autotracking events.
+
+
 ## [3.3.8] - 2019-01-16
 
 ### Added

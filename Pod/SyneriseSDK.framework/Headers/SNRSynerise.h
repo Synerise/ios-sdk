@@ -192,6 +192,34 @@ NS_SWIFT_NAME(Synerise)
  */
 + (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
 
+/**
+ * Checks that notification's sender is Synerise and its kind is Simple Push.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isSyneriseSimplePush:(NSDictionary *)userInfo;
+
+/**
+ * Checks that notification's sender is Synerise and its kind is Silent Command.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isSyneriseSilentCommand:(NSDictionary *)userInfo;
+
+/**
+ * Checks that notification's sender is Synerise and its kind is Silent SDK Command.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isSyneriseSilentSDKCommand:(NSDictionary *)userInfo;
+
+/**
+ * Checks that notification's sender is Synerise and its kind is Banner.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isSyneriseBanner:(NSDictionary *)userInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END
