@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.10] - 2019-02-03
+
+### Added
+- Client.authenticateByOAuth method.
+- Client.regenerateUUID method.
+
+### Changed
+- Client.authenticateByFacebook method uses context optionally.
+- Client.requestEmailChange method.
+- Client.confirmEmailChange method.
+
 ## [3.3.9] - 2019-01-23
 
 ### Added

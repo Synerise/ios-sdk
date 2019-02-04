@@ -1,8 +1,8 @@
-# Synerise iOS SDK (v3.3.9) - User documentation
+# Synerise iOS SDK (v3.3.10) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.3.9-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.3.10-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
@@ -1037,6 +1037,20 @@ Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success:
 })
 ```
 
+#### `Client.authenticateByOAuth(accessToken:success:failure:)`
+Signs in a client with OAuth Access Token.
+
+**Swift:**
+```swift
+let accesToken: String = "ACCESS TOKEN"
+
+Client.authenticateByOAuth(accessToken: accesToken, success: { (success) in
+	// success
+}, failure: { (error) in
+	// failure
+})
+```
+
 
 #### `Client.isSignedIn`
 Checks whether client is signed in (is client's token not expired).
@@ -1079,6 +1093,18 @@ Retrieves current client's UUID.
 **Swift:**
 ```swift
 func getUUID() -> String {
+	return Client.getUUID()
+}
+```
+
+#### `Client.regenerateUUID()`
+Regenerates client's UUID.
+
+**Swift:**
+```swift
+func getRegeneratedUUID() -> String {
+	Client.regenerateUUID();
+
 	return Client.getUUID()
 }
 ```
@@ -1162,14 +1188,15 @@ Client.changePassword(password: password, oldPassword: oldPassword, success: { (
 })
 ```
 
-#### `Client.requestEmailChange(email:success:failure:)`
+#### `Client.requestEmailChange(email:password:success:failure:)`
 Requests client's email change.
 
 **Swift:**
 ```swift
-let email = self.emailTextField.text ?? ""
+let email: String = "EMAIL"
+let password: String = "PASSWORD"
 
-Client.requestEmailChange(email: email, success: { _ in
+Client.requestEmailChange(email: email, password: password, success: { _ in
 	// success
 }) { (error) in
 	// failure
@@ -1177,15 +1204,14 @@ Client.requestEmailChange(email: email, success: { _ in
 ```
 
 
-#### `Client.confirmEmailChange(password:token:success:failure:)`
+#### `Client.confirmEmailChange(token:success:failure:)`
 Confirms client's email change with provided token.
 
 **Swift:**
 ```swift
-let password = self.passwordTextField.text ?? ""
-let token = self.tokenTextField.text ?? ""
+let token: String = "TOKEN"
 
-Client.confirmEmailChange(password: password, token: token, success: { _ in
+Client.confirmEmailChange(token: token, success: { _ in
 	// success
 }) { (error) in
 	// failure
