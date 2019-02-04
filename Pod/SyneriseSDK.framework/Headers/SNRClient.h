@@ -9,6 +9,8 @@
 #import "SNRTokenOrigin.h"
 
 @class SNRClientRegisterAccountContext;
+@class SNRClientFacebookAuthenticationContext;
+@class SNRClientOAuthContext;
 @class SNRClientAccountInformation;
 @class SNRClientUpdateAccountContext;
 @class SNRClientPasswordResetRequestContext;
@@ -95,8 +97,9 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)authenticateByFacebookWithFacebookToken:(NSString *)facebookToken
+                                        context:(nullable SNRClientFacebookAuthenticationContext *)context
                                         success:(nullable void (^)(BOOL isSuccess))success
-                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:success:failure:));
+                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:context:success:failure:));
 
 /**
  * Signs in a registered client with Facebook Token.
@@ -108,6 +111,18 @@ NS_SWIFT_NAME(Client)
 + (void)authenticateByFacebookIfRegisteredWithFacebookToken:(NSString *)facebookToken
                                         success:(nullable void (^)(BOOL isSuccess))success
                                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:success:failure:));
+
+/**
+ * Signs in a client with OAuth Access Token.
+ *
+ * @param accessToken Token OAuth Access Token.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
+                                    context:(nullable SNRClientOAuthContext *)context
+                                    success:(nullable void (^)(BOOL isSuccess))success
+                                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:context:success:failure:));
 
 /**
  * Checks whether client is signed in (is client's token not expired).
@@ -132,6 +147,11 @@ NS_SWIFT_NAME(Client)
  * Retrieves current client's UUID.
  */
 + (NSString *)getUUID;
+
+/**
+ * Regenerates client's UUID.
+ */
++ (void)regenerateUUID;
 
 /**
  * Gets client's account information.
@@ -192,25 +212,25 @@ NS_SWIFT_NAME(Client)
  * Requests client's email change.
  *
  * @param email Client's new email.
+ * @param password Client's password.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)requestEmailChange:(NSString *)email
+                  password:(NSString *)password
                    success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChange(email:success:failure:));
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:success:failure:));
 
 /**
  * Confirms client's email change with provided token.
  *
- * @param password Client's password.
  * @param token Client's token provided by email.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)confirmEmailChange:(NSString *)password
-                     token:(NSString *)token
++ (void)confirmEmailChange:(NSString *)token
                    success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(password:token:success:failure:));
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:success:failure:));
 
 /**
  * Requests client's phone update. A client will receive a code on the provided phone in order to use.
