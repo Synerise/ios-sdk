@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.11] - 2019-02-07
+
+### Fixed
+- Facebook authentication.
+
+### Changed
+- Client.requestEmailChange method (newsleeterAgreement has been added to arguments).
+- Client.confirmEmailChange method (smsAgreement has been added to arguments).
+
 ## [3.3.10] - 2019-02-03
 
 ### Added

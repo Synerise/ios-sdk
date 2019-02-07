@@ -225,12 +225,14 @@ NS_SWIFT_NAME(Client)
  * Confirms client's email change with provided token.
  *
  * @param token Client's token provided by email.
+ * @param newsletterAgreement Agreement for newsletter with email provided.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)confirmEmailChange:(NSString *)token
+        newsletterAgreement:(BOOL)newsletterAgreement
                    success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:success:failure:));
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:newsletterAgreement:success:failure:));
 
 /**
  * Requests client's phone update. A client will receive a code on the provided phone in order to use.
@@ -247,14 +249,16 @@ NS_SWIFT_NAME(Client)
  * Confirms client's phone update with code provided.
  *
  * @param phone Client's phone number.
+ * @param smsAgreement Agreement for SMS with phone number provided.
  * @param confirmationCode Client's confirmation code received by phone.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)confirmPhoneUpdate:(NSString *)phone
           confirmationCode:(NSString *)confirmationCode
+              smsAgreement:(BOOL)smsAgreement
                    success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneUpdate(phone:confirmationCode:success:failure:));
+                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneUpdate(phone:confirmationCode:smsAgreement:success:failure:));
 
 /**
  * Deletes client's account information.
