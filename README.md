@@ -654,7 +654,8 @@ class NotificationViewController: SingleMediaContentExtensionViewController, UNN
 }
 ```
 
-**IMPORTANT**
+**IMPORTANT**  
+
 You have to remember about correct configuration in your extension \*.plist file. See our code in Sample Swift App.
 
 
@@ -673,7 +674,8 @@ In main application, you have to set notifications categories with right identif
 	UNUserNotificationCenter.current().setNotificationCategories([singleMediaCategory, carouselCategory])
 ```
 
-Our Sample App shows configuration and extensions, see https://github.com/Synerise/ios-sdk/tree/master/SampleAppSwift.
+Our Sample App shows configuration and extensions:  
+https://github.com/Synerise/ios-sdk/tree/master/SampleAppSwift.
 
 
 # Features
