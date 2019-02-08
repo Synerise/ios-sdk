@@ -616,6 +616,65 @@ NotificationServiceSettings.shared.disableInAppAlerts = true
 ```
 
 
+## Rich Media push notifications
+
+At this point, Simple Push Campaign has two types of Rich Media extensions:
+- Single Media
+- Image Carousel
+
+### Requirements
+
+To add this feature in your Simple Push Campaigns, you have to:
+* have correctly configured synerise push notifications
+* create Notification Content Extension - separately for each type of Rich Media
+* configure App Group for main application and its extensions - please, read Apple documentation
+
+### Configuration
+
+Synerise SDK does most of the work needed and provides classes for Notification Content Extensions. When you create an extension, you just have to make it inherited from Synerise SDK suitable class.
+
+Example for Single Media Notification Extension:
+
+```swift
+import UIKit
+import UserNotifications
+import UserNotificationsUI
+import SyneriseSDK
+
+class NotificationViewController: SingleMediaContentExtensionViewController, UNNotificationContentExtension {
+
+    func didReceive(_ notification: UNNotification) {
+        NotificationServiceSettings.shared().appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
+        setSyneriseNotification(notification)
+    }
+
+    func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
+        setSyneriseNotificationResponse(response, completionHandler: completion)
+    }
+}
+```
+
+**IMPORTANT**
+You have to remember about correct configuration in your extension \*.plist file. See our code in Sample Swift App.
+
+
+In main application, you have to set notifications categories with right identifiers. You must take it from Synerise SDK constants to make these working. But you can feel at free in naming buttons.
+
+```swift
+	let singleMediaCategory = UNNotificationCategory(identifier: SNRSingleMediaContentExtensionViewControllerCategoryIdentifier, actions: [], intentIdentifiers: [], options: [])
+        
+	let carouselPrevious = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerPreviousItemIdentifier, title: "Previous", options: [])
+	let carouselAction = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerChooseItemIdentifier, title: "Go!", options: UNNotificationActionOptions.foreground)
+        
+	let carouselNext = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerNextItemIdentifier, title: "Next", options: [])
+        
+	let carouselCategory = UNNotificationCategory(identifier: SNRCarouselContentExtensionViewControllerCategoryIdentifier, actions: [carouselPrevious, carouselAction, carouselNext], intentIdentifiers: [], options: [])
+        
+	UNUserNotificationCenter.current().setNotificationCategories([singleMediaCategory, carouselCategory])
+```
+
+Our Sample App shows configuration and extensions, see https://github.com/Synerise/ios-sdk/tree/master/SampleAppSwift.
+
 
 # Features
 
