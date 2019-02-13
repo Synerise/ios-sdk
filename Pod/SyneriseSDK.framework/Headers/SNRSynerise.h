@@ -155,6 +155,13 @@ NS_SWIFT_NAME(Synerise)
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(clientApiKey:baseUrl:));
 
 /**
+ * Changes Client API Key dynamically.
+ *
+ * @param clientApiKey Synerise Client API Key.
+ */
++ (void)changeClientApiKey:(NSString *)clientApiKey;
+
+/**
  * Enables/disables console logs from Synerise SDK.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
