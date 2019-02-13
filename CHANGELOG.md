@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.12] - 2019-02-13
+
+### Changed
+- Improvements to user session handling
+
 ## [3.3.11] - 2019-02-07
 
 ### Fixed
