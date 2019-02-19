@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.13] - 2019-02-19
+
+### Changed
+- Improvements in oauth authentication.
+
 ## [3.3.12] - 2019-02-13
 
 ### Changed
