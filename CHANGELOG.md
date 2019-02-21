@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [3.3.14] - 2019-02-21
 
 ### Added
-- Client.updateEmailByFacebook.
+- Client.requestEmailChangeByFacebook.
 
 ## [3.3.13] - 2019-02-19
 
