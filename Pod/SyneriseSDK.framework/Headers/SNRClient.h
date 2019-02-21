@@ -235,6 +235,17 @@ NS_SWIFT_NAME(Client)
                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:newsletterAgreement:success:failure:));
 
 /**
+ * Requests client's email change by Facebook.
+ *
+ * @param email Client's new email.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)requestEmailChangeByFacebook:(NSString *)email
+                             success:(nullable void (^)(BOOL isSuccess))success
+                             failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChangeByFacebook(email:success:failure:));
+
+/**
  * Requests client's phone update. A client will receive a code on the provided phone in order to use.
  *
  * @param phone Client's phone number.
@@ -267,8 +278,9 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)deleteAccount:(NSString *)password success:(nullable void (^)(BOOL isSuccess))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
++ (void)deleteAccount:(NSString *)password
+              success:(nullable void (^)(BOOL isSuccess))success
+              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
 
 /**
  * Deletes client's account information by Facebook.
@@ -277,8 +289,9 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)deleteAccountByFacebookWithFacebookToken:(NSString *)facebookToken success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
++ (void)deleteAccountByFacebook:(NSString *)facebookToken
+                        success:(nullable void (^)(BOOL isSuccess))success
+                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
 
 /**
  * Registers user for push notifications.
