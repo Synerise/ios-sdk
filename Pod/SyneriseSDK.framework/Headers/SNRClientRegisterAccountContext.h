@@ -25,8 +25,8 @@ NS_SWIFT_NAME(ClientRegisterAccountContext)
 @property (copy, nonatomic, nullable, readwrite) NSString *firstName;
 @property (copy, nonatomic, nullable, readwrite) NSString *lastName;
 @property (copy, nonatomic, nullable, readwrite) NSString *customId;
-@property (assign, nonatomic, readwrite) SNRClientSex sex;
 
+@property (assign, nonatomic, readwrite) SNRClientSex sex;
 @property (copy, nonatomic, nullable, readwrite) NSString *phone;
 @property (copy, nonatomic, nullable, readwrite) NSString *company;
 @property (copy, nonatomic, nullable, readwrite) NSString *address;
