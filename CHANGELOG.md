@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.15] - 2019-02-27
+
+### Changed
+- Change to allow anonymous client using whole methods.
+
 ## [3.3.14] - 2019-02-21
 
 ### Added
