@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.16] - 2019-03-01
+
+### Changed
+- Improvements to user anonymous session.
+
 ## [3.3.15] - 2019-02-27
 
 ### Changed
