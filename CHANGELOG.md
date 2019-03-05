@@ -123,7 +123,7 @@ All notable changes to this project will be documented in this file.
 - Loyalty module is renamed to Promotions.
 - CacheService is replaced by CacheManager.
 - New functionality in SNRApiError (see Error Handling section in README).
-- Synerise SDK invokes all delegation methods on main thread
+- Synerise SDK invokes all delegation methods on main thread.
 
 ### Fixed
 - Improving Synerise SDK stability.
@@ -132,7 +132,7 @@ All notable changes to this project will be documented in this file.
 ## [3.3.1] - 2018-11-21
 
 ### Fixed
-- Method name for Swift: Client.registerClient -> Client.registerAccount
+- Method name for Swift: Client.registerClient -> Client.registerAccount.
 - Improving SDK stability.
 
 ## [3.3.0] - 2018-11-20
@@ -297,7 +297,7 @@ All notable changes to this project will be documented in this file.
 ## [3.2.16] - 2018-07-06
 
 ### Added
-- Bitcode support
+- Bitcode support.
 - Option to change API baseURL for on-premise installations.
 
 ### Fixed
@@ -307,7 +307,7 @@ All notable changes to this project will be documented in this file.
 ## [3.2.15] - 2018-07-03
 
 ### Changed
-- Synerise activities are now presented via own UIWindow
+- Synerise activities are now presented via own UIWindow.
 
 
 ## [3.2.14] - 2018-06-28
