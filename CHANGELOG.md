@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.0] - 2019-03-08
+
+### Added
+- Posiibility to excluding compontents from autotracking by class.
+- Posiibility to excluding components from autotracking by tag.
+
+### Changed
+- New structure and code organization for SDK settings (SNRSynerise.settings)
+- Improvements to user anonymous session.
+
 ## [3.3.16] - 2019-03-01
 
 ### Changed
