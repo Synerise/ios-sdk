@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
-#import "SNRBaseContext.h"
+#import "SNRBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 NS_SWIFT_NAME(ClientPasswordResetRequestContext)
-@interface SNRClientPasswordResetRequestContext : SNRBaseContext
+@interface SNRClientPasswordResetRequestContext : SNRBaseModel
 
 @property (copy, nonatomic, nonnull, readonly) NSString *email;
 

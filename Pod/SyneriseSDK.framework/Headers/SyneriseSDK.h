@@ -11,14 +11,18 @@
 
 #import <SyneriseSDK/SNRSynerise.h>
 
+// Settings
+#import <SyneriseSDK/SNRSettings.h>
+#import <SyneriseSDK/SNRNotificationsSettings.h>
+#import <SyneriseSDK/SNRTrackerSettings.h>
+#import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
+#import <SyneriseSDK/SNRInjectorSettings.h>
+
 // Modules
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
-
-// Settings
-#import <SyneriseSDK/SNRNotificationServiceSettings.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>
@@ -61,7 +65,6 @@
 
 // API Models
 #import <SyneriseSDK/SNRBaseModel.h>
-#import <SyneriseSDK/SNRBaseContext.h>
 #import <SyneriseSDK/SNRClientAgreements.h>
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>

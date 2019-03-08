@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
-#import "SNRBaseContext.h"
+#import "SNRBaseModel.h"
 #import "SNRClientSex.h"
 #import "SNRClientAgreements.h"
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 NS_SWIFT_NAME(ClientRegisterAccountContext)
-@interface SNRClientRegisterAccountContext : SNRBaseContext
+@interface SNRClientRegisterAccountContext : SNRBaseModel
 
 @property (copy, nonatomic, nullable, readwrite) NSString *email;
 @property (copy, nonatomic, nonnull, readwrite) NSString *password;
