@@ -110,7 +110,7 @@ NS_SWIFT_NAME(Injector)
  *
  * @param automatic Specifies that automatic mode is enabled/disabled.
  */
-+ (void)setAutomatic:(BOOL)automatic;
++ (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.injector instead.");
 
 /**
  * Sets object for Walkthrough delegate methods.
@@ -170,7 +170,7 @@ NS_SWIFT_NAME(Injector)
                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
- * Shows banner immediately     .
+ * Shows banner immediately.
  *
  * @param bannerDictionary Dictionary representation for banner.
  * @param markPresented Sets banner as presented and this banner instance representation will not appear second time.

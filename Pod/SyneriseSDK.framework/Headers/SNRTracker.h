@@ -6,6 +6,8 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+#import "SNRTrackerSettings.h"
+
 @class SNREvent;
 
 /**
@@ -32,26 +34,6 @@ typedef struct {
     NSTimeInterval autoFlushTimeout;
     
 } SNRTrackerConfiguration NS_SWIFT_NAME(TrackerConfiguration);
-
-/**
- * @enum SNRTrackerAutoTrackMode
- */
-
-typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
-    
-    /// Autotracking is set to on touch events only.
-    SNRTrackerAutoTrackModeEager,
-    
-    /// Autotracking is set to on click events only.
-    SNRTrackerAutoTrackModePlain,
-    
-    /// Autotracking is set to attached to nearly everything in your app (even to activities and viewDidAppear: method to record VisitedScreen events).
-    SNRTrackerAutoTrackModeFine,
-    
-    /// Autotracking is disabled.
-    SNRTrackerAutoTrackModeDisabled
-    
-} NS_SWIFT_NAME(AutoTrackMode);
 
 /**
  * @protocol SNRTrackerDelegate
@@ -104,7 +86,7 @@ NS_SWIFT_NAME(Tracker)
  *
  * @param configuration Configuration of tracker.
  */
-+ (void)setConfiguration:(SNRTrackerConfiguration)configuration;
++ (void)setConfiguration:(SNRTrackerConfiguration)configuration DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker instead.");
 
 /**
  * Sets mode of AutoTrack.
@@ -113,14 +95,14 @@ NS_SWIFT_NAME(Tracker)
  *
  * @param mode Mode of AutoTrack functionality.
  */
-+ (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode;
++ (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker instead.");
 
 /**
  * Enables/disables sending location event automatically
  *
  * @param enabled Specifies that sending location event is enabled/disabled.
  */
-+ (void)setLocationAutomaticEnabled:(BOOL)enabled;
++ (void)setLocationAutomaticEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker instead.");
 
 /**
  * Your custom identifier will be sent within every event in event params.
