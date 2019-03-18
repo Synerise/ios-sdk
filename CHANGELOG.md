@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.1] - 2019-03-18
+
+### Added
+- New event classes (ProductViewEvent, RecommendationSeenEvent, RecommendationClickEvent).
+- new additional 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
+
+### Changed
+- Simple Push campaign doesn't send 'push.received' event by now.
+
 ## [3.4.0] - 2019-03-08
 
 ### Added
@@ -8,7 +17,7 @@ All notable changes to this project will be documented in this file.
 - Posiibility to excluding components from autotracking by tag.
 
 ### Changed
-- New structure and code organization for SDK settings (SNRSynerise.settings)
+- New structure and code organization for SDK settings (SNRSynerise.settings).
 - Improvements to user anonymous session.
 
 ## [3.3.16] - 2019-03-01
@@ -66,7 +75,6 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Autotracking events.
-
 
 ## [3.3.8] - 2019-01-16
 
