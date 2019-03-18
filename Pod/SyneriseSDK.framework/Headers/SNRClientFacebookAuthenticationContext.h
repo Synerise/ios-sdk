@@ -17,8 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientFacebookAuthenticationContext)
 @interface SNRClientFacebookAuthenticationContext : SNRBaseModel
 
-@property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
+@property (copy, nonatomic, nullable, readwrite) NSString *authID;
 
+@property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
 
 @end
