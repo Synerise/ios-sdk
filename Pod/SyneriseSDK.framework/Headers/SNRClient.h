@@ -79,15 +79,13 @@ NS_SWIFT_NAME(Client)
  *
  * @param email Client's email.
  * @param password Client's password.
- * @param deviceId Device identificator.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
-               deviceId:(nullable NSString *)deviceId
                 success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(signIn(email:password:deviceId:success:failure:));
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
 
 /**
  * Signs in a client with Facebook Token.
