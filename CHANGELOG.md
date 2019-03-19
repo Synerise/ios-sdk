@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.2] - 2019-03-19
+
+### Added
+- new additional 'authID' parameter in Client.authenticateByFacebook method.
+- new additional 'authID' parameter in Client.authenticateByOAuth method.
+
+### Removed
+- 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
+
 ## [3.4.1] - 2019-03-18
 
 ### Added
