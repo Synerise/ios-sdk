@@ -814,7 +814,7 @@ By default functionality is disabled and in order to enable it you need to use c
 Synerise.settings.tracker.autoTracking.mode = .fine
 ```
 
-Accepted values for setAutoTrackMode(mode) method:
+Accepted values for `Synerise.settings.tracker.autoTracking.mode`:
 
 **EAGER** - listeners are set to on touch events only.
 
