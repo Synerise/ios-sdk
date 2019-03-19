@@ -116,18 +116,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	Synerise.setDebugModeEnabled(true) // 2
 	Synerise.setDelegate(self) // 3
 
-	Tracker.setAutoTrackMode(.fine) // 4
-
-	let trackerConfiguration = TrackerConfiguration();
-	trackerConfiguration.minBatchSize = 10;
-	trackerConfiguration.maxBatchSize = 100;
-	trackerConfiguration.autoFlushTimeout = 10.0;
-
-	Tracker.setConfiguration(trackerConfiguration); // 5
-
-	Injector.setAutomatic(true) // 6
-	Injector.setWalkthroughDelegate(self) // 7
-	Injector.setBannerDelegate(self) // 8
+	Injector.setWalkthroughDelegate(self) // 4
+	Injector.setBannerDelegate(self) // 5
 }
 ```
 
@@ -139,31 +129,18 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRSynerise initializeWithClientApiKey:clientApiKey]; // 1
 	[SNRSynerise setDebugModeEnabled:YES]; //2
 	[SNRSynerise setDelegate:self]; // 3
-	
-	[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine]; // 4
 
-	SNRTrackerConfiguration trackerConfiguration;
-	trackerConfiguration.minBatchSize = 10;
-	trackerConfiguration.maxBatchSize = 100;
-	trackerConfiguration.autoFlushTimeout = 10.0f;
-	
-	[SNRTracker setConfiguration:trackerConfiguration]; // 5
-
-	[SNRInjector setAutomatic:YES]; // 6
-	[SNRInjector setWalkthroughDelegate:self]; // 7
-	[SNRInjector setBannerDelegate:self]; // 8
+	[SNRInjector setWalkthroughDelegate:self]; // 4
+	[SNRInjector setBannerDelegate:self]; // 5
 }
 ```
 
 Let's dive into some configurable functionalities:  
 1. `Synerise.initialize` - Initializes **Synerise SDK**.  
 2. `Synerise.setDebugModeEnabled` - Enables debug mode for **Synerise SDK**. See **Debug logs** section for more information.  
-3. `Synerise.setDelegate` - Sets delegate to handle actions from **Synerise SDK**. See **Synerise SDK delegate** section for more information.  
-4. `Tracker.setAutoTrackMode` - Sets proper mode for view tracking. See **Tracker** section for more information.  
-5. `Tracker.setConfiguration` - Sets custom configuration for Tracker module.
-6. `Injector.setAutomatic` - Fetches your Injector content right away. See **Injector** section for more information.  
-7. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
-8. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
+3. `Synerise.setDelegate` - Sets delegate to handle actions from **Synerise SDK**. See **Synerise SDK delegate** section for more information.   
+4. `Injector.setWalkthroughDelegate` - Sets delegate to handle walkthrough actions. See **Injector** section for more information.  
+5. `Injector.setBannerDelegate` - Sets delegate to handle banner actions. See **Injector** section for more information.  
 
 ## Initialization with custom API environment
 
@@ -590,29 +567,10 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 
 If you have your own Push Notifications implementation, you can disable In App Notification Alerts from **Synerise SDK**.  
 Just set one configuration option in two ways.
-  
-First approach:
 
 **Swift:**
 ```swift
-Synerise.notificationServiceSettings.disableInAppAlerts = true
-```
-
-**Objective-C:**
-```objective-c
-SNRSynerise.notificationServiceSettings.disableInAppAlerts = YES;
-```
-
-Second approach:
-
-**Swift:**
-```swift
-NotificationServiceSettings.shared.disableInAppAlerts = true
-```
-
-**Objective-C:**
-```objective-c
-[SNRNotificationServiceSettings sharedInstance].disableInAppAlerts = YES;
+Synerise.settings.notifications.disableInAppAlerts = true
 ```
 
 
@@ -629,7 +587,7 @@ To add this feature in your Simple Push Campaigns, you have to:
 * create Notification Content Extension - separately for each type of Rich Media
 * configure App Group for main application and its extensions - please, read Apple documentation
 
-### Configuration
+### Extensions
 
 Synerise SDK does most of the work needed and provides classes for Notification Content Extensions. When you create an extension, you just have to make it inherited from Synerise SDK suitable class.
 
@@ -644,7 +602,7 @@ import SyneriseSDK
 class NotificationViewController: SingleMediaContentExtensionViewController, UNNotificationContentExtension {
 
     func didReceive(_ notification: UNNotification) {
-        NotificationServiceSettings.shared().appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
+        Synerise.settings.notifications.appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
         setSyneriseNotification(notification)
     }
 
@@ -658,8 +616,14 @@ class NotificationViewController: SingleMediaContentExtensionViewController, UNN
 
 You have to remember about correct configuration in your extension \*.plist file. See our code in Sample Swift App.
 
+### Host App
 
-In main application, you have to set notifications categories with right identifiers. You must take it from Synerise SDK constants to make these working. But you can feel at free in naming buttons.
+1. You have to set app group identifier in Synerise SDK settings:
+```swift
+Synerise.settings.notifications.appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
+```
+
+2. You have to set notifications categories with right identifiers. You must take it from Synerise SDK constants to make these working. But you can feel at free in naming buttons.
 
 ```swift
 	let singleMediaCategory = UNNotificationCategory(identifier: SNRSingleMediaContentExtensionViewControllerCategoryIdentifier, actions: [], intentIdentifiers: [], options: [])
@@ -820,26 +784,14 @@ At this point, **Synerise SDK** caches:
 
 **Synerise SDK** provides you with powerful features for User Activity Tracking that you can use within your mobile application.
 
-## Tracker Configuration
+## Settings
 
 **Swift:**
 ```swift
-var trackerConfiguration: TrackerConfiguration = TrackerConfiguration();
-trackerConfiguration.minBatchSize = 1;
-trackerConfiguration.maxBatchSize = 100;
-trackerConfiguration.autoFlushTimeout = 2.0;
-    
-[Tracker setConfiguration:trackerConfiguration];
-```
-
-**Objective-C:**
-```objective-c
-SNRTrackerConfiguration trackerConfiguration;
-trackerConfiguration.minBatchSize = 1;
-trackerConfiguration.maxBatchSize = 100;
-trackerConfiguration.autoFlushTimeout = 2.0f;
-    
-[SNRTracker setConfiguration:trackerConfiguration];
+Synerise.settings.tracker.minBatchSize = 1
+Synerise.settings.tracker.maxBatchSize = 100
+Synerise.settings.tracker.autoFlushTimeout = 5.0
+Synerise.settings.tracker.locationAutomatic = true
 ```
 
 **MIN BATCH SIZE** - This parameter sets a minimum number of events in queue required to send them.
@@ -847,6 +799,8 @@ trackerConfiguration.autoFlushTimeout = 2.0f;
 **MAX BATCH SIZE** - This parameter sets a maximum number of events, which may be sent in a single batch.
 
 **AUTO FLUSH TIMEOUT** - This parameter sets the time required to elapse before event's queue will attempt to be sent.
+
+**LOCATION AUTOMATIC** - This parameter specifies that sending location event is automatic.
 
 
 ## View tracking
@@ -857,12 +811,7 @@ By default functionality is disabled and in order to enable it you need to use c
 
 **Swift:**
 ```swift
-Tracker.setAutoTrackMode(.fine)
-```
-
-**Objective-C:**
-```objective-c
-[SNRTracker setAutoTrackMode:SNRTrackerAutoTrackModeFine];
+Synerise.settings.tracker.autoTracking.mode = .fine
 ```
 
 Accepted values for setAutoTrackMode(mode) method:
@@ -1004,7 +953,6 @@ Tracker.flushEvents {
 	// a block to be executed when SNRTracker has finished flushing events to Synerise servers, no matter the result.
 }
 ```
-
 
 
 # Client
@@ -1547,6 +1495,15 @@ Promotions.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
 # Injector
 
 Injector is designed to be simple to develop with, allowing you to integrate Synerise Mobile Content into your apps easily.
+
+## Settings
+
+```swift
+Synerise.settings.injector.automatic = true
+```
+
+**AUTOMATIC** - This parameter specifies that Injector starts automatically.
+
 
 ## Walkthrough
 
