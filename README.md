@@ -914,7 +914,7 @@ Group of events related to user's transactions.
 
 * `RecommendationSeenEvent` - record a 'client has seen recommendation' event.
 
-* `SNRRecommendationClickEvent` - record a 'client has clicked recommendation' event.
+* `RecommendationClickEvent` - record a 'client has clicked recommendation' event.
 
 
 #### Other Events
