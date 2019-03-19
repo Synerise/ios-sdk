@@ -899,6 +899,8 @@ Group of events related to products and cart.
 
 * `RemovedProductFromCartEvent` - record a 'client removed product from cart' event.
 
+* `ProductViewEvent` - record a 'client viewed product' event.
+
 
 #### Transaction Events
 Group of events related to user's transactions.
@@ -906,6 +908,13 @@ Group of events related to user's transactions.
 * `CancelledTransactionEvent` - record a 'client cancelled transaction' event.
 
 * `CompletedTransactionEvent` - record a 'client completed transaction' event.
+
+
+#### Recommendation Events
+
+* `RecommendationSeenEvent` - record a 'client has seen recommendation' event.
+
+* `SNRRecommendationClickEvent` - record a 'client has clicked recommendation' event.
 
 
 #### Other Events
