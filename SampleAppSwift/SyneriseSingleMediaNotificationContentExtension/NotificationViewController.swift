@@ -14,7 +14,7 @@ import SyneriseSDK
 class NotificationViewController: SingleMediaContentExtensionViewController, UNNotificationContentExtension {
 
     func didReceive(_ notification: UNNotification) {
-        NotificationServiceSettings.shared().appGroupIdentifier = "group.com.synerise.sdk.sample"
+        Synerise.settings.notifications.appGroupIdentifier  = "group.com.synerise.sdk.sample"
         setSyneriseNotification(notification)
     }
 
