@@ -26,11 +26,6 @@ class LoginViewModel {
         var password = ""
         var loginType = UserLoginFormViewModel.LoginType.email
         
-        #if DEBUG
-        login = "krzysztof.kurzawa@synerise.com"
-        password = "testPass12345!"
-        #endif
-        
         let userLoginFormViewModel = UserLoginFormViewModel(login: login, password: password, loginType: loginType)
 
         return userLoginFormViewModel
