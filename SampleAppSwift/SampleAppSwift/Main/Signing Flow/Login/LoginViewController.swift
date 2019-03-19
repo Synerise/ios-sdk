@@ -40,6 +40,13 @@ class LoginViewController: DefaultViewController {
     @IBAction func createNewAccountButtonWasClicked(_ sender: UIButton) {
         viewModel.createNewAccount()
     }
+    
+    @IBAction func authByFacebookWasClicked(_ sender: UIButton) {
+        viewModel.authenticateByFacebookToken {
+            UserInfoMessageManager.shared.success("You are signed in!", nil)
+            self.viewModel.coordinator?.userDidLogin()
+        }
+    }
 
     // MARK: - Lifecycle
 
@@ -51,15 +58,6 @@ class LoginViewController: DefaultViewController {
         self.hideKeyboardWhenTappedAround()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        viewModel.authenticateByFacebookToken {
-            UserInfoMessageManager.shared.success("You are signed in!", nil)
-            self.viewModel.coordinator?.userDidLogin()
-        }
-    }
-
     // MARK: - Private
 
     private func prepareFacebookLoginButton() {
@@ -68,7 +66,7 @@ class LoginViewController: DefaultViewController {
         
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.centerXAnchor.constraint(equalTo: facebookLoginContainerView.centerXAnchor).isActive = true
-        loginButton.centerYAnchor.constraint(equalTo: facebookLoginContainerView.centerYAnchor).isActive = true
+        loginButton.topAnchor.constraint(equalTo: facebookLoginContainerView.topAnchor, constant: 20).isActive = true
     }
     
     private func handleRegistrationSuccess(_ response: Any) {

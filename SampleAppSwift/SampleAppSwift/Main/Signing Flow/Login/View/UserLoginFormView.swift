@@ -54,7 +54,6 @@ class UserLoginFormView: InputView {
     @IBOutlet weak var loginField: BindingTextField!
     @IBOutlet weak var passwordField: BindingTextField!
     @IBOutlet var strokes: [UIView]!
-    @IBOutlet weak var loginTypeSegmentedControl: BindingSegmentedControl!
     @IBOutlet weak var signInButton: DefaultButton!
 
     // MARK: - IBAction
@@ -92,15 +91,9 @@ class UserLoginFormView: InputView {
     func setViewModel(_ viewModel: UserLoginFormViewModel) {
         self.viewModel = viewModel
 
-        guard let loginType = viewModel.loginType.value, loginType < loginTypeSegmentedControl.numberOfSegments else {
-            fatalError()
-        }
-
-        loginTypeSegmentedControl.selectedSegmentIndex = viewModel.loginType.value!
         loginField.text = viewModel.login.value
         passwordField.text = viewModel.password.value
         
-        loginTypeSegmentedControl.bind(to: viewModel.loginType)
         loginField.bind(to: viewModel.login)
         passwordField.bind(to: viewModel.password)
 

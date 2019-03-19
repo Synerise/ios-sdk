@@ -54,18 +54,20 @@ class LeftMenuViewModel {
         return profileInfoViewModel
     }()
     
-    lazy var syneriseSDKConfigurationInfoString: String = {
-        guard let clientApiKey: String = self.settingsService.get(SettingsServiceKey.syneriseClientAPIKey) else {
+    var syneriseSDKConfigurationInfoString: String {
+        guard let clientApiKey: String = ServiceProvider.resolve().getSettingsService().get(SettingsServiceKey.syneriseClientAPIKey) else {
             fatalError()
         }
         
+        let clientApiKeyProfile: String = Configuration.SyneriseSDK.clientApiKeyToProfileName[clientApiKey] ?? ""
+        
         return """
-        SyneriseSDK Client API Key:
+        \(clientApiKeyProfile)
         \(clientApiKey)
         """
-    }()
+    }
     
-    lazy var applicationBuildVersionString: String = {
+    var applicationBuildVersionString: String {
         guard let sampleBuild = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
             return ""
         }
@@ -78,7 +80,7 @@ class LeftMenuViewModel {
         Sample App | build: \(sampleBuild)
         SyneriseSDK | version: \(sdkVersion)
         """
-    }()
+    }
 
     private var leftMenuItemViewModels: [LeftMenuItemViewModel] = [LeftMenuItemViewModel]()
     

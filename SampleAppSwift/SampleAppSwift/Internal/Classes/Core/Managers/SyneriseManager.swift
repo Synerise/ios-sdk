@@ -29,28 +29,25 @@ class SyneriseManager {
         Synerise.initialize(clientApiKey: clientApiKey)
         Synerise.setDebugModeEnabled(true)
         
-        Synerise.notificationServiceSettings.disableInAppAlerts = settingsService.get(.syneriseDisableInAppAlertsKey) ?? false
-        Synerise.notificationServiceSettings.appGroupIdentifier = "group.com.synerise.sdk.sample"
+        Synerise.settings.notifications.disableInAppAlerts = settingsService.get(.syneriseDisableInAppAlertsKey) ?? false
+        Synerise.settings.notifications.appGroupIdentifier = "group.com.synerise.sdk.sample"
         
-        //Tracker.setLoggingEnabled(true)
         Tracker.setAutoTrackMode(.fine)
         
         Client.setLoggingEnabled(true)
 
-        //Injector.setLoggingEnabled(true)
         Injector.setAutomatic(true)
         
-        var trackerConfiguration = TrackerConfiguration()
-        trackerConfiguration.autoFlushTimeout = 1
-        trackerConfiguration.minBatchSize = 1
-        trackerConfiguration.maxBatchSize = 100
-        
-        Tracker.setConfiguration(trackerConfiguration)
-        //Tracker.setLoggingEnabled(true)
         Tracker.setAutoTrackMode(.fine)
         Tracker.setLocationAutomaticEnabled(true)
         
-        //Promotions.setLoggingEnabled(true)
+        Synerise.settings.tracker.minBatchSize = 1
+        Synerise.settings.tracker.maxBatchSize = 100
+        Synerise.settings.tracker.autoFlushTimeout = 5.0
+        Synerise.settings.tracker.autoTracking.mode = .fine
+        Synerise.settings.tracker.locationAutomatic = true
+        
+        Synerise.settings.injector.automatic = true
     }
     
     func setSyneriseDelegate(_ delegate: SyneriseDelegate) {

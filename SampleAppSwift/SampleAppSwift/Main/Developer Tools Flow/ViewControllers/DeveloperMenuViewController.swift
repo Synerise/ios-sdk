@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SyneriseSDK
 import Crashlytics
 
 protocol DeveloperMenuViewControllerDelegate: class {
@@ -29,5 +30,35 @@ class DeveloperMenuViewController: DefaultViewController {
     @IBAction func resetApplication() {
         delegate?.resetApplicationWasPressed(self)
         Crashlytics.sharedInstance().crash()
+    }
+    
+    @IBAction func synerise1() {
+        let clientApiKey: String = Configuration.SyneriseSDK.clientAPIKey1
+        
+        showLoading()
+        Synerise.changeClientApiKey(clientApiKey)
+        
+        let settingsService = ServiceProvider.resolve().getSettingsService()
+        settingsService.set(clientApiKey, forKey: SettingsServiceKey.syneriseClientAPIKey)
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.hideLoading()
+            self.showSuccessInfo("Current Synerise SDK profile", text: "Synerise Mobile Apps 1", debug: false)
+        }
+    }
+    
+    @IBAction func synerise2() {
+        let clientApiKey: String = Configuration.SyneriseSDK.clientAPIKey2
+        
+        showLoading()
+        Synerise.changeClientApiKey(clientApiKey)
+        
+        let settingsService = ServiceProvider.resolve().getSettingsService()
+        settingsService.set(clientApiKey, forKey: SettingsServiceKey.syneriseClientAPIKey)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.hideLoading()
+            self.showSuccessInfo("Current Synerise SDK profile", text: "Synerise Mobile Apps 2", debug: false)
+        }
     }
 }

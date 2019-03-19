@@ -15,6 +15,14 @@ class ClientAPIViewController: DefaultViewController {
     
     // MARK: - IBAction
     
+    @IBAction func getUUIDButtonWasPressed(_ sender: DefaultButton) {
+        let UUID: String = Client.getUUID()
+        
+        let debugTextViewController = makeDebugTextViewController(labelText: UUID, barTitle: "Get UUID")
+        
+        self.navigationController?.pushViewController(debugTextViewController, animated: true)
+    }
+    
     @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
         Client.getToken(success: { (token, origin) in
@@ -52,6 +60,10 @@ class ClientAPIViewController: DefaultViewController {
             self.showErrorInfo(error as NSError)
         })
         sender.animateTapping()
+    }
+    
+    @IBAction func regenerateUUID() {
+        Client.regenerateUUID()
     }
     
     // MARK: - Lifecycle

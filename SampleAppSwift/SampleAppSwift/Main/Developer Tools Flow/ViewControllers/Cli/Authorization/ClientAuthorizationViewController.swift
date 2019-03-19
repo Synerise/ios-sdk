@@ -20,13 +20,19 @@ class ClientAuthorizationViewController: DefaultViewController {
             return
         }
         
-        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success: { isSuccess in
+        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID:"", success: { isSuccess in
             if isSuccess {
                 self.hideLoading()
                 self.showSuccessInfo()
             }
         }) { (error) in
-            Client.authenticateByFacebook(facebookToken: facebookToken, success: { isSuccess in
+            let agreements: ClientAgreements = ClientAgreements();
+            
+            let context: ClientFacebookAuthenticationContext = ClientFacebookAuthenticationContext()
+            context.agreements = agreements;
+            context.attributes = ["param": "value"];
+            
+            Client.authenticateByFacebook(facebookToken: facebookToken, authID:"", context: context, success: { isSuccess in
                 if isSuccess {
                     self.hideLoading()
                     self.showSuccessInfo()

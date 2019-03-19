@@ -64,6 +64,8 @@ class LeftMenuViewController: DefaultViewController {
         
         viewModel.onUpdate = {
             self.refresh()
+            self.setApplicationBuildVersionLabel()
+            self.setSyneriseSDKConfigurationInfoLabel()
         }
     }
 

@@ -46,7 +46,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="GAw-xf-Oyn"/>
                                     </constraints>
-                                    <state key="normal" title="Log in →"/>
+                                    <state key="normal" title="Sign in →"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="5"/>

@@ -38,6 +38,8 @@ class ProfileViewController: DefaultViewController {
         
         prepareLeftMenuButton()
         self.hideKeyboardWhenTappedAround()
+        
+        self.viewModel.profileFormViewModel.fetchData()
     }
     
     // MARK: - Private

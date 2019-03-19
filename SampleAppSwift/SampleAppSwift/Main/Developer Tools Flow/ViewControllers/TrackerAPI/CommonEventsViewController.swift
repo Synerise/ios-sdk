@@ -40,6 +40,9 @@ class CommonEventsViewController: UITableViewController {
         if indexPath.section == 13 && indexPath.row == 0 { sendSearchedEvent() }
         if indexPath.section == 14 && indexPath.row == 0 { sendSharedEvent() }
         if indexPath.section == 15 && indexPath.row == 0 { sendVisitedScreenEvent() }
+        if indexPath.section == 16 && indexPath.row == 0 { sendProductViewEvent() }
+        if indexPath.section == 17 && indexPath.row == 0 { sendRecommendationSeenEvent() }
+        if indexPath.section == 18 && indexPath.row == 0 { sendRecommendationClickEvent() }
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -170,6 +173,34 @@ class CommonEventsViewController: UITableViewController {
     
     private func sendVisitedScreenEvent() {
         let event = VisitedScreenEvent(label: "label")
+        Tracker.send(event)
+    }
+    
+    private func sendProductViewEvent() {
+        let event = ProductViewEvent(label: "label")
+        event.setSKU("sku")
+        event.setName("product name")
+        event.setCategory("product category")
+        event.setRecommended(true)
+        
+        Tracker.send(event)
+    }
+    
+    private func sendRecommendationSeenEvent() {
+        let event = RecommendationSeenEvent(label: "label")
+        event.setSKU("sku")
+        event.setName("product name")
+        event.setCategory("product category")
+        
+        Tracker.send(event)
+    }
+    
+    private func sendRecommendationClickEvent() {
+        let event = RecommendationClickEvent(label: "label")
+        event.setSKU("sku")
+        event.setName("product name")
+        event.setCategory("product category")
+        
         Tracker.send(event)
     }
     

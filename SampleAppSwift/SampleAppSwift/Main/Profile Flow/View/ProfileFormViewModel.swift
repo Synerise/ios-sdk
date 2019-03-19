@@ -43,8 +43,6 @@ class ProfileFormViewModel {
         self.zipCode = BindingType<String>.init("")
         self.city = BindingType<String>.init("")
         self.countryCode = BindingType<String>.init("")
-        
-        updateForm()
     }
     
     // MARK: - Public
@@ -55,6 +53,10 @@ class ProfileFormViewModel {
     
     func invokeOnError(_ closure: @escaping ClientUpdatingError) {
         onErrorClosures.append(closure)
+    }
+    
+    func fetchData() {
+        updateForm()
     }
     
     // MARK: - Private
@@ -131,45 +133,51 @@ class ProfileFormViewModel {
         
         clientUpdateAccountContext = ClientUpdateAccountContext.init()
         
-        if let firstname = self.firstName.value, firstname.count > 1 {
+        if let firstname = self.firstName.value, firstname.count > 0 {
             clientUpdateAccountContext.firstName = firstname
         }
         
-        if let lastName = self.lastName.value, lastName.count > 1 {
+        if let lastName = self.lastName.value, lastName.count > 0 {
             clientUpdateAccountContext.lastName = lastName
         }
         
-        if let email = self.email.value, email.count > 1 {
+        if let email = self.email.value, email.count > 0 {
             clientUpdateAccountContext.email = email
         }
         
-        if let phone = self.phone.value, phone.count > 1 {
+        if let phone = self.phone.value, phone.count > 0 {
             clientUpdateAccountContext.phone = phone
         }
         
-        if let birthdate = self.birthdate.value, birthdate.count > 1 {
+        if let birthdate = self.birthdate.value, birthdate.count > 0 {
             clientUpdateAccountContext.birthDate = birthdate
         }
         
-        if let company = self.company.value, company.count > 1 {
+        if let company = self.company.value, company.count > 0 {
             clientUpdateAccountContext.company = company
         }
         
-        if let address = self.address.value, address.count > 1 {
+        if let address = self.address.value, address.count > 0 {
             clientUpdateAccountContext.address = address
         }
         
-        if let zipCode = self.zipCode.value, zipCode.count > 1 {
+        if let zipCode = self.zipCode.value, zipCode.count > 0 {
             clientUpdateAccountContext.zipCode = zipCode
         }
         
-        if let city = self.city.value, city.count > 1 {
+        if let city = self.city.value, city.count > 0 {
             clientUpdateAccountContext.city = city
         }
         
-        if let countryCode = self.countryCode.value, countryCode.count > 1 {
+        if let countryCode = self.countryCode.value, countryCode.count > 0 {
             clientUpdateAccountContext.countryCode = countryCode
         }
+        
+        let agreements: ClientAgreements = ClientAgreements()
+        agreements.bluetooth = true
+        agreements.wifi = true
+        
+        clientUpdateAccountContext.agreements = agreements
         
         return clientUpdateAccountContext
     }

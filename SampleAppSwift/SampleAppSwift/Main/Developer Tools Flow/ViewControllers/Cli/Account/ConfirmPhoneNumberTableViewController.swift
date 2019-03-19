@@ -20,7 +20,7 @@ class ConfirmPhoneNumberTableViewController: DefaultTableViewController {
         let phoneNumber = phoneNumberTextField.text ?? ""
         let confirmationCode = confirmationCodeTextField.text ?? ""
         
-        Client.confirmPhoneUpdate(phone: phoneNumber, confirmationCode: confirmationCode, success: { _ in
+        Client.confirmPhoneUpdate(phone: phoneNumber, confirmationCode: confirmationCode, smsAgreement: false, success: { _ in
             self.showSuccessInfo()
         }, failure: { (error) in
             self.showErrorInfo(error as NSError)

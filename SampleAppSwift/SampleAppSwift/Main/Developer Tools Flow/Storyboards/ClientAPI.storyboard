@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-4v-DtR">
-                                        <rect key="frame" x="0.0" y="24" width="375" height="515"/>
+                                        <rect key="frame" x="0.0" y="24" width="375" height="665"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owd-pC-AQb">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -189,7 +189,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="4lG-6J-5ux"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <state key="normal" title="Get Client Token">
+                                                        <state key="normal" title="Get UUID">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -198,7 +198,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="getTokenButtonWasPressed:" destination="hUy-BR-fK9" eventType="touchUpInside" id="fq5-iv-dmT"/>
+                                                            <action selector="getUUIDButtonWasPressed:" destination="hUy-BR-fK9" eventType="touchUpInside" id="Aby-TU-nrZ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -210,8 +210,39 @@
                                                     <constraint firstItem="v7m-V1-7ZL" firstAttribute="centerY" secondItem="T0X-FB-SyT" secondAttribute="centerY" id="v7T-db-i9X"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-jf-ec0">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vba-fZ-t7I">
                                                 <rect key="frame" x="0.0" y="450" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-LM-X1f" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ooh-iS-72q"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Get Client Token">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="getTokenButtonWasPressed:" destination="hUy-BR-fK9" eventType="touchUpInside" id="ND8-I2-oWh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="qOG-LM-X1f" secondAttribute="trailing" constant="16" id="1Le-f5-RRu"/>
+                                                    <constraint firstItem="qOG-LM-X1f" firstAttribute="centerY" secondItem="Vba-fZ-t7I" secondAttribute="centerY" id="N5b-IW-N4s"/>
+                                                    <constraint firstItem="qOG-LM-X1f" firstAttribute="leading" secondItem="Vba-fZ-t7I" secondAttribute="leading" constant="16" id="Vbg-up-dZf"/>
+                                                    <constraint firstAttribute="height" constant="65" id="tDE-YJ-ug6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-jf-ec0">
+                                                <rect key="frame" x="0.0" y="525" width="375" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-sv-WiS" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
@@ -239,6 +270,37 @@
                                                     <constraint firstItem="gmp-sv-WiS" firstAttribute="leading" secondItem="8TD-jf-ec0" secondAttribute="leading" constant="16" id="N5b-J2-j6V"/>
                                                     <constraint firstAttribute="height" constant="65" id="ejq-bF-pmn"/>
                                                     <constraint firstItem="gmp-sv-WiS" firstAttribute="centerY" secondItem="8TD-jf-ec0" secondAttribute="centerY" id="mZP-9e-EkA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82y-Sd-31e">
+                                                <rect key="frame" x="0.0" y="600" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neK-NN-wfy" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="xSC-Jb-dpS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Regenerate UUID">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="regenerateUUID" destination="hUy-BR-fK9" eventType="touchUpInside" id="bvo-9w-wQ0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="neK-NN-wfy" firstAttribute="leading" secondItem="82y-Sd-31e" secondAttribute="leading" constant="16" id="Odj-mC-Rhf"/>
+                                                    <constraint firstItem="neK-NN-wfy" firstAttribute="centerY" secondItem="82y-Sd-31e" secondAttribute="centerY" id="Y06-pl-nEq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="neK-NN-wfy" secondAttribute="trailing" constant="16" id="c0E-sf-Wkf"/>
+                                                    <constraint firstAttribute="height" constant="65" id="xim-QG-IM9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

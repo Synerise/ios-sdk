@@ -1312,10 +1312,39 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="PASSWORD" id="lhQ-xC-TKc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Dxv-Uq-juD">
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dxv-Uq-juD" id="WSr-rJ-hia">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMi-NK-je8">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="3Qz-hq-rvn"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nMi-NK-je8" firstAttribute="centerY" secondItem="WSr-rJ-hia" secondAttribute="centerY" id="5nN-TI-d8j"/>
+                                                <constraint firstItem="nMi-NK-je8" firstAttribute="leading" secondItem="WSr-rJ-hia" secondAttribute="leading" constant="16" id="VaD-g0-EaS"/>
+                                                <constraint firstAttribute="trailing" secondItem="nMi-NK-je8" secondAttribute="trailing" constant="16" id="lb0-jS-KJd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="Fire Method" id="WJ8-dK-dG0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="ULp-rf-Wkn">
-                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ULp-rf-Wkn" id="1uh-mP-cfm">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -1351,6 +1380,45 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="jy2-6I-iQ2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="094-Ps-zRh">
+                                        <rect key="frame" x="0.0" y="358.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="094-Ps-zRh" id="KCX-2p-BaX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRc-2o-TGC" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="0zc-d4-Esq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Update Email by Facebook">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="updateEmailByFacebook" destination="7wT-et-qXL" eventType="touchUpInside" id="Go3-bA-KLr"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LRc-2o-TGC" secondAttribute="trailing" constant="16" id="99z-rC-Doh"/>
+                                                <constraint firstItem="LRc-2o-TGC" firstAttribute="centerY" secondItem="KCX-2p-BaX" secondAttribute="centerY" id="BVM-1f-fVB"/>
+                                                <constraint firstItem="LRc-2o-TGC" firstAttribute="leading" secondItem="KCX-2p-BaX" secondAttribute="leading" constant="16" id="goq-FL-H7f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="7wT-et-qXL" id="byB-zB-Bwf"/>
@@ -1359,6 +1427,7 @@
                     </tableView>
                     <connections>
                         <outlet property="emailTextField" destination="cCs-yg-EjL" id="s59-6a-Pld"/>
+                        <outlet property="passwordTextField" destination="nMi-NK-je8" id="6q9-tT-Pjw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4Q-F2-9U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1374,39 +1443,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="PASSWORD" id="SAn-11-812">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Ys0-ag-gNf">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ys0-ag-gNf" id="hPB-97-HMM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-HF-D17">
-                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="GPE-Z1-VfX"/>
-                                                    </constraints>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="CE1-HF-D17" firstAttribute="leading" secondItem="hPB-97-HMM" secondAttribute="leading" constant="16" id="A8j-KW-1OW"/>
-                                                <constraint firstAttribute="trailing" secondItem="CE1-HF-D17" secondAttribute="trailing" constant="16" id="XNd-mj-l93"/>
-                                                <constraint firstItem="CE1-HF-D17" firstAttribute="centerY" secondItem="hPB-97-HMM" secondAttribute="centerY" id="ibs-BM-j0Y"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                             <tableViewSection headerTitle="TOKEN" id="LIG-ZW-R0V">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="o1r-aL-EqG">
-                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o1r-aL-EqG" id="5Bb-rq-3ka">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -1435,7 +1475,7 @@
                             <tableViewSection headerTitle="Fire Method" id="gug-J5-L78">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="Rch-yk-Er8">
-                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rch-yk-Er8" id="OIH-Zh-17P">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -1457,7 +1497,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="confirmEmail" destination="MxZ-c6-vPP" eventType="touchUpInside" id="Nae-7z-yyu"/>
+                                                        <action selector="confirmEmail" destination="MxZ-c6-vPP" eventType="touchUpInside" id="WMn-sX-Gt4"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1478,7 +1518,6 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="passwordTextField" destination="CE1-HF-D17" id="iy2-TX-Ic8"/>
                         <outlet property="tokenTextField" destination="UX4-7I-iBg" id="Pd1-aU-MV7"/>
                     </connections>
                 </tableViewController>

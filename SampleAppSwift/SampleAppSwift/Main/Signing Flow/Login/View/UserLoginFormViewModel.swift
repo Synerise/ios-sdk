@@ -91,7 +91,7 @@ class UserLoginFormViewModel {
     }
 
     private func loginWithEmail(email: String, password: String) {
-        Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
+        Client.signIn(email: email, password: password, success: { (success) in
             self.loginSuccess(response: success)
         }, failure: { (error) in
             self.loginError(error: error)

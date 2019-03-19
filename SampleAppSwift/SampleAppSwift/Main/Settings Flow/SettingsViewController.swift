@@ -18,7 +18,7 @@ class SettingsViewController: DefaultViewController {
     // MARK: - IBAction
     
     @IBAction func disableInAppAlertsTapped() {
-        NotificationServiceSettings.shared().disableInAppAlerts = self.disableInAppAlertsSwitch.isOn
+        Synerise.settings.notifications.disableInAppAlerts = self.disableInAppAlertsSwitch.isOn
         settingsService.set(self.disableInAppAlertsSwitch.isOn, forKey: .syneriseDisableInAppAlertsKey)
     }
     
@@ -34,6 +34,6 @@ class SettingsViewController: DefaultViewController {
     // MARK: - Private
     
     func loadSettings() {
-        self.disableInAppAlertsSwitch.isOn = NotificationServiceSettings.shared().disableInAppAlerts
+        self.disableInAppAlertsSwitch.isOn = Synerise.settings.notifications.disableInAppAlerts
     }
 }

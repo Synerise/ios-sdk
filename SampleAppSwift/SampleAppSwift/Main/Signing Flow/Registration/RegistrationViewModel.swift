@@ -20,11 +20,18 @@ class RegistrationViewModel {
     weak var delegate: RegistrationViewModelDelegate?
 
     var userRegistrationFormViewModel: UserRegistrationFormViewModel = {
-        let firstName = "Krzysztof"
-        let lastName = "Kurzawa"
-        let login = "krzysztof.kurzawa@synerise.com"
-        let password = "testPass12345!"
-        let registrationType = UserRegistrationFormViewModel.RegistrationType.email
+        var firstName = ""
+        var lastName = ""
+        var login = ""
+        var password = ""
+        var registrationType = UserRegistrationFormViewModel.RegistrationType.email
+        
+        #if DEBUG
+        firstName = "Krzysztof"
+        lastName = "Kurzawa"
+        login = "krzysztof.kurzawa@synerise.com"
+        password = "testPass12345!"
+        #endif
 
         let userRegistrationFormViewModel = UserRegistrationFormViewModel(firstName: firstName, lastName: lastName, login: login, password: password, registrationType: registrationType)
 

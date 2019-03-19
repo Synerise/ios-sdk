@@ -11,18 +11,19 @@ import SyneriseSDK
 
 class ConfirmEmailTableViewController: DefaultTableViewController {
 
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var tokenTextField: UITextField!
     
     // MARK: - IBAction
     
     @IBAction func confirmEmail() {
-        let password = self.passwordTextField.text ?? ""
         let token = self.tokenTextField.text ?? ""
         
-        Client.confirmEmailChange(password: password, token: token, success: { _ in
+        showLoading()
+        Client.confirmEmailChange(token: token, newsletterAgreement: true, success: { _ in
+            self.hideLoading()
             self.showSuccessInfo()
         }) { (error) in
+            self.hideLoading()
             self.showErrorInfo(error as NSError)
         }
     }
