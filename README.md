@@ -589,7 +589,7 @@ To add this feature in your Simple Push Campaigns, you have to:
 
 ### Extensions
 
-Synerise SDK does most of the work needed and provides classes for Notification Content Extensions. When you create an extension, you just have to make it inherited from Synerise SDK suitable class.
+**Synerise SDK** does most of the work needed and provides classes for Notification Content Extensions. When you create an extension, you just have to make it inherited from **Synerise SDK** suitable class.
 
 Example for Single Media Notification Extension:
 
@@ -618,24 +618,24 @@ You have to remember about correct configuration in your extension \*.plist file
 
 ### Host App
 
-1. You have to set app group identifier in Synerise SDK settings:
+1. You have to set app group identifier in **Synerise SDK** settings:
 ```swift
 Synerise.settings.notifications.appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
 ```
 
-2. You have to set notifications categories with right identifiers. You must take it from Synerise SDK constants to make these working. But you can feel at free in naming buttons.
+2. You have to set notifications categories with right identifiers. You must take it from **Synerise SDK** constants to make these working. But you can feel at free in naming buttons.
 
 ```swift
-	let singleMediaCategory = UNNotificationCategory(identifier: SNRSingleMediaContentExtensionViewControllerCategoryIdentifier, actions: [], intentIdentifiers: [], options: [])
+let singleMediaCategory = UNNotificationCategory(identifier: SNRSingleMediaContentExtensionViewControllerCategoryIdentifier, actions: [], intentIdentifiers: [], options: [])
         
-	let carouselPrevious = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerPreviousItemIdentifier, title: "Previous", options: [])
-	let carouselAction = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerChooseItemIdentifier, title: "Go!", options: UNNotificationActionOptions.foreground)
+let carouselPrevious = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerPreviousItemIdentifier, title: "Previous", options: [])
+let carouselAction = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerChooseItemIdentifier, title: "Go!", options: UNNotificationActionOptions.foreground)
         
-	let carouselNext = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerNextItemIdentifier, title: "Next", options: [])
+let carouselNext = UNNotificationAction(identifier: SNRCarouselContentExtensionViewControllerNextItemIdentifier, title: "Next", options: [])
         
-	let carouselCategory = UNNotificationCategory(identifier: SNRCarouselContentExtensionViewControllerCategoryIdentifier, actions: [carouselPrevious, carouselAction, carouselNext], intentIdentifiers: [], options: [])
+let carouselCategory = UNNotificationCategory(identifier: SNRCarouselContentExtensionViewControllerCategoryIdentifier, actions: [carouselPrevious, carouselAction, carouselNext], intentIdentifiers: [], options: [])
         
-	UNUserNotificationCenter.current().setNotificationCategories([singleMediaCategory, carouselCategory])
+UNUserNotificationCenter.current().setNotificationCategories([singleMediaCategory, carouselCategory])
 ```
 
 Our Sample App shows configuration and extensions:  
