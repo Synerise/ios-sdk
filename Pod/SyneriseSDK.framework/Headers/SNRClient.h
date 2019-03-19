@@ -91,36 +91,41 @@ NS_SWIFT_NAME(Client)
  * Signs in a client with Facebook Token.
  *
  * @param facebookToken Token from Facebook active session.
+ * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)authenticateByFacebookWithFacebookToken:(NSString *)facebookToken
+                                         authID:(nullable NSString *)authID
                                         context:(nullable SNRClientFacebookAuthenticationContext *)context
                                         success:(nullable void (^)(BOOL isSuccess))success
-                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:context:success:failure:));
+                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:authID:context:success:failure:));
 
 /**
  * Signs in a registered client with Facebook Token.
- *
+ * @param authID Authorization custom identity.
  * @param facebookToken Token from Facebook active session.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)authenticateByFacebookIfRegisteredWithFacebookToken:(NSString *)facebookToken
-                                        success:(nullable void (^)(BOOL isSuccess))success
-                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:success:failure:));
+                                                     authID:(nullable NSString *)authID
+                                                    success:(nullable void (^)(BOOL isSuccess))success
+                                                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
 
 /**
  * Signs in a client with OAuth Access Token.
  *
  * @param accessToken Token OAuth Access Token.
+ * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
+                                    authID:(nullable NSString *)authID
                                     context:(nullable SNRClientOAuthContext *)context
                                     success:(nullable void (^)(BOOL isSuccess))success
-                                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:context:success:failure:));
+                                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
 
 /**
  * Checks whether client is signed in (is client's token not expired).

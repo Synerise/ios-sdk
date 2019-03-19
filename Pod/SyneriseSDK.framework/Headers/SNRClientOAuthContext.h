@@ -17,9 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientOAuthContext)
 @interface SNRClientOAuthContext : SNRBaseModel
 
-@property (copy, nonatomic, nullable, readwrite) NSString *authID;
-
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
+
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
 
 @end
