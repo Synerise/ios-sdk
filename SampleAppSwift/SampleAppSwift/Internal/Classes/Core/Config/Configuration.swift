@@ -8,6 +8,11 @@
 
 struct Configuration {
     struct SyneriseSDK {
-        static let clientAPIKey = ""
+        static let clientAPIKey1 = ""
+        static let clientAPIKey2 = ""
+        
+        static let clientApiKeyToProfileName = [
+
+        ]
     }
 }

@@ -34,7 +34,7 @@ class DefaultViewController: ViewController, Coordinated {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        fatalError("MEMORY WARNING!")
+        
     }
     
     // MARK: - Public

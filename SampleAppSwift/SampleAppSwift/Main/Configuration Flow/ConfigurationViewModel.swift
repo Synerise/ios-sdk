@@ -37,7 +37,7 @@ class ConfigurationViewModel {
     }
    
     func saveAPIKeys() {
-         let settingsService = coordinator?.applicationController.serviceProvider.getSettingsService()
+        let settingsService = coordinator?.applicationController.serviceProvider.getSettingsService()
         settingsService?.set(clientAPIKey.value, forKey: SettingsServiceKey.syneriseClientAPIKey)
     }
 }

@@ -95,7 +95,7 @@ class ConfigurationViewController: DefaultViewController {
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            viewModel.clientAPIKey.value = Configuration.SyneriseSDK.clientAPIKey
+            viewModel.clientAPIKey.value = Configuration.SyneriseSDK.clientAPIKey1
         }
     }
     
