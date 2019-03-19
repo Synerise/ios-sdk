@@ -984,6 +984,19 @@ Client.registerAccount(context: context, success: { (success) in
 ```
 
 
+#### `Client.confirmAccount(token:success:failure:)`
+Confirms client's account.
+
+**Swift:**
+```swift
+Client.confirmAccount(token: token, success: { (success) in
+	// success
+}, failure: { (error) in
+	// failure
+})
+```
+
+
 #### `Client.activateAccount(email:success:failure:)`
 Activates client's account.
 
@@ -997,7 +1010,7 @@ Client.activateAccount(email: email, success: { (success) in
 ```
 
 
-#### `Client.signIn(email:password:deviceId:success:failure:)`
+#### `Client.signIn(email:password:success:failure:)`
 Signs in a client in order to obtain the JWT token, which could be used in subsequent requests.
 
 **Swift:**
@@ -1005,7 +1018,7 @@ Signs in a client in order to obtain the JWT token, which could be used in subse
 let email: String = "EMAIL"
 let password: String = "PASSWORD"
 
-Client.signIn(email: email, password: password, deviceId: nil, success: { (success) in
+Client.signIn(email: email, password: password, success: { (success) in
 	// success
 }, failure: { (error) in
 	// failure
@@ -1013,7 +1026,7 @@ Client.signIn(email: email, password: password, deviceId: nil, success: { (succe
 ```
 
 
-#### `Client.authenticateByFacebook(facebookToken:success:failure:)`
+#### `Client.authenticateByFacebook(facebookToken:authID:success:failure:)`
 Signs in a client with Facebook Token.
 
 **Swift:**
@@ -1030,7 +1043,7 @@ Client.authenticateByFacebook(facebookToken: facebookToken, success: { (success)
 ```
 
 
-#### `Client.authenticateByFacebookIfRegistered(facebookToken:success:failure:)`
+#### `Client.authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:)`
 Signs in a registered client with Facebook Token.
 
 **Swift:**
@@ -1046,7 +1059,7 @@ Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, success:
 })
 ```
 
-#### `Client.authenticateByOAuth(accessToken:success:failure:)`
+#### `Client.authenticateByOAuth(accessToken:authID:success:failure:)`
 Signs in a client with OAuth Access Token.
 
 **Swift:**
@@ -1228,6 +1241,21 @@ Client.confirmEmailChange(token: token, success: { _ in
 ```
 
 
+#### `Client.requestEmailChangeByFacebook(email:password:success:failure:)`
+Requests client's email change by Facebook.
+
+**Swift:**
+```swift
+let email: String = "EMAIL"
+
+Client.requestEmailChange(email: email, success: { _ in
+	// success
+}) { (error) in
+	// failure
+}
+```
+
+
 #### `Client.requestPhoneUpdate(phone:success:failure:)`
 Requests client's phone update. A client will receive a code on the provided phone in order to use.
 
@@ -1243,7 +1271,7 @@ Client.requestPhoneUpdate(phone: phone, success: { (success) in
 ```
 
 
-#### `Client.confirmPhoneNumber(phone:confirmationCode:success:failure:)`
+#### `Client.confirmPhoneUpdate(phone:confirmationCode:success:failure:)`
 Confirms client's phone update with code provided.
 
 **Swift:**
