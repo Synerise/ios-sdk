@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.3] - 2019-03-29
+
+### Changed
+- Synerise API host.
+
 ## [3.4.2] - 2019-03-19
 
 ### Added
