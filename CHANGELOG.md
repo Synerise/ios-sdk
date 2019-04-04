@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.4] - 2019-04-04
+
+### Changed
+- ProductViewEvent, RecommendationClickEvent and RecommendationSeenEvent has changed its structure.
+
 ## [3.4.3] - 2019-03-29
 
 ### Changed
