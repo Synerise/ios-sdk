@@ -19,9 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ProductViewEvent)
 @interface SNRProductViewEvent : SNREvent
 
-- (void)setSKU:(NSString *)sku;
-- (void)setName:(NSString *)name;
-- (void)setRecommended:(BOOL)isRecommended;
+- (instancetype)initWithLabel:(NSString *)label
+                          productName:(NSString *)productName
+                   productId:(NSString *)productId
+                    andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:productName:productId:params:));
+
+- (void)setIsRecommended:(BOOL)isRecommended;
 - (void)setCategory:(NSString *)category;
 - (void)setURL:(NSURL *)url;
 
