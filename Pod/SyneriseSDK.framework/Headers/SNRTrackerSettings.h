@@ -7,6 +7,7 @@
 //
 
 #import "SNRTrackerAutoTrackingSettings.h"
+#import "SNRTrackerDeclarativeTrackingSettings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,8 @@ NS_SWIFT_NAME(TrackerSettings)
 @interface SNRTrackerSettings : NSObject
 
 @property (strong, nonatomic, nonnull, readonly) SNRTrackerAutoTrackingSettings *autoTracking;
+
+@property (strong, nonatomic, nonnull, readonly) SNRTrackerDeclarativeTrackingSettings *tracking;
 
 //This parameter sets a minimum number of events in queue required to send them.
 //Note, that adding any event to queue runs auto flush, so even queue with less than minimum number of required events will attempt to be sent.

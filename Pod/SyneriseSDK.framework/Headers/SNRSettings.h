@@ -7,6 +7,8 @@
 //
 
 #import "SNRNotificationsSettings.h"
+#import "SNRGeneralSettings.h"
+#import "SNRNotificationsSettings.h"
 #import "SNRTrackerSettings.h"
 #import "SNRInjectorSettings.h"
 
@@ -18,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(Settings)
 @interface SNRSettings : NSObject
+
+@property (strong, nonatomic, nonnull, readonly) SNRGeneralSettings *sdk;
 
 @property (strong, nonatomic, nonnull, readonly) SNRNotificationsSettings *notifications;
 

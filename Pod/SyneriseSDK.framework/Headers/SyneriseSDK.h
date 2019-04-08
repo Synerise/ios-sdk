@@ -13,9 +13,11 @@
 
 // Settings
 #import <SyneriseSDK/SNRSettings.h>
+#import <SyneriseSDK/SNRGeneralSettings.h>
 #import <SyneriseSDK/SNRNotificationsSettings.h>
 #import <SyneriseSDK/SNRTrackerSettings.h>
 #import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
+#import <SyneriseSDK/SNRTrackerDeclarativeTrackingSettings.h>
 #import <SyneriseSDK/SNRInjectorSettings.h>
 
 // Modules
