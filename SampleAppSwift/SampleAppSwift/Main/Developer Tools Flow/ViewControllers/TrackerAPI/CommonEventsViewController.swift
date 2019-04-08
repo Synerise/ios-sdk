@@ -177,29 +177,26 @@ class CommonEventsViewController: UITableViewController {
     }
     
     private func sendProductViewEvent() {
-        let event = ProductViewEvent(label: "label")
-        event.setSKU("sku")
-        event.setName("product name")
+        let event = ProductViewEvent(label: "label", productName: "product name", productId: "product id", params: nil)
+        event.setIsRecommended(true)
         event.setCategory("product category")
-        event.setRecommended(true)
+        event.setURL(URL(string: "myapp://category/1234")!)
         
         Tracker.send(event)
     }
     
     private func sendRecommendationSeenEvent() {
-        let event = RecommendationSeenEvent(label: "label")
-        event.setSKU("sku")
-        event.setName("product name")
+        let event = RecommendationSeenEvent(label: "label", productName: "product name", productId: "product id", campaignID: "1234", campaignHash: "1234", params: nil)
         event.setCategory("product category")
+        event.setURL(URL(string: "myapp://category/1234")!)
         
         Tracker.send(event)
     }
     
     private func sendRecommendationClickEvent() {
-        let event = RecommendationClickEvent(label: "label")
-        event.setSKU("sku")
-        event.setName("product name")
+        let event = RecommendationClickEvent(label: "label", productName: "product name", productId: "product id", campaignID: "1234", campaignHash: "1234", params: nil)
         event.setCategory("product category")
+        event.setURL(URL(string: "myapp://category/1234")!)
         
         Tracker.send(event)
     }

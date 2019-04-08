@@ -29,8 +29,14 @@ class SyneriseManager {
         Synerise.initialize(clientApiKey: clientApiKey)
         Synerise.setDebugModeEnabled(true)
         
-        Synerise.settings.notifications.disableInAppAlerts = settingsService.get(.syneriseDisableInAppAlertsKey) ?? false
+        Synerise.settings.sdk.enabled = settingsService.get(.sdkEnabledKey) ?? true
+        
+        Synerise.settings.notifications.enabled = settingsService.get(.notificationsEnabledKey) ?? true
+        Synerise.settings.notifications.disableInAppAlerts = settingsService.get(.notificationsDisableInAppAlertsKey) ?? false
         Synerise.settings.notifications.appGroupIdentifier = "group.com.synerise.sdk.sample"
+        
+        Synerise.settings.tracker.autoTracking.enabled = settingsService.get(.autoTrackingEnabledKey) ?? true
+        Synerise.settings.tracker.tracking.enabled = settingsService.get(.trackingEnabledKey) ?? true
         
         Tracker.setAutoTrackMode(.fine)
         
