@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.5] - 2019-04-08
+
+### Added
+- New option to disable whole SDK activity - 'Synerise.settings.sdk.enabled'.
+- New option to disable notifications activity - 'Synerise.settings.notifications.enabled'.
+- New option to disable auto tracking activity - 'Synerise.settings.tracker.autoTracking.enabled'.
+- New option to disable declarative tracking activity - 'Synerise.settings.tracker.tracking.enabled'.
+
 ## [3.4.4] - 2019-04-04
 
 ### Changed
