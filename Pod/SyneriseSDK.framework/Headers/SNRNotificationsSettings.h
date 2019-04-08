@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(NotificationsSettings)
 @interface SNRNotificationsSettings : NSObject
 
+@property (assign, nonatomic, readwrite) BOOL enabled;
 @property (assign, nonatomic, readwrite) BOOL disableInAppAlerts;
 @property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
 
