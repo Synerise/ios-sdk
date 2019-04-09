@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = "SyneriseSDK"
-  s.version       = "3.4.5"
-  s.summary       = "SyneriseSDK v. 3.4.5"
+  s.version       = "3.4.6"
+  s.summary       = "SyneriseSDK v. 3.4.6"
   s.description   = "iOS library for Synerise omnichannel platform"
   s.homepage      = "https://synerise.com"
   s.license       = { :type => "MIT" }
@@ -13,6 +13,3 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
   s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/SyneriseSDK"' }
 end
-
-
-
