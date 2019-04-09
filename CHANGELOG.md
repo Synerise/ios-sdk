@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.6] - 2019-04-09
+
+### Fixed
+- Improving SDK stability.
+
 ## [3.4.5] - 2019-04-08
 
 ### Added
