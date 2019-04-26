@@ -1,10 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.7] - 2019-04-26
+
+### Fixed
+- Mandatory Update campaign.
+
+
 ## [3.4.6] - 2019-04-09
 
 ### Fixed
 - Improving SDK stability.
+
 
 ## [3.4.5] - 2019-04-08
 
@@ -14,15 +21,18 @@ All notable changes to this project will be documented in this file.
 - New option to disable auto tracking activity - 'Synerise.settings.tracker.autoTracking.enabled'.
 - New option to disable declarative tracking activity - 'Synerise.settings.tracker.tracking.enabled'.
 
+
 ## [3.4.4] - 2019-04-04
 
 ### Changed
 - ProductViewEvent, RecommendationClickEvent and RecommendationSeenEvent has changed its structure.
 
+
 ## [3.4.3] - 2019-03-29
 
 ### Changed
 - Synerise API host.
+
 
 ## [3.4.2] - 2019-03-19
 
@@ -33,6 +43,7 @@ All notable changes to this project will be documented in this file.
 ### Removed
 - 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
 
+
 ## [3.4.1] - 2019-03-18
 
 ### Added
@@ -41,6 +52,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Simple Push campaign doesn't send 'push.received' event by now.
+
 
 ## [3.4.0] - 2019-03-08
 
@@ -52,30 +64,36 @@ All notable changes to this project will be documented in this file.
 - New structure and code organization for SDK settings (SNRSynerise.settings).
 - Improvements to user anonymous session.
 
+
 ## [3.3.16] - 2019-03-01
 
 ### Changed
 - Improvements to user anonymous session.
+
 
 ## [3.3.15] - 2019-02-27
 
 ### Changed
 - Change to allow anonymous client using whole methods.
 
+
 ## [3.3.14] - 2019-02-21
 
 ### Added
 - Client.requestEmailChangeByFacebook.
+
 
 ## [3.3.13] - 2019-02-19
 
 ### Changed
 - Improvements in oauth authentication.
 
+
 ## [3.3.12] - 2019-02-13
 
 ### Changed
 - Improvements to user session handling.
+
 
 ## [3.3.11] - 2019-02-07
 
@@ -85,6 +103,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Client.requestEmailChange method (newsleeterAgreement has been added to arguments).
 - Client.confirmEmailChange method (smsAgreement has been added to arguments).
+
 
 ## [3.3.10] - 2019-02-03
 
@@ -97,6 +116,7 @@ All notable changes to this project will be documented in this file.
 - Client.requestEmailChange method.
 - Client.confirmEmailChange method.
 
+
 ## [3.3.9] - 2019-01-23
 
 ### Added
@@ -107,6 +127,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Autotracking events.
+
 
 ## [3.3.8] - 2019-01-16
 
@@ -126,6 +147,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Improving SDK stability.
 
+
 ## [3.3.7] - 2019-01-09
 
 ### Added
@@ -134,10 +156,12 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Improving SDK stability.
 
+
 ## [3.3.6] - 2018-12-18
 
 ### Changed
 - Client.deleteAccount method.
+
 
 ## [3.3.5] - 2018-12-16
 
@@ -153,16 +177,19 @@ All notable changes to this project will be documented in this file.
 ### Removed
 - Client.registerAccount method option to registration without email.
 
+
 ## [3.3.4] - 2018-12-12
 
 ### Fixed
 - Promotions.getPromotions.
+
 
 ## [3.3.3] - 2018-12-06
 
 ### Fixed
 - Promotions.getPromotionByUuid.
 - Promotions.getPromotionByCode.
+
 
 ## [3.3.2] - 2018-11-28
 
@@ -179,11 +206,13 @@ All notable changes to this project will be documented in this file.
 - Improving Synerise SDK stability.
 - Optimisation of networking in Synerise SDK.
 
+
 ## [3.3.1] - 2018-11-21
 
 ### Fixed
 - Method name for Swift: Client.registerClient -> Client.registerAccount.
 - Improving SDK stability.
+
 
 ## [3.3.0] - 2018-11-20
 
@@ -217,6 +246,7 @@ All notable changes to this project will be documented in this file.
 - Client.getAnalytics method.
 - Client.setConfiguration method.
 - Client.createAuthToken method.
+
 
 ## [3.2.30] - 2018-11-01
 
@@ -288,6 +318,7 @@ All notable changes to this project will be documented in this file.
 - Method Profile.confirmAccount changed to Profile.confirmPhoneRegistration.
 - Method Profile.resetPassword changed to Profile.requestPasswordReset.
 
+
 ## [3.2.24] - 2018-09-18
 
 ### Changed
@@ -324,6 +355,7 @@ All notable changes to this project will be documented in this file.
 - New Client change password feature.
 - New method to create account without activation.
 
+
 ## [3.2.19] - 2018-08-16
 
 ### Added
@@ -331,10 +363,12 @@ All notable changes to this project will be documented in this file.
 - Method to confirm update of phone number.
 - Method to activate account manually.
 
+
 ## [3.2.18] - 2018-08-13
 
 ### Added
 - Promotions API integration.
+
 
 ## [3.2.17] - 2018-08-02
 
@@ -343,6 +377,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 - SDK stability.
+
 
 ## [3.2.16] - 2018-07-06
 
