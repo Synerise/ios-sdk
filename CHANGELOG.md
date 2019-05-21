@@ -1,6 +1,23 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.8] - 2019-05-21
+
+### Fixed
+- Dynamic change of AutoTrack mode.
+
+### Added
+- 'SNRContent' module.
+- 'SNRContent.getDocument' method.
+- Push Consent information is sent in the AppStartedEvent.
+
+### Changed
+- 'SNRTracker.setConfiguration:' is deprecated.
+- 'SNRTracker.setAutoTrackMode:' is deprecated.
+- 'SNRTracker.setLocationAutomaticEnabled:' is deprecated.
+- 'SNRInjector.setAutomatic:' is deprecated.
+
+
 ## [3.4.7] - 2019-04-26
 
 ### Fixed
@@ -37,8 +54,8 @@ All notable changes to this project will be documented in this file.
 ## [3.4.2] - 2019-03-19
 
 ### Added
-- new additional 'authID' parameter in Client.authenticateByFacebook method.
-- new additional 'authID' parameter in Client.authenticateByOAuth method.
+- New additional 'authID' parameter in Client.authenticateByFacebook method.
+- New additional 'authID' parameter in Client.authenticateByOAuth method.
 
 ### Removed
 - 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
@@ -48,7 +65,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - New event classes (ProductViewEvent, RecommendationSeenEvent, RecommendationClickEvent).
-- new additional 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
+- New additional 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
 
 ### Changed
 - Simple Push campaign doesn't send 'push.received' event by now.
