@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.9] - 2019-06-03
+
+### Fixed
+- 'SNRClientRegisterAccountContext.tags' parameter is array now.
+
+### Added
+- New option to set time interval counting backwards from expiration time, within which token will be automatically refreshed by SDK  - 'Synerise.settings.sdk.minTokenRefreshInterval'.
+
 ## [3.4.8] - 2019-05-21
 
 ### Fixed

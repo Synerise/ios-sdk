@@ -10,9 +10,9 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
-FOUNDATION_EXPORT NSString * const SNRSingleMediaContentExtensionViewControllerCategoryIdentifier;
-
 NS_ASSUME_NONNULL_BEGIN
+
+FOUNDATION_EXPORT NSString * const SNRSingleMediaContentExtensionViewControllerCategoryIdentifier;
 
 /**
  * @class SNRSingleMediaContentExtensionViewController

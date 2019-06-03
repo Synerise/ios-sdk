@@ -92,6 +92,7 @@ NS_SWIFT_NAME(Client)
  *
  * @param facebookToken Token from Facebook active session.
  * @param authID Authorization custom identity.
+ * @param context SNRClientFacebookAuthenticationContext object with agreements and optional attributes.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -103,8 +104,8 @@ NS_SWIFT_NAME(Client)
 
 /**
  * Signs in a registered client with Facebook Token.
- * @param authID Authorization custom identity.
  * @param facebookToken Token from Facebook active session.
+ * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -118,6 +119,7 @@ NS_SWIFT_NAME(Client)
  *
  * @param accessToken Token OAuth Access Token.
  * @param authID Authorization custom identity.
+ * @param context SNRClientOAuthContext object with agreements and optional attributes.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
