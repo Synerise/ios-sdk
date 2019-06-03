@@ -10,12 +10,12 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerCategoryIdentifier;
 FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerPreviousItemIdentifier;
 FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerNextItemIdentifier;
 FOUNDATION_EXPORT NSString * const SNRCarouselContentExtensionViewControllerChooseItemIdentifier;
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRCarouselContentExtensionViewController
