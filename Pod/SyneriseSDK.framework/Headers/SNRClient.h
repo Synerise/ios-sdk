@@ -15,6 +15,7 @@
 @class SNRClientUpdateAccountContext;
 @class SNRClientPasswordResetRequestContext;
 @class SNRClientPasswordResetConfirmationContext;
+@class SNRToken;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -104,6 +105,7 @@ NS_SWIFT_NAME(Client)
 
 /**
  * Signs in a registered client with Facebook Token.
+ *
  * @param facebookToken Token from Facebook active session.
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -144,9 +146,20 @@ NS_SWIFT_NAME(Client)
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.4.10
  */
 + (void)getTokenWithSuccess:(nullable void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:));
+                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRClient.getToken(token:) instead.");
+
+/**
+ * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
+ *
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)retrieveTokenWithSuccess:(nullable void (^)(SNRToken *token))success
+                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
 
 /**
  * Retrieves current client's UUID.

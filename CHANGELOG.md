@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.11] - 2019-06-12
+
+### Added
+- 'SNRClient.retrieveToken(success:failure:)' method
+
+### Changed
+- 'SNRClient.getToken(success:failure:)' is deprecated.
+
+
 ## [3.4.10] - 2019-06-04
 
 ### Fixed
