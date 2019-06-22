@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.12] - 2019-06-22
+
+### Fixed
+- 'SNRClient.setCustomEmail' and 'SNRClient.setCustomIdentifier' methods nullability.
+
+### Removed
+- Events don't contain 'time' parameter.
+
+### Changed
+- Improvements to networking.
+
+
 ## [3.4.11] - 2019-06-12
 
 ### Added

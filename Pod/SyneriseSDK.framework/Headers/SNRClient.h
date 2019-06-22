@@ -162,6 +162,12 @@ NS_SWIFT_NAME(Client)
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
 
 /**
+ * WARNING:
+ */
++ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters;
+
+
+/**
  * Retrieves current client's UUID.
  */
 + (NSString *)getUUID;
