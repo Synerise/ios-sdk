@@ -112,14 +112,14 @@ NS_SWIFT_NAME(Tracker)
  *
  * @param customIdentifier Client's custom identifier.
  */
-+ (void)setCustomIdentifier:(NSString *)customIdentifier;
++ (void)setCustomIdentifier:(nullable NSString *)customIdentifier;
 
 /**
  * Your custom email will be sent within every event in event params.
  *
  * @param customEmail Client's email.
  */
-+ (void)setCustomEmail:(NSString *)customEmail;
++ (void)setCustomEmail:(nullable NSString *)customEmail;
 
 /**
  * Adds new event to queue and sends available events to server if possible.
