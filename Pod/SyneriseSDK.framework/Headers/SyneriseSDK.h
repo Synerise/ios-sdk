@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
 #import <SyneriseSDK/SNRSynerise.h>
 
@@ -52,9 +54,6 @@
 #import <SyneriseSDK/SNRAddedProductToFavoritesEvent.h>
 #import <SyneriseSDK/SNRRemovedProductFromCartEvent.h>
 #import <SyneriseSDK/SNRProductViewEvent.h>
-#import <SyneriseSDK/SNRTransactionEvent.h>
-#import <SyneriseSDK/SNRCancelledTransactionEvent.h>
-#import <SyneriseSDK/SNRCompletedTransactionEvent.h>
 #import <SyneriseSDK/SNRRecommendationSeenEvent.h>
 #import <SyneriseSDK/SNRRecommendationClickEvent.h>
 #import <SyneriseSDK/SNRPushClickedEvent.h>
