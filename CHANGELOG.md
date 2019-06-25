@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.13] - 2019-06-25
+
+### Removed
+- Transaction Events ('SNRCompletedTransactionEvent', 'CancelledTransactionEvent').
+
+### Added
+- Network information is sent in the AppStartedEvent.
+- Mobile Operator information is sent in the AppStartedEvent.
+
+
 ## [3.4.12] - 2019-06-22
 
 ### Fixed
