@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.4.14] - 2019-06-27
+
+### Fixed
+- Header annotation in 'SNRClient.recognizeAnonymous'
+
+
 ## [3.4.13] - 2019-06-25
 
 ### Removed

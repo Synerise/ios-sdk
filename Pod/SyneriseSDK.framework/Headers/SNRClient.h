@@ -162,10 +162,13 @@ NS_SWIFT_NAME(Client)
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
 
 /**
- * WARNING:
+ * Method to recognize anonymous users and save personal information per their CRM entries.
+ *
+ * @param email Client's email.
+ * @param customIdentify Client's custom identifier.
+ * @param parameters Client's custom parameters.
  */
-+ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters;
-
++ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
 /**
  * Retrieves current client's UUID.
