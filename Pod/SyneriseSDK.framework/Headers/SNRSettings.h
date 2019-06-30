@@ -22,9 +22,7 @@ NS_SWIFT_NAME(Settings)
 @interface SNRSettings : NSObject
 
 @property (strong, nonatomic, nonnull, readonly) SNRGeneralSettings *sdk;
-
 @property (strong, nonatomic, nonnull, readonly) SNRNotificationsSettings *notifications;
-
 @property (strong, nonatomic, nonnull, readonly) SNRTrackerSettings *tracker;
 @property (strong, nonatomic, nonnull, readonly) SNRInjectorSettings *injector;
 

@@ -91,8 +91,21 @@
 #import <SyneriseSDK/SNRAssignVoucherData.h>
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
 #import <SyneriseSDK/SNRVoucherCodesData.h>
+#import <SyneriseSDK/SNRRecommendationOptions.h>
+#import <SyneriseSDK/SNRRecommendationResponse.h>
+#import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRTokenOrigin.h>
 #import <SyneriseSDK/SNRToken.h>
+
+// Content Widget
+#import <SyneriseSDK/SNRContentWidgetAppearance.h>
+#import <SyneriseSDK/SNRContentWidgetLayout.h>
+#import <SyneriseSDK/SNRContentWidgetHorizontalSliderLayout.h>
+#import <SyneriseSDK/SNRContentWidgetGridLayout.h>
+#import <SyneriseSDK/SNRContentWidgetItemLayout.h>
+#import <SyneriseSDK/SNRContentWidgetBasicItemLayout.h>
+#import <SyneriseSDK/SNRContentWidgetOptions.h>
+#import <SyneriseSDK/SNRContentWidget.h>
 
 // Content Extensions
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>

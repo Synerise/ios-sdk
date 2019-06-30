@@ -15,8 +15,20 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(NotificationsSettings)
 @interface SNRNotificationsSettings : NSObject
 
+//This parameter specifies if handling notifications by the SDK is enabled.
+//
+//Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
+
+//This parameter determines whether the SDK displays an additional alert in the application after receiving notification.
+//
+//Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL disableInAppAlerts;
+
+//This parameter identifies the group used by applications and extensions belongs to.
+//Note, that it is required property to allow the SDK communicating with Host App and its extensions for proper handling Rich Media Notifications.
+//
+//Property is nil by default.
 @property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
 
 - (instancetype)init __unavailable;

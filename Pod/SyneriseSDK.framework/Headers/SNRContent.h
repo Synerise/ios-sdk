@@ -6,6 +6,9 @@
 //  Copyright (c) 2019 Synerise. All rights reserved.
 //
 
+@class SNRRecommendationOptions;
+@class SNRRecommendationResponse;
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -36,6 +39,17 @@ NS_SWIFT_NAME(Content)
 + (void)getDocument:(NSString *)slug
               success:(nullable void (^)(NSDictionary *document))success
               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
+
+/**
+ * Gets recommendations that are defined for options provided.
+ *
+ * @param options Options for recommendations.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)getRecommendations:(SNRRecommendationOptions *)options
+            success:(nullable void (^)(SNRRecommendationResponse *recommendationResponse))success
+            failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
 
 @end
 

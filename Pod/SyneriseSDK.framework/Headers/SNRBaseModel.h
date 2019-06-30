@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @class SNRBaseModel
  */
 
+NS_SWIFT_NAME(BaseModel)
 @interface SNRBaseModel : NSObject
 
 @end

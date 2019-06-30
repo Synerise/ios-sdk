@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(TrackerDeclarativeTrackingSettings)
 @interface SNRTrackerDeclarativeTrackingSettings : NSObject
 
+//This parameter specifies if declarative tracking functionality is enabled.
+//
+//Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
 - (instancetype)init __unavailable;
