@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.0] - 2019-06-30
+
+### Added
+- 'ContentWidget' with Slider and Grid Layouts.
+
+
 ## [3.4.14] - 2019-06-27
 
 ### Fixed

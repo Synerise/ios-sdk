@@ -1,14 +1,15 @@
-# Synerise iOS SDK (v3.4.14) - User documentation
+# Synerise iOS SDK (v3.5.0) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.4.14-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v3.5.0-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Synerise/ios-sdk/blob/master/LICENSE)
 
 The Synerise iOS SDK is designed to be simple to develop with, allowing you to easily integrate **Synerise SDK** software into your apps. For more info about Synerise visit the [Synerise Website](http://synerise.com).
 
-
+# Important
+**Full Documentation is available at [Synerise Help Center - iOS SDK]( https://help.synerise.com/developers/ios-sdk)**
 
 # Requirements
 

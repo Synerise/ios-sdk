@@ -17,7 +17,7 @@ NS_SWIFT_NAME(InjectorSettings)
 
 //This parameter specifies that Injector starts automatically.
 //
-//Automatic is false by default.
+//Property is false by default.
 @property (assign, nonatomic, readwrite) BOOL automatic;
 
 - (instancetype)init __unavailable;
