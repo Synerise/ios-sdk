@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //uncomment lines below if you want to use Firebase and notifications
-        Administrator.shared.setupFirebase()
-        Administrator.shared.setupNotifications()
+        //Administrator.shared.setupFirebase()
+        //Administrator.shared.setupNotifications()
         
         applicationController.run()
         return true
