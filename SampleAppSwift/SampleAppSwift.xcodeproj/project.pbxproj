@@ -212,7 +212,7 @@
 		FFA36A2320C73DE8003CFB91 /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2220C73DE8003CFB91 /* DefaultTextField.swift */; };
 		FFA36A2520C73DF9003CFB91 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2420C73DF9003CFB91 /* BindingTextField.swift */; };
 		FFA36A2720C73E08003CFB91 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2620C73E08003CFB91 /* Bindable.swift */; };
-		FFA6FDB12187472800310022 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		FFA6FDB12187472800310022 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA738D120D33C2B002C48F3 /* InputView.swift */; };
 		FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F662180B0E500782954 /* SettingsViewController.swift */; };
 		FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAA2F672180B0E500782954 /* SettingsViewController.xib */; };
@@ -1901,7 +1901,7 @@
 				FF591C4B20C54684007F831B /* ShopCoordinator.swift in Sources */,
 				2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */,
 				A175CAF12118A480001E39FF /* CartManager.swift in Sources */,
-				FFA6FDB12187472800310022 /* (null) in Sources */,
+				FFA6FDB12187472800310022 /* BuildFile in Sources */,
 				A1393580215546C900F689B1 /* ConfigurationViewController.swift in Sources */,
 				A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */,
 				FFD08F3D20C2CF2A0083A890 /* Storyboards.swift in Sources */,
