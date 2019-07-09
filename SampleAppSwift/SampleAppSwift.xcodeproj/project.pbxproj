@@ -15,7 +15,6 @@
 		2D07E15F20CFF39B005E89D5 /* LeftMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E15E20CFF39B005E89D5 /* LeftMenuItem.swift */; };
 		2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16020CFF453005E89D5 /* LeftMenuDataSource.swift */; };
 		2D07E16320CFF7F6005E89D5 /* LeftMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E16220CFF7F6005E89D5 /* LeftMenuViewModel.swift */; };
-		2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */; };
 		2D24FAF020C5A519000B5B5D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24FAEF20C5A519000B5B5D /* NotificationService.swift */; };
 		2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
@@ -213,7 +212,7 @@
 		FFA36A2320C73DE8003CFB91 /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2220C73DE8003CFB91 /* DefaultTextField.swift */; };
 		FFA36A2520C73DF9003CFB91 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2420C73DF9003CFB91 /* BindingTextField.swift */; };
 		FFA36A2720C73E08003CFB91 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2620C73E08003CFB91 /* Bindable.swift */; };
-		FFA6FDB12187472800310022 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		FFA6FDB12187472800310022 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA738D120D33C2B002C48F3 /* InputView.swift */; };
 		FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F662180B0E500782954 /* SettingsViewController.swift */; };
 		FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAA2F672180B0E500782954 /* SettingsViewController.xib */; };
@@ -309,7 +308,6 @@
 		2D07E15E20CFF39B005E89D5 /* LeftMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuItem.swift; sourceTree = "<group>"; };
 		2D07E16020CFF453005E89D5 /* LeftMenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuDataSource.swift; sourceTree = "<group>"; };
 		2D07E16220CFF7F6005E89D5 /* LeftMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewModel.swift; sourceTree = "<group>"; };
-		2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D24FAED20C59EE3000B5B5D /* SampleAppSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleAppSwift.entitlements; sourceTree = "<group>"; };
 		2D24FAEF20C5A519000B5B5D /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2D401F0E214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SyneriseSingleMediaNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -612,7 +610,6 @@
 			children = (
 				2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */,
 				2D24FAED20C59EE3000B5B5D /* SampleAppSwift.entitlements */,
-				2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */,
 				B84F68DF20C7F60100A8ECBE /* Localizable.strings */,
 				FFFBAE072162246200D36049 /* Info.plist */,
 				FFFBAE062162246200D36049 /* AppDelegate.swift */,
@@ -1718,7 +1715,6 @@
 				A142CC992118812300079BBD /* CheckoutPaymentTableViewCell.xib in Resources */,
 				A12BE42720D0202F00056A36 /* UserLoginFormView.xib in Resources */,
 				FF46132720EE782400A63EB5 /* ProductViewController.xib in Resources */,
-				2D24FAE620C59466000B5B5D /* GoogleService-Info.plist in Resources */,
 				2D07E15520CFC9B7005E89D5 /* MainViewController.xib in Resources */,
 				A142CC93211880D900079BBD /* CheckoutProductTableViewCell.xib in Resources */,
 				FF50D21720EFA2A5000379C6 /* ProfileViewController.xib in Resources */,
@@ -1905,7 +1901,7 @@
 				FF591C4B20C54684007F831B /* ShopCoordinator.swift in Sources */,
 				2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */,
 				A175CAF12118A480001E39FF /* CartManager.swift in Sources */,
-				FFA6FDB12187472800310022 /* BuildFile in Sources */,
+				FFA6FDB12187472800310022 /* (null) in Sources */,
 				A1393580215546C900F689B1 /* ConfigurationViewController.swift in Sources */,
 				A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */,
 				FFD08F3D20C2CF2A0083A890 /* Storyboards.swift in Sources */,
