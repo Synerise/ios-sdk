@@ -133,4 +133,10 @@ class DefaultTableViewController: UITableViewController {
             DebugUtils.print("\(title) \(error.code) \(error.localizedDescription)")
         }
     }
+    
+    func pushDebugViewController(text: String, copyEnabled: Bool = false) {
+        let debugTextViewController = DebugTextViewController(text: text, copyEnabled: copyEnabled)
+        
+        self.navigationController?.pushViewController(debugTextViewController, animated: true)
+    }
 }

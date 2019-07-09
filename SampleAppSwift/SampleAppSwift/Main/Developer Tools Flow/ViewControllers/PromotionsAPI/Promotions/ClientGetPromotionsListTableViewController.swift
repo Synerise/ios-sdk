@@ -30,7 +30,7 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
             self.hideLoading()
             
             let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -73,7 +73,7 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
             self.hideLoading()
             
             let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -89,12 +89,6 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     }
     
     // MARK: - Private
-    
-    private func pushToDebugTextViewController(string: String) {
-        let debugTextViewController = DebugTextViewController(text: string, copyEnabled: false)
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
     
     private func makePromotionsListStringRepresentation(_ response: PromotionResponse) -> String {
         var promotionsListStringRepresentation = ""

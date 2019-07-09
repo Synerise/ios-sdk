@@ -42,19 +42,13 @@ class ClientAssignVoucherCodeTableViewController: DefaultTableViewController {
         showLoading()
         Promotions.assignVoucherCode(poolUUID: poolUUID, success: { (assignVoucherResponse) in
             self.hideLoading()
+            
             let debugInfoString = self.makeVoucherStringRepresentation(assignVoucherResponse)
-
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
         })
-    }
-    
-    private func pushToDebugTextViewController(string: String) {
-        let debugTextViewController = DebugTextViewController(text: string, copyEnabled: false)
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
     }
     
     private func makeVoucherStringRepresentation(_ response: AssignVoucherResponse) -> String {

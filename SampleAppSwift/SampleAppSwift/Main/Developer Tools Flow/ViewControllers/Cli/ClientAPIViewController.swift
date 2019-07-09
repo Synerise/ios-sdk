@@ -15,20 +15,40 @@ class ClientAPIViewController: DefaultViewController {
     
     // MARK: - IBAction
     
+    @IBAction func recognizeAnonymousButtonWasPressed(_ sender: DefaultButton) {
+        Client.recognizeAnonymous(email: "hello@synerise.com", customIdentify: "Synerise", parameters: nil)
+        
+        sender.animateTapping()
+    }
+    
     @IBAction func getUUIDButtonWasPressed(_ sender: DefaultButton) {
         let UUID: String = Client.getUUID()
         
-        let debugTextViewController = makeDebugTextViewController(labelText: UUID, barTitle: "Get UUID")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
+        self.presentAlert(title: "UUID", message: UUID)
     }
     
     @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
         Client.getToken(success: { (token, origin) in
             self.hideLoading()
+            
             let tokenDescription = SNR_TokenOriginToString(origin) + "\n\n" + token
-            self.pushToShowToken(token: tokenDescription)
+            self.pushDebugViewController(text: tokenDescription)
+        }, failure: { (error) in
+            self.hideLoading()
+            self.showErrorInfo(error as NSError)
+        })
+        
+        sender.animateTapping()
+    }
+    
+    @IBAction func retrieveTokenButtonWasPressed(_ sender: DefaultButton) {
+        showLoading()
+        Client.retrieveToken(success: { (token) in
+            self.hideLoading()
+            
+            let tokenDescription = SNR_TokenOriginToString(token.tokenOrigin) + "\n\n" + (token.tokenString as String)
+            self.pushDebugViewController(text: tokenDescription)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -42,24 +62,7 @@ class ClientAPIViewController: DefaultViewController {
             return
         }
         
-        self.pushToShowToken(token: facebookToken)
-    }
-    
-    @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
-        self.showLoading()
-        
-        Client.deleteAccount(password: "", success: { (_) in
-            Client.signOut()
-            
-            self.hideLoading()
-            self.showSuccessInfo()
-
-            self.navigationController?.popToRootViewController(animated: true)
-        }, failure: { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
-        })
-        sender.animateTapping()
+        self.pushDebugViewController(text: facebookToken)
     }
     
     @IBAction func regenerateUUID() {
@@ -75,24 +78,6 @@ class ClientAPIViewController: DefaultViewController {
     }
     
     // MARK: - Private
-    
-    private func pushToShowToken(token: String) {
-        let debugTextViewController = makeDebugTextViewController(labelText: token, barTitle: "Get Client Token")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
-    
-    private func pushToShowClientAccountInformation(accountInformation: String) {
-        let debugTextViewController = makeDebugTextViewController(labelText: accountInformation, barTitle: "Show Client Account Information")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
-    
-    private func makeDebugTextViewController(labelText: String, barTitle: String, copyEnable: Bool = true) -> DebugTextViewController {
-        let debugTextViewController = DebugTextViewController(text: labelText, copyEnabled: copyEnable)
-        
-        return debugTextViewController
-    }
     
     private func makeAccountInformation(_ clientAccountInformation: ClientAccountInformation) -> String {
         let firstName = clientAccountInformation.firstName ?? "nil"

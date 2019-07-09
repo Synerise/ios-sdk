@@ -89,6 +89,58 @@ class LocalNotificationsUserInfoData {
         ]
     }
     
+    static func getSimplePush4UserInfo() -> [AnyHashable: Any] {
+        return [
+            "aps": [
+                "alert": [
+                    "title": "Simple Push",
+                    "body": "BUTTONS"
+                ]
+            ],
+            "issuer": "Synerise",
+            "message-type": "dynamic-content",
+            "content-type": "simple-push",
+            "content": [
+                "campaign": [
+                    "variant_id": 1,
+                    "hash_id": "HASH",
+                    "type": "CAMPAIGN_TYPE",
+                    "title": "CAMPAIGN_TITLE"
+                ],
+                "notification": [
+                    "action": [
+                        "type": "OPEN_APP"
+                    ]
+                ],
+                "buttons": [
+                    [
+                        "identifier": "button1",
+                        "text": "OPEN_URL",
+                        "action": [
+                            "type": "OPEN_URL",
+                            "item": "http://www.google.pl"
+                        ]
+                    ],
+                    [
+                        "identifier": "button2",
+                        "text": "DEEP_LINKING",
+                        "action": [
+                            "type": "DEEP_LINKING",
+                            "item": "syne://product?sku=1"
+                        ]
+                    ],
+                    [
+                        "identifier": "button3",
+                        "text": "OPEN_APP",
+                        "action": [
+                            "type": "OPEN_APP"
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    }
+    
     static func getRichMedia1UserInfo() -> [AnyHashable: Any] {
         return [
             "aps": [
@@ -111,7 +163,7 @@ class LocalNotificationsUserInfoData {
                 "rich-media": [
                     "type": "single-image",
                     "single-image": [
-                        "url": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg"
+                        "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg"
                     ]
                 ]
             ]
@@ -145,19 +197,19 @@ class LocalNotificationsUserInfoData {
                             [
                                 "caption": "Go to WWW.GOOGLE.PL",
                                 "subcaption": "Synerise 1",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.google.pl"
                             ],
                             [
                                 "caption": "Go to WWW.SYNERISE.COM",
                                 "subcaption": "Synerise 2",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.synerise.com"
                             ],
                             [
                                 "caption": "Go to WWW.WP.PL",
                                 "subcaption": "Synerise 3",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.wp.pl"
                             ]
                         ]
@@ -194,19 +246,19 @@ class LocalNotificationsUserInfoData {
                             [
                                 "caption": "Go to WWW.GOOGLE.PL",
                                 "subcaption": "Synerise 1",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.google.pl"
                                 ],
                             [
                                 "caption": "Go to WWW.SYNERISE.COM",
                                 "subcaption": "Synerise 2",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.synerise.com"
                                 ],
                             [
                                 "caption": "Go to WWW.WP.PL",
                                 "subcaption": "Synerise 3",
-                                "image": "https://mamstartup.pl/i/articles/5799_newl.jpg",
+                                "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg",
                                 "url": "http://www.wp.pl"
                                 ]
                         ]

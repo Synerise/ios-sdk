@@ -159,12 +159,5 @@ extension ApplicationController: SyneriseDelegate {
                 }
             })
         }
-        
-//        let viewController = DebugTextViewController(text: "DEEP LINKING")
-//        viewController.view.backgroundColor = UIColor.lightGray
-//
-//        ApplicationController.resolve().appRouter.rootViewController?.present(viewController, animated: true, completion: {
-//            viewController.dismiss(animated: true, completion: nil)
-//        })
     }
 }

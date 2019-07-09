@@ -31,6 +31,19 @@ class ProductDetailsView: DefaultView {
     @IBOutlet weak var setFavoriteButton: UIButton!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var topInfoContainer: UIView!
+    @IBOutlet weak var bottomDescriptionContainer: UIView!
+    
+    override open var intrinsicContentSize: CGSize {
+        var height: CGFloat = 0
+        height += productImageView.frame.size.height + 8.0
+        height += topInfoContainer.frame.size.height
+        height += 8.0 + 40.0
+        height += descriptionTextView.contentSize.height + 16.0 + 16.0
+        
+        return CGSize(width: UIView.noIntrinsicMetric, height: height)
+    }
+    
     // MARK: - IBAction
     
     @IBAction func addProductButtonWasTapped(_ sender: Any) {
@@ -53,6 +66,12 @@ class ProductDetailsView: DefaultView {
         super.init(coder: aDecoder)
         
         baseInit()
+    }
+    
+    // MARK: - Lifecycle
+    
+    override func layoutSubviews() {
+        invalidateIntrinsicContentSize()
     }
     
     // MARK: - Public
@@ -97,6 +116,9 @@ class ProductDetailsView: DefaultView {
         addProductButton.layer.shadowOpacity = 0.2
         addProductButton.layer.shadowOffset = CGSize.zero
         addProductButton.layer.shadowRadius = 8
+        
+        descriptionTextView.textContainerInset = UIEdgeInsets.zero;
+        descriptionTextView.textContainer.lineFragmentPadding = 0;
     }
     
     private func isFavorite(_ isFavorite: Bool) {

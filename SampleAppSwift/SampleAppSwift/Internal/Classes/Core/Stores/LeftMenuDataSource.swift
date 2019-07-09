@@ -26,6 +26,7 @@ enum LeftMenuItemIdentity: Int {
     case login
     case logout
     case settings
+    case test
 }
 
 class LeftMenuDataSource {

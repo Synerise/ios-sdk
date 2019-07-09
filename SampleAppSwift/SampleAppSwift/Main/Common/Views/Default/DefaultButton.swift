@@ -28,9 +28,9 @@ class DefaultButton: UIButton {
     // MARK: - Public
     
     public func animateTapping() {
-        UIView.animate(withDuration: 0.2,
+        UIView.animate(withDuration: 0.1,
                        animations: {
-                        self.transform = CGAffineTransform(scaleX: 0.975, y: 0.96)
+                        self.transform = CGAffineTransform(scaleX: 0.975, y: 0.975)
         },
                        completion: { _ in
                         UIView.animate(withDuration: 0.2, animations: {

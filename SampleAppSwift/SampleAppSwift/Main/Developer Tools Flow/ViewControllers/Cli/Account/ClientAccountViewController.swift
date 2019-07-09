@@ -19,7 +19,7 @@ class ClientAccountViewController: DefaultViewController {
             self.hideLoading()
             
             let accountInformation = self.makeAccountInformation(clientAccountInformation)
-            self.pushToShowClientAccountInformation(accountInformation: accountInformation)
+            self.pushDebugViewController(text: accountInformation)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -54,18 +54,6 @@ class ClientAccountViewController: DefaultViewController {
     }
     
     // MARK: - Private
-    
-    private func pushToShowClientAccountInformation(accountInformation: String) {
-        let debugTextViewController = makeDebugTextViewController(labelText: accountInformation, barTitle: "Show Client Account Information")
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
-    
-    private func makeDebugTextViewController(labelText: String, barTitle: String, copyEnable: Bool = true) -> DebugTextViewController {
-        let debugTextViewController = DebugTextViewController(text: labelText, copyEnabled: copyEnable)
-        
-        return debugTextViewController
-    }
     
     private func makeAccountInformation(_ clientAccountInformation: ClientAccountInformation) -> String {
         let firstName = clientAccountInformation.firstName ?? "nil"

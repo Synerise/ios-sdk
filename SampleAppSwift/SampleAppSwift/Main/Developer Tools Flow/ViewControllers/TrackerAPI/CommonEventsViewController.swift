@@ -27,22 +27,20 @@ class CommonEventsViewController: UITableViewController {
         if indexPath.section == 0 && indexPath.row == 0 { sendAddedToCartEvent() }
         if indexPath.section == 1 && indexPath.row == 0 { sendRemovedFromCartEvent() }
         if indexPath.section == 2 && indexPath.row == 0 { sendAddedToFavoritesEvent() }
-        if indexPath.section == 3 && indexPath.row == 0 { sendCompletedTransactionEvent() }
-        if indexPath.section == 4 && indexPath.row == 0 { sendCancelledTransactionEvent() }
-        if indexPath.section == 5 && indexPath.row == 0 { sendLoggedInEvent() }
-        if indexPath.section == 6 && indexPath.row == 0 { sendLoggedOutEvent() }
-        if indexPath.section == 7 && indexPath.row == 0 { sendRegisteredEvent() }
-        if indexPath.section == 8 && indexPath.row == 0 { sendPushClickedEvent() }
-        if indexPath.section == 9 && indexPath.row == 0 { sendPushViewedEvent() }
-        if indexPath.section == 10 && indexPath.row == 0 { sendPushCancelledEvent() }
-        if indexPath.section == 11 && indexPath.row == 0 { sendAppearedInLocationEvent() }
-        if indexPath.section == 12 && indexPath.row == 0 { sendHitTimerEvent() }
-        if indexPath.section == 13 && indexPath.row == 0 { sendSearchedEvent() }
-        if indexPath.section == 14 && indexPath.row == 0 { sendSharedEvent() }
-        if indexPath.section == 15 && indexPath.row == 0 { sendVisitedScreenEvent() }
-        if indexPath.section == 16 && indexPath.row == 0 { sendProductViewEvent() }
-        if indexPath.section == 17 && indexPath.row == 0 { sendRecommendationSeenEvent() }
-        if indexPath.section == 18 && indexPath.row == 0 { sendRecommendationClickEvent() }
+        if indexPath.section == 3 && indexPath.row == 0 { sendLoggedInEvent() }
+        if indexPath.section == 4 && indexPath.row == 0 { sendLoggedOutEvent() }
+        if indexPath.section == 5 && indexPath.row == 0 { sendRegisteredEvent() }
+        if indexPath.section == 6 && indexPath.row == 0 { sendPushClickedEvent() }
+        if indexPath.section == 7 && indexPath.row == 0 { sendPushViewedEvent() }
+        if indexPath.section == 8 && indexPath.row == 0 { sendPushCancelledEvent() }
+        if indexPath.section == 9 && indexPath.row == 0 { sendAppearedInLocationEvent() }
+        if indexPath.section == 10 && indexPath.row == 0 { sendHitTimerEvent() }
+        if indexPath.section == 11 && indexPath.row == 0 { sendSearchedEvent() }
+        if indexPath.section == 12 && indexPath.row == 0 { sendSharedEvent() }
+        if indexPath.section == 13 && indexPath.row == 0 { sendVisitedScreenEvent() }
+        if indexPath.section == 14 && indexPath.row == 0 { sendProductViewEvent() }
+        if indexPath.section == 15 && indexPath.row == 0 { sendRecommendationSeenEvent() }
+        if indexPath.section == 16 && indexPath.row == 0 { sendRecommendationClickEvent() }
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -71,34 +69,6 @@ class CommonEventsViewController: UITableViewController {
     
     private func sendAddedToFavoritesEvent() {
         let event = AddedProductToFavoritesEvent(label: "AddedToFavoritesEventLabel")
-        Tracker.send(event)
-    }
-    
-    private func sendCompletedTransactionEvent() {
-        let product = EventProduct()
-        product.sku = "completedProduct"
-        product.tax = 0.23
-        let unitPrice = UnitPrice(amount: 9.99)
-        product.regularPrice = unitPrice
-        let event = CompletedTransactionEvent(label: "CompletedTransactionEventLabel")
-        event.setProducts([product])
-        event.setOrderId("completedOrderId")
-        let recordedAt = Date()
-        event.setRecordedAt(recordedAt)
-        Tracker.send(event)
-    }
-    
-    private func sendCancelledTransactionEvent() {
-        let product = EventProduct()
-        product.sku = "cancelledProduct"
-        product.tax = 0.08
-        product.quantity = 20
-        product.regularPrice = UnitPrice(amount: 230.23)
-        let event = CancelledTransactionEvent(label: "CancelledTransactionEventLabel")
-        event.setProducts([product])
-        event.setOrderId("cancelledOrderId")
-        let recordedAt = Date()
-        event.setRecordedAt(recordedAt)
         Tracker.send(event)
     }
     

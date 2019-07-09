@@ -24,6 +24,10 @@ class SimplePushViewController: DefaultViewController {
         LocalNotificationSender().sendSimplePush3()
     }
     
+    @IBAction func simplePush4() {
+        LocalNotificationSender().sendSimplePush4()
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {

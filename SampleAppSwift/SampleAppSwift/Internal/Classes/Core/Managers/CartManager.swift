@@ -20,7 +20,6 @@ class CartManager {
     
     func placeOrder() {
         removeAllProducts()
-        sendCompleteTransactionEvent()
         sendEndHitTimerEvent()
     }
     
@@ -134,57 +133,6 @@ class CartManager {
         for cartItem in cartItems {
             sendRemovedProductEvent(cartItem: cartItem)
         }
-    }
-    
-    private func sendCompleteTransactionEvent() {
-        var cartFinalUnitPrice: Float = 0
-        var eventProducts = [EventProduct]()
-        
-        for cartItem in self.cartItems {
-            let product: Product = cartItem.product
-            
-            let eventProduct = EventProduct()
-            eventProduct.name = product.name
-            eventProduct.sku = product.sku
-            eventProduct.categories = [product.categories]
-            eventProduct.imageURL = product.imageURL
-            
-            let regularPrice = UnitPrice(amount: Float(cartItem.product.price))
-            eventProduct.regularPrice = regularPrice
-            
-            let finalPriceAmount = Float(cartItem.quantity) * Float(product.price)
-            let finalPrice = UnitPrice(amount: finalPriceAmount)
-            eventProduct.finalPrice = finalPrice
-            
-            eventProduct.quantity = cartItem.quantity
-            
-            cartFinalUnitPrice += finalPriceAmount
-            eventProducts.append(eventProduct)
-        }
-        
-        let revenue = UnitPrice(amount: 10)
-        let value = UnitPrice(amount: cartFinalUnitPrice)
-        
-        let completedTransactionEvent = CompletedTransactionEvent(label: "")
-        completedTransactionEvent.setProducts(eventProducts)
-        completedTransactionEvent.setValue(value)
-        completedTransactionEvent.setRevenue(revenue)
-        completedTransactionEvent.setOrderId("1234")
-        completedTransactionEvent.setOrderStatus("PAYMENT_FINISHED")
-        completedTransactionEvent.setPaymentInfo([
-            "paymentType": "",
-            "paymentAmount": "",
-            "paymentCurrency": "",
-            "paymentTransactionNumber": ""
-        ])
-        
-        completedTransactionEvent.setRecordedAt(Date())
-        
-        if let voucherCode = self.voucherCode {
-            completedTransactionEvent.setDiscountCode(voucherCode)
-        }
-        
-        Tracker.send(completedTransactionEvent)
     }
     
     func sendStartHitTimerEvent() {

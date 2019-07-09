@@ -26,18 +26,12 @@ class ClientVouchersViewController: DefaultViewController {
         
         Promotions.getAssignedVoucherCodes(success: { (voucherCodesResponse) in
             self.hideLoading()
+            
             let debugInfoString = self.makeVoucherStringRepresentation(voucherCodesResponse)
-  
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.showErrorInfo(error as NSError)
         })
-    }
-    
-    private func pushToDebugTextViewController(string: String) {
-        let debugTextViewController = DebugTextViewController(text: string, copyEnabled: false)
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
     }
     
     private func makeVoucherStringRepresentation(_ response: VoucherCodesResponse) -> String {

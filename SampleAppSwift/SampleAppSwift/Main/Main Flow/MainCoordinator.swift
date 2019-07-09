@@ -100,6 +100,8 @@ class MainCoordinator: Coordinator {
             executeLogout()
         case .settings:
             showSettingsFlow()
+        case .test:
+            showTestFlow()
         }
     }
 
@@ -225,6 +227,13 @@ class MainCoordinator: Coordinator {
         settingsCoordinator.applicationController = self.applicationController
         settingsCoordinator.configure = CoordinatorConfigure(parentCoordinator: self, childCoordinators: applicationController.childCoordinators, router: mainRouter)
         settingsCoordinator.start()
+    }
+    
+    private func showTestFlow() {
+        let testCoordinator: TestCoordinator = TestCoordinator()
+        testCoordinator.applicationController = self.applicationController
+        testCoordinator.configure = CoordinatorConfigure(parentCoordinator: self, childCoordinators: applicationController.childCoordinators, router: mainRouter)
+        testCoordinator.start()
     }
 
     private func executeLogout() {  

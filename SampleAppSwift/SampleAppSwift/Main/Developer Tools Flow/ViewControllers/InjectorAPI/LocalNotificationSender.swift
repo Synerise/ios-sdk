@@ -61,6 +61,22 @@ class LocalNotificationSender {
         })
     }
     
+    func sendSimplePush4() {
+        let content = UNMutableNotificationContent()
+        content.title = "Simple Push"
+        content.body = "BUTTONS"
+        content.userInfo = LocalNotificationsUserInfoData.getSimplePush4UserInfo()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        let requestIdentifier = "kSimplePush4Identifier"
+        let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { (_) in
+            
+        })
+    }
+    
     func sendRichMedia1() {
         let content = UNMutableNotificationContent()
         content.title = "Rich Media"

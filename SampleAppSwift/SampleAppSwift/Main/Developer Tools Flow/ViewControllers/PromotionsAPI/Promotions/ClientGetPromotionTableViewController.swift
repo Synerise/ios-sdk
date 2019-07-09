@@ -22,7 +22,7 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
             self.hideLoading()
             
             let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -37,7 +37,7 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
             self.hideLoading()
             
             let debugInfoString = self.makeClientPromotionStringRepresentation(clientPromotion)
-            self.pushToDebugTextViewController(string: debugInfoString)
+            self.pushDebugViewController(text: debugInfoString)
         }, failure: { (error) in
             self.hideLoading()
             self.showErrorInfo(error as NSError)
@@ -50,12 +50,6 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
     }
     
     // MARK: - Private
-    
-    private func pushToDebugTextViewController(string: String) {
-        let debugTextViewController = DebugTextViewController(text: string, copyEnabled: false)
-        
-        self.navigationController?.pushViewController(debugTextViewController, animated: true)
-    }
     
     // swiftlint:disable:next function_body_length
     private func makeClientPromotionStringRepresentation(_ response: Promotion) -> String {

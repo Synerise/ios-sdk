@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SyneriseSDK
 
 class ProductViewController: DefaultViewController {
     
