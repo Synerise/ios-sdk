@@ -49,7 +49,7 @@ class LoginViewModel {
     }
     
     func authenticateByFacebookToken(onSuccess: @escaping (() -> ())) {
-        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+        guard let facebookToken = AccessToken.current?.tokenString else {
             return
         }
         

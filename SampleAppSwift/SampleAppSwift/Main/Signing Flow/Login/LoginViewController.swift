@@ -61,7 +61,7 @@ class LoginViewController: DefaultViewController {
     // MARK: - Private
 
     private func prepareFacebookLoginButton() {
-        let loginButton = FBSDKLoginButton()
+        let loginButton = FBLoginButton()
         self.facebookLoginContainerView.addSubview(loginButton)
         
         loginButton.translatesAutoresizingMaskIntoConstraints = false

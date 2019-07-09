@@ -16,7 +16,7 @@ class ClientAuthorizationViewController: DefaultViewController {
     // MARK: - IBAction
     
     @IBAction func authenticateByFacebook() {
-        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+        guard let facebookToken = AccessToken.current?.tokenString else {
             return
         }
         

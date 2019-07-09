@@ -240,7 +240,7 @@ class MainCoordinator: Coordinator {
         let syneriseManager: SyneriseManager = self.applicationController.syneriseManager
         syneriseManager.signOut()
         
-        FBSDKLoginManager().logOut()
+        LoginManager().logOut()
         
         self.userSignedOut()
     }
