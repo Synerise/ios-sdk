@@ -35,20 +35,20 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
 NS_SWIFT_NAME(TrackerAutoTrackingSettings)
 @interface SNRTrackerAutoTrackingSettings : NSObject
 
-//This parameter specifies if autotracking functionality is enabled.
+//This parameter specifies if AutoTracking functionality is enabled.
 //
 //Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
-//This parameter sets mode of AutoTrack.
+//This parameter sets mode of AutoTracking.
 //
 //Property is SNRTrackerAutoTrackModeDisabled by default.
 @property (assign, nonatomic, readwrite) SNRTrackerAutoTrackMode mode;
 
-//This parameter sets excluded classes from AutoTrack.
+//This parameter sets excluded classes from AutoTracking.
 @property (copy, nonatomic, nonnull, readwrite) NSArray<Class> *excludedClasses;
 
-//This parameter sets excluded view tags from AutoTrack.
+//This parameter sets excluded view tags from AutoTracking.
 @property (copy, nonatomic, nonnull, readwrite) NSArray<NSNumber *> *excludedViewTags;
 
 - (instancetype)init __unavailable;

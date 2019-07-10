@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ContentWidgetItemLayout)
 @interface SNRContentWidgetItemLayout : NSObject
 
-@property (assign, nonatomic, readwrite) UIColor *backgroundColor;
+@property (copy, nonatomic, nonnull, readwrite) UIColor *backgroundColor;
 
 @property (assign, nonatomic, readwrite) CGFloat cornerRadius;
 @property (assign, nonatomic, readwrite) CGFloat borderWidth;

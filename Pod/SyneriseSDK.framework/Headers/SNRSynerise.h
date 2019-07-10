@@ -57,14 +57,14 @@ NS_SWIFT_NAME(SyneriseDelegate)
 
 @optional
 /**
- * This method will be called when registration for push notifications is needed.
+ * This method is called when Synerise needs registration for Push Notifications.
  *
  * @note You should invoke '[SNRClient registerForPush:success:failure:]' method again.
  */
 - (void)SNR_registerForPushNotificationsIsNeeded NS_SWIFT_NAME(snr_registerForPushNotificationsIsNeeded());
 
 /**
- * This method will call when Synerise handles url action from campaign Activity.
+ * This method is called when Synerise handles URL action from campaign activities.
  *
  * @param url URL address value from activity.
  *
@@ -73,7 +73,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
 - (void)SNR_handledActionWithURL:(NSURL *)url NS_SWIFT_NAME(snr_handledAction(url:));
 
 /**
- * This method will call when Synerise handles deeplink action from campaign Activity.
+ * This method is called when Synerise handles deeplink action from campaign activities.
  *
  * @param deepLink Literal text value from activity.
  *
@@ -82,7 +82,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink NS_SWIFT_NAME(snr_handledAction(deepLink:));
 
 /**
- * This method will call when Synerise handles url action from campaign Activity.
+ * This method is called when Synerise handles URL action from campaign activities.
  *
  * @param url URL address value from activity.
  * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
@@ -91,7 +91,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
 - (void)SNR_handledActionWithURL:(NSURL *)url activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(url:activity:completionHandler:));
 
 /**
- * This method will call when Synerise handles deeplink action from campaign Activity.
+ * This method is called when Synerise handles deeplink action from campaign activities.
  *
  * @param deepLink Literal text value from activity.
  * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
@@ -180,24 +180,9 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Checks that notification's sender is Synerise.
  *
- * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
+ * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseNotification:(NSDictionary *)userInfo;
-
-/**
- * Handles new push message and starts activity, which build proper views from provided data.
- *
- * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
- */
-+ (void)handleNotification:(NSDictionary *)userInfo;
-
-/**
- * Handles push message action identifeir and execute its action if is set.
- *
- * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
- * @param actionIdentifier Identifier of action received from notification response.
- */
-+ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
 
 /**
  * Checks that notification's sender is Synerise and its kind is Simple Push.
@@ -205,6 +190,13 @@ NS_SWIFT_NAME(Synerise)
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseSimplePush:(NSDictionary *)userInfo;
+
+/**
+ * Checks that notification's sender is Synerise and its kind is Banner.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isSyneriseBanner:(NSDictionary *)userInfo;
 
 /**
  * Checks that notification's sender is Synerise and its kind is Silent Command.
@@ -221,11 +213,19 @@ NS_SWIFT_NAME(Synerise)
 + (BOOL)isSyneriseSilentSDKCommand:(NSDictionary *)userInfo;
 
 /**
- * Checks that notification's sender is Synerise and its kind is Banner.
+ * Handles notification payload and starts activity.
  *
- * @param userInfo Key-Value map of data.
+ * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  */
-+ (BOOL)isSyneriseBanner:(NSDictionary *)userInfo;
++ (void)handleNotification:(NSDictionary *)userInfo;
+
+/**
+ * Handles notification payload with action and starts activity.
+ *
+ * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
+ * @param actionIdentifier Identifier of action received from notification response.
+ */
++ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
 
 @end
 

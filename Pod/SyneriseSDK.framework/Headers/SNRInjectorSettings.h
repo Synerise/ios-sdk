@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(InjectorSettings)
 @interface SNRInjectorSettings : NSObject
 
-//This parameter specifies that Injector starts automatically.
+//This parameter specifies that if Synerise Mobile Campaigns shall be treated automatically or not.
 //
 //Property is false by default.
 @property (assign, nonatomic, readwrite) BOOL automatic;
