@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.1] - 2019-07-10
+
+### Fixed
+- 'ContentWidgetItemLayout.backgroundColor' - property type.
+- Swift name for 'RecommendationOptions' class.
+
+### Changed
+- Documentation in header files.
+
+
 ## [3.5.0] - 2019-06-30
 
 ### Added

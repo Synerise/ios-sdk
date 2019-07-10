@@ -37,8 +37,8 @@ NS_SWIFT_NAME(Content)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getDocument:(NSString *)slug
-              success:(nullable void (^)(NSDictionary *document))success
-              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
+            success:(nullable void (^)(NSDictionary *document))success
+            failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
 
 /**
  * Gets recommendations that are defined for options provided.

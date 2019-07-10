@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @protocol SNRInjectorWalkthroughDelegate
  *
- * A protocol to handle events from Injector for Walkthrough campaigns.
+ * A protocol to handle events from walkthrough campaigns.
  *
- * When you choose to load and present Walkthrough manually, you may be interested in following delegate methods.
+ * When you choose to load and present walkthrough manually, you may be interested in following delegate methods.
  *
- * @note Note, that all these methods are optional and implementing them is not required. These are also called when Walkthrough was loaded automatically.
+ * @note Note, that all these methods are optional and implementing them is not required. These are also called when walkthrough was loaded automatically.
  */
 
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
@@ -24,22 +24,22 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 @optional
 
 /**
- * This method will be called when Walkthrough has been loaded.
+ * This method is called after walkthrough is loaded.
  */
 - (void)SNR_walkthroughDidLoad NS_SWIFT_NAME(snr_walkthroughDidLoad());
 
 /**
- * This method will be called when an error occured while Walkthrough loading.
+ * This method is called when an error occurs while loading walkthrough.
  */
 - (void)SNR_walkthroughLoadingError:(NSError *)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
 
 /**
- * This method will be called when Walkthrough has been appeared.
+ * This method is called after walkthrough appears.
  */
 - (void)SNR_walkthroughDidAppear NS_SWIFT_NAME(snr_walkthroughDidAppear());
 
 /**
- * This method will be called when Walkthrough has been disappeared.
+ * This method is called after walkthrough disappears.
  */
 - (void)SNR_walkthroughDidDisappear NS_SWIFT_NAME(snr_walkthroughDidDisappear());
 
@@ -52,10 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @protocol SNRInjectorBannerDelegate
  *
- * A protocol to handle events from Injector for banner campaigns.
+ * A protocol to handle events from banner campaigns.
  *
- * @note It is not always suitable for you to cover your Activities with any banners which may come.
- * Fortunately, we have put this into deep consideration and as for now, we'd like to present our optional banner delegate methods.
+ * It is not always suitable for you to cover the screen every time a banner is received.
+ * You can implement optional methods to control this.
+ *
  */
 
 NS_SWIFT_NAME(InjectorBannerDelegate)
@@ -64,19 +65,19 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 @optional
 
 /**
- * This method will be called when Banner has been loaded and Synerise SDK asks for permission to show it.
+ * This method is called after banner is loaded and Synerise SDK asks for permission to show it.
  *
- * @param bannerDictionary It is banner instance representation.
+ * @param bannerDictionary Dictionary representation of banner.
  */
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary *)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
 /**
- * This method will be called when Banner has been appeared.
+ * This method is called after banner appears.
  */
 - (void)SNR_bannerDidAppear NS_SWIFT_NAME(snr_bannerDidAppear());
 
 /**
- * This method will be called when Banner has been disappeared.
+ * This method is called when banner disappears.
  */
 - (void)SNR_bannerDidDisappear NS_SWIFT_NAME(snr_bannerDidDisappear());
 

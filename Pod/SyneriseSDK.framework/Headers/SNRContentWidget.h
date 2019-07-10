@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @protocol SNRContentWidgetDelegate
  *
- * A protocol to handle all of Widget's activity.
+ * A protocol to handle Content Widget actions.
  */
 
 NS_SWIFT_NAME(ContentWidgetDelegate)
@@ -25,29 +25,29 @@ NS_SWIFT_NAME(ContentWidgetDelegate)
 @required
 
 /**
- * This method will be called when Widget has been loaded.
+ * This method is called after widget is loaded.
  */
 - (void)SNR_widgetDidLoad:(SNRContentWidget *)widget NS_SWIFT_NAME(snr_widgetDidLoad(widget:));
 
 /**
- * This method will be called when an error occured while Widget loading.
+ * This method is called when an error occurs while loading.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didNotLoadWithError:(NSError *)error NS_SWIFT_NAME(snr_widgetDidNotLoad(widget:error:));
 
 /**
- * This method will be called when Widget handled click action.
+ * This method is called when the user clicks a widget’s item.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didReceiveClickActionForModel:(SNRBaseModel *)model NS_SWIFT_NAME(snr_widgetDidReceiveClickAction(widget:model:));
 
 @optional
 
 /**
- * This method will be called when Widget has been changed loading state.
+ * This method is called when the widget’s loading state changes.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget isLoading:(BOOL)isLoading NS_SWIFT_NAME(snr_widgetIsLoading(widget:isLoading:));
 
 /**
- * This method will be called when Widget has changed its size.
+ * This method is called when the widget’s size changes.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didChangeToSize:(CGSize)size NS_SWIFT_NAME(snr_widgetDidChangeSize(widget:size:));
 
@@ -68,22 +68,22 @@ NS_SWIFT_NAME(ContentWidget)
 - (instancetype)init __unavailable;
 
 /**
- * Creates Widget instance.
+ * Creates widget instance.
  *
- * @param options SNRContentWidgetOptions object providing business logic parameters for Widget.
- * @param appearance SNRContentWidgetAppearance object providing appearance parameters for Widget.
+ * @param options SNRContentWidgetOptions object providing business logic parameters for widget.
+ * @param appearance SNRContentWidgetAppearance object providing appearance parameters for widget.
  */
 - (instancetype)initWithOptions:(SNRContentWidgetOptions *)options andAppearance:(SNRContentWidgetAppearance *)appearance NS_SWIFT_NAME(init(options:appearance:));
 
 /**
- * Starts operation of fetching data and creates view structure of Widget.
+ * Starts operation of fetching data and creates view structure of widget.
  *
- * @note When you call this method, be aware that Widget will notify you about the progress by SNRContentWidgetDelegate methods.
+ * @note When you call this method, be aware that widget will notify you about the progress by SNRContentWidgetDelegate methods.
  */
 - (void)load;
 
 /**
- * Checks whether Widget is loaded with success.
+ * Checks whether widget is loaded with success.
  */
 - (BOOL)isLoaded;
 

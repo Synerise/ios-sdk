@@ -89,6 +89,21 @@ NS_SWIFT_NAME(Client)
                 failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
 
 /**
+ * Signs in a client with OAuth Access Token.
+ *
+ * @param accessToken Token OAuth Access Token.
+ * @param authID Authorization custom identity.
+ * @param context SNRClientOAuthContext object with agreements and optional attributes.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
+                                    authID:(nullable NSString *)authID
+                                   context:(nullable SNRClientOAuthContext *)context
+                                   success:(nullable void (^)(BOOL isSuccess))success
+                                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
+
+/**
  * Signs in a client with Facebook Token.
  *
  * @param facebookToken Token from Facebook active session.
@@ -115,21 +130,6 @@ NS_SWIFT_NAME(Client)
                                                      authID:(nullable NSString *)authID
                                                     success:(nullable void (^)(BOOL isSuccess))success
                                                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
-
-/**
- * Signs in a client with OAuth Access Token.
- *
- * @param accessToken Token OAuth Access Token.
- * @param authID Authorization custom identity.
- * @param context SNRClientOAuthContext object with agreements and optional attributes.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
-                                    authID:(nullable NSString *)authID
-                                    context:(nullable SNRClientOAuthContext *)context
-                                    success:(nullable void (^)(BOOL isSuccess))success
-                                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
 
 /**
  * Checks whether client is signed in (is client's token not expired).
@@ -160,15 +160,6 @@ NS_SWIFT_NAME(Client)
  */
 + (void)retrieveTokenWithSuccess:(nullable void (^)(SNRToken *token))success
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
-
-/**
- * Method to recognize anonymous users and save personal information per their CRM entries.
- *
- * @param email Client's email.
- * @param customIdentify Client's custom identifier.
- * @param parameters Client's custom parameters.
- */
-+ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
 /**
  * Retrieves current client's UUID.
@@ -319,6 +310,15 @@ NS_SWIFT_NAME(Client)
 + (void)deleteAccountByFacebook:(NSString *)facebookToken
                         success:(nullable void (^)(BOOL isSuccess))success
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
+
+/**
+ * Method to recognize anonymous users and save personal information per their CRM entries.
+ *
+ * @param email Client's email.
+ * @param customIdentify Client's custom identifier.
+ * @param parameters Client's custom parameters.
+ */
++ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
 /**
  * Registers user for push notifications.

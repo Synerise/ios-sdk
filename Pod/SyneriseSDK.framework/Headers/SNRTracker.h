@@ -47,7 +47,7 @@ NS_SWIFT_NAME(TrackerDelegate)
 @optional
 
 /**
- * This method will be called when Tracker requests about location update.
+ * This method is called when Tracker requests about location update.
  */
 - (void)SNR_locationUpdateRequired NS_SWIFT_NAME(snr_locationUpdateRequired());
 
