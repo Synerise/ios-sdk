@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.2] - 2019-07-25
+
+### Added
+- 'SNRPromotionsApiQuery' object to fetch promotions better way.
+- 'mobilePushAgreement' parameter in 'Client.registerForPush' method.
+
+### Changed
+- 'SNRWidgetGridLayout.getSize(prefferedWidth:)' name to 'SNRWidgetGridLayout.getSize(preferredWidth:)'.
+- 'SNRClient.getPromotions(statuses:types:page:success:failure:)' is deprecated.
+- 'SNRClient.getPromotions(statuses:types:limit:page:success:failure:)' is deprecated.
+- 'SNRClient.getPromotions (statuses:types:limit:page:includeMeta:success:failure:)' is deprecated.
+
+
 ## [3.5.1] - 2019-07-10
 
 ### Fixed

@@ -21,9 +21,9 @@ NS_SWIFT_NAME(ContentWidgetGridLayout)
 @property (assign, nonatomic, readwrite) CGFloat itemVerticalSpacing;
 
 /**
- * Gets content size of Widget for your given preffered width.
+ * Gets content size of Widget for your given preferred width.
  */
-- (CGSize)getSizeForPrefferedWidth:(CGFloat)prefferedWidth NS_SWIFT_NAME(getSize(prefferedWidth:));
+- (CGSize)getSizeForPreferredWidth:(CGFloat)preferredWidth NS_SWIFT_NAME(getSize(preferredWidth:));
 
 @end
 

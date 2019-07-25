@@ -28,6 +28,10 @@
 #import <SyneriseSDK/SNRContent.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
+#import <SyneriseSDK/SNRPromotionsApiQuery.h>
+
+// Types
+#import <SyneriseSDK/SNRApiQuerySortingOrder.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>

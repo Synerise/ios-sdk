@@ -6,6 +6,13 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
+typedef NSString *SNRPromotionTypeString;
+
+FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_UNKNOWN;
+FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_MEMBERS_ONLY;
+FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_CUSTOM;
+FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_GENERAL;
+
 /**
  * @enum SNRPromotionType
  */
