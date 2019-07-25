@@ -6,6 +6,13 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
+typedef NSString *SNRPromotionStatusString;
+
+FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_NONE;
+FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_ACTIVE;
+FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_ASSIGNED;
+FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_REDEEMED;
+
 /**
  * @enum SNRPromotionStatus
  */

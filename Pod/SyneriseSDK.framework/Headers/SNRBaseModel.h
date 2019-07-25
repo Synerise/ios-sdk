@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(BaseModel)
 @interface SNRBaseModel : NSObject
 
++ (BOOL)isSortingKey:(NSString *)sortingKey;
+
 @end
 
 NS_ASSUME_NONNULL_END

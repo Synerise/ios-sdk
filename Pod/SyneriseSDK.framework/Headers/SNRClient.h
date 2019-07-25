@@ -331,6 +331,19 @@ NS_SWIFT_NAME(Client)
                 success:(nullable void (^)(BOOL isSuccess))success
                 failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
 
+/**
+ * Registers user for push notifications.
+ *
+ * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
+ * @param mobilePushAgreement Agreement (consent) for mobile push campaigns.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)registerForPush:(NSString *)registrationToken
+    mobilePushAgreement:(BOOL)mobilePushAgreement
+                success:(nullable void (^)(BOOL isSuccess))success
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:mobilePushAgreement:success:failure:));
+
 @end
 
 NS_ASSUME_NONNULL_END

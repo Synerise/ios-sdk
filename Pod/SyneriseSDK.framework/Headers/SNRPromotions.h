@@ -6,6 +6,7 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
+@class SNRPromotionsApiQuery;
 @class SNRPromotionResponse;
 @class SNRPromotion;
 @class SNRAssignVoucherResponse;
@@ -42,6 +43,17 @@ NS_SWIFT_NAME(Promotions)
                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
 
 /**
+ * Gets promotions that are defined for parameters provided in query object.
+ *
+ * @param apiQuery SNRPromotionsApiQuery object responsible for storing all query parameters.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)getPromotionsWithApiQuery:(SNRPromotionsApiQuery *)apiQuery
+                          success:(nullable void (^)(SNRPromotionResponse *promotionResponse))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(apiQuery:success:failure:));
+
+/**
  * Gets promotions that are defined for parameters provided.
  *
  * @param statuses List of statuses for query (@enum SNRPromotionStatus).
@@ -49,12 +61,14 @@ NS_SWIFT_NAME(Promotions)
  * @param page Page number.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.5.2
  */
 + (void)getPromotionsStatuses:(nullable NSArray<NSNumber *> *)statuses
                         types:(nullable NSArray<NSNumber *> *)types
                          page:(NSInteger)page
                       success:(nullable void (^)(SNRPromotionResponse *promotionResponse))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:page:success:failure:));
+                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:page:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRPromotions.getPromotions(apiQuery:success:failure:) instead.");
 
 /**
  * Gets promotions that are defined for parameters provided.
@@ -65,13 +79,15 @@ NS_SWIFT_NAME(Promotions)
  * @param page Page number.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.5.2
  */
 + (void)getPromotionsStatuses:(nullable NSArray<NSNumber *> *)statuses
                         types:(nullable NSArray<NSNumber *> *)types
                         limit:(NSInteger)limit
                          page:(NSInteger)page
                       success:(nullable void (^)(SNRPromotionResponse *promotionResponse))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:limit:page:success:failure:));
+                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:limit:page:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRPromotions.getPromotions(apiQuery:success:failure:) instead.");
 
 /**
  * Gets promotions that are defined for parameters provided.
@@ -83,6 +99,8 @@ NS_SWIFT_NAME(Promotions)
  * @param includeMeta Specifies that meta data should be included in response.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.5.2
  */
 + (void)getPromotionsWithStatuses:(nullable NSArray<NSNumber *> *)statuses
                             types:(nullable NSArray<NSNumber *> *)types
@@ -90,7 +108,7 @@ NS_SWIFT_NAME(Promotions)
                              page:(NSInteger)page
                       includeMeta:(BOOL)includeMeta
                           success:(nullable void (^)(SNRPromotionResponse *promotionResponse))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:limit:page:includeMeta:success:failure:));
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(statuses:types:limit:page:includeMeta:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRPromotions.getPromotions(apiQuery:success:failure:) instead.");
 
 /**
  * Gets promotion that are defined for UUID parameter provided.
