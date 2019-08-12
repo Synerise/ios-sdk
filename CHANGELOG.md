@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.3] - 2019-08-12
+
+### Added
+- 'Client.getEvents' method.
+- 'app-version' as a query parameter in walkthrough request.
+
+### Changed
+- Event's label max length is 64 characters.
+
 ## [3.5.2] - 2019-07-25
 
 ### Added

@@ -25,6 +25,7 @@
 // Modules
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
+#import <SyneriseSDK/SNRClientEventsApiQuery.h>
 #import <SyneriseSDK/SNRContent.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
@@ -100,6 +101,7 @@
 #import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRTokenOrigin.h>
 #import <SyneriseSDK/SNRToken.h>
+#import <SyneriseSDK/SNRClientEventData.h>
 
 // Content Widget
 #import <SyneriseSDK/SNRContentWidgetAppearance.h>
