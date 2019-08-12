@@ -8,10 +8,12 @@
 
 #import "SNRTokenOrigin.h"
 
+@class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
 @class SNRClientFacebookAuthenticationContext;
 @class SNRClientOAuthContext;
 @class SNRClientAccountInformation;
+@class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
 @class SNRClientPasswordResetRequestContext;
 @class SNRClientPasswordResetConfirmationContext;
@@ -179,6 +181,17 @@ NS_SWIFT_NAME(Client)
  */
 + (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation *accountInformation))success
                       failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
+
+/**
+ * Retrieves events for authenticated client.
+ *
+ * @param apiQuery SNRClientEventsApiQuery object responsible for storing all query parameters.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)getEventsWithApiQuery:(SNRClientEventsApiQuery *)apiQuery
+                      success:(nullable void (^)(NSArray<SNRClientEventData *> *events))success
+                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getEvents(apiQuery:success:failure:));
 
 /**
  * Updates client's account information.
