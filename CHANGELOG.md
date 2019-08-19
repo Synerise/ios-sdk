@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.4] - 2019-08-19
+
+### Added
+- Sale price as a additional feature to 'ContentWidget'.
+- Optional button action as a additional feature to 'ContentWidget'.
+
+
 ## [3.5.3] - 2019-08-12
 
 ### Added

@@ -109,7 +109,9 @@
 #import <SyneriseSDK/SNRContentWidgetHorizontalSliderLayout.h>
 #import <SyneriseSDK/SNRContentWidgetGridLayout.h>
 #import <SyneriseSDK/SNRContentWidgetItemLayout.h>
-#import <SyneriseSDK/SNRContentWidgetBasicItemLayout.h>
+#import <SyneriseSDK/SNRContentWidgetBasicProductItemLayout.h>
+#import <SyneriseSDK/SNRContentWidgetBaseCustomAction.h>
+#import <SyneriseSDK/SNRContentWidgetImageButtonCustomAction.h>
 #import <SyneriseSDK/SNRContentWidgetOptions.h>
 #import <SyneriseSDK/SNRContentWidget.h>
 
