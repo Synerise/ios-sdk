@@ -65,7 +65,8 @@ NS_SWIFT_NAME(ContentWidget)
 
 @property (weak, nonatomic, nullable, readwrite) id<SNRContentWidgetDelegate> delegate;
 
-- (instancetype)init __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * Creates widget instance.

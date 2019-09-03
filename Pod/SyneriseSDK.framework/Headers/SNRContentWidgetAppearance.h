@@ -25,8 +25,8 @@ NS_SWIFT_NAME(ContentWidgetAppearance)
 @property (strong, nonatomic, nonnull, readonly) SNRContentWidgetLayout *layout;
 @property (strong, nonatomic, nonnull, readonly) SNRContentWidgetItemLayout *itemLayout;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithLayout:(SNRContentWidgetLayout *)layout andItemLayout:(SNRContentWidgetItemLayout *)itemLayout NS_SWIFT_NAME(init(widgetLayout:itemLayout:));
 

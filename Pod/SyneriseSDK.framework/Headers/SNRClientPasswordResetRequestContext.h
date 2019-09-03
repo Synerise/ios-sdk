@@ -19,8 +19,8 @@ NS_SWIFT_NAME(ClientPasswordResetRequestContext)
 
 @property (copy, nonatomic, nonnull, readonly) NSString *email;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithEmail:(NSString *)email NS_SWIFT_NAME(init(email:));
 

@@ -51,8 +51,8 @@ NS_SWIFT_NAME(TrackerAutoTrackingSettings)
 //This parameter sets excluded view tags from AutoTracking.
 @property (copy, nonatomic, nonnull, readwrite) NSArray<NSNumber *> *excludedViewTags;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -16,10 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ContentWidgetImageButtonCustomAction)
 @interface SNRContentWidgetImageButtonCustomAction : SNRContentWidgetBaseCustomAction
 
-@property (strong, nonatomic, nullable, readwrite) SNRContentWidgetImageButtonCustomActionReceiveClickActionBlock onReceiveClickAction;
-
 @property (assign, nonatomic, readwrite) CGSize size;
-@property (assign, nonatomic, readwrite) CGSize offset;
 
 @property (strong, nonatomic, nullable, readwrite) UIColor *backgroundColor;
 @property (strong, nonatomic, nullable, readwrite) UIColor *tintColor;
@@ -28,6 +25,8 @@ NS_SWIFT_NAME(ContentWidgetImageButtonCustomAction)
 @property (assign, nonatomic, readwrite) BOOL isSelectable;
 @property (strong, nonatomic, nullable, readwrite) UIImage *selectedImage;
 @property (strong, nonatomic, nullable, readwrite) SNRContentWidgetImageButtonCustomActionIsSelectedBlock isSelected;
+
+@property (strong, nonatomic, nullable, readwrite) SNRContentWidgetImageButtonCustomActionReceiveClickActionBlock onReceiveClickAction;
 
 @end
 

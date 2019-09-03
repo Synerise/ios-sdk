@@ -20,8 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(AppearedInLocationEvent)
 @interface SNRAppearedInLocationEvent : SNREvent
 
-- (nonnull instancetype)initWithLabel:(nonnull NSString *)label andParams:(nullable SNRTrackerParams *)params __attribute__((unavailable("Use initWithLabel:andLocation:andParams instead")));
-- (nonnull instancetype)initWithLabel:(nonnull NSString *)label __attribute__((unavailable("Use initWithLabel:andLocation instead")));
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(nonnull NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(nonnull NSString *)label NS_UNAVAILABLE;
 
 /**
  Initializes @c SNRAppearedInLocationEvent object with provided location and label;

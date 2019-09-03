@@ -26,8 +26,8 @@ NS_SWIFT_NAME(Settings)
 @property (strong, nonatomic, nonnull, readonly) SNRTrackerSettings *tracker;
 @property (strong, nonatomic, nonnull, readonly) SNRInjectorSettings *injector;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

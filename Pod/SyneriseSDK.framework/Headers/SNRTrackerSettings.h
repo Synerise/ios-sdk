@@ -48,8 +48,8 @@ NS_SWIFT_NAME(TrackerSettings)
 //Property is false by default.
 @property (assign, nonatomic, readwrite) BOOL locationAutomatic;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
