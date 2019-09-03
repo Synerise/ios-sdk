@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(Content)
 @interface SNRContent : NSObject
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * This method enables/disables console logs from Content SDK.

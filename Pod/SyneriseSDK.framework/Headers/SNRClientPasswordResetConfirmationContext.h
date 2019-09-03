@@ -20,8 +20,8 @@ NS_SWIFT_NAME(ClientPasswordResetConfirmationContext)
 @property (copy, nonatomic, nonnull, readonly) NSString *password;
 @property (copy, nonatomic, nonnull, readonly) NSString *token;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithPassword:(NSString *)password andToken:(NSString *)token NS_SWIFT_NAME(init(password:token:));
 

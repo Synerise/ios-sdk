@@ -40,8 +40,8 @@ NS_SWIFT_NAME(ClientRegisterAccountContext)
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
 @property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *tags;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithEmail:(NSString *)email andPassword:(NSString *)password NS_SWIFT_NAME(init(email:password:));
 

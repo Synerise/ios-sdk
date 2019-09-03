@@ -20,8 +20,8 @@ NS_SWIFT_NAME(TrackerDeclarativeTrackingSettings)
 //Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

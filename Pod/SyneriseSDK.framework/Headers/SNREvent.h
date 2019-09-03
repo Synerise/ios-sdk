@@ -23,8 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(Event)
 @interface SNREvent : NSObject <NSCopying>
 
-+ (instancetype) __unavailable new;
-- (instancetype) __unavailable init;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * Initializes SNREvent object with a provided label.

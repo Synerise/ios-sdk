@@ -19,8 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(CustomEvent)
 @interface SNRCustomEvent : SNREvent
 
-- (instancetype)__unavailable initWithLabel:(NSString *)label andParams:(nullable SNRTrackerParams *)params;
-- (instancetype)__unavailable initWithLabel:(NSString *)label;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(NSString *)label NS_UNAVAILABLE;
 
 /**
  * Initializes SNRCustomEvent object with provided label, action and parameters.

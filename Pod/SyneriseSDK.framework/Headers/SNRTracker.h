@@ -62,8 +62,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(Tracker)
 @interface SNRTracker : NSObject
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * Enables/disables console logs from SNRTracker.

@@ -31,8 +31,8 @@ NS_SWIFT_NAME(NotificationsSettings)
 //Property is nil by default.
 @property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

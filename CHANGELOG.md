@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.5] - 2019-09-03
+
+### Added
+- `OTHER` option to `SNRClientSex`.
+
+
 ## [3.5.4] - 2019-08-19
 
 ### Added

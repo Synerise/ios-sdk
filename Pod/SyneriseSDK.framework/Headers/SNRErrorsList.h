@@ -29,4 +29,7 @@ static NSInteger const SNRErrorCodeClientSessionExpired = 3210;
 
 static NSInteger const SNRErrorCodeJWTValidationFailed = 3300;
 
+static NSInteger const SNRErrorCodeChatDefaultError = 3510;
+static NSInteger const SNRErrorCodeChatTrackerKeyError = 3520;
+
 #endif

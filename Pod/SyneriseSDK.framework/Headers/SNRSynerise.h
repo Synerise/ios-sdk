@@ -132,8 +132,8 @@ NS_SWIFT_NAME(Synerise)
 
 @property (class, nonatomic, nonnull, readonly) SNRSettings *settings;
 
-+ (instancetype)new __unavailable;
-- (instancetype)init __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * Initializes Synerise SDK.

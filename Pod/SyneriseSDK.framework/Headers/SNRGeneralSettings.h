@@ -26,8 +26,8 @@ NS_SWIFT_NAME(GeneralSettings)
 //Property is 1800 seconds (30 minutes) by default.
 @property (assign, nonatomic, readwrite) NSTimeInterval minTokenRefreshInterval;
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

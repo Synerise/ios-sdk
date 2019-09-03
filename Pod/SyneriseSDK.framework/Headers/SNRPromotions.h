@@ -21,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(Promotions)
 @interface SNRPromotions : NSObject
 
-- (instancetype)init __unavailable;
-+ (instancetype)new __unavailable;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  * Enables/disables console logs from SNRPromotions.
@@ -113,7 +113,7 @@ NS_SWIFT_NAME(Promotions)
 /**
  * Gets promotion that are defined for UUID parameter provided.
  *
- * @param uuid UUID of promotion.
+ * @param uuid UUID string of promotion.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -133,7 +133,7 @@ NS_SWIFT_NAME(Promotions)
                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
 
 /**
- * Activates promotion that are defined for UUID parameter provided.
+ * Activates promotion that is defined for UUID parameter provided.
  *
  * @param uuid UUID of promotion that will be activated.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -144,7 +144,7 @@ NS_SWIFT_NAME(Promotions)
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(uuid:success:failure:));
 
 /**
- * Activates promotion that are defined for code parameter provided.
+ * Activates promotion that is defined for code parameter provided.
  *
  * @param code Code of promotion that will be activated.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -155,7 +155,7 @@ NS_SWIFT_NAME(Promotions)
                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
 
 /**
- * Dectivates promotion that are defined for UUID parameter provided.
+ * Dectivates promotion that is defined for UUID parameter provided.
  *
  * @param uuid UUID of promotion that will be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -166,7 +166,7 @@ NS_SWIFT_NAME(Promotions)
                           failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(uuid:success:failure:));
 
 /**
- * Dectivates promotion that are defined for code parameter provided.
+ * Dectivates promotion that is defined for code parameter provided.
  *
  * @param code Code of promotion that will be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.
