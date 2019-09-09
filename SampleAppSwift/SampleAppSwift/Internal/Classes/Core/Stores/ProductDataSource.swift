@@ -28,7 +28,7 @@ class ProductDataSource {
         categories.forEach { (categoryId) in
             if let products = getProducts(categoryId: categoryId) {
                 products.forEach({ (product) in
-                    if (product.sku == sku) {
+                    if product.sku == sku {
                         productBySku = product
                     }
                 })

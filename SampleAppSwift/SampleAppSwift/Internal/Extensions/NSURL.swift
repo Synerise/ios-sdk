@@ -13,7 +13,7 @@ extension URL {
         if let urlComponents = URLComponents(url: self, resolvingAgainstBaseURL: true) {
             if let queryItems = urlComponents.queryItems {
                 var params = [String: String]()
-                queryItems.forEach{
+                queryItems.forEach {
                     params[$0.name] = $0.value
                 }
                 return params

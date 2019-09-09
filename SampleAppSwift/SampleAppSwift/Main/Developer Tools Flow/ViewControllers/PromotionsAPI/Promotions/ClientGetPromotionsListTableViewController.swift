@@ -25,8 +25,20 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     // MARK: - IBAction
     
     @IBAction func getPromotionsList() {
+        let apiQuery = PromotionsApiQuery()
+        apiQuery.types = [SNR_PROMOTION_TYPE_GENERAL]
+        apiQuery.statuses = [SNR_PROMOTION_STATUS_ACTIVE, SNR_PROMOTION_STATUS_ASSIGNED]
+        apiQuery.types = [SNR_PROMOTION_TYPE_GENERAL]
+        apiQuery.sorting = [
+            [SNR_PROMOTION_SORTING_KEY_EXPIRE_AT: SNR_API_QUERY_SORTING_ASC],
+            [SNR_PROMOTION_SORTING_KEY_TYPE: SNR_API_QUERY_SORTING_DESC]
+        ]
+        apiQuery.limit = 50
+        apiQuery.page = 1
+        apiQuery.includeMeta = true
+        
         self.showLoading()
-        Promotions.getPromotions(success: { (promotionsList) in
+        Promotions.getPromotions(apiQuery: apiQuery, success: { (promotionsList) in
             self.hideLoading()
             
             let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
@@ -93,12 +105,10 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     private func makePromotionsListStringRepresentation(_ response: PromotionResponse) -> String {
         var promotionsListStringRepresentation = ""
         
-        response.items.forEach { (object) in
-            if let promotion = object as? Promotion {
-                let promotionStringRepresentation = makePromotionStringRepresentation(promotion)
-                promotionsListStringRepresentation.append("\n- - - - - - - - - - - - - - - - - - - - -\n")
-                promotionsListStringRepresentation.append(promotionStringRepresentation)
-            }
+        response.items.forEach { (promotion) in
+            let promotionStringRepresentation = makePromotionStringRepresentation(promotion)
+            promotionsListStringRepresentation.append("\n- - - - - - - - - - - - - - - - - - - - -\n")
+            promotionsListStringRepresentation.append(promotionStringRepresentation)
         }
         
         return promotionsListStringRepresentation
@@ -117,7 +127,7 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
         let discountType = SNR_PromotionDiscountTypeToString(response.discountType)
         let discountValue = response.discountValue
         
-        let name = response.name
+        let name = response.name ?? "-"
         let headline = response.headline ?? "-"
         let descriptionText = response.descriptionText ?? "-"
         

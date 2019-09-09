@@ -83,13 +83,10 @@ class ProductsListViewModel {
                 }
                 
                 var productDiscountDescription: String!
-                switch (promotion.discountType) {
-                case .typePercent:
-                    productDiscountDescription = promotion.discountValue.stringValue + "%"
-                case .typeAmount:
-                    productDiscountDescription = promotion.discountValue.stringValue + "$"
-                default:
-                    productDiscountDescription = ""
+                switch promotion.discountType {
+                case .typePercent: productDiscountDescription = promotion.discountValue.stringValue + "%"
+                case .typeAmount: productDiscountDescription = promotion.discountValue.stringValue + "$"
+                default: productDiscountDescription = ""
                 }
                 
                 let productPrice = promotion.price.doubleValue / 100

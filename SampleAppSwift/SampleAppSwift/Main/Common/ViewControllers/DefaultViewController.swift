@@ -31,12 +31,6 @@ class DefaultViewController: ViewController, Coordinated {
         prepareBackButton()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-        
-    }
-    
     // MARK: - Public
     
     func showLoading(text: String? = nil) {
@@ -146,7 +140,7 @@ class DefaultViewController: ViewController, Coordinated {
             
             let apiErrorType: SNRApiErrorType = apiError.getType()
             
-            switch (apiErrorType) {
+            switch apiErrorType {
             case .network: apiErrorDebugInfo.append("NETWORK ERROR")
             case .unauthorizedSession: apiErrorDebugInfo.append("UNAUTHORIZED SESSION ERROR")
             case .http: apiErrorDebugInfo.append("HTTP ERROR: \(apiError.getHttpCode())")
@@ -239,7 +233,7 @@ public extension DispatchQueue {
     
     private static var _onceTracker = [String]()
     
-    public class func once(token: String, block:(() -> Void)) {
+    class func once(token: String, block:(() -> Void)) {
         objc_sync_enter(self); defer { objc_sync_exit(self) }
         
         if _onceTracker.contains(token) {

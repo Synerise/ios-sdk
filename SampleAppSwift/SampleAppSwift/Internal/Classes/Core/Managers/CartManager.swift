@@ -111,7 +111,6 @@ class CartManager {
         //swiftlint:disable:next force_cast
         let discountedPrice = finalPrice.copy() as! UnitPrice
         
-        
         let removedProductToCartEvent = RemovedProductFromCartEvent.init(label: "removed " + product.name + " from cart",
                                                                          sku: product.sku,
                                                                          finalPrice: finalPrice,

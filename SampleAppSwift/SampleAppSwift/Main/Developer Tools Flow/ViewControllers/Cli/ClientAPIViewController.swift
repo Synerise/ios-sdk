@@ -58,7 +58,7 @@ class ClientAPIViewController: DefaultViewController {
     }
     
     @IBAction func getFacebookTokenButtonWasPressed(_ sender: DefaultButton) {
-        guard let facebookToken = AccessToken.current?.tokenString else {
+        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
             return
         }
         

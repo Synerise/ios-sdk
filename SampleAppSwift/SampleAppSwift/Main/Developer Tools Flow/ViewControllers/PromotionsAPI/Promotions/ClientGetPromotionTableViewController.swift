@@ -65,7 +65,7 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
         let discountType = SNR_PromotionDiscountTypeToString(response.discountType)
         let discountValue = response.discountValue
         
-        let name = response.name
+        let name = response.name ?? "-"
         let headline = response.headline ?? "-"
         let descriptionText = response.descriptionText ?? "-"
         

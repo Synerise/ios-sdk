@@ -44,8 +44,6 @@ class LogInWithEmailClientTableViewController: DefaultTableViewController {
             return
         }
         
-        let deviceID = deviceIDTextField.text
-
         showLoading()
         Client.signIn(email: email, password: password, success: { (success) in
             if success {

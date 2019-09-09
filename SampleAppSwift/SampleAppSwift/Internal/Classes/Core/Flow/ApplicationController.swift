@@ -154,7 +154,7 @@ extension ApplicationController: SyneriseDelegate {
     func snr_handledAction(deepLink: String) {
         if let url = URL(string: deepLink) {
             url.params?.forEach({ (key, value) in
-                if (key == "sku") {
+                if key == "sku" {
                     self.getMainCoordinator()?.didReceiveDeeplinkWithSku(value)
                 }
             })

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KE6-ce-Baj">
-                                        <rect key="frame" x="0.0" y="24" width="375" height="140"/>
+                                        <rect key="frame" x="0.0" y="24" width="375" height="290"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-7q-gWm">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -84,6 +84,68 @@
                                                     <constraint firstAttribute="height" constant="65" id="Q6a-3d-2Tn"/>
                                                     <constraint firstAttribute="trailing" secondItem="oYq-g7-DgK" secondAttribute="trailing" constant="16" id="VYB-aP-UIH"/>
                                                     <constraint firstItem="oYq-g7-DgK" firstAttribute="leading" secondItem="GlI-cY-3Ps" secondAttribute="leading" constant="16" id="iTv-Sp-CaI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoA-ei-J2j">
+                                                <rect key="frame" x="0.0" y="150" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="185-WY-ig9" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="uj4-bj-nuE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Banner">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="QkS-sS-AKH" kind="show" id="ry8-Sz-UOd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="185-WY-ig9" firstAttribute="centerY" secondItem="HoA-ei-J2j" secondAttribute="centerY" id="AaT-PU-TOw"/>
+                                                    <constraint firstAttribute="height" constant="65" id="EVF-Nm-TEr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="185-WY-ig9" secondAttribute="trailing" constant="16" id="SxR-D2-vRu"/>
+                                                    <constraint firstItem="185-WY-ig9" firstAttribute="leading" secondItem="HoA-ei-J2j" secondAttribute="leading" constant="16" id="xfF-PT-Q9n"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xn-xJ-V4S">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEU-x2-Vv4" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ggI-uI-7J1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="SDK Commands">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="OKv-lD-fdl" kind="show" id="0e7-p7-Cw5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="4AH-ql-r7s"/>
+                                                    <constraint firstItem="GEU-x2-Vv4" firstAttribute="centerY" secondItem="8xn-xJ-V4S" secondAttribute="centerY" id="CHo-cM-YeD"/>
+                                                    <constraint firstItem="GEU-x2-Vv4" firstAttribute="leading" secondItem="8xn-xJ-V4S" secondAttribute="leading" constant="16" id="OXS-ZX-183"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GEU-x2-Vv4" secondAttribute="trailing" constant="16" id="hL3-eq-evX"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -410,6 +472,243 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNo-g1-i2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1889" y="385"/>
+        </scene>
+        <!--Banner View Controller-->
+        <scene sceneID="c56-gN-BQp">
+            <objects>
+                <viewController id="QkS-sS-AKH" customClass="BannerViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJ1-Bn-Yho">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGz-ll-xtg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uwa-mq-6E2">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="260"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqW-mS-FqV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn2-Ws-7MA" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="8Ge-Oy-sax"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Banner (ColorAsBackground)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="bannerColorAsBackground" destination="QkS-sS-AKH" eventType="touchUpInside" id="RJ5-aY-wAt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="4ni-E7-17k"/>
+                                                    <constraint firstItem="fn2-Ws-7MA" firstAttribute="leading" secondItem="dqW-mS-FqV" secondAttribute="leading" constant="16" id="63T-cN-Zr9"/>
+                                                    <constraint firstItem="fn2-Ws-7MA" firstAttribute="centerY" secondItem="dqW-mS-FqV" secondAttribute="centerY" id="MlZ-qz-hOk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fn2-Ws-7MA" secondAttribute="trailing" constant="16" id="PM8-Ur-XgM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIc-zq-pfj">
+                                                <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbS-ma-Ba0" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="4P5-F0-ljq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Banner (ImageAsBackground)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="bannerImageAsBackground" destination="QkS-sS-AKH" eventType="touchUpInside" id="Nct-Ca-xdy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IbS-ma-Ba0" firstAttribute="leading" secondItem="xIc-zq-pfj" secondAttribute="leading" constant="16" id="9yF-dn-5LR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IbS-ma-Ba0" secondAttribute="trailing" constant="16" id="UjG-i8-cNC"/>
+                                                    <constraint firstAttribute="height" constant="65" id="mFk-HT-QTP"/>
+                                                    <constraint firstItem="IbS-ma-Ba0" firstAttribute="centerY" secondItem="xIc-zq-pfj" secondAttribute="centerY" id="oHP-vh-Kga"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vb6-Hh-Osp">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-bB-iCN" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="vwJ-Jy-lMO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Banner (ImageWithTextAtop)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="bannerImageWithTextAtop" destination="QkS-sS-AKH" eventType="touchUpInside" id="qS2-uj-bua"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Z2C-bB-iCN" secondAttribute="trailing" constant="16" id="Pa7-De-Dxi"/>
+                                                    <constraint firstItem="Z2C-bB-iCN" firstAttribute="leading" secondItem="Vb6-Hh-Osp" secondAttribute="leading" constant="16" id="cMg-i3-rnw"/>
+                                                    <constraint firstAttribute="height" constant="65" id="gTK-kC-jei"/>
+                                                    <constraint firstItem="Z2C-bB-iCN" firstAttribute="centerY" secondItem="Vb6-Hh-Osp" secondAttribute="centerY" id="s9o-mt-Hof"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-rO-9wl">
+                                                <rect key="frame" x="0.0" y="195" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfF-Jg-Mrl" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="jld-zb-U1r"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Banner (ImageWithTextBelow)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="bannerImageWithTextBelow" destination="QkS-sS-AKH" eventType="touchUpInside" id="D1o-ZA-Rcg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="xfF-Jg-Mrl" firstAttribute="centerY" secondItem="vhV-rO-9wl" secondAttribute="centerY" id="IAg-7u-fR0"/>
+                                                    <constraint firstAttribute="height" constant="65" id="PrV-ac-n5w"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xfF-Jg-Mrl" secondAttribute="trailing" constant="16" id="fP1-0j-loC"/>
+                                                    <constraint firstItem="xfF-Jg-Mrl" firstAttribute="leading" secondItem="vhV-rO-9wl" secondAttribute="leading" constant="16" id="he9-e4-HQj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uwa-mq-6E2" secondAttribute="trailing" id="MER-dU-F4r"/>
+                                    <constraint firstItem="uwa-mq-6E2" firstAttribute="leading" secondItem="PGz-ll-xtg" secondAttribute="leading" id="Sw3-t1-bFg"/>
+                                    <constraint firstAttribute="bottom" secondItem="uwa-mq-6E2" secondAttribute="bottom" id="XZv-Jx-bwj"/>
+                                    <constraint firstItem="uwa-mq-6E2" firstAttribute="width" secondItem="PGz-ll-xtg" secondAttribute="width" id="kal-XO-Hcw"/>
+                                    <constraint firstItem="uwa-mq-6E2" firstAttribute="top" secondItem="PGz-ll-xtg" secondAttribute="top" constant="24" id="rZW-VZ-bhG"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PGz-ll-xtg" secondAttribute="trailing" id="19r-ge-LGW"/>
+                            <constraint firstItem="aTg-eD-d5l" firstAttribute="bottom" secondItem="PGz-ll-xtg" secondAttribute="bottom" id="RGE-6K-8bf"/>
+                            <constraint firstItem="PGz-ll-xtg" firstAttribute="leading" secondItem="aTg-eD-d5l" secondAttribute="leading" id="gad-QF-kSR"/>
+                            <constraint firstItem="PGz-ll-xtg" firstAttribute="top" secondItem="tJ1-Bn-Yho" secondAttribute="top" id="rjV-t5-Ap1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aTg-eD-d5l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1h-2n-ghA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="703"/>
+        </scene>
+        <!--Commands View Controller-->
+        <scene sceneID="Z0k-ma-qMR">
+            <objects>
+                <viewController id="OKv-lD-fdl" customClass="SDKCommandsViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lt3-Bh-53f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-GM-tTo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="PYD-dZ-QTV">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="65"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b07-2F-kBY">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7I-PN-DiV" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="g9X-Lc-cTq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="GET LOCATION">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="getLocationSDKCommand" destination="OKv-lD-fdl" eventType="touchUpInside" id="3jv-3g-EWM"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="D7I-PN-DiV" secondAttribute="trailing" constant="16" id="1dX-D7-6Ro"/>
+                                                    <constraint firstItem="D7I-PN-DiV" firstAttribute="centerY" secondItem="b07-2F-kBY" secondAttribute="centerY" id="H8x-6b-v6u"/>
+                                                    <constraint firstItem="D7I-PN-DiV" firstAttribute="leading" secondItem="b07-2F-kBY" secondAttribute="leading" constant="16" id="O8O-lP-ZKA"/>
+                                                    <constraint firstAttribute="height" constant="65" id="ZJM-XP-8gN"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PYD-dZ-QTV" secondAttribute="trailing" id="HVI-vY-bse"/>
+                                    <constraint firstItem="PYD-dZ-QTV" firstAttribute="width" secondItem="cHY-GM-tTo" secondAttribute="width" id="Mx0-Wt-E99"/>
+                                    <constraint firstAttribute="bottom" secondItem="PYD-dZ-QTV" secondAttribute="bottom" id="UNk-1l-C8b"/>
+                                    <constraint firstItem="PYD-dZ-QTV" firstAttribute="top" secondItem="cHY-GM-tTo" secondAttribute="top" constant="24" id="asg-z1-Cu3"/>
+                                    <constraint firstItem="PYD-dZ-QTV" firstAttribute="leading" secondItem="cHY-GM-tTo" secondAttribute="leading" id="mRG-Jh-mYs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cHY-GM-tTo" secondAttribute="trailing" id="5fm-Ra-Eaq"/>
+                            <constraint firstItem="DOd-63-cvd" firstAttribute="bottom" secondItem="cHY-GM-tTo" secondAttribute="bottom" id="INP-Gk-jKO"/>
+                            <constraint firstItem="cHY-GM-tTo" firstAttribute="leading" secondItem="DOd-63-cvd" secondAttribute="leading" id="aXB-g3-uWc"/>
+                            <constraint firstItem="cHY-GM-tTo" firstAttribute="top" secondItem="lt3-Bh-53f" secondAttribute="top" id="vTz-qC-wY6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DOd-63-cvd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrH-BS-XJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="492"/>
         </scene>
     </scenes>
 </document>

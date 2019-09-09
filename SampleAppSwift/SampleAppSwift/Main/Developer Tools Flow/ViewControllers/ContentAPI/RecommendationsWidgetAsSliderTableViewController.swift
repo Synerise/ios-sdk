@@ -84,7 +84,7 @@ class RecommendationsWidgetAsSliderTableViewController: DefaultTableViewControll
         horizontalSliderLayout.itemSize = CGSize(width: widgetItemWidth, height: widgetItemHeight)
         horizontalSliderLayout.itemSpacing = widgetItemSpacing
         
-        let itemLayout = ContentWidgetBasicItemLayout()
+        let itemLayout = ContentWidgetBasicProductItemLayout()
         itemLayout.imageWidthRatio = widgetItemImageWidthFraction
         itemLayout.imageHeightRatio = widgetItemImageHeightFraction
         itemLayout.borderWidth = widgetItemBorderWidth

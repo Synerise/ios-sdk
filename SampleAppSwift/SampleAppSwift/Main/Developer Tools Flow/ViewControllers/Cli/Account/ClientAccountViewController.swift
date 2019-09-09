@@ -28,6 +28,21 @@ class ClientAccountViewController: DefaultViewController {
         sender.animateTapping()
     }
     
+    @IBAction func getEventsButtonWasPressed(_ sender: DefaultButton) {
+        showLoading()
+        Client.getEvents(apiQuery: ClientEventsApiQuery(), success: { events in
+            self.hideLoading()
+            
+            let clientEventsInformation = self.makeClientEventsInformation(events)
+            self.pushDebugViewController(text: clientEventsInformation)
+        }) { (error) in
+            self.hideLoading()
+            self.showErrorInfo(error as NSError)
+        }
+        
+        sender.animateTapping()
+    }
+    
     @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
         self.showLoading()
         
@@ -73,5 +88,29 @@ class ClientAccountViewController: DefaultViewController {
         """
         
         return accountStringRepresintation
+    }
+    
+    private func makeClientEventsInformation(_ clientEvents: [ClientEventData]) -> String {
+        var clientEventsRepresentation: String = ""
+        
+        for clientEvent in clientEvents {
+            let time = clientEvent.time
+            let label = clientEvent.label
+            let action = clientEvent.action
+            let client = clientEvent.client as AnyObject
+            let params = clientEvent.params as AnyObject
+            
+            clientEventsRepresentation += """
+            
+            Time: \(time)
+            Label: \(label)
+            Action: \(action)
+            Client: \(client)
+            Params: \(params)
+            
+            """
+        }
+        
+        return clientEventsRepresentation
     }
 }

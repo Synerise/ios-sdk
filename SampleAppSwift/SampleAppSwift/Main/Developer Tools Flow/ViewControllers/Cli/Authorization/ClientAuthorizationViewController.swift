@@ -16,23 +16,23 @@ class ClientAuthorizationViewController: DefaultViewController {
     // MARK: - IBAction
     
     @IBAction func authenticateByFacebook() {
-        guard let facebookToken = AccessToken.current?.tokenString else {
+        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
             return
         }
         
-        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID:"", success: { isSuccess in
+        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID: "", success: { isSuccess in
             if isSuccess {
                 self.hideLoading()
                 self.showSuccessInfo()
             }
         }) { (error) in
-            let agreements: ClientAgreements = ClientAgreements();
+            let agreements: ClientAgreements = ClientAgreements()
             
             let context: ClientFacebookAuthenticationContext = ClientFacebookAuthenticationContext()
-            context.agreements = agreements;
-            context.attributes = ["param": "value"];
+            context.agreements = agreements
+            context.attributes = ["param": "value"]
             
-            Client.authenticateByFacebook(facebookToken: facebookToken, authID:"", context: context, success: { isSuccess in
+            Client.authenticateByFacebook(facebookToken: facebookToken, authID: "", context: context, success: { isSuccess in
                 if isSuccess {
                     self.hideLoading()
                     self.showSuccessInfo()

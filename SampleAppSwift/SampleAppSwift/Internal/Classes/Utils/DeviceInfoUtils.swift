@@ -12,9 +12,9 @@ class DeviceInfoUtils {
 
     static func isIpad() -> Bool {
         switch UIDevice.current.userInterfaceIdiom {
-            case .phone: return false
-            case .pad: return true
-            default: return false
+        case .phone: return false
+        case .pad: return true
+        default: return false
         }
     }
 }

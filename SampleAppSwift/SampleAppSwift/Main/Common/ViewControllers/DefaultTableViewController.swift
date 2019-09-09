@@ -83,7 +83,7 @@ class DefaultTableViewController: UITableViewController {
             
             let apiErrorType: SNRApiErrorType = apiError.getType()
             
-            switch (apiErrorType) {
+            switch apiErrorType {
             case .network: apiErrorDebugInfo.append("NETWORK ERROR")
             case .unauthorizedSession: apiErrorDebugInfo.append("UNAUTHORIZED SESSION ERROR")
             case .http: apiErrorDebugInfo.append("HTTP ERROR: \(apiError.getHttpCode())")

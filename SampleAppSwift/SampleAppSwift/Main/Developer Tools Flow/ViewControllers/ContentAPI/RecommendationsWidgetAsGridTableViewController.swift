@@ -25,6 +25,9 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
     @IBOutlet weak var widgetItemShadowSwitch: UISwitch!
     @IBOutlet weak var widgetItemCornersRoundedSwitch: UISwitch!
     
+    @IBOutlet weak var widgetItemSalePriceVisibleSwitch: UISwitch!
+    @IBOutlet weak var widgetItemSalePriceOrientationSegmentedControl: UISegmentedControl!
+    
     @IBOutlet weak var widgetContainerView: UIView!
     
     var widget: ContentWidget!
@@ -50,7 +53,7 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
         productIDTextField.text = "10214"
         
         widgetItemWidthTextField.text = "150"
-        widgetItemHeightTextField.text = "200"
+        widgetItemHeightTextField.text = "400"
         widgetItemHorizontalSpacingTextField.text = "16"
         widgetItemVerticalSpacingTextField.text = "16"
         
@@ -59,6 +62,9 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
         widgetItemBorderWidthTextField.text = "0.5"
         widgetItemShadowSwitch.isOn = true
         widgetItemCornersRoundedSwitch.isOn = false
+        
+        widgetItemSalePriceVisibleSwitch.isOn = true
+        widgetItemSalePriceOrientationSegmentedControl.selectedSegmentIndex = 0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -119,17 +125,42 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
         let widgetItemShadow: Bool = widgetItemShadowSwitch.isOn
         let widgetItemCornersRounded: Bool = widgetItemCornersRoundedSwitch.isOn
         
+        let widgetItemSalePriceVisible: Bool = widgetItemSalePriceVisibleSwitch.isOn
+        let widgetItemSalePriceOrientation: NSLayoutConstraint.Axis = NSLayoutConstraint.Axis(rawValue: widgetItemSalePriceOrientationSegmentedControl.selectedSegmentIndex)!
+        
         let gridLayout = ContentWidgetGridLayout()
         gridLayout.insets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
         gridLayout.itemSize = CGSize(width: widgetItemWidth, height: widgetItemHeight)
         gridLayout.itemHorizontalSpacing = widgetItemHorizontalSpacing
         gridLayout.itemVerticalSpacing = widgetItemVerticalSpacing
         
-        let itemLayout = ContentWidgetBasicItemLayout()
+        let itemLayout = ContentWidgetBasicProductItemLayout()
         itemLayout.imageWidthRatio = widgetItemImageWidthFraction
         itemLayout.imageHeightRatio = widgetItemImageHeightFraction
         itemLayout.borderWidth = widgetItemBorderWidth
         itemLayout.borderColor = UIColor.black
+        itemLayout.isSalePriceVisible = widgetItemSalePriceVisible
+        itemLayout.salePriceOrientation = widgetItemSalePriceOrientation
+        
+        let actionButton = ContentWidgetImageButtonCustomAction()
+        actionButton.backgroundColor = UIColor.clear
+        actionButton.tintColor = UIColor.black
+        actionButton.image = UIImage(imageLiteralResourceName: "Shop Flow/icon_favorite_add")
+        actionButton.isSelectable = true
+        actionButton.selectedImage = UIImage(imageLiteralResourceName: "Shop Flow/icon_favorite_remove")
+        actionButton.size = CGSize(width: 40, height: 40)
+        actionButton.predefinedActionType = .sendLikeEvent
+        actionButton.onReceiveClickAction = {
+            model, isSelected in
+            
+        }
+        actionButton.isSelected = {
+            model in
+            return false
+        }
+        
+        itemLayout.actionButton = actionButton
+        itemLayout.actionButtonPosition = CGPoint(x: (widgetItemWidth - 40 - 8), y: 8)
         
         if widgetItemShadow {
             itemLayout.shadowColor = UIColor.black
@@ -145,18 +176,18 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 12
+        return 13
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 11 {
+        if indexPath.section == 12 {
             if widget != nil {
                 guard let widgetGridLayout = widget.appearance.layout as? ContentWidgetGridLayout else {
                     return 0.0
                 }
                 
                 if widget.isLoaded() {
-                    let widgetSize = widgetGridLayout.getSize(prefferedWidth: widgetContainerView.bounds.size.width)
+                    let widgetSize = widgetGridLayout.getSize(preferredWidth: widgetContainerView.bounds.size.width)
                     return  widgetSize.height + 16.0 + 16.0
                 }
                 
@@ -176,7 +207,7 @@ extension RecommendationsWidgetAsGridTableViewController: ContentWidgetDelegate 
     
     func snr_widgetDidLoad(widget: ContentWidget) {
         tableView.beginUpdates()
-        tableView.reloadSections(IndexSet(integer: 10), with: .none)
+        tableView.reloadSections(IndexSet(integer: 12), with: .none)
         tableView.endUpdates()
     }
     
@@ -186,7 +217,7 @@ extension RecommendationsWidgetAsGridTableViewController: ContentWidgetDelegate 
     
     func snr_widgetDidChangeSize(widget: ContentWidget, size: CGSize) {
         tableView.beginUpdates()
-        tableView.reloadSections(IndexSet(integer: 10), with: .none)
+        tableView.reloadSections(IndexSet(integer: 12), with: .none)
         tableView.endUpdates()
     }
     

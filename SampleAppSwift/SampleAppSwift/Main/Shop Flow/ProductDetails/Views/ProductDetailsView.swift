@@ -117,8 +117,8 @@ class ProductDetailsView: DefaultView {
         addProductButton.layer.shadowOffset = CGSize.zero
         addProductButton.layer.shadowRadius = 8
         
-        descriptionTextView.textContainerInset = UIEdgeInsets.zero;
-        descriptionTextView.textContainer.lineFragmentPadding = 0;
+        descriptionTextView.textContainerInset = UIEdgeInsets.zero
+        descriptionTextView.textContainer.lineFragmentPadding = 0
     }
     
     private func isFavorite(_ isFavorite: Bool) {

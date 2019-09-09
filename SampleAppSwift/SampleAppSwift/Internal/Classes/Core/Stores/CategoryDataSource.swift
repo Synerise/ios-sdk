@@ -54,7 +54,7 @@ class CategoryDataSource {
             CategoryIdentity.books.rawValue,
             CategoryIdentity.movies.rawValue,
             CategoryIdentity.games.rawValue
-        ];
+        ]
     }
     
     static func getCategory(sectionId: Int) -> [Category]? {
