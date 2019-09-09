@@ -47,7 +47,7 @@ class SyneriseManager {
         Tracker.setAutoTrackMode(.fine)
         Tracker.setLocationAutomaticEnabled(true)
         
-        Synerise.settings.tracker.minBatchSize = 1
+        Synerise.settings.tracker.minBatchSize = 10
         Synerise.settings.tracker.maxBatchSize = 100
         Synerise.settings.tracker.autoFlushTimeout = 5.0
         Synerise.settings.tracker.autoTracking.mode = .fine
@@ -74,6 +74,7 @@ extension SyneriseManager: NotificationServiceDelegate {
     func notificationService(_ notificationService: NotificationService, didReceiveToken token: String, origin: NotificationService.TokenOrigin) {
         if origin == NotificationService.TokenOrigin.firebase {
             Client.registerForPush(registrationToken: token,
+                                   mobilePushAgreement: true,
                                     success: { (_) in
                                         DebugUtils.print("Synerise push registration success")
             },

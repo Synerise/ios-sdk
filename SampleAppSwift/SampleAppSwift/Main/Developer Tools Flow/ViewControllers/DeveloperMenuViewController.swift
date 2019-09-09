@@ -27,6 +27,19 @@ class DeveloperMenuViewController: DefaultViewController {
         prepareBackButton()
     }
     
+    @IBAction func showChat() {
+        let chat = Chat()
+        chat.trackerKey = ""
+        chat.navigationBarBackgroundColor = UIColor.gray
+        chat.navigationBarTitle = "Chat"
+        chat.navigationBarTitleColor = UIColor.white
+        chat.closeButtonHorizontalAlignment = .left
+        chat.closeButtonImage = UIImage(named: "icon_close_black_small")!
+        chat.closeButtonTintColor = UIColor.lightGray
+        chat.load()
+        chat.show()
+    }
+    
     @IBAction func resetApplication() {
         delegate?.resetApplicationWasPressed(self)
         Crashlytics.sharedInstance().crash()
@@ -60,5 +73,19 @@ class DeveloperMenuViewController: DefaultViewController {
             self.hideLoading()
             self.showSuccessInfo("Current Synerise SDK profile", text: "Synerise Mobile Apps 2", debug: false)
         }
+    }
+}
+
+extension DeveloperMenuViewController: ChatDelegate {
+    func snr_chatIsLoading(isLoading: Bool) {
+
+    }
+
+    func snr_chatDidLoad() {
+
+    }
+
+    func snr_chatDidNotLoad(error: Error) {
+
     }
 }

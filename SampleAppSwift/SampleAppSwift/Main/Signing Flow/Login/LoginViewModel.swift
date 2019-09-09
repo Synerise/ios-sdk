@@ -44,20 +44,19 @@ class LoginViewModel {
     }
     
     func authenticateByFacebookToken(onSuccess: @escaping (() -> ())) {
-        guard let facebookToken = AccessToken.current?.tokenString else {
+        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
             return
         }
         
-        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID:nil, success: { _ in
+        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID: nil, success: { _ in
             onSuccess()
         }) { (error) in
-            let agreements: ClientAgreements = ClientAgreements();
+            let agreements: ClientAgreements = ClientAgreements()
             
             let context: ClientFacebookAuthenticationContext = ClientFacebookAuthenticationContext()
-            context.agreements = agreements;
-            context.attributes = ["param": "value"];
+            context.agreements = agreements
+            context.attributes = ["param": "value"]
 
-            
             Client.authenticateByFacebook(facebookToken: facebookToken, authID: "HIHI", context: context, success: { _ in
                 onSuccess()
             }, failure: { error in
