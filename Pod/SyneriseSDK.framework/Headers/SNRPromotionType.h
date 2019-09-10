@@ -6,7 +6,7 @@
 //  Copyright (c) 2018 Synerise. All rights reserved.
 //
 
-typedef NSString *SNRPromotionTypeString;
+typedef NSString * _Nonnull SNRPromotionTypeString;
 
 FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_UNKNOWN;
 FOUNDATION_EXPORT SNRPromotionTypeString const SNR_PROMOTION_TYPE_MEMBERS_ONLY;
@@ -24,5 +24,5 @@ typedef NS_ENUM(NSUInteger, SNRPromotionType) {
     SNRPromotionTypeGeneral
 } NS_SWIFT_NAME(PromotionType);
 
-NSString * SNR_PromotionTypeToString(SNRPromotionType type);
-SNRPromotionType SNR_StringToPromotionType(NSString *string);
+NSString * _Nonnull SNR_PromotionTypeToString(SNRPromotionType type);
+SNRPromotionType SNR_StringToPromotionType(NSString * _Nullable string);
