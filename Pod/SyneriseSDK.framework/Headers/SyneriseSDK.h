@@ -31,6 +31,7 @@
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
 #import <SyneriseSDK/SNRPromotionsApiQuery.h>
+#import <SyneriseSDK/SNRChat.h>
 
 // Types
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>

@@ -19,5 +19,5 @@ typedef NS_ENUM(NSUInteger, SNRPromotionDiscountType) {
     SNRPromotionDiscountTypeMultibuy
 } NS_SWIFT_NAME(PromotionDiscountType);
 
-NSString * SNR_PromotionDiscountTypeToString(SNRPromotionDiscountType type);
-SNRPromotionDiscountType SNR_StringToPromotionDiscountType(NSString *string);
+NSString * _Nonnull SNR_PromotionDiscountTypeToString(SNRPromotionDiscountType type);
+SNRPromotionDiscountType SNR_StringToPromotionDiscountType(NSString * _Nullable string);
