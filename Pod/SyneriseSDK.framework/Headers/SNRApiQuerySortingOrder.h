@@ -6,7 +6,7 @@
 //  Copyright (c) 2019 Synerise. All rights reserved.
 //
 
-typedef NSString *SNRApiQuerySortingOrderString;
+typedef NSString * _Nonnull SNRApiQuerySortingOrderString;
 
 FOUNDATION_EXPORT SNRApiQuerySortingOrderString const SNR_API_QUERY_SORTING_ASC;
 FOUNDATION_EXPORT SNRApiQuerySortingOrderString const SNR_API_QUERY_SORTING_DESC;
@@ -20,5 +20,5 @@ typedef NS_ENUM(NSUInteger, SNRApiQuerySortingOrder) {
     SNRApiQuerySortingOrderDescending
 };
 
-NSString * SNR_ApiQuerySortingOrderToString(SNRApiQuerySortingOrder type);
-SNRApiQuerySortingOrder SNR_StringToApiQuerySortingOrder(NSString *string);
+NSString * _Nonnull SNR_ApiQuerySortingOrderToString(SNRApiQuerySortingOrder type);
+SNRApiQuerySortingOrder SNR_StringToApiQuerySortingOrder(NSString * _Nullable string);

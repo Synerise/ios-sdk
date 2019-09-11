@@ -17,5 +17,5 @@ typedef NS_ENUM(NSUInteger, SNRVoucherStatus) {
     SNRVoucherStatusCanceled
 } NS_SWIFT_NAME(VoucherStatus);
 
-NSString * SNR_VoucherStatusToString(SNRVoucherStatus type);
-SNRVoucherStatus SNR_StringToVoucherStatus(NSString *string);
+NSString * _Nonnull SNR_VoucherStatusToString(SNRVoucherStatus type);
+SNRVoucherStatus SNR_StringToVoucherStatus(NSString * _Nullable string);
