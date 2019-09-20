@@ -58,8 +58,6 @@ NS_SWIFT_NAME(Chat)
 
 @property (weak, nonatomic, nullable, readwrite) id<SNRChatDelegate> delegate;
 
-@property (copy, nonatomic, nonnull, readwrite) NSString *trackerKey;
-
 @property (copy, nonatomic, nonnull, readwrite) UIColor *navigationBarBackgroundColor;
 @property (copy, nonatomic, nonnull, readwrite) UIColor *navigationBarTitleColor;
 @property (copy, nonatomic, nonnull, readwrite) NSString *navigationBarTitle;
@@ -71,6 +69,11 @@ NS_SWIFT_NAME(Chat)
 
 @property (copy, nonatomic, nonnull, readwrite) NSString *errorText;
 @property (copy, nonatomic, nonnull, readwrite) UIColor *errorTextColor;
+
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithTrackerKey:(NSString *)trackerKey;
 
 - (void)load;
 - (void)show;
