@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.7] - 2019-09-20
+
+### Added
+- `SIGN_OUT` SDK Command.
+
+### Changed
+- `SNRChat` constructor requires `tracker_key`.
+
+
 ## [3.5.6] - 2019-09-10
 
 ### Added
