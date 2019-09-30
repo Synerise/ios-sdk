@@ -56,6 +56,19 @@ NS_SWIFT_NAME(SyneriseDelegate)
 @protocol SNRSyneriseDelegate
 
 @optional
+
+/**
+ * This method is called when Synerise is initialized.
+ *
+ */
+- (void)SNR_initialized NS_SWIFT_NAME(snr_initialized());
+
+/**
+ * This method is called when an error occurs while Synerise initialization.
+ *
+ */
+- (void)SNR_initializationError:(NSError *)error NS_SWIFT_NAME(snr_initializationError(error:));
+
 /**
  * This method is called when Synerise needs registration for Push Notifications.
  *

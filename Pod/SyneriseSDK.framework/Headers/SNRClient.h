@@ -7,6 +7,7 @@
 //
 
 #import "SNRTokenOrigin.h"
+#import "SNRClientSessionEndReason.h"
 
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
@@ -18,6 +19,36 @@
 @class SNRClientPasswordResetRequestContext;
 @class SNRClientPasswordResetConfirmationContext;
 @class SNRToken;
+
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * @protocol SNRClientStateDelegate
+ *
+ * A protocol to handle Client's sign-in state changes.
+ *
+ */
+
+NS_SWIFT_NAME(ClientStateDelegate)
+@protocol SNRClientStateDelegate
+
+@optional
+
+/**
+ * This method is called when the client signs in.
+ */
+- (void)SNR_clientIsSignedIn NS_SWIFT_NAME(snr_clientIsSignedIn());
+
+/**
+ * This method is called when the client signs out.
+ *
+ * @param reason Specifies the reason for signing out.
+ */
+- (void)SNR_clientIsSignedOutWithReason:(SNRClientSessionEndReason)reason NS_SWIFT_NAME(snr_clientIsSignedOut(reason:));
+
+@end
+
+NS_ASSUME_NONNULL_END
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,6 +69,13 @@ NS_SWIFT_NAME(Client)
  * @param enabled Specifies that console logs are enabled/disabled.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
+
+/**
+ * Sets object for Client's state delegate methods.
+ *
+ * @param delegate An object that implement SNRClientStateDelegate protocol.
+ */
++ (void)setClientStateDelegate:(id<SNRClientStateDelegate>)delegate;
 
 /**
  * Registers new client account.
@@ -152,7 +190,7 @@ NS_SWIFT_NAME(Client)
  * @deprecated Deprecated in version 3.4.10
  */
 + (void)getTokenWithSuccess:(nullable void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRClient.getToken(token:) instead.");
+                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRClient.retrieveToken(token:) instead.");
 
 /**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
