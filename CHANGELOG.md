@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.8] - 2019-09-27
+
+### Added
+- `SNRClientStateDelegate` for handling client sign-in state.
+
+
 ## [3.5.7] - 2019-09-20
 
 ### Added

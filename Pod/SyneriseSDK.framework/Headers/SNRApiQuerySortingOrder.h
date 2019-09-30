@@ -1,5 +1,5 @@
 //
-//  SNRApiQuerySortOrder.h
+//  SNRApiQuerySortingOrder.h
 //  SyneriseSDK
 //
 //  Created by Synerise

@@ -35,6 +35,7 @@
 
 // Types
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>
+#import <SyneriseSDK/SNRClientSessionEndReason.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>
