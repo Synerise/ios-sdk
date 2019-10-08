@@ -184,6 +184,14 @@ NS_SWIFT_NAME(Synerise)
 + (void)setDebugModeEnabled:(BOOL)enabled;
 
 /**
+ * Enables/disables crash handling from Synerise SDK.
+ *
+ * @param enabled Specifies that crash handling is enabled/disabled.
+ *
+ */
++ (void)setCrashHandlingEnabled:(BOOL)enabled;
+
+/**
  * Sets object for Synerise delegate methods.
  *
  * @param delegate An object that implement SNRSyneriseDelegate protocol.

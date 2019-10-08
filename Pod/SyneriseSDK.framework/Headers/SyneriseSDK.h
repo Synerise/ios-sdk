@@ -72,6 +72,7 @@
 #import <SyneriseSDK/SNRSearchedEvent.h>
 #import <SyneriseSDK/SNRSharedEvent.h>
 #import <SyneriseSDK/SNRVisitedScreenEvent.h>
+#import <SyneriseSDK/SNRCrashEvent.h>
 #import <SyneriseSDK/SNRTrackerParams.h>
 
 // Events Models

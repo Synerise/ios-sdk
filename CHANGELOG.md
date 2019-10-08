@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.9] - 2019-10-08
+
+### Added
+- `Synerise.setCrashHandlingEnabled(_:)` to pass info about Users application crashes as dedicated events to the backend.
+
+
 ## [3.5.8] - 2019-09-27
 
 ### Added
