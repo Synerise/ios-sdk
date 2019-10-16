@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.10] - 2019-10-16
+
+### Added
+- `SNRContent.getDocuments(apiQuery:success:failure:)` method.
+
+
 ## [3.5.9] - 2019-10-08
 
 ### Added

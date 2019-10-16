@@ -30,11 +30,14 @@
 #import <SyneriseSDK/SNRContent.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
-#import <SyneriseSDK/SNRPromotionsApiQuery.h>
 #import <SyneriseSDK/SNRChat.h>
 
-// Types
+// API Queries
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>
+#import <SyneriseSDK/SNRPromotionsApiQuery.h>
+#import <SyneriseSDK/SNRDocumentsApiQuery.h>
+
+// Types
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
 
 // Exceptions
