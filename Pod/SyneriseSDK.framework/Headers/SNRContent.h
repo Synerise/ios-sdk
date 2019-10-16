@@ -8,6 +8,7 @@
 
 @class SNRRecommendationOptions;
 @class SNRRecommendationResponse;
+@class SNRDocumentsApiQuery;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,6 +40,17 @@ NS_SWIFT_NAME(Content)
 + (void)getDocument:(NSString *)slug
             success:(nullable void (^)(NSDictionary *document))success
             failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
+
+/**
+ * Gets documents  that are defined for parameters provided in query object.
+ *
+ * @param apiQuery SNRDocumentsApiQuery object responsible for storing all query parameters.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)getDocumentsWithApiQuery:(SNRDocumentsApiQuery *)apiQuery
+                          success:(nullable void (^)(NSArray *documents))success
+                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
 
 /**
  * Gets recommendations that are defined for options provided.
