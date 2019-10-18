@@ -32,11 +32,18 @@ NS_SWIFT_NAME(ContentWidgetBasicProductItemLayout)
 @property (copy, nonatomic, nonnull, readwrite) UIColor *priceFontColor;
 @property (assign, nonatomic, readwrite) NSTextAlignment priceAlignment;
 
+@property (copy, nonatomic, nullable, readwrite) NSString *priceGroupSeparator;
+@property (copy, nonatomic, nullable, readwrite) NSString *priceDecimalSeparator;
+
 @property (assign, nonatomic, readwrite) BOOL isSalePriceVisible;
 @property (assign, nonatomic, readwrite) UILayoutConstraintAxis salePriceOrientation;
 @property (assign, nonatomic, readwrite) CGFloat salePriceMargin;
-@property (copy, nonatomic, nonnull, readwrite) UIFont *salePriceFont;
-@property (copy, nonatomic, nonnull, readwrite) UIColor *salePriceFontColor;
+
+@property (copy, nonatomic, nullable, readwrite) UIFont *regularPriceFont;
+@property (copy, nonatomic, nullable, readwrite) UIColor *regularPriceFontColor;
+
+@property (copy, nonatomic, nullable, readwrite) UIFont *salePriceFont;
+@property (copy, nonatomic, nullable, readwrite) UIColor *salePriceFontColor;
 
 @property (strong, nonatomic, nullable, readwrite) SNRContentWidgetImageButtonCustomAction *actionButton;
 @property (assign, nonatomic, readwrite) CGPoint actionButtonPosition;
