@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.11] - 2019-10-18
+
+### Added
+- `regularPriceFont` and `regularPriceFontColor` properties to `SNRContentWidgetBasicProductItemLayout`.
+- `priceGroupSeparator` and `priceDecimalSeparator` properties  to `SNRContentWidgetBasicProductItemLayout`.
+
+
 ## [3.5.10] - 2019-10-16
 
 ### Added
