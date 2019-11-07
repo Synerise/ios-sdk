@@ -207,9 +207,10 @@ NS_SWIFT_NAME(Client)
 + (NSString *)getUUID;
 
 /**
- * Regenerates client's UUID.
+ * Regenerates client's UUID and clear authentication token, eventual login, custom email and custom identifier.
+ * Please note that this operation works only if current client is anonymous.
  */
-+ (void)regenerateUUID;
++ (BOOL)regenerateUUID;
 
 /**
  * Gets client's account information.

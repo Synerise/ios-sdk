@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.12] - 2019-11-07
+
+### Changed
+- `SNRClient.regenerateUUID` method regenerates client's UUID if session is anonymous.
+
+### Fixed
+- `SNRToken.tokenString` property attributes.
+- `SNRClientRegisterAccountContext.city` property mapping.
+
+### Removed
+- `SNRClientUpdateContext.lastActivityDate`.
+
+
 ## [3.5.11] - 2019-10-18
 
 ### Added
