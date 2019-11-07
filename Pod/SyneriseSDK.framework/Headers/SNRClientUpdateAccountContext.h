@@ -35,7 +35,6 @@ NS_SWIFT_NAME(ClientUpdateAccountContext)
 @property (copy, nonatomic, nullable, readwrite) NSString *zipCode;
 @property (copy, nonatomic, nullable, readwrite) NSString *countryCode;
 @property (copy, nonatomic, nullable, readwrite) NSString *birthDate;
-@property (copy, nonatomic, nullable, readwrite) NSDate *lastActivityDate;
 @property (copy, nonatomic, nullable, readwrite) NSString *avatarUrl;
 
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;

@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SNRToken : SNRBaseModel
 
-@property (assign, nonatomic, readonly) NSString *tokenString;
+@property (strong, nonatomic, nonnull, readonly) NSString *tokenString;
 @property (assign, nonatomic, readonly) SNRTokenOrigin tokenOrigin;
 
 @property (strong, nonatomic, nonnull, readonly) NSDate *expirationDate;
