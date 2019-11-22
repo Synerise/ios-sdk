@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.13] - 2019-11-22
+
+### Fixed
+- `SNRContentWidget` doesn't require productID parameter for recommendations.
+
+
 ## [3.5.12] - 2019-11-07
 
 ### Changed
