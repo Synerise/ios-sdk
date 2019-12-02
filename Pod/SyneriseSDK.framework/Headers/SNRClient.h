@@ -190,7 +190,7 @@ NS_SWIFT_NAME(Client)
  * @deprecated Deprecated in version 3.4.10
  */
 + (void)getTokenWithSuccess:(nullable void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use SNRClient.retrieveToken(token:) instead.");
+                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.retrieveToken(token:success:failure:) instead.");
 
 /**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
@@ -378,10 +378,12 @@ NS_SWIFT_NAME(Client)
  * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *  *
+ * @deprecated Deprecated in version 3.5.13
  */
 + (void)registerForPush:(NSString *)registrationToken
                 success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
+                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.registerForPush(token:mobilePushAgreement:success:failure:) instead.");
 
 /**
  * Registers user for push notifications.

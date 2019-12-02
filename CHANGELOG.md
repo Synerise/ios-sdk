@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.14] - 2019-12-02
+
+### Fixed
+- `SNRContentWidgetImageButtonCustomAction` sends model in its receive click action.
+
+### Added
+- SDK persists its last and current version in application's data.
+
+### Changed
+- `SNRPromotionResponse` mapping metadata to `SNRPromotionResponseMetadata` object in metadata property.
+- `SNRClient.registerForPush:mobileAgreement:success:failure:` is deprecated.
+
+
 ## [3.5.13] - 2019-11-22
 
 ### Fixed

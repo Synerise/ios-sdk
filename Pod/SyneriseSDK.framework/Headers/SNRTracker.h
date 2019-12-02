@@ -87,7 +87,7 @@ NS_SWIFT_NAME(Tracker)
  * @param configuration Configuration of tracker.
  * @deprecated Deprecated in version 3.4.8
  */
-+ (void)setConfiguration:(SNRTrackerConfiguration)configuration DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker.(minBatchSize|maxBatchSize|autoFlushTimeout) instead.");
++ (void)setConfiguration:(SNRTrackerConfiguration)configuration DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.(minBatchSize|maxBatchSize|autoFlushTimeout) instead.");
 
 /**
  * Sets mode of AutoTrack.
@@ -97,7 +97,7 @@ NS_SWIFT_NAME(Tracker)
  * @param mode Mode of AutoTrack functionality.
  * @deprecated Deprecated in version 3.4.8
  */
-+ (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker.autoTracking.mode instead.");
++ (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.autoTracking.mode instead.");
 
 /**
  * Enables/disables sending location event automatically
@@ -105,7 +105,7 @@ NS_SWIFT_NAME(Tracker)
  * @param enabled Specifies that sending location event is enabled/disabled.
  * @deprecated Deprecated in version 3.4.8
  */
-+ (void)setLocationAutomaticEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.tracker.locationAutomatic instead.");
++ (void)setLocationAutomaticEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.locationAutomatic instead.");
 
 /**
  * Your custom identifier will be sent within every event in event params.
