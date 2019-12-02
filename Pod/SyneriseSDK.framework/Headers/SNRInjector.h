@@ -112,7 +112,7 @@ NS_SWIFT_NAME(Injector)
  * @param automatic Specifies that automatic mode is enabled/disabled.
  * @deprecated Deprecated in version 3.4.8
  */
-+ (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use SNRSynerise.settings.injector.automatic instead.");
++ (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.injector.automatic instead.");
 
 /**
  * Sets object for Walkthrough delegate methods.
