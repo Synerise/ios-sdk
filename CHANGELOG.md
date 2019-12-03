@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.15] - 2019-12-03
+
+### Added
+- Support multiple scenes in campaigns (walkthrough, banner etc.) for iOS 13.
+
+
 ## [3.5.14] - 2019-12-02
 
 ### Fixed
