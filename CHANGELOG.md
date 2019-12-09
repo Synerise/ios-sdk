@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.16] - 2019-12-09
+
+### Fixed
+- Uncommon case with stop tracking events because of invalid events in batch.
+
+
 ## [3.5.15] - 2019-12-03
 
 ### Added
