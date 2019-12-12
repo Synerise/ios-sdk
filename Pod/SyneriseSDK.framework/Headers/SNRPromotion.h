@@ -21,6 +21,7 @@ FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_LASTING
 FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_REQUIRE_REDEEMED_POINTS;
 FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_UPDATED_AT;
 FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_TYPE;
+FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_PRIORITY;
 
 /**
  * @class SNRPromotion
@@ -42,6 +43,7 @@ NS_SWIFT_NAME(Promotion)
 @property (assign, nonatomic, readonly) SNRPromotionDiscountType discountType;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *discountValue;
 @property (copy, nonatomic, nullable, readonly) NSNumber *requireRedeemedPoints;
+@property (copy, nonatomic, nullable, readonly) NSNumber *priority;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *price;
 
 @property (copy, nonatomic, nullable, readonly) NSString *name;
