@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.17] - 2019-12-12
+
+### Added
+- `priority` property in `SNRPromotion` class.
+
+
 ## [3.5.16] - 2019-12-09
 
 ### Fixed
