@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.18] - 2019-12-20
+
+### Fixed
+- `SNRPromotion.priority` property added to sorting whitelist.
+- Improving SDK stability
+
+
 ## [3.5.17] - 2019-12-12
 
 ### Added
