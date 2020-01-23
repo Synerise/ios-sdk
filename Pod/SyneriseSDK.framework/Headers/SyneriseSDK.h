@@ -88,7 +88,7 @@
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>
 #import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
-#import <SyneriseSDK/SNRClientOAuthContext.h>
+#import <SyneriseSDK/SNRClientOAuthAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
