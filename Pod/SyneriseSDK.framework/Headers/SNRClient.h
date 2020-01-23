@@ -12,7 +12,7 @@
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
 @class SNRClientFacebookAuthenticationContext;
-@class SNRClientOAuthContext;
+@class SNRClientOAuthAuthenticationContext;
 @class SNRClientAccountInformation;
 @class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
@@ -139,7 +139,7 @@ NS_SWIFT_NAME(Client)
  */
 + (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
                                     authID:(nullable NSString *)authID
-                                   context:(nullable SNRClientOAuthContext *)context
+                                   context:(nullable SNRClientOAuthAuthenticationContext *)context
                                    success:(nullable void (^)(BOOL isSuccess))success
                                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
 

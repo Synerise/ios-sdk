@@ -1,5 +1,5 @@
 //
-//  SNRClientOauthContext.h
+//  SNRClientOAuthAuthenticationContext.h
 //  SyneriseSDK
 //
 //  Created by Synerise
@@ -11,11 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * @class SNRClientOauthContext
+ * @class SNRClientOAuthAuthenticationContext
  */
 
-NS_SWIFT_NAME(ClientOAuthContext)
-@interface SNRClientOAuthContext : SNRBaseModel
+NS_SWIFT_NAME(ClientOAuthAuthenticationContext)
+@interface SNRClientOAuthAuthenticationContext : SNRBaseModel
 
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 
