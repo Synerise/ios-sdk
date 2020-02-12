@@ -1,13 +1,22 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.5.20] - 2020-02-11
+
+### Changed
+- Security related changes.
+
+### Removed
+- `tags` property in `SNRClientUpdateAccountContext` and `SNRClientRegisterAccountContext`.
+
+
 ## [3.5.19] - 2020-01-23
 
 ### Added
 - `authId` as `customId` in OAuth authorization payload.
 
 ### Changed
-- improvements in reinitialization mechanism (`SNRSynerise.changeClientApiKey`).
+- Improvements in reinitialization mechanism (`SNRSynerise.changeClientApiKey`).
 
 ## [3.5.18] - 2019-12-20
 

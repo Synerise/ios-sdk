@@ -38,7 +38,6 @@ NS_SWIFT_NAME(ClientRegisterAccountContext)
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
-@property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *tags;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;

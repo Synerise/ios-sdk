@@ -11,6 +11,7 @@
 #import <WebKit/WebKit.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CommonCrypto/CommonCrypto.h>
 
 #import <SyneriseSDK/SNRSynerise.h>
 
@@ -39,6 +40,7 @@
 
 // Types
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
+#import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>

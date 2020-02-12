@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 NS_SWIFT_NAME(ClientAgreements)
-@interface SNRClientAgreements : SNRBaseModel <NSCopying>
+@interface SNRClientAgreements : SNRBaseModel <NSSecureCoding, NSCopying>
 
 @property (assign, nonatomic, readwrite) BOOL email;
 @property (assign, nonatomic, readwrite) BOOL sms;
