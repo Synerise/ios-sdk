@@ -32,4 +32,8 @@ static NSInteger const SNRErrorCodeJWTValidationFailed = 3300;
 static NSInteger const SNRErrorCodeChatDefaultError = 3510;
 static NSInteger const SNRErrorCodeChatTrackerKeyError = 3520;
 
+static NSInteger const SNRErrorCodeCryptoFailedError = 3610;
+
+static NSInteger const SNRErrorCodeMigrationError = 3710;
+
 #endif

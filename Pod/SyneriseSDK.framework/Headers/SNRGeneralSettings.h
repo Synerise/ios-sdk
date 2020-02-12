@@ -6,6 +6,8 @@
 //  Copyright (c) 2019 Synerise. All rights reserved.
 //
 
+#import "SNRPublicKeyPinningAlgorithm.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -25,6 +27,19 @@ NS_SWIFT_NAME(GeneralSettings)
 //
 //Property is 1800 seconds (30 minutes) by default.
 @property (assign, nonatomic, readwrite) NSTimeInterval minTokenRefreshInterval;
+
+//This parameter sets an array of SSL pins, where each pin is the base64-encoded SHA-256 hash of a certificate's SPKI.
+//Note, that these SSL pins are used in case, which you uses Synerise API custom environment URL.
+//
+// Property is empty array by default.
+@property (copy, nonatomic, nullable, readwrite) NSArray *SSLPinningPinset;
+
+//This parameter specifies supported algorithms for generating the SSL pins certificates.
+//Note, that this option is only required for proper SSL Pinning support for system versions before iOS 10.
+//
+// Property is array contained kSNRPublicKeyPinningAlgorithmRsa2048 value by default.
+@property (assign, nonatomic, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
+
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
