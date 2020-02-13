@@ -1,7 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [3.5.20] - 2020-02-11
+## [3.6.0] - 2020-02-13
+
+### Changed
+- Improvements to stability.
+
+
+## [3.5.20] - 2020-02-12
 
 ### Changed
 - Security related changes.
