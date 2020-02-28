@@ -6,6 +6,8 @@
 //  Copyright © 2018 Synerise. All rights reserved.
 //
 
+#import "SNRHostApplicationType.h"
+
 @class SNRSettings;
 
 /**
@@ -190,6 +192,14 @@ NS_SWIFT_NAME(Synerise)
  *
  */
 + (void)setCrashHandlingEnabled:(BOOL)enabled;
+
+/**
+ * Sets Synerise SDK host application type.
+ *
+ * @param type Specifies type of host application.
+ *
+ */
++ (void)setHostApplicationType:(SNRHostApplicationType)type;
 
 /**
  * Sets object for Synerise delegate methods.

@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.1] - 2020-02-27
+
+### Added
+- `SNRSynerise.setHostApplicationType` method to specify host app type.
+
+### Changed
+- `SNRTracker` tries to send events when app enters to foreground.
+- Better handling when there is no internet connection.
+- Improvements to stability.
+
 ## [3.6.0] - 2020-02-13
 
 ### Changed
