@@ -39,6 +39,7 @@
 #import <SyneriseSDK/SNRDocumentsApiQuery.h>
 
 // Types
+#import <SyneriseSDK/SNRHostApplicationType.h>
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
 #import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
 

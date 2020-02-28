@@ -9,6 +9,8 @@
 #ifndef SNRErrorsList_h
 #define SNRErrorsList_h
 
+#define HTTP_CODE_BAD_REQUEST 400
+
 static NSString * const SNRAPIErrorDomain = @"com.synerise.sdk.api.error";
 static NSString * const SNRErrorDomain = @"com.synerise.sdk.error";
 
