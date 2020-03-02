@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.2] - 2020-03-02
+
+### Changed
+- Improvements to supporting synerise react native sdk.
+
+
 ## [3.6.1] - 2020-02-27
 
 ### Added
