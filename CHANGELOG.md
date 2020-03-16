@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.3] - 2020-03-16
+
+### Fixed
+- Issue with removing data from keychain when app is launched first.
+
+### Added
+- More information in `SNRCrashEvent` from Crash Handler.
+
+
 ## [3.6.2] - 2020-03-02
 
 ### Changed
