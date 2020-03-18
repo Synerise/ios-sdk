@@ -13,8 +13,14 @@ import SyneriseSDK
 
 class NotificationViewController: SingleMediaContentExtensionViewController, UNNotificationContentExtension {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.red
+    }
+    
     func didReceive(_ notification: UNNotification) {
-        Synerise.settings.notifications.appGroupIdentifier  = "group.com.synerise.sdk.sample"
+        Synerise.settings.notifications.appGroupIdentifier = "group.com.synerise.sdk.sample-swift"
         setSyneriseNotification(notification)
     }
 

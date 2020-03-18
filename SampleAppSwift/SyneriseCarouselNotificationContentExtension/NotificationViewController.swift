@@ -14,7 +14,7 @@ import SyneriseSDK
 class NotificationViewController: CarouselContentExtensionViewController, UNNotificationContentExtension {
 
     func didReceive(_ notification: UNNotification) {
-        Synerise.settings.notifications.appGroupIdentifier = "group.com.synerise.sdk.sample"
+        Synerise.settings.notifications.appGroupIdentifier = "group.com.synerise.sdk.sample-swift"
         setSyneriseNotification(notification)
     }
     
