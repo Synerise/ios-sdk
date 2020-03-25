@@ -14,5 +14,6 @@ typedef NS_ENUM(NSUInteger, SNRClientSessionEndReason) {
     SNRClientSessionEndReasonUserSignOut,
     SNRClientSessionEndReasonSystemSignOut,
     SNRClientSessionEndReasonSessionExpiration,
+    SNRClientSessionEndReasonSessionDestroyed,
     SNRClientSessionEndReasonSecurityException,
 };

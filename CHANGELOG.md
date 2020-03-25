@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.4] - 2020-03-25
+
+### Fixed
+- saving events in persistent storage.
+
+
 ## [3.6.3] - 2020-03-16
 
 ### Fixed
