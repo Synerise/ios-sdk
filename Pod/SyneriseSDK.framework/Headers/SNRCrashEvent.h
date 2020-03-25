@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRCrashEvent
+ *
+ * Represents a 'application crashed' event.
+ */
+
+NS_SWIFT_NAME(CrashEvent)
 @interface SNRCrashEvent : SNREvent
 
 - (void)setExceptionName:(NSString *)exceptionName;

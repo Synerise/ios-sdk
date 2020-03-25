@@ -213,6 +213,11 @@ NS_SWIFT_NAME(Client)
 + (BOOL)regenerateUUID;
 
 /**
+ * Destroys the whole session completely.
+ */
++ (void)destroySession NS_SWIFT_NAME(destroySession());
+
+/**
  * Gets client's account information.
  *
  * @param success A block object to be executed when the operation finishes successfully.
