@@ -3,10 +3,12 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2019 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 @class SNRChat;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @enum SNRChatCloseButtonHorizontalAlignment
@@ -17,7 +19,6 @@ typedef NS_ENUM(NSInteger, SNRChatCloseButtonHorizontalAlignment) {
     SNRChatCloseButtonHorizontalAlignmentRight
 } NS_SWIFT_NAME(ChatCloseButtonHorizontalAlignment);
 
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @protocol SNRChatDelegate
@@ -45,9 +46,6 @@ NS_SWIFT_NAME(ChatDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRChat

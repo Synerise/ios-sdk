@@ -3,8 +3,10 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2019 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @enum SNRDocumentsApiQueryType
@@ -14,7 +16,6 @@ typedef NS_ENUM(NSInteger, SNRDocumentsApiQueryType) {
     SNRDocumentsApiQueryTypeBySchema
 } NS_SWIFT_NAME(DocumentsApiQueryType);
 
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRDocumentsApiQuery

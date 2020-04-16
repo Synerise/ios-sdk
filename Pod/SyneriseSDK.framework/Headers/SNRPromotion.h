@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import "SNRBaseModel.h"
@@ -11,9 +11,9 @@
 #import "SNRPromotionType.h"
 #import "SNRPromotionDiscountType.h"
 
-typedef NSString* SNRPromotionSortingKey;
-
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString * SNRPromotionSortingKey;
 
 FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_EXPIRE_AT;
 FOUNDATION_EXPORT SNRPromotionSortingKey const SNR_PROMOTION_SORTING_KEY_CREATED_AT;

@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import "SNRTokenOrigin.h"
@@ -11,8 +11,9 @@
 
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
-@class SNRClientFacebookAuthenticationContext;
 @class SNRClientOAuthAuthenticationContext;
+@class SNRClientFacebookAuthenticationContext;
+@class SNRClientAppleSignInAuthenticationContext;
 @class SNRClientAccountInformation;
 @class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
@@ -48,9 +49,6 @@ NS_SWIFT_NAME(ClientStateDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRClient
@@ -87,8 +85,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)registerAccount:(SNRClientRegisterAccountContext *)context
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerAccount(context:success:failure:));
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(registerAccount(context:success:failure:));
 
 /*
  * Confirms client's account.
@@ -98,8 +96,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)confirmAccount:(NSString *)token
-               success:(nullable void (^)(BOOL isSuccess))success
-               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(token:success:failure:));
+               success:(void (^)(BOOL isSuccess))success
+               failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(confirmAccount(token:success:failure:));
 
 /*
  * Activates client's account.
@@ -109,8 +107,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)activateAccount:(NSString *)email
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
 
 /**
  * Signs in a client in order to obtain the JWT token, which could be used in subsequent requests.
@@ -125,8 +123,8 @@ NS_SWIFT_NAME(Client)
  */
 + (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
 
 /**
  * Signs in a client with OAuth Access Token.
@@ -140,8 +138,8 @@ NS_SWIFT_NAME(Client)
 + (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
                                     authID:(nullable NSString *)authID
                                    context:(nullable SNRClientOAuthAuthenticationContext *)context
-                                   success:(nullable void (^)(BOOL isSuccess))success
-                                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
+                                   success:(void (^)(BOOL isSuccess))success
+                                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
 
 /**
  * Signs in a client with Facebook Token.
@@ -155,8 +153,8 @@ NS_SWIFT_NAME(Client)
 + (void)authenticateByFacebookWithFacebookToken:(NSString *)facebookToken
                                          authID:(nullable NSString *)authID
                                         context:(nullable SNRClientFacebookAuthenticationContext *)context
-                                        success:(nullable void (^)(BOOL isSuccess))success
-                                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:authID:context:success:failure:));
+                                        success:(void (^)(BOOL isSuccess))success
+                                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:authID:context:success:failure:));
 
 /**
  * Signs in a registered client with Facebook Token.
@@ -168,8 +166,21 @@ NS_SWIFT_NAME(Client)
  */
 + (void)authenticateByFacebookIfRegisteredWithFacebookToken:(NSString *)facebookToken
                                                      authID:(nullable NSString *)authID
-                                                    success:(nullable void (^)(BOOL isSuccess))success
-                                                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
+                                                    success:(void (^)(BOOL isSuccess))success
+                                                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
+
+/**
+ * Signs in a client with Apple Sign In.
+ *
+ * @param context SNRClientAppleSignInAuthenticationContext object with agreements and optional attributes.
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateByAppleSignInWithContext:(SNRClientAppleSignInAuthenticationContext *)context
+                                         authID:(nullable NSString *)authID
+                                        success:(void (^)(BOOL isSuccess))success
+                                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(context:authID:success:failure:));
 
 /**
  * Checks whether client is signed in (is client's token not expired).
@@ -189,8 +200,8 @@ NS_SWIFT_NAME(Client)
  *
  * @deprecated Deprecated in version 3.4.10
  */
-+ (void)getTokenWithSuccess:(nullable void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.retrieveToken(token:success:failure:) instead.");
++ (void)getTokenWithSuccess:(void (^)(NSString *token, SNRTokenOrigin origin))success
+                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.retrieveToken(token:success:failure:) instead.");
 
 /**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
@@ -198,8 +209,8 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)retrieveTokenWithSuccess:(nullable void (^)(SNRToken *token))success
-                         failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
++ (void)retrieveTokenWithSuccess:(void (^)(SNRToken *token))success
+                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
 
 /**
  * Retrieves current client's UUID.
@@ -213,6 +224,14 @@ NS_SWIFT_NAME(Client)
 + (BOOL)regenerateUUID;
 
 /**
+ * Regenerates client's UUID and clear authentication token, eventual login, custom email and custom identifier.
+ * Please note that this operation works only if current client is anonymous.
+ *
+ * @param clientIdentifier It is a seed for UUID generation.
+ */
++ (BOOL)regenerateUUIDWithClientIdentifier:(nullable NSString *)clientIdentifier NS_SWIFT_NAME(regenerateUUID(clientIdentifier:));
+
+/**
  * Destroys the whole session completely.
  */
 + (void)destroySession NS_SWIFT_NAME(destroySession());
@@ -223,8 +242,8 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)getAccountWithSuccess:(nullable void (^)(SNRClientAccountInformation *accountInformation))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
++ (void)getAccountWithSuccess:(void (^)(SNRClientAccountInformation *accountInformation))success
+                      failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getAccount(success:failure:));
 
 /**
  * Retrieves events for authenticated client.
@@ -234,8 +253,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getEventsWithApiQuery:(SNRClientEventsApiQuery *)apiQuery
-                      success:(nullable void (^)(NSArray<SNRClientEventData *> *events))success
-                      failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getEvents(apiQuery:success:failure:));
+                      success:(void (^)(NSArray<SNRClientEventData *> *events))success
+                      failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getEvents(apiQuery:success:failure:));
 
 /**
  * Updates client's account information.
@@ -245,8 +264,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)updateAccount:(SNRClientUpdateAccountContext *)context
-              success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
+              success:(void (^)(BOOL isSuccess))success
+              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(updateAccount(context:success:failure:));
 
 /**
  * Requests client's password reset with email. A client will receive a token on the provided email address in order to use.
@@ -256,8 +275,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)requestPasswordReset:(SNRClientPasswordResetRequestContext *)context
-                     success:(nullable void (^)(BOOL isSuccess))success
-                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestPasswordReset(context:success:failure:));
+                     success:(void (^)(BOOL isSuccess))success
+                     failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(requestPasswordReset(context:success:failure:));
 
 /**
  * Confirms client's password reset with new password and token provided.
@@ -267,8 +286,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)confirmResetPassword:(SNRClientPasswordResetConfirmationContext *)context
-                     success:(nullable void (^)(BOOL isSuccess))success
-                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmResetPassword(context:success:failure:));
+                     success:(void (^)(BOOL isSuccess))success
+                     failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(confirmResetPassword(context:success:failure:));
 
 /**
  * Changes client's password.
@@ -280,8 +299,8 @@ NS_SWIFT_NAME(Client)
  */
 + (void)changePassword:(NSString *)password
            oldPassword:(NSString *)oldPassword
-               success:(nullable void (^)(BOOL isSuccess))success
-               failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:oldPassword:success:failure:));
+               success:(void (^)(BOOL isSuccess))success
+               failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(changePassword(password:oldPassword:success:failure:));
 
 /**
  * Requests client's email change.
@@ -293,8 +312,8 @@ NS_SWIFT_NAME(Client)
  */
 + (void)requestEmailChange:(NSString *)email
                   password:(NSString *)password
-                   success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:success:failure:));
+                   success:(void (^)(BOOL isSuccess))success
+                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:success:failure:));
 
 /**
  * Confirms client's email change with provided token.
@@ -306,8 +325,8 @@ NS_SWIFT_NAME(Client)
  */
 + (void)confirmEmailChange:(NSString *)token
         newsletterAgreement:(BOOL)newsletterAgreement
-                   success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:newsletterAgreement:success:failure:));
+                   success:(void (^)(BOOL isSuccess))success
+                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:newsletterAgreement:success:failure:));
 
 /**
  * Requests client's email change by Facebook.
@@ -317,8 +336,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)requestEmailChangeByFacebook:(NSString *)email
-                             success:(nullable void (^)(BOOL isSuccess))success
-                             failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChangeByFacebook(email:success:failure:));
+                             success:(void (^)(BOOL isSuccess))success
+                             failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(requestEmailChangeByFacebook(email:success:failure:));
 
 /**
  * Requests client's phone update. A client will receive a code on the provided phone in order to use.
@@ -328,8 +347,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)requestPhoneUpdate:(NSString *)phone
-                   success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(requestPhoneUpdate(phone:success:failure:));
+                   success:(void (^)(BOOL isSuccess))success
+                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(requestPhoneUpdate(phone:success:failure:));
 
 /**
  * Confirms client's phone update with code provided.
@@ -343,8 +362,8 @@ NS_SWIFT_NAME(Client)
 + (void)confirmPhoneUpdate:(NSString *)phone
           confirmationCode:(NSString *)confirmationCode
               smsAgreement:(BOOL)smsAgreement
-                   success:(nullable void (^)(BOOL isSuccess))success
-                   failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneUpdate(phone:confirmationCode:smsAgreement:success:failure:));
+                   success:(void (^)(BOOL isSuccess))success
+                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(confirmPhoneUpdate(phone:confirmationCode:smsAgreement:success:failure:));
 
 /**
  * Deletes client's account information.
@@ -354,8 +373,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)deleteAccount:(NSString *)password
-              success:(nullable void (^)(BOOL isSuccess))success
-              failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
+              success:(void (^)(BOOL isSuccess))success
+              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
 
 /**
  * Deletes client's account information by Facebook.
@@ -365,8 +384,8 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)deleteAccountByFacebook:(NSString *)facebookToken
-                        success:(nullable void (^)(BOOL isSuccess))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
+                        success:(void (^)(BOOL isSuccess))success
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
 
 /**
  * Method to recognize anonymous users and save personal information per their CRM entries.
@@ -387,8 +406,8 @@ NS_SWIFT_NAME(Client)
  * @deprecated Deprecated in version 3.5.13
  */
 + (void)registerForPush:(NSString *)registrationToken
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.registerForPush(token:mobilePushAgreement:success:failure:) instead.");
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.registerForPush(token:mobilePushAgreement:success:failure:) instead.");
 
 /**
  * Registers user for push notifications.
@@ -400,8 +419,8 @@ NS_SWIFT_NAME(Client)
  */
 + (void)registerForPush:(NSString *)registrationToken
     mobilePushAgreement:(BOOL)mobilePushAgreement
-                success:(nullable void (^)(BOOL isSuccess))success
-                failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:mobilePushAgreement:success:failure:));
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:mobilePushAgreement:success:failure:));
 
 @end
 

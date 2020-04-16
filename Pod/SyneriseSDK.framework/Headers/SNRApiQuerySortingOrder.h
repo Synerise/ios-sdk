@@ -3,10 +3,12 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2019 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-typedef NSString * _Nonnull SNRApiQuerySortingOrderString;
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString * SNRApiQuerySortingOrderString;
 
 FOUNDATION_EXPORT SNRApiQuerySortingOrderString const SNR_API_QUERY_SORTING_ASC;
 FOUNDATION_EXPORT SNRApiQuerySortingOrderString const SNR_API_QUERY_SORTING_DESC;
@@ -18,7 +20,9 @@ FOUNDATION_EXPORT SNRApiQuerySortingOrderString const SNR_API_QUERY_SORTING_DESC
 typedef NS_ENUM(NSUInteger, SNRApiQuerySortingOrder) {
     SNRApiQuerySortingOrderAscending,
     SNRApiQuerySortingOrderDescending
-};
+} NS_SWIFT_NAME(ApiQuerySortingOrder);
 
-NSString * _Nonnull SNR_ApiQuerySortingOrderToString(SNRApiQuerySortingOrder type);
+NSString * SNR_ApiQuerySortingOrderToString(SNRApiQuerySortingOrder type);
 SNRApiQuerySortingOrder SNR_StringToApiQuerySortingOrder(NSString * _Nullable string);
+
+NS_ASSUME_NONNULL_END

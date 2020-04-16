@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,8 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(BaseModel)
 @interface SNRBaseModel : NSObject
-
-+ (BOOL)isSortingKey:(NSString *)sortingKey;
 
 @end
 
