@@ -3,11 +3,16 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2019 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRPromotionResponseMetadata
+ */
+
+NS_SWIFT_NAME(PromotionResponseMetadata)
 @interface SNRPromotionResponseMetadata : SNRBaseModel
 
 @property (assign, nonatomic, readonly) NSInteger totalCount;

@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2019 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 @class SNRRecommendationOptions;
@@ -38,8 +38,8 @@ NS_SWIFT_NAME(Content)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getDocument:(NSString *)slug
-            success:(nullable void (^)(NSDictionary *document))success
-            failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
+            success:(void (^)(NSDictionary *document))success
+            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
 
 /**
  * Gets documents  that are defined for parameters provided in query object.
@@ -49,8 +49,8 @@ NS_SWIFT_NAME(Content)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getDocumentsWithApiQuery:(SNRDocumentsApiQuery *)apiQuery
-                          success:(nullable void (^)(NSArray *documents))success
-                          failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
+                          success:(void (^)(NSArray *documents))success
+                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
 
 /**
  * Gets recommendations that are defined for options provided.
@@ -60,8 +60,8 @@ NS_SWIFT_NAME(Content)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getRecommendations:(SNRRecommendationOptions *)options
-            success:(nullable void (^)(SNRRecommendationResponse *recommendationResponse))success
-            failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
+            success:(void (^)(SNRRecommendationResponse *recommendationResponse))success
+            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
 
 @end
 

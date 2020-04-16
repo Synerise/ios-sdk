@@ -3,10 +3,12 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-typedef NSString * _Nonnull SNRPromotionStatusString;
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString * SNRPromotionStatusString;
 
 FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_NONE;
 FOUNDATION_EXPORT SNRPromotionStatusString const SNR_PROMOTION_STATUS_ACTIVE;
@@ -24,5 +26,7 @@ typedef NS_ENUM(NSUInteger, SNRPromotionStatus) {
     SNRPromotionStatusRedeemed
 } NS_SWIFT_NAME(PromotionStatus);
 
-NSString * _Nonnull SNR_PromotionStatusToString(SNRPromotionStatus type);
+NSString * SNR_PromotionStatusToString(SNRPromotionStatus type);
 SNRPromotionStatus SNR_StringToPromotionStatus(NSString * _Nullable string);
+
+NS_ASSUME_NONNULL_END

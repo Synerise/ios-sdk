@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,7 +27,6 @@
 // Modules
 #import <SyneriseSDK/SNRTracker.h>
 #import <SyneriseSDK/SNRClient.h>
-#import <SyneriseSDK/SNRClientEventsApiQuery.h>
 #import <SyneriseSDK/SNRContent.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
@@ -35,13 +34,9 @@
 
 // API Queries
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>
+#import <SyneriseSDK/SNRClientEventsApiQuery.h>
 #import <SyneriseSDK/SNRPromotionsApiQuery.h>
 #import <SyneriseSDK/SNRDocumentsApiQuery.h>
-
-// Types
-#import <SyneriseSDK/SNRHostApplicationType.h>
-#import <SyneriseSDK/SNRClientSessionEndReason.h>
-#import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>
@@ -49,15 +44,24 @@
 #import <SyneriseSDK/SNRInvalidArgumentException.h>
 
 // Errors
-#import <SyneriseSDK/SNRErrorsList.h>
+#import <SyneriseSDK/SNRErrorCode.h>
+#import <SyneriseSDK/SNRErrorUserInfoKey.h>
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRApiError.h>
 #import <SyneriseSDK/SNRInvalidArgumentError.h>
+
+// Other Types
+#import <SyneriseSDK/SNRHostApplicationType.h>
+#import <SyneriseSDK/SNRClientSessionEndReason.h>
+#import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
 
 // Managers
 #import <SyneriseSDK/SNRCacheManager.h>
 
 // Events
+#import <SyneriseSDK/SNRTrackerParams.h>
+#import <SyneriseSDK/SNRTrackerParamsBuilder.h>
+
 #import <SyneriseSDK/SNREvent.h>
 #import <SyneriseSDK/SNRCustomEvent.h>
 #import <SyneriseSDK/SNRLoggedInEvent.h>
@@ -79,7 +83,6 @@
 #import <SyneriseSDK/SNRSharedEvent.h>
 #import <SyneriseSDK/SNRVisitedScreenEvent.h>
 #import <SyneriseSDK/SNRCrashEvent.h>
-#import <SyneriseSDK/SNRTrackerParams.h>
 
 // Events Models
 #import <SyneriseSDK/SNRUnitPrice.h>
@@ -90,8 +93,9 @@
 #import <SyneriseSDK/SNRClientAgreements.h>
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>
-#import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientOAuthAuthenticationContext.h>
+#import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
+#import <SyneriseSDK/SNRClientAppleSignInAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>

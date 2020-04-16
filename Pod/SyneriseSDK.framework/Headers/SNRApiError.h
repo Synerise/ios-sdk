@@ -3,8 +3,10 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
+
+#import "SNRError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,13 +26,13 @@ typedef NS_ENUM(NSInteger, SNRApiErrorType) {
  * @class SNRApiError
  */
 
-@interface SNRApiError : NSError
+@interface SNRApiError : SNRError
 
-@property (strong, nonatomic, nullable, readonly) NSArray<NSError *> *errors;
+@property (strong, nonatomic, nullable, readonly) NSArray<SNRError *> *errors;
 
 - (instancetype)initWithDomain:(NSErrorDomain)domain
                           code:(NSInteger)code
-                      userInfo:(nullable NSDictionary<NSErrorUserInfoKey, id> *)dict
+                      userInfo:(nullable NSDictionary<NSString *, id> *)userInfo
                         errors:(nullable NSArray *)errors;
 
 - (SNRApiErrorType)getType;

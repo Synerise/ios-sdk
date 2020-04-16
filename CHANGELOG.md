@@ -1,6 +1,22 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.5] - 2020-03-15
+
+### Fixed
+- Passing attributes property in OAuth authorization context.
+
+### Added
+- `Client.destroySession` method.
+- `Client.regenerateUuid(clientIdentifier:)` method with customerIdentifier as input for regenerated uuid.
+- Apple Sign In authorization (`Client.authenticateByAppleSignIn(context:authID:success:failure:)`).
+- Swift names for some public classes.
+
+### Changed
+- Error codes for `SNRError` are enumeration type now.
+- Improvements to stability.
+
+
 ## [3.6.4] - 2020-03-25
 
 ### Fixed

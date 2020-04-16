@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN
@@ -45,9 +45,6 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @protocol SNRInjectorBannerDelegate
@@ -83,9 +80,6 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRInjector
@@ -159,8 +153,8 @@ NS_SWIFT_NAME(Injector)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)fetchBannersWithSuccess:(nullable void (^)(NSArray<NSDictionary *> *banners))success
-                        failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
++ (void)fetchBannersWithSuccess:(void (^)(NSArray<NSDictionary *> *banners))success
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
  * Fetches Push Notifications set for mobile campaigns.
@@ -168,8 +162,8 @@ NS_SWIFT_NAME(Injector)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)getPushesWithSuccess:(nullable void (^)(NSArray<NSDictionary *> *pushes))success
-                     failure:(nullable void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
++ (void)getPushesWithSuccess:(void (^)(NSArray<NSDictionary *> *pushes))success
+                     failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
  * Shows banner immediately.

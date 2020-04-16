@@ -3,14 +3,14 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import "SNRTrackerParams.h"
 
-typedef NSDictionary<NSString *, NSObject *> SNRDictionary;
-
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NSDictionary<NSString *, NSObject *> SNRDictionary;
 
 /**
  * @class SNREvent

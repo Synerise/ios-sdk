@@ -3,12 +3,17 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import "SNRHostApplicationType.h"
 
 @class SNRSettings;
+
+NS_ASSUME_NONNULL_BEGIN
+
+FOUNDATION_EXPORT NSString * const SNRSyneriseDomain;
+FOUNDATION_EXPORT NSString * const SNRSyneriseBundleIdentifier;
 
 /**
  * @enum SNRSyneriseActivity
@@ -44,7 +49,6 @@ typedef NS_ENUM(NSInteger, SNRSyneriseActivityAction) {
 typedef void (^SNRSyneriseActivityActionCompletionBlock)(void) NS_SWIFT_NAME(SyneriseActivityActionCompletionBlock);
 typedef void (^SNRSyneriseActivityCompletionHandler)(SNRSyneriseActivityAction, __nullable SNRSyneriseActivityActionCompletionBlock) NS_SWIFT_NAME(SyneriseActivityCompletionHandler);
 
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @protocol SNRSyneriseDelegate
@@ -116,9 +120,6 @@ NS_SWIFT_NAME(SyneriseDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @protocol SyneriseActivityNotAllowed
@@ -132,9 +133,6 @@ NS_SWIFT_NAME(SyneriseActivityNotAllowed)
 
 @end
 
-NS_ASSUME_NONNULL_END
-
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRSynerise

@@ -3,12 +3,14 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright © 2018 Synerise. All rights reserved.
+//  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
 #import "SNRTrackerSettings.h"
 
 @class SNREvent;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @struct SNRTrackerConfiguration
@@ -35,6 +37,7 @@ typedef struct {
     
 } SNRTrackerConfiguration NS_SWIFT_NAME(TrackerConfiguration);
 
+
 /**
  * @protocol SNRTrackerDelegate
  *
@@ -53,7 +56,6 @@ NS_SWIFT_NAME(TrackerDelegate)
 
 @end
 
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @class SNRTracker
