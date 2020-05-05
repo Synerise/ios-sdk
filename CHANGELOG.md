@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.6] - 2020-03-30
+
+### Added
+- Persistent events are sent when the app launches.
+
+### Changed
+- Improvements to stability.
+
+
 ## [3.6.5] - 2020-03-15
 
 ### Fixed
