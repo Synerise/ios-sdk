@@ -20,6 +20,8 @@ NS_SWIFT_NAME(Token)
 
 @property (strong, nonatomic, nonnull, readonly) NSDate *expirationDate;
 
+@property (strong, nonatomic, nonnull, readonly) NSDictionary *claimsDictionary;
+
 - (BOOL)isNearExpiring;
 
 @end

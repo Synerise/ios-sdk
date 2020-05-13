@@ -1,7 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [3.6.6] - 2020-03-30
+## [3.6.7] - 2020-05-13
+
+### Fixed
+- Freezeing host app issue occuring sometimes by SDK in version 3.6.6.
+
+### Added
+-  `Client.refreshToken(sucess:failure:)` method.
+- `SNRToken` object has claims property with properties of token.
+
+### Changed
+- Improvements to stability.
+
+
+## [3.6.6] - 2020-04-30
 
 ### Added
 - Persistent events are sent when the app launches.
@@ -10,7 +23,7 @@ All notable changes to this project will be documented in this file.
 - Improvements to stability.
 
 
-## [3.6.5] - 2020-03-15
+## [3.6.5] - 2020-04-15
 
 ### Fixed
 - Passing attributes property in OAuth authorization context.
