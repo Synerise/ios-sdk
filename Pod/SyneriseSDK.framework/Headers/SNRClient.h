@@ -193,6 +193,12 @@ NS_SWIFT_NAME(Client)
 + (void)signOut NS_SWIFT_NAME(signOut());
 
 /**
+ * REFRESH
+ */
++ (void)refreshTokenWithSuccess:(void (^)(void))success
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(refreshToken(success:failure:));
+
+/**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
  *
  * @param success A block object to be executed when the operation finishes successfully.
