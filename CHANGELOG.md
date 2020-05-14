@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.8] - 2020-05-14
+
+### Fixed
+- Freezeing host app issue occuring sometimes by SDK in version 3.6.7.
+
+
 ## [3.6.7] - 2020-05-13
 
 ### Fixed
