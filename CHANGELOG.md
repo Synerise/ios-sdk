@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.9] - 2020-06-18
+
+### Added
+- Content mode settings for image views in Rich Media notifications.
+
+### Changed
+- Way of obfuscation in SDK to much pretty style.
+
+
 ## [3.6.8] - 2020-05-14
 
 ### Fixed
