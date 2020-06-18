@@ -193,8 +193,9 @@ NS_SWIFT_NAME(Client)
 + (void)signOut NS_SWIFT_NAME(signOut());
 
 /**
- * REFRESH
- */
+ * Use this method to refresh your token.
+ *
+*/
 + (void)refreshTokenWithSuccess:(void (^)(void))success
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(refreshToken(success:failure:));
 
