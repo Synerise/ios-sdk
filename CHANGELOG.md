@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.10] - 2020-06-19
+
+### Changed
+- Improvements to stability.
+
+
 ## [3.6.9] - 2020-06-18
 
 ### Added
