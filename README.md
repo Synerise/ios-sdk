@@ -1,4 +1,4 @@
-# Synerise iOS SDK (v3.6.9) - User documentation
+# Synerise iOS SDK (v3.6.10) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
