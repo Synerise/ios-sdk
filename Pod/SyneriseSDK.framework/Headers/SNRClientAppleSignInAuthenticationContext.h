@@ -17,15 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientAppleSignInAuthenticationContext)
 @interface SNRClientAppleSignInAuthenticationContext : SNRBaseModel
 
-@property (copy, nonatomic, nonnull, readonly) NSData *identityToken;
-
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
-
-+ (instancetype)new NS_UNAVAILABLE;
-- (instancetype)init NS_UNAVAILABLE;
-
-- (instancetype)initWithIdentityToken:(NSData *)identityToken NS_SWIFT_NAME(init(identityToken:));
 
 @end
 

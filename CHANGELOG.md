@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.11] - 2020-07-01
+
+### Added
+-  `Client.authenticateByOAuthIfRegistered(accessToken:authID:success:failure:)` method.
+-  `Client.authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:)` method.
+- `Client.deleteAccountByOAuth(accessToken:success:failure:)` method.
+- `Client.deleteAccountByAppleSignIn(identityToken:success:failure:)` method.
+- `Synerise.settings.sdk.shouldDestroySessionOnApiKeyChange` in settings.
+
+### Changed
+- Maintaining session when changing clientApiKey within business profile.
+
+
 ## [3.6.10] - 2020-06-19
 
 ### Changed
