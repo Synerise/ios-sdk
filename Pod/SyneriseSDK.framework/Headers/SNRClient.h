@@ -142,6 +142,19 @@ NS_SWIFT_NAME(Client)
                                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
 
 /**
+ * Signs in a registered client with OAuth Access Token.
+ *
+ * @param accessToken Token OAuth Access Token.
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateByOAuthIfRegisteredWithAccessToken:(NSString *)accessToken
+                                    authID:(nullable NSString *)authID
+                                   success:(void (^)(BOOL isSuccess))success
+                                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByOAuthIfRegistered(accessToken:authID:success:failure:));
+
+/**
  * Signs in a client with Facebook Token.
  *
  * @param facebookToken Token from Facebook active session.
@@ -170,17 +183,32 @@ NS_SWIFT_NAME(Client)
                                                     failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
 
 /**
- * Signs in a client with Apple Sign In.
+ * Signs in a client with Sign In With Apple.
  *
+ * @param identityToken Token from Sign In With Apple session.
+ * @param authID Authorization custom identity.
  * @param context SNRClientAppleSignInAuthenticationContext object with agreements and optional attributes.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateByAppleSignInWithIdentityToken:(NSData *)identityToken
+                                            authID:(nullable NSString *)authID
+                                           context:(SNRClientAppleSignInAuthenticationContext *)context
+                                           success:(void (^)(BOOL isSuccess))success
+                                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(identityToken:authID:context:success:failure:));
+
+/**
+ * Signs in a registered client with Sign In With Apple.
+ *
+ * @param identityToken Token from Sign In With Apple session.
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)authenticateByAppleSignInWithContext:(SNRClientAppleSignInAuthenticationContext *)context
-                                         authID:(nullable NSString *)authID
-                                        success:(void (^)(BOOL isSuccess))success
-                                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(context:authID:success:failure:));
++ (void)authenticateByAppleSignInIfRegisteredWithIdentityToken:(NSData *)identityToken
+                                            authID:(nullable NSString *)authID
+                                           success:(void (^)(BOOL isSuccess))success
+                                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:));
 
 /**
  * Checks whether client is signed in (is client's token not expired).
@@ -384,6 +412,17 @@ NS_SWIFT_NAME(Client)
               failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
 
 /**
+ * Deletes client's account information by OAuth.
+ *
+ * @param accessToken Client's Token from Facebook active session.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)deleteAccountByOAuth:(NSString *)accessToken
+                        success:(void (^)(BOOL isSuccess))success
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByOAuth(accessToken:success:failure:));
+
+/**
  * Deletes client's account information by Facebook.
  *
  * @param facebookToken Client's Token from Facebook active session.
@@ -393,6 +432,17 @@ NS_SWIFT_NAME(Client)
 + (void)deleteAccountByFacebook:(NSString *)facebookToken
                         success:(void (^)(BOOL isSuccess))success
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
+
+/**
+ * Deletes client's account information by Sign In With Apple.
+ *
+ * @param identityToken Client's Token from Facebook active session.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)deleteAccountByAppleSignIn:(NSData *)identityToken
+                        success:(void (^)(BOOL isSuccess))success
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByAppleSignIn(identityToken:success:failure:));
 
 /**
  * Method to recognize anonymous users and save personal information per their CRM entries.

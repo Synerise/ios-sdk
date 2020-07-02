@@ -40,6 +40,12 @@ NS_SWIFT_NAME(GeneralSettings)
 // Property is array contained kSNRPublicKeyPinningAlgorithmRsa2048 value by default.
 @property (assign, nonatomic, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 
+//
+//
+//
+//
+@property (assign, nonatomic, readwrite) BOOL shouldDestroySessionOnApiKeyChange;
+
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
