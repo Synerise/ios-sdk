@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.12] - 2020-07-07
+
+### Fixed
+- Issues with generating UUID for Apple Sign In authentication requests.
+
+### Added
+- `SNRTokenOriginApple` in `SNRTokenOrigin` enumeration type.
+
+
 ## [3.6.11] - 2020-07-01
 
 ### Added
