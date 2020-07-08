@@ -40,10 +40,10 @@ NS_SWIFT_NAME(GeneralSettings)
 // Property is array contained kSNRPublicKeyPinningAlgorithmRsa2048 value by default.
 @property (assign, nonatomic, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 
+//This parameter specifies if session should be destroyed after client api key changes.
 //
 //
-//
-//
+//Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL shouldDestroySessionOnApiKeyChange;
 
 

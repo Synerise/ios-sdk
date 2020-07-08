@@ -16,7 +16,8 @@ typedef NS_ENUM(NSUInteger, SNRTokenOrigin) {
     SNRTokenOriginUnknown,
     SNRTokenOriginSynerise,
     SNRTokenOriginFacebook,
-    SNRTokenOriginOauth
+    SNRTokenOriginOauth,
+    SNRTokenOriginApple
 } NS_SWIFT_NAME(TokenOrigin);
 
 NSString * SNR_TokenOriginToString(SNRTokenOrigin type);
