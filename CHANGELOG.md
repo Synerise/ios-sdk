@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.13] - 2020-07-16
+
+### Added
+- `automaticallyAdjustContentViewSize`  bool property for specify whether expanded notification should automatically adjust its size to downloaded image.
+
+
 ## [3.6.12] - 2020-07-07
 
 ### Fixed
@@ -29,7 +35,7 @@ All notable changes to this project will be documented in this file.
 - Improvements to stability.
 
 
-## [3.6.9] - 2020-06-18
+## [3.6.9] - 2020-06-18 (removed from CocoaPods)
 
 ### Added
 - Content mode settings for image views in Rich Media notifications.

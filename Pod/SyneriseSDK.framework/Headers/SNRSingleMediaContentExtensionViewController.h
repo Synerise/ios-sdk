@@ -22,7 +22,9 @@ API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(SingleMediaContentExtensionViewController)
 @interface SNRSingleMediaContentExtensionViewController : UIViewController
 
+@property (assign, nonatomic, readwrite) BOOL automaticallyAdjustContentViewSize;
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
+
 
 - (void)setSyneriseNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
 - (void)setSyneriseNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion API_AVAILABLE(ios(10.0));
