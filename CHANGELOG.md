@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.6.14] - 2020-08-24
+
+### Added
+- Events sends own occuring time to backend.
+
+### Changed
+- `SNRSynerise.settings.notifications.appGroupIdentifier` is moved to `SNRSynerise.settings.notifications.appGroupIdentifier`. The previous option is active but deprecated.
+
+
 ## [3.6.13] - 2020-07-16
 
 ### Added
