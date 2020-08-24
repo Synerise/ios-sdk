@@ -29,7 +29,7 @@ NS_SWIFT_NAME(NotificationsSettings)
 //Note, that it is required property to allow the SDK communicating with Host App and its extensions for proper handling Rich Media Notifications.
 //
 //Property is nil by default.
-@property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
+@property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.sdk.appGroupIdentifier instead.");
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
