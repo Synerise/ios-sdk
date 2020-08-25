@@ -20,7 +20,7 @@ class NotificationService: UNNotificationServiceExtension {
         self.contentHandler = contentHandler
         self.bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
-        Synerise.settings.sdk.keychainGroupIdentifier = "34N2Z22TKH.keychainGroup"
+        Synerise.settings.sdk.keychainGroupIdentifier = "[YOUR_KEYCHAIN_GROUP_IDENTIFIER]"
         
         if let bestAttemptContent = self.bestAttemptContent {
             let shouldDecryptNotification: Bool = notificationEncryptionHelper.isNotificationContentEncrypted(bestAttemptContent)

@@ -26,7 +26,7 @@
     
     self.notificationEncryptionHelper = [SNRNotificationEncryptionHelper new];
     
-    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"34N2Z22TKH.keychainGroup";
+    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"[YOUR_KEYCHAIN_GROUP_IDENTIFIER]";
     
     BOOL shouldDecryptNotification = [self.notificationEncryptionHelper isNotificationContentEncrypted:self.bestAttemptContent];
     if (shouldDecryptNotification == YES) {
