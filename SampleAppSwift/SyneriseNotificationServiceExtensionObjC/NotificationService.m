@@ -25,7 +25,6 @@
     self.bestAttemptContent = [request.content mutableCopy];
     
     self.notificationEncryptionHelper = [SNRNotificationEncryptionHelper new];
-    [self.notificationEncryptionHelper setDebugModeEnabled:YES];
     
     SNRSynerise.settings.sdk.keychainGroupIdentifier = @"34N2Z22TKH.keychainGroup";
     
