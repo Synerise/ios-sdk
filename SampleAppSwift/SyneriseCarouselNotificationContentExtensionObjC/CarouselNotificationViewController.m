@@ -11,7 +11,7 @@
 @implementation CarouselNotificationViewController
 
 - (void)didReceiveNotification:(UNNotification *)notification{
-    SNRSynerise.settings.notifications.appGroupIdentifier = @"group.com.synerise.sdk.sample-swift";
+    SNRSynerise.settings.notifications.sdk = @"group.com.synerise.sdk.sample-swift";
     [self setSyneriseNotification:notification];
 }
 - (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion{
