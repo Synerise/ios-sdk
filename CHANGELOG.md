@@ -1,13 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
+
+## [3.6.15] - 2020-09-07
+
+### Added
+- Support for encrypted notifications (enabled by `Synerise.settings.notifications.encryption`).
+
+
 ## [3.6.14] - 2020-08-24
 
 ### Added
 - Events sends own occuring time to backend.
 
 ### Changed
-- `SNRSynerise.settings.notifications.appGroupIdentifier` is moved to `SNRSynerise.settings.notifications.appGroupIdentifier`. The previous option is active but deprecated.
+- `Synerise.settings.notifications.appGroupIdentifier` is moved to `Synerise.settings.notifications.appGroupIdentifier`. The previous option is active but deprecated.
 
 
 ## [3.6.13] - 2020-07-16
@@ -22,7 +30,7 @@ All notable changes to this project will be documented in this file.
 - Issues with generating UUID for Apple Sign In authentication requests.
 
 ### Added
-- `SNRTokenOriginApple` in `SNRTokenOrigin` enumeration type.
+- `TokenOriginApple` in `TokenOrigin` enumeration type.
 
 
 ## [3.6.11] - 2020-07-01
@@ -66,7 +74,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 -  `Client.refreshToken(sucess:failure:)` method.
-- `SNRToken` object has claims property with properties of token.
+- `Token` object has claims property with properties of token.
 
 ### Changed
 - Improvements to stability.
@@ -93,7 +101,7 @@ All notable changes to this project will be documented in this file.
 - Swift names for some public classes.
 
 ### Changed
-- Error codes for `SNRError` are enumeration type now.
+- Error codes for `Error` are enumeration type now.
 - Improvements to stability.
 
 
@@ -109,7 +117,7 @@ All notable changes to this project will be documented in this file.
 - Issue with removing data from keychain when app is launched first.
 
 ### Added
-- More information in `SNRCrashEvent` from Crash Handler.
+- More information in `CrashEvent` from Crash Handler.
 
 
 ## [3.6.2] - 2020-03-02
@@ -121,10 +129,10 @@ All notable changes to this project will be documented in this file.
 ## [3.6.1] - 2020-02-27
 
 ### Added
-- `SNRSynerise.setHostApplicationType` method to specify host app type.
+- `Synerise.setHostApplicationType` method to specify host app type.
 
 ### Changed
-- `SNRTracker` tries to send events when app enters to foreground.
+- `Tracker` tries to send events when app enters to foreground.
 - Better handling when there is no internet connection.
 - Improvements to stability.
 
@@ -140,7 +148,7 @@ All notable changes to this project will be documented in this file.
 - Security related changes.
 
 ### Removed
-- `tags` property in `SNRClientUpdateAccountContext` and `SNRClientRegisterAccountContext`.
+- `tags` property in `ClientUpdateAccountContext` and `ClientRegisterAccountContext`.
 
 
 ## [3.5.19] - 2020-01-23
@@ -149,19 +157,19 @@ All notable changes to this project will be documented in this file.
 - `authId` as `customId` in OAuth authorization payload.
 
 ### Changed
-- Improvements in reinitialization mechanism (`SNRSynerise.changeClientApiKey`).
+- Improvements in reinitialization mechanism (`Synerise.changeClientApiKey`).
 
 ## [3.5.18] - 2019-12-20
 
 ### Fixed
-- `SNRPromotion.priority` property added to sorting whitelist.
+- `Promotion.priority` property added to sorting whitelist.
 - Improving SDK stability
 
 
 ## [3.5.17] - 2019-12-12
 
 ### Added
-- `priority` property in `SNRPromotion` class.
+- `priority` property in `Promotion` class.
 
 
 ## [3.5.16] - 2019-12-09
@@ -179,46 +187,46 @@ All notable changes to this project will be documented in this file.
 ## [3.5.14] - 2019-12-02
 
 ### Fixed
-- `SNRContentWidgetImageButtonCustomAction` sends model in its receive click action.
+- `ContentWidgetImageButtonCustomAction` sends model in its receive click action.
 
 ### Added
 - SDK persists its last and current version in application's data.
 
 ### Changed
-- `SNRPromotionResponse` mapping metadata to `SNRPromotionResponseMetadata` object in metadata property.
-- `SNRClient.registerForPush:mobileAgreement:success:failure:` is deprecated.
+- `PromotionResponse` mapping metadata to `PromotionResponseMetadata` object in metadata property.
+- `Client.registerForPush:mobileAgreement:success:failure:` is deprecated.
 
 
 ## [3.5.13] - 2019-11-22
 
 ### Fixed
-- `SNRContentWidget` doesn't require productID parameter for recommendations.
+- `ContentWidget` doesn't require productID parameter for recommendations.
 
 
 ## [3.5.12] - 2019-11-07
 
 ### Changed
-- `SNRClient.regenerateUUID` method regenerates client's UUID if session is anonymous.
+- `Client.regenerateUUID` method regenerates client's UUID if session is anonymous.
 
 ### Fixed
-- `SNRToken.tokenString` property attributes.
-- `SNRClientRegisterAccountContext.city` property mapping.
+- `Token.tokenString` property attributes.
+- `ClientRegisterAccountContext.city` property mapping.
 
 ### Removed
-- `SNRClientUpdateContext.lastActivityDate`.
+- `ClientUpdateContext.lastActivityDate`.
 
 
 ## [3.5.11] - 2019-10-18
 
 ### Added
-- `regularPriceFont` and `regularPriceFontColor` properties to `SNRContentWidgetBasicProductItemLayout`.
-- `priceGroupSeparator` and `priceDecimalSeparator` properties  to `SNRContentWidgetBasicProductItemLayout`.
+- `regularPriceFont` and `regularPriceFontColor` properties to `ContentWidgetBasicProductItemLayout`.
+- `priceGroupSeparator` and `priceDecimalSeparator` properties  to `ContentWidgetBasicProductItemLayout`.
 
 
 ## [3.5.10] - 2019-10-16
 
 ### Added
-- `SNRContent.getDocuments(apiQuery:success:failure:)` method.
+- `Content.getDocuments(apiQuery:success:failure:)` method.
 
 
 ## [3.5.9] - 2019-10-08
@@ -230,7 +238,7 @@ All notable changes to this project will be documented in this file.
 ## [3.5.8] - 2019-09-27
 
 ### Added
-- `SNRClientStateDelegate` for handling client sign-in state.
+- `ClientStateDelegate` for handling client sign-in state.
 
 
 ## [3.5.7] - 2019-09-20
@@ -239,13 +247,13 @@ All notable changes to this project will be documented in this file.
 - `SIGN_OUT` SDK Command.
 
 ### Changed
-- `SNRChat` constructor requires `tracker_key`.
+- `Chat` constructor requires `tracker_key`.
 
 
 ## [3.5.6] - 2019-09-10
 
 ### Added
-- `SNRChat` module.
+- `Chat` module.
 
 ### Changed
 - Improvements to stability.
@@ -254,20 +262,20 @@ All notable changes to this project will be documented in this file.
 ## [3.5.5] - 2019-09-03
 
 ### Added
-- `OTHER` option to `SNRClientSex`.
+- `OTHER` option to `ClientSex`.
 
 
 ## [3.5.4] - 2019-08-19
 
 ### Added
-- Sale price as a additional feature to 'ContentWidget'.
-- Optional button action as a additional feature to 'ContentWidget'.
+- Sale price as a additional feature to `ContentWidge`.
+- Optional button action as a additional feature to `ContentWidget`.
 
 
 ## [3.5.3] - 2019-08-12
 
 ### Added
-- 'Client.getEvents' method.
+- `Client.getEvents()` method.
 - 'app-version' as a query parameter in walkthrough request.
 
 ### Changed
@@ -276,21 +284,21 @@ All notable changes to this project will be documented in this file.
 ## [3.5.2] - 2019-07-25
 
 ### Added
-- 'SNRPromotionsApiQuery' object to fetch promotions better way.
-- 'mobilePushAgreement' parameter in 'Client.registerForPush' method.
+- `PromotionsApiQuery` object to fetch promotions better way.
+- 'mobilePushAgreement' parameter in `Client.registerForPush()` method.
 
 ### Changed
-- 'SNRWidgetGridLayout.getSize(prefferedWidth:)' name to 'SNRWidgetGridLayout.getSize(preferredWidth:)'.
-- 'SNRClient.getPromotions(statuses:types:page:success:failure:)' is deprecated.
-- 'SNRClient.getPromotions(statuses:types:limit:page:success:failure:)' is deprecated.
-- 'SNRClient.getPromotions (statuses:types:limit:page:includeMeta:success:failure:)' is deprecated.
+- `WidgetGridLayout.getSize(prefferedWidth:)` name to `WidgetGridLayout.getSize(preferredWidth:)`.
+- `Client.getPromotions(statuses:types:page:success:failure:)` is deprecated.
+- `Client.getPromotions(statuses:types:limit:page:success:failure:)` is deprecated.
+- `Client.getPromotions (statuses:types:limit:page:includeMeta:success:failure:)` is deprecated.
 
 
 ## [3.5.1] - 2019-07-10
 
 ### Fixed
-- 'ContentWidgetItemLayout.backgroundColor' - property type.
-- Swift name for 'RecommendationOptions' class.
+- `ContentWidgetItemLayout.backgroundColor` - property type.
+- Swift name for `RecommendationOptions` class.
 
 ### Changed
 - Documentation in header files.
@@ -305,23 +313,23 @@ All notable changes to this project will be documented in this file.
 ## [3.4.14] - 2019-06-27
 
 ### Fixed
-- Header annotation in 'SNRClient.recognizeAnonymous'
+- Header annotation in `Client.recognizeAnonymous()`
 
 
 ## [3.4.13] - 2019-06-25
 
 ### Removed
-- Transaction Events ('SNRCompletedTransactionEvent', 'CancelledTransactionEvent').
+- Transaction Events (`CompletedTransactionEvent`, `CancelledTransactionEvent`).
 
 ### Added
-- Network information is sent in the AppStartedEvent.
-- Mobile Operator information is sent in the AppStartedEvent.
+- Network information is sent in the `ApplicationStartedEvent`.
+- Mobile Operator information is sent in the `ApplicationStartedEvent`.
 
 
 ## [3.4.12] - 2019-06-22
 
 ### Fixed
-- 'SNRClient.setCustomEmail' and 'SNRClient.setCustomIdentifier' methods nullability.
+- `Client.setCustomEmail` and `Client.setCustomIdentifier` methods nullability.
 
 ### Removed
 - Events don't contain 'time' parameter.
@@ -333,24 +341,24 @@ All notable changes to this project will be documented in this file.
 ## [3.4.11] - 2019-06-12
 
 ### Added
-- 'SNRClient.retrieveToken(success:failure:)' method
+- `Client.retrieveToken(success:failure:)` method
 
 ### Changed
-- 'SNRClient.getToken(success:failure:)' is deprecated.
+- `Client.getToken(success:failure:)'`is deprecated.
 
 
 ## [3.4.10] - 2019-06-04
 
 ### Fixed
-- 'SNRSynerise.settings.sdk.minTokenRefreshInterval' option in settings.
+- `Synerise.settings.sdk.minTokenRefreshInterval` option in settings.
 
 ## [3.4.9] - 2019-06-03
 
 ### Fixed
-- 'SNRClientRegisterAccountContext.tags' parameter is array now.
+- `ClientRegisterAccountContext.tags` property is array now.
 
 ### Added
-- New option to set time interval counting backwards from expiration time, within which token will be automatically refreshed by SDK  - 'SNRSynerise.settings.sdk.minTokenRefreshInterval'.
+- New option to set time interval counting backwards from expiration time, within which token will be automatically refreshed by SDK  - `Synerise.settings.sdk.minTokenRefreshInterval`.
 
 ## [3.4.8] - 2019-05-21
 
@@ -358,15 +366,15 @@ All notable changes to this project will be documented in this file.
 - Dynamic change of AutoTrack mode.
 
 ### Added
-- 'SNRContent' module.
-- 'SNRContent.getDocument' method.
+- `Content` module.
+- `Content.getDocument` method.
 - Push Consent information is sent in the AppStartedEvent.
 
 ### Changed
-- 'SNRTracker.setConfiguration:' is deprecated.
-- 'SNRTracker.setAutoTrackMode:' is deprecated.
-- 'SNRTracker.setLocationAutomaticEnabled:' is deprecated.
-- 'SNRInjector.setAutomatic:' is deprecated.
+- `Tracker.setConfiguration()` is deprecated.
+- `Tracker.setAutoTrackMode()` is deprecated.
+- `Tracker.setLocationAutomaticEnabled()` is deprecated.
+- `Injector.setAutomatic()` is deprecated.
 
 
 ## [3.4.7] - 2019-04-26
@@ -384,16 +392,16 @@ All notable changes to this project will be documented in this file.
 ## [3.4.5] - 2019-04-08
 
 ### Added
-- New option to disable whole SDK activity - 'Synerise.settings.sdk.enabled'.
-- New option to disable notifications activity - 'Synerise.settings.notifications.enabled'.
-- New option to disable auto tracking activity - 'Synerise.settings.tracker.autoTracking.enabled'.
-- New option to disable declarative tracking activity - 'Synerise.settings.tracker.tracking.enabled'.
+- New option to disable whole SDK activity - `Synerise.settings.sdk.enabled`.
+- New option to disable notifications activity - `Synerise.settings.notifications.enabled`.
+- New option to disable auto tracking activity - `Synerise.settings.tracker.autoTracking.enabled`.
+- New option to disable declarative tracking activity - `Synerise.settings.tracker.tracking.enabled`.
 
 
 ## [3.4.4] - 2019-04-04
 
 ### Changed
-- ProductViewEvent, RecommendationClickEvent and RecommendationSeenEvent has changed its structure.
+- `ProductViewEvent`, `RecommendationClickEvent` and `RecommendationSeenEvent` has changed its structure.
 
 
 ## [3.4.3] - 2019-03-29
@@ -405,18 +413,18 @@ All notable changes to this project will be documented in this file.
 ## [3.4.2] - 2019-03-19
 
 ### Added
-- New additional 'authID' parameter in Client.authenticateByFacebook method.
-- New additional 'authID' parameter in Client.authenticateByOAuth method.
+- New additional 'authID' parameter in `Client.authenticateByFacebook()` method.
+- New additional 'authID' parameter in `Client.authenticateByOAuth()` method.
 
 ### Removed
-- 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
+- `authID` parameter (`ClientFacebookAuthenticationContext`, `ClientOAuthContext`).
 
 
 ## [3.4.1] - 2019-03-18
 
 ### Added
-- New event classes (ProductViewEvent, RecommendationSeenEvent, RecommendationClickEvent).
-- New additional 'authID' parameter (ClientFacebookAuthenticationContext, ClientOAuthContext).
+- New event classes (`ProductViewEvent`, `RecommendationSeenEvent`, `RecommendationClickEvent`).
+- New additional `authID` parameter (`ClientFacebookAuthenticationContext`, `ClientOAuthContext`).
 
 ### Changed
 - Simple Push campaign doesn't send 'push.received' event by now.
@@ -429,7 +437,7 @@ All notable changes to this project will be documented in this file.
 - Posiibility to excluding components from autotracking by tag.
 
 ### Changed
-- New structure and code organization for SDK settings (SNRSynerise.settings).
+- New structure and code organization for SDK settings (`SNRSynerise.settings`).
 - Improvements to user anonymous session.
 
 
@@ -448,7 +456,7 @@ All notable changes to this project will be documented in this file.
 ## [3.3.14] - 2019-02-21
 
 ### Added
-- Client.requestEmailChangeByFacebook.
+- `Client.requestEmailChangeByFacebook()`.
 
 
 ## [3.3.13] - 2019-02-19
@@ -469,29 +477,29 @@ All notable changes to this project will be documented in this file.
 - Facebook authentication.
 
 ### Changed
-- Client.requestEmailChange method (newsleeterAgreement has been added to arguments).
-- Client.confirmEmailChange method (smsAgreement has been added to arguments).
+- `Client.requestEmailChange()` method (newsleeterAgreement has been added to arguments).
+- `Client.confirmEmailChange()` method (smsAgreement has been added to arguments).
 
 
 ## [3.3.10] - 2019-02-03
 
 ### Added
-- Client.authenticateByOAuth method.
-- Client.regenerateUUID method.
+- `Client.authenticateByOAuth()` method.
+- `Client.regenerateUUID()` method.
 
 ### Changed
-- Client.authenticateByFacebook method uses context optionally.
-- Client.requestEmailChange method.
-- Client.confirmEmailChange method.
+- `Client.authenticateByFacebook()` method uses context optionally.
+- `Client.requestEmailChange()` method.
+- `Client.confirmEmailChange()` method.
 
 
 ## [3.3.9] - 2019-01-23
 
 ### Added
-- Synerise.isSyneriseSimplePush method.
-- Synerise.isSyneriseSilentCommand method.
-- Synerise.isSyneriseSilentSDKCommand method.
-- Synerise.isSyneriseBanner method.
+- `Synerise.isSyneriseSimplePush()` method.
+- `Synerise.isSyneriseSilentCommand()` method.
+- `Synerise.isSyneriseSilentSDKCommand()` method.
+- `Synerise.isSyneriseBanner()` method.
 
 ### Changed
 - Autotracking events.
@@ -500,17 +508,17 @@ All notable changes to this project will be documented in this file.
 ## [3.3.8] - 2019-01-16
 
 ### Added
-- Client.authenticateByFacebook method.
-- Client.authenticateByFacebookIfRegistered method.
-- Client.requestEmailChange method.
-- Client.confirmEmailChange method.
-- Client.deleteAccountByFacebook method.
+- `Client.authenticateByFacebook()` method.
+- `Client.authenticateByFacebookIfRegistered()` method.
+- `Client.requestEmailChange()` method.
+- `Client.confirmEmailChange()` method.
+- `Client.deleteAccountByFacebook()` method.
 
 ### Removed
-- Client.authenticateByFacebookToken method.
+- `Client.authenticateByFacebookToken()` method.
 
 ### Changed
-- Client.getToken returns token and its origin (SYNERISE, FACEBOOK, OAUTH or UNKNOWN).
+- `Client.getToken()` returns token and its origin (SYNERISE, FACEBOOK, OAUTH or UNKNOWN).
 
 ### Fixed
 - Improving SDK stability.
@@ -519,7 +527,7 @@ All notable changes to this project will be documented in this file.
 ## [3.3.7] - 2019-01-09
 
 ### Added
-- Synerise.locationAutomatic(boolean) method to obtain user location and send location event automatically.
+- `Synerise.locationAutomatic()` method to obtain user location and send location event automatically.
 
 ### Fixed
 - Improving SDK stability.
@@ -528,46 +536,46 @@ All notable changes to this project will be documented in this file.
 ## [3.3.6] - 2018-12-18
 
 ### Changed
-- Client.deleteAccount method.
+- `Client.deleteAccount()` method.
 
 
 ## [3.3.5] - 2018-12-16
 
 ### Added
-- Client.confirmAccount method.
+- `Client.confirmAccount()` method.
 
 ### Changed
-- Client.deleteAccount method requires password.
+- `Client.deleteAccount()` method requires password.
 
 ### Fixed
-- Client.updateAccount method. Unless sex property in update context is set, api request payload doesn't contain it.
+- `Client.updateAccount()` method. Unless sex property in update context is set, api request payload doesn't contain it.
 
 ### Removed
-- Client.registerAccount method option to registration without email.
+- `Client.registerAccount()` method option to registration without email.
 
 
 ## [3.3.4] - 2018-12-12
 
 ### Fixed
-- Promotions.getPromotions.
+- `Promotions.getPromotions()`.
 
 
 ## [3.3.3] - 2018-12-06
 
 ### Fixed
-- Promotions.getPromotionByUuid.
-- Promotions.getPromotionByCode.
+- `Promotions.getPromotionByUuid()`.
+- `Promotions.getPromotionByCode()`.
 
 
 ## [3.3.2] - 2018-11-28
 
 ### Added
-- Synerise.setDebugModeEnabled to eneable logs from all modules.
+- `Synerise.setDebugModeEnabled()` to eneable logs from all modules.
 
 ### Changed
-- Loyalty module is renamed to Promotions.
-- CacheService is replaced by CacheManager.
-- New functionality in SNRApiError (see Error Handling section in README).
+- `Loyalty` module is renamed to `Promotions`.
+- `CacheService` is replaced by `CacheManager`.
+- New functionality in `SNRApiError` (see Error Handling section in README).
 - Synerise SDK invokes all delegation methods on main thread.
 
 ### Fixed
@@ -578,42 +586,42 @@ All notable changes to this project will be documented in this file.
 ## [3.3.1] - 2018-11-21
 
 ### Fixed
-- Method name for Swift: Client.registerClient -> Client.registerAccount.
+- Method name for Swift: `Client.registerClient()` -> `Client.registerAccount()`.
 - Improving SDK stability.
 
 
 ## [3.3.0] - 2018-11-20
 
 ### Added
-- Loyalty module.
-- CacheService to obtain cached API models.
+- `Loyalty` module.
+- `CacheService` to obtain cached API models.
 
 ### Changed
 - SDK callbacks executes on main thread.
 - Some Promotion entity fields types.
-- Some Promotion enum types (PromotionStatus, PromotionType, PromotionDiscountValue).
+- Some Promotion enum types (`PromotionStatus`, `PromotionType`, `PromotionDiscountValue`).
 - Major parts of authorization module.
-- Client.changePassword() now requires old client's password.
+- `Client.changePassword()` now requires old client's password.
 - Profile methods were distributed between Client and Loyalty.
-- Client.getPromotions -> Loyalty.getPromotions.
-- Client.getPromotion -> Loyalty.getPromotion.
-- Client.activatePromotionBy -> Loyalty.activatePromotionBy.
-- Client.deactivatePromotionBy -> Loyalty.deactivatePromotionBy.
-- Client.getOrAssignVoucher -> Loyalty.getOrAssignVoucher.
-- Client.assignVoucherCode -> Loyalty.assignVoucherCode.
-- Client.getAssignedVoucherCodes -> Loyalty.getAssignedVoucherCodes.
-- Profile.registerClient -> Client.registerAccount.
-- Profile.registerForPush -> Client.registerForPush.
-- Profile.activateClient -> Client.activateAccount.
-- Profile.requestPasswordReset -> Client.requestPasswordReset.
-- Profile.confirmResetPassword -> Client.confirmPasswordReset.
+- `Client.getPromotions()` -> `Loyalty.getPromotions()`.
+- `Client.getPromotion()` -> `Loyalty.getPromotion()`.
+- `Client.activatePromotionBy()` -> `Loyalty.activatePromotionBy()`.
+- `Client.deactivatePromotionBy()` -> `Loyalty.deactivatePromotionBy()`.
+- `Client.getOrAssignVoucher()` -> `Loyalty.getOrAssignVoucher()`.
+- `Client.assignVoucherCode()` -> `Loyalty.assignVoucherCode()`.
+- `Client.getAssignedVoucherCodes()` -> `Loyalty.getAssignedVoucherCodes()`.
+- `Profile.registerClient()` -> `Client.registerAccount()`.
+- `Profile.registerForPush()` -> `Client.registerForPush()`.
+- `Profile.activateClient()` -> `Client.activateAccount()`.
+- `Profile.requestPasswordReset()` -> `Client.requestPasswordReset()`.
+- `Profile.confirmResetPassword()` -> `Client.confirmPasswordReset()`.
 
 ### Removed
 - Overall validation.
-- Profile module.
-- Client.getAnalytics method.
-- Client.setConfiguration method.
-- Client.createAuthToken method.
+- `Profile` module.
+- `Client.getAnalytics()` method.
+- `Client.setConfiguration()` method.
+- `Client.createAuthToken()` method.
 
 
 ## [3.2.30] - 2018-11-01
@@ -623,7 +631,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Removed validation for email, birthdate and phone number in several functions in the SDK.
-- Added argument validation for nonnull argument in Client and Profile modules (SDK throw SNRInvalidArgumentException).
+- Added argument validation for nonnull argument in Client and Profile modules (SDK throw `InvalidArgumentException`).
 
 
 ## [3.2.29] - 2018-10-23
@@ -633,7 +641,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Client method to obtain client's authorization token by Facebook token.
-- SNRApiError class with more information from backend system.
+- `ApiError` class with more information from backend system.
 
 
 ## [3.2.28] - 2018-10-18
@@ -648,11 +656,11 @@ All notable changes to this project will be documented in this file.
 - Option to disable In App Push Notification Alerts.
 
 ### Changed
-- Client models structure (ClientAccountInformation, ClientUpdateContext).
-- ClientSex is now enum type instead of object.
+- Client models structure (`ClientAccountInformation`, `ClientUpdateContext`).
+- `ClientSex` is now enum type instead of object.
 
 ### Removed
-- ClientAgreeementsContext model (use ClientAgreeementsContext instead).
+- `ClientAgreeementsContext` model (use `ClientAgreeementsContext` instead).
 
 
 ## [3.2.26] - 2018-10-05
@@ -681,10 +689,10 @@ All notable changes to this project will be documented in this file.
 - New method to fetch promotions data with statuses and expiration options.
 
 ### Changed
-- Promotions API models structure (ClientPromotion, ProfilePromotion).
-- Method Profile.activateAccount changed to Profile.activateClient.
-- Method Profile.confirmAccount changed to Profile.confirmPhoneRegistration.
-- Method Profile.resetPassword changed to Profile.requestPasswordReset.
+- Promotions API models structure (`ClientPromotion`, `ProfilePromotion`).
+- Method `Profile.activateAccount()` changed to `Profile.activateClient()`.
+- Method `Profile.confirmAccount()` changed to `Profile.confirmPhoneRegistration()`.
+- Method `Profile.resetPassword()` changed to `Profile.requestPasswordReset()`.
 
 
 ## [3.2.24] - 2018-09-18
@@ -779,7 +787,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Method to get current client's UUID.
-- customId property in ClientProfileContext.
+- customId property in `ClientProfileContext`.
 - improvements for exceptions/errors handling in obj-c/swift.
 
 ### Fixed
@@ -789,7 +797,7 @@ All notable changes to this project will be documented in this file.
 ## [3.2.11] - 2018-06-21
 
 ### Fixed
-- Profile.deleteClient.
+- `Profile.deleteClient()`.
 
 
 ## [3.2.10] - 2018-06-18
@@ -851,21 +859,21 @@ All notable changes to this project will be documented in this file.
 ## [3.2.3] - 2018-05-16
 
 ### Fixed
-- SNRClientProfileContext class visibility to public.
+- `ClientProfileContext` class visibility to public.
 
 
 ## [3.2.2] - 2018-05-16
 
 ### Added
 - Validation for email, password, birthdate, phone number in SDK methods (SDK throws exceptions).
-- New method for fetching client profile information: Profile.getClient().
+- New method for fetching client profile information: `Profile.getClient()`.
 
 
 ## [3.2.1] - 2018-05-10
 
 ### Changed
-- Property type 'clientId' changed from NSInteger to NSNumber in SNRCreateClientContext model.
-- Property type 'birthDate' changed from NSDate to NSString in few models: SNRClientAccountInformation, SNRClientUpdateAccountContext, SNRUpdateClientContext, SNRCreateClientContext.
+- Property type 'clientId' changed from NSInteger to NSNumber in `CreateClientContext` model.
+- Property type 'birthDate' changed from NSDate to NSString in few models: `ClientAccountInformation`, `ClientUpdateAccountContext`, `UpdateClientContext`, `CreateClientContext`.
 
 
 ## [3.2.0] - 2018-05-09

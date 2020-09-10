@@ -22,11 +22,17 @@ NS_SWIFT_NAME(GeneralSettings)
 //Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
-//This parameter identifies the group used by applications and extensions belongs to.
+//This parameter identifies the user defaults group used by applications and extensions belongs to.
 //Note, that it is required property to allow the SDK communicating with Host App and its extensions for proper handling Rich Media Notifications.
 //
 //Property is nil by default.
 @property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
+
+//This parameter identifies the keychain group used by applications, extensions and services belongs to.
+//Note, that it is required property to allow the SDK communicating with Host App and notification service extension for proper notification decryption.
+//
+//Property is nil by default.
+@property (copy, nonatomic, nullable, readwrite) NSString *keychainGroupIdentifier;
 
 //This parameter sets time interval counting backwards from expiration time, within which token will be automatically refreshed by SDK.
 //Note, that minimum value for this parameter is 1800 seconds (30 minutes).
@@ -50,7 +56,6 @@ NS_SWIFT_NAME(GeneralSettings)
 //
 //Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL shouldDestroySessionOnApiKeyChange;
-
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
