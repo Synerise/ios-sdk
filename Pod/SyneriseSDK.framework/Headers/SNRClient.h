@@ -453,18 +453,6 @@ NS_SWIFT_NAME(Client)
  */
 + (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
-/**
- * Registers user for push notifications.
- *
- * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- *  *
- * @deprecated Deprecated in version 3.5.13
- */
-+ (void)registerForPush:(NSString *)registrationToken
-                success:(void (^)(BOOL isSuccess))success
-                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.registerForPush(token:mobilePushAgreement:success:failure:) instead.");
 
 /**
  * Registers user for push notifications.

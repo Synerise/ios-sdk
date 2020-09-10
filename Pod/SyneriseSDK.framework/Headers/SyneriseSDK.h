@@ -130,6 +130,9 @@
 #import <SyneriseSDK/SNRContentWidgetOptions.h>
 #import <SyneriseSDK/SNRContentWidget.h>
 
-// Content Extensions
+// Notification Service Extension Helpers
+#import <SyneriseSDK/SNRNotificationEncryptionHelper.h>
+
+// Notification Content Extensions
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
 #import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>

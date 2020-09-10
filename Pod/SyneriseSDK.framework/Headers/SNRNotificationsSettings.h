@@ -20,6 +20,11 @@ NS_SWIFT_NAME(NotificationsSettings)
 //Property is true by default.
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
+//This parameter specifies if notifications from Synerise should be encrypted.
+//
+//Property is false by default.
+@property (assign, nonatomic, readwrite) BOOL encryption;
+
 //This parameter determines whether the SDK displays an additional alert in the application after receiving notification.
 //
 //Property is true by default.

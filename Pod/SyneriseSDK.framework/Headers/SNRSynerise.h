@@ -207,39 +207,56 @@ NS_SWIFT_NAME(Synerise)
 + (void)setDelegate:(id<SNRSyneriseDelegate>)delegate;
 
 /**
- * Checks that notification's sender is Synerise.
+ * Checks if notification's sender is Synerise.
  *
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseNotification:(NSDictionary *)userInfo;
 
 /**
- * Checks that notification's sender is Synerise and its kind is Simple Push.
+ * Checks if notification's sender is Synerise and its kind is Simple Push.
  *
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseSimplePush:(NSDictionary *)userInfo;
 
 /**
- * Checks that notification's sender is Synerise and its kind is Banner.
+ * Checks if notification's sender is Synerise and its kind is Banner.
  *
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseBanner:(NSDictionary *)userInfo;
 
 /**
- * Checks that notification's sender is Synerise and its kind is Silent Command.
+ * Checks if notification's sender is Synerise and its kind is Silent Command.
  *
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseSilentCommand:(NSDictionary *)userInfo;
 
 /**
- * Checks that notification's sender is Synerise and its kind is Silent SDK Command.
+ * Checks if notification's sender is Synerise and its kind is Silent SDK Command.
  *
  * @param userInfo Key-Value map of data.
  */
 + (BOOL)isSyneriseSilentSDKCommand:(NSDictionary *)userInfo;
+
+/**
+ * Checks if notification payload is encrypted by Synerise.
+ *
+ * @param userInfo Key-Value map of data.
+ */
++ (BOOL)isNotificationEncrypted:(NSDictionary *)userInfo;
+
+/**
+ * Decrypts notification payload.
+ *
+ * @param userInfo Key-Value map of data.
+ *
+ * @note If notification is not encrypted the method returns raw payload.
+ * @note If notification is not decrypted successfully, the method returns nil
+ */
++ (nullable NSDictionary *)decryptNotification:(NSDictionary *)userInfo;
 
 /**
  * Handles notification payload and starts activity.
