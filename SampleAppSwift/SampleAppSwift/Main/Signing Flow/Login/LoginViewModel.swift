@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AuthenticationServices
 import FBSDKCoreKit
 import FBSDKLoginKit
 import SyneriseSDK
@@ -44,7 +45,7 @@ class LoginViewModel {
     }
     
     func authenticateByFacebookToken(onSuccess: @escaping (() -> ())) {
-        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+        guard let facebookToken = AccessToken.current?.tokenString else {
             return
         }
         
@@ -57,10 +58,33 @@ class LoginViewModel {
             context.agreements = agreements
             context.attributes = ["param": "value"]
 
-            Client.authenticateByFacebook(facebookToken: facebookToken, authID: "HIHI", context: context, success: { _ in
+            Client.authenticateByFacebook(facebookToken: facebookToken, authID: nil, context: context, success: { _ in
                 onSuccess()
             }, failure: { error in
-                
+
+            })
+        }
+    }
+    
+    @available(iOS 13.0, *)
+    func authenticateByAppleSignIn(appleIdCredential: ASAuthorizationAppleIDCredential, onSuccess: @escaping (() -> ()), onError: @escaping (() -> ())) {
+        guard let identityToken = appleIdCredential.identityToken else {
+            return
+        }
+
+        Client.authenticateByAppleSignInIfRegistered(identityToken: identityToken, authID: nil, success: { _ in
+            onSuccess()
+        }) { (error) in
+            let agreements: ClientAgreements = ClientAgreements()
+            
+            let context: ClientAppleSignInAuthenticationContext = ClientAppleSignInAuthenticationContext()
+            context.agreements = agreements
+            context.attributes = ["param": "value"]
+
+            Client.authenticateByAppleSignIn(identityToken: identityToken, authID: nil, context: context, success: { _ in
+                onSuccess()
+            }, failure: { error in
+                onError()
             })
         }
     }

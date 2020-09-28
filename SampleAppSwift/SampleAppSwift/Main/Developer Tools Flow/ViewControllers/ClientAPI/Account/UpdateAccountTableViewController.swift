@@ -60,6 +60,7 @@ class UpdateAccountTableViewController: DefaultTableViewController {
             return nil
         }
         
+        context.customId = "TEST"
         context.phone = phoneNumber
         context.firstName = firstNameTextField.text
         context.lastName = lastNameTextField.text

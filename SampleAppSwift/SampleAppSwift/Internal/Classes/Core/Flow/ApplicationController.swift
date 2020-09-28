@@ -39,7 +39,6 @@ class ApplicationController {
     func initializeSyneriseSDK() {
         syneriseManager = SyneriseManager.resolve()
         syneriseManager.initialize()
-        syneriseManager.setSyneriseDelegate(self)
         
         let notificationService: NotificationService = serviceProvider.getNotificationService()
         notificationService.addDelegate(syneriseManager)
@@ -137,27 +136,5 @@ extension ApplicationController: Resolvable {
     
     static func resolve() -> ObjectType {
         return Administrator.assembly.resolve(ApplicationController.self)!
-    }
-}
-
-extension ApplicationController: SyneriseDelegate {
-    func snr_handledAction(url: URL) {
-        if UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
-    }
-    
-    func snr_handledAction(deepLink: String) {
-        if let url = URL(string: deepLink) {
-            url.params?.forEach({ (key, value) in
-                if key == "sku" {
-                    self.getMainCoordinator()?.didReceiveDeeplinkWithSku(value)
-                }
-            })
-        }
     }
 }

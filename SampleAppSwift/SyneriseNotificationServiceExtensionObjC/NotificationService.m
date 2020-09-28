@@ -14,28 +14,25 @@
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
 @property (nonatomic, strong) UNMutableNotificationContent *bestAttemptContent;
 
-@property (nonatomic, strong) SNRNotificationEncryptionHelper *notificationEncryptionHelper;
-
 @end
 
 @implementation NotificationService
+
+#pragma mark - Inherited
 
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
     
-    self.notificationEncryptionHelper = [SNRNotificationEncryptionHelper new];
+    SNRSynerise.settings.sdk.appGroupIdentifier = @"group.com.synerise.sdk.sample-swift";
+    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"34N2Z22TKH.keychainGroup";
     
-    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"[YOUR_KEYCHAIN_GROUP_IDENTIFIER]";
+#ifdef DEBUG
+    [SNRNotificationServiceExtension setDebugModeEnabled:YES];
+#endif
     
-    BOOL shouldDecryptNotification = [self.notificationEncryptionHelper isNotificationContentEncrypted:self.bestAttemptContent];
-    if (shouldDecryptNotification == YES) {
-        SNRNotificationDecryptionResult decryptionResult = [self.notificationEncryptionHelper decryptNotificationContent:self.bestAttemptContent];
-        if (decryptionResult != SNRNotificationDecryptionResultDecryptSuccess) {
-            self.bestAttemptContent.title = @"(Encrypted)";
-            self.bestAttemptContent.body = @"(Encrypted)";
-        }
-    }
+    [SNRNotificationServiceExtension setDecryptionFallbackNotificationTitle:@"(...)" andBody:@"(...)"];
+    [SNRNotificationServiceExtension didReceiveNotificationExtensionRequest:request withMutableNotificationContent:self.bestAttemptContent];
     
     self.contentHandler(self.bestAttemptContent);
 }
@@ -43,12 +40,6 @@
 - (void)serviceExtensionTimeWillExpire {
     // Called just before the extension will be terminated by the system.
     // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-    
-    BOOL shouldDecryptNotification = [self.notificationEncryptionHelper isNotificationContentEncrypted:self.bestAttemptContent];
-    if (shouldDecryptNotification == YES) {
-        self.bestAttemptContent.title = @"(Encrypted)";
-        self.bestAttemptContent.body = @"(Encrypted)";
-    }
 
     self.contentHandler(self.bestAttemptContent);
 }

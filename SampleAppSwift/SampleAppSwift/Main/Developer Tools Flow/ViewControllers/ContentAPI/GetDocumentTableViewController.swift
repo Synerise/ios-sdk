@@ -13,14 +13,39 @@ class GetDocumentTableViewController: DefaultTableViewController {
     
     @IBOutlet weak var slugTextField: UITextField!
     
+    @IBOutlet weak var schemaTextField: UITextField!
+    @IBOutlet weak var versionTextField: UITextField!
+    
     // MARK: IBAction
     
-    @IBAction func getDocumentButtonTapped(_ sender: DefaultButton) {
-        guard let slug = slugTextField.text else {
+    @IBAction func getDocumentBySlugButtonTapped(_ sender: DefaultButton) {
+        guard let slug = slugTextField.text, !slug.isEmpty else {
             return
         }
         
         Content.getDocument(slug: slug, success: { document in
+            self.pushDebugViewController(text: (document as AnyObject).description)
+        }) { error in
+            self.showErrorInfo(error as NSError)
+        }
+    }
+    
+    @IBAction func getDocumentsBySchemaButtonTapped(_ sender: DefaultButton) {
+        guard let schema = schemaTextField.text, !schema.isEmpty else {
+            return
+        }
+        
+        guard let version = versionTextField.text else {
+            return
+        }
+        
+        let apiQuery: DocumentsApiQuery = DocumentsApiQuery(type: .bySchema, typeValue: schema)
+        
+        if version.isEmpty == false {
+            apiQuery.version = version
+        }
+        
+        Content.getDocuments(apiQuery: apiQuery, success: { document in
             self.pushDebugViewController(text: (document as AnyObject).description)
         }) { error in
             self.showErrorInfo(error as NSError)

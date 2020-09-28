@@ -89,6 +89,14 @@ class RecommendationsWidgetAsSliderTableViewController: DefaultTableViewControll
         itemLayout.imageHeightRatio = widgetItemImageHeightFraction
         itemLayout.borderWidth = widgetItemBorderWidth
         itemLayout.borderColor = UIColor.black
+        itemLayout.isSalePriceVisible = true
+        itemLayout.salePriceOrientation = .horizontal
+        itemLayout.priceGroupSeparator = "  "
+        itemLayout.priceDecimalSeparator = ","
+        itemLayout.regularPriceFont = UIFont.systemFont(ofSize: 12.0)
+        itemLayout.regularPriceFontColor = UIColor.lightGray
+        itemLayout.salePriceFont = UIFont.systemFont(ofSize: 14.0)
+        itemLayout.salePriceFontColor = UIColor.red
         
         if widgetItemShadow {
             itemLayout.shadowColor = UIColor.black

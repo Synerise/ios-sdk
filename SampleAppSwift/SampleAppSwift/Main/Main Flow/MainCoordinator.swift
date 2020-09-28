@@ -156,7 +156,14 @@ class MainCoordinator: Coordinator {
     }
 
     private func resolveFlow() {
-        showShopFlow()
+        let syneriseManager: SyneriseManager = self.applicationController.syneriseManager
+        let isSignedIn: Bool = syneriseManager.isSignedIn()
+        
+        if isSignedIn {
+            showShopFlow()
+        } else {
+            showDeveloperToolsFlow()
+        }
     }
 
     private func showShopFlow() {
@@ -240,7 +247,7 @@ class MainCoordinator: Coordinator {
         let syneriseManager: SyneriseManager = self.applicationController.syneriseManager
         syneriseManager.signOut()
         
-        FBSDKLoginManager().logOut()
+        LoginManager().logOut()
         
         self.userSignedOut()
     }

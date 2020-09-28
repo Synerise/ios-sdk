@@ -37,7 +37,7 @@ class LeftMenuViewController: DefaultViewController {
         }
     }
     
-    @IBOutlet weak var applicationBuildVersionLabel: UILabel!
+    @IBOutlet weak var applicationVersionLabel: UILabel!
     @IBOutlet weak var syneriseSDKConfigurationInfoLabel: UILabel!
     
     @IBOutlet weak var activeAreaContainerView: UIView!
@@ -59,12 +59,12 @@ class LeftMenuViewController: DefaultViewController {
         setupAppearance()
         setupMenuTableView()
         setHidden()
-        setApplicationBuildVersionLabel()
+        setApplicationVersionLabel()
         setSyneriseSDKConfigurationInfoLabel()
         
         viewModel.onUpdate = {
             self.refresh()
-            self.setApplicationBuildVersionLabel()
+            self.setApplicationVersionLabel()
             self.setSyneriseSDKConfigurationInfoLabel()
         }
     }
@@ -139,8 +139,8 @@ class LeftMenuViewController: DefaultViewController {
         self.activeAreaContainerViewLeftConstraint.constant = -(self.view.frame.size.width)
     }
     
-    private func setApplicationBuildVersionLabel() {
-        self.applicationBuildVersionLabel.text = self.viewModel.applicationBuildVersionString
+    private func setApplicationVersionLabel() {
+        self.applicationVersionLabel.text = self.viewModel.applicationVersionString
     }
     
     private func setSyneriseSDKConfigurationInfoLabel() {

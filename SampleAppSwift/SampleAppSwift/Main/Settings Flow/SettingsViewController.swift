@@ -17,6 +17,7 @@ class SettingsViewController: DefaultViewController {
     
     @IBOutlet weak var notificationsEnabledSwitch: UISwitch!
     @IBOutlet weak var notificationsDisableInAppAlertsSwitch: UISwitch!
+    @IBOutlet weak var notificationsEncryptionSwitch: UISwitch!
     
     @IBOutlet weak var autoTrackingEnabledSwitch: UISwitch!
     @IBOutlet weak var trackinghEnabledSwitch: UISwitch!
@@ -36,6 +37,11 @@ class SettingsViewController: DefaultViewController {
     @IBAction func notificationsDisableInAppAlertsTapped() {
         Synerise.settings.notifications.disableInAppAlerts = self.notificationsDisableInAppAlertsSwitch.isOn
         settingsService.set(self.notificationsDisableInAppAlertsSwitch.isOn, forKey: .notificationsDisableInAppAlertsKey)
+    }
+    
+    @IBAction func notificationsEncryptionTapped() {
+        Synerise.settings.notifications.encryption = self.notificationsEncryptionSwitch.isOn
+        settingsService.set(self.notificationsEncryptionSwitch.isOn, forKey: .notificationsEncryptionKey)
     }
     
     @IBAction func autoTrackingEnabledTapped() {
@@ -63,6 +69,7 @@ class SettingsViewController: DefaultViewController {
         self.sdkEnabledSwitch.isOn = Synerise.settings.sdk.enabled
         self.notificationsEnabledSwitch.isOn = Synerise.settings.notifications.enabled
         self.notificationsDisableInAppAlertsSwitch.isOn = Synerise.settings.notifications.disableInAppAlerts
+        self.notificationsEncryptionSwitch.isOn = Synerise.settings.notifications.encryption
         self.autoTrackingEnabledSwitch.isOn = Synerise.settings.tracker.autoTracking.enabled
         self.trackinghEnabledSwitch.isOn = Synerise.settings.tracker.tracking.enabled
     }

@@ -27,6 +27,19 @@ class ClientAPIViewController: DefaultViewController {
         self.presentAlert(title: "UUID", message: UUID)
     }
     
+    @IBAction func refreshTokenButtonWasPressed(_ sender: DefaultButton) {
+        showLoading()
+        Client.refreshToken(success: { () in
+            self.hideLoading()
+            self.presentAlert(title: "Client Token has refreshed", message: "")
+        }, failure: { (error) in
+            self.hideLoading()
+            self.showErrorInfo(error as NSError)
+        })
+        
+        sender.animateTapping()
+    }
+    
     @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
         Client.getToken(success: { (token, origin) in
@@ -47,7 +60,7 @@ class ClientAPIViewController: DefaultViewController {
         Client.retrieveToken(success: { (token) in
             self.hideLoading()
             
-            let tokenDescription = SNR_TokenOriginToString(token.tokenOrigin) + "\n\n" + (token.tokenString as String)
+            let tokenDescription = SNR_TokenOriginToString(token.tokenOrigin) + "\n\n" + token.claimsDictionary.description + "\n\n" + (token.tokenString as String)
             self.pushDebugViewController(text: tokenDescription)
         }, failure: { (error) in
             self.hideLoading()
@@ -58,7 +71,7 @@ class ClientAPIViewController: DefaultViewController {
     }
     
     @IBAction func getFacebookTokenButtonWasPressed(_ sender: DefaultButton) {
-        guard let facebookToken = FBSDKAccessToken.current()?.tokenString else {
+        guard let facebookToken = AccessToken.current?.tokenString else {
             return
         }
         
@@ -67,6 +80,10 @@ class ClientAPIViewController: DefaultViewController {
     
     @IBAction func regenerateUUID() {
         Client.regenerateUUID()
+    }
+    
+    @IBAction func destroySession() {
+        Client.destroySession()
     }
     
     // MARK: - Lifecycle

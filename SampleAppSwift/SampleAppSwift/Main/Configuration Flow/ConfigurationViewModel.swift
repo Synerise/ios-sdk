@@ -35,9 +35,21 @@ class ConfigurationViewModel {
         
         return false
     }
-   
+    
+    func saveDefaultSettings() {
+        let settingsService = coordinator?.applicationController.serviceProvider.getSettingsService()
+        
+        settingsService?.set(true, forKey: .sdkEnabledKey)
+        settingsService?.set(true, forKey: .notificationsEnabledKey)
+        settingsService?.set(false, forKey: .notificationsDisableInAppAlertsKey)
+        settingsService?.set(false, forKey: .notificationsEncryptionKey)
+        settingsService?.set(true, forKey: .autoTrackingEnabledKey)
+        settingsService?.set(true, forKey: .trackingEnabledKey)
+    }
+    
     func saveAPIKeys() {
         let settingsService = coordinator?.applicationController.serviceProvider.getSettingsService()
+        
         settingsService?.set(clientAPIKey.value, forKey: SettingsServiceKey.syneriseClientAPIKey)
     }
 }

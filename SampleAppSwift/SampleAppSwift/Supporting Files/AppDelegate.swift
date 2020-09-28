@@ -11,6 +11,7 @@ import Swinject
 import UserNotifications
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SyneriseSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //uncomment lines below if you want to use Firebase and notifications
         //Administrator.shared.setupFirebase()
         //Administrator.shared.setupNotifications()
         
         applicationController.run()
+        
         return true
     }
     
@@ -34,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let sourceApplication: String? = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String
         let annotation: Any? = options[UIApplication.OpenURLOptionsKey.annotation]
         
-        let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        let handled: Bool = ApplicationDelegate.shared.application(app, open: url, sourceApplication: sourceApplication, annotation: annotation)
 
         return handled
     }
@@ -53,6 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notificationService = Administrator.shared.serviceProvider.getNotificationService()
         notificationService.handleNotificationUserInfo(userInfo)
         
-        completionHandler(.noData)
+        completionHandler(.newData)
     }
 }

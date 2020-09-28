@@ -133,6 +133,8 @@ class ProfileFormViewModel {
         
         clientUpdateAccountContext = ClientUpdateAccountContext.init()
         
+        clientUpdateAccountContext.customId = "TEST"
+        
         if let firstname = self.firstName.value, firstname.count > 0 {
             clientUpdateAccountContext.firstName = firstname
         }

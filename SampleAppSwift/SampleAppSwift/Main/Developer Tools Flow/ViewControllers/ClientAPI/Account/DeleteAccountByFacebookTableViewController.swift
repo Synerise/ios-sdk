@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 import SyneriseSDK
 
 class DeleteAccountByFacebookTableViewController: DefaultTableViewController {
@@ -34,6 +36,8 @@ class DeleteAccountByFacebookTableViewController: DefaultTableViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "Delete Account"
+        
+        facebookTokenTextField.text = AccessToken.current?.tokenString ?? ""
     }
 
 }

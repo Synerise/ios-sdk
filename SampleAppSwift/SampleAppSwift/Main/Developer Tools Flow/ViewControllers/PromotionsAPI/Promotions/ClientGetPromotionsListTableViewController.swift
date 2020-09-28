@@ -25,20 +25,8 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     // MARK: - IBAction
     
     @IBAction func getPromotionsList() {
-        let apiQuery = PromotionsApiQuery()
-        apiQuery.types = [SNR_PROMOTION_TYPE_GENERAL]
-        apiQuery.statuses = [SNR_PROMOTION_STATUS_ACTIVE, SNR_PROMOTION_STATUS_ASSIGNED]
-        apiQuery.types = [SNR_PROMOTION_TYPE_GENERAL]
-        apiQuery.sorting = [
-            [SNR_PROMOTION_SORTING_KEY_EXPIRE_AT: SNR_API_QUERY_SORTING_ASC],
-            [SNR_PROMOTION_SORTING_KEY_TYPE: SNR_API_QUERY_SORTING_DESC]
-        ]
-        apiQuery.limit = 50
-        apiQuery.page = 1
-        apiQuery.includeMeta = true
-        
         self.showLoading()
-        Promotions.getPromotions(apiQuery: apiQuery, success: { (promotionsList) in
+        Promotions.getPromotions(success: { (promotionsList) in
             self.hideLoading()
             
             let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)
@@ -50,38 +38,45 @@ class ClientGetPromotionsListTableViewController: DefaultTableViewController {
     }
     
     @IBAction func getPromotionsListWithOptions() {
-        var statuses: [NSNumber] = [NSNumber]()
+        var statuses: [String] = [String]()
         
         if statusActiveSwitch.isOn {
-            statuses.append(PromotionStatus.active.rawValue as NSNumber)
+            statuses.append(SNR_PromotionStatusToString(PromotionStatus.active))
         }
 
         if statusAssignedSwitch.isOn {
-            statuses.append(PromotionStatus.assigned.rawValue as NSNumber)
+            statuses.append(SNR_PromotionStatusToString(PromotionStatus.assigned))
         }
 
         if statusRedemeedSwitch.isOn {
-            statuses.append(PromotionStatus.redeemed.rawValue as NSNumber)
+            statuses.append(SNR_PromotionStatusToString(PromotionStatus.redeemed))
         }
         
-        var types: [NSNumber] = [NSNumber]()
+        var types: [String] = [String]()
         
         if typeMembersOnlySwitch.isOn {
-            types.append(PromotionType.membersOnly.rawValue as NSNumber)
+            types.append(SNR_PromotionTypeToString(PromotionType.membersOnly))
         }
         
         if typeCustomSwitch.isOn {
-            types.append(PromotionType.custom.rawValue as NSNumber)
+            types.append(SNR_PromotionTypeToString(PromotionType.custom))
         }
         
         if typeGeneralSwitch.isOn {
-            types.append(PromotionType.general.rawValue as NSNumber)
+            types.append(SNR_PromotionTypeToString(PromotionType.general))
         }
         
         let includeMeta: Bool = includeMetaSwitch.isOn
         
+        let apiQuery = PromotionsApiQuery()
+        apiQuery.types = types
+        apiQuery.statuses = statuses
+        apiQuery.limit = 50
+        apiQuery.page = 1
+        apiQuery.includeMeta = includeMeta
+        
         self.showLoading()
-        Promotions.getPromotions(statuses: statuses, types: types, limit: 100, page: 1, includeMeta: includeMeta, success: { (promotionsList) in
+        Promotions.getPromotions(apiQuery: apiQuery, success: { (promotionsList) in
             self.hideLoading()
             
             let debugInfoString = self.makePromotionsListStringRepresentation(promotionsList)

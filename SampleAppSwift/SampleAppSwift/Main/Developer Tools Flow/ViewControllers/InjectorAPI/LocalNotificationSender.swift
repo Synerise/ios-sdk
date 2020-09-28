@@ -207,4 +207,20 @@ class LocalNotificationSender {
             
         })
     }
+    
+    func sendSignOutSDKCommand() {
+        let content = UNMutableNotificationContent()
+        content.title = "SDK Command"
+        content.body = "SIGN OUT"
+        content.userInfo = LocalNotificationsUserInfoData.getSignOutSDKCommandUserInfo()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        
+        let requestIdentifier = "kSignOutSDKCommandIdentifier"
+        let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { (error) in
+            
+        })
+    }
 }

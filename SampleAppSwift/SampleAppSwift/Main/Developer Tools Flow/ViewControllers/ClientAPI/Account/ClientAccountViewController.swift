@@ -43,23 +43,6 @@ class ClientAccountViewController: DefaultViewController {
         sender.animateTapping()
     }
     
-    @IBAction func deleteAccountWithSuccess(_ sender: DefaultButton) {
-        self.showLoading()
-        
-        Client.deleteAccount(password: "", success: { (_) in
-            Client.signOut()
-            
-            self.hideLoading()
-            self.showSuccessInfo()
-            
-            self.navigationController?.popToRootViewController(animated: true)
-        }, failure: { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
-        })
-        sender.animateTapping()
-    }
-    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -71,6 +54,7 @@ class ClientAccountViewController: DefaultViewController {
     // MARK: - Private
     
     private func makeAccountInformation(_ clientAccountInformation: ClientAccountInformation) -> String {
+        let clientID = String(clientAccountInformation.clientId)
         let firstName = clientAccountInformation.firstName ?? "nil"
         let lastName = clientAccountInformation.lastName ?? "nil"
         let adress = clientAccountInformation.address ?? "nil"
@@ -79,6 +63,7 @@ class ClientAccountViewController: DefaultViewController {
         let displayName = clientAccountInformation.displayName ?? "nil"
         
         let accountStringRepresintation = """
+        Client ID: \(clientID)
         First Name: \(firstName)
         Last Name: \(lastName)
         Address: \(adress)

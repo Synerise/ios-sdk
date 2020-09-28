@@ -37,6 +37,7 @@ class ConfigurationViewController: DefaultViewController {
     @IBAction func finishButtonWasPressed() {
         if viewModel.isFormValid() {
             viewModel.saveAPIKeys()
+            viewModel.saveDefaultSettings()
             viewModel.onFinishButton?()
         }
     }

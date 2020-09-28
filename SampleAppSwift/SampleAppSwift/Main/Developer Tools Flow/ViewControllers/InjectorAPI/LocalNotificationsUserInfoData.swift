@@ -164,7 +164,7 @@ class LocalNotificationsUserInfoData {
                 "rich-media": [
                     "type": "single-image",
                     "single-image": [
-                        "image": "https://pbs.twimg.com/profile_images/948179320702492672/OLYEDJdS_400x400.jpg"
+                        "image": "https://s.sdgcdn.com/7/2020/05/Website_SpecialDeals_Laptops-02.jpg"
                     ]
                 ]
             ]
@@ -505,6 +505,22 @@ class LocalNotificationsUserInfoData {
             "content": [
                 "class_name": "com.synerise.sdk.injector.Injector",
                 "method_name": "GET_LOCATION",
+                "method_parameters": []
+            ]
+        ]
+    }
+    
+    static func getSignOutSDKCommandUserInfo() -> [AnyHashable: Any] {
+        return [
+            "aps": [
+                "content-available": 1
+            ],
+            "issuer": "Synerise",
+            "message-type": "dynamic-content",
+            "content-type": "silent-sdk-command",
+            "content": [
+                "class_name": "com.synerise.sdk.injector.Injector",
+                "method_name": "SIGN_OUT",
                 "method_parameters": []
             ]
         ]

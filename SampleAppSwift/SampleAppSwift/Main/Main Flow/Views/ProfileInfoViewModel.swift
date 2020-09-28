@@ -18,6 +18,8 @@ class ProfileInfoViewModel {
     var name: BindingType<String>
     var email: BindingType<String>
     
+    private var dataDownloaded: Bool = false
+    
     // MARK: - Init
     
     init() {
@@ -29,24 +31,45 @@ class ProfileInfoViewModel {
     // MARK: - Public
     
     func downloadDataIfNeeded() {
+        if dataDownloaded {
+            return
+        }
+        
         self.isProcessing.value = true
         
         Client.getAccount(success: { (clientAccountInformation) in
             self.isProcessing.value = false
-            self.dataDownloaded(clientAccountInformation)
+            self.profileDataDownloaded(clientAccountInformation)
+            
+            Content.getDocument(slug: "points", success: { document in
+                self.pointsDataDownloaded(document)
+                
+                self.isProcessing.value = false
+                self.isDownloaded.value = true
+            }) { error in
+                DebugUtils.print(error.localizedDescription)
+                
+                self.isProcessing.value = false
+            }
         }, failure: { (error) in
             self.isProcessing.value = false
+            
             DebugUtils.print(error.localizedDescription)
         })
     }
     
     // MARK: - Private
     
-    private func dataDownloaded(_ data: ClientAccountInformation) {
-        //self.avatarURL.value = URL(string: "")
+    private func profileDataDownloaded(_ data: ClientAccountInformation) {
         self.name.value = "\(data.firstName ?? "") \(data.lastName ?? "")"
         self.email.value = data.email
-        
-        self.isDownloaded.value = true
+    }
+    
+    private func pointsDataDownloaded(_ data: [AnyHashable: Any]) {
+        if let email = self.email.value,
+            let content = data["content"] as? [AnyHashable: Any],
+            let points = content["points"] as? String {
+            self.email.value = "\(email)\n\nAvailable points: \(points)"
+        }
     }
 }

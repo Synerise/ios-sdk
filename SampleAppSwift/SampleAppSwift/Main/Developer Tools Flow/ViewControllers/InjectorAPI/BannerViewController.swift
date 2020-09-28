@@ -33,5 +33,8 @@ class BannerViewController: DefaultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Banner"
+        
+        prepareBackButton()
     }
 }

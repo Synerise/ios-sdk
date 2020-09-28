@@ -27,6 +27,9 @@ class RichMediaPushViewController: DefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        self.navigationItem.title = "Rich Media Simple Push"
+        
+        prepareBackButton()
     }
 }

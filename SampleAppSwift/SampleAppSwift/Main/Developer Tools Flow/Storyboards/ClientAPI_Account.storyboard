@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwe-kP-j1R">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwe-kP-j1R">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mCw-I0-WdQ">
-                                        <rect key="frame" x="0.0" y="24" width="375" height="780"/>
+                                        <rect key="frame" x="0.0" y="24" width="375" height="910"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnB-ga-V7h">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -375,7 +373,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="yrF-oV-nRy"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <state key="normal" title="Delete Account By Facebook">
+                                                        <state key="normal" title="Delete Account By OAuth">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -384,7 +382,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="1YE-9F-wkN" kind="show" id="RXE-HG-oFj"/>
+                                                            <segue destination="9yj-bv-AOh" kind="show" id="pcO-gS-Lst"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -394,6 +392,68 @@
                                                     <constraint firstAttribute="trailing" secondItem="qro-b0-QIx" secondAttribute="trailing" constant="16" id="Hul-bO-bXu"/>
                                                     <constraint firstAttribute="height" constant="65" id="Tjz-ad-S4L"/>
                                                     <constraint firstItem="qro-b0-QIx" firstAttribute="centerY" secondItem="po6-mX-oIT" secondAttribute="centerY" id="huO-f5-4dW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMZ-2G-lB7">
+                                                <rect key="frame" x="0.0" y="780" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-Nb-wP6" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="UdR-xM-8Ta"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Delete Account By Facebook">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="1YE-9F-wkN" kind="show" id="h4w-Ae-P9l"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dcc-Nb-wP6" secondAttribute="trailing" constant="16" id="4ba-Mk-3tr"/>
+                                                    <constraint firstItem="dcc-Nb-wP6" firstAttribute="leading" secondItem="qMZ-2G-lB7" secondAttribute="leading" constant="16" id="AZK-td-Wvz"/>
+                                                    <constraint firstAttribute="height" constant="65" id="nYq-Lx-RCP"/>
+                                                    <constraint firstItem="dcc-Nb-wP6" firstAttribute="centerY" secondItem="qMZ-2G-lB7" secondAttribute="centerY" id="qlc-Wk-F6B"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09g-mu-XPi">
+                                                <rect key="frame" x="0.0" y="845" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-FO-5UV" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="IhM-4o-OTp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Delete Account By Apple">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="P6E-uH-Pyu" kind="show" id="lP8-0S-ga6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="hOX-FO-5UV" secondAttribute="trailing" constant="16" id="3ec-dy-GUN"/>
+                                                    <constraint firstItem="hOX-FO-5UV" firstAttribute="centerY" secondItem="09g-mu-XPi" secondAttribute="centerY" id="3ep-w6-YYY"/>
+                                                    <constraint firstItem="hOX-FO-5UV" firstAttribute="leading" secondItem="09g-mu-XPi" secondAttribute="leading" constant="16" id="Zs1-cB-eTE"/>
+                                                    <constraint firstAttribute="height" constant="65" id="lYY-9D-0OO"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -430,7 +490,7 @@
             <objects>
                 <tableViewController id="upS-nC-2Xd" customClass="UpdateAccountTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="KPt-Hi-Djz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -448,7 +508,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="7Kt-Jk-BUQ"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
@@ -477,7 +536,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="opV-bo-ScL"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
@@ -506,7 +564,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="0tZ-EA-eym"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -535,7 +592,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="wBh-z0-GDB"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -564,7 +620,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="hHs-BD-8tp"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -593,7 +648,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="c7Z-xE-dIb"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -614,7 +668,7 @@
                                         <rect key="frame" x="0.0" y="661.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hYk-ps-gwv" id="len-uy-7nT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-c6-OGM" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
@@ -671,7 +725,7 @@
             <objects>
                 <tableViewController id="a9q-ZC-fFC" customClass="ResetClientPasswordTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dDx-zk-FaN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -689,7 +743,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="4IX-Rh-Yym"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -762,7 +815,7 @@
             <objects>
                 <tableViewController id="sB9-16-P0e" customClass="ConfirmPasswordResetTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="5hu-hP-h5K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -780,7 +833,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="lBG-CX-LZp"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -809,7 +861,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="895-ZL-JPE"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -884,7 +935,7 @@
             <objects>
                 <tableViewController id="c1F-dT-ohe" customClass="ChangeClientPasswordTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="4d7-wC-h6x">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -902,7 +953,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="d8m-NG-xLI"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
@@ -932,7 +982,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="e2r-4Q-Hss"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
@@ -1007,7 +1056,7 @@
             <objects>
                 <tableViewController id="Wex-g4-0QV" customClass="ConfirmPhoneNumberTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hbr-bF-Kkb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1025,7 +1074,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="4Xw-3h-6Pj"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1054,7 +1102,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="3qA-cC-hWW"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1128,7 +1175,7 @@
             <objects>
                 <tableViewController id="EKo-Si-gQT" customClass="UpdatePhoneNumberTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="D4i-wK-CWo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1146,7 +1193,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="ucf-3e-f5L"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1219,7 +1265,7 @@
             <objects>
                 <tableViewController id="Czy-Hi-gN3" customClass="DeleteAccountTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dve-do-5Bx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1237,7 +1283,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Cd3-gL-TJB"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1310,7 +1355,7 @@
             <objects>
                 <tableViewController id="7wT-et-qXL" customClass="UpdateEmailTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="G0z-mp-20U">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1328,7 +1373,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="N3P-6n-ZDe"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1357,7 +1401,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="3Qz-hq-rvn"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1470,7 +1513,7 @@
             <objects>
                 <tableViewController id="MxZ-c6-vPP" customClass="ConfirmEmailTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3gP-eZ-dQX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1488,7 +1531,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="H95-jJ-vo3"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1561,7 +1603,7 @@
             <objects>
                 <tableViewController id="1YE-9F-wkN" customClass="DeleteAccountByFacebookTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="NMg-M3-cT6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1579,7 +1621,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="9oq-xV-aSV"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -1639,13 +1680,165 @@
                             <outlet property="delegate" destination="1YE-9F-wkN" id="e4V-E8-tac"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="N4f-ch-LuQ"/>
                     <connections>
                         <outlet property="facebookTokenTextField" destination="ubh-SV-d2s" id="PJ7-6r-FRQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCJ-MX-uD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="1907"/>
+            <point key="canvasLocation" x="1791" y="1907"/>
+        </scene>
+        <!--Delete Account ByO Auth Table View Controller-->
+        <scene sceneID="d4p-pI-tbx">
+            <objects>
+                <tableViewController id="9yj-bv-AOh" customClass="DeleteAccountByOAuthTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="b6E-EW-ATW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="ACCESS TOKEN" id="J5t-2G-MgC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="CZJ-qs-0UW">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CZJ-qs-0UW" id="7bD-TP-up7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ACCESS TOKEN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="321-lX-rVV">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Zo2-Ar-8XA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="321-lX-rVV" firstAttribute="leading" secondItem="7bD-TP-up7" secondAttribute="leading" constant="16" id="MeI-a2-6cT"/>
+                                                <constraint firstItem="321-lX-rVV" firstAttribute="centerY" secondItem="7bD-TP-up7" secondAttribute="centerY" id="f0x-N3-FCo"/>
+                                                <constraint firstAttribute="trailing" secondItem="321-lX-rVV" secondAttribute="trailing" constant="16" id="ztL-mD-jKi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="pds-YY-5YO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="dzJ-VS-Id6">
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dzJ-VS-Id6" id="AAG-wb-Tvx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p76-uN-XMQ" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="ETP-gs-spK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Delete Account">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="deleteAccount" destination="9yj-bv-AOh" eventType="touchUpInside" id="EQM-g1-7ww"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="p76-uN-XMQ" secondAttribute="trailing" constant="16" id="5H1-qy-mwE"/>
+                                                <constraint firstItem="p76-uN-XMQ" firstAttribute="leading" secondItem="AAG-wb-Tvx" secondAttribute="leading" constant="16" id="GOf-1G-3Mz"/>
+                                                <constraint firstItem="p76-uN-XMQ" firstAttribute="centerY" secondItem="AAG-wb-Tvx" secondAttribute="centerY" id="eHO-aL-kvM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9yj-bv-AOh" id="gf0-m4-ZaG"/>
+                            <outlet property="delegate" destination="9yj-bv-AOh" id="OUi-Yd-cgv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="t1J-bc-F1q"/>
+                    <connections>
+                        <outlet property="accessTokenTextField" destination="321-lX-rVV" id="YCy-sr-N1U"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEW-m0-qjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="538"/>
+        </scene>
+        <!--Delete Account By Apple Table View Controller-->
+        <scene sceneID="sZF-ve-Jpb">
+            <objects>
+                <tableViewController id="P6E-uH-Pyu" customClass="DeleteAccountByAppleTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iM8-uw-QcW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Fire Method" id="4hB-LA-5h0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="z5m-R7-qpS">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z5m-R7-qpS" id="HXm-31-GwO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBD-ys-us9" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="xUd-Qa-moX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Delete Account">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="deleteAccount" destination="P6E-uH-Pyu" eventType="touchUpInside" id="7YL-6s-rGo"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fBD-ys-us9" secondAttribute="trailing" constant="16" id="NS2-8P-GAg"/>
+                                                <constraint firstItem="fBD-ys-us9" firstAttribute="centerY" secondItem="HXm-31-GwO" secondAttribute="centerY" id="Shj-P0-kSB"/>
+                                                <constraint firstItem="fBD-ys-us9" firstAttribute="leading" secondItem="HXm-31-GwO" secondAttribute="leading" constant="16" id="oC7-GA-LZh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="P6E-uH-Pyu" id="C4R-w6-0K3"/>
+                            <outlet property="delegate" destination="P6E-uH-Pyu" id="PjS-YT-6gL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="LOR-Hr-9O4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JqO-ia-n24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="1209"/>
         </scene>
     </scenes>
 </document>

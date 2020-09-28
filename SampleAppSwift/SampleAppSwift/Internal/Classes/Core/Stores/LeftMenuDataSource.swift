@@ -42,7 +42,7 @@ class LeftMenuDataSource {
     
     private static func getItemsForNotLoggedUser() -> [LeftMenuItem] {
         return [
-            LeftMenuItem(identity: LeftMenuItemIdentity.developerTools.rawValue, icon: UIImage(named: "LeftMenu/icon_settings")!, title: "LEFT_MENU_DEVELOPER_TOOLS".localized()),
+            LeftMenuItem(identity: LeftMenuItemIdentity.developerTools.rawValue, icon: UIImage(named: "LeftMenu/icon_developer_tools")!, title: "LEFT_MENU_DEVELOPER_TOOLS".localized()),
             LeftMenuItem(identity: LeftMenuItemIdentity.registration.rawValue, icon: UIImage(named: "LeftMenu/icon_profile")!, title: "LEFT_MENU_REGISTRATION".localized()),
             LeftMenuItem(identity: LeftMenuItemIdentity.login.rawValue, icon: UIImage(named: "LeftMenu/icon_signout")!, title: "LEFT_MENU_LOGIN".localized()),
             LeftMenuItem(identity: LeftMenuItemIdentity.settings.rawValue, icon: UIImage(named: "LeftMenu/icon_settings")!, title: "LEFT_MENU_SETTINGS".localized())

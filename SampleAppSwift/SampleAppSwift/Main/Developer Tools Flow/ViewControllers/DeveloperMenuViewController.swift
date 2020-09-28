@@ -28,8 +28,7 @@ class DeveloperMenuViewController: DefaultViewController {
     }
     
     @IBAction func showChat() {
-        let chat = Chat()
-        chat.trackerKey = ""
+        let chat = Chat(trackerKey: "EFC7C4F2-6F57-4A5A-ACD0-D339C7BCADF2")
         chat.navigationBarBackgroundColor = UIColor.gray
         chat.navigationBarTitle = "Chat"
         chat.navigationBarTitleColor = UIColor.white
@@ -40,12 +39,7 @@ class DeveloperMenuViewController: DefaultViewController {
         chat.show()
     }
     
-    @IBAction func resetApplication() {
-        delegate?.resetApplicationWasPressed(self)
-        Crashlytics.sharedInstance().crash()
-    }
-    
-    @IBAction func synerise1() {
+    @IBAction func switchToSyneriseMobileApps1() {
         let clientApiKey: String = Configuration.SyneriseSDK.clientAPIKey1
         
         showLoading()
@@ -60,7 +54,7 @@ class DeveloperMenuViewController: DefaultViewController {
         }
     }
     
-    @IBAction func synerise2() {
+    @IBAction func switchToSyneriseMobileApps2() {
         let clientApiKey: String = Configuration.SyneriseSDK.clientAPIKey2
         
         showLoading()
@@ -73,6 +67,27 @@ class DeveloperMenuViewController: DefaultViewController {
             self.hideLoading()
             self.showSuccessInfo("Current Synerise SDK profile", text: "Synerise Mobile Apps 2", debug: false)
         }
+    }
+    
+    @IBAction func resetApplication() {
+        delegate?.resetApplicationWasPressed(self)
+        
+        Crashlytics.sharedInstance().crash()
+    }
+    
+    @IBAction func executeCrash() {
+        let exception = NSException(name: NSExceptionName.genericException, reason: "Synerise Test Crash", userInfo: nil)
+        exception.raise()
+    }
+    
+    @IBAction func removeAllKeychainData() {
+        let secItemClasses = [kSecClassGenericPassword, kSecClassInternetPassword, kSecClassCertificate, kSecClassKey, kSecClassIdentity]
+        for itemClass in secItemClasses {
+            let spec: NSDictionary = [kSecClass: itemClass]
+            SecItemDelete(spec)
+        }
+        
+        NSException(name: NSExceptionName.genericException, reason: "Restart after removing all items in Keychain                       ", userInfo: nil).raise()
     }
 }
 

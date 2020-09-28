@@ -67,18 +67,29 @@ class LeftMenuViewModel {
         """
     }
     
-    var applicationBuildVersionString: String {
-        guard let sampleBuild = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+    var applicationVersionString: String {
+        guard let applicationVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
             return ""
         }
+        
+        guard let applicationBuild = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+            return ""
+        }
+        
+        #if DEBUG
+        let applicationBuildConfiguration = "DEBUG"
+        #else
+        let applicationBuildConfiguration = "RELEASE"
+        #endif
         
         guard let sdkVersion = Bundle(identifier: "com.synerise.SyneriseSDK")?.infoDictionary?["CFBundleShortVersionString"] as? String else {
             return ""
         }
         
         return """
-        Sample App | build: \(sampleBuild)
-        SyneriseSDK | version: \(sdkVersion)
+        \(applicationBuildConfiguration)
+        Sample App | Version: \(applicationVersion) | Build: \(applicationBuild)
+        SyneriseSDK | Version: \(sdkVersion)
         """
     }
 

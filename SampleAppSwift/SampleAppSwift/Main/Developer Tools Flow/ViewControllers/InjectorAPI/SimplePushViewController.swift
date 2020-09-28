@@ -32,6 +32,9 @@ class SimplePushViewController: DefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationItem.title = "Simple Push"
+        
+        prepareBackButton()
     }
 }

@@ -16,10 +16,17 @@ class SDKCommandsViewController: DefaultViewController {
         LocalNotificationSender().sendGetLocationSDKCommand()
     }
     
+    @IBAction func signOutSDKCommand() {
+        LocalNotificationSender().sendSignOutSDKCommand()
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "SDK Commands"
+        
+        prepareBackButton()
     }
 }

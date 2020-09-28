@@ -13,6 +13,7 @@ enum SettingsServiceKey: String {
     case sdkEnabledKey = "kSdkEnabledKey"
     case notificationsEnabledKey = "kNotificationsEnabledKey"
     case notificationsDisableInAppAlertsKey = "kNotificationsDisableInAppAlertsKey"
+    case notificationsEncryptionKey = "kNotificationsEncryptionKey"
     case autoTrackingEnabledKey = "kAutoTrackingEnabledKey"
     case trackingEnabledKey = "ktrackingEnabledKey"
 }

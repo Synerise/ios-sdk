@@ -141,6 +141,12 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
         itemLayout.borderColor = UIColor.black
         itemLayout.isSalePriceVisible = widgetItemSalePriceVisible
         itemLayout.salePriceOrientation = widgetItemSalePriceOrientation
+        itemLayout.priceGroupSeparator = "  "
+        itemLayout.priceDecimalSeparator = ","
+        itemLayout.regularPriceFont = UIFont.systemFont(ofSize: 12.0)
+        itemLayout.regularPriceFontColor = UIColor.lightGray
+        itemLayout.salePriceFont = UIFont.systemFont(ofSize: 14.0)
+        itemLayout.salePriceFontColor = UIColor.red
         
         let actionButton = ContentWidgetImageButtonCustomAction()
         actionButton.backgroundColor = UIColor.clear
@@ -150,7 +156,7 @@ class RecommendationsWidgetAsGridTableViewController: DefaultTableViewController
         actionButton.selectedImage = UIImage(imageLiteralResourceName: "Shop Flow/icon_favorite_remove")
         actionButton.size = CGSize(width: 40, height: 40)
         actionButton.predefinedActionType = .sendLikeEvent
-        actionButton.onReceiveClickAction = {
+        actionButton.onReceiveClick = {
             model, isSelected in
             
         }
