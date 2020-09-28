@@ -23,7 +23,9 @@ NS_SWIFT_NAME(NotificationsSettings)
 //This parameter specifies if notifications from Synerise should be encrypted.
 //
 //Property is false by default.
-@property (assign, nonatomic, readwrite) BOOL encryption;
+//
+//Note, that minimum iOS version 10 is required for this option.
+@property (assign, nonatomic, readwrite) BOOL encryption API_AVAILABLE(ios(10));
 
 //This parameter determines whether the SDK displays an additional alert in the application after receiving notification.
 //
@@ -34,7 +36,7 @@ NS_SWIFT_NAME(NotificationsSettings)
 //Note, that it is required property to allow the SDK communicating with Host App and its extensions for proper handling Rich Media Notifications.
 //
 //Property is nil by default.
-@property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.sdk.appGroupIdentifier instead.");
+@property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.settings.sdk.appGroupIdentifier` instead.");
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;

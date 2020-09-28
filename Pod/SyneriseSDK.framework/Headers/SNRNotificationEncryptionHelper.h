@@ -7,6 +7,7 @@
 //
 
 #import <UserNotifications/UserNotifications.h>
+#import <UserNotificationsUI/UserNotificationsUI.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,7 +32,6 @@ NS_SWIFT_NAME(NotificationEncryptionHelper)
 @interface SNRNotificationEncryptionHelper : NSObject
 
 - (void)setDebugModeEnabled:(BOOL)enabled;
-- (NSMutableDictionary *)makeNotificationUserInfoMutable:(NSDictionary *)userInfo;
 
 - (BOOL)isNotificationContentEncrypted:(UNMutableNotificationContent *)notificationContent NS_SWIFT_NAME(isNotificationContentEncrypted(_:)) API_AVAILABLE(ios(10.0));
 - (BOOL)isNotificationUserInfoEncrypted:(NSDictionary *)notificationUserInfo NS_SWIFT_NAME(isNotificationUserInfoEncrypted(_:));
