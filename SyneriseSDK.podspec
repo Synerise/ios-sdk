@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.authors       = "Synerise"
   s.platform      = :ios, "9.0"
   s.source        = { :git => 'https://github.com/Synerise/ios-sdk.git', :tag => s.version.to_s }
+  s.exclude_files = [ 'SampleAppSwift/**' ]
   s.frameworks    = 'UIKit', 'Foundation'
   s.vendored_frameworks = 'Pod/SyneriseSDK.framework'
   s.requires_arc        = true

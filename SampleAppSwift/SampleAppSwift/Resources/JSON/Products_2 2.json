@@ -1,0 +1,48 @@
+[
+ {
+ "brand": "Asus",
+ "name": "ASUS Transformer Mini",
+ "sku": "5",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam.",
+ "image":"http://gate.net.pl/mobile/el-t102.png",
+ "price": 111.99,
+ "rating": 3.1,
+ "ratingCount": 63,
+ "categories": "Laptops & tablets"
+ },
+ {
+ "brand": "Microsoft",
+ "name": "Microsoft Surface",
+ "sku": "6",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Curabitur mollis, urna sed condimentum euismod, risus mi sollicitudin neque, in dictum nibh arcu sit amet nisi. Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+ "image":"http://gate.net.pl/mobile/el-mbppro.png",
+ "price": 277.99,
+ "rating": 3.2,
+ "ratingCount": 54,
+ "categories": "Laptops & tablets"
+ },
+ {
+ "brand": "Apple",
+ "name": "Macbook Pro 13\"",
+ "sku": "7",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Curabitur mollis, urna sed condimentum euismod, risus mi sollicitudin neque, in dictum nibh arcu sit amet nisi. Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+ "image":"http://gate.net.pl/mobile/el-ipadpro.png",
+ "price": 1899.99,
+ "rating": 5.0,
+ "ratingCount": 343,
+ "categories": "Laptops & tablets"
+ },
+ {
+ "brand": "Apple",
+ "name": "iPad Pro 10.5\"",
+ "sku": "8",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Aliquam malesuada leo sed ante pharetra bibendum.",
+ "image":"http://gate.net.pl/mobile/sp-deer.png",
+ "price": 799.99,
+ "rating": 5.0,
+ "ratingCount": 434,
+ "categories": "Laptops & tablets"
+ }
+]
+ 
+ 

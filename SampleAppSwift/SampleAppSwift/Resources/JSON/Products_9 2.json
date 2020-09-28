@@ -1,0 +1,26 @@
+[
+ {
+ "brand": "Nike",
+ "name": "Nike Air Max 2015",
+ "sku": "31",
+ "description": "The upper of the Nike Air Max 2015 is made using a super lightweight, soft, and breathable material. The upper contains small and large holes to aid in airflow and reduce overheating of the foot.",
+ "image":"http://gate.net.pl/mobile/sp-airmax.png",
+ "price": 135.99,
+ "rating": 4.1,
+ "ratingCount": 63,
+ "categories": "Shoes"
+ },
+ {
+ "brand": "Adidas",
+ "name": "Deerupt Runner Shoes",
+ "sku": "32",
+ "description": "MINIMALIST SHOES WITH A BOLD WEBBING DESIGN. Deerupt is proof that minimalism can be bold. These shoes have an ultra-flexible mesh upper covered in a layer of stretch grid webbing",
+ "image":"http://gate.net.pl/mobile/sp-deer.png",
+ "price": 299.99,
+ "rating": 3.9,
+ "ratingCount": 57,
+ "categories": "Shoes"
+ }
+]
+ 
+ 
