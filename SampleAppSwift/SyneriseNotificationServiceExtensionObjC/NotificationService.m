@@ -24,14 +24,14 @@
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
     
-    SNRSynerise.settings.sdk.appGroupIdentifier = @"group.com.synerise.sdk.sample-swift";
-    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"34N2Z22TKH.keychainGroup";
+    SNRSynerise.settings.sdk.appGroupIdentifier = @"YOUR_APP_GROUP_IDENTIFIER";
+    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"YOUR_KEYCHAIN_GROUP_IDENTIFIER";
     
 #ifdef DEBUG
     [SNRNotificationServiceExtension setDebugModeEnabled:YES];
 #endif
     
-    [SNRNotificationServiceExtension setDecryptionFallbackNotificationTitle:@"(...)" andBody:@"(...)"];
+    [SNRNotificationServiceExtension setDecryptionFallbackNotificationTitle:@"(Encrypted)" andBody:@"(Encrypted)"];
     [SNRNotificationServiceExtension didReceiveNotificationExtensionRequest:request withMutableNotificationContent:self.bestAttemptContent];
     
     self.contentHandler(self.bestAttemptContent);

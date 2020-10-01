@@ -8,7 +8,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)keychainGroup</string>
+		<string>$(AppIdentifierPrefix)YOUR_KEYCHAIN_GROUP_IDENTIFIER</string>
 	</array>
 </dict>
 </plist>
