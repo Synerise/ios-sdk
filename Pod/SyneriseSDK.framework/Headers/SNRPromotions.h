@@ -25,7 +25,7 @@ NS_SWIFT_NAME(Promotions)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/disables console logs from SNRPromotions.
+ * Enables/Disables console logs from SNRPromotions.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *

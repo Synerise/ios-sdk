@@ -30,9 +30,6 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
 
     SNRErrorCodeJWTValidationFailed = 3300,
 
-    SNRErrorCodeChatDefaultError = 3510,
-    SNRErrorCodeChatTrackerKeyError = 3520,
-
     SNRErrorCodeCryptoFailedError = 3610,
 
     SNRErrorCodeMigrationError = 3710

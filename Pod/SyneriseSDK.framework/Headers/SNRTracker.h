@@ -68,7 +68,7 @@ NS_SWIFT_NAME(Tracker)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/disables console logs from SNRTracker.
+ * Enables/Disables console logs from SNRTracker.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *
@@ -102,7 +102,7 @@ NS_SWIFT_NAME(Tracker)
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.autoTracking.mode instead.");
 
 /**
- * Enables/disables sending location event automatically
+ * Enables/Disables sending location event automatically.
  *
  * @param enabled Specifies that sending location event is enabled/disabled.
  * @deprecated Deprecated in version 3.4.8
@@ -110,6 +110,7 @@ NS_SWIFT_NAME(Tracker)
 + (void)setLocationAutomaticEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.locationAutomatic instead.");
 
 /**
+ * Sets custom identifier for current client.
  * Your custom identifier will be sent within every event in event params.
  *
  * @param customIdentifier Client's custom identifier.
@@ -117,9 +118,10 @@ NS_SWIFT_NAME(Tracker)
 + (void)setCustomIdentifier:(nullable NSString *)customIdentifier;
 
 /**
+ * Sets custom email for current client.
  * Your custom email will be sent within every event in event params.
  *
- * @param customEmail Client's email.
+ * @param customEmail Client's custom email.
  */
 + (void)setCustomEmail:(nullable NSString *)customEmail;
 
