@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.17] - 2020-10-14
+
+### Fixed
+- Some issues with notification encryption configuration when regenerating data.
+- Issue that could have caused crash in `SyneriseCrashHandler`. 
+
+### Changed
+- Debug logs contain simple module name, not a class name.
+- Improvements to stability.
+
+### Removed
+- `Chat` module.
+
+
 ## [3.6.16] - 2020-09-28
 
 ### Added

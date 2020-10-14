@@ -23,10 +23,11 @@ NS_SWIFT_NAME(Content)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * This method enables/disables console logs from Content SDK.
- * It is not recommended to use debug mode in release version of your application.
+ * Enables/Disables console logs from SNRContent.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
+ *
+ * @note It is not recommended to use debug mode in release version of your application.
  */
 + (void)setLoggingEnabled:(BOOL)enabled;
 

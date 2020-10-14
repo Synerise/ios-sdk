@@ -26,6 +26,7 @@ NS_SWIFT_NAME(NotificationAnalyticsHelper)
 
 - (void)setDebugModeEnabled:(BOOL)enabled;
 - (void)trackPushViewEvent;
+- (void)trackPushImageTimeoutEvent;
 
 @end
 

@@ -30,7 +30,6 @@
 #import <SyneriseSDK/SNRContent.h>
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
-#import <SyneriseSDK/SNRChat.h>
 
 // API Queries
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>
