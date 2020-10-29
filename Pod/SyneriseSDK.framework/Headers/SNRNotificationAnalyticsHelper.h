@@ -19,6 +19,8 @@ API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(NotificationAnalyticsHelper)
 @interface SNRNotificationAnalyticsHelper : NSObject
 
+@property (assign, nonatomic, readwrite) BOOL isValid;
+
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 

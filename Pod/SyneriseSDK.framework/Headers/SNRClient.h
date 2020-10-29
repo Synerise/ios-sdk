@@ -193,7 +193,7 @@ NS_SWIFT_NAME(Client)
  */
 + (void)authenticateByAppleSignInWithIdentityToken:(NSData *)identityToken
                                             authID:(nullable NSString *)authID
-                                           context:(SNRClientAppleSignInAuthenticationContext *)context
+                                           context:(nullable SNRClientAppleSignInAuthenticationContext *)context
                                            success:(void (^)(BOOL isSuccess))success
                                            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(identityToken:authID:context:success:failure:));
 
@@ -236,7 +236,7 @@ NS_SWIFT_NAME(Client)
  * @deprecated Deprecated in version 3.4.10
  */
 + (void)getTokenWithSuccess:(void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.retrieveToken(token:success:failure:) instead.");
+                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.retrieveToken(token:success:failure:)` instead.");
 
 /**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.

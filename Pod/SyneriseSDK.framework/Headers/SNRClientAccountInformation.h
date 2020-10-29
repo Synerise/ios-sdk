@@ -41,7 +41,7 @@ NS_SWIFT_NAME(ClientAccountInformation)
 
 @property (assign, nonatomic, readonly) BOOL anonymous;
 
-@property (copy, nonatomic, nullable, readonly) SNRClientAgreements *agreements;
+@property (copy, nonatomic, nonnull, readonly) SNRClientAgreements *agreements;
 
 @property (copy, nonatomic, nullable, readonly) NSDictionary *attributes;
 @property (copy, nonatomic, nullable, readonly) NSArray<NSString *> *tags;
