@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ClientRegisterAccountContext)
 @interface SNRClientRegisterAccountContext : SNRBaseModel
 
-@property (copy, nonatomic, nullable, readwrite) NSString *email;
-@property (copy, nonatomic, nonnull, readwrite) NSString *password;
+@property (copy, nonatomic, nonnull, readonly) NSString *email;
+@property (copy, nonatomic, nonnull, readonly) NSString *password;
 
 @property (copy, nonatomic, nullable, readwrite) NSString *firstName;
 @property (copy, nonatomic, nullable, readwrite) NSString *lastName;

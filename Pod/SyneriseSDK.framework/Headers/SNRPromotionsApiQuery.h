@@ -23,7 +23,7 @@ NS_SWIFT_NAME(PromotionsApiQuery)
 @property (copy, nonatomic, nonnull, readwrite) NSArray<SNRPromotionStatusString> *statuses;
 @property (copy, nonatomic, nonnull, readwrite) NSArray<SNRPromotionTypeString> *types;
 
-@property (copy, nonatomic, nonnull, readwrite) NSArray<NSDictionary<SNRPromotionSortingKey, SNRApiQuerySortingOrderString> *> *sorting;
+@property (copy, nonatomic, nullable, readwrite) NSArray<NSDictionary<SNRPromotionSortingKey, SNRApiQuerySortingOrderString> *> *sorting;
 
 @property (assign, nonatomic, readwrite) NSInteger limit;
 @property (assign, nonatomic, readwrite) NSInteger page;

@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger, SNRDocumentsApiQueryType) {
 NS_SWIFT_NAME(DocumentsApiQuery)
 @interface SNRDocumentsApiQuery : NSObject
 
-@property (assign, nonatomic, readwrite) SNRDocumentsApiQueryType type;
-@property (copy, nonatomic, nullable, readwrite) NSString *typeValue;
+@property (assign, nonatomic, readonly) SNRDocumentsApiQueryType type;
+@property (copy, nonatomic, nonnull, readonly) NSString *typeValue;
 
 @property (copy, nonatomic, nullable, readwrite) NSString *version;
 

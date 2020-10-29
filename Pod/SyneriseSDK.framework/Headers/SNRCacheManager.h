@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(CacheManager)
 @interface SNRCacheManager : NSObject
 
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
+
 + (nullable id)get:(Class)aClass;
 
 @end

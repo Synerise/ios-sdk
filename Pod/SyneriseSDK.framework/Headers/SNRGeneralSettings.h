@@ -50,7 +50,7 @@ NS_SWIFT_NAME(GeneralSettings)
 //Note, that this option is only required for proper SSL Pinning support for system versions before iOS 10.
 //
 // Property is array contained kSNRPublicKeyPinningAlgorithmRsa2048 value by default.
-@property (assign, nonatomic, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
+@property (copy, nonatomic, nullable, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 
 //This parameter specifies if session should be destroyed after client api key changes.
 //
