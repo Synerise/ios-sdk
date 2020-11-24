@@ -68,7 +68,7 @@ NS_SWIFT_NAME(Tracker)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from SNRTracker.
+ * Enables/Disables console logs from Tracker module.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *
@@ -77,7 +77,7 @@ NS_SWIFT_NAME(Tracker)
 + (void)setLoggingEnabled:(BOOL)enabled;
 
 /**
- * Sets object for Tracker delegate methods.
+ * Sets object for Tracker module delegate methods.
  *
  * @param delegate An object that implement SNRTrackerDelegate protocol.
  */
