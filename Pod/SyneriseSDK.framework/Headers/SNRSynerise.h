@@ -271,7 +271,7 @@ NS_SWIFT_NAME(Synerise)
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  * @param actionIdentifier Identifier of action received from notification response.
  */
-+ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
++ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(nullable NSString *)actionIdentifier;
 
 @end
 

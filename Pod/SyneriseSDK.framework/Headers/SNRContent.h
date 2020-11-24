@@ -23,7 +23,7 @@ NS_SWIFT_NAME(Content)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from SNRContent.
+ * Enables/Disables console logs from Content module.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *

@@ -51,8 +51,9 @@
 
 // Other Types
 #import <SyneriseSDK/SNRHostApplicationType.h>
-#import <SyneriseSDK/SNRClientSessionEndReason.h>
 #import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
+#import <SyneriseSDK/SNRClientSessionEndReason.h>
+#import <SyneriseSDK/SNRClientIdentityProvider.h>
 
 // Managers
 #import <SyneriseSDK/SNRCacheManager.h>

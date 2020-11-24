@@ -3,9 +3,24 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.19] - 2020-11-24
+
+### Fixed
+- Some issues with notification processing in `NotificationServiceExtension`.
+
+### Added
+- Walkthrough dictionary returned in `InjectorWalkthroughDelegate` delegate method. `snr_walkthroughDidLoad(walkthroughDictionary:)`
+- `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` method.
+- New option to set whether events should be sent when server time synchronization has failed - `Synerise.settings.tracker.isBackendTimeSyncRequired`.
+
+### Changed
+- Information about device root is moved to AppStarted event.
+- Improvements to stability.
+
+
 ## [3.6.18] - 2020-10-29
 
-#### Changed
+### Changed
 - Improvements to stability.
 
 

@@ -92,7 +92,7 @@ NS_SWIFT_NAME(Injector)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from SNRInjector.
+ * Enables/Disables console logs from Injector module.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *

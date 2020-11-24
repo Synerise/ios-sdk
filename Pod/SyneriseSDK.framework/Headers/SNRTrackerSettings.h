@@ -43,6 +43,11 @@ NS_SWIFT_NAME(TrackerSettings)
 //Property is 5 seconds by default.
 @property (assign, nonatomic, readwrite) NSTimeInterval autoFlushTimeout;
 
+//This parameter specifies that events should being send when server time synchronization has failed.
+//
+//Property is true by default.
+@property (assign, nonatomic, readwrite) BOOL isBackendTimeSyncRequired;
+
 //This parameter specifies that sending location event is automatic.
 //
 //Property is false by default.
