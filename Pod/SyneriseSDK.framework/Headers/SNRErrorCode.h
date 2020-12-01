@@ -22,7 +22,9 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeInvalidResponseApiError = -106,
 
     SNRErrorCodeInvalidArgument = 3050,
+    SNRErrorCodeInternalInconsistency = 3060,
 
+    SNRErrorCodeInvalidImageResources = 3090,
     SNRErrorCodeImageNotDownloaded = 3110,
     
     SNRErrorCodeClientSessionUnauthorized = 3200,

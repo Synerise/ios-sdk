@@ -41,6 +41,7 @@
 #import <SyneriseSDK/SNRExceptionHandler.h>
 #import <SyneriseSDK/SNRException.h>
 #import <SyneriseSDK/SNRInvalidArgumentException.h>
+#import <SyneriseSDK/SNRInternalInconsistencyException.h>
 
 // Errors
 #import <SyneriseSDK/SNRErrorCode.h>
@@ -48,6 +49,7 @@
 #import <SyneriseSDK/SNRError.h>
 #import <SyneriseSDK/SNRApiError.h>
 #import <SyneriseSDK/SNRInvalidArgumentError.h>
+#import <SyneriseSDK/SNRInternalInconsistencyError.h>
 
 // Other Types
 #import <SyneriseSDK/SNRHostApplicationType.h>
