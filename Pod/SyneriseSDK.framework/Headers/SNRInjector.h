@@ -25,8 +25,17 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 
 /**
  * This method is called after walkthrough is loaded.
+ *
+ * @note This method will be invoked when method 'SNR_walkthroughDidLoad:' is not implemented.
  */
 - (void)SNR_walkthroughDidLoad NS_SWIFT_NAME(snr_walkthroughDidLoad());
+
+/**
+ * This method is called after walkthrough is loaded.
+ *
+ * @param walkthroughDictionary Dictionary representation of walkthrough.
+ */
+- (void)SNR_walkthroughDidLoad:(NSDictionary *)walkthroughDictionary NS_SWIFT_NAME(snr_walkthroughDidLoad(walkthroughDictionary:));
 
 /**
  * This method is called when an error occurs while loading walkthrough.
