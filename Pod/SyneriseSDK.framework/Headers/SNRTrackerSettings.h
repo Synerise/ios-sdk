@@ -22,6 +22,11 @@ NS_SWIFT_NAME(TrackerSettings)
 
 @property (strong, nonatomic, nonnull, readonly) SNRTrackerDeclarativeTrackingSettings *tracking;
 
+//This parameter specifies that events should being send when server time synchronization has failed.
+//
+//Property is true by default.
+@property (assign, nonatomic, readwrite) BOOL isBackendTimeSyncRequired;
+
 //This parameter sets a minimum number of events in queue required to send them.
 //Note, that adding any event to queue runs auto flush, so even queue with less than minimum number of required events will attempt to be sent.
 //Note, that maximum value for this parameter is 100.
@@ -42,11 +47,6 @@ NS_SWIFT_NAME(TrackerSettings)
 //
 //Property is 5 seconds by default.
 @property (assign, nonatomic, readwrite) NSTimeInterval autoFlushTimeout;
-
-//This parameter specifies that events should being send when server time synchronization has failed.
-//
-//Property is true by default.
-@property (assign, nonatomic, readwrite) BOOL isBackendTimeSyncRequired;
 
 //This parameter specifies that sending location event is automatic.
 //

@@ -66,8 +66,10 @@ NS_SWIFT_NAME(Client)
  * It is not recommended to use debug mode in release version of your application.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Sets object for Client's state delegate methods.

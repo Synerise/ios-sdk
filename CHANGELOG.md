@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.21] - 2020-12-07
+
+### Fixed
+- Issue that could have caused crash in `Client.retrieveToken(success:failure:)`. 
+- Issue that fix crash in `ContentWidget` when displaying image in `BasicProductItemLayout`.
+
+### Changed
+- `[MODULE].setLoggingEnabled(_:)` methods are deprecated. Please use `Synerise.setDebugMode(_:)` only.
+
+### Added
+- Single Image Notification (Rich Media) displays title and body on extended view.
+
+
 ## [3.6.20] - 2020-12-01
 
 ### Fixed

@@ -16,7 +16,9 @@ typedef NS_ENUM(NSUInteger, SNRClientIdentityProvider) {
     SNRClientIdentityProviderSynerise,
     SNRClientIdentityProviderOAuth,
     SNRClientIdentityProviderFacebook,
-    SNRClientIdentityProviderApple
+    SNRClientIdentityProviderApple,
+    SNRClientIdentityProviderGoogle,
+    SNRClientIdentityProviderUnknown
 } NS_SWIFT_NAME(ClientIdentityProvider);
 
 NSString * SNR_ClientIdentityProviderToString(SNRClientIdentityProvider type);

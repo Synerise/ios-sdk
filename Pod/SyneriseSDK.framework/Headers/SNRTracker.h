@@ -73,8 +73,10 @@ NS_SWIFT_NAME(Tracker)
  * @param enabled Specifies that console logs are enabled/disabled.
  *
  * @note It is not recommended to use debug mode in release version of your application.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Sets object for Tracker module delegate methods.
@@ -87,6 +89,7 @@ NS_SWIFT_NAME(Tracker)
  * Sets configuration of Tracker.
  *
  * @param configuration Configuration of tracker.
+ *
  * @deprecated Deprecated in version 3.4.8
  */
 + (void)setConfiguration:(SNRTrackerConfiguration)configuration DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.(minBatchSize|maxBatchSize|autoFlushTimeout) instead.");
@@ -97,6 +100,7 @@ NS_SWIFT_NAME(Tracker)
  * @note AutoTrack is disabled by default - mode is set up to SNRTrackerAutoTrackModeDisabled.
  *
  * @param mode Mode of AutoTrack functionality.
+ *
  * @deprecated Deprecated in version 3.4.8
  */
 + (void)setAutoTrackMode:(SNRTrackerAutoTrackMode)mode DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.autoTracking.mode instead.");
@@ -105,6 +109,7 @@ NS_SWIFT_NAME(Tracker)
  * Enables/Disables sending location event automatically.
  *
  * @param enabled Specifies that sending location event is enabled/disabled.
+ * 
  * @deprecated Deprecated in version 3.4.8
  */
 + (void)setLocationAutomaticEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.tracker.locationAutomatic instead.");

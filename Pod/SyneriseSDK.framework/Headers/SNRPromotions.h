@@ -30,8 +30,10 @@ NS_SWIFT_NAME(Promotions)
  * @param enabled Specifies that console logs are enabled/disabled.
  *
  * @note It is not recommended to use debug mode in release version of your application.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Gets all available promotions that are defined for this client.
