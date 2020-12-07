@@ -106,13 +106,16 @@ NS_SWIFT_NAME(Injector)
  * @param enabled Specifies that console logs are enabled/disabled.
  *
  * @note It is not recommended to use debug mode in release version of your application.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Enables/Disables automatic for SNRInjector.
  *
  * @param automatic Specifies that automatic mode is enabled/disabled.
+ * 
  * @deprecated Deprecated in version 3.4.8
  */
 + (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.injector.automatic instead.");
