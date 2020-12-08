@@ -11,9 +11,11 @@
 @implementation SingleMediaNotificationViewController
 
 - (void)didReceiveNotification:(UNNotification *)notification{
-    SNRSynerise.settings.sdk.appGroupIdentifier = @"YOUR_APP_GROUP_IDENTIFIER";
+    SNRSynerise.settings.sdk.appGroupIdentifier = @"APP_GROUP";
+    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"KEYCHAIN_GROUP";
     
     self.automaticallyAdjustContentViewSize = YES;
+    self.contentViewIsScrollable = NO;
     self.imageContentMode = UIViewContentModeScaleAspectFit;
     
     [self setSyneriseNotification:notification];

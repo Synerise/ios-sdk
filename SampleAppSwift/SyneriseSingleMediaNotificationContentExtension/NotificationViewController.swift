@@ -20,7 +20,9 @@ class NotificationViewController: SingleMediaContentExtensionViewController, UNN
     }
     
     func didReceive(_ notification: UNNotification) {
-        Synerise.settings.sdk.appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
+        Synerise.settings.sdk.appGroupIdentifier = "APP_GROUP"
+        Synerise.settings.sdk.keychainGroupIdentifier = "KEYCHAIN_GROUP"
+        
         setSyneriseNotification(notification)
     }
 

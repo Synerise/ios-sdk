@@ -182,7 +182,11 @@ class DefaultViewController: ViewController, Coordinated {
             UserInfoMessageManager.shared.error(title, "\(error.code) \(error.localizedDescription)\n\n\(error.localizedFailureReason ?? "")")
             
             return
+        } else {
+            self.presentAlert(title: "SNRError", message: error.localizedDescription)
         }
+        
+        
         
         UserInfoMessageManager.shared.error(title, "\(error.code) \(error.localizedDescription)\n\n\(error.localizedFailureReason ?? "")")
     

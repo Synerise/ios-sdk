@@ -30,24 +30,18 @@ class SyneriseManager {
         let clientApiKey = self.clientApiKey
         //let clientApiKey = Configuration.SyneriseSDK.clientAPIKey1_test
         
-        Synerise.settings.sdk.appGroupIdentifier = "group.com.synerise.sdk.sample-swift"
-        Synerise.settings.sdk.keychainGroupIdentifier = "34N2Z22TKH.keychainGroup"
-        Synerise.settings.sdk.shouldDestroySessionOnApiKeyChange = false
-        
-        Synerise.settings.notifications.encryption = settingsService.get(.notificationsEncryptionKey) ?? true
-        
-        DebugUtils.print("SyneriseSDK initializing | Client API Key: \(clientApiKey)")
-        Synerise.initialize(clientApiKey: clientApiKey, baseUrl: "https://api.snrapi.com")
         Synerise.setDebugModeEnabled(true)
         Synerise.setCrashHandlingEnabled(true)
         
-        Client.setClientStateDelegate(self)
-        
         Synerise.settings.sdk.enabled = settingsService.get(.sdkEnabledKey) ?? true
+        Synerise.settings.sdk.appGroupIdentifier = "APP_GROUP"
+        Synerise.settings.sdk.keychainGroupIdentifier = "KEYCHAIN_GROUP"
+        Synerise.settings.sdk.shouldDestroySessionOnApiKeyChange = false
         
         Synerise.settings.notifications.enabled = settingsService.get(.notificationsEnabledKey) ?? true
         Synerise.settings.notifications.disableInAppAlerts = settingsService.get(.notificationsDisableInAppAlertsKey) ?? false
-
+        Synerise.settings.notifications.encryption = settingsService.get(.notificationsEncryptionKey) ?? true
+        
         Synerise.settings.tracker.autoTracking.enabled = settingsService.get(.autoTrackingEnabledKey) ?? true
         Synerise.settings.tracker.tracking.enabled = settingsService.get(.trackingEnabledKey) ?? true
         
@@ -55,13 +49,25 @@ class SyneriseManager {
         Synerise.settings.tracker.maxBatchSize = 100
         Synerise.settings.tracker.autoFlushTimeout = 5.0
         Synerise.settings.tracker.autoTracking.mode = .fine
+        Synerise.settings.tracker.isBackendTimeSyncRequired = false
         Synerise.settings.tracker.locationAutomatic = true
         
         Synerise.settings.injector.automatic = true
-        
-        settingsService?.set(clientApiKey, forKey: SettingsServiceKey.syneriseClientAPIKey)
+                
+        DebugUtils.print("SyneriseSDK initializing | Client API Key: \(clientApiKey)")
+        Synerise.initialize(clientApiKey: clientApiKey, baseUrl: "https://api.snrapi.com")
         
         Synerise.setDelegate(self)
+        Client.setClientStateDelegate(self)
+        Injector.setWalkthroughDelegate(self)
+        
+        let syneriseFirstInitialization: Bool? = settingsService?.get(SettingsServiceKey.syneriseFirstInitializationLaunchKey)
+        if syneriseFirstInitialization == nil {
+            executePushRegistration()
+            settingsService?.set(true, forKey: SettingsServiceKey.syneriseFirstInitializationLaunchKey)
+        }
+        
+        settingsService?.set(clientApiKey, forKey: SettingsServiceKey.syneriseClientAPIKey)
     }
     
     func executePushRegistration() {
@@ -126,6 +132,16 @@ extension SyneriseManager: ClientStateDelegate {
     
     func snr_clientIsSignedOut(reason: ClientSessionEndReason) {
         print("DID SIGN OUT \(reason)")
+    }
+}
+
+extension SyneriseManager: InjectorWalkthroughDelegate {
+    func snr_walkthroughDidLoad() {
+        print("WALKTHROUGH DID LOAD")
+    }
+    
+    func snr_walkthroughDidLoad(walkthroughDictionary: [AnyHashable: Any]) {
+        print("WALKTHROUGH DID LOAD WITH DICTIONARY")
     }
 }
 

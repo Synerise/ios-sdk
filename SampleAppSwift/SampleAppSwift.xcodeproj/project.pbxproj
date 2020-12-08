@@ -55,6 +55,7 @@
 		6FDB918C24053C8F00C7B6C4 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB918B24053C8F00C7B6C4 /* WalkthroughViewController.swift */; };
 		6FFD723C21BFE17D00A721B3 /* DeleteAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */; };
 		6FFD724321C001F000A721B3 /* ConfirmClientAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */; };
+		7DB33A2FA6C055B3B8C6E425 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */; };
 		A104C3D9212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */; };
 		A127138520F882CA00550CC0 /* CustomEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138420F882CA00550CC0 /* CustomEventViewController.swift */; };
 		A127138720F884BD00550CC0 /* CustomEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138620F884BD00550CC0 /* CustomEventParameter.swift */; };
@@ -148,7 +149,6 @@
 		A1E27A0020E6482A00E595B5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E279FF20E6482A00E595B5 /* Section.swift */; };
 		A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */; };
 		A1E9F1AD211DEDD6003EE067 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */; };
-		B4C0F57EA432E9CD9C086637 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15446650B7245620EC6235B /* Pods_SampleAppSwift.framework */; };
 		B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68CB20C7EBFC00A8ECBE /* String.swift */; };
@@ -379,6 +379,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2D07E15420CFC9B7005E89D5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		2D07E15620CFC9DB005E89D5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -410,11 +411,11 @@
 		2DD999C3211C7293007E24DC /* ClientGetPromotionsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetPromotionsListTableViewController.swift; sourceTree = "<group>"; };
 		2DD999C5211C72A1007E24DC /* ClientGetPromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetPromotionTableViewController.swift; sourceTree = "<group>"; };
 		2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActivatePromotionTableViewController.swift; sourceTree = "<group>"; };
-		2DF81EBC20B8608B009AAC66 /* SampleAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF81EBC20B8608B009AAC66 /* SDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EC620B8608D009AAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		474910774466E5387CE455F4 /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsFullScreenGridViewController.swift; sourceTree = "<group>"; };
 		6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsGridTableViewController.swift; sourceTree = "<group>"; };
 		6F58377A228020FB001BD179 /* ContentAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPIViewController.swift; sourceTree = "<group>"; };
@@ -531,8 +532,7 @@
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
 		B84F68DF20C7F60100A8ECBE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B84F68E620C9374300A8ECBE /* DefaultLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabel.swift; sourceTree = "<group>"; };
-		C15446650B7245620EC6235B /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8033BD28BE2DC08C5BBCC74 /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FF068DE920C1966800A508C3 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
 		FF068DEB20C1979900A508C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FF068DED20C1985500A508C3 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -676,7 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
-				B4C0F57EA432E9CD9C086637 /* Pods_SampleAppSwift.framework in Frameworks */,
+				7DB33A2FA6C055B3B8C6E425 /* Pods_SampleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,16 +737,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		155A2F2BA1D5EEBF32C3233A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				474910774466E5387CE455F4 /* Pods-SampleAppSwift.debug.xcconfig */,
-				D8033BD28BE2DC08C5BBCC74 /* Pods-SampleAppSwift.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 		2D07E15D20CFF30E005E89D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,14 +826,14 @@
 				2DF81EBD20B8608B009AAC66 /* Products */,
 				E16064DE79C651DF8B25B492 /* Frameworks */,
 				6FC7C80C22C35AEE00DBBDC4 /* Recovered References */,
-				155A2F2BA1D5EEBF32C3233A /* Pods */,
+				BC73A4B73A521C1F37971538 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		2DF81EBD20B8608B009AAC66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DF81EBC20B8608B009AAC66 /* SampleAppSwift.app */,
+				2DF81EBC20B8608B009AAC66 /* SDK Sample.app */,
 				2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */,
 				2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */,
 				2D401F0E214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension.appex */,
@@ -1133,12 +1123,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC73A4B73A521C1F37971538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */,
+				2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		E16064DE79C651DF8B25B492 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A109010320ECDD1B009A19E5 /* UserNotifications.framework */,
 				A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */,
-				C15446650B7245620EC6235B /* Pods_SampleAppSwift.framework */,
+				2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1752,7 +1752,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF81EE420B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwift" */;
 			buildPhases = (
-				3DEF946ACFEBC52D1F3B1488 /* [CP] Check Pods Manifest.lock */,
+				70C19707DA5E7B3308302EDE /* [CP] Check Pods Manifest.lock */,
 				2DF81EB820B8608B009AAC66 /* Sources */,
 				2DF81EB920B8608B009AAC66 /* Frameworks */,
 				2DF81EBA20B8608B009AAC66 /* Resources */,
@@ -1760,7 +1760,7 @@
 				A12BE44A20D3C7DB00056A36 /* SwiftLint */,
 				2D1456A42110A40800EB5A99 /* ShellScript */,
 				A16AB8EC20EBD2E200B7282C /* Embed App Extensions */,
-				84B05891BE765ED7EAA240ED /* [CP] Embed Pods Frameworks */,
+				0C79655A2FC4DA4634D77786 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1775,7 +1775,7 @@
 			);
 			name = SampleAppSwift;
 			productName = SampleAppSwift;
-			productReference = 2DF81EBC20B8608B009AAC66 /* SampleAppSwift.app */;
+			productReference = 2DF81EBC20B8608B009AAC66 /* SDK Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2DF81ECF20B8608D009AAC66 /* SampleAppSwiftTests */ = {
@@ -2120,6 +2120,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C79655A2FC4DA4634D77786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D1456A42110A40800EB5A99 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2134,7 +2151,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
-		3DEF946ACFEBC52D1F3B1488 /* [CP] Check Pods Manifest.lock */ = {
+		70C19707DA5E7B3308302EDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2154,23 +2171,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84B05891BE765ED7EAA240ED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A12BE44A20D3C7DB00056A36 /* SwiftLint */ = {
@@ -2493,7 +2493,7 @@
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2502,7 +2502,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Single Media Notification Dev";
@@ -2519,7 +2519,7 @@
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2528,7 +2528,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Single Media Notification Dev";
@@ -2544,7 +2544,7 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2553,7 +2553,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Carousel Notification Dev";
@@ -2569,7 +2569,7 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2578,7 +2578,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Carousel Notification Dev";
@@ -2704,7 +2704,7 @@
 		};
 		2DF81EE520B8608D009AAC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474910774466E5387CE455F4 /* Pods-SampleAppSwift.debug.xcconfig */;
+			baseConfigurationReference = CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2713,7 +2713,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SampleAppSwift/Supporting Files/SampleAppSwift.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
@@ -2721,9 +2721,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SDK Sample";
 				PROVISIONING_PROFILE = "9170ffb4-163b-4d24-93b7-3b7c34653a90";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -2735,7 +2735,7 @@
 		};
 		2DF81EE620B8608D009AAC66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8033BD28BE2DC08C5BBCC74 /* Pods-SampleAppSwift.release.xcconfig */;
+			baseConfigurationReference = 2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2744,16 +2744,16 @@
 				CODE_SIGN_ENTITLEMENTS = "SampleAppSwift/Supporting Files/SampleAppSwift.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SDK Sample";
 				PROVISIONING_PROFILE = "ce0c4372-1c29-4d66-86ec-8d52091b9e3e";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -2851,10 +2851,11 @@
 		FF5FF88D25017EB0004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2863,7 +2864,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
@@ -2878,10 +2879,11 @@
 		FF5FF88E25017EB0004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2890,7 +2892,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2904,10 +2906,11 @@
 		FF5FF89D25017EDC004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2916,7 +2919,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
@@ -2930,10 +2933,11 @@
 		FF5FF89E25017EDC004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2942,7 +2946,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2955,10 +2959,11 @@
 		FFC0380B2422201600FDF7B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2967,7 +2972,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
@@ -2981,10 +2986,11 @@
 		FFC0380C2422201600FDF7B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2993,7 +2999,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3006,10 +3012,11 @@
 		FFD3E719242114F300AE7502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -3018,7 +3025,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
@@ -3032,10 +3039,11 @@
 		FFD3E71A242114F300AE7502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtensionObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -3044,7 +3052,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.16;
+				MARKETING_VERSION = 3.6.21;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";

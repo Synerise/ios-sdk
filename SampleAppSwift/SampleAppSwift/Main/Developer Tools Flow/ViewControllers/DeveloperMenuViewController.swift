@@ -27,18 +27,6 @@ class DeveloperMenuViewController: DefaultViewController {
         prepareBackButton()
     }
     
-    @IBAction func showChat() {
-        let chat = Chat(trackerKey: "EFC7C4F2-6F57-4A5A-ACD0-D339C7BCADF2")
-        chat.navigationBarBackgroundColor = UIColor.gray
-        chat.navigationBarTitle = "Chat"
-        chat.navigationBarTitleColor = UIColor.white
-        chat.closeButtonHorizontalAlignment = .left
-        chat.closeButtonImage = UIImage(named: "icon_close_black_small")!
-        chat.closeButtonTintColor = UIColor.lightGray
-        chat.load()
-        chat.show()
-    }
-    
     @IBAction func switchToSyneriseMobileApps1() {
         let clientApiKey: String = Configuration.SyneriseSDK.clientAPIKey1
         
@@ -88,19 +76,5 @@ class DeveloperMenuViewController: DefaultViewController {
         }
         
         NSException(name: NSExceptionName.genericException, reason: "Restart after removing all items in Keychain                       ", userInfo: nil).raise()
-    }
-}
-
-extension DeveloperMenuViewController: ChatDelegate {
-    func snr_chatIsLoading(isLoading: Bool) {
-
-    }
-
-    func snr_chatDidLoad() {
-
-    }
-
-    func snr_chatDidNotLoad(error: Error) {
-
     }
 }

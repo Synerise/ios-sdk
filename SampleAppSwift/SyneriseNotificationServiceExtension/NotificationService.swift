@@ -19,8 +19,8 @@ class NotificationService: UNNotificationServiceExtension {
         self.bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = self.bestAttemptContent {
-            Synerise.settings.sdk.appGroupIdentifier = "YOUR_APP_GROUP_IDENTIFIER"
-            Synerise.settings.sdk.keychainGroupIdentifier = "YOUR_KEYCHAIN_GROUP_IDENTIFIER"
+            Synerise.settings.sdk.appGroupIdentifier = "APP_GROUP"
+            Synerise.settings.sdk.keychainGroupIdentifier = "KECHAIN_GROUP"
             
             #if DEBUG
             NotificationServiceExtension.setDebugModeEnabled(true)

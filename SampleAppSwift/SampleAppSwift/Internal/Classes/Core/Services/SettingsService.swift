@@ -10,6 +10,8 @@ import UIKit
 
 enum SettingsServiceKey: String {
     case syneriseClientAPIKey = "kClientAPIKey"
+    case syneriseFirstInitializationLaunchKey = "kSyneriseFirstInitializationLaunchKey"
+    
     case sdkEnabledKey = "kSdkEnabledKey"
     case notificationsEnabledKey = "kNotificationsEnabledKey"
     case notificationsDisableInAppAlertsKey = "kNotificationsDisableInAppAlertsKey"

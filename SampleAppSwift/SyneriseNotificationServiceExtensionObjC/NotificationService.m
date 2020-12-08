@@ -24,8 +24,8 @@
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
     
-    SNRSynerise.settings.sdk.appGroupIdentifier = @"YOUR_APP_GROUP_IDENTIFIER";
-    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"YOUR_KEYCHAIN_GROUP_IDENTIFIER";
+    SNRSynerise.settings.sdk.appGroupIdentifier = @"APP_GROUP";
+    SNRSynerise.settings.sdk.keychainGroupIdentifier = @"KEYCHAIN_GROUP";
     
 #ifdef DEBUG
     [SNRNotificationServiceExtension setDebugModeEnabled:YES];
@@ -40,7 +40,7 @@
 - (void)serviceExtensionTimeWillExpire {
     // Called just before the extension will be terminated by the system.
     // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-
+    
     self.contentHandler(self.bestAttemptContent);
 }
 
