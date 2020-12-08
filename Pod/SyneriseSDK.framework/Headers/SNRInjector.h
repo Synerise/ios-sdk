@@ -25,8 +25,17 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 
 /**
  * This method is called after walkthrough is loaded.
+ *
+ * @note This method will be invoked when method 'SNR_walkthroughDidLoad:' is not implemented.
  */
 - (void)SNR_walkthroughDidLoad NS_SWIFT_NAME(snr_walkthroughDidLoad());
+
+/**
+ * This method is called after walkthrough is loaded.
+ *
+ * @param walkthroughDictionary Dictionary representation of walkthrough.
+ */
+- (void)SNR_walkthroughDidLoad:(NSDictionary *)walkthroughDictionary NS_SWIFT_NAME(snr_walkthroughDidLoad(walkthroughDictionary:));
 
 /**
  * This method is called when an error occurs while loading walkthrough.
@@ -92,18 +101,21 @@ NS_SWIFT_NAME(Injector)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from SNRInjector.
+ * Enables/Disables console logs from Injector module.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
  *
  * @note It is not recommended to use debug mode in release version of your application.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Enables/Disables automatic for SNRInjector.
  *
  * @param automatic Specifies that automatic mode is enabled/disabled.
+ * 
  * @deprecated Deprecated in version 3.4.8
  */
 + (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.injector.automatic instead.");

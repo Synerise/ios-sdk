@@ -3,6 +3,51 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.21] - 2020-12-07
+
+### Fixed
+- Issue that could have caused crash in `Client.retrieveToken(success:failure:)`. 
+- Issue that fix crash in `ContentWidget` when displaying image in `BasicProductItemLayout`.
+
+### Changed
+- `[MODULE].setLoggingEnabled(_:)` methods are deprecated. Please use `Synerise.setDebugMode(_:)` only.
+
+### Added
+- Single Image Notification (Rich Media) displays title and body on extended view.
+
+
+## [3.6.20] - 2020-12-01
+
+### Fixed
+- `InjectorWalkthroughDelegate` delegate method `snr_walkthroughDidLoad(walkthroughDictionary:)` is invoked when it is implemented instead of old method  `snr_walkthroughDidLoad()`.
+- Preventing from displaying campaign when image resources are not formatted correctly.
+
+### Changed
+- SDK throws `SNRInternalInconsistencyError` when some settings options are configured after Synerise initialization but should be before.
+
+
+
+## [3.6.19] - 2020-11-24
+
+### Fixed
+- Some issues with notification processing in `NotificationServiceExtension`.
+
+### Added
+- Walkthrough dictionary returned in `InjectorWalkthroughDelegate` delegate method `snr_walkthroughDidLoad(walkthroughDictionary:)`
+- `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` method.
+- New option to set whether events should be sent when server time synchronization has failed - `Synerise.settings.tracker.isBackendTimeSyncRequired`.
+
+### Changed
+- Information about device root is moved to AppStarted event.
+- Improvements to stability.
+
+
+## [3.6.18] - 2020-10-29
+
+### Changed
+- Improvements to stability.
+
+
 ## [3.6.17] - 2020-10-14
 
 ### Fixed

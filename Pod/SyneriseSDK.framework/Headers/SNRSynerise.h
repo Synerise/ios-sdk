@@ -87,7 +87,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  *
  * @param url URL address value from activity.
  *
- * @note This method will be invoke when method 'SNR_handledActionWithURL:activity:completionHandler:' is not implemented.
+ * @note This method will be invoked when method 'SNR_handledActionWithURL:activity:completionHandler:' is not implemented.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url NS_SWIFT_NAME(snr_handledAction(url:));
 
@@ -96,7 +96,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  *
  * @param deepLink Literal text value from activity.
  *
- * @note This method will be invoke when method 'SNR_handledActionWithDeepLink:activity:completionHandler:' is not implemented.
+ * @note This method will be invoked when method 'SNR_handledActionWithDeepLink:activity:completionHandler:' is not implemented.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink NS_SWIFT_NAME(snr_handledAction(deepLink:));
 
@@ -271,7 +271,7 @@ NS_SWIFT_NAME(Synerise)
  * @param userInfo Key-Value map of data. Key "issuer" must be set to "Synerise" value.
  * @param actionIdentifier Identifier of action received from notification response.
  */
-+ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
++ (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(nullable NSString *)actionIdentifier;
 
 @end
 

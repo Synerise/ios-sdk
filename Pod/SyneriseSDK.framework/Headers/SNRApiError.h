@@ -19,8 +19,7 @@ typedef NS_ENUM(NSInteger, SNRApiErrorType) {
     SNRApiErrorTypeNetwork,
     SNRApiErrorTypeUnauthorizedSession,
     SNRApiErrorTypeHttp
-    
-} NS_SWIFT_NAME(SNRApiErrorType);
+};
 
 /**
  * @class SNRApiError
@@ -33,7 +32,7 @@ typedef NS_ENUM(NSInteger, SNRApiErrorType) {
 - (instancetype)initWithDomain:(NSErrorDomain)domain
                           code:(NSInteger)code
                       userInfo:(nullable NSDictionary<NSString *, id> *)userInfo
-                        errors:(nullable NSArray *)errors;
+                        errors:(nullable NSArray<SNRError *> *)errors;
 
 - (SNRApiErrorType)getType;
 - (NSInteger)getHttpCode;

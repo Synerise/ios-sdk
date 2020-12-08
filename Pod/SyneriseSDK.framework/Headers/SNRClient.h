@@ -8,6 +8,7 @@
 
 #import "SNRTokenOrigin.h"
 #import "SNRClientSessionEndReason.h"
+#import "SNRClientIdentityProvider.h"
 
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
@@ -61,12 +62,14 @@ NS_SWIFT_NAME(Client)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * This method enables/disables console logs from Client SDK.
+ * This method enables/disables console logs from Client module.
  * It is not recommended to use debug mode in release version of your application.
  *
  * @param enabled Specifies that console logs are enabled/disabled.
+ *
+ * @deprecated Deprecated in version 3.6.20
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
 
 /**
  * Sets object for Client's state delegate methods.
@@ -193,7 +196,7 @@ NS_SWIFT_NAME(Client)
  */
 + (void)authenticateByAppleSignInWithIdentityToken:(NSData *)identityToken
                                             authID:(nullable NSString *)authID
-                                           context:(SNRClientAppleSignInAuthenticationContext *)context
+                                           context:(nullable SNRClientAppleSignInAuthenticationContext *)context
                                            success:(void (^)(BOOL isSuccess))success
                                            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(identityToken:authID:context:success:failure:));
 
@@ -236,7 +239,7 @@ NS_SWIFT_NAME(Client)
  * @deprecated Deprecated in version 3.4.10
  */
 + (void)getTokenWithSuccess:(void (^)(NSString *token, SNRTokenOrigin origin))success
-                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use Client.retrieveToken(token:success:failure:) instead.");
+                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getToken(success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.retrieveToken(token:success:failure:)` instead.");
 
 /**
  * Retrieves current client's token. This method provides valid token if client is signed in and current token is not expired.
@@ -406,10 +409,27 @@ NS_SWIFT_NAME(Client)
  * @param password Client's password.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.6.19
  */
 + (void)deleteAccount:(NSString *)password
               success:(void (^)(BOOL isSuccess))success
-              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:));
+              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(password:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` instead.");
+
+/**
+ * Deletes client's account information.
+ *
+ * @param clientAuthFactor Client's token (OAuth, Facebook etc.) or password (if Synerise account).
+ * @param clientIdentityProvider Client's identity Provider.
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)deleteAccount:(id)clientAuthFactor
+clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
+               authID:(nullable NSString *)authID
+              success:(void (^)(BOOL isSuccess))success
+              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:));
 
 /**
  * Deletes client's account information by OAuth.
@@ -417,10 +437,12 @@ NS_SWIFT_NAME(Client)
  * @param accessToken Client's Token from Facebook active session.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.6.19
  */
 + (void)deleteAccountByOAuth:(NSString *)accessToken
                         success:(void (^)(BOOL isSuccess))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByOAuth(accessToken:success:failure:));
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByOAuth(accessToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` instead.");
 
 /**
  * Deletes client's account information by Facebook.
@@ -428,10 +450,12 @@ NS_SWIFT_NAME(Client)
  * @param facebookToken Client's Token from Facebook active session.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.6.19
  */
 + (void)deleteAccountByFacebook:(NSString *)facebookToken
                         success:(void (^)(BOOL isSuccess))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:));
+                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByFacebook(facebookToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` instead.");
 
 /**
  * Deletes client's account information by Sign In With Apple.
@@ -439,10 +463,12 @@ NS_SWIFT_NAME(Client)
  * @param identityToken Client's Token from Facebook active session.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.6.19
  */
 + (void)deleteAccountByAppleSignIn:(NSData *)identityToken
-                        success:(void (^)(BOOL isSuccess))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByAppleSignIn(identityToken:success:failure:));
+                           success:(void (^)(BOOL isSuccess))success
+                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deleteAccountByAppleSignIn(identityToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` instead.");
 
 /**
  * Method to recognize anonymous users and save personal information per their CRM entries.
@@ -451,7 +477,9 @@ NS_SWIFT_NAME(Client)
  * @param customIdentify Client's custom identifier.
  * @param parameters Client's custom parameters.
  */
-+ (void)recognizeAnonymousWithEmail:(nullable NSString *)email customIdentify:(nullable NSString *)customIdentify parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
++ (void)recognizeAnonymousWithEmail:(nullable NSString *)email
+                     customIdentify:(nullable NSString *)customIdentify
+                         parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
 
 /**

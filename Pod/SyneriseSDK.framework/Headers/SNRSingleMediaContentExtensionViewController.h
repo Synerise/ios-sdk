@@ -22,7 +22,8 @@ API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(SingleMediaContentExtensionViewController)
 @interface SNRSingleMediaContentExtensionViewController : UIViewController
 
-@property (assign, nonatomic, readwrite) BOOL automaticallyAdjustContentViewSize;
+@property (assign, nonatomic, readwrite) BOOL automaticallyAdjustContentViewSize DEPRECATED_MSG_ATTRIBUTE("This property is set with true by default.");
+@property (assign, nonatomic, readwrite) BOOL contentViewIsScrollable;
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
 
 
