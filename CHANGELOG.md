@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.22] - 2020-12-10
+
+### Fixed
+- Issue that causes not sending events for Walkthrough and Banner campaigns.
+
+
 ## [3.6.21] - 2020-12-07
 
 ### Fixed
