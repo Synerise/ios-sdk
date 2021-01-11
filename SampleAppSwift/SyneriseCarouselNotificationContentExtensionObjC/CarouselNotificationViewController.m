@@ -10,13 +10,13 @@
 
 @implementation CarouselNotificationViewController
 
-- (void)didReceiveNotification:(UNNotification *)notification{
+- (void)didReceiveNotification:(UNNotification *)notification {
     SNRSynerise.settings.sdk.appGroupIdentifier = @"APP_GROUP";
     SNRSynerise.settings.sdk.keychainGroupIdentifier = @"KECHAIN_GROUP";
     
     [self setSyneriseNotification:notification];
 }
-- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion{
+- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion {
     [self setSyneriseNotificationResponse:response completionHandler:completion];
 }
 
