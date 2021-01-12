@@ -25,6 +25,9 @@ API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(CarouselContentExtensionViewController)
 @interface SNRCarouselContentExtensionViewController : UIViewController
 
+//This parameter sets a rendering mode of images.
+//
+//Property is `UIViewContentModeScaleAspectFill` by default.
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
 
 - (void)setSyneriseNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
