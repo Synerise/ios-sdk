@@ -5,7 +5,12 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ## [3.6.24] - 2020-12-23
 
+### Fixed
+- Issue that could have caused loading images with delay in campaigns.
+
 ### Changed
+- UI Improvements in Banner campaign.
+- Improved appearance of Simple Push with Rich Media camoaign for Dark Mode.
 - Improvements to stability.
 
 
