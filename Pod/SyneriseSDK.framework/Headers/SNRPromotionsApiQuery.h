@@ -6,10 +6,10 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRPromotion.h"
-#import "SNRPromotionStatus.h"
-#import "SNRPromotionType.h"
-#import "SNRApiQuerySortingOrder.h"
+#import <SyneriseSDK/SNRPromotion.h>
+#import <SyneriseSDK/SNRPromotionStatus.h>
+#import <SyneriseSDK/SNRPromotionType.h>
+#import <SyneriseSDK/SNRApiQuerySortingOrder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

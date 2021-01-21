@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNREvent.h"
+#import <SyneriseSDK/SNREvent.h>
 
 @class SNRUnitPrice;
 

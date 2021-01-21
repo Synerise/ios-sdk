@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRContentWidgetOptions.h"
-#import "SNRContentWidgetAppearance.h"
+#import <SyneriseSDK/SNRContentWidgetOptions.h>
+#import <SyneriseSDK/SNRContentWidgetAppearance.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

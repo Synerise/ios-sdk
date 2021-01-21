@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRTrackerAutoTrackingSettings.h"
-#import "SNRTrackerDeclarativeTrackingSettings.h"
+#import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
+#import <SyneriseSDK/SNRTrackerDeclarativeTrackingSettings.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

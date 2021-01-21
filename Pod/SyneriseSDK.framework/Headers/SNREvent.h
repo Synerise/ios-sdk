@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRTrackerParams.h"
+#import <SyneriseSDK/SNRTrackerParams.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

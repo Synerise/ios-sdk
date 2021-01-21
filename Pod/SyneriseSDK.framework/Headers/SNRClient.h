@@ -6,9 +6,9 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRTokenOrigin.h"
-#import "SNRClientSessionEndReason.h"
-#import "SNRClientIdentityProvider.h"
+#import <SyneriseSDK/SNRTokenOrigin.h>
+#import <SyneriseSDK/SNRClientSessionEndReason.h>
+#import <SyneriseSDK/SNRClientIdentityProvider.h>
 
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;

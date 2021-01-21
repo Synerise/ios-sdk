@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRBaseModel.h"
+#import <SyneriseSDK/SNRBaseModel.h>
 
 @class SNRAssignVoucherData;
 

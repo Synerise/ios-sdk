@@ -6,9 +6,9 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRBaseModel.h"
-#import "SNRClientSex.h"
-#import "SNRClientAgreements.h"
+#import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRClientSex.h>
+#import <SyneriseSDK/SNRClientAgreements.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
