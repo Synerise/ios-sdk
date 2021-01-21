@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRHostApplicationType.h"
+#import <SyneriseSDK/SNRHostApplicationType.h>
 
 @class SNRSettings;
 

@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRErrorCode.h"
-#import "SNRErrorUserInfoKey.h"
+#import <SyneriseSDK/SNRErrorCode.h>
+#import <SyneriseSDK/SNRErrorUserInfoKey.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

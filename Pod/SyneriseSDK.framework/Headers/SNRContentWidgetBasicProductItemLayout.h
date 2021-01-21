@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRContentWidgetItemLayout.h"
-#import "SNRContentWidgetImageButtonCustomAction.h"
+#import <SyneriseSDK/SNRContentWidgetItemLayout.h>
+#import <SyneriseSDK/SNRContentWidgetImageButtonCustomAction.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

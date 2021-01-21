@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRRecommendationEvent.h"
+#import <SyneriseSDK/SNRRecommendationEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

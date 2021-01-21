@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRCartEvent.h"
+#import <SyneriseSDK/SNRCartEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRBaseModel.h"
-#import "SNRRecommendation.h"
+#import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRRecommendation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

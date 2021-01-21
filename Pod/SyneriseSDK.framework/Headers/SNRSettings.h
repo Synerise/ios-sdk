@@ -6,11 +6,11 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRNotificationsSettings.h"
-#import "SNRGeneralSettings.h"
-#import "SNRNotificationsSettings.h"
-#import "SNRTrackerSettings.h"
-#import "SNRInjectorSettings.h"
+#import <SyneriseSDK/SNRNotificationsSettings.h>
+#import <SyneriseSDK/SNRGeneralSettings.h>
+#import <SyneriseSDK/SNRNotificationsSettings.h>
+#import <SyneriseSDK/SNRTrackerSettings.h>
+#import <SyneriseSDK/SNRInjectorSettings.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

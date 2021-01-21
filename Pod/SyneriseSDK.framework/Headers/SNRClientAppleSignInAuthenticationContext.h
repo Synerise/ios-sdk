@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRClientAgreements.h"
+#import <SyneriseSDK/SNRClientAgreements.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRTrackerSettings.h"
+#import <SyneriseSDK/SNRTrackerSettings.h>
 
 @class SNREvent;
 

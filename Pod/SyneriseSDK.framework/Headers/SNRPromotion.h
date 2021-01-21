@@ -6,10 +6,10 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRBaseModel.h"
-#import "SNRPromotionStatus.h"
-#import "SNRPromotionType.h"
-#import "SNRPromotionDiscountType.h"
+#import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRPromotionStatus.h>
+#import <SyneriseSDK/SNRPromotionType.h>
+#import <SyneriseSDK/SNRPromotionDiscountType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

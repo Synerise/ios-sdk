@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRContentWidgetBaseCustomAction.h"
+#import <SyneriseSDK/SNRContentWidgetBaseCustomAction.h>
 
 typedef void (^SNRContentWidgetImageButtonCustomActionReceiveClickBlock)(SNRBaseModel * _Nullable model, BOOL isSelected);
 typedef BOOL (^SNRContentWidgetImageButtonCustomActionIsSelectedBlock)(SNRBaseModel * _Nullable model);

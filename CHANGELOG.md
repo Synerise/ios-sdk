@@ -3,14 +3,23 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [3.6.24] - 2020-12-23
+## [3.6.25] - 2020-01-21
+
+### Fixed
+- Currency issues on `ContentWidget`.
+
+### Changed
+- Improvements to stability.
+
+
+## [3.6.24] - 2021-01-12
 
 ### Fixed
 - Issue that could have caused loading images with delay in campaigns.
 
 ### Changed
-- UI Improvements in Banner campaign.
-- Improved appearance of Simple Push with Rich Media camoaign for Dark Mode.
+- UI improvements in Banner campaign.
+- Improved appearance of Simple Push with Rich Media for Dark Mode.
 - Improvements to stability.
 
 

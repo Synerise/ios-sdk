@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 Synerise. All rights reserved.
 //
 
-#import "SNRError.h"
+#import <SyneriseSDK/SNRError.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
