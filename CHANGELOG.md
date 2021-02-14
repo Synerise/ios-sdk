@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.6.27] - 2020-02-13
+
+### Fixed
+- Some issues with fetching notification encryption data when device is locked.
+
+
 ## [3.6.26] - 2020-01-27
 
 ### Fixed
