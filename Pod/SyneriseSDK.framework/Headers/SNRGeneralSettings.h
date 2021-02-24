@@ -17,44 +17,58 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(GeneralSettings)
 @interface SNRGeneralSettings : NSObject
 
-//This parameter specifies if all of the SDK functionalities are enabled.
-//
-//Property is true by default.
+/**
+ * This parameter specifies if all of the SDK functionalities are enabled.
+ *
+ * The default value is true.
+ */
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
-//This parameter identifies the user defaults group used by applications and extensions belongs to.
-//Note, that it is required property to allow the SDK communicating with Host App and its extensions for proper handling Rich Media Notifications.
-//
-//Property is nil by default.
+/**
+ * Identifies the app group that your app and its extensions belong to.
+ * This property is required to allow the SDK to share data with the Host App and its extensions.
+ *
+ * The default value is nil.
+ */
 @property (copy, nonatomic, nullable, readwrite) NSString *appGroupIdentifier;
 
-//This parameter identifies the keychain group used by applications, extensions and services belongs to.
-//Note, that it is required property to allow the SDK communicating with Host App and notification service extension for proper notification decryption.
-//
-//Property is nil by default.
+/**
+ * This parameter identifies the keychain group that your app and its extensions belong to.
+ * This property is required to allow the SDK to share sensitive data with the Host App and its extensions.
+ *
+ * The default value is nil.
+ */
 @property (copy, nonatomic, nullable, readwrite) NSString *keychainGroupIdentifier;
 
-//This parameter sets time interval counting backwards from expiration time, within which token will be automatically refreshed by SDK.
-//Note, that minimum value for this parameter is 1800 seconds (30 minutes).
-//
-//Property is 1800 seconds (30 minutes) by default.
+/**
+ * This parameter sets a time counting backwards from expiration time, within which an authentication token will be automatically refreshed by the SDK.
+ * That minimum value for this parameter is 1800 seconds (30 minutes).
+ *
+ * The default value is 1800 seconds (30 minutes).
+ */
 @property (assign, nonatomic, readwrite) NSTimeInterval minTokenRefreshInterval;
 
-//This parameter sets an array of SSL pins, where each pin is the base64-encoded SHA-256 hash of a certificate's SPKI.
-//Note, that these SSL pins are used in case, which you uses Synerise API custom environment URL.
-//
-// Property is empty array by default.
+/**
+ * This parameter sets an array of SSL pins, where each pin is a base64-encoded SHA-256 hash of a certificate's SPKI.
+ * These SSL pins are used when you use a custom URL for the Synerise API.
+ *
+ * The default value is an empty array.
+ */
 @property (copy, nonatomic, nullable, readwrite) NSArray *SSLPinningPinset;
 
-//This parameter specifies supported algorithms for generating the SSL pins certificates.
-//Note, that this option is only required for proper SSL Pinning support for system versions before iOS 10.
-//
-// Property is array contained kSNRPublicKeyPinningAlgorithmRsa2048 value by default.
+/**
+ * This parameter specifies the supported algorithms for generating the SSL pins' certificates.
+ * This option is only required for proper SSL Pinning support for system versions before iOS 10.
+ *
+ * The default value is an array containing the `kSNRPublicKeyPinningAlgorithmRsa2048` value.
+ */
 @property (copy, nonatomic, nullable, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 
-//This parameter specifies if session should be destroyed after client api key changes.
-//
-//Property is true by default.
+/**
+ * This parameter specifies if a session should be destroyed after client API key changes.
+ *
+ * The default value is true.
+ */
 @property (assign, nonatomic, readwrite) BOOL shouldDestroySessionOnApiKeyChange;
 
 + (instancetype)new NS_UNAVAILABLE;

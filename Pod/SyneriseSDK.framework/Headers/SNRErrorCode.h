@@ -14,27 +14,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeUnknownError = -101,
-
+    SNRErrorCodeInvalidArgument = 3050,
+    SNRErrorCodeInternalInconsistency = 3060,
+    SNRErrorCodeInvalidImageResources = 3090,
+    SNRErrorCodeImageNotDownloaded = 3110,
+    SNRErrorCodeCryptoFailedError = 3610,
+    SNRErrorCodeMigrationError = 3710,
+    
     SNRErrorCodeUnknownApiError = -102,
     SNRErrorCodeNetworkApiError = -105,
     SNRErrorCodeInvalidRequestApiError = -103,
     SNRErrorCodeInvalidRequestSessionApiError = -104,
     SNRErrorCodeInvalidResponseApiError = -106,
-
-    SNRErrorCodeInvalidArgument = 3050,
-    SNRErrorCodeInternalInconsistency = 3060,
-
-    SNRErrorCodeInvalidImageResources = 3090,
-    SNRErrorCodeImageNotDownloaded = 3110,
-    
-    SNRErrorCodeClientSessionUnauthorized = 3200,
-    SNRErrorCodeClientSessionExpired = 3210,
-
-    SNRErrorCodeJWTValidationFailed = 3300,
-
-    SNRErrorCodeCryptoFailedError = 3610,
-
-    SNRErrorCodeMigrationError = 3710
+    SNRErrorCodeClientSessionUnauthorizedApiError = 3200,
+    SNRErrorCodeClientSessionExpiredApiError = 3210,
+    SNRErrorCodeJWTValidationFailedApiError = 3300
 };
 
 NS_ASSUME_NONNULL_END

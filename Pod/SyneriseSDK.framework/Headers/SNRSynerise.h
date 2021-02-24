@@ -53,9 +53,9 @@ typedef void (^SNRSyneriseActivityCompletionHandler)(SNRSyneriseActivityAction, 
 /**
  * @protocol SNRSyneriseDelegate
  *
- * A protocol to handle actions from Synerise SDK.
+ * A delegate to handle actions from the Synerise SDK.
  *
- * @note Note that if optional methods are not implemented, Synerise has got default behaviour only for url action - it is redirected to a browser.
+ * @note Note that if optional methods are not implemented, Synerise has a default behavior only for the URL action - it's redirected to a browser.
  */
 
 NS_SWIFT_NAME(SyneriseDelegate)
@@ -64,48 +64,48 @@ NS_SWIFT_NAME(SyneriseDelegate)
 @optional
 
 /**
- * This method is called when Synerise is initialized.
- *
+ * This method is called when the Synerise SDK is initialized.
  */
 - (void)SNR_initialized NS_SWIFT_NAME(snr_initialized());
 
 /**
- * This method is called when an error occurs while Synerise initialization.
+ * This method is called when an error occurs while initializing the Synerise SDK.
  *
+ * @param error The error that occurred.
  */
 - (void)SNR_initializationError:(NSError *)error NS_SWIFT_NAME(snr_initializationError(error:));
 
 /**
  * This method is called when Synerise needs registration for Push Notifications.
  *
- * @note You should invoke '[SNRClient registerForPush:success:failure:]' method again.
+ * @note You should invoke the `[SNRClient registerForPush:success:failure:]` method again.
  */
 - (void)SNR_registerForPushNotificationsIsNeeded NS_SWIFT_NAME(snr_registerForPushNotificationsIsNeeded());
 
 /**
  * This method is called when Synerise handles URL action from campaign activities.
  *
- * @param url URL address value from activity.
+ * @param url URL address value from the activity.
  *
- * @note This method will be invoked when method 'SNR_handledActionWithURL:activity:completionHandler:' is not implemented.
+ * @note This method is invoked when the `SNR_handledActionWithURL:activity:completionHandler:` method is not implemented.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url NS_SWIFT_NAME(snr_handledAction(url:));
 
 /**
  * This method is called when Synerise handles deeplink action from campaign activities.
  *
- * @param deepLink Literal text value from activity.
+ * @param deepLink Literal text value from the activity.
  *
- * @note This method will be invoked when method 'SNR_handledActionWithDeepLink:activity:completionHandler:' is not implemented.
+ * @note This method will be invoked when the `SNR_handledActionWithDeepLink:activity:completionHandler:` method is not implemented.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink NS_SWIFT_NAME(snr_handledAction(deepLink:));
 
 /**
  * This method is called when Synerise handles URL action from campaign activities.
  *
- * @param url URL address value from activity.
- * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler A block that should be invoked with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param url URL address value from the activity.
+ * @param activity Identifies Synerise campaign activity (`SNRSyneriseActivity`).
+ * @param completionHandler A block that should be invoked with `SNRSyneriseActivityAction` parameters and a completion block to execute.
  */
 - (void)SNR_handledActionWithURL:(NSURL *)url activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(url:activity:completionHandler:));
 
@@ -113,8 +113,8 @@ NS_SWIFT_NAME(SyneriseDelegate)
  * This method is called when Synerise handles deeplink action from campaign activities.
  *
  * @param deepLink Literal text value from activity.
- * @param activity Identifies Synerise campaign activity (SNRSyneriseActivity).
- * @param completionHandler A block that should be invoked with parameters: SNRSyneriseActivityAction and completion block to execute.
+ * @param activity Identifies Synerise campaign activity (`SNRSyneriseActivity`).
+ * @param completionHandler A block that should be invoked with parameters: `SNRSyneriseActivityAction` and completion block to execute.
  */
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(deepLink:activity:completionHandler:));
 
@@ -125,7 +125,7 @@ NS_SWIFT_NAME(SyneriseDelegate)
  * @protocol SyneriseActivityNotAllowed
  *
  * A protocol to block Synerise Activities.
- * Implement this protocol in View Controller that cannot be covered by Synerise Activity.
+ * Implement this protocol in a View Controller that cannot be covered by Synerise Activity.
  */
 
 NS_SWIFT_NAME(SyneriseActivityNotAllowed)
@@ -137,7 +137,7 @@ NS_SWIFT_NAME(SyneriseActivityNotAllowed)
 /**
  * @class SNRSynerise
  *
- * SNRSynerise is responsible for initialization Synerise SDK and its main actions.
+ * SNRSynerise is responsible for initialization the Synerise SDK and its main actions.
  */
 
 NS_SWIFT_NAME(Synerise)

@@ -23,35 +23,15 @@ NS_SWIFT_NAME(CustomEvent)
 - (instancetype)initWithLabel:(NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
 - (instancetype)initWithLabel:(NSString *)label NS_UNAVAILABLE;
 
-/**
- * Initializes SNRCustomEvent object with provided type, label, action and parameters.
- *
- * @param label Event label.
- * @param action Event action.
- * @param params SNTRackerParams object.
- */
 - (instancetype)initWithType:(NSString *)type
                        label:(NSString *)label
                        action:(NSString *)action
                     andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(type:label:action:params:));
 
-/**
- * Initializes SNRCustomEvent object with provided label, action and parameters.
- *
- * @param label Event label.
- * @param action Event action.
- * @param params SNTRackerParams object.
- */
 - (instancetype)initWithLabel:(NSString *)label
                        action:(NSString *)action
                     andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:action:params:));
 
-/**
- * Initializes SNRCustomEvent object with provided label and action.
- *
- * @param label Event label.
- * @param action Event action.
- */
 - (instancetype)initWithLabel:(NSString *)label
                        action:(NSString *)action NS_SWIFT_NAME(init(label:action:));
 

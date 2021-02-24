@@ -10,6 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRRecommendationEvent
+ *
+ * Represents a base class for recommendation events.
+ *
+ * @note This is an abstract class and it is not meant to be instantiated directly. You should use concrete `SNRRecommendationEvent` subclasses instead.
+ */
+
 NS_SWIFT_NAME(RecommendationEvent)
 @interface SNRRecommendationEvent : SNREvent
 

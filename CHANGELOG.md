@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.0] - 2020-02-24
+
+### Changed
+- Some of deprecated methods have been deleted.
+- `NSError` is changed to `SNRApiError` in failure blocks in module methods.
+
+### Added
+- `SNRContentWidget` is supporting Recommendations v2.
+- `ContentWidgetRecommendationOptions` configuration object for `ContentWidget`.
+- `imageContentMode` in `SNRContentWidgetBasicProductItemLayout`.
+
+
 ## [3.6.27] - 2020-02-13
 
 ### Fixed

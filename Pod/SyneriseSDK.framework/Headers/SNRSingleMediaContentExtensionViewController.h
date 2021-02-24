@@ -22,21 +22,19 @@ API_AVAILABLE(ios(10.0))
 NS_SWIFT_NAME(SingleMediaContentExtensionViewController)
 @interface SNRSingleMediaContentExtensionViewController : UIViewController
 
-//This parameter specifies if content should be adjusted to screen height automatically.
-//
-//Property is false by default.
-//
-//Deprecated in version 3.6.21
-@property (assign, nonatomic, readwrite) BOOL automaticallyAdjustContentViewSize DEPRECATED_MSG_ATTRIBUTE("This property is set with true by default.");
-
-//This parameter specifies if content should be adjusted to screen height or vertical scroll is enabled.
-//
-//Property is true by default.
+/**
+ * This parameter specifies if content should be adjusted to screen height.
+ * If not, vertical scroll is enabled.
+ *
+ * The default value is true (scroll is enabled).
+ */
 @property (assign, nonatomic, readwrite) BOOL contentViewIsScrollable;
 
-//This parameter sets a rendering mode of image.
-//
-//Property is `UIViewContentModeScaleAspectFill` by default.
+/**
+ * This parameter sets the rendering mode of images.
+ *
+ * The default value is `UIViewContentModeScaleAspectFill`.
+ */
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
 
 

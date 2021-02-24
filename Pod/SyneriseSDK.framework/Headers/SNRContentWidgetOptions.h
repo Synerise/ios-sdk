@@ -8,17 +8,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSString * const SNRContentWidgetOptionsAttributeKeyProductID;
-
 /**
  * @class SNRContentWidgetOptions
+ *
+ * @note This is an abstract class and it is not meant to be instantiated directly. You should use concrete SNRContentWidgetOptions subclasses instead.
  */
 
 NS_SWIFT_NAME(ContentWidgetOptions)
 @interface SNRContentWidgetOptions : NSObject
-
-@property (copy, nonatomic, nullable, readwrite) NSString *slug;
-@property (strong, nonatomic, nonnull, readonly) NSMutableDictionary *attributes;
 
 @end
 

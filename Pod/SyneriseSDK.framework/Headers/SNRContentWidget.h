@@ -12,11 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SNRContentWidget;
+@class SNRContentWidgetItemLayout;
+@class SNRContentWidgetItemLayoutDataModel;
 
 /**
  * @protocol SNRContentWidgetDelegate
  *
- * A protocol to handle Content Widget actions.
+ * A delegate to handle Content Widget actions.
  */
 
 NS_SWIFT_NAME(ContentWidgetDelegate)
@@ -25,17 +27,25 @@ NS_SWIFT_NAME(ContentWidgetDelegate)
 @required
 
 /**
- * This method is called after widget is loaded.
+ * This method is called after a widget is loaded.
+ *
+ * @param widget The widget instance that called the delegate method.
  */
 - (void)SNR_widgetDidLoad:(SNRContentWidget *)widget NS_SWIFT_NAME(snr_widgetDidLoad(widget:));
 
 /**
- * This method is called when an error occurs while loading.
+ * This method is called when an error occurs while loading a widget.
+ *
+ * @param widget The widget instance that called the delegate method.
+ * @param error  The error that occurred.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didNotLoadWithError:(NSError *)error NS_SWIFT_NAME(snr_widgetDidNotLoad(widget:error:));
 
 /**
  * This method is called when the user clicks a widget’s item.
+ *
+ * @param widget The widget instance that called the delegate method.
+ * @param model The model's object that was clicked.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didReceiveClickActionForModel:(SNRBaseModel *)model NS_SWIFT_NAME(snr_widgetDidReceiveClickAction(widget:model:));
 
@@ -43,11 +53,17 @@ NS_SWIFT_NAME(ContentWidgetDelegate)
 
 /**
  * This method is called when the widget’s loading state changes.
+ *
+ * @param widget The widget instance that called the delegate method.
+ * @param isLoading Widget's loading state.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget isLoading:(BOOL)isLoading NS_SWIFT_NAME(snr_widgetIsLoading(widget:isLoading:));
 
 /**
  * This method is called when the widget’s size changes.
+ *
+ * @param widget The widget instance that called the delegate method.
+ * @param size Widget's new size.
  */
 - (void)SNR_widget:(SNRContentWidget *)widget didChangeToSize:(CGSize)size NS_SWIFT_NAME(snr_widgetDidChangeSize(widget:size:));
 
@@ -69,30 +85,32 @@ NS_SWIFT_NAME(ContentWidget)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Creates widget instance.
+ * Creates a widget instance.
  *
- * @param options SNRContentWidgetOptions object providing business logic parameters for widget.
- * @param appearance SNRContentWidgetAppearance object providing appearance parameters for widget.
+ * @param options `SNRContentWidgetOptions` object providing widget business logic parameters.
+ * @param appearance `SNRContentWidgetAppearance` object providing widget appearance parameters.
  */
 - (instancetype)initWithOptions:(SNRContentWidgetOptions *)options andAppearance:(SNRContentWidgetAppearance *)appearance NS_SWIFT_NAME(init(options:appearance:));
 
 /**
- * Starts operation of fetching data and creates view structure of widget.
+ * Starts fetching data and creates the view structure of a widget.
  *
- * @note When you call this method, be aware that widget will notify you about the progress by SNRContentWidgetDelegate methods.
+ * @note When you call this method, the widget will notify you about the progress by
+ *       `SNRContentWidgetDelegate` methods.
  */
 - (void)load;
 
 /**
- * Checks whether widget is loaded with success.
+ * Checks if a widget is loaded successfully.
  */
 - (BOOL)isLoaded;
 
 /**
- * Gets root view of whole widget view structure.
+ * Gets root view of the whole widget view structure.
  *
- * @note You should remember that default size of widget equals zero for width and height.
- * You have to set size of this view or add suitable layout constraints for it. Whole view structure of Widget is flexible for dimension that you need.
+ * @note The default size of a widget equals zero for width and height.
+ *       You must set the size of this view or add suitable layout constraints for it.
+ *       The whole view structure of a widget is flexible for dimensions that you need.
  */
 - (UIView *)getView;
 
