@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @class SNRPushViewedEvent
  *
- * Represents a 'client viewed push' event. It is used for push message interaction tracking.
+ * Represents a 'client viewed push' event.
  */
 
 NS_SWIFT_NAME(PushViewedEvent)

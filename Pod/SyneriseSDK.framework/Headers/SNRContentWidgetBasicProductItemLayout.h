@@ -21,6 +21,7 @@ NS_SWIFT_NAME(ContentWidgetBasicProductItemLayout)
 @property (assign, nonatomic, readwrite) CGFloat imageWidthRatio;
 @property (assign, nonatomic, readwrite) CGFloat imageHeightRatio;
 @property (copy, nonatomic, nonnull, readwrite) UIColor *imageBackground;
+@property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
 
 @property (assign, nonatomic, readwrite) UIEdgeInsets titleInsets;
 @property (copy, nonatomic, nonnull, readwrite) UIFont *titleFont;

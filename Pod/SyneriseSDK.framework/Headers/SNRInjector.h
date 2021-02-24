@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @protocol SNRInjectorWalkthroughDelegate
  *
- * A protocol to handle events from walkthrough campaigns.
+ * A delegate to handle events from walkthrough campaigns.
  *
- * When you choose to load and present walkthrough manually, you may be interested in following delegate methods.
+ * When you choose to load and present a walkthrough manually, you may be interested in the following delegate methods.
  *
- * @note Note, that all these methods are optional and implementing them is not required. These are also called when walkthrough was loaded automatically.
+ * @note Note that all these methods are optional and implementing them is not required. They are also called when a walkthrough was loaded automatically.
  */
 
 NS_SWIFT_NAME(InjectorWalkthroughDelegate)
@@ -24,31 +24,33 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 @optional
 
 /**
- * This method is called after walkthrough is loaded.
+ * This method is called after a walkthrough is loaded.
  *
- * @note This method will be invoked when method 'SNR_walkthroughDidLoad:' is not implemented.
+ * @note This method will be invoked when the `SNR_walkthroughDidLoad:` method is not implemented.
  */
 - (void)SNR_walkthroughDidLoad NS_SWIFT_NAME(snr_walkthroughDidLoad());
 
 /**
- * This method is called after walkthrough is loaded.
+ * This method is called after a walkthrough is loaded.
  *
- * @param walkthroughDictionary Dictionary representation of walkthrough.
+ * @param walkthroughDictionary Dictionary representation of the walkthrough.
  */
 - (void)SNR_walkthroughDidLoad:(NSDictionary *)walkthroughDictionary NS_SWIFT_NAME(snr_walkthroughDidLoad(walkthroughDictionary:));
 
 /**
- * This method is called when an error occurs while loading walkthrough.
+ * This method is called when an error occurs while loading a walkthrough.
+ *
+ * @param error The error that occurred.
  */
 - (void)SNR_walkthroughLoadingError:(NSError *)error NS_SWIFT_NAME(snr_walkthroughLoadingError(error:));
 
 /**
- * This method is called after walkthrough appears.
+ * This method is called after a walkthrough appears.
  */
 - (void)SNR_walkthroughDidAppear NS_SWIFT_NAME(snr_walkthroughDidAppear());
 
 /**
- * This method is called after walkthrough disappears.
+ * This method is called after a walkthrough disappears.
  */
 - (void)SNR_walkthroughDidDisappear NS_SWIFT_NAME(snr_walkthroughDidDisappear());
 
@@ -58,11 +60,9 @@ NS_SWIFT_NAME(InjectorWalkthroughDelegate)
 /**
  * @protocol SNRInjectorBannerDelegate
  *
- * A protocol to handle events from banner campaigns.
+ * A delegate to handle events from banner campaigns.
  *
- * It is not always suitable for you to cover the screen every time a banner is received.
- * You can implement optional methods to control this.
- *
+ * @note It's not always suitable for you to cover the screen every time a banner is received. You can implement optional methods to control this.
  */
 
 NS_SWIFT_NAME(InjectorBannerDelegate)
@@ -71,19 +71,19 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 @optional
 
 /**
- * This method is called after banner is loaded and Synerise SDK asks for permission to show it.
+ * This method is called after a banner is loaded and Synerise SDK asks for permission to show it.
  *
- * @param bannerDictionary Dictionary representation of banner.
+ * @param bannerDictionary Dictionary representation of a banner.
  */
 - (BOOL)SNR_shouldBannerAppear:(NSDictionary *)bannerDictionary NS_SWIFT_NAME(snr_shouldBannerAppear(bannerDictionary:));
 
 /**
- * This method is called after banner appears.
+ * This method is called after a banner appears.
  */
 - (void)SNR_bannerDidAppear NS_SWIFT_NAME(snr_bannerDidAppear());
 
 /**
- * This method is called when banner disappears.
+ * This method is called after a banner disappears.
  */
 - (void)SNR_bannerDidDisappear NS_SWIFT_NAME(snr_bannerDidDisappear());
 
@@ -101,61 +101,41 @@ NS_SWIFT_NAME(Injector)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from Injector module.
+ * Sets an object for walkthrough delegate methods.
  *
- * @param enabled Specifies that console logs are enabled/disabled.
- *
- * @note It is not recommended to use debug mode in release version of your application.
- *
- * @deprecated Deprecated in version 3.6.20
- */
-+ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
-
-/**
- * Enables/Disables automatic for SNRInjector.
- *
- * @param automatic Specifies that automatic mode is enabled/disabled.
- * 
- * @deprecated Deprecated in version 3.4.8
- */
-+ (void)setAutomatic:(BOOL)automatic DEPRECATED_MSG_ATTRIBUTE("Use Synerise.settings.injector.automatic instead.");
-
-/**
- * Sets object for Walkthrough delegate methods.
- *
- * @param delegate An object that implement SNRInjectorWalkthroughDelegate protocol.
+ * @param delegate An object that implements the `SNRInjectorWalkthroughDelegate` protocol.
  */
 + (void)setWalkthroughDelegate:(id<SNRInjectorWalkthroughDelegate>)delegate;
 
 /**
- * Sets object for Banner delegate methods.
+ * Sets an object for banner delegate methods.
  *
- * @param delegate An object that implement SNRInjectorBannerDelegate protocol.
+ * @param delegate An object that implements the `SNRInjectorBannerDelegate` protocol.
  */
 + (void)setBannerDelegate:(id<SNRInjectorBannerDelegate>)delegate;
 
 /**
- * Fetches Walkthrough.
+ * Fetches a walkthrough.
  */
 + (void)getWalkthrough;
 
 /**
- * Shows Walkthrough when it is loaded.
+ * Shows a walkthrough when it is loaded.
  */
 + (void)showWalkthrough;
 
 /**
- * Checks that Walkthrough is loaded.
+ * Checks if a Walkthrough is loaded.
  */
 + (BOOL)isWalkthroughLoaded;
 
 /**
- * Checks that Walkthrough is unique than previous one.
+ * Checks if Walkthrough is unique compared to the previous one.
  */
 + (BOOL)isLoadedWalkthroughUnique;
 
 /**
- * Provides valid banners right from SDK cache.
+ * Provides valid banners directly from SDK cache.
  */
 + (NSArray<NSDictionary *> *)getBanners;
 
@@ -169,7 +149,7 @@ NS_SWIFT_NAME(Injector)
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
- * Fetches Push Notifications set for mobile campaigns.
+ * Fetches push notifications set for mobile campaigns.
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
@@ -178,10 +158,10 @@ NS_SWIFT_NAME(Injector)
                      failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
 
 /**
- * Shows banner immediately.
+ * Shows a banner immediately.
  *
- * @param bannerDictionary Dictionary representation for banner.
- * @param markPresented Sets banner as presented and this banner instance representation will not appear second time.
+ * @param bannerDictionary Dictionary representation of a banner.
+ * @param markPresented Sets a banner as presented and this banner instance representation will not appear again.
  */
 + (void)showBanner:(NSDictionary *)bannerDictionary
      markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));

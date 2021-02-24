@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @class SNRCancelledPushEvent
  *
- * Represents a 'client cancelled push' event. It is used for push message interaction tracking.
+ * Represents a 'client cancelled push' event.
  */
 
 NS_SWIFT_NAME(CancelledPushEvent)

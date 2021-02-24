@@ -25,17 +25,6 @@ NS_SWIFT_NAME(Promotions)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from Promotions module.
- *
- * @param enabled Specifies that console logs are enabled/disabled.
- *
- * @note It is not recommended to use debug mode in release version of your application.
- *
- * @deprecated Deprecated in version 3.6.20
- */
-+ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
-
-/**
  * Gets all available promotions that are defined for this client.
  *
  * @param success A block object to be executed when the operation finishes successfully.
@@ -45,9 +34,9 @@ NS_SWIFT_NAME(Promotions)
                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
 
 /**
- * Gets promotions that are defined for parameters provided in query object.
+ * Gets promotions that are defined for parameters provided in the query object.
  *
- * @param apiQuery SNRPromotionsApiQuery object responsible for storing all query parameters.
+ * @param apiQuery `SNRPromotionsApiQuery` object responsible for storing all query parameters.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -56,9 +45,9 @@ NS_SWIFT_NAME(Promotions)
                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(apiQuery:success:failure:));
 
 /**
- * Gets promotion that are defined for UUID parameter provided.
+ * Gets a promotion identified by UUID.
  *
- * @param uuid UUID string of promotion.
+ * @param uuid UUID of the promotion.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -67,9 +56,9 @@ NS_SWIFT_NAME(Promotions)
                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(uuid:success:failure:));
 
 /**
- * Gets promotion that are defined for code parameter provided.
+ * Gets a promotion identified by code.
  *
- * @param code Code of promotion.
+ * @param code Code of the promotion.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -78,9 +67,9 @@ NS_SWIFT_NAME(Promotions)
                    failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
 
 /**
- * Activates promotion that is defined for UUID parameter provided.
+ * Activates a promotion identified by UUID.
  *
- * @param uuid UUID of promotion that will be activated.
+ * @param uuid UUID of the promotion that will be activated.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -89,9 +78,9 @@ NS_SWIFT_NAME(Promotions)
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(uuid:success:failure:));
 
 /**
- * Activates promotion that is defined for code parameter provided.
+ * Activates promotion identified by code.
  *
- * @param code Code of promotion that will be activated.
+ * @param code Code of the promotion that will be activated.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -100,9 +89,9 @@ NS_SWIFT_NAME(Promotions)
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
 
 /**
- * Dectivates promotion that is defined for UUID parameter provided.
+ * Dectivates a promotion identified by UUID.
  *
- * @param uuid UUID of promotion that will be deactivated.
+ * @param uuid UUID of the promotion that will be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -111,9 +100,9 @@ NS_SWIFT_NAME(Promotions)
                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(uuid:success:failure:));
 
 /**
- * Dectivates promotion that is defined for code parameter provided.
+ * Dectivates promotion identified by code.
  *
- * @param code Code of promotion that will be deactivated.
+ * @param code Code of the promotion that will be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -122,7 +111,8 @@ NS_SWIFT_NAME(Promotions)
                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
 
 /**
- * Gets voucher code only once or assign voucher with provided pool UUID for the client.
+ * Gets a voucher code permanently assigned to a client (the same code every time).
+ * If no code is permanently assigned, the method assigns a voucher from the provided pool so that the same code is returned in all future calls.
  *
  * @param poolUUID Pool's universally unique identifier.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -133,7 +123,7 @@ NS_SWIFT_NAME(Promotions)
                                failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:success:failure:));
 
 /**
- * Assigns voucher with provided pool UUID for the client.
+ * Assigns a voucher from a pool to a client.
  * Every request returns different code until the pool is empty.
  *
  * @param poolUUID Pool's universally unique identifier.
@@ -147,7 +137,7 @@ NS_SWIFT_NAME(Promotions)
                               failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
 
 /**
- * Gets client's voucher codes.
+ * Gets a client's voucher codes.
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

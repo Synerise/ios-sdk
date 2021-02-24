@@ -23,18 +23,7 @@ NS_SWIFT_NAME(Content)
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Enables/Disables console logs from Content module.
- *
- * @param enabled Specifies that console logs are enabled/disabled.
- *
- * @note It is not recommended to use debug mode in release version of your application.
- *
- * @deprecated Deprecated in version 3.6.20
- */
-+ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("Use `Synerise.setDebugModeEnabled(_:)` instead.");
-
-/**
- * Gets document that is defined for slug provided.
+ * Gets the document that is defined for the provided slug.
  *
  * @param slug Identifies a specific document.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -45,9 +34,9 @@ NS_SWIFT_NAME(Content)
             failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
 
 /**
- * Gets documents  that are defined for parameters provided in query object.
+ * Gets documents that are defined for parameters provided in the query object.
  *
- * @param apiQuery SNRDocumentsApiQuery object responsible for storing all query parameters.
+ * @param apiQuery `SNRDocumentsApiQuery` object responsible for storing all query parameters.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
@@ -56,9 +45,9 @@ NS_SWIFT_NAME(Content)
                           failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
 
 /**
- * Gets recommendations that are defined for options provided.
+ * Gets recommendations that are defined for the options provided.
  *
- * @param options Options for recommendations.
+ * @param options `SNRRecommendationOptions` object providing parameters for recommendations.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */

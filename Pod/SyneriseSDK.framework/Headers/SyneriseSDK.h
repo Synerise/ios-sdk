@@ -130,6 +130,8 @@
 #import <SyneriseSDK/SNRContentWidgetBaseCustomAction.h>
 #import <SyneriseSDK/SNRContentWidgetImageButtonCustomAction.h>
 #import <SyneriseSDK/SNRContentWidgetOptions.h>
+#import <SyneriseSDK/SNRContentWidgetRecommendationsOptions.h>
+#import <SyneriseSDK/SNRContentWidgetRecommendationDataModel.h>
 #import <SyneriseSDK/SNRContentWidget.h>
 
 // Notification Service/Content Extensions & Helpers

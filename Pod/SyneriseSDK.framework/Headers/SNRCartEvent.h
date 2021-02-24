@@ -12,6 +12,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRCartEvent
+ *
+ * Represents a base class for cart events.
+ *
+ * @note This is an abstract class and it is not meant to be instantiated directly. You should use concrete `SNRCartEvent` subclasses instead.
+ */
+
 NS_SWIFT_NAME(CartEvent)
 @interface SNRCartEvent : SNREvent
 

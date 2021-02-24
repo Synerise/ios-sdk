@@ -11,7 +11,7 @@
 /**
  * @class SNRTrackerParams
  *
- * Represents custom parameters that may be added to tracked events.
+ * Object with parameters that may be added to tracked events.
  */
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,11 +22,6 @@ NS_SWIFT_NAME(TrackerParams)
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
-/**
- * Initializes SNRTrackerParams object with SNRTrackerParamsBuilder.
- *
- * @param buildBlock A block object with one SNRTrackerParamsBuilder param that acts as builder.
- */
 + (instancetype)makeWithBuilder:(void (^)(SNRTrackerParamsBuilder *builder))buildBlock;
 
 @end

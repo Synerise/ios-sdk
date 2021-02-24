@@ -17,10 +17,10 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
     /// Autotracking is set to on touch events only.
     SNRTrackerAutoTrackModeEager,
     
-    /// Autotracking is set to on click events only.
+    /// Autotracking is set to on-click events only.
     SNRTrackerAutoTrackModePlain,
     
-    /// Autotracking is set to attached to nearly everything in your app (even to activities and viewDidAppear: method to record VisitedScreen events).
+    /// Autotracking is set to attached to nearly everything in your app (even to activities and the `viewDidAppear:` method which records Visited Screen events).
     SNRTrackerAutoTrackModeFine,
     
     /// Autotracking is disabled.
@@ -35,20 +35,28 @@ typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
 NS_SWIFT_NAME(TrackerAutoTrackingSettings)
 @interface SNRTrackerAutoTrackingSettings : NSObject
 
-//This parameter specifies if AutoTracking functionality is enabled.
-//
-//Property is true by default.
+/**
+ * This parameter specifies if AutoTracking is enabled.
+ *
+ * The default value is true.
+ */
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
-//This parameter sets mode of AutoTracking.
-//
-//Property is SNRTrackerAutoTrackModeDisabled by default.
+/**
+ * This parameter sets the mode of AutoTracking.
+ *
+ * The default value is `SNRTrackerAutoTrackModeDisabled`.
+ */
 @property (assign, nonatomic, readwrite) SNRTrackerAutoTrackMode mode;
 
-//This parameter sets excluded classes from AutoTracking.
+/**
+ * This parameter sets classes excluded from AutoTracking.
+ */
 @property (copy, nonatomic, nonnull, readwrite) NSArray<Class> *excludedClasses;
 
-//This parameter sets excluded view tags from AutoTracking.
+/**
+ * This parameter sets view tags excluded from AutoTracking.
+ */
 @property (copy, nonatomic, nonnull, readwrite) NSArray<NSNumber *> *excludedViewTags;
 
 + (instancetype)new NS_UNAVAILABLE;

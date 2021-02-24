@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @class SNRRecommendationClickEvent
  *
- * Represents a 'client has clicked recommendation' event.
+ * Represents a 'client clicked recommendation' event.
  */
 
 NS_SWIFT_NAME(RecommendationClickEvent)
