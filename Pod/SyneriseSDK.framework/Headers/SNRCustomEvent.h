@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNREvent.h>
@@ -23,17 +23,17 @@ NS_SWIFT_NAME(CustomEvent)
 - (instancetype)initWithLabel:(NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
 - (instancetype)initWithLabel:(NSString *)label NS_UNAVAILABLE;
 
-- (instancetype)initWithType:(NSString *)type
-                       label:(NSString *)label
-                       action:(NSString *)action
-                    andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(type:label:action:params:));
+- (instancetype)initWithLabel:(NSString *)label
+                       action:(NSString *)action NS_SWIFT_NAME(init(label:action:));
 
 - (instancetype)initWithLabel:(NSString *)label
                        action:(NSString *)action
                     andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:action:params:));
 
-- (instancetype)initWithLabel:(NSString *)label
-                       action:(NSString *)action NS_SWIFT_NAME(init(label:action:));
+- (instancetype)initWithType:(NSString *)type
+                       label:(NSString *)label
+                       action:(NSString *)action
+                    andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(type:label:action:params:));
 
 @end
 

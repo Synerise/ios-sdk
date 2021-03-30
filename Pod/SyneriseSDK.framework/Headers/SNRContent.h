@@ -3,12 +3,13 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
+@class SNRDocumentsApiQuery;
 @class SNRRecommendationOptions;
 @class SNRRecommendationResponse;
-@class SNRDocumentsApiQuery;
+@class SNRScreenViewResponse;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,7 +32,7 @@ NS_SWIFT_NAME(Content)
  */
 + (void)getDocument:(NSString *)slug
             success:(void (^)(NSDictionary *document))success
-            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
+            failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getDocument(slug:success:failure:));
 
 /**
  * Gets documents that are defined for parameters provided in the query object.
@@ -42,7 +43,7 @@ NS_SWIFT_NAME(Content)
  */
 + (void)getDocumentsWithApiQuery:(SNRDocumentsApiQuery *)apiQuery
                           success:(void (^)(NSArray *documents))success
-                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
+                          failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getDocuments(apiQuery:success:failure:));
 
 /**
  * Gets recommendations that are defined for the options provided.
@@ -53,7 +54,16 @@ NS_SWIFT_NAME(Content)
  */
 + (void)getRecommendations:(SNRRecommendationOptions *)options
             success:(void (^)(SNRRecommendationResponse *recommendationResponse))success
-            failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
+            failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
+
+/**
+ *
+ *
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)getScreenViewWithSuccess:(void (^)(SNRScreenViewResponse *screenViewResponse))success
+                         failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getScreenView(success:failure:));
 
 @end
 

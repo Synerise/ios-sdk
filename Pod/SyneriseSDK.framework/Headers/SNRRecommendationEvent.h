@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNREvent.h>
@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(RecommendationEvent)
 @interface SNRRecommendationEvent : SNREvent
+
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(nonnull NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
+- (instancetype)initWithLabel:(nonnull NSString *)label NS_UNAVAILABLE;
 
 - (instancetype)initWithLabel:(NSString *)label
                   productName:(NSString *)productName

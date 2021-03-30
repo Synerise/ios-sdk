@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 @class SNRPromotionsApiQuery;
@@ -31,7 +31,7 @@ NS_SWIFT_NAME(Promotions)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getPromotionsWithSuccess:(void (^)(SNRPromotionResponse *promotionResponse))success
-                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
+                         failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getPromotions(success:failure:));
 
 /**
  * Gets promotions that are defined for parameters provided in the query object.
@@ -42,7 +42,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)getPromotionsWithApiQuery:(SNRPromotionsApiQuery *)apiQuery
                           success:(void (^)(SNRPromotionResponse *promotionResponse))success
-                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotions(apiQuery:success:failure:));
+                          failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getPromotions(apiQuery:success:failure:));
 
 /**
  * Gets a promotion identified by UUID.
@@ -53,7 +53,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)getPromotionByUuid:(NSString *)uuid
                    success:(void (^)(SNRPromotion *promotion))success
-                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(uuid:success:failure:));
+                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getPromotion(uuid:success:failure:));
 
 /**
  * Gets a promotion identified by code.
@@ -64,7 +64,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)getPromotionByCode:(NSString *)code
                    success:(void (^)(SNRPromotion *promotion))success
-                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
+                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getPromotion(code:success:failure:));
 
 /**
  * Activates a promotion identified by UUID.
@@ -75,7 +75,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)activatePromotionByUuid:(NSString *)uuid
                         success:(void (^)(BOOL isSuccess))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(uuid:success:failure:));
+                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activatePromotion(uuid:success:failure:));
 
 /**
  * Activates promotion identified by code.
@@ -86,7 +86,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)activatePromotionByCode:(NSString *)code
                         success:(void (^)(BOOL isSuccess))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
+                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
 
 /**
  * Dectivates a promotion identified by UUID.
@@ -97,7 +97,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)deactivatePromotionByUuid:(NSString *)uuid
                           success:(void (^)(BOOL isSuccess))success
-                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(uuid:success:failure:));
+                          failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotion(uuid:success:failure:));
 
 /**
  * Dectivates promotion identified by code.
@@ -108,7 +108,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)deactivatePromotionByCode:(NSString *)code
                           success:(void (^)(BOOL isSuccess))success
-                          failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
+                          failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
 
 /**
  * Gets a voucher code permanently assigned to a client (the same code every time).
@@ -120,7 +120,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)getOrAssignVoucherWithPoolUUID:(NSString *)poolUUID
                                success:(void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
-                               failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:success:failure:));
+                               failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:success:failure:));
 
 /**
  * Assigns a voucher from a pool to a client.
@@ -134,7 +134,7 @@ NS_SWIFT_NAME(Promotions)
  */
 + (void)assignVoucherCodeWithPoolUUID:(NSString *)poolUUID
                               success:(void (^)(SNRAssignVoucherResponse *assignVoucherResponse))success
-                              failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
+                              failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
 
 /**
  * Gets a client's voucher codes.
@@ -143,7 +143,7 @@ NS_SWIFT_NAME(Promotions)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)getAssignedVoucherCodesWithSuccess:(void (^)(SNRVoucherCodesResponse *voucherCodesResponse))success
-                                   failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getAssignedVoucherCodes(success:failure:));
+                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getAssignedVoucherCodes(success:failure:));
 
 @end
 

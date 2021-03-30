@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.1] - 2020-03-30
+
+### Fixed
+- Potential issues with regenerating anonymous after an account is deleted.
+
+### Changed
+- `CancelledPushEvent` name to `PushCancelledEvent`.
+- `Client.requestEmailChange(email:password:success:failure:)` is deprecated.
+- `Client.requestEmailChangeByFacebook(email:success:failure:)` is deprecated.
+
+### Added
+- `Client.requestEmailChange(email:password:externalToken:authID:success:failure:)` method.
+- `Content.getScreenView(success:failure:)` method.
+
+
 ## [3.7.0] - 2020-02-24
 
 ### Changed
@@ -10,9 +25,9 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `NSError` is changed to `SNRApiError` in failure blocks in module methods.
 
 ### Added
-- `SNRContentWidget` is supporting Recommendations v2.
+- `ContentWidget` is supporting Recommendations v2.
 - `ContentWidgetRecommendationOptions` configuration object for `ContentWidget`.
-- `imageContentMode` in `SNRContentWidgetBasicProductItemLayout`.
+- `imageContentMode` in `ContentWidgetBasicProductItemLayout`.
 
 
 ## [3.6.27] - 2020-02-13
@@ -322,7 +337,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ### Changed
 - `PromotionResponse` mapping metadata to `PromotionResponseMetadata` object in metadata property.
-- `Client.registerForPush:mobileAgreement:success:failure:` is deprecated.
+- `Client.registerForPush(mobileAgreement:success:failure:)` is deprecated.
 
 
 ## [3.5.13] - 2019-11-22

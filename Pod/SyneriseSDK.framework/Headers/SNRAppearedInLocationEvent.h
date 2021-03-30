@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNREvent.h>
@@ -24,12 +24,8 @@ NS_SWIFT_NAME(AppearedInLocationEvent)
 - (instancetype)initWithLabel:(nonnull NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
 - (instancetype)initWithLabel:(nonnull NSString *)label NS_UNAVAILABLE;
 
-- (instancetype)initWithLabel:(NSString *)label
-                          andLocation:(CLLocation *)location NS_SWIFT_NAME(init(label:location:));
-
-- (instancetype)initWithLabel:(NSString *)label
-                          andLocation:(CLLocation *)location
-                            andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:location:params:));
+- (instancetype)initWithLabel:(NSString *)label andLocation:(CLLocation *)location NS_SWIFT_NAME(init(label:location:));
+- (instancetype)initWithLabel:(NSString *)label andLocation:(CLLocation *)location andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:location:params:));
 
 @end
 
