@@ -3,12 +3,11 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRBaseModel.h>
-
-@class SNRVoucherCodesData;
+#import <SyneriseSDK/SNRVoucherCodesData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

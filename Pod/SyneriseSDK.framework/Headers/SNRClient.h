@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRTokenOrigin.h>
@@ -326,11 +326,43 @@ NS_SWIFT_NAME(Client)
  * @param password Client's password.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.1
  */
 + (void)requestEmailChange:(NSString *)email
                   password:(NSString *)password
                    success:(void (^)(BOOL isSuccess))success
-                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:success:failure:));
+                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.requestEmailChange(email:password:externalToken:customID:success:failure:)` instead.");
+
+/**
+ * Requests a client's email change. A confirmation token is sent to the current email address.
+ *
+ * @param email Client's new email.
+ * @param password Client's password (if Synerise account).
+ * @param externalToken Client's token (if OAuth, Facebook etc.).
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)requestEmailChange:(NSString *)email
+                  password:(nullable NSString *)password
+             externalToken:(nullable id)externalToken
+                  authID:(nullable NSString *)authID
+                   success:(void (^)(BOOL isSuccess))success
+                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestEmailChange(email:password:externalToken:authID:success:failure:));
+
+/**
+ * Requests client's email change by Facebook.
+ *
+ * @param email Client's new email.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.1
+ */
++ (void)requestEmailChangeByFacebook:(NSString *)email
+                             success:(void (^)(BOOL isSuccess))success
+                             failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestEmailChangeByFacebook(email:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.requestEmailChange(email:password:externalToken:customID:success:failure:)` instead.");
 
 /**
  * Confirms a client's email change with a token.
@@ -344,17 +376,6 @@ NS_SWIFT_NAME(Client)
         newsletterAgreement:(BOOL)newsletterAgreement
                    success:(void (^)(BOOL isSuccess))success
                    failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(confirmEmailChange(token:newsletterAgreement:success:failure:));
-
-/**
- * Requests client's email change by Facebook.
- *
- * @param email Client's new email.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)requestEmailChangeByFacebook:(NSString *)email
-                             success:(void (^)(BOOL isSuccess))success
-                             failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestEmailChangeByFacebook(email:success:failure:));
 
 /**
  * Requests a client's phone update. A confirmation code is sent to the current number.
@@ -399,7 +420,7 @@ NS_SWIFT_NAME(Client)
  * Deletes a client's account information.
  *
  * @param clientAuthFactor Client's token (if OAuth, Facebook etc.) or password (if Synerise account).
- * @param clientIdentityProvider Client's identity Provider.
+ * @param clientIdentityProvider Client's identity provider.
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -78,17 +78,14 @@
 #import <SyneriseSDK/SNRRecommendationClickEvent.h>
 #import <SyneriseSDK/SNRPushClickedEvent.h>
 #import <SyneriseSDK/SNRPushViewedEvent.h>
-#import <SyneriseSDK/SNRCancelledPushEvent.h>
+#import <SyneriseSDK/SNRPushCancelledEvent.h>
 #import <SyneriseSDK/SNRAppearedInLocationEvent.h>
 #import <SyneriseSDK/SNRHitTimerEvent.h>
 #import <SyneriseSDK/SNRSearchedEvent.h>
 #import <SyneriseSDK/SNRSharedEvent.h>
 #import <SyneriseSDK/SNRVisitedScreenEvent.h>
 #import <SyneriseSDK/SNRCrashEvent.h>
-
-// Events Models
 #import <SyneriseSDK/SNRUnitPrice.h>
-#import <SyneriseSDK/SNREventProduct.h>
 
 // API Models
 #import <SyneriseSDK/SNRBaseModel.h>
@@ -102,6 +99,9 @@
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
+#import <SyneriseSDK/SNRClientEventData.h>
+#import <SyneriseSDK/SNRTokenOrigin.h>
+#import <SyneriseSDK/SNRToken.h>
 #import <SyneriseSDK/SNRPromotionStatus.h>
 #import <SyneriseSDK/SNRPromotionType.h>
 #import <SyneriseSDK/SNRPromotionDiscountType.h>
@@ -116,9 +116,8 @@
 #import <SyneriseSDK/SNRRecommendationOptions.h>
 #import <SyneriseSDK/SNRRecommendationResponse.h>
 #import <SyneriseSDK/SNRRecommendation.h>
-#import <SyneriseSDK/SNRTokenOrigin.h>
-#import <SyneriseSDK/SNRToken.h>
-#import <SyneriseSDK/SNRClientEventData.h>
+#import <SyneriseSDK/SNRScreenViewResponse.h>
+#import <SyneriseSDK/SNRScreenViewAudience.h>
 
 // Content Widget
 #import <SyneriseSDK/SNRContentWidgetAppearance.h>

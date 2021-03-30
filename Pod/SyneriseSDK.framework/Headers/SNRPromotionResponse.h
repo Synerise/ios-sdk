@@ -3,13 +3,12 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRBaseModel.h>
-
-@class SNRPromotionResponseMetadata;
-@class SNRPromotion;
+#import <SyneriseSDK/SNRPromotionResponseMetadata.h>
+#import <SyneriseSDK/SNRPromotion.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

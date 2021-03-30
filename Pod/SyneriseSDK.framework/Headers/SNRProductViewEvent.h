@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2020 Synerise. All rights reserved.
+//  Copyright (c) 2021 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNREvent.h>
@@ -23,6 +23,10 @@ NS_SWIFT_NAME(ProductViewEvent)
                           productName:(NSString *)productName
                    productId:(NSString *)productId
                     andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:productName:productId:params:));
+
+- (instancetype)initWithLabel:(NSString *)label
+                          productName:(NSString *)productName
+                   productId:(NSString *)productId NS_SWIFT_NAME(init(label:productName:productId:));
 
 - (void)setIsRecommended:(BOOL)isRecommended;
 - (void)setCategory:(NSString *)category;
