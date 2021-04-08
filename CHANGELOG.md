@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.2] - 2020-04-08
+
+### Fixed
+- `ScreenViewResponse` model mapping (`data` property issue).
+- Potential issues with fetching Recommendations v1 campaign which is not compatible.
+
+### Added
+- More debug events.
+
+
 ## [3.7.1] - 2020-03-30
 
 ### Fixed

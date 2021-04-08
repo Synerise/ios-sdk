@@ -27,8 +27,10 @@ NS_SWIFT_NAME(NotificationAnalyticsHelper)
 - (instancetype)initWithNotificationContent:(UNMutableNotificationContent *)notificationContent;
 
 - (void)setDebugModeEnabled:(BOOL)enabled;
+
 - (void)trackPushViewEvent;
 - (void)trackPushImageTimeoutEvent;
+- (void)trackPushDecryptionFailedEventWithReason:(nullable NSString *)reason;
 
 @end
 
