@@ -125,12 +125,12 @@ NS_SWIFT_NAME(Injector)
 + (void)showWalkthrough;
 
 /**
- * Checks if a Walkthrough is loaded.
+ * Checks if a walkthrough is loaded.
  */
 + (BOOL)isWalkthroughLoaded;
 
 /**
- * Checks if Walkthrough is unique compared to the previous one.
+ * Checks if walkthrough is unique compared to the previous one.
  */
 + (BOOL)isLoadedWalkthroughUnique;
 
@@ -149,7 +149,7 @@ NS_SWIFT_NAME(Injector)
                         failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
 
 /**
- * Fetches push notifications set for mobile campaigns.
+ * Fetches Push Notifications set for mobile campaigns.
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

@@ -483,7 +483,7 @@ clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
 
 
 /**
- * Registers user for push notifications.
+ * Registers user for Push Notifications.
  *
  * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
  * @param mobilePushAgreement Agreement (consent) for mobile push campaigns.

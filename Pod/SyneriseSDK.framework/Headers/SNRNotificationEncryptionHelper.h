@@ -31,6 +31,9 @@ typedef NS_ENUM(NSInteger, SNRNotificationDecryptionResult) {
 NS_SWIFT_NAME(NotificationEncryptionHelper)
 @interface SNRNotificationEncryptionHelper : NSObject
 
+@property (assign, nonatomic, readonly) SNRNotificationDecryptionResult decryptionResult;
+@property (copy, nonatomic, nullable, readonly) NSString * decryptionFailureReason;
+
 - (void)setDebugModeEnabled:(BOOL)enabled;
 
 - (BOOL)isNotificationContentEncrypted:(UNMutableNotificationContent *)notificationContent NS_SWIFT_NAME(isNotificationContentEncrypted(_:)) API_AVAILABLE(ios(10.0));
