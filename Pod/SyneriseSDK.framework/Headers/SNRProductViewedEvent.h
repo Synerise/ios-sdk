@@ -11,13 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * @class SNRProductViewEvent
+ * @class SNRProductViewedEvent
  *
  * Represents a 'client viewed product' event.
  */
 
-NS_SWIFT_NAME(ProductViewEvent)
-@interface SNRProductViewEvent : SNREvent
+NS_SWIFT_NAME(ProductViewedEvent)
+@interface SNRProductViewedEvent : SNREvent
 
 - (instancetype)initWithLabel:(NSString *)label
                           productName:(NSString *)productName

@@ -11,13 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * @class SNRAddedProductToCartEvent
+ * @class SNRProductAddedToCartEvent
  *
  * Represents a 'client added product to cart' event.
  */
 
-NS_SWIFT_NAME(AddedProductToCartEvent)
-@interface SNRAddedProductToCartEvent : SNRCartEvent
+NS_SWIFT_NAME(ProductAddedToCartEvent)
+@interface SNRProductAddedToCartEvent : SNRCartEvent
 
 @end
 

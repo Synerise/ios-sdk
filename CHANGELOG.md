@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.3] - 2020-04-11
+
+### Fixed
+- Issue with Recommendations v2 mapping caused in previous version (3.7.2).
+- Potential issue with sending double push.view event in some cases.
+
+### Changed
+- `AddedProductToCartEvent` is changed to `ProductAddedToCartEvent`.
+- `RemovedProductFromCartEvent`  is changed to `ProductRemovedFromCartEvent`.
+- `AddedProductToFavoritesEvent`  is changed to `ProductAddedToFavoritesEvent`.
+- `ProductViewEvent` is changed to `ProductViewedEvent`.
+
+### Added
+- Additional UIKit classes excluded from AutoTracking.
+
+
 ## [3.7.2] - 2020-04-08
 
 ### Fixed

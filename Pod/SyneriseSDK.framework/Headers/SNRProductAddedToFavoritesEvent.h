@@ -11,13 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * @class SNRAddedProductToFavoritesEvent
+ * @class SNRProductAddedToFavoritesEvent
  *
  * Represents a 'client added product to favorites' event.
  */
 
-NS_SWIFT_NAME(AddedProductToFavoritesEvent)
-@interface SNRAddedProductToFavoritesEvent : SNREvent
+NS_SWIFT_NAME(ProductAddedToFavoritesEvent)
+@interface SNRProductAddedToFavoritesEvent : SNREvent
 
 @end
 
