@@ -70,10 +70,10 @@
 #import <SyneriseSDK/SNRLoggedOutEvent.h>
 #import <SyneriseSDK/SNRRegisteredEvent.h>
 #import <SyneriseSDK/SNRCartEvent.h>
-#import <SyneriseSDK/SNRAddedProductToCartEvent.h>
-#import <SyneriseSDK/SNRAddedProductToFavoritesEvent.h>
-#import <SyneriseSDK/SNRRemovedProductFromCartEvent.h>
-#import <SyneriseSDK/SNRProductViewEvent.h>
+#import <SyneriseSDK/SNRProductAddedToCartEvent.h>
+#import <SyneriseSDK/SNRProductRemovedFromCartEvent.h>
+#import <SyneriseSDK/SNRProductAddedToFavoritesEvent.h>
+#import <SyneriseSDK/SNRProductViewedEvent.h>
 #import <SyneriseSDK/SNRRecommendationSeenEvent.h>
 #import <SyneriseSDK/SNRRecommendationClickEvent.h>
 #import <SyneriseSDK/SNRPushClickedEvent.h>

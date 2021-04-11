@@ -25,6 +25,7 @@ NS_SWIFT_NAME(NotificationAnalyticsHelper)
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithNotificationContent:(UNMutableNotificationContent *)notificationContent;
+- (instancetype)initWithoutNotificationContent;
 
 - (void)setDebugModeEnabled:(BOOL)enabled;
 
