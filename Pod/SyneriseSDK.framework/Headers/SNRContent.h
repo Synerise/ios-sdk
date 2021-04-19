@@ -56,7 +56,8 @@ NS_SWIFT_NAME(Content)
             success:(void (^)(SNRRecommendationResponse *recommendationResponse))success
             failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getRecommendations(options:success:failure:));
 
-/** Gets customer's highest-priority screen view campaign.
+/**
+ * Gets customer's highest-priority screen view campaign.
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

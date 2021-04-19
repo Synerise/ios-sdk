@@ -68,13 +68,15 @@ NS_SWIFT_NAME(Tracker)
  * Adds new event to queue and sends available events to server if possible.
  *
  * @param event `SNREvent` object.
+ *
+ * @note The Tracker caches and enqueues all your events locally, so they all will be sent eventually.
  */
 + (void)send:(SNREvent *)event;
 
 /**
  * Sends events from queue to server by force.
  *
- * @param completion A block to be executed when `SNRTracker` has finished flushing events to Synerise servers, no matter the result.
+ * @param completion A block to be executed when the tracker has finished flushing events to Synerise backend, no matter the result.
  */
 + (void)flushEventsWithCompletionHandler:(nullable void (^)(void))completion NS_SWIFT_NAME(flushEvents(completionHandler:));
 

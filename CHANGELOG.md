@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.4] - 2020-04-15
+
+### Fixed
+- Potential issues in generating screen.content event.
+- Compatibility both for `String` and `Data` types in method that uses Sign in with Apple.
+
+
 ## [3.7.3] - 2020-04-11
 
 ### Fixed

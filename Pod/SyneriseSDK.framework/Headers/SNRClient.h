@@ -209,18 +209,18 @@ NS_SWIFT_NAME(Client)
 + (BOOL)isSignedIn;
 
 /**
- * Signs out client.
+ * Signs out the client.
  */
 + (void)signOut NS_SWIFT_NAME(signOut());
 
 /**
- * Use this method to refresh your token.
+ * Refreshes the client's token.
  */
 + (void)refreshTokenWithSuccess:(void (^)(void))success
                         failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(refreshToken(success:failure:));
 
 /**
- * Retrieves the client's current token.
+ * Retrieves the client's token.
  * This method provides a valid token if the client is signed in and the current token is not expired.
  *
  * @param success A block object to be executed when the operation finishes successfully.
@@ -230,19 +230,19 @@ NS_SWIFT_NAME(Client)
                          failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(retrieveToken(success:failure:));
 
 /**
- * Retrieves current client's UUID.
+ * Retrieves the client's UUID.
  */
 + (NSString *)getUUID;
 
 /**
- * Regenerates a client's UUID and clears authentication token, login (if applicable), custom email, and custom identifier.
- * Note that this operation works only if the current client is anonymous.
+ * Regenerates the client's UUID and clears authentication token, login (if applicable), custom email, and custom identifier.
+ * Note that this operation works only if the client is anonymous.
  */
 + (BOOL)regenerateUUID;
 
 /**
- * Regenerates client's UUID and clear authentication token, login (if applicable), custom email and custom identifier.
- * Note that this operation works only if the current client is anonymous.
+ * Regenerates the client's UUID and clear authentication token, login (if applicable), custom email and custom identifier.
+ * Note that this operation works only if the client is anonymous.
  *
  * @param clientIdentifier A seed for UUID generation.
  */
@@ -339,7 +339,7 @@ NS_SWIFT_NAME(Client)
  *
  * @param email Client's new email.
  * @param password Client's password (if Synerise account).
- * @param externalToken Client's token (if OAuth, Facebook etc.).
+ * @param externalToken Client's token (if OAuth, Facebook, Apple etc.).
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
@@ -419,7 +419,7 @@ NS_SWIFT_NAME(Client)
 /**
  * Deletes a client's account information.
  *
- * @param clientAuthFactor Client's token (if OAuth, Facebook etc.) or password (if Synerise account).
+ * @param clientAuthFactor Client's token (if OAuth, Facebook, Apple etc.) or password (if Synerise account).
  * @param clientIdentityProvider Client's identity provider.
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -471,7 +471,7 @@ clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
                            failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deleteAccountByAppleSignIn(identityToken:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.deleteAccount(clientAuthFactor:clientIdentityProvider:authID:success:failure:)` instead.");
 
 /**
- * Method to recognize anonymous users and save personal information from their CRM entries.
+ * Recognize anonymous users and save personal information from their CRM entries.
  *
  * @param email Client's email.
  * @param customIdentify Client's custom identifier.

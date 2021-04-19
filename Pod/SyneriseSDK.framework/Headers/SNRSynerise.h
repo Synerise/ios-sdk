@@ -254,7 +254,7 @@ NS_SWIFT_NAME(Synerise)
  * @param userInfo Key-Value map of data.
  *
  * @note If notification is not encrypted the method returns raw payload.
- * @note If notification is not decrypted successfully, the method returns nil
+ * @note If notification is not decrypted successfully, the method returns nil.
  */
 + (nullable NSDictionary *)decryptNotification:(NSDictionary *)userInfo;
 
