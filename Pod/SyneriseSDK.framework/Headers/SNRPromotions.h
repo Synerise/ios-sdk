@@ -111,7 +111,7 @@ NS_SWIFT_NAME(Promotions)
                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
 
 /**
- * Gets a voucher code permanently assigned to a client (the same code every time).
+ * Gets a voucher code permanently assigned to a customer (the same code every time).
  * If no code is permanently assigned, the method assigns a voucher from the provided pool so that the same code is returned in all future calls.
  *
  * @param poolUUID Pool's universally unique identifier.
@@ -123,7 +123,7 @@ NS_SWIFT_NAME(Promotions)
                                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(getOrAssignVoucher(poolUUID:success:failure:));
 
 /**
- * Assigns a voucher from a pool to a client.
+ * Assigns a voucher from a pool to a customer.
  * Every request returns different code until the pool is empty.
  *
  * @param poolUUID Pool's universally unique identifier.
@@ -137,7 +137,7 @@ NS_SWIFT_NAME(Promotions)
                               failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(assignVoucherCode(poolUUID:success:failure:));
 
 /**
- * Gets a client's voucher codes.
+ * Gets a customer's voucher codes.
  *
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

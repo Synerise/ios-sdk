@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.5] - 2020-05-18
+
+### Changed
+- `VoucherStatus` is changed to `VoucherCodeStatus`.
+
+### Fixed
+- Client UUID is renewed after reinstallation when session is valid.
+
+
 ## [3.7.4] - 2020-04-15
 
 ### Fixed
