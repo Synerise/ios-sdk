@@ -108,7 +108,7 @@
 #import <SyneriseSDK/SNRPromotionResponse.h>
 #import <SyneriseSDK/SNRPromotionResponseMetadata.h>
 #import <SyneriseSDK/SNRPromotion.h>
-#import <SyneriseSDK/SNRVoucherStatus.h>
+#import <SyneriseSDK/SNRVoucherCodeStatus.h>
 #import <SyneriseSDK/SNRAssignVoucherResponse.h>
 #import <SyneriseSDK/SNRAssignVoucherData.h>
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
