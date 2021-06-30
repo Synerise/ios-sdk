@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.7.6] - 2020-06-30
+
+### Fixed
+- UUID regeneration is performed automatically when the session is recovered from the client token after app reinstall.
+
+### Added
+- `Client.signInConditionally(email:password:success:failure:)` method.
+- `Client.authenticateConditionally(token:clientIdentityProvider:authID:success:failure:)` method.
+- `Client.authenticate(token:clientIdentityProvider:authID:success:failure:)` method.
+- `ClientAuthenticationResult` model.
+- `ClientAuthenticationStatus` enum.
+
 ## [3.7.5] - 2020-05-18
 
 ### Changed

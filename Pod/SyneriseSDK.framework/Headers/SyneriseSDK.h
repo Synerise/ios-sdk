@@ -92,9 +92,11 @@
 #import <SyneriseSDK/SNRClientAgreements.h>
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>
+#import <SyneriseSDK/SNRClientAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientOAuthAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientAppleSignInAuthenticationContext.h>
+#import <SyneriseSDK/SNRClientAuthenticationResult.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
