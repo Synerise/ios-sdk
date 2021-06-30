@@ -13,9 +13,11 @@
 
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
+@class SNRClientAuthenticationContext;
 @class SNRClientOAuthAuthenticationContext;
 @class SNRClientFacebookAuthenticationContext;
 @class SNRClientAppleSignInAuthenticationContext;
+@class SNRClientAuthenticationResult;
 @class SNRClientAccountInformation;
 @class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
@@ -114,10 +116,58 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
++ (void)signInConditionallyWithEmail:(NSString *)email
+               password:(NSString *)password
+                success:(void (^)(SNRClientAuthenticationResult *authResult))success
+                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signInConditionally(email:password:success:failure:));
+
+/**
+ * Signs in a customer in order to obtain a JSON Web Token (JWT) which can be used in subsequent requests.
+ * The SDK will refresh the token before each call if it is about to expire (but not expired).
+ * Note that you should NOT allow signing in again (or signing up) when a user is already signed in. Sign out the user first.
+ * Do not create multiple instances nor call this method multiple times before execution.
+ *
+ * @param email Client's email.
+ * @param password Client's password.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
 + (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
                 success:(void (^)(BOOL isSuccess))success
                 failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
+
+/**
+ * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
+ *
+ * @param token  Client's token (OAuth, Facebook, Apple etc.).
+ * @param clientIdentityProvider Client's identity provider.
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateConditionallyWithToken:(id)token
+       clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
+                       authID:(nullable NSString *)authID
+                      success:(void (^)(SNRClientAuthenticationResult *authResult))success
+                      failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateConditionally(token:clientIdentityProvider:authID:success:failure:));
+
+/**
+ * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
+ *
+ * @param token  Client's token (OAuth, Facebook, Apple etc.).
+ * @param clientIdentityProvider Client's identity provider.
+ * @param authID Authorization custom identity.
+ * @param context `SNRClientAuthenticationContext` object with agreements and optional attributes.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateWithToken:(id)token
+       clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
+                       authID:(nullable NSString *)authID
+                      context:(nullable SNRClientAuthenticationContext *)context
+                      success:(void (^)(BOOL isSuccess))success
+                      failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticate(token:clientIdentityProvider:authID:context:success:failure:));
 
 /**
  * Signs in a customer with OAuth Access Token.
@@ -127,12 +177,14 @@ NS_SWIFT_NAME(Client)
  * @param context `SNRClientOAuthContext` object with agreements and optional attributes.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByOAuthWithAccessToken:(NSString *)accessToken
                                     authID:(nullable NSString *)authID
                                    context:(nullable SNRClientOAuthAuthenticationContext *)context
                                    success:(void (^)(BOOL isSuccess))success
-                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:));
+                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByOAuth(accessToken:authID:context:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticate(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Signs in a registered client with OAuth Access Token.
@@ -141,11 +193,13 @@ NS_SWIFT_NAME(Client)
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByOAuthIfRegisteredWithAccessToken:(NSString *)accessToken
                                     authID:(nullable NSString *)authID
                                    success:(void (^)(BOOL isSuccess))success
-                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByOAuthIfRegistered(accessToken:authID:success:failure:));
+                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByOAuthIfRegistered(accessToken:authID:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Signs in a customer with Facebook Token.
@@ -155,12 +209,14 @@ NS_SWIFT_NAME(Client)
  * @param context `SNRClientFacebookAuthenticationContext` object with agreements and optional attributes.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByFacebookWithFacebookToken:(NSString *)facebookToken
                                          authID:(nullable NSString *)authID
                                         context:(nullable SNRClientFacebookAuthenticationContext *)context
                                         success:(void (^)(BOOL isSuccess))success
-                                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:authID:context:success:failure:));
+                                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByFacebook(facebookToken:authID:context:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticate(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Signs in a registered client with Facebook Token.
@@ -169,11 +225,13 @@ NS_SWIFT_NAME(Client)
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByFacebookIfRegisteredWithFacebookToken:(NSString *)facebookToken
                                                      authID:(nullable NSString *)authID
                                                     success:(void (^)(BOOL isSuccess))success
-                                                    failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:));
+                                                    failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByFacebookIfRegistered(facebookToken:authID:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Signs in a customer with Sign In With Apple.
@@ -183,12 +241,14 @@ NS_SWIFT_NAME(Client)
  * @param context `SNRClientAppleSignInAuthenticationContext` object with agreements and optional attributes.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByAppleSignInWithIdentityToken:(NSData *)identityToken
                                             authID:(nullable NSString *)authID
                                            context:(nullable SNRClientAppleSignInAuthenticationContext *)context
                                            success:(void (^)(BOOL isSuccess))success
-                                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(identityToken:authID:context:success:failure:));
+                                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignIn(identityToken:authID:context:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticate(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Signs in a registered client with Sign In With Apple.
@@ -197,11 +257,13 @@ NS_SWIFT_NAME(Client)
  * @param authID Authorization custom identity.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ *
+ * @deprecated Deprecated in version 3.7.6
  */
 + (void)authenticateByAppleSignInIfRegisteredWithIdentityToken:(NSData *)identityToken
                                             authID:(nullable NSString *)authID
                                            success:(void (^)(BOOL isSuccess))success
-                                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:));
+                                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
  * Checks if a customer is signed in (if client's token not expired).
