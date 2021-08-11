@@ -16,5 +16,6 @@ typedef NS_ENUM(NSUInteger, SNRClientSessionEndReason) {
     SNRClientSessionEndReasonSessionExpiration,
     SNRClientSessionEndReasonSessionDestroyed,
     SNRClientSessionEndReasonSecurityException,
+    SNRClientSessionEndReasonClientRejected,
 } NS_SWIFT_NAME(ClientSessionEndReason);
 

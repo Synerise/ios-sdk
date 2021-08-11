@@ -106,6 +106,30 @@ NS_SWIFT_NAME(Client)
                 failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activateAccount(email:success:failure:));
 
 /**
+ * Requests a customer's account registration process with pin code.
+ *
+ * @param email Client’s email.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)requestAccountActivationByPinWithEmail:(NSString *)email
+                                       success:(void (^)(BOOL isSuccess))success
+                                       failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestAccountActivationByPin(email:success:failure:));
+
+/**
+ * Confirms a customer's account registration process with code.
+ *
+ * @param pinCode Code sent to your mail
+ * @param email Client’s email.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)confirmAccountActivationByPin:(NSString *)pinCode
+                                email:(NSString *)email
+                              success:(void (^)(BOOL isSuccess))success
+                              failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(confirmAccountActivationByPin(pinCode:email:success:failure:));
+
+/**
  * Signs in a customer in order to obtain a JSON Web Token (JWT) which can be used in subsequent requests.
  * The SDK will refresh the token before each call if it is about to expire (but not expired).
  * Note that you should NOT allow signing in again (or signing up) when a user is already signed in. Sign out the user first.

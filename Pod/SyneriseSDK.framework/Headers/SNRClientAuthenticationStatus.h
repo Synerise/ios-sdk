@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, SNRClientAuthenticationStatus) {
     SNRClientAuthenticationStatusSuccess,
     SNRClientAuthenticationStatusUnauthorized,
     SNRClientAuthenticationStatusActivationRequired,
+    SNRClientAuthenticationStatusPinActivationRequired,
     SNRClientAuthenticationStatusRegistrationRequired,
     SNRClientAuthenticationStatusApprovalRequired,
     SNRClientAuthenticationStatusTermsAcceptanceRequired,

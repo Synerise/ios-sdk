@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.0] - 2020-08-09
+
+### Added
+- `Client.requestAccountActivationByPin(email:success:failure:)` method.
+- `Client.confirmAccountActivationByPin(pinCode:email:success:failure:)` method.
+- `SNRClientSessionEndReasonClientRejected` option in `SNRClientSessionEndReason` enumeration.
+
+### Changed
+- Improvements to stability.
+
+
 ## [3.7.6] - 2020-06-30
 
 ### Fixed
@@ -14,6 +25,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `Client.authenticate(token:clientIdentityProvider:authID:success:failure:)` method.
 - `ClientAuthenticationResult` model.
 - `ClientAuthenticationStatus` enum.
+
 
 ## [3.7.5] - 2020-05-18
 

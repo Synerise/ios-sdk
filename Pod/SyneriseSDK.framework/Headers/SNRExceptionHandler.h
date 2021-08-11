@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SNRExceptionHandler : NSObject
 
-+ (BOOL)catchException:(void(^)(void))tryBlock error:(__autoreleasing NSError **)error;
++ (BOOL)catchException:(void(^)(void))tryBlock error:(NSError **)error;
 
 @end
 
