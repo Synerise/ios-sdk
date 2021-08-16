@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.1] - 2020-08-15
+
+### Fixed
+- dSYM content removed from inside framework bundle
+
+
 ## [3.8.0] - 2020-08-09
 
 ### Added
