@@ -8,6 +8,7 @@
 
 @class SNRPromotionsApiQuery;
 @class SNRPromotionResponse;
+@class SNRPromotionIdentifier;
 @class SNRPromotion;
 @class SNRAssignVoucherResponse;
 @class SNRVoucherCodesResponse;
@@ -89,6 +90,18 @@ NS_SWIFT_NAME(Promotions)
                         failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activatePromotion(code:success:failure:));
 
 /**
+ * Activates promotions with code or with UUID in a batch.
+ *
+ * @param identifiers List of promotion identifiers to be activated.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
+
++ (void)activatePromotionsWithIdentifiers:(NSArray<SNRPromotionIdentifier *> *)identifiers
+                                       success:(void (^)(BOOL isSuccess))success
+                                       failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activatePromotions(identifiers:success:failure:));
+
+/**
  * Dectivates a promotion identified by UUID.
  *
  * @param uuid UUID of the promotion that will be deactivated.
@@ -109,6 +122,18 @@ NS_SWIFT_NAME(Promotions)
 + (void)deactivatePromotionByCode:(NSString *)code
                           success:(void (^)(BOOL isSuccess))success
                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
+
+/**
+ * Dectivates promotions with code or with UUID in a batch.
+ *
+ * @param identifiers List of promotion identifiers to be deactivated.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
+
++ (void)deactivatePromotionsWithIdentifiers:(NSArray<SNRPromotionIdentifier *> *)identifiers
+                                       success:(void (^)(BOOL isSuccess))success
+                                       failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotions(identifiers:success:failure:));
 
 /**
  * Gets a voucher code permanently assigned to a customer (the same code every time).

@@ -7,9 +7,14 @@
 //
 
 #import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRPromotionDetails.h>
 #import <SyneriseSDK/SNRPromotionStatus.h>
 #import <SyneriseSDK/SNRPromotionType.h>
 #import <SyneriseSDK/SNRPromotionDiscountType.h>
+#import <SyneriseSDK/SNRPromotionDiscountMode.h>
+#import <SyneriseSDK/SNRPromotionDiscountModeDetails.h>
+#import <SyneriseSDK/SNRPromotionItemScope.h>
+#import <SyneriseSDK/SNRPromotionImage.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,29 +39,41 @@ NS_SWIFT_NAME(Promotion)
 @property (copy, nonatomic, nonnull, readonly) NSString *code;
 @property (assign, nonatomic, readonly) SNRPromotionStatus status;
 @property (assign, nonatomic, readonly) SNRPromotionType type;
+@property (strong, nonatomic, nonnull, readonly) SNRPromotionDetails *details;
 
 @property (copy, nonatomic, nullable, readonly) NSNumber *redeemLimitPerClient;
 @property (copy, nonatomic, nullable, readonly) NSNumber *redeemQuantityPerActivation;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *currentRedeemedQuantity;
 @property (copy, nonatomic, nullable, readonly) NSNumber *currentRedeemLimit;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *activationCounter;
+@property (copy, nonatomic, nonnull, readonly) NSNumber *possibleRedeems;
+@property (copy, nonatomic, nullable, readonly) NSNumber *requireRedeemedPoints;
+
 @property (assign, nonatomic, readonly) SNRPromotionDiscountType discountType;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *discountValue;
-@property (copy, nonatomic, nullable, readonly) NSNumber *requireRedeemedPoints;
+@property (assign, nonatomic, readonly) SNRPromotionDiscountMode discountMode;
+@property (strong, nonatomic, nullable, readonly) SNRPromotionDiscountModeDetails *discountModeDetails;
+
 @property (copy, nonatomic, nullable, readonly) NSNumber *priority;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *price;
+@property (assign, nonatomic, readonly) SNRPromotionItemScope itemScope;
+@property (copy, nonatomic, nullable, readonly) NSNumber *minBasketValue;
+@property (copy, nonatomic, nullable, readonly) NSNumber *maxBasketValue;
 
 @property (copy, nonatomic, nullable, readonly) NSString *name;
 @property (copy, nonatomic, nullable, readonly) NSString *headline;
 @property (copy, nonatomic, nullable, readonly) NSString *descriptionText;
-@property (copy, nonatomic, nullable, readonly) NSArray<NSDictionary *> *images;
+@property (copy, nonatomic, nullable, readonly) NSArray<SNRPromotionImage *> *images;
 
 @property (copy, nonatomic, nullable, readonly) NSDate *startAt;
 @property (copy, nonatomic, nullable, readonly) NSDate *expireAt;
 @property (copy, nonatomic, nullable, readonly) NSDate *lastingAt;
+@property (copy, nonatomic, nullable, readonly) NSString *displayFrom;
+@property (copy, nonatomic, nullable, readonly) NSString *displayTo;
 
-@property (copy, nonatomic, nullable, readonly) NSDictionary *params;
 @property (copy, nonatomic, nullable, readonly) NSArray<NSString *> *catalogIndexItems;
+@property (copy, nonatomic, nullable, readonly) NSDictionary *params;
+@property (copy, nonatomic, nullable, readonly) NSArray *tags;
 
 @end
 
