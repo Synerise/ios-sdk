@@ -3,10 +3,21 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.2] - 2020-08-22
+
+### Fixed
+- Issue with token refreshing occuring by SDK in version 3.8.1.
+
+### Added
+- `Promotions.activatePromotions(identifiers:success:failure:)` method.
+- `Promotions.deactivatePromotions(identifiers:success:failure:)` method.
+- `Promotion` model has got new properties.
+
+
 ## [3.8.1] - 2020-08-15
 
 ### Fixed
-- dSYM content removed from inside framework bundle
+- dSYM content removed from inside framework bundle.
 
 
 ## [3.8.0] - 2020-08-09
