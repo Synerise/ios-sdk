@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.3] - 2020-09-01
+
+### Fixed
+- mapping `currentRedeemLimit` property in `Promotion` model.
+
+### Changed
+- nullability of properties in `Promotion` model.
+
+### Added
+- `lastingTime` property in `Promotion` model.
+- `PromotionTypeHandbill` value in `PromotionType` model.
+
 ## [3.8.2] - 2020-08-22
 
 ### Fixed

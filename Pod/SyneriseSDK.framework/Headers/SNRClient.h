@@ -117,9 +117,9 @@ NS_SWIFT_NAME(Client)
                                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(requestAccountActivationByPin(email:success:failure:));
 
 /**
- * Confirms a customer's account registration process with code.
+ * Confirms a customer's account registration process with pin code.
  *
- * @param pinCode Code sent to your mail
+ * @param pinCode Code sent to your email.
  * @param email Client’s email.
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.

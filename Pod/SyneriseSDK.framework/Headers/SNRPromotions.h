@@ -102,7 +102,7 @@ NS_SWIFT_NAME(Promotions)
                                        failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(activatePromotions(identifiers:success:failure:));
 
 /**
- * Dectivates a promotion identified by UUID.
+ * Deactivates a promotion identified by UUID.
  *
  * @param uuid UUID of the promotion that will be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.
@@ -124,7 +124,7 @@ NS_SWIFT_NAME(Promotions)
                           failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(deactivatePromotion(code:success:failure:));
 
 /**
- * Dectivates promotions with code or with UUID in a batch.
+ * Deactivates promotions with code or with UUID in a batch.
  *
  * @param identifiers List of promotion identifiers to be deactivated.
  * @param success A block object to be executed when the operation finishes successfully.

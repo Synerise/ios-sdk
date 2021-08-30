@@ -44,23 +44,23 @@ NS_SWIFT_NAME(Promotion)
 @property (copy, nonatomic, nullable, readonly) NSNumber *redeemLimitPerClient;
 @property (copy, nonatomic, nullable, readonly) NSNumber *redeemQuantityPerActivation;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *currentRedeemedQuantity;
-@property (copy, nonatomic, nullable, readonly) NSNumber *currentRedeemLimit;
+@property (copy, nonatomic, nonnull, readonly) NSNumber *currentRedeemLimit;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *activationCounter;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *possibleRedeems;
-@property (copy, nonatomic, nullable, readonly) NSNumber *requireRedeemedPoints;
+@property (copy, nonatomic, nonnull, readonly) NSNumber *requireRedeemedPoints;
 
 @property (assign, nonatomic, readonly) SNRPromotionDiscountType discountType;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *discountValue;
 @property (assign, nonatomic, readonly) SNRPromotionDiscountMode discountMode;
 @property (strong, nonatomic, nullable, readonly) SNRPromotionDiscountModeDetails *discountModeDetails;
 
-@property (copy, nonatomic, nullable, readonly) NSNumber *priority;
+@property (copy, nonatomic, nonnull, readonly) NSNumber *priority;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *price;
 @property (assign, nonatomic, readonly) SNRPromotionItemScope itemScope;
 @property (copy, nonatomic, nullable, readonly) NSNumber *minBasketValue;
 @property (copy, nonatomic, nullable, readonly) NSNumber *maxBasketValue;
 
-@property (copy, nonatomic, nullable, readonly) NSString *name;
+@property (copy, nonatomic, nonnull, readonly) NSString *name;
 @property (copy, nonatomic, nullable, readonly) NSString *headline;
 @property (copy, nonatomic, nullable, readonly) NSString *descriptionText;
 @property (copy, nonatomic, nullable, readonly) NSArray<SNRPromotionImage *> *images;
@@ -68,6 +68,7 @@ NS_SWIFT_NAME(Promotion)
 @property (copy, nonatomic, nullable, readonly) NSDate *startAt;
 @property (copy, nonatomic, nullable, readonly) NSDate *expireAt;
 @property (copy, nonatomic, nullable, readonly) NSDate *lastingAt;
+@property (copy, nonatomic, nullable, readonly) NSNumber *lastingTime;
 @property (copy, nonatomic, nullable, readonly) NSString *displayFrom;
 @property (copy, nonatomic, nullable, readonly) NSString *displayTo;
 
