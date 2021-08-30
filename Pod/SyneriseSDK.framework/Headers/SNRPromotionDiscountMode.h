@@ -14,8 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, SNRPromotionDiscountMode) {
     SNRPromotionDiscountModeStatic = 0,
-    SNRPromotionDiscountModeStep,
-
+    SNRPromotionDiscountModeStep
 } NS_SWIFT_NAME(PromotionDiscountMode);
 
 NSString * SNR_PromotionDiscountModeToString(SNRPromotionDiscountMode mode);
