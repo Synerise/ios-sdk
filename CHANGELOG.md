@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [3.8.7] - 2020-10-15
+## [3.8.7] - 2021-10-15
 
 ### Fixed
 - Potential issues with cleaning bearer token in HTTP requests.
@@ -15,25 +15,25 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `ExactPrice` value in `PromotionDiscountType` model.
 
 
-## [3.8.6] - 2020-09-28
+## [3.8.6] - 2021-09-28
 
 ### Added
 - `ClientSessionEndReason.ClientDeleted` as reason when client deletes account.
 
 
-## [3.8.5] - 2020-09-12
+## [3.8.5] - 2021-09-12
 
 ### Changed
 - Internal validation for network request is disabled.
 
 
-## [3.8.4] - 2020-09-06
+## [3.8.4] - 2021-09-06
 
 ### Fixed
 - Issues with the SDK reinitialization process.
 
 
-## [3.8.3] - 2020-09-01
+## [3.8.3] - 2021-09-01
 
 ### Fixed
 - mapping `currentRedeemLimit` property in `Promotion` model.
@@ -45,7 +45,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `lastingTime` property in `Promotion` model.
 - `PromotionTypeHandbill` value in `PromotionType` model.
 
-## [3.8.2] - 2020-08-22
+## [3.8.2] - 2021-08-22
 
 ### Fixed
 - Issue with token refreshing occuring by SDK in version 3.8.1.
@@ -56,13 +56,13 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `Promotion` model has got new properties.
 
 
-## [3.8.1] - 2020-08-15
+## [3.8.1] - 2021-08-15
 
 ### Fixed
 - dSYM content removed from inside framework bundle.
 
 
-## [3.8.0] - 2020-08-09
+## [3.8.0] - 2021-08-09
 
 ### Added
 - `Client.requestAccountActivationByPin(email:success:failure:)` method.
@@ -73,7 +73,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - Improvements to stability.
 
 
-## [3.7.6] - 2020-06-30
+## [3.7.6] - 2021-06-30
 
 ### Fixed
 - UUID regeneration is performed automatically when the session is recovered from the client token after app reinstall.
@@ -86,7 +86,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `ClientAuthenticationStatus` enum.
 
 
-## [3.7.5] - 2020-05-18
+## [3.7.5] - 2021-05-18
 
 ### Changed
 - `VoucherStatus` is changed to `VoucherCodeStatus`.
@@ -95,14 +95,14 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - Client UUID is renewed after reinstallation when session is valid.
 
 
-## [3.7.4] - 2020-04-15
+## [3.7.4] - 2021-04-15
 
 ### Fixed
 - Potential issues in generating screen.content event.
 - Compatibility both for `String` and `Data` types in method that uses Sign in with Apple.
 
 
-## [3.7.3] - 2020-04-11
+## [3.7.3] - 2021-04-11
 
 ### Fixed
 - Issue with Recommendations v2 mapping caused in previous version (3.7.2).
@@ -118,7 +118,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - Additional UIKit classes excluded from AutoTracking.
 
 
-## [3.7.2] - 2020-04-08
+## [3.7.2] - 2021-04-08
 
 ### Fixed
 - `ScreenViewResponse` model mapping (`data` property issue).
@@ -128,7 +128,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - More debug events.
 
 
-## [3.7.1] - 2020-03-30
+## [3.7.1] - 2021-03-30
 
 ### Fixed
 - Potential issues with regenerating anonymous after an account is deleted.
@@ -143,7 +143,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `Content.getScreenView(success:failure:)` method.
 
 
-## [3.7.0] - 2020-02-24
+## [3.7.0] - 2021-02-24
 
 ### Changed
 - Some of deprecated methods have been deleted.
@@ -155,13 +155,13 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `imageContentMode` in `ContentWidgetBasicProductItemLayout`.
 
 
-## [3.6.27] - 2020-02-13
+## [3.6.27] - 2021-02-13
 
 ### Fixed
 - Some issues with fetching notification encryption data when device is locked.
 
 
-## [3.6.26] - 2020-01-27
+## [3.6.26] - 2021-01-27
 
 ### Fixed
 - Issue with Push Notification registration after SDK is reinitialized.
@@ -170,7 +170,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - More debug logs.
 
 
-## [3.6.25] - 2020-01-21
+## [3.6.25] - 2021-01-21
 
 ### Fixed
 - Currency issues on `ContentWidget`.
