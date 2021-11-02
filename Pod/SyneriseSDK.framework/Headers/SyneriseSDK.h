@@ -93,6 +93,7 @@
 #import <SyneriseSDK/SNRClientSex.h>
 #import <SyneriseSDK/SNRClientRegisterAccountContext.h>
 #import <SyneriseSDK/SNRClientAuthenticationContext.h>
+#import <SyneriseSDK/SNRClientConditionalAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientOAuthAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientAppleSignInAuthenticationContext.h>
