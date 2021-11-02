@@ -14,6 +14,7 @@
 @class SNRClientEventsApiQuery;
 @class SNRClientRegisterAccountContext;
 @class SNRClientAuthenticationContext;
+@class SNRClientConditionalAuthenticationContext;
 @class SNRClientOAuthAuthenticationContext;
 @class SNRClientFacebookAuthenticationContext;
 @class SNRClientAppleSignInAuthenticationContext;
@@ -140,10 +141,10 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)signInConditionallyWithEmail:(NSString *)email
++ (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
-                success:(void (^)(SNRClientAuthenticationResult *authResult))success
-                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signInConditionally(email:password:success:failure:));
+                success:(void (^)(BOOL isSuccess))success
+                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
 
 /**
  * Signs in a customer in order to obtain a JSON Web Token (JWT) which can be used in subsequent requests.
@@ -156,25 +157,10 @@ NS_SWIFT_NAME(Client)
  * @param success A block object to be executed when the operation finishes successfully.
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
-+ (void)signInWithEmail:(NSString *)email
++ (void)signInConditionallyWithEmail:(NSString *)email
                password:(NSString *)password
-                success:(void (^)(BOOL isSuccess))success
-                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signIn(email:password:success:failure:));
-
-/**
- * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
- *
- * @param token  Client's token (OAuth, Facebook, Apple etc.).
- * @param clientIdentityProvider Client's identity provider.
- * @param authID Authorization custom identity.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)authenticateConditionallyWithToken:(id)token
-       clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
-                       authID:(nullable NSString *)authID
-                      success:(void (^)(SNRClientAuthenticationResult *authResult))success
-                      failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateConditionally(token:clientIdentityProvider:authID:success:failure:));
+                success:(void (^)(SNRClientAuthenticationResult *authResult))success
+                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signInConditionally(email:password:success:failure:));
 
 /**
  * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
@@ -192,6 +178,23 @@ NS_SWIFT_NAME(Client)
                       context:(nullable SNRClientAuthenticationContext *)context
                       success:(void (^)(BOOL isSuccess))success
                       failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticate(token:clientIdentityProvider:authID:context:success:failure:));
+
+/**
+ * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
+ *
+ * @param token  Client's token (OAuth, Facebook, Apple etc.).
+ * @param clientIdentityProvider Client's identity provider.
+ * @param authID Authorization custom identity.
+ * @param context `SNRClientConditionalAuthenticationContext` object with agreements and optional attributes.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateConditionallyWithToken:(id)token
+                    clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
+                                    authID:(nullable NSString *)authID
+                                   context:(nullable SNRClientConditionalAuthenticationContext *)context
+                                   success:(void (^)(SNRClientAuthenticationResult *authResult))success
+                                   failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:));
 
 /**
  * Signs in a customer with OAuth Access Token.
