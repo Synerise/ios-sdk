@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.9] - 2020-11-05
+
+### Added
+- Mapping `errorCode` in `ApiError`.
+
+
 ## [3.8.8] - 2020-11-02
 
 ### Fixed

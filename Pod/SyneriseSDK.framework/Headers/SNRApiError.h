@@ -31,11 +31,13 @@ typedef NS_ENUM(NSInteger, SNRApiErrorType) {
 
 - (instancetype)initWithDomain:(NSErrorDomain)domain
                           code:(NSInteger)code
+                     internalErrorCode:(nullable NSString *)internalErrorCode
                       userInfo:(nullable NSDictionary<NSString *, id> *)userInfo
                         errors:(nullable NSArray<SNRError *> *)errors;
 
 - (SNRApiErrorType)getType;
 - (NSInteger)getHttpCode;
+- (nullable NSString *)getErrorCode;
 - (nullable NSString *)getBody;
 
 @end
