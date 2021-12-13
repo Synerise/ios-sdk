@@ -18,7 +18,7 @@
 @class SNRClientOAuthAuthenticationContext;
 @class SNRClientFacebookAuthenticationContext;
 @class SNRClientAppleSignInAuthenticationContext;
-@class SNRClientAuthenticationResult;
+@class SNRClientConditionalAuthResult;
 @class SNRClientAccountInformation;
 @class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
@@ -158,9 +158,9 @@ NS_SWIFT_NAME(Client)
  * @param failure A block object to be executed when the operation finishes unsuccessfully.
  */
 + (void)signInConditionallyWithEmail:(NSString *)email
-               password:(NSString *)password
-                success:(void (^)(SNRClientAuthenticationResult *authResult))success
-                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signInConditionally(email:password:success:failure:));
+                            password:(NSString *)password
+                             success:(void (^)(SNRClientConditionalAuthResult *authResult))success
+                             failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signInConditionally(email:password:success:failure:));
 
 /**
  * Signs in a customer with external token (if OAuth, Facebook, Apple etc.).
@@ -193,7 +193,7 @@ NS_SWIFT_NAME(Client)
                     clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
                                     authID:(nullable NSString *)authID
                                    context:(nullable SNRClientConditionalAuthenticationContext *)context
-                                   success:(void (^)(SNRClientAuthenticationResult *authResult))success
+                                   success:(void (^)(SNRClientConditionalAuthResult *authResult))success
                                    failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:));
 
 /**

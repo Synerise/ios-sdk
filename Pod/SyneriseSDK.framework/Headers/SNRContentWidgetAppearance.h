@@ -7,9 +7,7 @@
 //
 
 #import <SyneriseSDK/SNRContentWidgetLayout.h>
-
-@class SNRContentWidgetLayout;
-@class SNRContentWidgetItemLayout;
+#import <SyneriseSDK/SNRContentWidgetItemLayout.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

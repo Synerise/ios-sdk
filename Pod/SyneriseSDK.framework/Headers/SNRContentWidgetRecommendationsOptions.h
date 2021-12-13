@@ -11,7 +11,7 @@
 
 @class SNRRecommendation;
 
-typedef SNRContentWidgetRecommendationDataModel * _Nonnull (^ContentWidgetRecommendationsOptionsMappingBlock)(SNRRecommendation * _Nonnull model);
+typedef SNRContentWidgetRecommendationDataModel * _Nullable (^ContentWidgetRecommendationsOptionsMappingBlock)(SNRRecommendation * _Nonnull model);
 
 NS_ASSUME_NONNULL_BEGIN
 
