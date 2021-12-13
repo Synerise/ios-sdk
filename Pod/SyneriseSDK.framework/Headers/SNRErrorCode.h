@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeImageNotDownloaded = 3110,
     SNRErrorCodeCryptoFailedError = 3610,
     SNRErrorCodeMigrationError = 3710,
+    SNRErrorCodeContentWidgetError = 3810,
     
     SNRErrorCodeUnknownApiError = -102,
     SNRErrorCodeNetworkApiError = -105,

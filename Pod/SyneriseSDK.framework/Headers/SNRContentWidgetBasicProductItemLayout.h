@@ -8,6 +8,7 @@
 
 #import <SyneriseSDK/SNRContentWidgetItemLayout.h>
 #import <SyneriseSDK/SNRContentWidgetImageButtonCustomAction.h>
+#import <SyneriseSDK/SNRContentWidgetBadgeItemLayoutPartial.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,6 +23,11 @@ NS_SWIFT_NAME(ContentWidgetBasicProductItemLayout)
 @property (assign, nonatomic, readwrite) CGFloat imageHeightRatio;
 @property (copy, nonatomic, nonnull, readwrite) UIColor *imageBackground;
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
+
+@property (assign, nonatomic, readwrite) UIEdgeInsets topTextInsets;
+@property (copy, nonatomic, nonnull, readwrite) UIFont *topTextFont;
+@property (copy, nonatomic, nonnull, readwrite) UIColor *topTextFontColor;
+@property (assign, nonatomic, readwrite) NSTextAlignment topTextAlignment;
 
 @property (assign, nonatomic, readwrite) UIEdgeInsets titleInsets;
 @property (copy, nonatomic, nonnull, readwrite) UIFont *titleFont;
@@ -38,7 +44,10 @@ NS_SWIFT_NAME(ContentWidgetBasicProductItemLayout)
 
 @property (assign, nonatomic, readwrite) BOOL isSalePriceVisible;
 @property (assign, nonatomic, readwrite) UILayoutConstraintAxis salePriceOrientation;
-@property (assign, nonatomic, readwrite) CGFloat salePriceMargin;
+
+@property (assign, nonatomic, readwrite) BOOL isDiscountPercentageVisible;
+@property (copy, nonatomic, nonnull, readwrite) UIFont *discountPercentageFont;
+@property (copy, nonatomic, nonnull, readwrite) UIColor *discountPercentageFontColor;
 
 @property (copy, nonatomic, nullable, readwrite) UIFont *regularPriceFont;
 @property (copy, nonatomic, nullable, readwrite) UIColor *regularPriceFontColor;
@@ -46,8 +55,9 @@ NS_SWIFT_NAME(ContentWidgetBasicProductItemLayout)
 @property (copy, nonatomic, nullable, readwrite) UIFont *salePriceFont;
 @property (copy, nonatomic, nullable, readwrite) UIColor *salePriceFontColor;
 
+@property (strong, nonatomic, nonnull, readwrite) SNRContentWidgetBadgeItemLayoutPartial *badge;
+
 @property (strong, nonatomic, nullable, readwrite) SNRContentWidgetImageButtonCustomAction *actionButton;
-@property (assign, nonatomic, readwrite) CGPoint actionButtonPosition;
 
 @end
 

@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.8.10] - 2020-12-12
+
+### Added
+- optional badge as a text shown on the item in `ContentWidget`.
+- optional label (`topTextLabel`) to show additional information about product in `ContentWidget`.
+- Label with percentage discount (if set `isDiscountPercentageVisible` in item layout) value shown before sale price in `ContentWidget`.
+
+### Changed
+- The SDK does not throw exception when data model mapping returns nil or required properties are nil.
+- `ClientAuthenticationResult` is changed to `ClientConditionalAuthResult`.
+- `ClientAuthenticationStatus` is changed to `ClientConditionalAuthStatus`.
+- `ClientAuthenticationContext` is changed to `ClientConditionalAuthenticationContext`.
+
+### Removed
+- `salePriceMargin` setting property from `BasicProductItemLayout`.
+
+
 ## [3.8.9] - 2020-11-05
 
 ### Added

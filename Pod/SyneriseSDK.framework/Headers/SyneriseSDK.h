@@ -97,7 +97,8 @@
 #import <SyneriseSDK/SNRClientOAuthAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientFacebookAuthenticationContext.h>
 #import <SyneriseSDK/SNRClientAppleSignInAuthenticationContext.h>
-#import <SyneriseSDK/SNRClientAuthenticationResult.h>
+#import <SyneriseSDK/SNRClientConditionalAuthStatus.h>
+#import <SyneriseSDK/SNRClientConditionalAuthResult.h>
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
@@ -139,11 +140,12 @@
 #import <SyneriseSDK/SNRContentWidgetGridLayout.h>
 #import <SyneriseSDK/SNRContentWidgetItemLayout.h>
 #import <SyneriseSDK/SNRContentWidgetBasicProductItemLayout.h>
-#import <SyneriseSDK/SNRContentWidgetBaseCustomAction.h>
+#import <SyneriseSDK/SNRContentWidgetBadgeItemLayoutPartial.h>
 #import <SyneriseSDK/SNRContentWidgetImageButtonCustomAction.h>
 #import <SyneriseSDK/SNRContentWidgetOptions.h>
 #import <SyneriseSDK/SNRContentWidgetRecommendationsOptions.h>
 #import <SyneriseSDK/SNRContentWidgetRecommendationDataModel.h>
+#import <SyneriseSDK/SNRContentWidgetBadgeDataModel.h>
 #import <SyneriseSDK/SNRContentWidget.h>
 
 // Notification Service/Content Extensions & Helpers

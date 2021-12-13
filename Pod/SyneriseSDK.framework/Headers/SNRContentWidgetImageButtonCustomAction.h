@@ -17,6 +17,7 @@ NS_SWIFT_NAME(ContentWidgetImageButtonCustomAction)
 @interface SNRContentWidgetImageButtonCustomAction : SNRContentWidgetBaseCustomAction
 
 @property (assign, nonatomic, readwrite) CGSize size;
+@property (assign, nonatomic, readwrite) CGPoint position;
 
 @property (strong, nonatomic, nullable, readwrite) UIColor *backgroundColor;
 @property (strong, nonatomic, nullable, readwrite) UIColor *tintColor;
