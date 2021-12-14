@@ -15,6 +15,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `ClientAuthenticationResult` is changed to `ClientConditionalAuthResult`.
 - `ClientAuthenticationStatus` is changed to `ClientConditionalAuthStatus`.
 - `ClientAuthenticationContext` is changed to `ClientConditionalAuthenticationContext`.
+- `actionButtonPosition` setting property is moved from `BasicProductItemLayout` to `SNRContentWidgetImageButtonCustomAction`.
 
 ### Removed
 - `salePriceMargin` setting property from `BasicProductItemLayout`.
