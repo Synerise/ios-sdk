@@ -1,32 +1,41 @@
-platform :ios, '11.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target 'SampleAppSwift' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
-  pod 'Crashlytics', '~> 3.10.5'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
   pod 'Swinject', '~> 2.1.0'
   pod 'ReachabilitySwift'
+  pod 'SwiftLint', '0.25.1'
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage', '~> 3.3'
-  pod 'SwiftyJSON', '~> 4.0'
-  pod 'NotificationBannerSwift'
+  pod 'SwiftyJSON', '~> 4.1'
   pod 'AnimatedCollectionViewLayout'
   pod 'Cosmos', '~> 16.0'
   pod 'FBSDKLoginKit'
-  pod 'SyneriseSDK', '~> 3.5.0'
+  pod 'SwiftMessages'
+  pod 'SyneriseSDK', '~> 3.8.10'
 
-end
+  post_install do |pi|
+    pi.pods_project.targets.each do |t|
+        t.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+          config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
+        end
+      end
+  end
 
 target 'SyneriseCarouselNotificationContentExtension' do
   
-  pod 'SyneriseSDK'
+  pod 'SyneriseSDK', '~> 3.8.10'
 
 end
 
 target 'SyneriseSingleMediaNotificationContentExtension' do
   
-  pod 'SyneriseSDK'
+  pod 'SyneriseSDK', '~> 3.8.10'
 
 end
