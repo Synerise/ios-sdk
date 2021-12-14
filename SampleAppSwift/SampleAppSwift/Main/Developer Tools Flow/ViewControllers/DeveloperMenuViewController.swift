@@ -8,7 +8,7 @@
 
 import UIKit
 import SyneriseSDK
-import Crashlytics
+import Firebase
 
 protocol DeveloperMenuViewControllerDelegate: class {
     func resetApplicationWasPressed(_ developerMenuViewController: DeveloperMenuViewController)
@@ -60,7 +60,7 @@ class DeveloperMenuViewController: DefaultViewController {
     @IBAction func resetApplication() {
         delegate?.resetApplicationWasPressed(self)
         
-        Crashlytics.sharedInstance().crash()
+        fatalError("Crash test!")
     }
     
     @IBAction func executeCrash() {

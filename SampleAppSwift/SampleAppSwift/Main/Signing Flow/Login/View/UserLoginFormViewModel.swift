@@ -91,9 +91,15 @@ class UserLoginFormViewModel {
     }
 
     private func loginWithEmail(email: String, password: String) {
-        Client.signIn(email: email, password: password, success: { (success) in
-            self.loginSuccess(response: success)
-        }, failure: { (error) in
+        Client.signInConditionally(email: email, password: password, success: { authResult in
+            if authResult.status == .success {
+                self.loginSuccess(response: true)
+            } else {
+                self.loginError(error: NSError(domain: "SampleAppSwiftErrorDomain", code: -1, userInfo: [
+                    NSLocalizedDescriptionKey: "Status \(SNR_ClientConditionalAuthStatusToString(authResult.status)) is not supported!"
+                ]))
+            }
+        }, failure: { error in
             self.loginError(error: error)
         })
     }

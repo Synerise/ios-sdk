@@ -40,6 +40,7 @@
 		2DD999C6211C72A1007E24DC /* ClientGetPromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C5211C72A1007E24DC /* ClientGetPromotionTableViewController.swift */; };
 		2DD999C8211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */; };
 		2DF81EC720B8608D009AAC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF81EC620B8608D009AAC66 /* Assets.xcassets */; };
+		6D079E07C92FF242C260D622 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7B85BBE507A08EB73BB6A4 /* Pods_SampleAppSwift.framework */; };
 		6F1E02BC22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */; };
 		6F500D6A229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */; };
 		6F58377B228020FB001BD179 /* ContentAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F58377A228020FB001BD179 /* ContentAPIViewController.swift */; };
@@ -55,7 +56,6 @@
 		6FDB918C24053C8F00C7B6C4 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB918B24053C8F00C7B6C4 /* WalkthroughViewController.swift */; };
 		6FFD723C21BFE17D00A721B3 /* DeleteAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */; };
 		6FFD724321C001F000A721B3 /* ConfirmClientAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */; };
-		7DB33A2FA6C055B3B8C6E425 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */; };
 		A104C3D9212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */; };
 		A127138520F882CA00550CC0 /* CustomEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138420F882CA00550CC0 /* CustomEventViewController.swift */; };
 		A127138720F884BD00550CC0 /* CustomEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138620F884BD00550CC0 /* CustomEventParameter.swift */; };
@@ -154,7 +154,6 @@
 		B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68CB20C7EBFC00A8ECBE /* String.swift */; };
 		B84F68CF20C7EC4900A8ECBE /* UserRegistrationFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */; };
 		B84F68D120C7EC9900A8ECBE /* UserRegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */; };
-		B84F68E020C7F60100A8ECBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84F68DF20C7F60100A8ECBE /* Localizable.strings */; };
 		B84F68E720C9374300A8ECBE /* DefaultLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68E620C9374300A8ECBE /* DefaultLabel.swift */; };
 		FF068DEA20C1966800A508C3 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DE920C1966800A508C3 /* Administrator.swift */; };
 		FF068DEC20C1979900A508C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DEB20C1979900A508C3 /* Coordinator.swift */; };
@@ -217,19 +216,24 @@
 		FF5FF8B22501805C004554E7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		FF5FF8B325018060004554E7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		FF7638902120919F00544633 /* TrackerAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF76388F2120919F00544633 /* TrackerAPI.storyboard */; };
+		FF7C61D726D26A1900495F3A /* ClientActivatePromotionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7C61D626D26A1900495F3A /* ClientActivatePromotionsTableViewController.swift */; };
+		FF7C61DA26D26A2800495F3A /* ClientDeactivatePromotionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7C61D926D26A2800495F3A /* ClientDeactivatePromotionsTableViewController.swift */; };
+		FF7D727926AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D727826AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift */; };
+		FF7D727C26AD667B00395D7B /* AuthorizeWithAppleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D727B26AD667B00395D7B /* AuthorizeWithAppleTableViewController.swift */; };
 		FF89FCE32146794700C8B4E0 /* InjectorAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF89FCE22146794700C8B4E0 /* InjectorAPI.storyboard */; };
 		FF89FCE7214679AA00C8B4E0 /* InjectorAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89FCE6214679AA00C8B4E0 /* InjectorAPIViewController.swift */; };
 		FF89FCE921467B5F00C8B4E0 /* LocalNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89FCE821467B5F00C8B4E0 /* LocalNotificationSender.swift */; };
 		FF89FCEB21467F5600C8B4E0 /* LocalNotificationsUserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89FCEA21467F5600C8B4E0 /* LocalNotificationsUserInfoData.swift */; };
 		FF89FCED21468A1200C8B4E0 /* SimplePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89FCEC21468A1200C8B4E0 /* SimplePushViewController.swift */; };
 		FF95AFE522B1205C00CD3FF3 /* GetDocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95AFE422B1205C00CD3FF3 /* GetDocumentTableViewController.swift */; };
+		FFA262D925AF5DAF00945FFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFA262DB25AF5DAF00945FFD /* Localizable.strings */; };
 		FFA36A1920C730FB003CFB91 /* DebugUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A1820C730FB003CFB91 /* DebugUtils.swift */; };
 		FFA36A1B20C73B42003CFB91 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A1A20C73B42003CFB91 /* Updatable.swift */; };
 		FFA36A2020C73C6E003CFB91 /* BindingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A1F20C73C6E003CFB91 /* BindingType.swift */; };
 		FFA36A2320C73DE8003CFB91 /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2220C73DE8003CFB91 /* DefaultTextField.swift */; };
 		FFA36A2520C73DF9003CFB91 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2420C73DF9003CFB91 /* BindingTextField.swift */; };
 		FFA36A2720C73E08003CFB91 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2620C73E08003CFB91 /* Bindable.swift */; };
-		FFA6FDB12187472800310022 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		FFA6FDB12187472800310022 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA738D120D33C2B002C48F3 /* InputView.swift */; };
 		FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F662180B0E500782954 /* SettingsViewController.swift */; };
 		FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAA2F672180B0E500782954 /* SettingsViewController.xib */; };
@@ -238,6 +242,7 @@
 		FFB1F034219D63E500649A19 /* PromotionsAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1F033219D63E500649A19 /* PromotionsAPIViewController.swift */; };
 		FFB1F039219D7BD200649A19 /* ClientAPI_Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB1F038219D7BD200649A19 /* ClientAPI_Account.storyboard */; };
 		FFB1F03B219D7C7500649A19 /* ClientAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1F03A219D7C7500649A19 /* ClientAccountViewController.swift */; };
+		FFB25BBC26B6F4D9007B9781 /* ConfirmAccountActivationByPinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25BBB26B6F4D9007B9781 /* ConfirmAccountActivationByPinTableViewController.swift */; };
 		FFBB87FA20ECE21A007142DF /* DeveloperToolsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB87F920ECE21A007142DF /* DeveloperToolsCoordinator.swift */; };
 		FFBB87FC20ECE24E007142DF /* DeveloperToolsFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBB87FB20ECE24E007142DF /* DeveloperToolsFlow.storyboard */; };
 		FFBB87FF20ECE482007142DF /* DeveloperMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB87FE20ECE482007142DF /* DeveloperMenuViewController.swift */; };
@@ -248,6 +253,7 @@
 		FFC037FD2422201600FDF7B0 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		FFC037FE2422201600FDF7B0 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		FFC038022422201600FDF7B0 /* CarouselNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC038012422201600FDF7B0 /* CarouselNotificationViewController.m */; };
+		FFC8B39526AC3B5C007D4829 /* AuthorizeWithOAuthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC8B39426AC3B5C007D4829 /* AuthorizeWithOAuthTableViewController.swift */; };
 		FFC8E3D020D0E80600B27767 /* ObservingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC8E3CF20D0E80600B27767 /* ObservingType.swift */; };
 		FFD08F3920C2CD880083A890 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F3820C2CD880083A890 /* StoryboardUtils.swift */; };
 		FFD08F3D20C2CF2A0083A890 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F3C20C2CF2A0083A890 /* Storyboards.swift */; };
@@ -267,7 +273,9 @@
 		FFE4329D2189F64A0044865A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA36A2E20C74505003CFB91 /* RegistrationViewController.xib */; };
 		FFEB21F120C5C4CD00DBAF08 /* SyneriseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB21F020C5C4CD00DBAF08 /* SyneriseManager.swift */; };
 		FFEB21F320C5C5A400DBAF08 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB21F220C5C5A400DBAF08 /* Configuration.swift */; };
+		FFEB8394260D27D8009C515C /* GetScreenViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB8393260D27D8009C515C /* GetScreenViewTableViewController.swift */; };
 		FFF6C54B21244C1F009D9B80 /* ActivateClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6C54A21244C1F009D9B80 /* ActivateClientTableViewController.swift */; };
+		FFFB306126B6F45F006DB6AB /* RequestClientAccountActivationByPinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB306026B6F45F006DB6AB /* RequestClientAccountActivationByPinTableViewController.swift */; };
 		FFFBAE082162246200D36049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBAE062162246200D36049 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -293,20 +301,6 @@
 			remoteGlobalIDString = 2D401F21214A64430000F229;
 			remoteInfo = SyneriseCarouselNotificationContentExtension;
 		};
-		2DF81ED120B8608D009AAC66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2DF81EB420B8608B009AAC66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DF81EBB20B8608B009AAC66;
-			remoteInfo = SampleAppSwift;
-		};
-		2DF81EDC20B8608D009AAC66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2DF81EB420B8608B009AAC66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DF81EBB20B8608B009AAC66;
-			remoteInfo = SampleAppSwift;
-		};
 		B810EC8420C6902000218B93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
@@ -314,7 +308,7 @@
 			remoteGlobalIDString = 617D3BB21FA21C7200AC0440;
 			remoteInfo = SyneriseSDK;
 		};
-		B810EC8820C6904900218B93 /* PBXContainerItemProxy */ = {
+		FF2A54AC260BB26800C50B04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
 			proxyType = 1;
@@ -379,7 +373,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5768B6168A50C8BD560B4D /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2D07E15420CFC9B7005E89D5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		2D07E15620CFC9DB005E89D5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -402,6 +396,7 @@
 		2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromotionsAPI_Vouchers.storyboard; sourceTree = "<group>"; };
 		2D6C09642122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePhoneNumberTableViewController.swift; sourceTree = "<group>"; };
 		2D6C09662122DBBE008D178A /* ConfirmPhoneNumberTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberTableViewController.swift; sourceTree = "<group>"; };
+		2D7B85BBE507A08EB73BB6A4 /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84754B211DB51600317E30 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		2D84754D211DB52B00317E30 /* ProfileInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoView.xib; sourceTree = "<group>"; };
 		2D84754F211DD01100317E30 /* ProfileInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewModel.swift; sourceTree = "<group>"; };
@@ -413,9 +408,7 @@
 		2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActivatePromotionTableViewController.swift; sourceTree = "<group>"; };
 		2DF81EBC20B8608B009AAC66 /* SDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EC620B8608D009AAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		613F4C6C1CF39FE9D6794803 /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsFullScreenGridViewController.swift; sourceTree = "<group>"; };
 		6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsGridTableViewController.swift; sourceTree = "<group>"; };
 		6F58377A228020FB001BD179 /* ContentAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPIViewController.swift; sourceTree = "<group>"; };
@@ -530,9 +523,7 @@
 		B84F68CB20C7EBFC00A8ECBE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = SampleAppSwift/Internal/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
 		B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegistrationFormView.xib; sourceTree = "<group>"; };
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
-		B84F68DF20C7F60100A8ECBE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B84F68E620C9374300A8ECBE /* DefaultLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabel.swift; sourceTree = "<group>"; };
-		CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FF068DE920C1966800A508C3 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
 		FF068DEB20C1979900A508C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FF068DED20C1985500A508C3 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -594,12 +585,18 @@
 		FF5FF8B4250188AB004554E7 /* SyneriseNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyneriseNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		FF5FF8B5250188CB004554E7 /* SyneriseNotificationServiceExtensionObjC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyneriseNotificationServiceExtensionObjC.entitlements; sourceTree = "<group>"; };
 		FF76388F2120919F00544633 /* TrackerAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackerAPI.storyboard; sourceTree = "<group>"; };
+		FF7C61D626D26A1900495F3A /* ClientActivatePromotionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActivatePromotionsTableViewController.swift; sourceTree = "<group>"; };
+		FF7C61D926D26A2800495F3A /* ClientDeactivatePromotionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDeactivatePromotionsTableViewController.swift; sourceTree = "<group>"; };
+		FF7D727826AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeWithFacebookTableViewController.swift; sourceTree = "<group>"; };
+		FF7D727B26AD667B00395D7B /* AuthorizeWithAppleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeWithAppleTableViewController.swift; sourceTree = "<group>"; };
 		FF89FCE22146794700C8B4E0 /* InjectorAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InjectorAPI.storyboard; sourceTree = "<group>"; };
 		FF89FCE6214679AA00C8B4E0 /* InjectorAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectorAPIViewController.swift; sourceTree = "<group>"; };
 		FF89FCE821467B5F00C8B4E0 /* LocalNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationSender.swift; sourceTree = "<group>"; };
 		FF89FCEA21467F5600C8B4E0 /* LocalNotificationsUserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsUserInfoData.swift; sourceTree = "<group>"; };
 		FF89FCEC21468A1200C8B4E0 /* SimplePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePushViewController.swift; sourceTree = "<group>"; };
 		FF95AFE422B1205C00CD3FF3 /* GetDocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDocumentTableViewController.swift; sourceTree = "<group>"; };
+		FFA262DA25AF5DAF00945FFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFA262E425AF5E4B00945FFD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FFA36A1820C730FB003CFB91 /* DebugUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUtils.swift; sourceTree = "<group>"; };
 		FFA36A1A20C73B42003CFB91 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
 		FFA36A1F20C73C6E003CFB91 /* BindingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingType.swift; sourceTree = "<group>"; };
@@ -615,6 +612,7 @@
 		FFB1F033219D63E500649A19 /* PromotionsAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromotionsAPIViewController.swift; path = "SampleAppSwift/Main/Developer Tools Flow/Storyboards/PromotionsAPIViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FFB1F038219D7BD200649A19 /* ClientAPI_Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientAPI_Account.storyboard; sourceTree = "<group>"; };
 		FFB1F03A219D7C7500649A19 /* ClientAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAccountViewController.swift; sourceTree = "<group>"; };
+		FFB25BBB26B6F4D9007B9781 /* ConfirmAccountActivationByPinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAccountActivationByPinTableViewController.swift; sourceTree = "<group>"; };
 		FFBB87F920ECE21A007142DF /* DeveloperToolsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperToolsCoordinator.swift; sourceTree = "<group>"; };
 		FFBB87FB20ECE24E007142DF /* DeveloperToolsFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeveloperToolsFlow.storyboard; sourceTree = "<group>"; };
 		FFBB87FE20ECE482007142DF /* DeveloperMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperMenuViewController.swift; sourceTree = "<group>"; };
@@ -626,6 +624,7 @@
 		FFC038002422201600FDF7B0 /* CarouselNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselNotificationViewController.h; sourceTree = "<group>"; };
 		FFC038012422201600FDF7B0 /* CarouselNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselNotificationViewController.m; sourceTree = "<group>"; };
 		FFC0380D242220C600FDF7B0 /* SyneriseCarouselNotificationContentExtensionObjC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyneriseCarouselNotificationContentExtensionObjC.entitlements; sourceTree = "<group>"; };
+		FFC8B39426AC3B5C007D4829 /* AuthorizeWithOAuthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeWithOAuthTableViewController.swift; sourceTree = "<group>"; };
 		FFC8E3CF20D0E80600B27767 /* ObservingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservingType.swift; sourceTree = "<group>"; };
 		FFD08F3820C2CD880083A890 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
 		FFD08F3C20C2CF2A0083A890 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
@@ -645,7 +644,9 @@
 		FFDF425C20C5FA3B00892782 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		FFEB21F020C5C4CD00DBAF08 /* SyneriseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyneriseManager.swift; sourceTree = "<group>"; };
 		FFEB21F220C5C5A400DBAF08 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		FFEB8393260D27D8009C515C /* GetScreenViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetScreenViewTableViewController.swift; sourceTree = "<group>"; };
 		FFF6C54A21244C1F009D9B80 /* ActivateClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateClientTableViewController.swift; sourceTree = "<group>"; };
+		FFFB306026B6F45F006DB6AB /* RequestClientAccountActivationByPinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClientAccountActivationByPinTableViewController.swift; sourceTree = "<group>"; };
 		FFFBAE062162246200D36049 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFFBAE072162246200D36049 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -676,21 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
-				7DB33A2FA6C055B3B8C6E425 /* Pods_SampleAppSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ECD20B8608D009AAC66 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ED820B8608D009AAC66 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6D079E07C92FF242C260D622 /* Pods_SampleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +750,7 @@
 				2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */,
 				2D24FAED20C59EE3000B5B5D /* SampleAppSwift.entitlements */,
 				2D24FAE520C59466000B5B5D /* GoogleService-Info.plist */,
-				B84F68DF20C7F60100A8ECBE /* Localizable.strings */,
+				FFA262DB25AF5DAF00945FFD /* Localizable.strings */,
 				FFFBAE072162246200D36049 /* Info.plist */,
 				FFFBAE062162246200D36049 /* AppDelegate.swift */,
 			);
@@ -807,7 +794,9 @@
 				2DD999C3211C7293007E24DC /* ClientGetPromotionsListTableViewController.swift */,
 				2DD999C5211C72A1007E24DC /* ClientGetPromotionTableViewController.swift */,
 				2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */,
+				FF7C61D626D26A1900495F3A /* ClientActivatePromotionsTableViewController.swift */,
 				2D42F44421512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift */,
+				FF7C61D926D26A2800495F3A /* ClientDeactivatePromotionsTableViewController.swift */,
 			);
 			path = Promotions;
 			sourceTree = "<group>";
@@ -826,7 +815,7 @@
 				2DF81EBD20B8608B009AAC66 /* Products */,
 				E16064DE79C651DF8B25B492 /* Frameworks */,
 				6FC7C80C22C35AEE00DBBDC4 /* Recovered References */,
-				BC73A4B73A521C1F37971538 /* Pods */,
+				59796C594BE0F459E94E2B79 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -834,8 +823,6 @@
 			isa = PBXGroup;
 			children = (
 				2DF81EBC20B8608B009AAC66 /* SDK Sample.app */,
-				2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */,
-				2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */,
 				2D401F0E214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension.appex */,
 				2D401F22214A64430000F229 /* SyneriseCarouselNotificationContentExtension.appex */,
 				FFD3E70B242114F300AE7502 /* SyneriseSingleMediaNotificationContentExtensionObjC.appex */,
@@ -857,16 +844,27 @@
 			path = SampleAppSwift;
 			sourceTree = "<group>";
 		};
+		59796C594BE0F459E94E2B79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A5768B6168A50C8BD560B4D /* Pods-SampleAppSwift.debug.xcconfig */,
+				613F4C6C1CF39FE9D6794803 /* Pods-SampleAppSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		6F583778228020A9001BD179 /* ContentAPI */ = {
 			isa = PBXGroup;
 			children = (
 				6F58377A228020FB001BD179 /* ContentAPIViewController.swift */,
+				FF95AFE422B1205C00CD3FF3 /* GetDocumentTableViewController.swift */,
+				FFEB8393260D27D8009C515C /* GetScreenViewTableViewController.swift */,
 				6F916FBF22AAAAEF00BAF136 /* RecommendationsWidgetViewControlerViewController.swift */,
 				FF1C18D12295610D00968132 /* RecommendationsWidgetAsSliderTableViewController.swift */,
 				6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */,
 				6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */,
 				6FB885D822A9372B00ADE051 /* RecommendationsWidgetAsHalfScreenGridViewController.swift */,
-				FF95AFE422B1205C00CD3FF3 /* GetDocumentTableViewController.swift */,
 			);
 			path = ContentAPI;
 			sourceTree = "<group>";
@@ -1123,22 +1121,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC73A4B73A521C1F37971538 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */,
-				2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 		E16064DE79C651DF8B25B492 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A109010320ECDD1B009A19E5 /* UserNotifications.framework */,
 				A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */,
-				2B804E7238359070393FA494 /* Pods_SampleAppSwift.framework */,
+				2D7B85BBE507A08EB73BB6A4 /* Pods_SampleAppSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1313,6 +1301,11 @@
 			children = (
 				FF18DD2F21627BC600BEF99D /* ClientAuthorizationViewController.swift */,
 				A198FCD72111EDC10096DFD0 /* LogInWithEmailClientTableViewController.swift */,
+				FFC8B39426AC3B5C007D4829 /* AuthorizeWithOAuthTableViewController.swift */,
+				FF7D727826AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift */,
+				FF7D727B26AD667B00395D7B /* AuthorizeWithAppleTableViewController.swift */,
+				FFFB306026B6F45F006DB6AB /* RequestClientAccountActivationByPinTableViewController.swift */,
+				FFB25BBB26B6F4D9007B9781 /* ConfirmAccountActivationByPinTableViewController.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -1466,8 +1459,8 @@
 		FF5FF89F25017F90004554E7 /* SyneriseNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
-				FF5FF8B4250188AB004554E7 /* SyneriseNotificationServiceExtension.entitlements */,
 				FF5FF8A025017F90004554E7 /* NotificationService.swift */,
+				FF5FF8B4250188AB004554E7 /* SyneriseNotificationServiceExtension.entitlements */,
 				FF5FF8A225017F90004554E7 /* Info.plist */,
 			);
 			path = SyneriseNotificationServiceExtension;
@@ -1752,20 +1745,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF81EE420B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwift" */;
 			buildPhases = (
-				70C19707DA5E7B3308302EDE /* [CP] Check Pods Manifest.lock */,
+				0D56025EF026D28742EDC91C /* [CP] Check Pods Manifest.lock */,
 				2DF81EB820B8608B009AAC66 /* Sources */,
 				2DF81EB920B8608B009AAC66 /* Frameworks */,
 				2DF81EBA20B8608B009AAC66 /* Resources */,
 				B810EC8A20C6904900218B93 /* Embed Frameworks */,
 				A12BE44A20D3C7DB00056A36 /* SwiftLint */,
-				2D1456A42110A40800EB5A99 /* ShellScript */,
 				A16AB8EC20EBD2E200B7282C /* Embed App Extensions */,
-				0C79655A2FC4DA4634D77786 /* [CP] Embed Pods Frameworks */,
+				9077413EE685F4AEABB3920D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B810EC8920C6904900218B93 /* PBXTargetDependency */,
+				FF2A54AD260BB26800C50B04 /* PBXTargetDependency */,
 				2D401F19214A64180000F229 /* PBXTargetDependency */,
 				2D401F2D214A64430000F229 /* PBXTargetDependency */,
 				FFD3E717242114F300AE7502 /* PBXTargetDependency */,
@@ -1777,42 +1769,6 @@
 			productName = SampleAppSwift;
 			productReference = 2DF81EBC20B8608B009AAC66 /* SDK Sample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2DF81ECF20B8608D009AAC66 /* SampleAppSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2DF81EE720B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwiftTests" */;
-			buildPhases = (
-				2DF81ECC20B8608D009AAC66 /* Sources */,
-				2DF81ECD20B8608D009AAC66 /* Frameworks */,
-				2DF81ECE20B8608D009AAC66 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2DF81ED220B8608D009AAC66 /* PBXTargetDependency */,
-			);
-			name = SampleAppSwiftTests;
-			productName = SampleAppSwiftTests;
-			productReference = 2DF81ED020B8608D009AAC66 /* SampleAppSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2DF81EDA20B8608D009AAC66 /* SampleAppSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2DF81EEA20B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwiftUITests" */;
-			buildPhases = (
-				2DF81ED720B8608D009AAC66 /* Sources */,
-				2DF81ED820B8608D009AAC66 /* Frameworks */,
-				2DF81ED920B8608D009AAC66 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2DF81EDD20B8608D009AAC66 /* PBXTargetDependency */,
-			);
-			name = SampleAppSwiftUITests;
-			productName = SampleAppSwiftUITests;
-			productReference = 2DF81EDB20B8608D009AAC66 /* SampleAppSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		FF5FF88325017EB0004554E7 /* SyneriseNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
@@ -1889,11 +1845,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					2D401F0D214A64180000F229 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1230;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1902,7 +1858,7 @@
 					};
 					2D401F21214A64430000F229 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1230;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1911,7 +1867,7 @@
 					};
 					2DF81EBB20B8608B009AAC66 = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1230;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1923,16 +1879,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					2DF81ECF20B8608D009AAC66 = {
-						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 1000;
-						TestTargetID = 2DF81EBB20B8608B009AAC66;
-					};
-					2DF81EDA20B8608D009AAC66 = {
-						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 1000;
-						TestTargetID = 2DF81EBB20B8608B009AAC66;
 					};
 					FF5FF88325017EB0004554E7 = {
 						CreatedOnToolsVersion = 11.6;
@@ -1955,6 +1901,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 2DF81EB320B8608B009AAC66;
 			productRefGroup = 2DF81EBD20B8608B009AAC66 /* Products */;
@@ -1968,8 +1915,6 @@
 			projectRoot = "";
 			targets = (
 				2DF81EBB20B8608B009AAC66 /* SampleAppSwift */,
-				2DF81ECF20B8608D009AAC66 /* SampleAppSwiftTests */,
-				2DF81EDA20B8608D009AAC66 /* SampleAppSwiftUITests */,
 				2D401F0D214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension */,
 				FFD3E70A242114F300AE7502 /* SyneriseSingleMediaNotificationContentExtensionObjC */,
 				2D401F21214A64430000F229 /* SyneriseCarouselNotificationContentExtension */,
@@ -2048,7 +1993,7 @@
 				A178E3222122F20900B15DE2 /* Products_7.json in Resources */,
 				A178E3312122F21300B15DE2 /* Products_13.json in Resources */,
 				A178E3322122F21300B15DE2 /* Products_16.json in Resources */,
-				B84F68E020C7F60100A8ECBE /* Localizable.strings in Resources */,
+				FFA262D925AF5DAF00945FFD /* Localizable.strings in Resources */,
 				2D84754E211DB52B00317E30 /* ProfileInfoView.xib in Resources */,
 				2D07E15B20CFCAEE005E89D5 /* LeftMenuViewController.xib in Resources */,
 				A178E3232122F20900B15DE2 /* Products_1.json in Resources */,
@@ -2072,20 +2017,6 @@
 				A14417E520DD291700CC33BE /* Products_9.json in Resources */,
 				FF7638902120919F00544633 /* TrackerAPI.storyboard in Resources */,
 				FF46132620EE782400A63EB5 /* ProductDetailsView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ECE20B8608D009AAC66 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ED920B8608D009AAC66 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2120,38 +2051,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C79655A2FC4DA4634D77786 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D1456A42110A40800EB5A99 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
-		};
-		70C19707DA5E7B3308302EDE /* [CP] Check Pods Manifest.lock */ = {
+		0D56025EF026D28742EDC91C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2171,6 +2071,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9077413EE685F4AEABB3920D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A12BE44A20D3C7DB00056A36 /* SwiftLint */ = {
@@ -2224,11 +2141,13 @@
 				FF89FCE921467B5F00C8B4E0 /* LocalNotificationSender.swift in Sources */,
 				6F664E0821ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift in Sources */,
 				2D847550211DD01100317E30 /* ProfileInfoViewModel.swift in Sources */,
+				FF7D727C26AD667B00395D7B /* AuthorizeWithAppleTableViewController.swift in Sources */,
 				A152D5492119DEBF0059D8C6 /* CheckoutShipToDataSource.swift in Sources */,
 				FF591C6020C55637007F831B /* RegistrationViewController.swift in Sources */,
 				FFD9C44221DF794F00B83192 /* VouchersViewController.swift in Sources */,
 				FF89FCED21468A1200C8B4E0 /* SimplePushViewController.swift in Sources */,
 				2DD999C8211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift in Sources */,
+				FFFB306126B6F45F006DB6AB /* RequestClientAccountActivationByPinTableViewController.swift in Sources */,
 				6F916FC022AAAAEF00BAF136 /* RecommendationsWidgetViewControlerViewController.swift in Sources */,
 				2DD999C2211C70B6007E24DC /* ClientPromotionsViewController.swift in Sources */,
 				A1D0729A20F3A10400BF9361 /* ProfileFormViewModel.swift in Sources */,
@@ -2305,6 +2224,7 @@
 				A152D54D2119EB120059D8C6 /* CheckboxButton.swift in Sources */,
 				FFD9C44D21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift in Sources */,
 				FFDF425D20C5FA3B00892782 /* Assembly.swift in Sources */,
+				FFEB8394260D27D8009C515C /* GetScreenViewTableViewController.swift in Sources */,
 				FF591C3F20C53AF4007F831B /* MainCoordinator.swift in Sources */,
 				A142CC9B2118813900079BBD /* CheckoutPaymentTableViewModel.swift in Sources */,
 				FF95AFE522B1205C00CD3FF3 /* GetDocumentTableViewController.swift in Sources */,
@@ -2335,6 +2255,7 @@
 				2D42F44521512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift in Sources */,
 				2D847552211DD28900317E30 /* BindingLabel.swift in Sources */,
 				FF46131520EE781800A63EB5 /* ProductsListViewModel.swift in Sources */,
+				FF7C61DA26D26A2800495F3A /* ClientDeactivatePromotionsTableViewController.swift in Sources */,
 				FF46130620EE77D700A63EB5 /* CategoryItemTableViewCell.swift in Sources */,
 				FF591C5E20C55614007F831B /* SigningCoordinator.swift in Sources */,
 				A16CD016211062EF000974B3 /* ResetClientPasswordTableViewController.swift in Sources */,
@@ -2349,8 +2270,9 @@
 				FF591C4B20C54684007F831B /* ShopCoordinator.swift in Sources */,
 				2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */,
 				A175CAF12118A480001E39FF /* CartManager.swift in Sources */,
-				FFA6FDB12187472800310022 /* (null) in Sources */,
+				FFA6FDB12187472800310022 /* BuildFile in Sources */,
 				A1393580215546C900F689B1 /* ConfigurationViewController.swift in Sources */,
+				FF7D727926AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift in Sources */,
 				A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */,
 				FFD08F3D20C2CF2A0083A890 /* Storyboards.swift in Sources */,
 				A132F870211D9EA300024C11 /* CartItem.swift in Sources */,
@@ -2360,6 +2282,7 @@
 				A17DFF242151246300A6CBC1 /* ClientVouchersViewController.swift in Sources */,
 				FF068DF420C19CBD00A508C3 /* ViewController.swift in Sources */,
 				FF46131120EE781800A63EB5 /* ProductsListViewController.swift in Sources */,
+				FFC8B39526AC3B5C007D4829 /* AuthorizeWithOAuthTableViewController.swift in Sources */,
 				FFB1F03B219D7C7500649A19 /* ClientAccountViewController.swift in Sources */,
 				2DD999C6211C72A1007E24DC /* ClientGetPromotionTableViewController.swift in Sources */,
 				A147CC7B211B0F8F00F5FA7C /* CheckoutPaymentDataSource.swift in Sources */,
@@ -2380,26 +2303,14 @@
 				FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */,
 				FFF6C54B21244C1F009D9B80 /* ActivateClientTableViewController.swift in Sources */,
 				A1E27A0020E6482A00E595B5 /* Section.swift in Sources */,
+				FFB25BBC26B6F4D9007B9781 /* ConfirmAccountActivationByPinTableViewController.swift in Sources */,
 				A198FCD42111E1520096DFD0 /* ClientAPIViewController.swift in Sources */,
+				FF7C61D726D26A1900495F3A /* ClientActivatePromotionsTableViewController.swift in Sources */,
 				FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */,
 				6F664E0121EC96B600BCF749 /* ConfirmEmailTableViewController.swift in Sources */,
 				2D6C09652122DB6D008D178A /* UpdatePhoneNumberTableViewController.swift in Sources */,
 				FF46130820EE77D700A63EB5 /* CategoriesListViewModel.swift in Sources */,
 				6F58377B228020FB001BD179 /* ContentAPIViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ECC20B8608D009AAC66 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF81ED720B8608D009AAC66 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2448,20 +2359,10 @@
 			target = 2D401F21214A64430000F229 /* SyneriseCarouselNotificationContentExtension */;
 			targetProxy = 2D401F2C214A64430000F229 /* PBXContainerItemProxy */;
 		};
-		2DF81ED220B8608D009AAC66 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2DF81EBB20B8608B009AAC66 /* SampleAppSwift */;
-			targetProxy = 2DF81ED120B8608D009AAC66 /* PBXContainerItemProxy */;
-		};
-		2DF81EDD20B8608D009AAC66 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2DF81EBB20B8608B009AAC66 /* SampleAppSwift */;
-			targetProxy = 2DF81EDC20B8608D009AAC66 /* PBXContainerItemProxy */;
-		};
-		B810EC8920C6904900218B93 /* PBXTargetDependency */ = {
+		FF2A54AD260BB26800C50B04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SyneriseSDK;
-			targetProxy = B810EC8820C6904900218B93 /* PBXContainerItemProxy */;
+			targetProxy = FF2A54AC260BB26800C50B04 /* PBXContainerItemProxy */;
 		};
 		FF5FF88A25017EB0004554E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2485,24 +2386,36 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FFA262DB25AF5DAF00945FFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA262DA25AF5DAF00945FFD /* en */,
+				FFA262E425AF5E4B00945FFD /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		2D401F1C214A64180000F229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Single Media Notification Dev";
@@ -2515,20 +2428,20 @@
 		2D401F1D214A64180000F229 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Single Media Notification Dev";
@@ -2541,19 +2454,19 @@
 		2D401F30214A64430000F229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Carousel Notification Dev";
@@ -2566,19 +2479,19 @@
 		2D401F31214A64430000F229 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sample App Swift Carousel Notification Dev";
@@ -2592,6 +2505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2614,6 +2528,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2639,7 +2554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2652,6 +2567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2674,6 +2590,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2693,7 +2610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2704,7 +2621,7 @@
 		};
 		2DF81EE520B8608D009AAC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF9736DEA7F8D75A18D5894D /* Pods-SampleAppSwift.debug.xcconfig */;
+			baseConfigurationReference = 0A5768B6168A50C8BD560B4D /* Pods-SampleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2717,11 +2634,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift";
 				PRODUCT_NAME = "SDK Sample";
 				PROVISIONING_PROFILE = "9170ffb4-163b-4d24-93b7-3b7c34653a90";
@@ -2735,7 +2653,7 @@
 		};
 		2DF81EE620B8608D009AAC66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F6BED9CD6D9CF59A34B14E6 /* Pods-SampleAppSwift.release.xcconfig */;
+			baseConfigurationReference = 613F4C6C1CF39FE9D6794803 /* Pods-SampleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2747,11 +2665,12 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppSwift/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift";
 				PRODUCT_NAME = "SDK Sample";
 				PROVISIONING_PROFILE = "ce0c4372-1c29-4d66-86ec-8d52091b9e3e";
@@ -2762,109 +2681,23 @@
 			};
 			name = Release;
 		};
-		2DF81EE820B8608D009AAC66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
-				INFOPLIST_FILE = SampleAppSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.toreforge.synerise.sdk.SampleAppSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleAppSwift.app/SampleAppSwift";
-			};
-			name = Debug;
-		};
-		2DF81EE920B8608D009AAC66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
-				INFOPLIST_FILE = SampleAppSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.toreforge.synerise.sdk.SampleAppSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleAppSwift.app/SampleAppSwift";
-			};
-			name = Release;
-		};
-		2DF81EEB20B8608D009AAC66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
-				INFOPLIST_FILE = SampleAppSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.toreforge.synerise.sdk.SampleAppSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleAppSwift;
-			};
-			name = Debug;
-		};
-		2DF81EEC20B8608D009AAC66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HFVKK8R23;
-				INFOPLIST_FILE = SampleAppSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.toreforge.synerise.sdk.SampleAppSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleAppSwift;
-			};
-			name = Release;
-		};
 		FF5FF88D25017EB0004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
@@ -2879,20 +2712,20 @@
 		FF5FF88E25017EB0004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2906,20 +2739,20 @@
 		FF5FF89D25017EDC004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
@@ -2933,20 +2766,20 @@
 		FF5FF89E25017EDC004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseNotificationServiceExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.notification-service-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2959,20 +2792,20 @@
 		FFC0380B2422201600FDF7B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
@@ -2986,20 +2819,20 @@
 		FFC0380C2422201600FDF7B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseCarouselNotificationContentExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.carousel-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3012,20 +2845,20 @@
 		FFD3E719242114F300AE7502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
@@ -3039,20 +2872,20 @@
 		FFD3E71A242114F300AE7502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 34N2Z22TKH;
 				INFOPLIST_FILE = SyneriseSingleMediaNotificationContentExtensionObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.6.21;
+				MARKETING_VERSION = 3.8.10;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synerise.sdk.sample-swift.single-media-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3097,24 +2930,6 @@
 			buildConfigurations = (
 				2DF81EE520B8608D009AAC66 /* Debug */,
 				2DF81EE620B8608D009AAC66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2DF81EE720B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DF81EE820B8608D009AAC66 /* Debug */,
-				2DF81EE920B8608D009AAC66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2DF81EEA20B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DF81EEB20B8608D009AAC66 /* Debug */,
-				2DF81EEC20B8608D009AAC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

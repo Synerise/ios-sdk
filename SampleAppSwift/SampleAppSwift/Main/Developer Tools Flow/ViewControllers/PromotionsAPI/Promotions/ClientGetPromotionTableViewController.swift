@@ -59,24 +59,35 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
         let type = SNR_PromotionTypeToString(response.type)
         
         let redeemLimitPerClient = response.redeemLimitPerClient?.stringValue ?? "-"
+        let redeemQuantityPerActivation = response.redeemQuantityPerActivation?.stringValue ?? "-"
         let currentRedeemedQuantity = response.currentRedeemedQuantity.stringValue
-        let requireRedeemedPoints = response.requireRedeemedPoints?.stringValue ?? "-"
+        let currentRedeemLimit = response.currentRedeemLimit.stringValue
+        let activationCounter = response.activationCounter.stringValue
+        let possibleRedeems = response.possibleRedeems.stringValue
+        let requireRedeemedPoints = response.requireRedeemedPoints.stringValue
         
         let discountType = SNR_PromotionDiscountTypeToString(response.discountType)
         let discountValue = response.discountValue
+        let discountMode = SNR_PromotionDiscountModeToString(response.discountMode)
         
-        let name = response.name ?? "-"
+        let name = response.name
         let headline = response.headline ?? "-"
         let descriptionText = response.descriptionText ?? "-"
+        
+        let priority = response.priority.stringValue
+        let price = response.price.stringValue
+        let minBasketValue = response.minBasketValue?.stringValue ?? "-"
+        let maxBasketValue = response.maxBasketValue?.stringValue ?? "-"
         
         let startAt = response.startAt?.description ?? "-"
         let expireIn = response.expireAt?.description ?? "-"
         let lastingTime = response.lastingAt?.description ?? "-"
+        let displayFrom = response.displayFrom?.description ?? "-"
+        let displayTo = response.displayTo?.description ?? "-"
         
         let images: Any = response.images?.description ?? "-"
         let catalogIndexItems: Any = response.catalogIndexItems ?? "-"
         let params: Any = response.params ?? "-"
-        let price = response.price.stringValue
         
         let promotionStringRepresentation = """
         UUID: \(uuid)
@@ -85,24 +96,35 @@ class ClientGetPromotionTableViewController: DefaultTableViewController {
         type: \(type)
         
         redeemLimitPerClient: \(redeemLimitPerClient)
+        redeemQuantityPerActivation: \(redeemQuantityPerActivation)
         currentRedeemedQuantity: \(currentRedeemedQuantity)
+        currentRedeemLimit: \(currentRedeemLimit)
+        activationCounter: \(activationCounter)
+        possibleRedeems: \(possibleRedeems)
         requireRedeemedPoints: \(requireRedeemedPoints)
         
         discountType: \(discountType)
         discountValue: \(discountValue)
+        discountMode: \(discountMode)
         
         name: \(name)
         headline: \(headline)
         descriptionText: \(descriptionText)
         
+        priority: \(priority)
+        price: \(price)
+        minBasketValue: \(minBasketValue)
+        maxBasketValue: \(maxBasketValue)
+        
         startAt: \(startAt)
         expireIn: \(expireIn)
         lastingTime: \(lastingTime)
+        displayFrom: \(displayFrom)
+        displayTo: \(displayTo)
         
         images: \(images as AnyObject)
         catalogIndexItems: \(catalogIndexItems as AnyObject)
         params: \(params as AnyObject)
-        price: \(price)
         """
         
         return promotionStringRepresentation

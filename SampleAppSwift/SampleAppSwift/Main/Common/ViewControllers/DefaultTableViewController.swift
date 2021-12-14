@@ -116,18 +116,12 @@ class DefaultTableViewController: UITableViewController {
             //let apiErrorCauseString: String = apiError.getBody() ?? ""
             //apiErrorDebugInfo.append(apiErrorCauseString)
             
+            UserInfoMessageManager.shared.error(title, "\(apiError.code) \(apiError.localizedDescription)")
             self.presentAlert(title: "Debug SNRApiError", message: apiErrorDebugInfo)
-            
-            if debug {
-                DebugUtils.print("\(title) \(apiError.code) \(apiError.localizedDescription)")
-            }
-            
-            UserInfoMessageManager.shared.error(title, "\(error.code) \(error.localizedDescription)\n\n\(error.localizedFailureReason ?? "")")
-            
-            return
+        } else {
+            UserInfoMessageManager.shared.error(title, "\(error.code) \(error.localizedDescription)")
+            self.presentAlert(title: "Debug NSError", message: error.localizedDescription)
         }
-        
-        UserInfoMessageManager.shared.error(title, "\(error.code) \(error.localizedDescription)\n\n\(error.localizedFailureReason ?? "")")
         
         if debug {
             DebugUtils.print("\(title) \(error.code) \(error.localizedDescription)")

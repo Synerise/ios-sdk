@@ -79,7 +79,7 @@ class CartManager {
         //swiftlint:disable:next force_cast
         let discountedPrice = finalPrice.copy() as! UnitPrice
         
-        let addedProductToCartEvent = AddedProductToCartEvent.init(label: "added " + product.name + " to cart",
+        let addedProductToCartEvent = ProductAddedToCartEvent.init(label: "added " + product.name + " to cart",
                                                                    sku: product.sku,
                                                                    finalPrice: finalPrice,
                                                                    quantity: cartItem.quantity)
@@ -111,7 +111,7 @@ class CartManager {
         //swiftlint:disable:next force_cast
         let discountedPrice = finalPrice.copy() as! UnitPrice
         
-        let removedProductToCartEvent = RemovedProductFromCartEvent.init(label: "removed " + product.name + " from cart",
+        let removedProductToCartEvent = ProductRemovedFromCartEvent.init(label: "removed " + product.name + " from cart",
                                                                          sku: product.sku,
                                                                          finalPrice: finalPrice,
                                                                          quantity: cartItem.quantity)

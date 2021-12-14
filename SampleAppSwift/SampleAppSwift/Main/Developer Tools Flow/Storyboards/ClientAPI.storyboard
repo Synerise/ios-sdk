@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hUy-BR-fK9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hUy-BR-fK9">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--ClientAPI View Controller-->
         <scene sceneID="h4B-ku-Nx3">
             <objects>
-                <viewController id="hUy-BR-fK9" customClass="ClientAPIViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hUy-BR-fK9" customClass="ClientAPIViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I7a-7g-hll">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,12 +20,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-4v-DtR">
-                                        <rect key="frame" x="0.0" y="24" width="375" height="965"/>
+                                        <rect key="frame" x="0.0" y="24" width="375" height="890"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owd-pC-AQb">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nss-7g-LLO" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nss-7g-LLO" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -56,7 +56,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-4z-AYr">
                                                 <rect key="frame" x="0.0" y="75" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQq-Qs-LJD" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQq-Qs-LJD" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -87,7 +87,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-Or-TFA">
                                                 <rect key="frame" x="0.0" y="150" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-T1-xlk" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-T1-xlk" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -118,7 +118,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cod-3W-V91">
                                                 <rect key="frame" x="0.0" y="225" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivW-L6-y54" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivW-L6-y54" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -149,7 +149,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysb-ao-4bP">
                                                 <rect key="frame" x="0.0" y="300" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-tL-o08" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-tL-o08" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -180,7 +180,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noT-TD-TzI">
                                                 <rect key="frame" x="0.0" y="375" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-Or-q9M" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-Or-q9M" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -211,7 +211,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0X-FB-SyT">
                                                 <rect key="frame" x="0.0" y="450" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-V1-7ZL" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-V1-7ZL" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -242,7 +242,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82y-Sd-31e">
                                                 <rect key="frame" x="0.0" y="525" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neK-NN-wfy" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neK-NN-wfy" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -273,7 +273,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3k-Yc-Hjp">
                                                 <rect key="frame" x="0.0" y="600" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-7h-A2y" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-7h-A2y" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -301,41 +301,10 @@
                                                     <constraint firstItem="KWC-7h-A2y" firstAttribute="centerY" secondItem="l3k-Yc-Hjp" secondAttribute="centerY" id="kOD-Sg-TPr"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vba-fZ-t7I">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGA-eu-R9j">
                                                 <rect key="frame" x="0.0" y="675" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-LM-X1f" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="ooh-iS-72q"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <state key="normal" title="Get Client Token">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="getTokenButtonWasPressed:" destination="hUy-BR-fK9" eventType="touchUpInside" id="ND8-I2-oWh"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="qOG-LM-X1f" secondAttribute="trailing" constant="16" id="1Le-f5-RRu"/>
-                                                    <constraint firstItem="qOG-LM-X1f" firstAttribute="centerY" secondItem="Vba-fZ-t7I" secondAttribute="centerY" id="N5b-IW-N4s"/>
-                                                    <constraint firstItem="qOG-LM-X1f" firstAttribute="leading" secondItem="Vba-fZ-t7I" secondAttribute="leading" constant="16" id="Vbg-up-dZf"/>
-                                                    <constraint firstAttribute="height" constant="65" id="tDE-YJ-ug6"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGA-eu-R9j">
-                                                <rect key="frame" x="0.0" y="750" width="375" height="65"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-VC-BDE" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-VC-BDE" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -364,9 +333,9 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-jf-ec0">
-                                                <rect key="frame" x="0.0" y="825" width="375" height="65"/>
+                                                <rect key="frame" x="0.0" y="750" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-sv-WiS" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-sv-WiS" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -395,9 +364,9 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iR-H1-CSZ">
-                                                <rect key="frame" x="0.0" y="900" width="375" height="65"/>
+                                                <rect key="frame" x="0.0" y="825" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUR-9S-QY2" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUR-9S-QY2" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -438,14 +407,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Mb-hl-d9M"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FVF-jf-n1A" firstAttribute="top" secondItem="I7a-7g-hll" secondAttribute="top" id="1IB-D1-dLK"/>
                             <constraint firstItem="FVF-jf-n1A" firstAttribute="bottom" secondItem="8Mb-hl-d9M" secondAttribute="bottom" id="Uma-Mp-uL1"/>
                             <constraint firstItem="FVF-jf-n1A" firstAttribute="leading" secondItem="8Mb-hl-d9M" secondAttribute="leading" id="c6g-ra-ljd"/>
                             <constraint firstItem="FVF-jf-n1A" firstAttribute="trailing" secondItem="8Mb-hl-d9M" secondAttribute="trailing" id="hO2-2O-v6t"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8Mb-hl-d9M"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="900"/>
@@ -473,11 +442,11 @@
         <!--Register Client By Email Table View Controller-->
         <scene sceneID="7YO-i6-eZ0">
             <objects>
-                <tableViewController id="eKe-Ze-CsA" customClass="RegisterClientByEmailTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="eKe-Ze-CsA" customClass="RegisterClientByEmailTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="TKf-iN-tek">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Email" id="z9K-iq-mx8">
                                 <cells>
@@ -654,7 +623,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-XY-dEI" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-XY-dEI" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -706,11 +675,11 @@
         <!--Activate Client Table View Controller-->
         <scene sceneID="aDq-Ur-sHG">
             <objects>
-                <tableViewController id="2Xt-vR-7z0" customClass="ActivateClientTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2Xt-vR-7z0" customClass="ActivateClientTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Wgb-pN-sns">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Email" id="bnn-cn-MiS">
                                 <cells>
@@ -746,7 +715,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSH-db-QSx" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSH-db-QSx" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -795,11 +764,11 @@
         <!--Confirm Client Account Table View Controller-->
         <scene sceneID="Fbs-HV-IMC">
             <objects>
-                <tableViewController id="3ac-2z-1h1" customClass="ConfirmClientAccountTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3ac-2z-1h1" customClass="ConfirmClientAccountTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jhK-e0-RVM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="TOKEN" id="702-B5-gwM">
                                 <cells>
@@ -835,7 +804,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-1I-eqa" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-1I-eqa" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -881,4 +850,56 @@
             <point key="canvasLocation" x="342" y="1141"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Dga-Or-q9M">
+            <size key="intrinsicContentSize" width="196" height="34"/>
+        </designable>
+        <designable name="FUR-9S-QY2">
+            <size key="intrinsicContentSize" width="140" height="34"/>
+        </designable>
+        <designable name="HSH-db-QSx">
+            <size key="intrinsicContentSize" width="147" height="34"/>
+        </designable>
+        <designable name="KWC-7h-A2y">
+            <size key="intrinsicContentSize" width="178" height="34"/>
+        </designable>
+        <designable name="NQq-Qs-LJD">
+            <size key="intrinsicContentSize" width="72" height="34"/>
+        </designable>
+        <designable name="QU4-1I-eqa">
+            <size key="intrinsicContentSize" width="146" height="34"/>
+        </designable>
+        <designable name="Tvz-T1-xlk">
+            <size key="intrinsicContentSize" width="148" height="34"/>
+        </designable>
+        <designable name="gmp-sv-WiS">
+            <size key="intrinsicContentSize" width="174" height="34"/>
+        </designable>
+        <designable name="hdw-XY-dEI">
+            <size key="intrinsicContentSize" width="150" height="34"/>
+        </designable>
+        <designable name="ivW-L6-y54">
+            <size key="intrinsicContentSize" width="146" height="34"/>
+        </designable>
+        <designable name="jN1-VC-BDE">
+            <size key="intrinsicContentSize" width="182" height="34"/>
+        </designable>
+        <designable name="nYC-tL-o08">
+            <size key="intrinsicContentSize" width="147" height="34"/>
+        </designable>
+        <designable name="neK-NN-wfy">
+            <size key="intrinsicContentSize" width="148" height="34"/>
+        </designable>
+        <designable name="nss-7g-LLO">
+            <size key="intrinsicContentSize" width="117" height="34"/>
+        </designable>
+        <designable name="v7m-V1-7ZL">
+            <size key="intrinsicContentSize" width="80" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

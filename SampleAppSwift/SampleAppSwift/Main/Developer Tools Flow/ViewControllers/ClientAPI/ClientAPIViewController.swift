@@ -40,21 +40,6 @@ class ClientAPIViewController: DefaultViewController {
         sender.animateTapping()
     }
     
-    @IBAction func getTokenButtonWasPressed(_ sender: DefaultButton) {
-        showLoading()
-        Client.getToken(success: { (token, origin) in
-            self.hideLoading()
-            
-            let tokenDescription = SNR_TokenOriginToString(origin) + "\n\n" + token
-            self.pushDebugViewController(text: tokenDescription)
-        }, failure: { (error) in
-            self.hideLoading()
-            self.showErrorInfo(error as NSError)
-        })
-        
-        sender.animateTapping()
-    }
-    
     @IBAction func retrieveTokenButtonWasPressed(_ sender: DefaultButton) {
         showLoading()
         Client.retrieveToken(success: { (token) in

@@ -185,8 +185,10 @@ extension NotificationService: MessagingDelegate {
         Messaging.messaging().delegate = self
     }
 
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        tokenReceived(fcmToken, origin: .firebase)
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        if let fcmToken = fcmToken {
+            tokenReceived(fcmToken, origin: .firebase)
+        }
     }
 }
 

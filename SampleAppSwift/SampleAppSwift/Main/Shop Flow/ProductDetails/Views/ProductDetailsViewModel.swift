@@ -94,7 +94,7 @@ class ProductDetailsViewModel {
             builder.setDouble(self.price, forKey: "price")
         }
         
-        let event = AddedProductToFavoritesEvent(label: self.name, params: params)
+        let event = ProductAddedToFavoritesEvent(label: self.name, params: params)
         Tracker.send(event)
     }
     

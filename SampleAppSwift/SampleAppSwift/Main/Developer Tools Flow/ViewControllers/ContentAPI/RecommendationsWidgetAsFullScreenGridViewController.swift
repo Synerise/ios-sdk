@@ -13,7 +13,7 @@ class RecommendationsWidgetAsFullScreenGridViewController: DefaultViewController
 
     @IBOutlet weak var widgetContainerView: UIView!
     
-    var widgetOptions: ContentWidgetOptions!
+    var widgetOptions: ContentWidgetRecommendationsOptions!
     var widgetAppearance: ContentWidgetAppearance!
     
     private var widget: ContentWidget!
@@ -76,7 +76,7 @@ extension RecommendationsWidgetAsFullScreenGridViewController: ContentWidgetDele
     
     func snr_widgetDidReceiveClickAction(widget: ContentWidget, model: BaseModel) {
         if let recommendationModel = model as? Recommendation {
-            presentAlert(title: "Clicked!", message: "\(recommendationModel.title) clicked!")
+            presentAlert(title: "Clicked!", message: "\(recommendationModel.itemID) clicked!")
         }
     }
 }

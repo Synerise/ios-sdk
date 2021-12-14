@@ -49,7 +49,7 @@ class CommonEventsViewController: UITableViewController {
     
     private func sendAddedToCartEvent() {
         let price = UnitPrice(amount: 10.99)
-        let event = AddedProductToCartEvent(label: "AddedToCartEventLabel", sku: "sku", finalPrice: price, quantity: 12)
+        let event = ProductAddedToCartEvent(label: "AddedToCartEventLabel", sku: "sku", finalPrice: price, quantity: 12)
         event.setProducer("Producer")
         event.setName("Name")
         let unitPrice = UnitPrice(amount: 9.99)
@@ -59,7 +59,7 @@ class CommonEventsViewController: UITableViewController {
     
     private func sendRemovedFromCartEvent() {
         let price = UnitPrice(amount: 10.99)
-        let event = RemovedProductFromCartEvent(label: "RemovedFromCartEvent", sku: "sku", finalPrice: price, quantity: 12)
+        let event = ProductRemovedFromCartEvent(label: "RemovedFromCartEvent", sku: "sku", finalPrice: price, quantity: 12)
         event.setProducer("Producer")
         event.setName("Name")
         let unitPrice = UnitPrice(amount: 9.99)
@@ -68,7 +68,7 @@ class CommonEventsViewController: UITableViewController {
     }
     
     private func sendAddedToFavoritesEvent() {
-        let event = AddedProductToFavoritesEvent(label: "AddedToFavoritesEventLabel")
+        let event = ProductAddedToFavoritesEvent(label: "AddedToFavoritesEventLabel")
         Tracker.send(event)
     }
     
@@ -104,7 +104,7 @@ class CommonEventsViewController: UITableViewController {
     }
     
     private func sendPushCancelledEvent() {
-        let event = CancelledPushEvent(label: "label")
+        let event = PushCancelledEvent(label: "label")
         Tracker.send(event)
     }
     
@@ -147,7 +147,7 @@ class CommonEventsViewController: UITableViewController {
     }
     
     private func sendProductViewEvent() {
-        let event = ProductViewEvent(label: "label", productName: "product name", productId: "product id", params: nil)
+        let event = ProductViewedEvent(label: "label", productName: "product name", productId: "product id", params: nil)
         event.setIsRecommended(true)
         event.setCategory("product category")
         event.setURL(URL(string: "myapp://category/1234")!)

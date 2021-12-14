@@ -40,7 +40,7 @@ class ClientVouchersViewController: DefaultViewController {
         
         for voucher in response.items {
             let code = voucher.code
-            let status = SNR_VoucherStatusToString(voucher.status)
+            let status = SNR_VoucherCodeStatusToString(voucher.status)
             let clientId = voucher.clientId ?? "nil"
             let clientUuid = voucher.clientUuid
             let poolUuid = voucher.poolUuid

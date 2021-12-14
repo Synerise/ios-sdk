@@ -44,48 +44,80 @@ class LoginViewModel {
         coordinator?.navigateToRegistration()
     }
     
-    func authenticateByFacebookToken(onSuccess: @escaping (() -> ())) {
+    func authenticateByFacebookToken(onSuccess: @escaping (() -> ()), onError: @escaping ((Error) -> ())) {
         guard let facebookToken = AccessToken.current?.tokenString else {
+            onError(NSError(domain: "SampleAppSwiftErrorDomain", code: -1, userInfo: [
+                NSLocalizedDescriptionKey: "There is no active Facebook token!"
+            ]))
             return
         }
         
-        Client.authenticateByFacebookIfRegistered(facebookToken: facebookToken, authID: nil, success: { _ in
-            onSuccess()
-        }) { (error) in
-            let agreements: ClientAgreements = ClientAgreements()
-            
-            let context: ClientFacebookAuthenticationContext = ClientFacebookAuthenticationContext()
-            context.agreements = agreements
-            context.attributes = ["param": "value"]
-
-            Client.authenticateByFacebook(facebookToken: facebookToken, authID: nil, context: context, success: { _ in
+        let agreements: ClientAgreements = ClientAgreements()
+        let context: ClientConditionalAuthenticationContext = ClientConditionalAuthenticationContext()
+        context.agreements = agreements
+        context.attributes = ["param": "value"]
+        
+        Client.authenticateConditionally(token: facebookToken, clientIdentityProvider: .facebook, authID: nil, context: context) { authResult in
+            if authResult.status == .success {
                 onSuccess()
-            }, failure: { error in
-
-            })
+                return
+            } else if authResult.status == .registrationRequired {
+                let agreements: ClientAgreements = ClientAgreements()
+                let context: ClientAuthenticationContext = ClientAuthenticationContext()
+                context.agreements = agreements
+                context.attributes = ["param": "value"]
+                
+                Client.authenticate(token: facebookToken, clientIdentityProvider: .facebook, authID: nil, context: context, success: { isSuccess in
+                    onSuccess()
+                }) { (error) in
+                    onError(error)
+                }
+            } else {
+                onError(NSError(domain: "SampleAppSwiftErrorDomain", code: -1, userInfo: [
+                    NSLocalizedDescriptionKey: "Status \(SNR_ClientConditionalAuthStatusToString(authResult.status)) is not supported!"
+                ]))
+            }
+        } failure: { error in
+            onError(error)
         }
     }
     
     @available(iOS 13.0, *)
-    func authenticateByAppleSignIn(appleIdCredential: ASAuthorizationAppleIDCredential, onSuccess: @escaping (() -> ()), onError: @escaping (() -> ())) {
+    func authenticateByAppleSignIn(appleIdCredential: ASAuthorizationAppleIDCredential, onSuccess: @escaping (() -> ()), onError: @escaping ((Error) -> ())) {
         guard let identityToken = appleIdCredential.identityToken else {
+            onError(NSError(domain: "SampleAppSwiftErrorDomain", code: -1, userInfo: [
+                NSLocalizedDescriptionKey: "There is no active Apple Sign In token!"
+            ]))
             return
         }
-
-        Client.authenticateByAppleSignInIfRegistered(identityToken: identityToken, authID: nil, success: { _ in
-            onSuccess()
-        }) { (error) in
-            let agreements: ClientAgreements = ClientAgreements()
-            
-            let context: ClientAppleSignInAuthenticationContext = ClientAppleSignInAuthenticationContext()
-            context.agreements = agreements
-            context.attributes = ["param": "value"]
-
-            Client.authenticateByAppleSignIn(identityToken: identityToken, authID: nil, context: context, success: { _ in
+        
+        let agreements: ClientAgreements = ClientAgreements()
+        let context: ClientConditionalAuthenticationContext = ClientConditionalAuthenticationContext()
+        context.agreements = agreements
+        context.attributes = ["param": "value"]
+        
+        Client.authenticateConditionally(token: identityToken, clientIdentityProvider: .apple, authID: nil, context: context) { authResult in
+            if authResult.status == .success {
                 onSuccess()
-            }, failure: { error in
-                onError()
-            })
+                return
+            } else if authResult.status == .registrationRequired {
+                let agreements: ClientAgreements = ClientAgreements()
+                let context: ClientAuthenticationContext = ClientAuthenticationContext()
+                context.agreements = agreements
+                context.attributes = ["param": "value"]
+                
+                Client.authenticate(token: identityToken, clientIdentityProvider: .apple, authID: nil, context: context, success: { isSuccess in
+                    onSuccess()
+                }) { (error) in
+                    onError(error)
+                }
+            } else {
+                onError(NSError(domain: "SampleAppSwiftErrorDomain", code: -1, userInfo: [
+                    NSLocalizedDescriptionKey: "Status \(SNR_ClientConditionalAuthStatusToString(authResult.status)) is not supported!"
+                ]))
+            }
+        } failure: { error in
+            onError(error)
         }
     }
 

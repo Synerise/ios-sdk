@@ -71,16 +71,17 @@ class ProductsListViewModel {
             
             promotionResponse.items.forEach({ (promotion) in
                 guard
-                    let productName = promotion.name,
                     let productDescription = promotion.descriptionText,
                 
-                    let productImage = promotion.images?.first,
-                    let productImageURLString = productImage["url"] as? String,
-                    let productImageURL = URL(string: productImageURLString)
+                    let productImage = promotion.images?.first
                     
                 else {
                     return
                 }
+                
+                let productName = promotion.name
+                let productImageURLString = productImage.url
+                let productImageURL = URL(string: productImageURLString)!
                 
                 var productDiscountDescription: String!
                 switch promotion.discountType {

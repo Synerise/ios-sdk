@@ -44,9 +44,17 @@ class LoginViewController: DefaultViewController {
     }
     
     @IBAction func authByFacebookWasClicked(_ sender: UIButton) {
+        showLoading()
+        
         viewModel.authenticateByFacebookToken {
+            self.hideLoading()
+            
             UserInfoMessageManager.shared.success("You are signed in!", nil)
             self.viewModel.coordinator?.userDidLogin()
+        } onError: { error in
+            self.hideLoading()
+            
+            self.showErrorInfo(error as NSError)
         }
     }
 
@@ -160,15 +168,18 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             showLoading()
+            
             viewModel.authenticateByAppleSignIn(appleIdCredential: appleIDCredential, onSuccess: {
                 self.hideLoading()
+                
                 UserInfoMessageManager.shared.success("You are signed in!", nil)
                 self.viewModel.coordinator?.userDidLogin()
-            }, onError: {
+            }, onError: { error in
                 self.hideLoading()
+                
+                self.showErrorInfo(error as NSError)
             })
         }
     }

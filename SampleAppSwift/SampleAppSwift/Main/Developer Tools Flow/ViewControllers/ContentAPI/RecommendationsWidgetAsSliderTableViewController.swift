@@ -45,8 +45,8 @@ class RecommendationsWidgetAsSliderTableViewController: DefaultTableViewControll
         
         prepareBackButton()
         
-        slugTextField.text = "similar"
-        productIDTextField.text = "10214"
+        slugTextField.text = "recommend2"
+        productIDTextField.text = "100004"
         
         widgetItemWidthTextField.text = "150"
         widgetItemHeightTextField.text = "200"
@@ -75,9 +75,29 @@ class RecommendationsWidgetAsSliderTableViewController: DefaultTableViewControll
         let widgetItemShadow: Bool = widgetItemShadowSwitch.isOn
         let widgetItemCornersRounded: Bool = widgetItemCornersRoundedSwitch.isOn
         
-        let options = ContentWidgetOptions()
+        let options = ContentWidgetRecommendationsOptions()
         options.slug = slugTextField.text!
-        options.attributes[SNRContentWidgetOptionsAttributeKeyProductID] = productIDTextField.text!
+        options.productID = productIDTextField.text!
+        options.mapping = {
+            model in
+            guard let imageURLString = model.attributes["imageLink"] as? String,
+                  let imageURL = URL(string: imageURLString),
+                  let title = model.attributes["title"] as? String,
+                  let priceDictionary = model.attributes["price"] as? [AnyHashable: Any],
+                  let priceValue = priceDictionary["value"] as? Double else {
+                      return nil
+                  }
+                  
+        
+            let dataModel = ContentWidgetRecommendationDataModel(imageURL: imageURL, title: title, priceCurrency: "PLN", price: NSNumber(value: priceValue), salePrice: nil)
+
+            if let salePriceDictionary = model.attributes["salePrice"] as? [AnyHashable: Any],
+               let salePriceValue = salePriceDictionary["value"] as? Double {
+                dataModel.salePriceValue = NSNumber(floatLiteral: salePriceValue)
+            }
+            
+            return dataModel
+        }
         
         let horizontalSliderLayout = ContentWidgetHorizontalSliderLayout()
         horizontalSliderLayout.insets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
@@ -169,7 +189,7 @@ extension RecommendationsWidgetAsSliderTableViewController: ContentWidgetDelegat
     
     func snr_widgetDidReceiveClickAction(widget: ContentWidget, model: BaseModel) {
         if let recommendationModel = model as? Recommendation {
-            presentAlert(title: "Clicked!", message: "\(recommendationModel.title) clicked!")
+            presentAlert(title: "Clicked!", message: "\(recommendationModel.itemID) clicked!")
         }
     }
 }
