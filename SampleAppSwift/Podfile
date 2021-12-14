@@ -9,7 +9,6 @@ target 'SampleAppSwift' do
   pod 'Firebase/Crashlytics'
   pod 'Swinject', '~> 2.1.0'
   pod 'ReachabilitySwift'
-  pod 'SwiftLint', '0.25.1'
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage', '~> 3.3'
   pod 'SwiftyJSON', '~> 4.1'
@@ -27,6 +26,31 @@ target 'SampleAppSwift' do
         end
       end
   end
+end
+
+target 'SyneriseNotificationServiceExtension' do
+  
+  pod 'SyneriseSDK', '~> 3.8.10'
+
+end
+
+target 'SyneriseNotificationServiceExtensionObjC' do
+  
+  pod 'SyneriseSDK', '~> 3.8.10'
+
+end
+
+target 'SyneriseSingleMediaNotificationContentExtension' do
+  
+  pod 'SyneriseSDK', '~> 3.8.10'
+
+end
+
+target 'SyneriseSingleMediaNotificationContentExtensionObjC' do
+  
+  pod 'SyneriseSDK', '~> 3.8.10'
+
+end
 
 target 'SyneriseCarouselNotificationContentExtension' do
   
@@ -34,7 +58,7 @@ target 'SyneriseCarouselNotificationContentExtension' do
 
 end
 
-target 'SyneriseSingleMediaNotificationContentExtension' do
+target 'SyneriseCarouselNotificationContentExtensionObjC' do
   
   pod 'SyneriseSDK', '~> 3.8.10'
 
