@@ -28,7 +28,6 @@ class SyneriseManager {
 
     func initialize() {
         let clientApiKey = self.clientApiKey
-        //let clientApiKey = Configuration.SyneriseSDK.clientAPIKey1_test
         
         Synerise.setDebugModeEnabled(true)
         Synerise.setCrashHandlingEnabled(true)

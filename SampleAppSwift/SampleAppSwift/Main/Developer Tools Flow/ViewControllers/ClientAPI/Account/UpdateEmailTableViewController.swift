@@ -74,11 +74,6 @@ class UpdateEmailTableViewController: DefaultTableViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "Update Email"
-        
-        #if DEBUG
-        emailTextField.text = "krzysztof.kurzawa@synerise.com"
-        passwordTextField.text = "testPass12345!"
-        #endif
     }
     
     @available(iOS 13.0, *)
