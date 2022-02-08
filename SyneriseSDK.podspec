@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = "SyneriseSDK"
-  s.version       = "3.8.10"
-  s.summary       = "SyneriseSDK v. 3.8.10"
+  s.version       = "3.9.0"
+  s.summary       = "SyneriseSDK v. 3.9.0"
   s.description   = "iOS library for Synerise omnichannel platform"
   s.homepage      = "https://synerise.com"
   s.license       = { :type => "MIT" }

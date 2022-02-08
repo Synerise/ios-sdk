@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [3.8.10] - 2021-12-13
+## [3.9.0] - 2022-01-08
+
+### Fixed
+- Analytics for Simple Push campaigns.
+
+
+## [3.8.10] - 2021-12-12
 
 ### Added
 - Optional badge as a text shown on the item in `ContentWidget`.
@@ -15,10 +21,9 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `ClientAuthenticationResult` is changed to `ClientConditionalAuthResult`.
 - `ClientAuthenticationStatus` is changed to `ClientConditionalAuthStatus`.
 - `ClientAuthenticationContext` is changed to `ClientConditionalAuthenticationContext`.
-- `actionButtonPosition` setting property is moved from `ContentWidgetBasicProductItemLayout` to `ContentWidgetImageButtonCustomAction`.
 
 ### Removed
-- `salePriceMargin` setting property from `ContentWidgetBasicProductItemLayout`.
+- `salePriceMargin` setting property from `BasicProductItemLayout`.
 
 
 ## [3.8.9] - 2021-11-05
