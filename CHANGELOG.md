@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [3.9.1] - 2022-01-08
+## [3.10.0] - 2022-03-08
+
+### Added
+- `productIDs` parameter in `RecommendationOptions` to get recommendations for multiple items in `Content.getRecommendations(options:success:error:)` method.
+
+
+## [3.9.1] - 2022-03-02
 
 ### Fixed
 - Potential issue with native notification buttons when Simple Push campaign contains Rich Media (Single Media).
@@ -15,7 +21,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - Analytics for Simple Push campaigns.
 
 
-## [3.8.10] - 2021-12-12
+## [3.8.10] - 2021-12-13
 
 ### Added
 - Optional badge as a text shown on the item in `ContentWidget`.
