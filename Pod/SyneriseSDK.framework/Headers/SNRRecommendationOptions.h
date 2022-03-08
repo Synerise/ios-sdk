@@ -17,6 +17,7 @@ NS_SWIFT_NAME(RecommendationOptions)
 
 @property (copy, nonatomic, nullable, readonly) NSString *slug;
 @property (copy, nonatomic, nullable, readwrite) NSString *productID;
+@property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *productIDs;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
