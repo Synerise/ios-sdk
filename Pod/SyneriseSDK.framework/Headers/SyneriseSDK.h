@@ -129,6 +129,8 @@
 #import <SyneriseSDK/SNRVoucherCodesData.h>
 #import <SyneriseSDK/SNRRecommendationOptions.h>
 #import <SyneriseSDK/SNRRecommendationResponse.h>
+#import <SyneriseSDK/SNRRecommendationResponseExtras.h>
+#import <SyneriseSDK/SNRRecommendationResponseExtrasSlot.h>
 #import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRScreenViewResponse.h>
 #import <SyneriseSDK/SNRScreenViewAudience.h>
