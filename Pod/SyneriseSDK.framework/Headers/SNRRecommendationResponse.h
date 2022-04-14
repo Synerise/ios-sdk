@@ -27,6 +27,8 @@ NS_SWIFT_NAME(RecommendationResponse)
 @property (strong, nonatomic, nonnull, readonly) NSString *slug;
 @property (strong, nonatomic, nonnull, readonly) NSString *UUID;
 
+@property (strong, nonatomic, nonnull, readonly) NSDictionary *extras;
+
 @property (strong, nonatomic, nonnull, readonly) NSArray<SNRRecommendation *> *items;
 
 @end
