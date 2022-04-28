@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.11.1] - 2022-04-28
+
+### Fixed
+- Potential issue with sending `push.view` events in notification services.
+- Incorrect type for `extras` property in `RecommendationResponse` model.
+
+
 ## [3.11.0] - 2022-04-13
 
 ### Changed

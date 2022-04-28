@@ -8,6 +8,7 @@
 
 #import <SyneriseSDK/SNRBaseModel.h>
 #import <SyneriseSDK/SNRRecommendation.h>
+#import <SyneriseSDK/SNRRecommendationResponseExtras.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,7 +28,7 @@ NS_SWIFT_NAME(RecommendationResponse)
 @property (strong, nonatomic, nonnull, readonly) NSString *slug;
 @property (strong, nonatomic, nonnull, readonly) NSString *UUID;
 
-@property (strong, nonatomic, nonnull, readonly) NSDictionary *extras;
+@property (strong, nonatomic, nonnull, readonly) SNRRecommendationResponseExtras *extras;
 
 @property (strong, nonatomic, nonnull, readonly) NSArray<SNRRecommendation *> *items;
 
