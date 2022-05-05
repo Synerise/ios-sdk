@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRNotificationsSettings.h>
@@ -40,9 +40,6 @@ NS_SWIFT_NAME(Settings)
  * Settings for the Injector module
  */
 @property (strong, nonatomic, nonnull, readonly) SNRInjectorSettings *injector;
-
-+ (instancetype)new NS_UNAVAILABLE;
-- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

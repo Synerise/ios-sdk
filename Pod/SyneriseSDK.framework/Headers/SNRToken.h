@@ -3,24 +3,21 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
+
+#import <SyneriseSDK/SNRBaseModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * @class SNRToken
- */
-
-NS_SWIFT_NAME(Token)
 @interface SNRToken : SNRBaseModel
 
-@property (strong, nonatomic, nonnull, readonly) NSString *tokenString;
-@property (assign, nonatomic, readonly) SNRTokenOrigin tokenOrigin;
+@property (copy, nonatomic, nonnull, readonly) NSString *tokenString;
+@property (copy, nonatomic, nonnull, readonly) NSDate *expirationDate;
 
-@property (strong, nonatomic, nonnull, readonly) NSDate *expirationDate;
-
-@property (strong, nonatomic, nonnull, readonly) NSDictionary *claimsDictionary;
+@property (copy, nonatomic, nonnull, readonly) NSString *rlm;
+@property (assign, nonatomic, readonly) SNRTokenOrigin origin;
+@property (copy, nonatomic, nonnull, readonly) NSString *customId;
 
 - (BOOL)isNearExpiring;
 

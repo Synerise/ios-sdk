@@ -3,6 +3,26 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.0.0] - 2022-05-05
+
+### Fixed
+- Potential issue with reading and saving SDK version metadata from the SDK bundle.
+- Potential issues related to sharing data with extensions.
+
+### Added
+- JWT Token encryption support cooperating with backend.
+- `NotificationServiceExtensionDelegate` for better error handling in Notification Service Extension.
+- `NotificationServiceExtension.serviceExtensionTimeWillExpireRequest(_:withMutableNotificationContent:)` method in Notification Service Extension.
+
+### Changed
+- Deeplinks from campaigns have default action now when delegate method is not implemented - the SDK opens url.
+- Remove unnecessary anonymous token refresh operations.
+- Improvements to stability.
+
+### Removed
+- `.pinActivationRequired` from `ClientConditionalAuthStatus`.
+
+
 ## [3.11.1] - 2022-04-28
 
 ### Fixed

@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -52,6 +52,7 @@
 #import <SyneriseSDK/SNRInternalInconsistencyError.h>
 
 // Other Types
+#import <SyneriseSDK/SNRSyneriseActivity.h>
 #import <SyneriseSDK/SNRHostApplicationType.h>
 #import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
@@ -154,6 +155,3 @@
 #import <SyneriseSDK/SNRNotificationServiceExtension.h>
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
 #import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>
-#import <SyneriseSDK/SNRNotificationEncryptionHelper.h>
-#import <SyneriseSDK/SNRNotificationConfigurationHelper.h>
-#import <SyneriseSDK/SNRNotificationAnalyticsHelper.h>

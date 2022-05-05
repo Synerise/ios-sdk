@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRBaseModel.h>
@@ -19,7 +19,7 @@ NS_SWIFT_NAME(AssignVoucherResponse)
 @interface SNRAssignVoucherResponse : SNRBaseModel
 
 @property (copy, nonatomic, nonnull, readonly) NSString *message;
-@property (copy, nonatomic, nonnull, readonly) SNRAssignVoucherData *assignVoucherData;
+@property (strong, nonatomic, nonnull, readonly) SNRAssignVoucherData *assignVoucherData;
 
 @end
 

@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
@@ -62,9 +62,6 @@ NS_SWIFT_NAME(TrackerSettings)
  * The default value is false.
  */
 @property (assign, nonatomic, readwrite) BOOL locationAutomatic;
-
-+ (instancetype)new NS_UNAVAILABLE;
-- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

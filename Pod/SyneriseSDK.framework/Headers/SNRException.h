@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 @class SNRError;
@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 @interface SNRException : NSException
-
-@property (strong, nonatomic, nonnull, readwrite) SNRError *error;
 
 + (void)throwException:(NSExceptionName)exceptionName reason:(NSString *)reason;
 

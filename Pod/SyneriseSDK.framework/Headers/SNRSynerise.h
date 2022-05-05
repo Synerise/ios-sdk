@@ -3,9 +3,10 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
+#import <SyneriseSDK/SNRSyneriseActivity.h>
 #import <SyneriseSDK/SNRHostApplicationType.h>
 
 @class SNRSettings;
@@ -14,41 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSString * const SNRSyneriseDomain;
 FOUNDATION_EXPORT NSString * const SNRSyneriseBundleIdentifier;
-
-/**
- * @enum SNRSyneriseActivity
- */
-
-typedef NS_ENUM(NSInteger, SNRSyneriseActivity) {
-    /// Simple Push campaign activity
-    SNRSyneriseActivitySimplePush,
-    
-    /// Banner campaign activity
-    SNRSyneriseActivityBanner,
-    
-    /// Walkthrough campaign activity
-    SNRSyneriseActivityWalkthrough,
-    
-} NS_SWIFT_NAME(SyneriseActivity);
-
-
-/**
- * @enum SNRSyneriseActivityAction
- */
-
-typedef NS_ENUM(NSInteger, SNRSyneriseActivityAction) {
-    /// Activity should be stay on screen.
-    /// Note that Simple Push disappears always by default.
-    SNRSyneriseActivityActionNone,
-    
-    /// Activity should disappear from screen.
-    SNRSyneriseActivityActionHide
-    
-} NS_SWIFT_NAME(SyneriseActivityAction);
-
-typedef void (^SNRSyneriseActivityActionCompletionBlock)(void) NS_SWIFT_NAME(SyneriseActivityActionCompletionBlock);
-typedef void (^SNRSyneriseActivityCompletionHandler)(SNRSyneriseActivityAction, __nullable SNRSyneriseActivityActionCompletionBlock) NS_SWIFT_NAME(SyneriseActivityCompletionHandler);
-
 
 /**
  * @protocol SNRSyneriseDelegate
@@ -119,20 +85,6 @@ NS_SWIFT_NAME(SyneriseDelegate)
 - (void)SNR_handledActionWithDeepLink:(NSString *)deepLink activity:(SNRSyneriseActivity)activity completionHandler:(SNRSyneriseActivityCompletionHandler)completionHandler NS_SWIFT_NAME(snr_handledAction(deepLink:activity:completionHandler:));
 
 @end
-
-
-/**
- * @protocol SyneriseActivityNotAllowed
- *
- * A protocol to block Synerise Activities.
- * Implement this protocol in a View Controller that cannot be covered by Synerise Activity.
- */
-
-NS_SWIFT_NAME(SyneriseActivityNotAllowed)
-@protocol SNRSyneriseActivityNotAllowed
-
-@end
-
 
 /**
  * @class SNRSynerise
@@ -272,6 +224,13 @@ NS_SWIFT_NAME(Synerise)
  * @param actionIdentifier Identifier of action received from notification response.
  */
 + (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(nullable NSString *)actionIdentifier;
+
+#ifdef DEBUG
++ (NSString *)getDataDebugDescription;
++ (void)clearAllPersistentAndTemporaryData;
++ (void)clearAuthTokensData;
+
+#endif
 
 @end
 

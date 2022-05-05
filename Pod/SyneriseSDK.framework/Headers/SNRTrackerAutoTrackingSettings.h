@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN
@@ -58,9 +58,6 @@ NS_SWIFT_NAME(TrackerAutoTrackingSettings)
  * This parameter sets view tags excluded from AutoTracking.
  */
 @property (copy, nonatomic, nonnull, readwrite) NSArray<NSNumber *> *excludedViewTags;
-
-+ (instancetype)new NS_UNAVAILABLE;
-- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

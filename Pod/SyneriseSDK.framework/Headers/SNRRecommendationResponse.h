@@ -3,10 +3,11 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRBaseModel.h>
+#import <SyneriseSDK/SNRRecommendationResponseExtras.h>
 #import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRRecommendationResponseExtras.h>
 
