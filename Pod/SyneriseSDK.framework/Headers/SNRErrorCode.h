@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2021 Synerise. All rights reserved.
+//  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeCryptoFailedError = 3610,
     SNRErrorCodeMigrationError = 3710,
     SNRErrorCodeContentWidgetError = 3810,
+    SNRErrorCodeNotificationServiceExtensionError = 3910,
     
     SNRErrorCodeUnknownApiError = -102,
     SNRErrorCodeNetworkApiError = -105,
