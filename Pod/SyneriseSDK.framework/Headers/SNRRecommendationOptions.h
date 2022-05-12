@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, SNRRecommendationFiltersJoinerRule) {
     SNRRecommendationFiltersJoinerRuleAnd,
     SNRRecommendationFiltersJoinerRuleOr,
     SNRRecommendationFiltersJoinerRuleReplace
-} NS_SWIFT_NAME(SNRRecommendationFiltersJoinerRule);
+} NS_SWIFT_NAME(RecommendationFiltersJoinerRule);
 
 NSString * SNR_RecommendationFiltersJoinerRuleToString(SNRRecommendationFiltersJoinerRule rule);
 
@@ -37,7 +37,7 @@ NS_SWIFT_NAME(RecommendationOptions)
 @property (copy, nonatomic, nullable, readwrite) NSString *additionalElasticFilters;
 @property (assign, nonatomic, readwrite) SNRRecommendationFiltersJoinerRule elasticFiltersJoiner;
 
-@property (copy, nonatomic, nullable, readwrite) NSArray *displayAttribute;
+@property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *displayAttribute;
 @property (assign, nonatomic, readwrite) BOOL includeContextItems;
 
 + (instancetype)new NS_UNAVAILABLE;

@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(NotificationServiceExtensionDelegate)
 @protocol SNRNotificationServiceExtensionDelegate
 
-- (void)notificationServiceExtensionDidFailProcessingWithError:(NSError *)error;
 - (void)notificationServiceExtensionDidFailDecryptionWithError:(NSError *)error;
+- (void)notificationServiceExtensionDidFailProcessingWithError:(NSError *)error;
 
 @end
 
