@@ -4782,6 +4782,7 @@ __63+[SNRClientApplicationInfoProvider arePushNotificationsEnabled]_block_invoke
 -[SNRMigrationService setIsFirstLaunch:]
 -[SNRMigrationService isUpdateLaunch]
 -[SNRMigrationService setIsUpdateLaunch:]
+_OBJC_CLASSLIST_REFERENCES_$_.49
 __OBJC_METACLASS_RO_$_SNRMigrationService
 __OBJC_$_INSTANCE_METHODS_SNRMigrationService
 _OBJC_IVAR_$_SNRMigrationService._isFirstLaunch
@@ -5048,6 +5049,7 @@ __OBJC_CLASS_RO_$_SNRInjectorTemplateViewFactory
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFactory.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFactory.m
 -[SNRBaseMigration identifier]
+-[SNRBaseMigration init]
 -[SNRBaseMigration shouldExecuteIfFirstLaunch:]
 -[SNRBaseMigration shouldExecuteIfUpdateLaunch:]
 -[SNRBaseMigration shouldExecuteInVersion:fromVersion:]
@@ -5059,6 +5061,8 @@ SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFact
 -[SNRBaseMigration isVersionGreaterOrEqual:versionToCompare:]
 -[SNRBaseMigration migrationSuccess]
 -[SNRBaseMigration migrationError:]
+-[SNRBaseMigration forced]
+-[SNRBaseMigration setForced:]
 -[SNRBaseMigration isSuccess]
 -[SNRBaseMigration setIsSuccess:]
 -[SNRBaseMigration error]
@@ -5066,6 +5070,7 @@ SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFact
 -[SNRBaseMigration .cxx_destruct]
 __OBJC_METACLASS_RO_$_SNRBaseMigration
 __OBJC_$_INSTANCE_METHODS_SNRBaseMigration
+_OBJC_IVAR_$_SNRBaseMigration._forced
 _OBJC_IVAR_$_SNRBaseMigration._isSuccess
 _OBJC_IVAR_$_SNRBaseMigration._error
 __OBJC_$_INSTANCE_VARIABLES_SNRBaseMigration
@@ -5204,6 +5209,7 @@ SyneriseSDK/Modules/Tracker/Main/CustomTrackers/ViewTracker/EventBuilders/SNRVie
 -[SNRMajorVersionTransferMigration encryptString:crypter:fallbackValue:]
 -[SNRMajorVersionTransferMigration makeOldKeychainLoadingQueryWithKey:]
 -[SNRMajorVersionTransferMigration makeNewTokenStringFromOldTokenString:crypter:]
+_OBJC_CLASSLIST_REFERENCES_$_.138
 __OBJC_METACLASS_RO_$_SNRMajorVersionTransferMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionTransferMigration
 __OBJC_CLASS_RO_$_SNRMajorVersionTransferMigration
@@ -5831,7 +5837,6 @@ ___71-[SNRImageProvider downloadImageAsynchronouslyFromURL:completionBlock:]_blo
 -[SNRImageProvider cache]
 -[SNRImageProvider setCache:]
 -[SNRImageProvider .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.49
 ___block_descriptor_24_e4_20bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
 __OBJC_$_CLASS_METHODS_SNRImageProvider
 __OBJC_METACLASS_RO_$_SNRImageProvider
@@ -6994,7 +6999,6 @@ ___50+[SNRApplicationStartedEvent eventWithParameters:]_block_invoke
 ___copy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
 ___destroy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
 +[SNRApplicationStartedEvent parseParameters:]
-_OBJC_CLASSLIST_REFERENCES_$_.138
 ___block_descriptor_104_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s_e32_v8?0"SNRTrackerParamsBuilder"4l
 _OBJC_CLASSLIST_REFERENCES_$_.144
 _OBJC_CLASSLIST_REFERENCES_$_.155
@@ -9475,6 +9479,7 @@ __OBJC_CLASS_RO_$_SNRConfirmClientPhoneNumberRequest
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPhoneNumberRequest.m
 SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPhoneNumberRequest.m
 -[SNRMajorVersionCleanupMigration identifier]
+-[SNRMajorVersionCleanupMigration init]
 -[SNRMajorVersionCleanupMigration shouldExecuteIfFirstLaunch:]
 -[SNRMajorVersionCleanupMigration shouldExecuteIfUpdateLaunch:]
 -[SNRMajorVersionCleanupMigration shouldExecuteInVersion:fromVersion:]
@@ -9483,6 +9488,8 @@ SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPh
 -[SNRMajorVersionCleanupMigration removeOldDataFromKeychainForKey:]
 -[SNRMajorVersionCleanupMigration removeOldDataFromUserDefaultsForKey:]
 -[SNRMajorVersionCleanupMigration removeAllOldDataFromSharedUserDefaultsButExcludeItems:]
+-[SNRMajorVersionCleanupMigration loadOldDataFromUserDefaultsForKey:]
+-[SNRMajorVersionCleanupMigration loadOldDataFromKeychainForKey:]
 -[SNRMajorVersionCleanupMigration makeOldKeychainLoadingQueryWithKey:]
 __OBJC_METACLASS_RO_$_SNRMajorVersionCleanupMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionCleanupMigration

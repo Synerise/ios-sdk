@@ -63,7 +63,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.19
 _OBJC_CLASSLIST_REFERENCES_$_.25
 _OBJC_CLASSLIST_REFERENCES_$_.26
 _OBJC_SELECTOR_REFERENCES_.28
-___block_descriptor_20_e17_i8?0"NSString"4l
+___block_descriptor_32_e18_q16?0"NSString"8l
 ___block_literal_global
 _OBJC_SELECTOR_REFERENCES_.35
 _OBJC_SELECTOR_REFERENCES_.37
@@ -91,17 +91,17 @@ __73+[SNRClientConditionalAuthResult(Mapping) mappingWithNSDictionary:error:]_bl
 -[SNRInjectorBasePresenter show]
 ___32-[SNRInjectorBasePresenter show]_block_invoke
 ___32-[SNRInjectorBasePresenter show]_block_invoke_2
-___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
-___copy_helper_block_e4_20s24s
-___destroy_helper_block_e4_20s24s
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
 -[SNRInjectorBasePresenter hide]
 -[SNRInjectorBasePresenter hideWithCompletionBlock:]
 ___52-[SNRInjectorBasePresenter hideWithCompletionBlock:]_block_invoke
 ___52-[SNRInjectorBasePresenter hideWithCompletionBlock:]_block_invoke_2
-___copy_helper_block_e4_20s24b
-___copy_helper_block_e4_20s24s28b
-___destroy_helper_block_e4_20s24s28s
+___copy_helper_block_e8_32s40b
+___copy_helper_block_e8_32s40s48b
+___destroy_helper_block_e8_32s40s48s
 -[SNRInjectorBasePresenter setPresentable:]
 -[SNRInjectorBasePresenter presentableWillShow]
 -[SNRInjectorBasePresenter presentableDidShow]
@@ -153,16 +153,16 @@ _OBJC_SELECTOR_REFERENCES_.67
 _OBJC_CLASSLIST_REFERENCES_$_.68
 _OBJC_SELECTOR_REFERENCES_.70
 _OBJC_SELECTOR_REFERENCES_.72
-___block_descriptor_24_e4_20s_e5_v4?0l
+___block_descriptor_40_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.75
-___block_descriptor_29_e4_20s24s_e5_v4?0l
+___block_descriptor_49_e8_32s40s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.77
 _OBJC_SELECTOR_REFERENCES_.79
 _OBJC_SELECTOR_REFERENCES_.81
 _OBJC_SELECTOR_REFERENCES_.83
-___block_descriptor_28_e4_20s24bs_e5_v4?0l
+___block_descriptor_48_e8_32s40bs_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.85
-___block_descriptor_33_e4_20s24s28bs_e5_v4?0l
+___block_descriptor_57_e8_32s40s48bs_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.86
 _OBJC_SELECTOR_REFERENCES_.88
 _OBJC_SELECTOR_REFERENCES_.90
@@ -195,15 +195,15 @@ __OBJC_CLASS_RO_$_SNRInjectorBasePresenter
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/Presenters/Base/SNRInjectorBasePresenter.m
 SyneriseSDK/Modules/Injector/Main/Presenters/Base/SNRInjectorBasePresenter.m
 SyneriseSDK/Modules/Injector/Main/Presenters/Base/SNRInjectorBasePresenter.h
-__destroy_helper_block_e4_20s24s28s
-__copy_helper_block_e4_20s24s28b
-__copy_helper_block_e4_20s24b
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48b
+__copy_helper_block_e8_32s40b
 __52-[SNRInjectorBasePresenter hideWithCompletionBlock:]_block_invoke_2
 __52-[SNRInjectorBasePresenter hideWithCompletionBlock:]_block_invoke
-__destroy_helper_block_e4_20s24s
-__copy_helper_block_e4_20s24s
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20s
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
 __32-[SNRInjectorBasePresenter show]_block_invoke_2
 __32-[SNRInjectorBasePresenter show]_block_invoke
 +[SNRTemplateContentText(Mapping) SNRModelMapper_requiredKeys]
@@ -257,8 +257,8 @@ SyneriseSDK/Core/Models/UI/Banners/SNRTemplateBanner.m
 SyneriseSDK/Core/Models/UI/Banners/SNRTemplateBanner.h
 +[SNRJ10Utils removeClient10]
 ___29+[SNRJ10Utils removeClient10]_block_invoke
-___copy_helper_block_e4_
-___destroy_helper_block_e4_
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
 -[SNRJ10Utils init]
 -[SNRJ10Utils debugDescription]
 -[SNRJ10Utils notificationE5]
@@ -266,7 +266,7 @@ ___destroy_helper_block_e4_
 -[SNRJ10Utils .cxx_destruct]
 _removeClient10.instance
 _removeClient10.onceToken
-___block_descriptor_24_e4__e5_v4?0l
+___block_descriptor_40_e8__e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.20
 _OBJC_SELECTOR_REFERENCES_.22
 _OBJC_CLASSLIST_REFERENCES_$_.23
@@ -281,8 +281,8 @@ __OBJC_CLASS_RO_$_SNRJ10Utils
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/DataSource/SNRDataSource.m
 SyneriseSDK/Core/DataSource/SNRDataSource.m
 SyneriseSDK/Core/DataSource/SNRDataSource.h
-__destroy_helper_block_e4_
-__copy_helper_block_e4_
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
 __29+[SNRJ10Utils removeClient10]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/usr/include/dispatch/once.h
 -[SNRG7Service initLs2rTg9CR3:optionsS45:]
@@ -290,23 +290,23 @@ __29+[SNRJ10Utils removeClient10]_block_invoke
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___33-[SNRG7Service executeOptions45:]_block_invoke
-___copy_helper_block_e4_20s24r28r
-___destroy_helper_block_e4_20s24r28r
+___copy_helper_block_e8_32s40r48r
+___destroy_helper_block_e8_32s40r48r
 -[SNRG7Service invokeConnection96]
 ___34-[SNRG7Service invokeConnection96]_block_invoke
 -[SNRG7Service removeName160]
 ___29-[SNRG7Service removeName160]_block_invoke
 -[SNRG7Service removeClient64:]
 ___31-[SNRG7Service removeClient64:]_block_invoke
-___copy_helper_block_e4_20s24s28r32r
-___destroy_helper_block_e4_20s24s28r32r
+___copy_helper_block_e8_32s40s48r56r
+___destroy_helper_block_e8_32s40s48r56r
 _get_auth_anonymous_queue
 ___get_auth_anonymous_queue_block_invoke
 _OBJC_SELECTOR_REFERENCES_.34
 _OBJC_SELECTOR_REFERENCES_.36
 _OBJC_SELECTOR_REFERENCES_.38
 _OBJC_SELECTOR_REFERENCES_.40
-___block_descriptor_32_e4_20s24r28r_e5_v4?0l
+___block_descriptor_56_e8_32s40r48r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.44
 _OBJC_CLASSLIST_REFERENCES_$_.51
 _OBJC_SELECTOR_REFERENCES_.53
@@ -315,7 +315,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.61
 _OBJC_SELECTOR_REFERENCES_.69
 _OBJC_SELECTOR_REFERENCES_.71
 _OBJC_SELECTOR_REFERENCES_.73
-___block_descriptor_36_e4_20s24s28r32r_e22_v16?0c48"NSError"12l
+___block_descriptor_64_e8_32s40s48r56r_e23_v28?0B812"NSError"20l
 _OBJC_SELECTOR_REFERENCES_.76
 _OBJC_CLASSLIST_REFERENCES_$_.77
 __OBJC_METACLASS_RO_$_SNRG7Service
@@ -323,18 +323,18 @@ __OBJC_$_INSTANCE_METHODS_SNRG7Service
 __OBJC_CLASS_RO_$_SNRG7Service
 _get_auth_anonymous_queue.queue
 _get_auth_anonymous_queue.onceToken
-___block_descriptor_20_e5_v4?0l
+___block_descriptor_32_e5_v8?0l
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Networking/AuthService/Anonymous/SNRAnonymousProfileAuthService.m
 __get_auth_anonymous_queue_block_invoke
 SyneriseSDK/Core/Networking/AuthService/Anonymous/SNRAnonymousProfileAuthService.m
 get_auth_anonymous_queue
-__destroy_helper_block_e4_20s24s28r32r
-__copy_helper_block_e4_20s24s28r32r
+__destroy_helper_block_e8_32s40s48r56r
+__copy_helper_block_e8_32s40s48r56r
 __31-[SNRG7Service removeClient64:]_block_invoke
 __29-[SNRG7Service removeName160]_block_invoke
 __34-[SNRG7Service invokeConnection96]_block_invoke
-__destroy_helper_block_e4_20s24r28r
-__copy_helper_block_e4_20s24r28r
+__destroy_helper_block_e8_32s40r48r
+__copy_helper_block_e8_32s40r48r
 __33-[SNRG7Service executeOptions45:]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
@@ -393,8 +393,8 @@ ___36+[SNRServerTimeManager sharedObject]_block_invoke
 -[SNRServerTimeManager fetchInitialServerTime]
 -[SNRServerTimeManager fetchInitialServerTimeWithCompletion:]
 ___61-[SNRServerTimeManager fetchInitialServerTimeWithCompletion:]_block_invoke
-___copy_helper_block_e4_20b24w
-___destroy_helper_block_e4_20s24w
+___copy_helper_block_e8_32b40w
+___destroy_helper_block_e8_32s40w
 -[SNRServerTimeManager isReady]
 -[SNRServerTimeManager getCurrentServerTime]
 -[SNRServerTimeManager getServerTimeForDeviceTime:]
@@ -407,7 +407,7 @@ ___destroy_helper_block_e4_20s24w
 _sharedObject.instance
 _sharedObject.onceToken
 _OBJC_SELECTOR_REFERENCES_.23
-___block_descriptor_28_e4_20bs24w_e22_v16?0c48"NSError"12l
+___block_descriptor_48_e8_32bs40w_e23_v28?0B812"NSError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.36
 __OBJC_$_CLASS_METHODS_SNRServerTimeManager
 __OBJC_METACLASS_RO_$_SNRServerTimeManager
@@ -421,8 +421,8 @@ __OBJC_$_PROP_LIST_SNRServerTimeManager
 __OBJC_CLASS_RO_$_SNRServerTimeManager
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Managers/SNRServerTimeManager.m
 SyneriseSDK/Core/Managers/SNRServerTimeManager.m
-__destroy_helper_block_e4_20s24w
-__copy_helper_block_e4_20b24w
+__destroy_helper_block_e8_32s40w
+__copy_helper_block_e8_32b40w
 __61-[SNRServerTimeManager fetchInitialServerTimeWithCompletion:]_block_invoke
 __36+[SNRServerTimeManager sharedObject]_block_invoke
 -[SNRAssignVoucherData init]
@@ -597,9 +597,9 @@ ___27+[SNRInjector sharedObject]_block_invoke
 -[SNRInjector fetchBannersWithSuccess:failure:]
 ___47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke
 ___47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke_2
-___copy_helper_block_e4_20b24s
+___copy_helper_block_e8_32b40s
 ___47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke.100
-___copy_helper_block_e4_20b24b
+___copy_helper_block_e8_32b40b
 -[SNRInjector getPushesWithSuccess:failure:]
 ___44-[SNRInjector getPushesWithSuccess:failure:]_block_invoke
 ___44-[SNRInjector getPushesWithSuccess:failure:]_block_invoke_2
@@ -618,14 +618,14 @@ ___29-[SNRInjector preloadBanners]_block_invoke
 -[SNRInjector requestWalkthrough]
 ___33-[SNRInjector requestWalkthrough]_block_invoke
 ___33-[SNRInjector requestWalkthrough]_block_invoke_2
-___copy_helper_block_e4_20w
-___destroy_helper_block_e4_20w
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
 ___33-[SNRInjector requestWalkthrough]_block_invoke.162
-___copy_helper_block_e4_20s24w
+___copy_helper_block_e8_32s40w
 -[SNRInjector requestBannersWithCompletionBlock:]
 ___49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke
 ___49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke_2
-___copy_helper_block_e4_20b
+___copy_helper_block_e8_32b
 ___49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke.170
 -[SNRInjector requestPushesWithCompletionBlock:]
 ___48-[SNRInjector requestPushesWithCompletionBlock:]_block_invoke
@@ -676,9 +676,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.64
 _OBJC_CLASSLIST_REFERENCES_$_.81
 _OBJC_CLASSLIST_REFERENCES_$_.84
 _OBJC_CLASSLIST_REFERENCES_$_.97
-___block_descriptor_28_e4_20bs24s_e5_v4?0l
+___block_descriptor_48_e8_32bs40s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.99
-___block_descriptor_28_e4_20bs24bs_e28_v12?0"NSArray"4"NSError"8l
+___block_descriptor_48_e8_32bs40bs_e29_v24?0"NSArray"8"NSError"16l
 _OBJC_SELECTOR_REFERENCES_.103
 _OBJC_SELECTOR_REFERENCES_.105
 _OBJC_CLASSLIST_REFERENCES_$_.106
@@ -707,17 +707,17 @@ _OBJC_SELECTOR_REFERENCES_.151
 _OBJC_CLASSLIST_REFERENCES_$_.152
 _OBJC_SELECTOR_REFERENCES_.154
 _OBJC_SELECTOR_REFERENCES_.156
-___block_descriptor_20_e28_v12?0"NSArray"4"NSError"8l
+___block_descriptor_32_e29_v24?0"NSArray"8"NSError"16l
 _OBJC_SELECTOR_REFERENCES_.158
 _OBJC_SELECTOR_REFERENCES_.160
-___block_descriptor_24_e4_20w_e23_v8?0"SNRWalkthrough"4l
+___block_descriptor_40_e8_32w_e24_v16?0"SNRWalkthrough"8l
 _OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_SELECTOR_REFERENCES_.165
-___block_descriptor_24_e4_20w_e20_v8?0"SNRApiError"4l
+___block_descriptor_40_e8_32w_e21_v16?0"SNRApiError"8l
 _OBJC_SELECTOR_REFERENCES_.168
-___block_descriptor_28_e4_20s24w_e5_v4?0l
-___block_descriptor_24_e4_20bs_e16_v8?0"NSArray"4l
-___block_descriptor_24_e4_20bs_e20_v8?0"SNRApiError"4l
+___block_descriptor_48_e8_32s40w_e5_v8?0l
+___block_descriptor_40_e8_32bs_e17_v16?0"NSArray"8l
+___block_descriptor_40_e8_32bs_e21_v16?0"SNRApiError"8l
 _OBJC_SELECTOR_REFERENCES_.172
 _OBJC_SELECTOR_REFERENCES_.174
 _OBJC_CLASSLIST_REFERENCES_$_.175
@@ -727,7 +727,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.182
 _OBJC_SELECTOR_REFERENCES_.184
 _OBJC_SELECTOR_REFERENCES_.186
 _OBJC_SELECTOR_REFERENCES_.188
-___block_descriptor_28_e4_20s24s_e5_v4?0l
+___block_descriptor_48_e8_32s40s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.192
 _OBJC_SELECTOR_REFERENCES_.194
 _OBJC_SELECTOR_REFERENCES_.196
@@ -805,13 +805,13 @@ __48-[SNRInjector requestPushesWithCompletionBlock:]_block_invoke_3
 __48-[SNRInjector requestPushesWithCompletionBlock:]_block_invoke_2
 __48-[SNRInjector requestPushesWithCompletionBlock:]_block_invoke
 __49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke.170
-__copy_helper_block_e4_20b
+__copy_helper_block_e8_32b
 __49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke_2
 __49-[SNRInjector requestBannersWithCompletionBlock:]_block_invoke
-__copy_helper_block_e4_20s24w
+__copy_helper_block_e8_32s40w
 __33-[SNRInjector requestWalkthrough]_block_invoke.162
-__destroy_helper_block_e4_20w
-__copy_helper_block_e4_20w
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
 __33-[SNRInjector requestWalkthrough]_block_invoke_2
 __33-[SNRInjector requestWalkthrough]_block_invoke
 __29-[SNRInjector preloadBanners]_block_invoke
@@ -819,9 +819,9 @@ __35-[SNRInjector preloadBannersNeeded]_block_invoke
 __44-[SNRInjector getPushesWithSuccess:failure:]_block_invoke_3
 __44-[SNRInjector getPushesWithSuccess:failure:]_block_invoke_2
 __44-[SNRInjector getPushesWithSuccess:failure:]_block_invoke
-__copy_helper_block_e4_20b24b
+__copy_helper_block_e8_32b40b
 __47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke.100
-__copy_helper_block_e4_20b24s
+__copy_helper_block_e8_32b40s
 __47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke_2
 __47-[SNRInjector fetchBannersWithSuccess:failure:]_block_invoke
 __27+[SNRInjector sharedObject]_block_invoke
@@ -834,19 +834,19 @@ __31+[SNRInjector initializeModule]_block_invoke
 -[SNRCoreDataEvent setClient:]
 -[SNRCoreDataEvent asEvent]
 ___27-[SNRCoreDataEvent asEvent]_block_invoke
-___copy_helper_block_e4_20r24r
-___destroy_helper_block_e4_20r24r
+___copy_helper_block_e8_32r40r
+___destroy_helper_block_e8_32r40r
 _OBJC_CLASSLIST_REFERENCES_$_.30
-___block_descriptor_28_e4_20r24r_e5_v4?0l
+___block_descriptor_48_e8_32r40r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_SNRCoreDataEvent
 __OBJC_METACLASS_RO_$_SNRCoreDataEvent
 __OBJC_$_INSTANCE_METHODS_SNRCoreDataEvent
 __OBJC_$_PROP_LIST_SNRCoreDataEvent
 __OBJC_CLASS_RO_$_SNRCoreDataEvent
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Main/Events Store/Model/Event/SNRCoreDataEvent.m
-__destroy_helper_block_e4_20r24r
+__destroy_helper_block_e8_32r40r
 SyneriseSDK/Modules/Tracker/Main/Events Store/Model/Event/SNRCoreDataEvent.m
-__copy_helper_block_e4_20r24r
+__copy_helper_block_e8_32r40r
 __27-[SNRCoreDataEvent asEvent]_block_invoke
 -[SNRAssignVoucherRequest init]
 -[SNRAssignVoucherRequest setPoolUUID:]
@@ -871,16 +871,16 @@ ___38-[SNRL12Validator initWithIdentifier:]_block_invoke
 -[SNRL12Validator prepareSymbol89:]
 -[SNRL12Validator prepareSymbol89:clientK37:]
 ___45-[SNRL12Validator prepareSymbol89:clientK37:]_block_invoke
-___copy_helper_block_e4_20s24s28r
-___destroy_helper_block_e4_20s24s28r
+___copy_helper_block_e8_32s40s48r
+___destroy_helper_block_e8_32s40s48r
 ___45-[SNRL12Validator prepareSymbol89:clientK37:]_block_invoke.54
-___copy_helper_block_e4_20s24s28s
+___copy_helper_block_e8_32s40s48s
 -[SNRL12Validator executeState147]
 -[SNRL12Validator removeType22:]
 -[SNRL12Validator prepareSymbol71:]
 ___35-[SNRL12Validator prepareSymbol71:]_block_invoke
-___copy_helper_block_e4_20s24s28r32r36r
-___destroy_helper_block_e4_20s24s28r32r36r
+___copy_helper_block_e8_32s40s48r56r64r
+___destroy_helper_block_e8_32s40s48r56r64r
 -[SNRL12Validator saveSymbol80:]
 -[SNRL12Validator executeOptions117:]
 -[SNRL12Validator executeConnection105]
@@ -896,16 +896,16 @@ ___destroy_helper_block_e4_20s24s28r32r36r
 -[SNRL12Validator(TestSupport) removeClient118]
 -[SNRL12Validator(TestSupport) prepareNotification149]
 ___clang_at_available_requires_core_foundation_framework
-___block_descriptor_32_e4_20s24s28r_e5_v4?0l
+___block_descriptor_56_e8_32s40s48r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.47
 _OBJC_SELECTOR_REFERENCES_.49
 _OBJC_SELECTOR_REFERENCES_.51
-___block_descriptor_32_e4_20s24s28s_e5_v4?0l
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.57
 _OBJC_CLASSLIST_REFERENCES_$_.71
 _OBJC_CLASSLIST_REFERENCES_$_.72
 _OBJC_CLASSLIST_REFERENCES_$_.75
-___block_descriptor_40_e4_20s24s28r32r36r_e5_v4?0l
+___block_descriptor_72_e8_32s40s48r56r64r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.101
 _OBJC_SELECTOR_REFERENCES_.107
 _OBJC_SELECTOR_REFERENCES_.109
@@ -930,21 +930,21 @@ _OBJC_CLASSLIST_REFERENCES_$_.149
 _OBJC_SELECTOR_REFERENCES_.155
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/External/TrustKit/Pinning/SNR_TSKSPKIHashCache.m
 SyneriseSDK/External/TrustKit/Pinning/SNR_TSKSPKIHashCache.m
-__destroy_helper_block_e4_20s24s28r32r36r
-__copy_helper_block_e4_20s24s28r32r36r
+__destroy_helper_block_e8_32s40s48r56r64r
+__copy_helper_block_e8_32s40s48r56r64r
 __35-[SNRL12Validator prepareSymbol71:]_block_invoke
-__copy_helper_block_e4_20s24s28s
+__copy_helper_block_e8_32s40s48s
 __45-[SNRL12Validator prepareSymbol89:clientK37:]_block_invoke.54
-__destroy_helper_block_e4_20s24s28r
-__copy_helper_block_e4_20s24s28r
+__destroy_helper_block_e8_32s40s48r
+__copy_helper_block_e8_32s40s48r
 __45-[SNRL12Validator prepareSymbol89:clientK37:]_block_invoke
 SNR_getAsn1HeaderSize
 SNR_getAsn1HeaderBytes
 __38-[SNRL12Validator initWithIdentifier:]_block_invoke
 +[SNRViewUtils resolveTopViewController]
 ___40+[SNRViewUtils resolveTopViewController]_block_invoke
-___copy_helper_block_e4_24r
-___destroy_helper_block_e4_24r
+___copy_helper_block_e8_40r
+___destroy_helper_block_e8_40r
 +[SNRViewUtils colorWithHexValue:]
 +[SNRViewUtils strikethroughAttributedStringWithString:]
 +[SNRViewUtils resolveTopViewControllerWithRootViewController:]
@@ -952,7 +952,7 @@ ___destroy_helper_block_e4_24r
 +[SNRViewUtils colorComponentFrom:start:length:]
 _OBJC_CLASSLIST_REFERENCES_$_.15
 _OBJC_SELECTOR_REFERENCES_.17
-___block_descriptor_28_e4_24r_e5_v4?0l
+___block_descriptor_48_e8_40r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.27
 _OBJC_CLASSLIST_REFERENCES_$_.35
 _OBJC_CLASSLIST_REFERENCES_$_.38
@@ -966,8 +966,10 @@ __OBJC_METACLASS_RO_$_SNRViewUtils
 __OBJC_CLASS_RO_$_SNRViewUtils
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/UI/Utils/SNRViewUtils.m
 SyneriseSDK/Modules/Injector/Main/UI/Utils/SNRViewUtils.m
-__destroy_helper_block_e4_24r
-__copy_helper_block_e4_24r
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__destroy_helper_block_e8_40r
+__copy_helper_block_e8_40r
 __40+[SNRViewUtils resolveTopViewController]_block_invoke
 -[SNRKeychainStorageConfig attributeService]
 -[SNRKeychainStorageConfig setAttributeService:]
@@ -1134,18 +1136,18 @@ __OBJC_CLASS_RO_$_SNRInvalidArgumentError
 +[SNRCampaignEventFactory campaignFromModel:]
 +[SNRCampaignEventFactory trackerParamsWithCampaignModel:]
 ___58+[SNRCampaignEventFactory trackerParamsWithCampaignModel:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s
-___destroy_helper_block_e4_20s24s28s32s
+___copy_helper_block_e8_32s40s48s56s
+___destroy_helper_block_e8_32s40s48s56s
 __OBJC_PROTOCOL_REFERENCE_$_SNRHasCampaignData
 _OBJC_CLASSLIST_REFERENCES_$_.69
-___block_descriptor_36_e4_20s24s28s32s_e32_v8?0"SNRTrackerParamsBuilder"4l
+___block_descriptor_64_e8_32s40s48s56s_e33_v16?0"SNRTrackerParamsBuilder"8l
 __OBJC_$_CLASS_METHODS_SNRCampaignEventFactory
 __OBJC_METACLASS_RO_$_SNRCampaignEventFactory
 __OBJC_CLASS_RO_$_SNRCampaignEventFactory
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Main/Campaigns/SNRCampaignEventFactory.m
-__destroy_helper_block_e4_20s24s28s32s
+__destroy_helper_block_e8_32s40s48s56s
 SyneriseSDK/Core/Main/Campaigns/SNRCampaignEventFactory.m
-__copy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e8_32s40s48s56s
 __58+[SNRCampaignEventFactory trackerParamsWithCampaignModel:]_block_invoke
 __OBJC_METACLASS_RO_$_SNRSyneriseNotificationRichMedia
 __OBJC_CLASS_RO_$_SNRSyneriseNotificationRichMedia
@@ -1249,7 +1251,7 @@ ___25+[SNRClient sharedObject]_block_invoke
 -[SNRClient initializeModule]
 -[SNRClient registerAccount:success:failure:]
 ___45-[SNRClient registerAccount:success:failure:]_block_invoke
-___copy_helper_block_e4_20s24s28b32b
+___copy_helper_block_e8_32s40s48b56b
 -[SNRClient confirmAccount:success:failure:]
 ___44-[SNRClient confirmAccount:success:failure:]_block_invoke
 -[SNRClient activateAccount:success:failure:]
@@ -1258,16 +1260,16 @@ ___45-[SNRClient activateAccount:success:failure:]_block_invoke
 ___68-[SNRClient requestAccountActivationByPinWithEmail:success:failure:]_block_invoke
 -[SNRClient confirmAccountActivationByPin:email:success:failure:]
 ___65-[SNRClient confirmAccountActivationByPin:email:success:failure:]_block_invoke
-___copy_helper_block_e4_20s24s28s32b36b
-___destroy_helper_block_e4_20s24s28s32s36s
+___copy_helper_block_e8_32s40s48s56b64b
+___destroy_helper_block_e8_32s40s48s56s64s
 -[SNRClient signInWithEmail:password:success:failure:]
 ___54-[SNRClient signInWithEmail:password:success:failure:]_block_invoke
 -[SNRClient signInConditionallyWithEmail:password:success:failure:]
 ___67-[SNRClient signInConditionallyWithEmail:password:success:failure:]_block_invoke
 -[SNRClient authenticateWithToken:clientIdentityProvider:authID:context:success:failure:]
 ___89-[SNRClient authenticateWithToken:clientIdentityProvider:authID:context:success:failure:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36b40b
-___destroy_helper_block_e4_20s24s28s32s36s40s
+___copy_helper_block_e8_32s40s48s56s64b72b
+___destroy_helper_block_e8_32s40s48s56s64s72s
 -[SNRClient authenticateConditionallyWithToken:clientIdentityProvider:authID:context:success:failure:]
 ___102-[SNRClient authenticateConditionallyWithToken:clientIdentityProvider:authID:context:success:failure:]_block_invoke
 -[SNRClient authenticateByOAuthWithAccessToken:authID:context:success:failure:]
@@ -1286,7 +1288,7 @@ ___91-[SNRClient authenticateByAppleSignInIfRegisteredWithIdentityToken:authID:s
 -[SNRClient signOut]
 -[SNRClient refreshTokenWithSuccess:failure:]
 ___45-[SNRClient refreshTokenWithSuccess:failure:]_block_invoke
-___copy_helper_block_e4_20s24b28b
+___copy_helper_block_e8_32s40b48b
 -[SNRClient retrieveTokenWithSuccess:failure:]
 ___46-[SNRClient retrieveTokenWithSuccess:failure:]_block_invoke
 -[SNRClient getAccountWithSuccess:failure:]
@@ -1305,8 +1307,8 @@ ___56-[SNRClient changePassword:oldPassword:success:failure:]_block_invoke
 ___57-[SNRClient requestEmailChange:password:success:failure:]_block_invoke
 -[SNRClient requestEmailChange:password:externalToken:authID:success:failure:]
 ___78-[SNRClient requestEmailChange:password:externalToken:authID:success:failure:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36s40b44b
-___destroy_helper_block_e4_20s24s28s32s36s40s44s
+___copy_helper_block_e8_32s40s48s56s64s72b80b
+___destroy_helper_block_e8_32s40s48s56s64s72s80s
 -[SNRClient requestEmailChangeByFacebook:success:failure:]
 ___58-[SNRClient requestEmailChangeByFacebook:success:failure:]_block_invoke
 -[SNRClient confirmEmailChange:newsletterAgreement:success:failure:]
@@ -1361,15 +1363,15 @@ _OBJC_SELECTOR_REFERENCES_.190
 _OBJC_CLASSLIST_REFERENCES_$_.191
 _OBJC_SELECTOR_REFERENCES_.193
 _OBJC_CLASSLIST_REFERENCES_$_.194
-___block_descriptor_36_e4_20s24s28bs32bs_e5_v4?0l
-___block_descriptor_40_e4_20s24s28s32bs36bs_e5_v4?0l
-___block_descriptor_48_e4_20s24s28s32s36bs40bs_e5_v4?0l
-___block_descriptor_44_e4_20s24s28s32s36bs40bs_e5_v4?0l
-___block_descriptor_32_e4_20s24bs28bs_e5_v4?0l
-___block_descriptor_48_e4_20s24s28s32s36s40bs44bs_e5_v4?0l
-___block_descriptor_37_e4_20s24s28bs32bs_e5_v4?0l
-___block_descriptor_41_e4_20s24s28s32bs36bs_e5_v4?0l
-___block_descriptor_44_e4_20s24s28s32bs36bs_e5_v4?0l
+___block_descriptor_64_e8_32s40s48bs56bs_e5_v8?0l
+___block_descriptor_72_e8_32s40s48s56bs64bs_e5_v8?0l
+___block_descriptor_88_e8_32s40s48s56s64bs72bs_e5_v8?0l
+___block_descriptor_80_e8_32s40s48s56s64bs72bs_e5_v8?0l
+___block_descriptor_56_e8_32s40bs48bs_e5_v8?0l
+___block_descriptor_88_e8_32s40s48s56s64s72bs80bs_e5_v8?0l
+___block_descriptor_65_e8_32s40s48bs56bs_e5_v8?0l
+___block_descriptor_73_e8_32s40s48s56bs64bs_e5_v8?0l
+___block_descriptor_80_e8_32s40s48s56bs64bs_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.205
 _OBJC_SELECTOR_REFERENCES_.207
 _OBJC_CLASSLIST_REFERENCES_$_.208
@@ -1405,8 +1407,8 @@ __78-[SNRClient confirmPhoneUpdate:confirmationCode:smsAgreement:success:failure
 __48-[SNRClient requestPhoneUpdate:success:failure:]_block_invoke
 __68-[SNRClient confirmEmailChange:newsletterAgreement:success:failure:]_block_invoke
 __58-[SNRClient requestEmailChangeByFacebook:success:failure:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36s40s44s
-__copy_helper_block_e4_20s24s28s32s36s40b44b
+__destroy_helper_block_e8_32s40s48s56s64s72s80s
+__copy_helper_block_e8_32s40s48s56s64s72b80b
 __78-[SNRClient requestEmailChange:password:externalToken:authID:success:failure:]_block_invoke
 __57-[SNRClient requestEmailChange:password:success:failure:]_block_invoke
 __56-[SNRClient changePassword:oldPassword:success:failure:]_block_invoke
@@ -1416,7 +1418,7 @@ __43-[SNRClient updateAccount:success:failure:]_block_invoke
 __51-[SNRClient getEventsWithApiQuery:success:failure:]_block_invoke
 __43-[SNRClient getAccountWithSuccess:failure:]_block_invoke
 __46-[SNRClient retrieveTokenWithSuccess:failure:]_block_invoke
-__copy_helper_block_e4_20s24b28b
+__copy_helper_block_e8_32s40b48b
 __45-[SNRClient refreshTokenWithSuccess:failure:]_block_invoke
 __91-[SNRClient authenticateByAppleSignInIfRegisteredWithIdentityToken:authID:success:failure:]_block_invoke
 __87-[SNRClient authenticateByAppleSignInWithIdentityToken:authID:context:success:failure:]_block_invoke
@@ -1425,18 +1427,18 @@ __84-[SNRClient authenticateByFacebookWithFacebookToken:authID:context:success:f
 __83-[SNRClient authenticateByOAuthIfRegisteredWithAccessToken:authID:success:failure:]_block_invoke
 __79-[SNRClient authenticateByOAuthWithAccessToken:authID:context:success:failure:]_block_invoke
 __102-[SNRClient authenticateConditionallyWithToken:clientIdentityProvider:authID:context:success:failure:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36s40s
-__copy_helper_block_e4_20s24s28s32s36b40b
+__destroy_helper_block_e8_32s40s48s56s64s72s
+__copy_helper_block_e8_32s40s48s56s64b72b
 __89-[SNRClient authenticateWithToken:clientIdentityProvider:authID:context:success:failure:]_block_invoke
 __67-[SNRClient signInConditionallyWithEmail:password:success:failure:]_block_invoke
 __54-[SNRClient signInWithEmail:password:success:failure:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36s
-__copy_helper_block_e4_20s24s28s32b36b
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56b64b
 __65-[SNRClient confirmAccountActivationByPin:email:success:failure:]_block_invoke
 __68-[SNRClient requestAccountActivationByPinWithEmail:success:failure:]_block_invoke
 __45-[SNRClient activateAccount:success:failure:]_block_invoke
 __44-[SNRClient confirmAccount:success:failure:]_block_invoke
-__copy_helper_block_e4_20s24s28b32b
+__copy_helper_block_e8_32s40s48b56b
 __45-[SNRClient registerAccount:success:failure:]_block_invoke
 __25+[SNRClient sharedObject]_block_invoke
 __29+[SNRClient initializeModule]_block_invoke
@@ -1513,8 +1515,8 @@ ___25-[SNRTracker queueEvent:]_block_invoke
 -[SNRTracker .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.50
 _OBJC_CLASSLIST_REFERENCES_$_.100
-___block_descriptor_24_e4_20bs_e5_v4?0l
-___block_descriptor_28_e4_20bs24w_e5_v4?0l
+___block_descriptor_40_e8_32bs_e5_v8?0l
+___block_descriptor_48_e8_32bs40w_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.105
 _OBJC_SELECTOR_REFERENCES_.111
 _OBJC_SELECTOR_REFERENCES_.113
@@ -1636,8 +1638,8 @@ ___SNR__aspect_modifySwizzledClasses_block_invoke
 _SNR___ASPECTS_ARE_BEING_CALLED__
 ___SNR_aspect_hookedGetClass_block_invoke
 ___SNR_aspect_remove_block_invoke
-___copy_helper_block_e4_20s24r
-___destroy_helper_block_e4_20s24r
+___copy_helper_block_e8_32s40r
+___destroy_helper_block_e8_32s40r
 _SNR_aspect_undoSwizzleClassInPlace
 ___SNR_aspect_undoSwizzleClassInPlace_block_invoke
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_SNR_Aspects
@@ -1652,17 +1654,18 @@ __OBJC_$_INSTANCE_VARIABLES_SNR_AspectTracker
 __OBJC_$_PROP_LIST_SNR_AspectTracker
 __OBJC_CLASS_RO_$_SNR_AspectTracker
 _OBJC_SELECTOR_REFERENCES_.97
-_OBJC_SELECTOR_REFERENCES_.126
-_OBJC_SELECTOR_REFERENCES_.129
-_OBJC_CLASSLIST_REFERENCES_$_.151
-_OBJC_CLASSLIST_REFERENCES_$_.161
-_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.131
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_SELECTOR_REFERENCES_.161
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSInvocation_$_SNR_Aspects
 __OBJC_$_CATEGORY_NSInvocation_$_SNR_Aspects
-_OBJC_CLASSLIST_REFERENCES_$_.166
+_OBJC_CLASSLIST_REFERENCES_$_.164
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_SELECTOR_REFERENCES_.195
 _OBJC_SELECTOR_REFERENCES_.197
 _OBJC_SELECTOR_REFERENCES_.199
-_OBJC_SELECTOR_REFERENCES_.201
 __OBJC_$_CLASS_METHODS_SNR_AspectIdentifier
 __OBJC_METACLASS_RO_$_SNR_AspectIdentifier
 __OBJC_$_INSTANCE_METHODS_SNR_AspectIdentifier
@@ -1674,13 +1677,14 @@ _OBJC_IVAR_$_SNR_AspectIdentifier._options
 __OBJC_$_INSTANCE_VARIABLES_SNR_AspectIdentifier
 __OBJC_$_PROP_LIST_SNR_AspectIdentifier
 __OBJC_CLASS_RO_$_SNR_AspectIdentifier
-_OBJC_CLASSLIST_REFERENCES_$_.247
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_CLASSLIST_REFERENCES_$_.245
+_OBJC_SELECTOR_REFERENCES_.247
 _OBJC_SELECTOR_REFERENCES_.249
 _OBJC_SELECTOR_REFERENCES_.251
 _OBJC_SELECTOR_REFERENCES_.253
 _OBJC_SELECTOR_REFERENCES_.255
 _OBJC_SELECTOR_REFERENCES_.257
-_OBJC_SELECTOR_REFERENCES_.259
 __OBJC_METACLASS_RO_$_SNR_AspectsContainer
 __OBJC_$_INSTANCE_METHODS_SNR_AspectsContainer
 _OBJC_IVAR_$_SNR_AspectsContainer._beforeAspects
@@ -1689,7 +1693,7 @@ _OBJC_IVAR_$_SNR_AspectsContainer._afterAspects
 __OBJC_$_INSTANCE_VARIABLES_SNR_AspectsContainer
 __OBJC_$_PROP_LIST_SNR_AspectsContainer
 __OBJC_CLASS_RO_$_SNR_AspectsContainer
-_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.277
 __OBJC_$_PROTOCOL_REFS_SNR_AspectInfo
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNR_AspectInfo
 __OBJC_$_PROTOCOL_METHOD_TYPES_SNR_AspectInfo
@@ -1704,63 +1708,62 @@ _OBJC_IVAR_$_SNR_AspectInfo._originalInvocation
 __OBJC_$_INSTANCE_VARIABLES_SNR_AspectInfo
 __OBJC_$_PROP_LIST_SNR_AspectInfo
 __OBJC_CLASS_RO_$_SNR_AspectInfo
-_OBJC_SELECTOR_REFERENCES_.333
-_OBJC_SELECTOR_REFERENCES_.334
-___block_descriptor_44_e4_20s24s28r_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.332
+___block_descriptor_80_e8_32s40s48r_e5_v8?0l
 _SNR_aspect_performLocked.aspect_lock
 _SNR_aspect_isSelectorAllowedAndTrack.disallowedSelectorList
 _SNR_aspect_isSelectorAllowedAndTrack.pred
-_OBJC_CLASSLIST_REFERENCES_$_.336
-_OBJC_SELECTOR_REFERENCES_.346
-_OBJC_CLASSLIST_REFERENCES_$_.351
-_OBJC_CLASSLIST_REFERENCES_$_.352
+_OBJC_CLASSLIST_REFERENCES_$_.334
+_OBJC_SELECTOR_REFERENCES_.344
+_OBJC_CLASSLIST_REFERENCES_$_.349
+_OBJC_CLASSLIST_REFERENCES_$_.350
 _OBJC_SELECTOR_REFERENCES_.354
-_OBJC_SELECTOR_REFERENCES_.356
-_OBJC_SELECTOR_REFERENCES_.360
+_OBJC_SELECTOR_REFERENCES_.358
+_OBJC_SELECTOR_REFERENCES_.361
 _OBJC_SELECTOR_REFERENCES_.363
-_OBJC_SELECTOR_REFERENCES_.365
-_OBJC_SELECTOR_REFERENCES_.368
-_OBJC_CLASSLIST_REFERENCES_$_.375
-_OBJC_SELECTOR_REFERENCES_.376
-_OBJC_SELECTOR_REFERENCES_.377
+_OBJC_SELECTOR_REFERENCES_.366
+_OBJC_CLASSLIST_REFERENCES_$_.373
+_OBJC_SELECTOR_REFERENCES_.374
+_OBJC_SELECTOR_REFERENCES_.375
 _SNR_aspect_getSwizzledClassesDict.swizzledClassesDict
 _SNR_aspect_getSwizzledClassesDict.pred
-___block_literal_global.378
-_OBJC_CLASSLIST_REFERENCES_$_.379
+___block_literal_global.376
+_OBJC_CLASSLIST_REFERENCES_$_.377
+_OBJC_SELECTOR_REFERENCES_.381
 _OBJC_SELECTOR_REFERENCES_.383
 _OBJC_SELECTOR_REFERENCES_.385
 _OBJC_SELECTOR_REFERENCES_.387
-_OBJC_SELECTOR_REFERENCES_.389
-___block_descriptor_28_e4_20s_e21_v8?0"NSMutableSet"4lu24l4
+___block_descriptor_48_e8_32s_e22_v16?0"NSMutableSet"8lu40l8
 _SNR__aspect_modifySwizzledClasses.swizzledClasses
 _SNR__aspect_modifySwizzledClasses.pred
-___block_literal_global.394
-_OBJC_SELECTOR_REFERENCES_.396
-_OBJC_CLASSLIST_REFERENCES_$_.398
-_OBJC_SELECTOR_REFERENCES_.399
+___block_literal_global.392
+_OBJC_SELECTOR_REFERENCES_.394
+_OBJC_CLASSLIST_REFERENCES_$_.396
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.398
 _OBJC_SELECTOR_REFERENCES_.400
 _OBJC_SELECTOR_REFERENCES_.402
 _OBJC_SELECTOR_REFERENCES_.404
-_OBJC_SELECTOR_REFERENCES_.406
+_OBJC_SELECTOR_REFERENCES_.405
 _OBJC_SELECTOR_REFERENCES_.407
-_OBJC_SELECTOR_REFERENCES_.409
-_OBJC_SELECTOR_REFERENCES_.410
-___block_descriptor_24_e7_#8?04lu20l4
-_OBJC_CLASSLIST_REFERENCES_$_.417
+_OBJC_SELECTOR_REFERENCES_.408
+___block_descriptor_40_e8_#16?08lu32l8
+_OBJC_CLASSLIST_REFERENCES_$_.415
+_OBJC_SELECTOR_REFERENCES_.417
 _OBJC_SELECTOR_REFERENCES_.419
-_OBJC_SELECTOR_REFERENCES_.421
-_OBJC_SELECTOR_REFERENCES_.424
-___block_descriptor_32_e4_20s24r_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.430
-_OBJC_SELECTOR_REFERENCES_.431
-_OBJC_CLASSLIST_REFERENCES_$_.432
+_OBJC_SELECTOR_REFERENCES_.422
+___block_descriptor_56_e8_32s40r_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.428
+_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_CLASSLIST_REFERENCES_$_.430
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/External/Aspects/SNR_Aspects.m
 __SNR_aspect_undoSwizzleClassInPlace_block_invoke
 SyneriseSDK/External/Aspects/SNR_Aspects.m
 SNR_aspect_undoSwizzleForwardInvocation
 SNR_aspect_undoSwizzleClassInPlace
-__destroy_helper_block_e4_20s24r
-__copy_helper_block_e4_20s24r
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32s40r
 __SNR_aspect_remove_block_invoke
 SNR_aspect_cleanupHookedClassAndSelector
 SNR_aspect_destroyContainerForObject
@@ -1782,7 +1785,6 @@ __SNR_aspect_isSelectorAllowedAndTrack_block_invoke
 aspect_getContainerForObject
 __SNR_aspect_add_block_invoke
 SNR_aspect_prepareClassAndHookSelector
-SNR_aspect_getMsgForwardIMP
 SNR_aspect_hookClass
 SNR_aspect_isSelectorAllowedAndTrack
 SNR_aspect_performLocked
@@ -1974,8 +1976,8 @@ ___55-[SNRContentWidgetRecommendationsDataProvider download]_block_invoke.31
 -[SNRContentWidgetRecommendationsDataProvider .cxx_destruct]
 _OBJC_IVAR_$_SNRContentWidgetRecommendationsDataProvider._slug
 _OBJC_IVAR_$_SNRContentWidgetRecommendationsDataProvider._productID
-___block_descriptor_24_e4_20s_e34_v8?0"SNRRecommendationResponse"4l
-___block_descriptor_24_e4_20s_e16_v8?0"NSError"4l
+___block_descriptor_40_e8_32s_e35_v16?0"SNRRecommendationResponse"8l
+___block_descriptor_40_e8_32s_e17_v16?0"NSError"8l
 __OBJC_METACLASS_RO_$_SNRContentWidgetRecommendationsDataProvider
 __OBJC_$_INSTANCE_METHODS_SNRContentWidgetRecommendationsDataProvider
 __OBJC_$_INSTANCE_VARIABLES_SNRContentWidgetRecommendationsDataProvider
@@ -2038,7 +2040,7 @@ ___66-[SNRBaseApiRequest makeDeleteRequestWithPath:headers:parameters:]_block_in
 -[SNRBaseApiRequest mappingError:]
 -[SNRBaseApiRequest completion:isSuccess:model:error:]
 ___54-[SNRBaseApiRequest completion:isSuccess:model:error:]_block_invoke
-___copy_helper_block_e4_20b24s28s
+___copy_helper_block_e8_32b40s48s
 -[SNRBaseApiRequest invokeMappingWithClass:dictionary:error:]
 -[SNRBaseApiRequest executeOnMainThread:]
 ___41-[SNRBaseApiRequest executeOnMainThread:]_block_invoke
@@ -2075,19 +2077,22 @@ ___41-[SNRBaseApiRequest executeOnMainThread:]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.78
 _OBJC_CLASSLIST_REFERENCES_$_.89
 _OBJC_SELECTOR_REFERENCES_.95
+_OBJC_SELECTOR_REFERENCES_.126
 _OBJC_SELECTOR_REFERENCES_.152
+_OBJC_CLASSLIST_REFERENCES_$_.161
+_OBJC_SELECTOR_REFERENCES_.163
 _OBJC_SELECTOR_REFERENCES_.167
-___block_descriptor_24_e4_20w_e32_v12?0"NSURLSessionDataTask"48l
-___block_descriptor_24_e4_20s_e41_v12?0"NSURLSessionDataTask"4"NSError"8l
+___block_descriptor_40_e8_32w_e33_v24?0"NSURLSessionDataTask"816l
+___block_descriptor_40_e8_32s_e42_v24?0"NSURLSessionDataTask"8"NSError"16l
 _OBJC_SELECTOR_REFERENCES_.180
 _OBJC_CLASSLIST_REFERENCES_$_.183
-_OBJC_SELECTOR_REFERENCES_.195
 _OBJC_CLASSLIST_REFERENCES_$_.198
 _OBJC_SELECTOR_REFERENCES_.226
-___block_descriptor_33_e4_20bs24s28s_e5_v4?0l
+___block_descriptor_57_e8_32bs40s48s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.231
 _OBJC_SELECTOR_REFERENCES_.233
 _OBJC_CLASSLIST_REFERENCES_$_.234
+_OBJC_CLASSLIST_REFERENCES_$_.247
 __OBJC_METACLASS_RO_$_SNRBaseApiRequest
 __OBJC_$_INSTANCE_METHODS_SNRBaseApiRequest
 _OBJC_IVAR_$_SNRBaseApiRequest._isApiVersionComponent
@@ -2113,7 +2118,7 @@ __OBJC_CLASS_RO_$_SNRBaseApiRequest
 SyneriseSDK/Core/Networking/Requests/Base/SNRBaseApiRequest.m
 SyneriseSDK/Core/Networking/Requests/Base/SNRBaseApiRequest.h
 __41-[SNRBaseApiRequest executeOnMainThread:]_block_invoke
-__copy_helper_block_e4_20b24s28s
+__copy_helper_block_e8_32b40s48s
 __54-[SNRBaseApiRequest completion:isSuccess:model:error:]_block_invoke
 __66-[SNRBaseApiRequest makeDeleteRequestWithPath:headers:parameters:]_block_invoke_2
 __66-[SNRBaseApiRequest makeDeleteRequestWithPath:headers:parameters:]_block_invoke
@@ -2312,7 +2317,7 @@ ___48-[SNRInjectorApiService getWalkthrough:failure:]_block_invoke
 ___44-[SNRInjectorApiService getBanners:failure:]_block_invoke
 -[SNRInjectorApiService getPushes:failure:]
 ___43-[SNRInjectorApiService getPushes:failure:]_block_invoke
-___block_descriptor_28_e4_20bs24bs_e26_v16?0c48"SNRApiError"12l
+___block_descriptor_48_e8_32bs40bs_e27_v28?0B812"SNRApiError"20l
 __OBJC_METACLASS_RO_$_SNRInjectorApiService
 __OBJC_$_INSTANCE_METHODS_SNRInjectorApiService
 __OBJC_CLASS_RO_$_SNRInjectorApiService
@@ -2368,8 +2373,8 @@ SyneriseSDK/Core/Networking/Requests/ClientAuthenticationIfRegistered_v4/SNRClie
 -[SNRAlgorithmRSAKeystore o__isKeyPairGenerated]
 -[SNRAlgorithmRSAKeystore o__generateKeyPair]
 ___45-[SNRAlgorithmRSAKeystore o__generateKeyPair]_block_invoke
-___copy_helper_block_e4_20s24r28r32r
-___destroy_helper_block_e4_20s24r28r32r
+___copy_helper_block_e8_32s40r48r56r
+___destroy_helper_block_e8_32s40r48r56r
 -[SNRAlgorithmRSAKeystore o__removeKeyPairIfNeeded]
 -[SNRAlgorithmRSAKeystore o__removeKeyPair]
 ___43-[SNRAlgorithmRSAKeystore o__removeKeyPair]_block_invoke
@@ -2397,7 +2402,7 @@ _get_rsa_keystore_processing_queue
 ___get_rsa_keystore_processing_queue_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.59
 _OBJC_CLASSLIST_REFERENCES_$_.60
-___block_descriptor_36_e4_20s24r28r32r_e5_v4?0l
+___block_descriptor_64_e8_32s40r48r56r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.87
 _o__convertKeyForJavaServer:._encodedRSAEncryptionOID
 __OBJC_METACLASS_RO_$_SNRAlgorithmRSAKeystore
@@ -2417,8 +2422,8 @@ get_rsa_keystore_processing_queue
 SyneriseSDK/Core/Security/Keystores/SNRAlgorithmRSAKeystore.h
 encodeLength
 __43-[SNRAlgorithmRSAKeystore o__removeKeyPair]_block_invoke
-__destroy_helper_block_e4_20s24r28r32r
-__copy_helper_block_e4_20s24r28r32r
+__destroy_helper_block_e8_32s40r48r56r
+__copy_helper_block_e8_32s40r48r56r
 __45-[SNRAlgorithmRSAKeystore o__generateKeyPair]_block_invoke
 +[SNRStringValidator NilArgumentError]
 +[SNRStringValidator BadArgumentError]
@@ -2645,14 +2650,14 @@ SyneriseSDK/Modules/Tracker/Events/Product/SNRProductViewedEvent.m
 -[SNRCoreDataEventFactory initWithContext:]
 -[SNRCoreDataEventFactory saveEvent:]
 ___37-[SNRCoreDataEventFactory saveEvent:]_block_invoke
-___copy_helper_block_e4_20s24r28w
-___destroy_helper_block_e4_20s24r28w
+___copy_helper_block_e8_32s40r48w
+___destroy_helper_block_e8_32s40r48w
 -[SNRCoreDataEventFactory incrementEventsStoreId]
 -[SNRCoreDataEventFactory getEventsStoreCurrentId]
 -[SNRCoreDataEventFactory managedObjectContext]
 -[SNRCoreDataEventFactory setManagedObjectContext:]
 -[SNRCoreDataEventFactory .cxx_destruct]
-___block_descriptor_32_e4_20s24r28w_e5_v4?0l
+___block_descriptor_56_e8_32s40r48w_e5_v8?0l
 __OBJC_METACLASS_RO_$_SNRCoreDataEventFactory
 __OBJC_$_INSTANCE_METHODS_SNRCoreDataEventFactory
 _OBJC_IVAR_$_SNRCoreDataEventFactory._managedObjectContext
@@ -2661,8 +2666,8 @@ __OBJC_$_PROP_LIST_SNRCoreDataEventFactory
 __OBJC_CLASS_RO_$_SNRCoreDataEventFactory
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Main/Events Store/Model/Event/SNRCoreDataEventFactory.m
 SyneriseSDK/Modules/Tracker/Main/Events Store/Model/Event/SNRCoreDataEventFactory.m
-__destroy_helper_block_e4_20s24r28w
-__copy_helper_block_e4_20s24r28w
+__destroy_helper_block_e8_32s40r48w
+__copy_helper_block_e8_32s40r48w
 __37-[SNRCoreDataEventFactory saveEvent:]_block_invoke
 -[SNRTemplateContentButton enabled]
 -[SNRTemplateContentButton color]
@@ -2807,9 +2812,9 @@ SyneriseSDK/Core/Networking/Requests/Base/SNRSyneriseApiErrorMapper.m
 -[SNRCarouselContextExtensionCollectionViewCell downloadImageWithModel:]
 ___72-[SNRCarouselContextExtensionCollectionViewCell downloadImageWithModel:]_block_invoke
 ___72-[SNRCarouselContextExtensionCollectionViewCell downloadImageWithModel:]_block_invoke_2
-___copy_helper_block_e4_20s24s28s32s36s40s44s
-___copy_helper_block_e4_20s24w28w32w36w
-___destroy_helper_block_e4_20s24w28w32w36w
+___copy_helper_block_e8_32s40s48s56s64s72s80s
+___copy_helper_block_e8_32s40w48w56w64w
+___destroy_helper_block_e8_32s40w48w56w64w
 -[SNRCarouselContextExtensionCollectionViewCell retryDownloadImageWithModel:]
 ___77-[SNRCarouselContextExtensionCollectionViewCell retryDownloadImageWithModel:]_block_invoke
 -[SNRCarouselContextExtensionCollectionViewCell setExpanded:]
@@ -2849,13 +2854,14 @@ ___61-[SNRCarouselContextExtensionCollectionViewCell setExpanded:]_block_invoke
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._imageContentMode
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._containerCornerRadius
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._subcaptionLabelFontSize
-___block_descriptor_48_e4_20s24s28s32s36s40s44s_e5_v4?0l
-___block_descriptor_40_e4_20s24w28w32w36w_e28_v12?0"UIImage"4"NSError"8l
+___block_descriptor_88_e8_32s40s48s56s64s72s80s_e5_v8?0l
+___block_descriptor_72_e8_32s40w48w56w64w_e29_v24?0"UIImage"8"NSError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.95
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._mainContainerView
 _OBJC_CLASSLIST_REFERENCES_$_.145
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._loadingIndicatorView
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._imageView
+_OBJC_CLASSLIST_REFERENCES_$_.166
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._captionLabel
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._captionLabelHeightConstraint
 _OBJC_IVAR_$_SNRCarouselContextExtensionCollectionViewCell._delegate
@@ -2881,9 +2887,11 @@ SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContextExte
 SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContextExtensionCollectionViewCell.h
 __61-[SNRCarouselContextExtensionCollectionViewCell setExpanded:]_block_invoke
 __77-[SNRCarouselContextExtensionCollectionViewCell retryDownloadImageWithModel:]_block_invoke
-__destroy_helper_block_e4_20s24w28w32w36w
-__copy_helper_block_e4_20s24w28w32w36w
-__copy_helper_block_e4_20s24s28s32s36s40s44s
+dispatch_get_main_queue
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/usr/include/dispatch/queue.h
+__destroy_helper_block_e8_32s40w48w56w64w
+__copy_helper_block_e8_32s40w48w56w64w
+__copy_helper_block_e8_32s40s48s56s64s72s80s
 __72-[SNRCarouselContextExtensionCollectionViewCell downloadImageWithModel:]_block_invoke_2
 __72-[SNRCarouselContextExtensionCollectionViewCell downloadImageWithModel:]_block_invoke
 -[SNRWalkthrough getImageResources]
@@ -2962,7 +2970,7 @@ ___59-[SNRAspectObserver observeAfterSelector:withClass:forKey:]_block_invoke
 -[SNRAspectObserver setDelegate:]
 -[SNRAspectObserver setTokensData:]
 -[SNRAspectObserver .cxx_destruct]
-___block_descriptor_28_e4_20s24w_e25_v8?0"<SNR_AspectInfo>"4l
+___block_descriptor_48_e8_32s40w_e26_v16?0"<SNR_AspectInfo>"8l
 __OBJC_METACLASS_RO_$_SNRAspectObserver
 __OBJC_$_INSTANCE_METHODS_SNRAspectObserver
 _OBJC_IVAR_$_SNRAspectObserver._delegate
@@ -3066,11 +3074,11 @@ ___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.120
 ___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.129
 -[SNREventsManager executeSendEvents:completionHandler:]
 ___56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke
-___copy_helper_block_e4_20s24r28r32w
-___destroy_helper_block_e4_20s24r28r32w
+___copy_helper_block_e8_32s40r48r56w
+___destroy_helper_block_e8_32s40r48r56w
 ___56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke.140
-___copy_helper_block_e4_20s24r28r32r36w
-___destroy_helper_block_e4_20s24r28r32r36w
+___copy_helper_block_e8_32s40r48r56r64w
+___destroy_helper_block_e8_32s40r48r56r64w
 -[SNREventsManager calculateServerTimeForEvents:]
 -[SNREventsManager calculateServerTimeForEvent:]
 -[SNREventsManager eventsToRemoveWithBadRequestApiError:events:]
@@ -3105,16 +3113,13 @@ _get_events_sending_queue
 ___get_events_sending_queue_block_invoke
 _get_events_processing_queue
 ___get_events_processing_queue_block_invoke
-___block_descriptor_32_e4_20s24s28bs_e5_v4?0l
+___block_descriptor_56_e8_32s40s48bs_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.96
-___block_descriptor_28_e4_20s24r_e7_v8?0c4l
-___block_descriptor_28_e4_20s24w_e7_v8?0c4l
-_OBJC_SELECTOR_REFERENCES_.131
-_OBJC_SELECTOR_REFERENCES_.139
-___block_descriptor_36_e4_20s24r28r32w_e7_v8?0c4l
-___block_descriptor_40_e4_20s24r28r32r36w_e16_v8?0"NSError"4l
+___block_descriptor_48_e8_32s40r_e8_v12?0B8l
+___block_descriptor_48_e8_32s40w_e8_v12?0B8l
+___block_descriptor_64_e8_32s40r48r56w_e8_v12?0B8l
+___block_descriptor_72_e8_32s40r48r56r64w_e17_v16?0"NSError"8l
 _OBJC_SELECTOR_REFERENCES_.159
-_OBJC_SELECTOR_REFERENCES_.161
 _OBJC_SELECTOR_REFERENCES_.169
 _OBJC_CLASSLIST_REFERENCES_$_.170
 _OBJC_CLASSLIST_REFERENCES_$_.179
@@ -3155,11 +3160,11 @@ get_events_sending_queue
 SyneriseSDK/Modules/Tracker/Main/SNREventsManager.h
 __43-[SNREventsManager didReceiveNotification:]_block_invoke
 __30-[SNREventsManager timerFired]_block_invoke
-__destroy_helper_block_e4_20s24r28r32r36w
-__copy_helper_block_e4_20s24r28r32r36w
+__destroy_helper_block_e8_32s40r48r56r64w
+__copy_helper_block_e8_32s40r48r56r64w
 __56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke.140
-__destroy_helper_block_e4_20s24r28r32w
-__copy_helper_block_e4_20s24r28r32w
+__destroy_helper_block_e8_32s40r48r56w
+__copy_helper_block_e8_32s40r48r56w
 __56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke
 __51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.129
 __51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.120
@@ -3299,8 +3304,8 @@ ___61-[SNRContentWidgetSignal widgeDidReceiveClickActionForModel:]_block_invoke
 -[SNRContentWidgetSignal widgetDelegate]
 -[SNRContentWidgetSignal setWidgetDelegate:]
 -[SNRContentWidgetSignal .cxx_destruct]
-___block_descriptor_25_e4_20s_e5_v4?0l
-___block_descriptor_32_e4_20s_e5_v4?0l
+___block_descriptor_41_e8_32s_e5_v8?0l
+___block_descriptor_56_e8_32s_e5_v8?0l
 __OBJC_METACLASS_RO_$_SNRContentWidgetSignal
 __OBJC_$_INSTANCE_METHODS_SNRContentWidgetSignal
 _OBJC_IVAR_$_SNRContentWidgetSignal._widget
@@ -3370,10 +3375,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.73
 _OBJC_CLASSLIST_REFERENCES_$_.91
 _OBJC_CLASSLIST_REFERENCES_$_.107
 _OBJC_CLASSLIST_REFERENCES_$_.129
-_OBJC_SELECTOR_REFERENCES_.133
 _OBJC_CLASSLIST_REFERENCES_$_.134
 _OBJC_CLASSLIST_REFERENCES_$_.139
-___block_descriptor_28_e4_20bs24s_e22_v16?0c48"NSError"12l
+___block_descriptor_48_e8_32bs40s_e23_v28?0B812"NSError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.153
 _OBJC_SELECTOR_REFERENCES_.157
 _OBJC_CLASSLIST_REFERENCES_$_.162
@@ -3381,7 +3385,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.171
 _OBJC_SELECTOR_REFERENCES_.173
 _OBJC_CLASSLIST_REFERENCES_$_.174
 _OBJC_CLASSLIST_REFERENCES_$_.186
-___block_descriptor_28_e4_20s24r_e22_v16?0c48"NSError"12l
+___block_descriptor_48_e8_32s40r_e23_v28?0B812"NSError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.189
 __OBJC_METACLASS_RO_$_SNRNotificationAnalyticsHelper
 __OBJC_$_INSTANCE_METHODS_SNRNotificationAnalyticsHelper
@@ -3572,8 +3576,8 @@ ___43-[SNREventController saveDataStoreIfNeeded]_block_invoke
 -[SNREventController isSaveInProgress]
 -[SNREventController setIsSaveInProgress:]
 -[SNREventController .cxx_destruct]
-___block_descriptor_20_e30_i12?0"SNREvent"4"SNREvent"8l
-___block_descriptor_24_e4_20w_e5_v4?0l
+___block_descriptor_32_e31_q24?0"SNREvent"8"SNREvent"16l
+___block_descriptor_40_e8_32w_e5_v8?0l
 __OBJC_METACLASS_RO_$_SNREventController
 __OBJC_$_INSTANCE_METHODS_SNREventController
 _OBJC_IVAR_$_SNREventController._isSaveInProgress
@@ -3684,6 +3688,7 @@ _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._currentIndex
 _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._isScrolling
 _OBJC_CLASSLIST_REFERENCES_$_.90
 _OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_SELECTOR_REFERENCES_.129
 _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._topContainer
 _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._topContainerHeightConstraint
 _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._bottomContainer
@@ -3691,6 +3696,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.165
 _OBJC_CLASSLIST_REFERENCES_$_.168
 _OBJC_IVAR_$_SNRCarouselContentExtensionViewController._bottomLabel
 _OBJC_CLASSLIST_REFERENCES_$_.199
+_OBJC_SELECTOR_REFERENCES_.201
 _OBJC_SELECTOR_REFERENCES_.203
 _OBJC_SELECTOR_REFERENCES_.205
 _OBJC_SELECTOR_REFERENCES_.209
@@ -3706,7 +3712,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.232
 _OBJC_CLASSLIST_REFERENCES_$_.241
 _OBJC_SELECTOR_REFERENCES_.243
 _OBJC_SELECTOR_REFERENCES_.245
-_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.261
 _OBJC_SELECTOR_REFERENCES_.263
 _OBJC_SELECTOR_REFERENCES_.265
@@ -3714,8 +3720,8 @@ _OBJC_SELECTOR_REFERENCES_.267
 _OBJC_SELECTOR_REFERENCES_.269
 _OBJC_SELECTOR_REFERENCES_.271
 _OBJC_SELECTOR_REFERENCES_.273
-___block_descriptor_24_e4_20s_e7_v8?0c4l
-_OBJC_SELECTOR_REFERENCES_.277
+___block_descriptor_40_e8_32s_e8_v12?0B8l
+_OBJC_SELECTOR_REFERENCES_.279
 _OBJC_SELECTOR_REFERENCES_.281
 _trackImageTimeoutEvent.onceToken
 _OBJC_SELECTOR_REFERENCES_.283
@@ -3766,8 +3772,6 @@ __OBJC_CLASS_RO_$_SNRCarouselContentExtensionViewController
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContentExtensionViewController.m
 SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContentExtensionViewController.m
 SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContentExtensionViewController.h
-CGSizeMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __67-[SNRCarouselContentExtensionViewController trackImageTimeoutEvent]_block_invoke
 __55-[SNRCarouselContentExtensionViewController showError:]_block_invoke
 __49-[SNRCarouselContentExtensionViewController show]_block_invoke_3
@@ -4057,7 +4061,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.130
 _OBJC_CLASSLIST_REFERENCES_$_.156
 _OBJC_SELECTOR_REFERENCES_.171
 _OBJC_SELECTOR_REFERENCES_.175
-_OBJC_SELECTOR_REFERENCES_.177
 _OBJC_CLASSLIST_REFERENCES_$_.184
 _OBJC_IVAR_$_SNRInjectorWalkthroughViewController._presenter
 _OBJC_IVAR_$_SNRInjectorWalkthroughViewController._containerView
@@ -4680,10 +4683,10 @@ ___85-[SNRSimplePushNotificationAlertPresenter makeAlertControllerWithCallToActi
 -[SNRSimplePushNotificationAlertPresenter .cxx_destruct]
 _OBJC_IVAR_$_SNRSimplePushNotificationAlertPresenter._simplePushNotificationModel
 _OBJC_CLASSLIST_REFERENCES_$_.46
-___block_descriptor_20_e22_v8?0"UIAlertAction"4l
+___block_descriptor_32_e23_v16?0"UIAlertAction"8l
 ___block_literal_global.92
-___block_descriptor_24_e4_20s_e22_v8?0"UIAlertAction"4l
-___block_descriptor_28_e4_20s24s_e22_v8?0"UIAlertAction"4l
+___block_descriptor_40_e8_32s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_48_e8_32s40s_e23_v16?0"UIAlertAction"8l
 _OBJC_CLASSLIST_REFERENCES_$_.116
 __OBJC_METACLASS_RO_$_SNRSimplePushNotificationAlertPresenter
 __OBJC_$_INSTANCE_METHODS_SNRSimplePushNotificationAlertPresenter
@@ -4764,17 +4767,17 @@ SyneriseSDK/Modules/Tracker/Events/Session/SNRRecognizeClientEvent.m
 +[SNRClientApplicationInfoProvider build]
 +[SNRClientApplicationInfoProvider arePushNotificationsEnabled]
 ___63+[SNRClientApplicationInfoProvider arePushNotificationsEnabled]_block_invoke
-___copy_helper_block_e4_20r
-___destroy_helper_block_e4_20r
+___copy_helper_block_e8_32r
+___destroy_helper_block_e8_32r
 +[SNRClientApplicationInfoProvider clientApplicationInfoDictionary]
-___block_descriptor_24_e4_20r_e5_v4?0l
+___block_descriptor_40_e8_32r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_SNRClientApplicationInfoProvider
 __OBJC_METACLASS_RO_$_SNRClientApplicationInfoProvider
 __OBJC_CLASS_RO_$_SNRClientApplicationInfoProvider
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Helpers/Providers/SNRClientApplicationInfoProvider.m
 SyneriseSDK/Core/Helpers/Providers/SNRClientApplicationInfoProvider.m
-__destroy_helper_block_e4_20r
-__copy_helper_block_e4_20r
+__destroy_helper_block_e8_32r
+__copy_helper_block_e8_32r
 __63+[SNRClientApplicationInfoProvider arePushNotificationsEnabled]_block_invoke
 -[SNRMigrationService executeMigrationFromVersion:toVersion:]
 -[SNRMigrationService allMigrations]
@@ -4782,6 +4785,7 @@ __63+[SNRClientApplicationInfoProvider arePushNotificationsEnabled]_block_invoke
 -[SNRMigrationService setIsFirstLaunch:]
 -[SNRMigrationService isUpdateLaunch]
 -[SNRMigrationService setIsUpdateLaunch:]
+_OBJC_CLASSLIST_REFERENCES_$_.49
 __OBJC_METACLASS_RO_$_SNRMigrationService
 __OBJC_$_INSTANCE_METHODS_SNRMigrationService
 _OBJC_IVAR_$_SNRMigrationService._isFirstLaunch
@@ -5048,6 +5052,7 @@ __OBJC_CLASS_RO_$_SNRInjectorTemplateViewFactory
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFactory.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFactory.m
 -[SNRBaseMigration identifier]
+-[SNRBaseMigration init]
 -[SNRBaseMigration shouldExecuteIfFirstLaunch:]
 -[SNRBaseMigration shouldExecuteIfUpdateLaunch:]
 -[SNRBaseMigration shouldExecuteInVersion:fromVersion:]
@@ -5059,6 +5064,8 @@ SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFact
 -[SNRBaseMigration isVersionGreaterOrEqual:versionToCompare:]
 -[SNRBaseMigration migrationSuccess]
 -[SNRBaseMigration migrationError:]
+-[SNRBaseMigration forced]
+-[SNRBaseMigration setForced:]
 -[SNRBaseMigration isSuccess]
 -[SNRBaseMigration setIsSuccess:]
 -[SNRBaseMigration error]
@@ -5066,6 +5073,7 @@ SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/SNRInjectorTemplateViewFact
 -[SNRBaseMigration .cxx_destruct]
 __OBJC_METACLASS_RO_$_SNRBaseMigration
 __OBJC_$_INSTANCE_METHODS_SNRBaseMigration
+_OBJC_IVAR_$_SNRBaseMigration._forced
 _OBJC_IVAR_$_SNRBaseMigration._isSuccess
 _OBJC_IVAR_$_SNRBaseMigration._error
 __OBJC_$_INSTANCE_VARIABLES_SNRBaseMigration
@@ -5204,6 +5212,7 @@ SyneriseSDK/Modules/Tracker/Main/CustomTrackers/ViewTracker/EventBuilders/SNRVie
 -[SNRMajorVersionTransferMigration encryptString:crypter:fallbackValue:]
 -[SNRMajorVersionTransferMigration makeOldKeychainLoadingQueryWithKey:]
 -[SNRMajorVersionTransferMigration makeNewTokenStringFromOldTokenString:crypter:]
+_OBJC_CLASSLIST_REFERENCES_$_.138
 __OBJC_METACLASS_RO_$_SNRMajorVersionTransferMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionTransferMigration
 __OBJC_CLASS_RO_$_SNRMajorVersionTransferMigration
@@ -5239,13 +5248,13 @@ ___52-[SNR_AFURLSessionManagerTaskDelegate initWithTask:]_block_invoke_2
 -[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]
 ___76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke
 ___76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2
-___copy_helper_block_e4_20s24s28s32r36r
-___destroy_helper_block_e4_20s24s28s32r36r
+___copy_helper_block_e8_32s40s48s56r64r
+___destroy_helper_block_e8_32s40s48s56r64r
 ___76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke.117
 ___76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2.120
 ___76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_3
-___copy_helper_block_e4_20s24s28s32s36r40r
-___destroy_helper_block_e4_20s24s28s32s36r40r
+___copy_helper_block_e8_32s40s48s56s64r72r
+___destroy_helper_block_e8_32s40s48s56s64r72r
 -[SNR_AFURLSessionManagerTaskDelegate URLSession:dataTask:didReceiveData:]
 -[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
 -[SNR_AFURLSessionManagerTaskDelegate URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:]
@@ -5307,8 +5316,8 @@ _url_session_manager_create_task_safely
 ___74-[SNRP16Utils prepareNotification59:symbolH8:notificationN14:optionsD108:]_block_invoke
 -[SNRP16Utils loadName43:stateE57:symbolI35:optionsD108:]
 ___57-[SNRP16Utils loadName43:stateE57:symbolI35:optionsD108:]_block_invoke
-___copy_helper_block_e4_20s24s28s32r
-___destroy_helper_block_e4_20s24s28s32r
+___copy_helper_block_e8_32s40s48s56r
+___destroy_helper_block_e8_32s40s48s56r
 -[SNRP16Utils loadName43:notificationI113:symbolI35:optionsD108:]
 ___65-[SNRP16Utils loadName43:notificationI113:symbolI35:optionsD108:]_block_invoke
 -[SNRP16Utils prepareSymbol107:symbolI35:optionsD108:]
@@ -5414,9 +5423,9 @@ ___url_session_manager_completion_group_block_invoke
 ___url_session_manager_processing_queue_block_invoke
 ___url_session_manager_creation_queue_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.112
-___block_descriptor_28_e4_20s24r_e5_v4?0l
-___block_descriptor_40_e4_20s24s28s32r36r_e5_v4?0l
-___block_descriptor_44_e4_20s24s28s32s36r40r_e5_v4?0l
+___block_descriptor_48_e8_32s40r_e5_v8?0l
+___block_descriptor_72_e8_32s40s48s56r64r_e5_v8?0l
+___block_descriptor_80_e8_32s40s48s56s64r72r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.137
 __OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDelegate
@@ -5476,7 +5485,6 @@ _OBJC_SELECTOR_REFERENCES_.324
 _OBJC_SELECTOR_REFERENCES_.326
 _OBJC_SELECTOR_REFERENCES_.328
 _OBJC_SELECTOR_REFERENCES_.330
-_OBJC_SELECTOR_REFERENCES_.332
 _OBJC_CLASSLIST_REFERENCES_$_.333
 _OBJC_SELECTOR_REFERENCES_.335
 _OBJC_SELECTOR_REFERENCES_.337
@@ -5487,37 +5495,40 @@ _OBJC_CLASSLIST_REFERENCES_$_.343
 _OBJC_SELECTOR_REFERENCES_.345
 _OBJC_SELECTOR_REFERENCES_.347
 _OBJC_SELECTOR_REFERENCES_.349
-_OBJC_CLASSLIST_REFERENCES_$_.350
-_OBJC_SELECTOR_REFERENCES_.358
+_OBJC_SELECTOR_REFERENCES_.356
+_OBJC_SELECTOR_REFERENCES_.360
 _OBJC_SELECTOR_REFERENCES_.362
 _OBJC_SELECTOR_REFERENCES_.364
-___block_descriptor_24_e4_20s_e40_v16?0"NSArray"4"NSArray"8"NSArray"12l
+___block_descriptor_40_e8_32s_e41_v32?0"NSArray"8"NSArray"16"NSArray"24l
 _OBJC_SELECTOR_REFERENCES_.367
 _OBJC_SELECTOR_REFERENCES_.369
 _OBJC_CLASSLIST_REFERENCES_$_.370
-_OBJC_SELECTOR_REFERENCES_.374
+_OBJC_SELECTOR_REFERENCES_.376
 _OBJC_SELECTOR_REFERENCES_.378
 _OBJC_SELECTOR_REFERENCES_.380
 _OBJC_SELECTOR_REFERENCES_.382
 _OBJC_SELECTOR_REFERENCES_.384
 _OBJC_SELECTOR_REFERENCES_.386
 _OBJC_CLASSLIST_REFERENCES_$_.387
+_OBJC_SELECTOR_REFERENCES_.389
 _OBJC_SELECTOR_REFERENCES_.391
 _OBJC_SELECTOR_REFERENCES_.393
 _OBJC_SELECTOR_REFERENCES_.395
-_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_CLASSLIST_REFERENCES_$_.398
+_OBJC_SELECTOR_REFERENCES_.399
 _OBJC_SELECTOR_REFERENCES_.401
 _OBJC_SELECTOR_REFERENCES_.403
-_OBJC_SELECTOR_REFERENCES_.405
-___block_descriptor_24_e4_20bs_e67_"NSURL"16?0"NSURLSession"4"NSURLSessionDownloadTask"8"NSURL"12l
+_OBJC_SELECTOR_REFERENCES_.406
+___block_descriptor_40_e8_32bs_e68_"NSURL"32?0"NSURLSession"8"NSURLSessionDownloadTask"16"NSURL"24l
+_OBJC_SELECTOR_REFERENCES_.409
 _OBJC_SELECTOR_REFERENCES_.411
 _OBJC_SELECTOR_REFERENCES_.413
 _OBJC_SELECTOR_REFERENCES_.415
-_OBJC_SELECTOR_REFERENCES_.417
+_OBJC_SELECTOR_REFERENCES_.421
 _OBJC_SELECTOR_REFERENCES_.425
-___block_descriptor_32_e4_20s24s28r_e40_v16?0"NSArray"4"NSArray"8"NSArray"12l
+___block_descriptor_56_e8_32s40s48r_e41_v32?0"NSArray"8"NSArray"16"NSArray"24l
 _OBJC_SELECTOR_REFERENCES_.427
-_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_SELECTOR_REFERENCES_.431
 _OBJC_SELECTOR_REFERENCES_.433
 _OBJC_SELECTOR_REFERENCES_.435
 _OBJC_SELECTOR_REFERENCES_.437
@@ -5527,7 +5538,7 @@ _OBJC_SELECTOR_REFERENCES_.443
 _OBJC_SELECTOR_REFERENCES_.445
 _OBJC_SELECTOR_REFERENCES_.447
 _OBJC_SELECTOR_REFERENCES_.449
-___block_descriptor_36_e4_20s24s28s32r_e5_v4?0l
+___block_descriptor_64_e8_32s40s48s56r_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.451
 _OBJC_SELECTOR_REFERENCES_.453
 _OBJC_SELECTOR_REFERENCES_.455
@@ -5647,8 +5658,8 @@ __56-[SNRP16Utils loadType85:symbolI35:typeO67:optionsD108:]_block_invoke
 __60-[SNRP16Utils prepareModel65:symbolI35:typeO67:optionsD108:]_block_invoke
 __54-[SNRP16Utils prepareSymbol107:symbolI35:optionsD108:]_block_invoke
 __65-[SNRP16Utils loadName43:notificationI113:symbolI35:optionsD108:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32r
-__copy_helper_block_e4_20s24s28s32r
+__destroy_helper_block_e8_32s40s48s56r
+__copy_helper_block_e8_32s40s48s56r
 __57-[SNRP16Utils loadName43:stateE57:symbolI35:optionsD108:]_block_invoke
 __74-[SNRP16Utils prepareNotification59:symbolH8:notificationN14:optionsD108:]_block_invoke
 url_session_manager_create_task_safely
@@ -5660,13 +5671,13 @@ __32-[SNRP16Utils invokeOptions108:]_block_invoke
 __30-[SNRP16Utils initLc0AVHzcv8:]_block_invoke
 af_swizzleSelector
 af_addMethod
-__destroy_helper_block_e4_20s24s28s32s36r40r
-__copy_helper_block_e4_20s24s28s32s36r40r
+__destroy_helper_block_e8_32s40s48s56s64r72r
+__copy_helper_block_e8_32s40s48s56s64r72r
 __76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_3
 __76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2.120
 __76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke.117
-__destroy_helper_block_e4_20s24s28s32r36r
-__copy_helper_block_e4_20s24s28s32r36r
+__destroy_helper_block_e8_32s40s48s56r64r
+__copy_helper_block_e8_32s40s48s56r64r
 __76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2
 __76-[SNR_AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke
 url_session_manager_processing_queue
@@ -5692,7 +5703,7 @@ SyneriseSDK/Modules/Injector/Main/Presenters/Template Banner/SNRInjectorTemplate
 __71-[SNRInjectorTemplateBannerPresenter resolveActivityAction:completion:]_block_invoke
 +[SNRInternalEvent(DecryptionFailed) makePushDecryptionFailedEventWithReason:]
 ___78+[SNRInternalEvent(DecryptionFailed) makePushDecryptionFailedEventWithReason:]_block_invoke
-___block_descriptor_24_e4_20s_e32_v8?0"SNRTrackerParamsBuilder"4l
+___block_descriptor_40_e8_32s_e33_v16?0"SNRTrackerParamsBuilder"8l
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRInternalEvent_$_DecryptionFailed
 __OBJC_$_CATEGORY_SNRInternalEvent_$_DecryptionFailed
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Events/Internal/SNRInternalEvent+DecryptionFailed.m
@@ -5831,8 +5842,7 @@ ___71-[SNRImageProvider downloadImageAsynchronouslyFromURL:completionBlock:]_blo
 -[SNRImageProvider cache]
 -[SNRImageProvider setCache:]
 -[SNRImageProvider .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.49
-___block_descriptor_24_e4_20bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+___block_descriptor_40_e8_32bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 __OBJC_$_CLASS_METHODS_SNRImageProvider
 __OBJC_METACLASS_RO_$_SNRImageProvider
 __OBJC_$_INSTANCE_METHODS_SNRImageProvider
@@ -5944,8 +5954,8 @@ ___55-[SNR_AFHTTPRequestSerializer clearAuthorizationHeader]_block_invoke
 -[SNR_AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]
 ___109-[SNR_AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke
 ___109-[SNR_AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke_2
-___copy_helper_block_e4_20b24r
-___copy_helper_block_e4_20s24s28b32r
+___copy_helper_block_e8_32b40r
+___copy_helper_block_e8_32s40s48b56r
 -[SNR_AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]
 ___80-[SNR_AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
 +[SNR_AFHTTPRequestSerializer automaticallyNotifiesObserversForKey:]
@@ -6095,8 +6105,7 @@ __OBJC_$_INSTANCE_VARIABLES_SNR_AFQueryStringPair
 __OBJC_$_PROP_LIST_SNR_AFQueryStringPair
 __OBJC_CLASS_RO_$_SNR_AFQueryStringPair
 _OBJC_CLASSLIST_REFERENCES_$_.88
-___block_descriptor_24_e4_20s_e14_v16?04I8^c12l
-_OBJC_CLASSLIST_REFERENCES_$_.159
+___block_descriptor_40_e8_32s_e15_v32?08Q16^B24l
 _OBJC_CLASSLIST_REFERENCES_$_.180
 _SNR_AFHTTPRequestSerializerObserverContext
 _OBJC_SELECTOR_REFERENCES_.223
@@ -6111,16 +6120,17 @@ _OBJC_CLASSLIST_REFERENCES_$_.268
 _OBJC_SELECTOR_REFERENCES_.270
 _OBJC_CLASSLIST_REFERENCES_$_.271
 _OBJC_SELECTOR_REFERENCES_.275
-___block_descriptor_28_e4_20bs24r_e5_v4?0l
-___block_descriptor_36_e4_20s24s28bs32r_e5_v4?0l
-___block_descriptor_28_e4_20s24s_e14_v16?048^c12l
+___block_descriptor_48_e8_32bs40r_e5_v8?0l
+___block_descriptor_64_e8_32s40s48bs56r_e5_v8?0l
+___block_descriptor_48_e8_32s40s_e15_v32?0816^B24l
 _OBJC_SELECTOR_REFERENCES_.310
 _OBJC_SELECTOR_REFERENCES_.312
 _OBJC_SELECTOR_REFERENCES_.320
-_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.333
+_OBJC_CLASSLIST_REFERENCES_$_.336
 _OBJC_SELECTOR_REFERENCES_.338
-_OBJC_SELECTOR_REFERENCES_.344
-___block_descriptor_32_e4_20s24s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.346
+___block_descriptor_56_e8_32s40s_e5_v8?0l
 __OBJC_$_CLASS_METHODS_SNR_AFHTTPRequestSerializer
 __OBJC_$_PROTOCOL_REFS_SNR_AFURLRequestSerialization
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNR_AFURLRequestSerialization
@@ -6137,13 +6147,13 @@ _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._HTTPShouldUsePipelining
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._stringEncoding
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._cachePolicy
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._networkServiceType
+_OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._timeoutInterval
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._HTTPMethodsEncodingParametersInURI
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._mutableObservedChangedKeyPaths
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._mutableHTTPRequestHeaders
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._requestHeaderModificationQueue
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._queryStringSerializationStyle
 _OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._queryStringSerialization
-_OBJC_IVAR_$_SNR_AFHTTPRequestSerializer._timeoutInterval
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFHTTPRequestSerializer
 __OBJC_$_PROP_LIST_SNR_AFHTTPRequestSerializer
 __OBJC_CLASS_RO_$_SNR_AFHTTPRequestSerializer
@@ -6229,23 +6239,23 @@ __OBJC_$_INSTANCE_METHODS_SNR_AFMultipartBodyStream
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFMultipartBodyStream
 __OBJC_$_PROP_LIST_SNR_AFMultipartBodyStream
 __OBJC_CLASS_RO_$_SNR_AFMultipartBodyStream
-_OBJC_SELECTOR_REFERENCES_.698
-_OBJC_SELECTOR_REFERENCES_.700
-_OBJC_CLASSLIST_REFERENCES_$_.701
-_OBJC_SELECTOR_REFERENCES_.703
-_OBJC_SELECTOR_REFERENCES_.705
-_OBJC_CLASSLIST_REFERENCES_$_.706
-_OBJC_SELECTOR_REFERENCES_.708
-_OBJC_SELECTOR_REFERENCES_.710
-_OBJC_SELECTOR_REFERENCES_.714
-_OBJC_SELECTOR_REFERENCES_.716
-_OBJC_SELECTOR_REFERENCES_.718
-_OBJC_SELECTOR_REFERENCES_.720
-_OBJC_SELECTOR_REFERENCES_.722
-_OBJC_SELECTOR_REFERENCES_.724
-_OBJC_SELECTOR_REFERENCES_.726
-_OBJC_SELECTOR_REFERENCES_.728
-_OBJC_SELECTOR_REFERENCES_.730
+_OBJC_SELECTOR_REFERENCES_.697
+_OBJC_SELECTOR_REFERENCES_.699
+_OBJC_CLASSLIST_REFERENCES_$_.700
+_OBJC_SELECTOR_REFERENCES_.702
+_OBJC_SELECTOR_REFERENCES_.704
+_OBJC_CLASSLIST_REFERENCES_$_.705
+_OBJC_SELECTOR_REFERENCES_.707
+_OBJC_SELECTOR_REFERENCES_.709
+_OBJC_SELECTOR_REFERENCES_.713
+_OBJC_SELECTOR_REFERENCES_.715
+_OBJC_SELECTOR_REFERENCES_.717
+_OBJC_SELECTOR_REFERENCES_.719
+_OBJC_SELECTOR_REFERENCES_.721
+_OBJC_SELECTOR_REFERENCES_.723
+_OBJC_SELECTOR_REFERENCES_.725
+_OBJC_SELECTOR_REFERENCES_.727
+_OBJC_SELECTOR_REFERENCES_.729
 __OBJC_CLASS_PROTOCOLS_$_SNR_AFHTTPBodyPart
 __OBJC_METACLASS_RO_$_SNR_AFHTTPBodyPart
 __OBJC_$_INSTANCE_METHODS_SNR_AFHTTPBodyPart
@@ -6262,15 +6272,15 @@ _OBJC_IVAR_$_SNR_AFHTTPBodyPart._bodyContentLength
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFHTTPBodyPart
 __OBJC_$_PROP_LIST_SNR_AFHTTPBodyPart
 __OBJC_CLASS_RO_$_SNR_AFHTTPBodyPart
-_OBJC_SELECTOR_REFERENCES_.758
-_OBJC_SELECTOR_REFERENCES_.760
-_OBJC_CLASSLIST_REFERENCES_$_.764
-_OBJC_SELECTOR_REFERENCES_.766
+_OBJC_SELECTOR_REFERENCES_.755
+_OBJC_SELECTOR_REFERENCES_.757
+_OBJC_CLASSLIST_REFERENCES_$_.761
+_OBJC_SELECTOR_REFERENCES_.763
+_OBJC_SELECTOR_REFERENCES_.767
+_OBJC_SELECTOR_REFERENCES_.769
 _OBJC_SELECTOR_REFERENCES_.770
+_OBJC_SELECTOR_REFERENCES_.771
 _OBJC_SELECTOR_REFERENCES_.772
-_OBJC_SELECTOR_REFERENCES_.773
-_OBJC_SELECTOR_REFERENCES_.774
-_OBJC_SELECTOR_REFERENCES_.775
 _OBJC_IVAR_$_SNR_AFJSONRequestSerializer._writingOptions
 __OBJC_$_CLASS_METHODS_SNR_AFJSONRequestSerializer
 __OBJC_METACLASS_RO_$_SNR_AFJSONRequestSerializer
@@ -6278,14 +6288,14 @@ __OBJC_$_INSTANCE_METHODS_SNR_AFJSONRequestSerializer
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFJSONRequestSerializer
 __OBJC_$_PROP_LIST_SNR_AFJSONRequestSerializer
 __OBJC_CLASS_RO_$_SNR_AFJSONRequestSerializer
-_OBJC_SELECTOR_REFERENCES_.781
-_OBJC_SELECTOR_REFERENCES_.783
-_OBJC_SELECTOR_REFERENCES_.785
-_OBJC_CLASSLIST_REFERENCES_$_.789
-_OBJC_SELECTOR_REFERENCES_.791
-_OBJC_SELECTOR_REFERENCES_.793
-_OBJC_SELECTOR_REFERENCES_.795
-_OBJC_SELECTOR_REFERENCES_.797
+_OBJC_SELECTOR_REFERENCES_.778
+_OBJC_SELECTOR_REFERENCES_.780
+_OBJC_SELECTOR_REFERENCES_.782
+_OBJC_CLASSLIST_REFERENCES_$_.786
+_OBJC_SELECTOR_REFERENCES_.788
+_OBJC_SELECTOR_REFERENCES_.790
+_OBJC_SELECTOR_REFERENCES_.792
+_OBJC_SELECTOR_REFERENCES_.794
 _OBJC_IVAR_$_SNR_AFPropertyListRequestSerializer._format
 _OBJC_IVAR_$_SNR_AFPropertyListRequestSerializer._writeOptions
 __OBJC_$_CLASS_METHODS_SNR_AFPropertyListRequestSerializer
@@ -6312,8 +6322,8 @@ SNR_AFCreateMultipartFormBoundary
 __44-[SNR_AFHTTPRequestSerializer copyWithZone:]_block_invoke
 __47-[SNR_AFHTTPRequestSerializer encodeWithCoder:]_block_invoke
 __80-[SNR_AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
-__copy_helper_block_e4_20s24s28b32r
-__copy_helper_block_e4_20b24r
+__copy_helper_block_e8_32s40s48b56r
+__copy_helper_block_e8_32b40r
 __109-[SNR_AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke_2
 __109-[SNR_AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke
 SNR_AFQueryStringPairsFromDictionary
@@ -6674,9 +6684,9 @@ ___34-[SNRViewPresentationAnimator pop]_block_invoke_2
 -[SNRViewPresentationAnimator duration]
 -[SNRViewPresentationAnimator setDuration:]
 -[SNRViewPresentationAnimator .cxx_destruct]
-___block_descriptor_28_e4_20s24s_e7_v8?0c4l
-___block_descriptor_48_e4_20s24s28s_e5_v4?0l
-___block_descriptor_32_e4_20s24s28s_e7_v8?0c4l
+___block_descriptor_48_e8_32s40s_e8_v12?0B8l
+___block_descriptor_88_e8_32s40s48s_e5_v8?0l
+___block_descriptor_56_e8_32s40s48s_e8_v12?0B8l
 __OBJC_METACLASS_RO_$_SNRViewPresentationAnimator
 __OBJC_$_INSTANCE_METHODS_SNRViewPresentationAnimator
 _OBJC_IVAR_$_SNRViewPresentationAnimator._completionBlock
@@ -6694,6 +6704,7 @@ __OBJC_CLASS_RO_$_SNRViewPresentationAnimator
 SyneriseSDK/Modules/Injector/Main/UI/Views/PresentationView/SNRPresentationViewAnimator.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/PresentationView/SNRPresentationViewAnimator.h
 __CGSizeEqualToSize
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __34-[SNRViewPresentationAnimator pop]_block_invoke_2
 __34-[SNRViewPresentationAnimator pop]_block_invoke
 __35-[SNRViewPresentationAnimator land]_block_invoke_2
@@ -6802,20 +6813,20 @@ SyneriseSDK/Core/Networking/Requests/GetScreenView/SNRGetScreenViewRequest.m
 +[SNRSimplePushNotification(Mapping) SNRModelMapper_requiredTypes]
 +[SNRSimplePushNotification(Mapping) mappingWithNSDictionary:error:]
 ___68+[SNRSimplePushNotification(Mapping) mappingWithNSDictionary:error:]_block_invoke
-___copy_helper_block_e4_24s
-___destroy_helper_block_e4_24s
+___copy_helper_block_e8_40s
+___destroy_helper_block_e8_40s
 +[SNRSimplePushNotification(Mapping) keypathForTempateType:]
 +[SNRSimplePushNotification(Mapping) classForTemplateType:]
 -[SNRSimplePushNotification(Mapping) mappingToNSDictionary]
-___block_descriptor_28_e4_24s_e21_#8?0"NSDictionary"4l
+___block_descriptor_48_e8_40s_e22_#16?0"NSDictionary"8l
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRSimplePushNotification_$_Mapping
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRSimplePushNotification_$_Mapping
 __OBJC_CATEGORY_PROTOCOLS_$_SNRSimplePushNotification_$_Mapping
 __OBJC_$_CATEGORY_SNRSimplePushNotification_$_Mapping
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Notifications/SimplePushNotification/SNRSimplePushNotification+Mapping.m
 SyneriseSDK/Core/Models/Notifications/SimplePushNotification/SNRSimplePushNotification+Mapping.m
-__destroy_helper_block_e4_24s
-__copy_helper_block_e4_24s
+__destroy_helper_block_e8_40s
+__copy_helper_block_e8_40s
 __68+[SNRSimplePushNotification(Mapping) mappingWithNSDictionary:error:]_block_invoke
 +[SNRContentWidgetBasicProductItemCollectionViewCell productActionButtonIdentifier]
 -[SNRContentWidgetBasicProductItemCollectionViewCell initWithCoder:]
@@ -6991,11 +7002,10 @@ SNR_isSubdomain
 +[SNRApplicationStartedEvent event]
 +[SNRApplicationStartedEvent eventWithParameters:]
 ___50+[SNRApplicationStartedEvent eventWithParameters:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
-___destroy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
+___copy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s192s
+___destroy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s192s
 +[SNRApplicationStartedEvent parseParameters:]
-_OBJC_CLASSLIST_REFERENCES_$_.138
-___block_descriptor_104_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s_e32_v8?0"SNRTrackerParamsBuilder"4l
+___block_descriptor_200_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s192s_e33_v16?0"SNRTrackerParamsBuilder"8l
 _OBJC_CLASSLIST_REFERENCES_$_.144
 _OBJC_CLASSLIST_REFERENCES_$_.155
 __OBJC_$_CLASS_METHODS_SNRApplicationStartedEvent
@@ -7003,8 +7013,8 @@ __OBJC_METACLASS_RO_$_SNRApplicationStartedEvent
 __OBJC_CLASS_RO_$_SNRApplicationStartedEvent
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Events/System/SNRApplicationStartedEvent.m
 SyneriseSDK/Modules/Tracker/Events/System/SNRApplicationStartedEvent.m
-__destroy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
-__copy_helper_block_e4_20s24s28s32s36s40s44s48s52s56s60s64s68s72s76s80s84s88s92s96s100s
+__destroy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s192s
+__copy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s192s
 __50+[SNRApplicationStartedEvent eventWithParameters:]_block_invoke
 -[SNRPromotionImage url]
 -[SNRPromotionImage type]
@@ -7850,7 +7860,7 @@ ___40-[SNRGetLocationInternalCommand execute]_block_invoke
 -[SNRGetLocationInternalCommand sendEventWithLocation:]
 -[SNRGetLocationInternalCommand locationHelper]
 -[SNRGetLocationInternalCommand .cxx_destruct]
-___block_descriptor_24_e4_20r_e19_v8?0"CLLocation"4l
+___block_descriptor_40_e8_32r_e20_v16?0"CLLocation"8l
 __OBJC_METACLASS_RO_$_SNRGetLocationInternalCommand
 __OBJC_$_INSTANCE_METHODS_SNRGetLocationInternalCommand
 _OBJC_IVAR_$_SNRGetLocationInternalCommand._locationHelper
@@ -8069,7 +8079,7 @@ _SNR_AFPostReachabilityStatusChange
 ___SNR_AFPostReachabilityStatusChange_block_invoke
 _sharedManager._sharedManager
 _sharedManager.onceToken
-___block_descriptor_24_e4_20w_e7_v8?0i4l
+___block_descriptor_40_e8_32w_e8_v16?0q8l
 __OBJC_$_CLASS_METHODS_SNR_AFNetworkReachabilityManager
 __OBJC_METACLASS_RO_$_SNR_AFNetworkReachabilityManager
 __OBJC_$_INSTANCE_METHODS_SNR_AFNetworkReachabilityManager
@@ -8079,7 +8089,7 @@ _OBJC_IVAR_$_SNR_AFNetworkReachabilityManager._networkReachabilityStatusBlock
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFNetworkReachabilityManager
 __OBJC_$_PROP_LIST_SNR_AFNetworkReachabilityManager
 __OBJC_CLASS_RO_$_SNR_AFNetworkReachabilityManager
-___block_descriptor_28_e4_20bs_e5_v4?0l
+___block_descriptor_48_e8_32bs_e5_v8?0l
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/External/AFNetworking/SNR_AFNetworkReachabilityManager.m
 SyneriseSDK/External/AFNetworking/SNR_AFNetworkReachabilityManager.m
 __SNR_AFPostReachabilityStatusChange_block_invoke
@@ -8142,9 +8152,9 @@ ___64-[SNRAuthenticationApiService retrieveTokenWithSuccess:failure:]_block_invo
 ___64-[SNRAuthenticationApiService retrieveTokenWithSuccess:failure:]_block_invoke_2
 ___64-[SNRAuthenticationApiService retrieveTokenWithSuccess:failure:]_block_invoke.43
 ___64-[SNRAuthenticationApiService retrieveTokenWithSuccess:failure:]_block_invoke_2.44
-___block_descriptor_24_e4_20bs_e7_v8?0c4l
-___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
-___block_descriptor_24_e4_20bs_e17_v8?0"SNRToken"4l
+___block_descriptor_40_e8_32bs_e8_v12?0B8l
+___block_descriptor_40_e8_32bs_e17_v16?0"NSError"8l
+___block_descriptor_40_e8_32bs_e18_v16?0"SNRToken"8l
 __OBJC_METACLASS_RO_$_SNRAuthenticationApiService
 __OBJC_$_INSTANCE_METHODS_SNRAuthenticationApiService
 __OBJC_CLASS_RO_$_SNRAuthenticationApiService
@@ -8187,7 +8197,7 @@ ___65-[SNRContentApiService getDocumentsWithApiQuery:success:failure:]_block_inv
 -[SNRContentApiService getScreenViewWithSuccess:failure:]
 ___57-[SNRContentApiService getScreenViewWithSuccess:failure:]_block_invoke
 -[SNRContentApiService sendScreenViewEventWithScreenViewResponse:]
-___block_descriptor_32_e4_20s24bs28bs_e26_v16?0c48"SNRApiError"12l
+___block_descriptor_56_e8_32s40bs48bs_e27_v28?0B812"SNRApiError"20l
 __OBJC_METACLASS_RO_$_SNRContentApiService
 __OBJC_$_INSTANCE_METHODS_SNRContentApiService
 __OBJC_CLASS_RO_$_SNRContentApiService
@@ -8354,8 +8364,8 @@ ___34-[SNREventDataStore removeEvents:]_block_invoke
 -[SNREventDataStore getStoredEvents:]
 -[SNREventDataStore storedEventsCount]
 ___38-[SNREventDataStore storedEventsCount]_block_invoke
-___copy_helper_block_e4_20r24w
-___destroy_helper_block_e4_20r24w
+___copy_helper_block_e8_32r40w
+___destroy_helper_block_e8_32r40w
 -[SNREventDataStore persistentStoreURL]
 -[SNREventDataStore managedObjectModel]
 -[SNREventDataStore persist]
@@ -8367,7 +8377,7 @@ ___73-[SNREventDataStore fetchEventsWithRequest:predicate:andSortDescriptors:]_b
 -[SNREventDataStore storeCoordinator]
 -[SNREventDataStore context]
 -[SNREventDataStore .cxx_destruct]
-___block_descriptor_28_e4_20r24w_e5_v4?0l
+___block_descriptor_48_e8_32r40w_e5_v8?0l
 __OBJC_METACLASS_RO_$_SNREventDataStore
 __OBJC_$_INSTANCE_METHODS_SNREventDataStore
 _OBJC_IVAR_$_SNREventDataStore._storeCoordinator
@@ -8379,8 +8389,8 @@ __OBJC_CLASS_RO_$_SNREventDataStore
 SyneriseSDK/Modules/Tracker/Main/Events Store/SNREventDataStore.m
 __73-[SNREventDataStore fetchEventsWithRequest:predicate:andSortDescriptors:]_block_invoke
 __50-[SNREventDataStore persistWithCompletionHandler:]_block_invoke
-__destroy_helper_block_e4_20r24w
-__copy_helper_block_e4_20r24w
+__destroy_helper_block_e8_32r40w
+__copy_helper_block_e8_32r40w
 __38-[SNREventDataStore storedEventsCount]_block_invoke
 __34-[SNREventDataStore removeEvents:]_block_invoke
 -[SNRM13Service init]
@@ -8492,10 +8502,10 @@ ___28-[SNRH8Helper invokeState48]_block_invoke.67
 -[SNRH8Helper modelO119]
 -[SNRH8Helper setModelO119:]
 -[SNRH8Helper .cxx_destruct]
-___block_descriptor_28_e4_20bs24w_e32_v12?0"NSURLSessionDataTask"48l
-___block_descriptor_28_e4_20bs24w_e41_v12?0"NSURLSessionDataTask"4"NSError"8l
-___block_descriptor_24_e4_20s_e58_i16?0"NSURLSession"4"NSURLAuthenticationChallenge"8^12l
-___block_descriptor_24_e4_20s_e79_i20?0"NSURLSession"4"NSURLSessionTask"8"NSURLAuthenticationChallenge"12^16l
+___block_descriptor_48_e8_32bs40w_e33_v24?0"NSURLSessionDataTask"816l
+___block_descriptor_48_e8_32bs40w_e42_v24?0"NSURLSessionDataTask"8"NSError"16l
+___block_descriptor_40_e8_32s_e59_q32?0"NSURLSession"8"NSURLAuthenticationChallenge"16^24l
+___block_descriptor_40_e8_32s_e80_q40?0"NSURLSession"8"NSURLSessionTask"16"NSURLAuthenticationChallenge"24^32l
 __OBJC_METACLASS_RO_$_SNRH8Helper
 __OBJC_$_INSTANCE_METHODS_SNRH8Helper
 _OBJC_IVAR_$_SNRH8Helper._symbolL116
@@ -8580,9 +8590,9 @@ ___55-[SNRSyneriseActionResolver defaultActionWithDeeplink:]_block_invoke
 -[SNRSyneriseActionResolver syneriseDelegate]
 -[SNRSyneriseActionResolver .cxx_destruct]
 __OBJC_PROTOCOL_REFERENCE_$_SNRSyneriseActivityActionResolvable
-___block_descriptor_24_e4_20s_e16_v12?0i4?<v?>8l
-___block_descriptor_36_e4_20s24s28bs_e5_v4?0l
-___block_descriptor_20_e7_v8?0c4l
+___block_descriptor_40_e8_32s_e17_v24?0q8?<v?>16l
+___block_descriptor_64_e8_32s40s48bs_e5_v8?0l
+___block_descriptor_32_e8_v12?0B8l
 ___block_literal_global.73
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNRUserActionServiceDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_SNRUserActionServiceDelegate
@@ -8990,9 +9000,10 @@ ___86-[SNRNotificationConfigurationHelper downloadAndSaveFileWithURL:validMIMETy
 -[SNRNotificationConfigurationHelper debugError]
 -[SNRNotificationConfigurationHelper setDebugError:]
 -[SNRNotificationConfigurationHelper .cxx_destruct]
-___block_descriptor_32_e4_20s24s28r_e14_v8?0"NSSet"4l
+___block_descriptor_56_e8_32s40s48r_e15_v16?0"NSSet"8l
 _OBJC_CLASSLIST_REFERENCES_$_.146
-___block_descriptor_40_e4_20s24s28s32r36r_e44_v16?0"NSURL"4"NSURLResponse"8"NSError"12l
+_OBJC_CLASSLIST_REFERENCES_$_.151
+___block_descriptor_72_e8_32s40s48s56r64r_e45_v32?0"NSURL"8"NSURLResponse"16"NSError"24l
 __OBJC_METACLASS_RO_$_SNRNotificationConfigurationHelper
 __OBJC_$_INSTANCE_METHODS_SNRNotificationConfigurationHelper
 _OBJC_IVAR_$_SNRNotificationConfigurationHelper._isConfigurationOK
@@ -9089,13 +9100,13 @@ SyneriseSDK/Core/Models/UI/Templates/Common/Background/SNRTemplateContentBackgro
 SyneriseSDK/Core/Models/UI/Templates/Common/Background/SNRTemplateContentBackground.h
 +[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenViewResponse:]
 ___80+[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenViewResponse:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36s
-___block_descriptor_44_e4_20s24s28s32s36s_e32_v8?0"SNRTrackerParamsBuilder"4l
+___copy_helper_block_e8_32s40s48s56s64s
+___block_descriptor_80_e8_32s40s48s56s64s_e33_v16?0"SNRTrackerParamsBuilder"8l
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRInternalEvent_$_ScreenContent
 __OBJC_$_CATEGORY_SNRInternalEvent_$_ScreenContent
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Events/Internal/SNRInternalEvent+ScreenContent.m
 SyneriseSDK/Modules/Tracker/Events/Internal/SNRInternalEvent+ScreenContent.m
-__copy_helper_block_e4_20s24s28s32s36s
+__copy_helper_block_e8_32s40s48s56s64s
 __80+[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenViewResponse:]_block_invoke
 __OBJC_METACLASS_RO_$_SNRInternalInconsistencyError
 __OBJC_CLASS_RO_$_SNRInternalInconsistencyError
@@ -9397,11 +9408,11 @@ _OBJC_SELECTOR_REFERENCES_.327
 _OBJC_SELECTOR_REFERENCES_.329
 _OBJC_CLASSLIST_REFERENCES_$_.347
 _OBJC_SELECTOR_REFERENCES_.351
+_OBJC_CLASSLIST_REFERENCES_$_.352
 _OBJC_SELECTOR_REFERENCES_.355
 _OBJC_SELECTOR_REFERENCES_.357
 _OBJC_SELECTOR_REFERENCES_.359
-_OBJC_SELECTOR_REFERENCES_.361
-_OBJC_SELECTOR_REFERENCES_.366
+_OBJC_SELECTOR_REFERENCES_.365
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/External/AFNetworking/SNR_AFURLResponseSerialization.m
 SyneriseSDK/External/AFNetworking/SNR_AFURLResponseSerialization.m
 SyneriseSDK/External/AFNetworking/SNR_AFURLResponseSerialization.h
@@ -9455,7 +9466,7 @@ ___44-[SNRDefaultImageView downloadImageFromURL:]_block_invoke
 ___44-[SNRDefaultImageView downloadImageFromURL:]_block_invoke_2
 ___44-[SNRDefaultImageView downloadImageFromURL:]_block_invoke_3
 -[SNRDefaultImageView update:]
-___block_descriptor_24_e4_20s_e28_v12?0"UIImage"4"NSError"8l
+___block_descriptor_40_e8_32s_e29_v24?0"UIImage"8"NSError"16l
 __OBJC_CLASS_PROTOCOLS_$_SNRDefaultImageView
 __OBJC_METACLASS_RO_$_SNRDefaultImageView
 __OBJC_$_INSTANCE_METHODS_SNRDefaultImageView
@@ -9475,6 +9486,7 @@ __OBJC_CLASS_RO_$_SNRConfirmClientPhoneNumberRequest
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPhoneNumberRequest.m
 SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPhoneNumberRequest.m
 -[SNRMajorVersionCleanupMigration identifier]
+-[SNRMajorVersionCleanupMigration init]
 -[SNRMajorVersionCleanupMigration shouldExecuteIfFirstLaunch:]
 -[SNRMajorVersionCleanupMigration shouldExecuteIfUpdateLaunch:]
 -[SNRMajorVersionCleanupMigration shouldExecuteInVersion:fromVersion:]
@@ -9483,6 +9495,8 @@ SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPh
 -[SNRMajorVersionCleanupMigration removeOldDataFromKeychainForKey:]
 -[SNRMajorVersionCleanupMigration removeOldDataFromUserDefaultsForKey:]
 -[SNRMajorVersionCleanupMigration removeAllOldDataFromSharedUserDefaultsButExcludeItems:]
+-[SNRMajorVersionCleanupMigration loadOldDataFromUserDefaultsForKey:]
+-[SNRMajorVersionCleanupMigration loadOldDataFromKeychainForKey:]
 -[SNRMajorVersionCleanupMigration makeOldKeychainLoadingQueryWithKey:]
 __OBJC_METACLASS_RO_$_SNRMajorVersionCleanupMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionCleanupMigration
@@ -9729,7 +9743,7 @@ ___61-[SNRZ26Helper prepareModel29:nameP16:typeI139:connectionF6:]_block_invoke
 -[SNRZ26Helper saveModel38:nameP16:notificationY77:symbolI35:typeI139:connectionF6:]
 ___84-[SNRZ26Helper saveModel38:nameP16:notificationY77:symbolI35:typeI139:connectionF6:]_block_invoke
 ___84-[SNRZ26Helper saveModel38:nameP16:notificationY77:symbolI35:typeI139:connectionF6:]_block_invoke.101
-___copy_helper_block_e4_20b24b28r
+___copy_helper_block_e8_32b40b48r
 -[SNRZ26Helper prepareModel155:nameP16:typeI139:connectionF6:]
 -[SNRZ26Helper prepareModel83:nameP16:typeI139:connectionF6:]
 -[SNRZ26Helper removeName52:nameP16:typeI139:connectionF6:]
@@ -9746,8 +9760,8 @@ ___98-[SNRZ26Helper saveModel110:connectionX24:nameP16:symbolH8:notificationN14:
 -[SNRZ26Helper modelX128]
 -[SNRZ26Helper .cxx_destruct]
 _OBJC_IVAR_$_SNRZ26Helper._modelX128
-___block_descriptor_24_e4_20bs_e32_v12?0"NSURLSessionDataTask"48l
-___block_descriptor_32_e4_20bs24bs28r_e37_v16?0"NSURLResponse"48"NSError"12l
+___block_descriptor_40_e8_32bs_e33_v24?0"NSURLSessionDataTask"816l
+___block_descriptor_56_e8_32bs40bs48r_e38_v32?0"NSURLResponse"816"NSError"24l
 _OBJC_CLASSLIST_REFERENCES_$_.133
 _OBJC_IVAR_$_SNRZ26Helper._modelF110
 __OBJC_$_CLASS_METHODS_SNRZ26Helper
@@ -9763,7 +9777,7 @@ SyneriseSDK/External/AFNetworking/SNR_AFHTTPSessionManager.m
 SyneriseSDK/External/AFNetworking/SNR_AFHTTPSessionManager.h
 __98-[SNRZ26Helper saveModel110:connectionX24:nameP16:symbolH8:notificationN14:typeI139:connectionF6:]_block_invoke_2
 __98-[SNRZ26Helper saveModel110:connectionX24:nameP16:symbolH8:notificationN14:typeI139:connectionF6:]_block_invoke
-__copy_helper_block_e4_20b24b28r
+__copy_helper_block_e8_32b40b48r
 __84-[SNRZ26Helper saveModel38:nameP16:notificationY77:symbolI35:typeI139:connectionF6:]_block_invoke.101
 __84-[SNRZ26Helper saveModel38:nameP16:notificationY77:symbolI35:typeI139:connectionF6:]_block_invoke
 __61-[SNRZ26Helper prepareModel29:nameP16:typeI139:connectionF6:]_block_invoke
@@ -10038,7 +10052,7 @@ _OBJC_IVAR_$_SNRPresentationView._lastDirection
 _OBJC_IVAR_$_SNRPresentationView._nextScreenNumber
 _OBJC_IVAR_$_SNRPresentationView._isScreenSwiping
 _OBJC_IVAR_$_SNRPresentationView._isScreenManipulating
-___block_descriptor_32_e4_20s24w_e5_v4?0l
+___block_descriptor_56_e8_32s40w_e5_v8?0l
 _OBJC_IVAR_$_SNRPresentationView._delegate
 _OBJC_IVAR_$_SNRPresentationView._currentScreen
 _OBJC_IVAR_$_SNRPresentationView._views
@@ -10077,7 +10091,7 @@ ___72-[SNRQ17Model(Authentication) saveSymbol134:nameR70:typeQ121:modelG137:]_bl
 -[SNRQ17Model(Authentication) getUUIDStringForSigningWithCustomID:orWithExternalToken:]
 -[SNRQ17Model(Authentication) handleSuccessWithModel:]
 -[SNRQ17Model(Authentication) handleFailureWithError:]
-___block_descriptor_40_e4_20s24s28r32r36r_e22_v16?0c48"NSError"12l
+___block_descriptor_72_e8_32s40s48r56r64r_e23_v28?0B812"NSError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.85
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRQ17Model_$_Authentication
 __OBJC_$_CATEGORY_SNRQ17Model_$_Authentication
@@ -10103,7 +10117,7 @@ SyneriseSDK/Modules/Injector/Main/Presenting Controllers/Base/SNRInjectorPresent
 ___60+[SNRTemplateBanner(Mapping) mappingWithNSDictionary:error:]_block_invoke
 +[SNRTemplateBanner(Mapping) classForTemplateType:]
 -[SNRTemplateBanner(Mapping) mappingToNSDictionary]
-___block_descriptor_24_e4__e21_#8?0"NSDictionary"4l
+___block_descriptor_40_e8__e22_#16?0"NSDictionary"8l
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRTemplateBanner_$_Mapping
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRTemplateBanner_$_Mapping
 __OBJC_CATEGORY_PROTOCOLS_$_SNRTemplateBanner_$_Mapping
@@ -10458,7 +10472,6 @@ __OBJC_CLASS_RO_$_SNRInjectorTemplateView
 /Users/awok/Desktop/synerise-ios-sdk/builds/nexUG7-g/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/BaseTemplate/SNRInjectorTemplateView.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/BaseTemplate/SNRInjectorTemplateView.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/BaseTemplate/SNRInjectorTemplateView.h
-CGPointMake
 -[SNRSingleMediaContentExtensionViewController init]
 -[SNRSingleMediaContentExtensionViewController loadView]
 -[SNRSingleMediaContentExtensionViewController viewDidLoad]
@@ -10530,7 +10543,7 @@ _OBJC_IVAR_$_SNRSingleMediaContentExtensionViewController._contentViewIsScrollab
 _OBJC_IVAR_$_SNRSingleMediaContentExtensionViewController._imageContentMode
 _OBJC_IVAR_$_SNRSingleMediaContentExtensionViewController._loadingIndicatorView
 _OBJC_IVAR_$_SNRSingleMediaContentExtensionViewController._imageURL
-___block_descriptor_24_e4_20w_e28_v12?0"UIImage"4"NSError"8l
+___block_descriptor_40_e8_32w_e29_v24?0"UIImage"8"NSError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.252
 _OBJC_SELECTOR_REFERENCES_.258
 _OBJC_SELECTOR_REFERENCES_.264
@@ -10878,9 +10891,9 @@ _settings.settings
 _settings.onceToken
 _pushRegistrationRequired.timer
 _OBJC_CLASSLIST_REFERENCES_$_.190
-___block_descriptor_24_e4_20r_e39_v8?0"SNRSyneriseNotificationPayload"4l
+___block_descriptor_40_e8_32r_e40_v16?0"SNRSyneriseNotificationPayload"8l
 _OBJC_CLASSLIST_REFERENCES_$_.201
-___block_descriptor_20_e39_v8?0"SNRSyneriseNotificationPayload"4l
+___block_descriptor_32_e40_v16?0"SNRSyneriseNotificationPayload"8l
 ___block_literal_global.206
 _OBJC_CLASSLIST_REFERENCES_$_.207
 _OBJC_CLASSLIST_REFERENCES_$_.214
