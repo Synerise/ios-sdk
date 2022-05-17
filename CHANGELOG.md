@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.0.1] - 2022-05-11
+## [4.1.0] - 2022-05-17
+
+### Changed
+- Events types to "custom". Events now can be distinguished via action parameter.
+
+
+## [4.0.1] - 2022-05-10
 
 ### Fixed
 - Swift names for some public classes.
