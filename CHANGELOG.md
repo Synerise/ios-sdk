@@ -19,7 +19,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 
 ## [4.0.0] - 2022-05-05
-IMPORTANT: This major version does not change compability.
+IMPORTANT: This major version does not change compatibility.
 
 ### Fixed
 - Potential issue with reading and saving SDK version metadata from the SDK bundle.
