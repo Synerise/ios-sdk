@@ -31,6 +31,8 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 ### Removed
 - `.pinActivationRequired` from `ClientConditionalAuthStatus`.
 
+IMPORTANT: This major version does not change compability.
+
 
 ## [3.11.1] - 2022-04-28
 
