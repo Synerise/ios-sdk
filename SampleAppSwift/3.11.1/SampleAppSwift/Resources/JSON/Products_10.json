@@ -1,0 +1,26 @@
+[
+ {
+ "brand": "Nike",
+ "name": "Nike Pro Trousers",
+ "sku": "33",
+ "description": "Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+ "image":"http://gate.net.pl/mobile/sp-protr.png",
+ "price": 59.99,
+ "rating": 4.4,
+ "ratingCount": 67,
+ "categories": "Trousers"
+ },
+ {
+ "brand": "Adidas",
+ "name": "Tiro 17 Training Pants",
+ "sku": "34",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac.",
+ "image":"http://gate.net.pl/mobile/sp-tirpan.png",
+ "price": 89.79,
+ "rating": 4.9,
+ "ratingCount": 89,
+ "categories": "Trousers"
+ }
+]
+ 
+ 

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EnS-YG-aXh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Client Vouchers View Controller-->
+        <scene sceneID="Mpe-dn-YW9">
+            <objects>
+                <viewController id="EnS-YG-aXh" customClass="ClientVouchersViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8gQ-EJ-VnN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-g5-hnN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uJJ-gR-27I">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="195"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBD-sZ-haR">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it6-hO-3Vr" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="gC1-0P-Ar5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Get Or Assign Voucher">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="AA3-JB-xUe" kind="show" id="TOO-pE-G1P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="it6-hO-3Vr" firstAttribute="leading" secondItem="SBD-sZ-haR" secondAttribute="leading" constant="16" id="2d1-fJ-FCW"/>
+                                                    <constraint firstItem="it6-hO-3Vr" firstAttribute="centerY" secondItem="SBD-sZ-haR" secondAttribute="centerY" id="A5l-gK-ssf"/>
+                                                    <constraint firstAttribute="height" constant="65" id="CkY-xH-uPe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="it6-hO-3Vr" secondAttribute="trailing" constant="16" id="cZA-ql-a6k"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3D-gS-8oI">
+                                                <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsU-te-5Fe" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="nex-Dn-Nz0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Get Assigned Voucher Codes">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="getAssignedVoucherCodesButtonWasPressed:" destination="EnS-YG-aXh" eventType="touchUpInside" id="j8m-zE-TQ7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="8uK-iV-hT5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xsU-te-5Fe" secondAttribute="trailing" constant="16" id="cAA-Z6-iqE"/>
+                                                    <constraint firstItem="xsU-te-5Fe" firstAttribute="leading" secondItem="x3D-gS-8oI" secondAttribute="leading" constant="16" id="gEa-qu-Pbb"/>
+                                                    <constraint firstItem="xsU-te-5Fe" firstAttribute="centerY" secondItem="x3D-gS-8oI" secondAttribute="centerY" id="qsw-1b-Zue"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-IE-DLY">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ph-G6-r2m" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="vTi-0J-12i"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Assign Voucher Code">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="goC-to-zgQ" kind="show" id="J6c-g0-8Oa"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0ph-G6-r2m" secondAttribute="trailing" constant="16" id="4M4-dN-Tzs"/>
+                                                    <constraint firstAttribute="height" constant="65" id="9KH-z1-4Cp"/>
+                                                    <constraint firstItem="0ph-G6-r2m" firstAttribute="leading" secondItem="Hq2-IE-DLY" secondAttribute="leading" constant="16" id="blZ-sB-VKZ"/>
+                                                    <constraint firstItem="0ph-G6-r2m" firstAttribute="centerY" secondItem="Hq2-IE-DLY" secondAttribute="centerY" id="jrs-y5-Evw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uJJ-gR-27I" firstAttribute="width" secondItem="0Eb-g5-hnN" secondAttribute="width" id="LYg-mg-wbs"/>
+                                    <constraint firstItem="uJJ-gR-27I" firstAttribute="top" secondItem="0Eb-g5-hnN" secondAttribute="top" constant="24" id="M48-9c-VxK"/>
+                                    <constraint firstAttribute="trailing" secondItem="uJJ-gR-27I" secondAttribute="trailing" id="RWk-2I-pT4"/>
+                                    <constraint firstAttribute="bottom" secondItem="uJJ-gR-27I" secondAttribute="bottom" id="Szn-Jn-Obv"/>
+                                    <constraint firstItem="uJJ-gR-27I" firstAttribute="leading" secondItem="0Eb-g5-hnN" secondAttribute="leading" id="f8V-3x-WIg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Eb-g5-hnN" firstAttribute="top" secondItem="8gQ-EJ-VnN" secondAttribute="top" id="Bz4-Zp-eZW"/>
+                            <constraint firstAttribute="trailing" secondItem="0Eb-g5-hnN" secondAttribute="trailing" id="OpU-qn-zWY"/>
+                            <constraint firstItem="lCp-gZ-ugR" firstAttribute="bottom" secondItem="0Eb-g5-hnN" secondAttribute="bottom" id="QVh-zY-N2y"/>
+                            <constraint firstItem="0Eb-g5-hnN" firstAttribute="leading" secondItem="lCp-gZ-ugR" secondAttribute="leading" id="bfm-Ni-KYL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lCp-gZ-ugR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBC-sN-C42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-2073"/>
+        </scene>
+        <!--Client Assign Voucher Code Table View Controller-->
+        <scene sceneID="0iF-Td-S6y">
+            <objects>
+                <tableViewController id="goC-to-zgQ" customClass="ClientAssignVoucherCodeTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JQW-30-2xH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Pool UUID" id="Xdg-LY-3Oi">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Ii6-PI-TLo">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ii6-PI-TLo" id="E41-cQ-XQj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0852547b-a6d1-438e-b5f3-d5af4f7dd9de" borderStyle="roundedRect" placeholder="Pool UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEv-pM-ocY">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="LDn-ID-Niw"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OEv-pM-ocY" firstAttribute="leading" secondItem="E41-cQ-XQj" secondAttribute="leading" constant="16" id="X8R-bc-A61"/>
+                                                <constraint firstItem="OEv-pM-ocY" firstAttribute="centerY" secondItem="E41-cQ-XQj" secondAttribute="centerY" id="cHx-u3-Yw4"/>
+                                                <constraint firstAttribute="trailing" secondItem="OEv-pM-ocY" secondAttribute="trailing" constant="16" id="vsB-vk-nFt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="9dL-5T-B9S">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="gcu-OK-hgP">
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gcu-OK-hgP" id="M6q-fo-vbu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4M-qH-nOM" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="VeF-fZ-xCY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Assign Voucher Code">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="assignVoucherCodeButtonWasPressed:" destination="goC-to-zgQ" eventType="touchUpInside" id="QPO-WA-rlS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C4M-qH-nOM" firstAttribute="leading" secondItem="M6q-fo-vbu" secondAttribute="leading" constant="16" id="q87-E4-MJE"/>
+                                                <constraint firstAttribute="trailing" secondItem="C4M-qH-nOM" secondAttribute="trailing" constant="16" id="sDy-XL-9ce"/>
+                                                <constraint firstItem="C4M-qH-nOM" firstAttribute="centerY" secondItem="M6q-fo-vbu" secondAttribute="centerY" id="t76-TF-Op8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="goC-to-zgQ" id="sU7-1P-JBy"/>
+                            <outlet property="delegate" destination="goC-to-zgQ" id="Zkx-qK-Uco"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="poolUUIDTextField" destination="OEv-pM-ocY" id="nqp-HN-wXI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iu8-Qz-QAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="-3126"/>
+        </scene>
+        <!--Client Get Or Assign Voucher Table View Controller-->
+        <scene sceneID="WNC-i0-KiT">
+            <objects>
+                <tableViewController id="AA3-JB-xUe" customClass="ClientGetOrAssignVoucherTableViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="K9C-T5-Yfs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Pool UUID" id="S1J-yp-S0X">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="3Q5-on-VnP">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Q5-on-VnP" id="4qD-c3-58n">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0852547b-a6d1-438e-b5f3-d5af4f7dd9de" borderStyle="roundedRect" placeholder="Pool UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-iB-0hz">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="ptQ-7J-AWi"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YVc-iB-0hz" firstAttribute="centerY" secondItem="4qD-c3-58n" secondAttribute="centerY" id="QSu-rA-xfA"/>
+                                                <constraint firstAttribute="trailing" secondItem="YVc-iB-0hz" secondAttribute="trailing" constant="16" id="cQG-1G-CeR"/>
+                                                <constraint firstItem="YVc-iB-0hz" firstAttribute="leading" secondItem="4qD-c3-58n" secondAttribute="leading" constant="16" id="pSz-L0-e5h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="QrT-RK-C7V">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="B1b-l0-0eU">
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B1b-l0-0eU" id="G2E-1y-d0L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXH-qU-KrQ" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="7lr-QQ-lYY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Get Or Assign Voucher">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="getOrAssignVoucherButtonWasPressed:" destination="AA3-JB-xUe" eventType="touchUpInside" id="WuD-bs-cdP"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IXH-qU-KrQ" firstAttribute="centerY" secondItem="G2E-1y-d0L" secondAttribute="centerY" id="C6p-51-nEA"/>
+                                                <constraint firstItem="IXH-qU-KrQ" firstAttribute="leading" secondItem="G2E-1y-d0L" secondAttribute="leading" constant="16" id="Dg0-9r-uI6"/>
+                                                <constraint firstAttribute="trailing" secondItem="IXH-qU-KrQ" secondAttribute="trailing" constant="16" id="wqN-kS-CmF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AA3-JB-xUe" id="VMz-pQ-1c9"/>
+                            <outlet property="delegate" destination="AA3-JB-xUe" id="WXx-nh-0u7"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="poolUUIDTextField" destination="YVc-iB-0hz" id="4N6-v7-PUh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uW3-hm-sf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="-3852"/>
+        </scene>
+    </scenes>
+</document>
