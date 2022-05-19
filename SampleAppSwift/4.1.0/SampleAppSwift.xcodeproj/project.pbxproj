@@ -22,8 +22,6 @@
 		2D401F23214A64430000F229 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		2D401F27214A64430000F229 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D401F26214A64430000F229 /* NotificationViewController.swift */; };
-		2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
-		2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		2D42F44521512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42F44421512F7B003E2D0F /* ClientDeactivatePromotionTableViewController.swift */; };
 		2D5924AB215D072B00191E8B /* PromotionsAPI_Promotions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AA215D072B00191E8B /* PromotionsAPI_Promotions.storyboard */; };
 		2D5924AE215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5924AD215D073C00191E8B /* PromotionsAPI_Vouchers.storyboard */; };
@@ -147,13 +145,10 @@
 		A1E27A0020E6482A00E595B5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E279FF20E6482A00E595B5 /* Section.swift */; };
 		A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */; };
 		A1E9F1AD211DEDD6003EE067 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */; };
-		B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
-		B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B84F68CC20C7EBFC00A8ECBE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68CB20C7EBFC00A8ECBE /* String.swift */; };
 		B84F68CF20C7EC4900A8ECBE /* UserRegistrationFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */; };
 		B84F68D120C7EC9900A8ECBE /* UserRegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */; };
 		B84F68E720C9374300A8ECBE /* DefaultLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F68E620C9374300A8ECBE /* DefaultLabel.swift */; };
-		CF5B4C498C72BEB4590E2AC2 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A7D497A3B49A37394FEFA /* Pods_SampleAppSwift.framework */; };
 		FF068DEA20C1966800A508C3 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DE920C1966800A508C3 /* Administrator.swift */; };
 		FF068DEC20C1979900A508C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DEB20C1979900A508C3 /* Coordinator.swift */; };
 		FF068DEE20C1985500A508C3 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DED20C1985500A508C3 /* ApplicationController.swift */; };
@@ -208,10 +203,8 @@
 		FF5E440D2276F6B300674029 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E440C2276F6B300674029 /* TestViewController.swift */; };
 		FF5FF8AC25017FA2004554E7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FF8A025017F90004554E7 /* NotificationService.swift */; };
 		FF5FF8AD25017FC0004554E7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FF8A425017F91004554E7 /* NotificationService.m */; };
-		FF5FF8AE25018044004554E7 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		FF5FF8AF2501804D004554E7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		FF5FF8B025018052004554E7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
-		FF5FF8B125018057004554E7 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		FF5FF8B22501805C004554E7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		FF5FF8B325018060004554E7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
 		FF7638902120919F00544633 /* TrackerAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF76388F2120919F00544633 /* TrackerAPI.storyboard */; };
@@ -232,7 +225,7 @@
 		FFA36A2320C73DE8003CFB91 /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2220C73DE8003CFB91 /* DefaultTextField.swift */; };
 		FFA36A2520C73DF9003CFB91 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2420C73DF9003CFB91 /* BindingTextField.swift */; };
 		FFA36A2720C73E08003CFB91 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA36A2620C73E08003CFB91 /* Bindable.swift */; };
-		FFA6FDB12187472800310022 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		FFA6FDB12187472800310022 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		FFA738D220D33C2B002C48F3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA738D120D33C2B002C48F3 /* InputView.swift */; };
 		FFAA2F682180B0E500782954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA2F662180B0E500782954 /* SettingsViewController.swift */; };
 		FFAA2F692180B0E500782954 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAA2F672180B0E500782954 /* SettingsViewController.xib */; };
@@ -259,7 +252,6 @@
 		FFD08F4220C2D5780083A890 /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD08F4120C2D5780083A890 /* DefaultViewController.swift */; };
 		FFD3E70C242114F300AE7502 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010320ECDD1B009A19E5 /* UserNotifications.framework */; };
 		FFD3E70D242114F300AE7502 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */; };
-		FFD3E71D2421158600AE7502 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		FFD3E722242148E700AE7502 /* SingleMediaNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD3E710242114F300AE7502 /* SingleMediaNotificationViewController.m */; };
 		FFD9C44221DF794F00B83192 /* VouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9C44121DF794F00B83192 /* VouchersViewController.swift */; };
 		FFD9C44621DF7A5700B83192 /* VouchersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD9C44521DF7A5700B83192 /* VouchersViewController.xib */; };
@@ -267,7 +259,6 @@
 		FFD9C44B21DF993900B83192 /* CheckoutVoucherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD9C44921DF993900B83192 /* CheckoutVoucherTableViewCell.xib */; };
 		FFD9C44D21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9C44C21DF995A00B83192 /* CheckoutVoucherTableViewModel.swift */; };
 		FFDA615821DCC3A400D70CBD /* DeviceInfoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA615721DCC3A400D70CBD /* DeviceInfoUtils.swift */; };
-		FFDCD6D9242222F300ACD670 /* SyneriseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810EC8520C6902000218B93 /* SyneriseSDK.framework */; };
 		FFDF425D20C5FA3B00892782 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF425C20C5FA3B00892782 /* Assembly.swift */; };
 		FFE4329D2189F64A0044865A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA36A2E20C74505003CFB91 /* RegistrationViewController.xib */; };
 		FFEB21F120C5C4CD00DBAF08 /* SyneriseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB21F020C5C4CD00DBAF08 /* SyneriseManager.swift */; };
@@ -279,13 +270,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2D02B5AC213821340001039D;
-			remoteInfo = SyneriseSDKTests;
-		};
 		2D401F18214A64180000F229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2DF81EB420B8608B009AAC66 /* Project object */;
@@ -299,20 +283,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D401F21214A64430000F229;
 			remoteInfo = SyneriseCarouselNotificationContentExtension;
-		};
-		B810EC8420C6902000218B93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 617D3BB21FA21C7200AC0440;
-			remoteInfo = SyneriseSDK;
-		};
-		FF2A54AC260BB26800C50B04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 617D3BB11FA21C7200AC0440;
-			remoteInfo = SyneriseSDK;
 		};
 		FF5FF88925017EB0004554E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -364,7 +334,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B810EC8720C6904900218B93 /* SyneriseSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +373,6 @@
 		2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActivatePromotionTableViewController.swift; sourceTree = "<group>"; };
 		2DF81EBC20B8608B009AAC66 /* SDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EC620B8608D009AAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		521A7D497A3B49A37394FEFA /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsFullScreenGridViewController.swift; sourceTree = "<group>"; };
 		6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsGridTableViewController.swift; sourceTree = "<group>"; };
 		6F58377A228020FB001BD179 /* ContentAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPIViewController.swift; sourceTree = "<group>"; };
@@ -420,7 +388,6 @@
 		6FDB918B24053C8F00C7B6C4 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmClientAccountTableViewController.swift; sourceTree = "<group>"; };
 		6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewController.swift; sourceTree = "<group>"; };
-		75EC7771D2DF5849DF9E3FD3 /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientPasswordTableViewController.swift; sourceTree = "<group>"; };
 		A109010320ECDD1B009A19E5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -516,12 +483,10 @@
 		A1E279FF20E6482A00E595B5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataSource.swift; sourceTree = "<group>"; };
 		A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
-		B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SyneriseSDK.xcodeproj; path = ../SyneriseSDK/SyneriseSDK.xcodeproj; sourceTree = "<group>"; };
 		B84F68CB20C7EBFC00A8ECBE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = SampleAppSwift/Internal/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
 		B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegistrationFormView.xib; sourceTree = "<group>"; };
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
 		B84F68E620C9374300A8ECBE /* DefaultLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabel.swift; sourceTree = "<group>"; };
-		F570CF33996BF500DEFE2FAD /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FF068DE920C1966800A508C3 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
 		FF068DEB20C1979900A508C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FF068DED20C1985500A508C3 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -654,7 +619,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -664,7 +628,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F23214A64430000F229 /* UserNotifications.framework in Frameworks */,
 			);
@@ -674,8 +637,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
-				CF5B4C498C72BEB4590E2AC2 /* Pods_SampleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +646,6 @@
 			files = (
 				FF5FF8B025018052004554E7 /* UserNotificationsUI.framework in Frameworks */,
 				FF5FF8AF2501804D004554E7 /* UserNotifications.framework in Frameworks */,
-				FF5FF8AE25018044004554E7 /* SyneriseSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +655,6 @@
 			files = (
 				FF5FF8B325018060004554E7 /* UserNotificationsUI.framework in Frameworks */,
 				FF5FF8B22501805C004554E7 /* UserNotifications.framework in Frameworks */,
-				FF5FF8B125018057004554E7 /* SyneriseSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +663,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC037FE2422201600FDF7B0 /* UserNotificationsUI.framework in Frameworks */,
-				FFDCD6D9242222F300ACD670 /* SyneriseSDK.framework in Frameworks */,
 				FFC037FD2422201600FDF7B0 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,7 +671,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD3E71D2421158600AE7502 /* SyneriseSDK.framework in Frameworks */,
 				FFD3E70D242114F300AE7502 /* UserNotificationsUI.framework in Frameworks */,
 				FFD3E70C242114F300AE7502 /* UserNotifications.framework in Frameworks */,
 			);
@@ -801,7 +758,6 @@
 		2DF81EB320B8608B009AAC66 = {
 			isa = PBXGroup;
 			children = (
-				B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */,
 				2DF81EBE20B8608B009AAC66 /* SampleAppSwift */,
 				2D401F11214A64180000F229 /* SyneriseSingleMediaNotificationContentExtension */,
 				FFD3E70E242114F300AE7502 /* SyneriseSingleMediaNotificationContentExtensionObjC */,
@@ -812,7 +768,6 @@
 				2DF81EBD20B8608B009AAC66 /* Products */,
 				E16064DE79C651DF8B25B492 /* Frameworks */,
 				6FC7C80C22C35AEE00DBBDC4 /* Recovered References */,
-				F3107574D91CB28EA3AB44A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1099,33 +1054,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		B810EC8120C6902000218B93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B810EC8520C6902000218B93 /* SyneriseSDK.framework */,
-				2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E16064DE79C651DF8B25B492 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A109010320ECDD1B009A19E5 /* UserNotifications.framework */,
 				A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */,
-				521A7D497A3B49A37394FEFA /* Pods_SampleAppSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3107574D91CB28EA3AB44A4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75EC7771D2DF5849DF9E3FD3 /* Pods-SampleAppSwift.debug.xcconfig */,
-				F570CF33996BF500DEFE2FAD /* Pods-SampleAppSwift.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
 			sourceTree = "<group>";
 		};
 		FF068DD220C1908200A508C3 /* Resources */ = {
@@ -1742,19 +1677,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF81EE420B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwift" */;
 			buildPhases = (
-				7EEA94B2C75E8A7E7E568B97 /* [CP] Check Pods Manifest.lock */,
 				2DF81EB820B8608B009AAC66 /* Sources */,
 				2DF81EB920B8608B009AAC66 /* Frameworks */,
 				2DF81EBA20B8608B009AAC66 /* Resources */,
 				B810EC8A20C6904900218B93 /* Embed Frameworks */,
-				A12BE44A20D3C7DB00056A36 /* SwiftLint */,
 				A16AB8EC20EBD2E200B7282C /* Embed App Extensions */,
-				565C520F6EBE30414F651D23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF2A54AD260BB26800C50B04 /* PBXTargetDependency */,
 				2D401F19214A64180000F229 /* PBXTargetDependency */,
 				2D401F2D214A64430000F229 /* PBXTargetDependency */,
 				FFD3E717242114F300AE7502 /* PBXTargetDependency */,
@@ -1903,12 +1834,6 @@
 			mainGroup = 2DF81EB320B8608B009AAC66;
 			productRefGroup = 2DF81EBD20B8608B009AAC66 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B810EC8120C6902000218B93 /* Products */;
-					ProjectRef = B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2DF81EBB20B8608B009AAC66 /* SampleAppSwift */,
@@ -1921,23 +1846,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2D1EC74821395C9E00767EC1 /* SyneriseSDK_UnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SyneriseSDK_UnitTests.xctest;
-			remoteRef = 2D1EC74721395C9E00767EC1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B810EC8520C6902000218B93 /* SyneriseSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SyneriseSDK.framework;
-			remoteRef = B810EC8420C6902000218B93 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D401F0C214A64180000F229 /* Resources */ = {
@@ -2045,62 +1953,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		565C520F6EBE30414F651D23 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7EEA94B2C75E8A7E7E568B97 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleAppSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A12BE44A20D3C7DB00056A36 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D401F0A214A64180000F229 /* Sources */ = {
@@ -2266,7 +2118,7 @@
 				FF591C4B20C54684007F831B /* ShopCoordinator.swift in Sources */,
 				2D07E16120CFF453005E89D5 /* LeftMenuDataSource.swift in Sources */,
 				A175CAF12118A480001E39FF /* CartManager.swift in Sources */,
-				FFA6FDB12187472800310022 /* (null) in Sources */,
+				FFA6FDB12187472800310022 /* BuildFile in Sources */,
 				A1393580215546C900F689B1 /* ConfigurationViewController.swift in Sources */,
 				FF7D727926AD5FEB00395D7B /* AuthorizeWithFacebookTableViewController.swift in Sources */,
 				A1E27A0220E64A8E00E595B5 /* SectionDataSource.swift in Sources */,
@@ -2354,11 +2206,6 @@
 			isa = PBXTargetDependency;
 			target = 2D401F21214A64430000F229 /* SyneriseCarouselNotificationContentExtension */;
 			targetProxy = 2D401F2C214A64430000F229 /* PBXContainerItemProxy */;
-		};
-		FF2A54AD260BB26800C50B04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SyneriseSDK;
-			targetProxy = FF2A54AC260BB26800C50B04 /* PBXContainerItemProxy */;
 		};
 		FF5FF88A25017EB0004554E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2617,7 +2464,6 @@
 		};
 		2DF81EE520B8608D009AAC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75EC7771D2DF5849DF9E3FD3 /* Pods-SampleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2649,7 +2495,6 @@
 		};
 		2DF81EE620B8608D009AAC66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F570CF33996BF500DEFE2FAD /* Pods-SampleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
