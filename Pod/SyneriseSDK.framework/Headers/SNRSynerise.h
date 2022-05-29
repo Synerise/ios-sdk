@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSString * const SNRSyneriseDomain;
 FOUNDATION_EXPORT NSString * const SNRSyneriseBundleIdentifier;
+FOUNDATION_EXPORT NSString * const SNRSyneriseVersion;
 
 /**
  * @protocol SNRSyneriseDelegate
@@ -229,7 +230,6 @@ NS_SWIFT_NAME(Synerise)
 + (NSString *)getDataDebugDescription;
 + (void)clearAllPersistentAndTemporaryData;
 + (void)clearAuthTokensData;
-
 #endif
 
 @end

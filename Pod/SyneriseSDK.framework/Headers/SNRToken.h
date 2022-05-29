@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * @class SNRToken
+ *
+ */
+
+NS_SWIFT_NAME(Token)
 @interface SNRToken : SNRBaseModel
 
 @property (copy, nonatomic, nonnull, readonly) NSString *tokenString;
@@ -17,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (copy, nonatomic, nonnull, readonly) NSString *rlm;
 @property (assign, nonatomic, readonly) SNRTokenOrigin origin;
-@property (copy, nonatomic, nonnull, readonly) NSString *customId;
+@property (copy, nonatomic, nullable, readonly) NSString *customId;
 
 - (BOOL)isNearExpiring;
 
