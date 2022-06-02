@@ -6,10 +6,10 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 ## [4.1.1] - 2022-05-29
 
 ### Fixed
-- Issue with saving SDK version metadata.
-- Potential issues with synchronizing data for notification encryption.
-- Swift name for `Token` class.
-- `customId` property is optional in `Token` class.
+- Some clients have issue with correct value of `sdkVersion` in AppStarted event, which propably occurs depending to project settings. We have changed it to save hardcoded value so it will solve those issues permanently.
+- We found issue with synchronizing data for notification encryption purposes in some cases and we have fixed it.
+- We have added Swift name for `SNRToken` class so now that class supports Swift naming style and it is visible as `Token` name.
+- `customId` property in `Token` class should not be nonnull type and it has changed to optional.
 
 
 ## [4.1.0] - 2022-05-17
