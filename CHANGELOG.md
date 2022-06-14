@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.2.0] - 2022-06-14
+
+IMPORTANT: Distribution of this version changed from Framework to XCFramework to provide support for Apple Silicon chips, SPM (in future) and also to adapt a new way of distributing frameworks by Apple that help to organize binaries for multiple platforms and debug symbols (dSYM, BCSymbols) better.
+
+Remember, that the old way of distributing fat framework is still available and it could be downloaded from GitHub (path: 'SDK/framework') and from GitHub releases (https://github.com/Synerise/ios-sdk/releases).
+
+### Changed
+- The way of distributing framework by CocoaPods: from Framework to XCFramework.
+
+### Added
+- Additional validation of Synerise notification payload in `NotificationServiceExtension`. Developers had to check whether the notification contains the Synerise payload before passing it to `NotificationServiceExtension`. Now, additionally, `NotificationServiceExtension` checks it internally and rejects the notification when it is not valid Synerise payload format.
+
+
 ## [4.1.1] - 2022-05-29
 
 ### Fixed
@@ -28,6 +41,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 
 ## [4.0.0] - 2022-05-05
+
 IMPORTANT: This major version does not change compatibility.
 
 ### Fixed
