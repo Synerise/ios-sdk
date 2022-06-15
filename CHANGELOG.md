@@ -62,6 +62,13 @@ IMPORTANT: This major version does not change compatibility.
 - `.pinActivationRequired` from `ClientConditionalAuthStatus`.
 
 
+## [3.11.2] - 2022-06-15
+
+### Fixed
+- Some clients have issue with correct value of sdkVersion in AppStarted event, which propably occurs depending to project settings. We have changed it to save hardcoded value so it will solve those issues permanently.
+- Swift names for some public classes.
+
+
 ## [3.11.1] - 2022-04-28
 
 ### Fixed
