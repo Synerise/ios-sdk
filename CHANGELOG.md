@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [3.11.2] - 2022-06-15
+
+### Fixed
+- Some clients have issue with correct value of sdkVersion in AppStarted event, which propably occurs depending to project settings. We have changed it to save hardcoded value so it will solve those issues permanently.
+- Swift names for some public classes.
+
+
 ## [3.11.1] - 2022-04-28
 
 ### Fixed
