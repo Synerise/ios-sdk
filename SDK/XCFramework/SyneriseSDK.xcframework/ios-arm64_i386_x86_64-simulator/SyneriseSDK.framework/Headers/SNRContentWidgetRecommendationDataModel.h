@@ -20,16 +20,19 @@ NS_SWIFT_NAME(ContentWidgetRecommendationDataModel)
 @property (copy, nonatomic, nonnull, readonly) NSURL *imageURL;
 @property (copy, nonatomic, nullable, readwrite) NSString *topText;
 @property (copy, nonatomic, nonnull, readonly) NSString *title;
+@property (copy, nonatomic, nonnull, readwrite) NSString *subtitle;
+@property (copy, nonatomic, nonnull, readwrite) NSString *identifier;
 @property (copy, nonatomic, nonnull, readonly) NSString *priceCurrency;
 @property (copy, nonatomic, nonnull, readonly) NSNumber *priceValue;
 @property (copy, nonatomic, nullable, readwrite) NSNumber *salePriceValue;
+@property (copy, nonatomic, nullable, readwrite) NSNumber *loyaltyPointsNumber;
 
 @property (strong, nonatomic, nullable, readwrite) SNRContentWidgetBadgeDataModel *badge;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype)initWithimageURL:(NSURL *)imageURL title:(NSString *)title priceCurrency:(NSString *)priceCurrency price:(NSNumber *)price salePrice:(nullable NSNumber *)salePrice NS_SWIFT_NAME(init(imageURL:title:priceCurrency:price:salePrice:));
+- (instancetype)initWithImageURL:(NSURL *)imageURL title:(NSString *)title priceCurrency:(NSString *)priceCurrency price:(NSNumber *)price salePrice:(nullable NSNumber *)salePrice NS_SWIFT_NAME(init(imageURL:title:priceCurrency:price:salePrice:));
 
 @end
 

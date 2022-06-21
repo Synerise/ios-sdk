@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.3.0] - 2022-06-20
+
+### Added
+- New labels in Content Widget: 'subtitle', 'identifier' and 'loyaltyPoints'. These properties are added to `ContentWidgetBasicProductItemLayout` and are provided with customization properties such as inserts, font, font color, and an additional label for loyalty points as suffix text. Appearance of the properties is set in `ContentWidgetBasicProductItemLayout` and their data in `ContentWidgetRecommendationDataModel`. All properties are optional and will not be displayed if they were not set it in the data model.
+
+
 ## [4.2.0] - 2022-06-14
 
 IMPORTANT: Distribution of this version changed from Framework to XCFramework to provide support for Apple Silicon chips, SPM (in future) and also to adapt a new way of distributing frameworks by Apple that help to organize binaries for multiple platforms and debug symbols (dSYM, BCSymbols) better.

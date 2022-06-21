@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/SNRContentWidgetBasicProductItemLayout.h</key>
 		<data>
-		N05cQsqNSqhzbJLro0PqXRHZ/j0=
+		h9WdUb086pljxpGJzHLRKK+Kc/I=
 		</data>
 		<key>Headers/SNRContentWidgetGridLayout.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/SNRContentWidgetItemLayout.h</key>
 		<data>
-		K3bEmohnAMd+5Zagg6pAxEj4zv4=
+		6IOeQQROXw5OLAyCe7QVZEobNMs=
 		</data>
 		<key>Headers/SNRContentWidgetLayout.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/SNRContentWidgetRecommendationDataModel.h</key>
 		<data>
-		bm24y4JU39UFR9+tnH1Q07KnJN4=
+		MisJnHSJB/yLKjwMOW5ACyrJI+c=
 		</data>
 		<key>Headers/SNRContentWidgetRecommendationsOptions.h</key>
 		<data>
@@ -494,7 +494,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c0rtrLxfQn9PnPp8IHUNJuXWh/A=
+		8INXIMMTYH0i6F2EIBznhThLWD4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -506,31 +506,31 @@
 		</data>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/objects-11.0+.nib</key>
 		<data>
-		StJ7hSfgEe4KUjNoBZneagEDJLQ=
+		wFUEDz44VQFcMneKhDBJDcpHPpw=
 		</data>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/runtime.nib</key>
 		<data>
-		E2HnVuHmgqY0BIbU1l37F5t65ao=
+		ijTs/YdP9T1zLQrVDvw09MTDRXs=
 		</data>
 		<key>SNRInjectorTemplateImageAsBackgroundView.nib</key>
 		<data>
-		IdfUENGrAuZVSdqtmLPa+h25UiE=
+		fhwMP17ViyUopppzHFacdnh4iZY=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/objects-11.0+.nib</key>
 		<data>
-		+tMB1ra746wmk/tL6hMez7ye2FA=
+		ppI0IOLcHUyrax4I7qrq4lfjwfQ=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/runtime.nib</key>
 		<data>
-		l4UXEZBuCxcczAl6kZX7Zb7NGYs=
+		ZiNg3IjJlXC7C7NKJZuNs4vIPIs=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/objects-11.0+.nib</key>
 		<data>
-		yllaNCLTK5fzqYxh/OmOkJH1nL8=
+		1C9aMpAAhhn/HRRvw+bhQ33K5OY=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/runtime.nib</key>
 		<data>
-		HZMdstqOwbL4yROaNmml+oUsfVs=
+		M7IMe32oaa5tv0n7dTV319r3PPU=
 		</data>
 		<key>SNRInjectorWalkthroughViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -542,7 +542,7 @@
 		</data>
 		<key>SNRTrackerEvents.momd/TrackerEvents.mom</key>
 		<data>
-		sUGofeBVRmYCBIkr1uzyvks7Ipw=
+		TozcyLqoWjPBrlCWp5jI1fdpE2M=
 		</data>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>
 		<data>
@@ -947,11 +947,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N05cQsqNSqhzbJLro0PqXRHZ/j0=
+			h9WdUb086pljxpGJzHLRKK+Kc/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			FayIaP6/1RxL13KE0/Z3sI8fXctaozSKVJL8uwfS8HM=
+			EIODZRxzNqm1z9BfMhB6cTBDh51VfuBHPPaBGpiMwmM=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetGridLayout.h</key>
@@ -991,11 +991,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3bEmohnAMd+5Zagg6pAxEj4zv4=
+			6IOeQQROXw5OLAyCe7QVZEobNMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			P4JKrtigiBdI0YVXs94S0beOyrcypY9IVcWk7zWk0nQ=
+			tTkx8tdnwC2JjRHcd1S2yjmy7w8Gzrnz5EtGikCyzV8=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetLayout.h</key>
@@ -1024,11 +1024,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bm24y4JU39UFR9+tnH1Q07KnJN4=
+			MisJnHSJB/yLKjwMOW5ACyrJI+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			wGrP/wA+DMyF9GaZxBS9gUP1rJIXkoHtz+rW+fAQFug=
+			21UelpKDd32a7gpL6/4Iy5QBCgErwE+ef9yZscrOjWk=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetRecommendationsOptions.h</key>
@@ -1937,77 +1937,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			StJ7hSfgEe4KUjNoBZneagEDJLQ=
+			wFUEDz44VQFcMneKhDBJDcpHPpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			d6fA3nvAysHEpvtW5qfarVheDKkdAVv/h/sWFPVL3xQ=
+			M/vT+NxUxblTWBQKotCJyIjqOZf5CMHyXUlTwzMiF8o=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E2HnVuHmgqY0BIbU1l37F5t65ao=
+			ijTs/YdP9T1zLQrVDvw09MTDRXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8on1XeWZA+bDOkdNhkunun8GGI6H6JBr+LUqfb8wjZk=
+			+e+xdo1mKU3/88qMxCRlSIWqaq+fIGMBdmln5LOoxps=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageAsBackgroundView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IdfUENGrAuZVSdqtmLPa+h25UiE=
+			fhwMP17ViyUopppzHFacdnh4iZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			weWxFgzTUxe8McG5Tk4T9Bp3BwQXaZHjVLrTdU98kQg=
+			U6HbUi9x6+q4OWVtyeKf7uvle/6ZiXC3EcJAPSL+UzA=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+tMB1ra746wmk/tL6hMez7ye2FA=
+			ppI0IOLcHUyrax4I7qrq4lfjwfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vQptmHbvv0/q9fepWTuKzelhmgM5mLsMP9IjwEhwD9s=
+			bMlFz0Jhlq9sjTOZgyrMgUJIgCmtCGfOYZKTCx+tsnA=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l4UXEZBuCxcczAl6kZX7Zb7NGYs=
+			ZiNg3IjJlXC7C7NKJZuNs4vIPIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			vhzgQscsiyzKxg1ij+5D7vp8yOf57yTHApn4wXIJTDQ=
+			mdZiOG24mGLbB8WBo6DlfBla14QAGCDsYBkwBRJntyk=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yllaNCLTK5fzqYxh/OmOkJH1nL8=
+			1C9aMpAAhhn/HRRvw+bhQ33K5OY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kh5CX5C/kONjtlss8XrxBBCfXJTfQuRiUcWYhqxX9I4=
+			O6CeprTQ+BOAqDCGtbAdS7Qkoao48Xye6oW8xscWGlA=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HZMdstqOwbL4yROaNmml+oUsfVs=
+			M7IMe32oaa5tv0n7dTV319r3PPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			LNAjjjgEMkjCgaTR/k/l/xFyf5yBa/49GxtA6mN0DcE=
+			j5tND0OdtANx4BHGRko/DRG/D1YOOsp9yuqYpERORNc=
 			</data>
 		</dict>
 		<key>SNRInjectorWalkthroughViewController.nib/objects-11.0+.nib</key>
@@ -2036,11 +2036,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sUGofeBVRmYCBIkr1uzyvks7Ipw=
+			TozcyLqoWjPBrlCWp5jI1fdpE2M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kt8qbLb7BJqEWXKDM0fXCyVTk1tTM7dB+O8cAuUzA50=
+			6btRhd1z28kQ+b0ryJe0Ccnul4VtsMeveELtBtKvXIE=
 			</data>
 		</dict>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>
