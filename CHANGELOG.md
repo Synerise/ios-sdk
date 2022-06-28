@@ -6,7 +6,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 ## [4.4.0] - 2022-06-28
 
 ### Added
-- We added a new `Client.signOut(mode:)` method with two modes: `.logout` and `.logoutWithSessionDestroy`. They both notify the backend that the client is signed out, clear the client session on the device with a JWT Token, and work similiarly to `Client.signOut()`. Additionaly, `logoutWithSessionDestroy` clears the anonymous session and regenerates the client UUID.
+- We added a new `Client.signOut(mode:)` method with two modes: `.signOut` and `.signOutWithSessionDestroy`. They both notify the backend that the client is signed out, clear the client session on the device with a JWT Token, and work similiarly to `Client.signOut()`. Additionaly, `signOutWithSessionDestroy` clears the anonymous session and regenerates the client UUID.
 
 
 ## [4.3.0] - 2022-06-20
