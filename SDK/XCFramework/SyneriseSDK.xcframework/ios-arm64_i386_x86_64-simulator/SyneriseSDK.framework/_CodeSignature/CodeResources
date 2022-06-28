@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SNRClient.h</key>
 		<data>
-		Zrvk+RGU5lB4fbjKq7QpRewDP9w=
+		g0IcEQ99JRyUzVaPmyhW4ajeddM=
 		</data>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<data>
@@ -111,6 +111,10 @@
 		<key>Headers/SNRClientSex.h</key>
 		<data>
 		WezZ9f6gFy8X4HKTa98HFmyJ69k=
+		</data>
+		<key>Headers/SNRClientSignOutMode.h</key>
+		<data>
+		BA5S7dQR5oDDIyO5S4y81y/X49E=
 		</data>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
 		<data>
@@ -490,11 +494,11 @@
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		9/LSmDeAq3BYkZg9oLDM/iNsTdI=
+		/Bh0M69lBaY8yCoUyTCZqPUllso=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8INXIMMTYH0i6F2EIBznhThLWD4=
+		/AMDx/3WWQqmYFQZnSS8lpDdvdM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -672,11 +676,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zrvk+RGU5lB4fbjKq7QpRewDP9w=
+			g0IcEQ99JRyUzVaPmyhW4ajeddM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mm6kZrhQCxsGsFCdyUNPvJRyZ7RXjgIhm6CDhe00vuM=
+			kncSCEUupnAvTgN90zFxkwVYbgfrLqVRfaLij/O1Wmc=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAccountInformation.h</key>
@@ -864,6 +868,17 @@
 			<key>hash2</key>
 			<data>
 			rkLwn3D6WAAgcXU8QdU0gRBdV6vkj0XwUtZKtzIyZu8=
+			</data>
+		</dict>
+		<key>Headers/SNRClientSignOutMode.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BA5S7dQR5oDDIyO5S4y81y/X49E=
+			</data>
+			<key>hash2</key>
+			<data>
+			oorQ2QMTAj/HoxR1oCEkbittcuIDtnVtNH9E+pbWpik=
 			</data>
 		</dict>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
@@ -1904,11 +1919,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9/LSmDeAq3BYkZg9oLDM/iNsTdI=
+			/Bh0M69lBaY8yCoUyTCZqPUllso=
 			</data>
 			<key>hash2</key>
 			<data>
-			dey4osoGXAu39Ui9aKw9LbBx8Xs6e72Kvwqsr+FdO50=
+			i1xuw8xRaNzaOqAATrSr4c9ROwr331xcF4aMGI/yYbs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
