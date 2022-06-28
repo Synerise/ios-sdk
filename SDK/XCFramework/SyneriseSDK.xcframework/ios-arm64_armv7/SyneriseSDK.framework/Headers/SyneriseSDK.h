@@ -55,6 +55,7 @@
 #import <SyneriseSDK/SNRSyneriseActivity.h>
 #import <SyneriseSDK/SNRHostApplicationType.h>
 #import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
+#import <SyneriseSDK/SNRClientSignOutMode.h>
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
 #import <SyneriseSDK/SNRClientIdentityProvider.h>
 

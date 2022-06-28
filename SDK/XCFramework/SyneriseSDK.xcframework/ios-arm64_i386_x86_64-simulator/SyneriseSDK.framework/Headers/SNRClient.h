@@ -7,6 +7,7 @@
 //
 
 #import <SyneriseSDK/SNRTokenOrigin.h>
+#import <SyneriseSDK/SNRClientSignOutMode.h>
 #import <SyneriseSDK/SNRClientSessionEndReason.h>
 #import <SyneriseSDK/SNRClientIdentityProvider.h>
 #import <SyneriseSDK/SNRApiError.h>
@@ -301,6 +302,11 @@ NS_SWIFT_NAME(Client)
  * Signs out the customer.
  */
 + (void)signOut NS_SWIFT_NAME(signOut());
+
+/**
+ * Signs out the customer.
+ */
++ (void)signOutWithMode:(SNRClientSignOutMode)mode NS_SWIFT_NAME(signOut(mode:));
 
 /**
  * Refreshes the customer's token.
