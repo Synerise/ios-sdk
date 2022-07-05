@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.exclude_files         = [ 'Pod/**', 'SampleAppSwift/**' ]
   s.frameworks            = 'Foundation', 'UIKit', 'UserNotifications', 'WebKit', 'CoreTelephony'
   s.vendored_frameworks   = 'SDK/XCFramework/SyneriseSDK.xcframework'
+  s.preserve_paths        = 'SDK/XCFramework/SyneriseSDK.xcframework/**'
   s.requires_arc          = true
   s.xcconfig              = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/SyneriseSDK"' }
 end
