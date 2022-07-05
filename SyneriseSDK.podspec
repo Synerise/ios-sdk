@@ -1,18 +1,18 @@
 Pod::Spec.new do |s|
-  s.name          = "SyneriseSDK"
-  s.version       = "3.11.2"
-  s.summary       = "SyneriseSDK v. 3.11.2"
-  s.description   = "iOS library for Synerise omnichannel platform"
-  s.homepage      = "https://synerise.com"
-  s.license       = { :type => "MIT" }
-  s.authors       = "Synerise"
-  s.platform      = :ios, "9.0"
-  s.source        = { :git => 'https://github.com/Synerise/ios-sdk.git', :tag => s.version.to_s }
-  s.exclude_files = [ 'SampleAppSwift/**' ]
-  s.frameworks    = 'UIKit', 'Foundation'
-  s.vendored_frameworks = 'Pod/SyneriseSDK.framework'
-  s.requires_arc        = true
-  s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/SyneriseSDK"' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.name                  = "SyneriseSDK"
+  s.version               = "3.12.0"
+  s.summary               = "This is the Synerise iOS SDK (v. 3.12.0) for Synerise platform."
+  s.homepage              = "https://www.synerise.com"
+  s.license               = { :type => "MIT" }
+  s.authors               = "Synerise"
+  s.readme                = 'https://github.com/Synerise/ios-sdk/blob/master/README.md'
+  s.changelog             = 'https://github.com/Synerise/ios-sdk/blob/master/CHANGELOG.md'
+  s.documentation_url     = "https://help.synerise.com"
+  s.platform              = :ios, "9.0"
+  s.source                = { :git => 'https://github.com/Synerise/ios-sdk.git', :tag => s.version.to_s }
+  s.exclude_files         = [ 'Pod/**', 'SampleAppSwift/**' ]
+  s.frameworks            = 'Foundation', 'UIKit', 'UserNotifications', 'WebKit', 'CoreTelephony'
+  s.vendored_frameworks   = 'SDK/XCFramework/SyneriseSDK.xcframework'
+  s.requires_arc          = true
+  s.xcconfig              = { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/SyneriseSDK"' }
 end
