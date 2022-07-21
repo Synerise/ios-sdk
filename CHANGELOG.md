@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.4.1] - 2022-07-19
+## [4.4.1] - 2022-07-21
 
 ### Fixed
 - Potential issues related to sharing data with notification extensions.
