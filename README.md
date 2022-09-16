@@ -2,12 +2,12 @@
   <img src="https://synerise.com/images/logo-synerise.svg" width="250"/>
 </p>
 
-# Synerise iOS SDK (v4.4.1) - User documentation
+# Synerise iOS SDK (v4.5.0) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg?style=flat-square)](https://github.com/Synerise/ios-sdk/releases) 
-[![CocoaPods](https://img.shields.io/badge/pod-v4.4.1-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v4.5.0-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat-square)](https://help.synerise.com/)
 
@@ -15,13 +15,13 @@
 
 ## Documentation
 
-Most up-to-date documentation is available at [Synerise Help Center - iOS SDK]( https://help.synerise.com/developers/ios-sdk).
+Most up-to-date documentation is available at [Synerise Help Center - iOS SDK](https://help.synerise.com/developers/ios-sdk).
 
 ## Requirements
 
-* Xcode 12 and iOS SDK 14
-* iOS 9.0+ target deployment
-* Valid architectures: armv7, armv7s, arm64 devices and i386, x86_64 simulators
+* Xcode 14 and iOS SDK 16
+* iOS 9.0+ minimum deployment target
+* Valid architectures: arm64 devices and arm64, x86_64 simulators
 
 ## Install Synerise SDK from CocoaPods
 

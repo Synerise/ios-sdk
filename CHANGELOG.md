@@ -3,7 +3,22 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.4.1] - 2022-07-21
+## [4.5.0] - 2022-09-15
+
+IMPORTANT: 
+- Due to recommendations and deprecations introduced by Apple, armv7, armv7s (iOS devices), and i386 (iOS Simulator) architectures are no longer supported.
+- Support for iOS 9 and 10 will end soon and the minimum deployment target will change to iOS 11.
+- Support for bitcode will end soon.
+
+### Fixed
+- Issues with thread prioritization (iOS 16 issues detected by Thread Performance Checker).
+
+### Changed
+- End support for armv7, armv7s (iOS devices) and i386 (iOS Simulator).
+- Improvements to stability.
+
+
+## [4.4.1] - 2022-07-19
 
 ### Fixed
 - Potential issues related to sharing data with notification extensions.
