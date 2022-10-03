@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.6.0] - 2022-09-29
+
+### Added
+- We added in-app messaging module. In-app messages are designed to enhance the user experience in your mobile application without ever being intrusive. Customizable layouts can personalize content and style to create the perfect in-app message to fit your brand. Using Synerise segmentation, you can target and engage the most relevant audience.
+
+### Removed
+- `Injector.getBanners` method.
+- `Injector.fetchBanners(success:failure:)` method.
+- `Injector.showBanner(_:markPresented:)` method.
+
+
 ## [4.5.0] - 2022-09-15
 
 IMPORTANT: 
