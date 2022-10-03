@@ -11,6 +11,7 @@
 #import <SyneriseSDK/SNRNotificationsSettings.h>
 #import <SyneriseSDK/SNRTrackerSettings.h>
 #import <SyneriseSDK/SNRInjectorSettings.h>
+#import <SyneriseSDK/SNRInAppMessagingSettings.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +31,11 @@ NS_SWIFT_NAME(Settings)
  * Notification settings of the SDK
  */
 @property (strong, nonatomic, nonnull, readonly) SNRNotificationsSettings *notifications;
+
+/**
+ * In-App Messaging settings of the SDK
+ */
+@property (strong, nonatomic, nonnull, readonly) SNRInAppMessagingSettings *inAppMessaging;
 
 /**
  * Settings for the Tracker module

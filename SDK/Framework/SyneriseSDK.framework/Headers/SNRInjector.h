@@ -6,6 +6,8 @@
 //  Copyright (c) 2022 Synerise. All rights reserved.
 //
 
+@class SNRInAppMessageData;
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -89,6 +91,77 @@ NS_SWIFT_NAME(InjectorBannerDelegate)
 
 @end
 
+/**
+ * @protocol SNRInjectorInAppMessageDelegate
+ *
+ * A delegate to handle events from in-app message campaigns.
+ */
+
+NS_SWIFT_NAME(InjectorInAppMessageDelegate)
+@protocol SNRInjectorInAppMessageDelegate
+
+@optional
+
+/**
+ * This method is called after an in-app message is loaded and Synerise SDK asks for permission to show it.
+ *
+ * @param data Model representation of the in-app message.
+ */
+- (BOOL)SNR_shouldInAppMessageAppear:(SNRInAppMessageData *)data NS_SWIFT_NAME(snr_shouldInAppMessageAppear(data:));
+
+/**
+ * This method is called after an in-app message appears.
+ *
+ * @param data Model representation of the in-app message.
+ */
+- (void)SNR_inAppMessageDidAppear:(SNRInAppMessageData *)data NS_SWIFT_NAME(snr_inAppMessageDidAppear(data:));
+
+/**
+ * This method is called after an in-app message disappears.
+ *
+ * @param data Model representation of the in-app message.
+ */
+- (void)SNR_inAppMessageDidDisappear:(SNRInAppMessageData *)data NS_SWIFT_NAME(snr_inAppMessageDidDisappear(data:));
+
+/**
+ * This method is called when an in-app message changes size.
+ */
+- (void)SNR_inAppMessageDidChangeSize:(CGRect)rect NS_SWIFT_NAME(snr_inAppMessageDidChangeSize(rect:));
+
+/**
+ * This method is called when a individual context for an in-app message is needed.
+ *
+ * @param data Model representation of the in-app message.
+ */
+- (nullable NSDictionary *)SNR_inAppMessageContextIsNeeded:(SNRInAppMessageData *)data NS_SWIFT_NAME(snr_inAppMessageContextIsNeeded(data:));
+
+/**
+ * This method is called when Synerise handles URL action from in-app messages.
+ *
+ * @param data Model representation of the in-app message.
+ * @param url URL address value from the activity.
+ */
+- (void)SNR_inAppMessageHandledURLAction:(SNRInAppMessageData *)data url:(NSURL *)url NS_SWIFT_NAME(snr_inAppMessageHandledAction(data:url:));
+
+/**
+ * This method is called when Synerise handles deeplink action from in-app messages.
+ *
+ * @param data Model representation of the in-app message.
+ * @param deeplink Literal text value from the activity.
+ */
+- (void)SNR_inAppMessageHandledDeeplinkAction:(SNRInAppMessageData *)data deeplink:(NSString *)deeplink NS_SWIFT_NAME(snr_inAppMessageHandledAction(data:deeplink:));
+
+/**
+ * This method is called when a custom action is handled from the in-app messages.
+ *
+ * @param data Model representation of the in-app message.
+ * @param name Custom action name for identification.
+ * @param parameters  Custom action parameters.
+ */
+- (void)SNR_inAppMessageHandledCustomAction:(SNRInAppMessageData *)data name:(NSString *)name parameters:(NSDictionary *)parameters NS_SWIFT_NAME(snr_inAppMessageHandledCustomAction(data:name:parameters:));
+
+@end
+
 
 /**
  * @class SNRInjector
@@ -115,6 +188,13 @@ NS_SWIFT_NAME(Injector)
 + (void)setBannerDelegate:(id<SNRInjectorBannerDelegate>)delegate;
 
 /**
+ * Sets an object for in-app messages delegate methods.
+ *
+ * @param delegate An object that implements the `SNRInAppMessageDelegate` protocol.
+ */
++ (void)setInAppMessageDelegate:(id<SNRInjectorInAppMessageDelegate>)delegate;
+
+/**
  * Fetches a walkthrough.
  */
 + (void)getWalkthrough;
@@ -135,20 +215,6 @@ NS_SWIFT_NAME(Injector)
 + (BOOL)isLoadedWalkthroughUnique;
 
 /**
- * Provides valid banners directly from SDK cache.
- */
-+ (NSArray<NSDictionary *> *)getBanners;
-
-/**
- * Fetches banners set for mobile campaigns and caches valid ones.
- *
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)fetchBannersWithSuccess:(void (^)(NSArray<NSDictionary *> *banners))success
-                        failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(fetchBanners(success:failure:));
-
-/**
  * Fetches Push Notifications set for mobile campaigns.
  *
  * @param success A block object to be executed when the operation finishes successfully.
@@ -156,15 +222,6 @@ NS_SWIFT_NAME(Injector)
  */
 + (void)getPushesWithSuccess:(void (^)(NSArray<NSDictionary *> *pushes))success
                      failure:(void (^)(NSError *error))failure NS_SWIFT_NAME(getPushes(success:failure:));
-
-/**
- * Shows a banner immediately.
- *
- * @param bannerDictionary Dictionary representation of a banner.
- * @param markPresented Sets a banner as presented and this banner instance representation will not appear again.
- */
-+ (void)showBanner:(NSDictionary *)bannerDictionary
-     markPresented:(BOOL)markPresented NS_SWIFT_NAME(showBanner(_:markPresented:));
 
 @end
 

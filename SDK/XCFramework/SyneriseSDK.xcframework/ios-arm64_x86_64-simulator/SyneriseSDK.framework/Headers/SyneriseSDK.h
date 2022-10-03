@@ -19,6 +19,7 @@
 #import <SyneriseSDK/SNRSettings.h>
 #import <SyneriseSDK/SNRGeneralSettings.h>
 #import <SyneriseSDK/SNRNotificationsSettings.h>
+#import <SyneriseSDK/SNRInAppMessagingSettings.h>
 #import <SyneriseSDK/SNRTrackerSettings.h>
 #import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
 #import <SyneriseSDK/SNRTrackerDeclarativeTrackingSettings.h>
@@ -136,6 +137,7 @@
 #import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRScreenViewResponse.h>
 #import <SyneriseSDK/SNRScreenViewAudience.h>
+#import <SyneriseSDK/SNRInAppMessageData.h>
 
 // Content Widget
 #import <SyneriseSDK/SNRContentWidgetAppearance.h>

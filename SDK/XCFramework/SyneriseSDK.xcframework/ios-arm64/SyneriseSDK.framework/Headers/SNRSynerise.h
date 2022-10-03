@@ -226,12 +226,6 @@ NS_SWIFT_NAME(Synerise)
  */
 + (void)handleNotification:(NSDictionary *)userInfo actionIdentifier:(nullable NSString *)actionIdentifier;
 
-#ifdef DEBUG
-+ (NSString *)getDataDebugDescription;
-+ (void)clearAllPersistentAndTemporaryData;
-+ (void)clearAuthTokensData;
-#endif
-
 @end
 
 NS_ASSUME_NONNULL_END

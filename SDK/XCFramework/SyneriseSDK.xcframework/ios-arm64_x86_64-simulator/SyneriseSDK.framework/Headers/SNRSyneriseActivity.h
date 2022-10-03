@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger, SNRSyneriseActivity) {
     /// Walkthrough campaign activity
     SNRSyneriseActivityWalkthrough,
     
+    /// In-App Message campaign activity
+    SNRSyneriseActivityInAppMessage
+    
 } NS_SWIFT_NAME(SyneriseActivity);
 
 
