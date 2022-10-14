@@ -198,7 +198,7 @@
 		</data>
 		<key>Headers/SNRErrorCode.h</key>
 		<data>
-		mpmt0j7ub/TVZj47yv8/xM8EzuM=
+		245j2GWI9s0/sBm1crBgQrartbw=
 		</data>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<data>
@@ -494,7 +494,7 @@
 		</data>
 		<key>Headers/SNRVoucherCodesData.h</key>
 		<data>
-		m7NtXHspaY4Yq0Uc+NHOLyYjPks=
+		jzh6WIsCAZb5p9hZ/gmu6IDXwXM=
 		</data>
 		<key>Headers/SNRVoucherCodesResponse.h</key>
 		<data>
@@ -506,7 +506,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		83ElG/Zc1Kx6tpS+M7dIT23iVSI=
+		bvK7C4T0R2MpoVuFu0JBoNjbKWw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -572,7 +572,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WICITDjs/bUUtOz3Yd6UUb5cy5I=
+			fn8F8Y6KFFqwfclCRA/Sl7Z3Ttc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -581,7 +581,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0dVZMhtohCsjUdSUwRKpyKgMbSA=
+			8xhX93+pOqKHUN35HbDEuD9JDgQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1121,11 +1121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mpmt0j7ub/TVZj47yv8/xM8EzuM=
+			245j2GWI9s0/sBm1crBgQrartbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rozOZIDbAzPi8pJhY6jMkYFXVL/uTzLGSo0MyAFlR7Y=
+			7bgIZTWIQm8wSjTb0igGGdwx0GqG6fkKwEvoZqu3YUs=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
@@ -1935,11 +1935,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7NtXHspaY4Yq0Uc+NHOLyYjPks=
+			jzh6WIsCAZb5p9hZ/gmu6IDXwXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BW7yxi4NCEV5SRw3EauClZgCOCY9rwYm9rcgn93TyLw=
+			FpPkBK2gfq6h3znbefzY6+3rDwcmIpDaEJdndspGfiM=
 			</data>
 		</dict>
 		<key>Headers/SNRVoucherCodesResponse.h</key>
@@ -2133,11 +2133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WICITDjs/bUUtOz3Yd6UUb5cy5I=
+			fn8F8Y6KFFqwfclCRA/Sl7Z3Ttc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mLXn+xN0XZhhtdrnAbnIO7owWKBYiEklTrDXK9bU8WU=
+			gvZ7Y6RjglnzeSdCZkbhIgShl4/HK9FM1WKMK2ZiXS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2146,11 +2146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0dVZMhtohCsjUdSUwRKpyKgMbSA=
+			8xhX93+pOqKHUN35HbDEuD9JDgQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			S3ejfkHrtAjq6drEWqtTLYn1n04T1br9AIDL6KNiZ70=
+			jUqC6sFIDZCpWURoAmF2gxfiFnaPrVkPyMUTlo4mVvQ=
 			</data>
 			<key>optional</key>
 			<true/>

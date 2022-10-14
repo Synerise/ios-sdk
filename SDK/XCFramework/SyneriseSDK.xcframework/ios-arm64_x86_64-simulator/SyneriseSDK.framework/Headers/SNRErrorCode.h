@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeInternalInconsistency = 3060,
     SNRErrorCodeInvalidImageResources = 3090,
     SNRErrorCodeImageNotDownloaded = 3110,
+    SNRErrorCodeWebViewNotPreloaded = 3130,
     SNRErrorCodeCryptoFailedError = 3610,
     SNRErrorCodeMigrationError = 3710,
     SNRErrorCodeContentWidgetError = 3810,
