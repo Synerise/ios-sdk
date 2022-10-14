@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.6.2] - 2022-10-14
+
+### Fixed
+- In-app message timeout mechanism: even though an in-app message timed out, it was was rendered.
+- Unnecessary sending of the `inapp.show` event when rendering a timed-out in-app message.
+- Crash occurring when re-initialization was performed instantly after initialization.
+- Issues with mapping response in the `Promotions.getAssignedVoucherCodes(success:failure:)` method.
+
+### Changed
+- The `action` parameter in in-app messaging error messages was changed from `inApp.jinjaRenderFail` to `inApp.renderFail`.
+- Improvements to stability.
+
+
 ## [4.6.1] - 2022-10-04
 
 ### Fixed

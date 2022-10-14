@@ -2,12 +2,12 @@
   <img src="https://synerise.com/images/logo-synerise.svg" width="250"/>
 </p>
 
-# Synerise iOS SDK (v4.6.1) - User documentation
+# Synerise iOS SDK (v4.6.2) - User documentation
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg?style=flat-square)](https://github.com/Synerise/ios-sdk/releases) 
-[![CocoaPods](https://img.shields.io/badge/pod-v4.6.1-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v4.6.2-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat-square)](https://help.synerise.com/)
 
