@@ -18,7 +18,7 @@ NS_SWIFT_NAME(InAppMessagingSettings)
 /**
  * This parameter sets a timeout for In-app message rendering.
  *
- * The default value is 2 seconds.
+ * The default value is 5 seconds.
  */
 @property (assign, nonatomic, readwrite) NSTimeInterval renderingTimeout;
 

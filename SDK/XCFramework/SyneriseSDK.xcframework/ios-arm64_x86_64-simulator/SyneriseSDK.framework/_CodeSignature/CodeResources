@@ -234,7 +234,7 @@
 		</data>
 		<key>Headers/SNRInAppMessagingSettings.h</key>
 		<data>
-		6g1+rK6wN2oRb0dlXKjyoG8UMGQ=
+		KisLIC7txsTE5OJjeLawti+F/+A=
 		</data>
 		<key>Headers/SNRInjector.h</key>
 		<data>
@@ -506,7 +506,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bvK7C4T0R2MpoVuFu0JBoNjbKWw=
+		XLdIX9CxW4abWM7XNm2HJ4d4WuE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -581,7 +581,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8xhX93+pOqKHUN35HbDEuD9JDgQ=
+			ncMcdIFKZbASzecwFKEhiMHnsko=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1220,11 +1220,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6g1+rK6wN2oRb0dlXKjyoG8UMGQ=
+			KisLIC7txsTE5OJjeLawti+F/+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMXgjaobZl6Ewe3TymNUnoi305TS3gIz65b2P7E5mZk=
+			i0cbbiHLDTtJ7Jlu+Vibrfov/qeJBNr2s54rWp0uqIQ=
 			</data>
 		</dict>
 		<key>Headers/SNRInjector.h</key>
@@ -2146,11 +2146,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8xhX93+pOqKHUN35HbDEuD9JDgQ=
+			ncMcdIFKZbASzecwFKEhiMHnsko=
 			</data>
 			<key>hash2</key>
 			<data>
-			jUqC6sFIDZCpWURoAmF2gxfiFnaPrVkPyMUTlo4mVvQ=
+			s599uT1Q8Mr5VSmdzCVEe6WjnuZ8qQPrRo7PIFoLUEQ=
 			</data>
 			<key>optional</key>
 			<true/>
