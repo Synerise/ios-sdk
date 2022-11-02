@@ -13,7 +13,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `SRInApp.closeAndTrigger` method to JS interface in the In-app messaging module. This method allows triggering the next in-app message instantly after the current message is closed. The method sends an event built from the provided parameters.
 
 ### Changed
-- All the SDK delegate reference types from weak to strong. This is for secure host app implementation and de-allocating objects by ARC.
+- All the SDK delegate reference types from weak to strong. This is for secure host app implementation and preventing de-allocating objects by ARC.
 - `Synerise.settings.inAppMessaging.renderingTimeout` default value from 2 to 5.
 - Exclude unwanted SwiftUI maintaining view controllers from AutoTracking.
 - Improvements to stability.
