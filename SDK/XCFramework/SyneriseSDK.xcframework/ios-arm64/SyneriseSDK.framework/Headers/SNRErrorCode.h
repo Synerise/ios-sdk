@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeMigrationError = 3710,
     SNRErrorCodeContentWidgetError = 3810,
     SNRErrorCodeNotificationServiceExtensionError = 3910,
+    SNRErrorCodeObjectConsistencyError = 4010,
     
     SNRErrorCodeUnknownApiError = -102,
     SNRErrorCodeNetworkApiError = -105,

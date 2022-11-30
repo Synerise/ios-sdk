@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.8.0] - 2022-11-30
+
+### Fixed
+- Potential In-app messaging issue which caused presenting in-app message when the user was not in the required segment.
+- Issue with In-app messaging database execute operations which caused crash when the SDK could not open persistent store for the database.
+- In-app messaging triggering issues in some cases. The module was enabled too late, so for example triggering `push.click` events when the app was closed was not possible.
+- Potential issues with in-app messages processing when the sdk is reinitialized.
+- Memory management problems when in-app message was hidden. They were caused by implementing `SyneriseDelegate` methods to handle the SDK actions and choosing `SyneriseActivityActionHide` as the activity action.
+- Issue with in-app messaging mechanisms causing a crash when the SDK could not open the database.
+- Potential issue with maintaining anonymous token for networking requests when customer context is changed.
+
+### Added
+- `SRInApp.hide` method to JS interface in the In-app messaging module. This method instantly hides the currently presented in-app message. This method is similar to `SRInApp.close`, but it is not recognized as user discard.
+- `SRInApp.hideAndTrigger` method to JS interface in the In-app messaging module. This method allows triggering the next in-app message instantly after the current message is hidden. The method sends an event built from the provided parameters. This method is similar to `SRInApp.closeAndTrigger`, but it is not recognized as user discard.
+
+
 ## [4.7.0] - 2022-10-31
 
 ### Fixed
@@ -13,7 +29,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `SRInApp.closeAndTrigger` method to JS interface in the In-app messaging module. This method allows triggering the next in-app message instantly after the current message is closed. The method sends an event built from the provided parameters.
 
 ### Changed
-- All the SDK delegate reference types from weak to strong. This is for secure host app implementation and preventing de-allocating objects by ARC.
+- All the SDK delegate reference types from weak to strong. This is for secure host app implementation and de-allocating objects by ARC.
 - `Synerise.settings.inAppMessaging.renderingTimeout` default value from 2 to 5.
 - Exclude unwanted SwiftUI maintaining view controllers from AutoTracking.
 - Improvements to stability.
