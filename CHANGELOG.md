@@ -7,11 +7,10 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ### Fixed
 - Potential In-app messaging issue which caused presenting in-app message when the user was not in the required segment.
-- Issue with In-app messaging database execute operations which caused crash when the SDK could not open persistent store for the database.
 - In-app messaging triggering issues in some cases. The module was enabled too late, so for example triggering `push.click` events when the app was closed was not possible.
+- Issue with in-app messaging database mechanisms causing a crash when the SDK could not open the database.
 - Potential issues with in-app messages processing when the sdk is reinitialized.
 - Memory management problems when in-app message was hidden. They were caused by implementing `SyneriseDelegate` methods to handle the SDK actions and choosing `SyneriseActivityActionHide` as the activity action.
-- Issue with in-app messaging mechanisms causing a crash when the SDK could not open the database.
 - Potential issue with maintaining anonymous token for networking requests when customer context is changed.
 
 ### Added
