@@ -2,7 +2,7 @@ BCSymbolMap Version: 2.0
 Apple clang version 14.0.0 (clang-1400.0.29.102)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
 iPhoneOS16.0.sdk
-/Users/kurzy/Library/Developer/Xcode/DerivedData/SyneriseSDK-anxpkwetowuxlvbuqjduetimyjju/Build/Intermediates.noindex/ArchiveIntermediates/SyneriseSDK/IntermediateBuildFilesPath/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
+/Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/build/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK
 +[SNRCoreDataInAppDisplay entityName]
 +[SNRCoreDataInAppDisplay makeEntityWithCampaignHash:inContext:]
@@ -110,6 +110,8 @@ ___52-[SNRInjectorBasePresenter hideWithCompletionBlock:]_block_invoke_2
 -[SNRInjectorBasePresenter presentingController]
 -[SNRInjectorBasePresenter setPresentingController:]
 -[SNRInjectorBasePresenter presentable]
+-[SNRInjectorBasePresenter presentingState]
+-[SNRInjectorBasePresenter setPresentingState:]
 -[SNRInjectorBasePresenter animated]
 -[SNRInjectorBasePresenter setAnimated:]
 -[SNRInjectorBasePresenter delay]
@@ -130,11 +132,12 @@ __OBJC_$_PROTOCOL_METHOD_TYPES_SNRModelWithResources
 __OBJC_PROTOCOL_$_SNRModelWithResources
 __OBJC_LABEL_PROTOCOL_$_SNRModelWithResources
 __OBJC_PROTOCOL_REFERENCE_$_SNRModelWithResources
-_OBJC_CLASSLIST_REFERENCES_$_.27
-_OBJC_CLASSLIST_REFERENCES_$_.28
+_OBJC_CLASSLIST_REFERENCES_$_.23
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_CLASSLIST_REFERENCES_$_.29
+_OBJC_CLASSLIST_REFERENCES_$_.34
 ___block_descriptor_48_e8_32s40bs_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.30
-_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_CLASSLIST_REFERENCES_$_.36
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNRSyneriseActivityActionResolvable
 __OBJC_$_PROTOCOL_METHOD_TYPES_SNRSyneriseActivityActionResolvable
 __OBJC_PROTOCOL_$_SNRSyneriseActivityActionResolvable
@@ -158,6 +161,7 @@ _OBJC_IVAR_$_SNRInjectorBasePresenter._model
 _OBJC_IVAR_$_SNRInjectorBasePresenter._presentingType
 _OBJC_IVAR_$_SNRInjectorBasePresenter._presentingController
 _OBJC_IVAR_$_SNRInjectorBasePresenter._presentable
+_OBJC_IVAR_$_SNRInjectorBasePresenter._presentingState
 _OBJC_IVAR_$_SNRInjectorBasePresenter._delay
 __OBJC_$_INSTANCE_VARIABLES_SNRInjectorBasePresenter
 __OBJC_$_PROP_LIST_SNRInjectorBasePresenter
@@ -177,8 +181,9 @@ __52-[SNRInjectorBasePresenter showWithCompletionBlock:]_block_invoke
 +[SNRTemplateContentText(Mapping) mappingWithNSDictionary:error:]
 -[SNRTemplateContentText(Mapping) mappingToNSDictionary]
 _OBJC_CLASSLIST_REFERENCES_$_.25
-_OBJC_CLASSLIST_REFERENCES_$_.26
-_OBJC_CLASSLIST_REFERENCES_$_.29
+_OBJC_CLASSLIST_REFERENCES_$_.27
+_OBJC_CLASSLIST_REFERENCES_$_.28
+_OBJC_CLASSLIST_REFERENCES_$_.30
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRTemplateContentText_$_Mapping
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRTemplateContentText_$_Mapping
 __OBJC_CATEGORY_PROTOCOLS_$_SNRTemplateContentText_$_Mapping
@@ -246,16 +251,18 @@ SyneriseSDK/Core/DataSource/SNRDataSource.h
 __29+[SNRJ10Utils removeClient10]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/usr/include/dispatch/once.h
 -[SNRG7Service initLs2rTg9CR3:optionsS45:]
--[SNRG7Service executeOptions45:]
+-[SNRG7Service executeOptions45:error:]
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
-___33-[SNRG7Service executeOptions45:]_block_invoke
-___copy_helper_block_e8_32s40r48r
-___destroy_helper_block_e8_32s40r48r
--[SNRG7Service invokeConnection96]
-___34-[SNRG7Service invokeConnection96]_block_invoke
+___39-[SNRG7Service executeOptions45:error:]_block_invoke
+___copy_helper_block_e8_32s40r48r56r
+___destroy_helper_block_e8_32s40r48r56r
+-[SNRG7Service o__destroySession]
+___33-[SNRG7Service o__destroySession]_block_invoke
 ___copy_helper_block_e8_32s
 ___destroy_helper_block_e8_32s
+-[SNRG7Service invokeConnection96]
+___34-[SNRG7Service invokeConnection96]_block_invoke
 -[SNRG7Service removeName160]
 ___29-[SNRG7Service removeName160]_block_invoke
 -[SNRG7Service removeClient64:]
@@ -264,10 +271,9 @@ ___copy_helper_block_e8_32s40s48r56r
 ___destroy_helper_block_e8_32s40s48r56r
 _get_auth_anonymous_queue
 ___get_auth_anonymous_queue_block_invoke
-___block_descriptor_56_e8_32s40r48r_e5_v8?0l
+___block_descriptor_64_e8_32s40r48r56r_e5_v8?0l
 ___block_descriptor_40_e8_32s_e5_v8?0l
 ___block_descriptor_64_e8_32s40s48r56r_e23_v28?0B812"NSError"20l
-_OBJC_CLASSLIST_REFERENCES_$_.23
 __OBJC_METACLASS_RO_$_SNRG7Service
 __OBJC_$_INSTANCE_METHODS_SNRG7Service
 __OBJC_CLASS_RO_$_SNRG7Service
@@ -282,12 +288,13 @@ __destroy_helper_block_e8_32s40s48r56r
 __copy_helper_block_e8_32s40s48r56r
 __31-[SNRG7Service removeClient64:]_block_invoke
 __29-[SNRG7Service removeName160]_block_invoke
+__34-[SNRG7Service invokeConnection96]_block_invoke
 __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
-__34-[SNRG7Service invokeConnection96]_block_invoke
-__destroy_helper_block_e8_32s40r48r
-__copy_helper_block_e8_32s40r48r
-__33-[SNRG7Service executeOptions45:]_block_invoke
+__33-[SNRG7Service o__destroySession]_block_invoke
+__destroy_helper_block_e8_32s40r48r56r
+__copy_helper_block_e8_32s40r48r56r
+__39-[SNRG7Service executeOptions45:error:]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
 -[SNRClientAgreements init]
@@ -641,7 +648,6 @@ __OBJC_LABEL_PROTOCOL_$_SNRInjectorInAppMessageDelegate
 __OBJC_PROTOCOL_REFERENCE_$_SNRInjectorInAppMessageDelegate
 _module_is_initialized
 _initializeModule.onceToken
-_OBJC_CLASSLIST_REFERENCES_$_.36
 _OBJC_CLASSLIST_REFERENCES_$_.37
 _OBJC_CLASSLIST_REFERENCES_$_.38
 _OBJC_SELECTOR_REFERENCES_.40
@@ -820,7 +826,7 @@ ___destroy_helper_block_e8_32s40s48r56r64r
 ___clang_at_available_requires_core_foundation_framework
 ___block_descriptor_56_e8_32s40s48r_e5_v8?0l
 ___block_descriptor_56_e8_32s40s48s_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.34
+_OBJC_CLASSLIST_REFERENCES_$_.31
 _OBJC_CLASSLIST_REFERENCES_$_.35
 _OBJC_CLASSLIST_REFERENCES_$_.40
 _OBJC_SELECTOR_REFERENCES_.42
@@ -1526,6 +1532,8 @@ ___33-[SNRInAppTriggering checkEvent:]_block_invoke
 -[SNRInAppTriggering isControlGroupVariant:]
 -[SNRInAppTriggering renderVariantForDefinition:variantIdentifier:event:shouldRender:]
 ___86-[SNRInAppTriggering renderVariantForDefinition:variantIdentifier:event:shouldRender:]_block_invoke
+___copy_helper_block_e8_32s40r48r
+___destroy_helper_block_e8_32s40r48r
 -[SNRInAppTriggering dataController]
 -[SNRInAppTriggering delegate]
 -[SNRInAppTriggering setDelegate:]
@@ -1545,6 +1553,8 @@ __OBJC_$_PROP_LIST_SNRInAppTriggering
 __OBJC_CLASS_RO_$_SNRInAppTriggering
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/Triggering/SNRInAppTriggering.m
 SyneriseSDK/Core/Services/InAppService/Triggering/SNRInAppTriggering.m
+__destroy_helper_block_e8_32s40r48r
+__copy_helper_block_e8_32s40r48r
 __86-[SNRInAppTriggering renderVariantForDefinition:variantIdentifier:event:shouldRender:]_block_invoke
 __33-[SNRInAppTriggering checkEvent:]_block_invoke
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Loyalty/Promotions/PromotionDiscountModeDetails/PromotionDiscountUsageTrigger/SNRPromotionDiscountUsageTrigger.m
@@ -2360,8 +2370,6 @@ SyneriseSDK/Core/Networking/Requests/ClientAuthenticationIfRegistered_v4/SNRClie
 -[SNRAlgorithmRSAKeystore o__isKeyPairGenerated]
 -[SNRAlgorithmRSAKeystore o__generateKeyPair]
 ___45-[SNRAlgorithmRSAKeystore o__generateKeyPair]_block_invoke
-___copy_helper_block_e8_32s40r48r56r
-___destroy_helper_block_e8_32s40r48r56r
 -[SNRAlgorithmRSAKeystore o__removeKeyPairIfNeeded]
 -[SNRAlgorithmRSAKeystore o__removeKeyPair]
 ___43-[SNRAlgorithmRSAKeystore o__removeKeyPair]_block_invoke
@@ -2387,7 +2395,6 @@ ___43-[SNRAlgorithmRSAKeystore o__removeKeyPair]_block_invoke
 -[SNRAlgorithmRSAKeystore .cxx_destruct]
 _get_rsa_keystore_processing_queue
 ___get_rsa_keystore_processing_queue_block_invoke
-___block_descriptor_64_e8_32s40r48r56r_e5_v8?0l
 _o__convertKeyForJavaServer:._encodedRSAEncryptionOID
 __OBJC_METACLASS_RO_$_SNRAlgorithmRSAKeystore
 __OBJC_$_INSTANCE_METHODS_SNRAlgorithmRSAKeystore
@@ -2406,8 +2413,6 @@ get_rsa_keystore_processing_queue
 SyneriseSDK/Core/Security/Keystores/SNRAlgorithmRSAKeystore.h
 encodeLength
 __43-[SNRAlgorithmRSAKeystore o__removeKeyPair]_block_invoke
-__destroy_helper_block_e8_32s40r48r56r
-__copy_helper_block_e8_32s40r48r56r
 __45-[SNRAlgorithmRSAKeystore o__generateKeyPair]_block_invoke
 -[SNRInAppDefinitionCheckResponse items]
 -[SNRInAppDefinitionCheckResponse errors]
@@ -3164,11 +3169,13 @@ ___49-[SNREventsManager trackApplicationStartedEvent:]_block_invoke
 ___40-[SNREventsManager sendEventsIfPossible]_block_invoke
 -[SNREventsManager sendEventsByForce:completionHandler:]
 ___56-[SNREventsManager sendEventsByForce:completionHandler:]_block_invoke
--[SNREventsManager executeApplicationStartedEvent:]
-___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke
-___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.32
-___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.35
-___51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.40
+-[SNREventsManager executeApplicationStartedEvent]
+___50-[SNREventsManager executeApplicationStartedEvent]_block_invoke
+___50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.32
+___copy_helper_block_e8_32s40s48w
+___destroy_helper_block_e8_32s40s48w
+___50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.35
+___50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.40
 -[SNREventsManager executeSendEvents:completionHandler:]
 ___56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke
 ___copy_helper_block_e8_32s40r48r56w
@@ -3192,8 +3199,8 @@ ___43-[SNREventsManager didReceiveNotification:]_block_invoke
 -[SNREventsManager setEventsApiService:]
 -[SNREventsManager eventController]
 -[SNREventsManager setEventController:]
--[SNREventsManager applicationStartedEvent]
--[SNREventsManager setApplicationStartedEvent:]
+-[SNREventsManager applicationStartedEvents]
+-[SNREventsManager setApplicationStartedEvents:]
 -[SNREventsManager inactivityTimer]
 -[SNREventsManager setInactivityTimer:]
 -[SNREventsManager isProcessingApplicationStartedEvent]
@@ -3210,7 +3217,7 @@ ___get_events_processing_queue_block_invoke
 _OBJC_SELECTOR_REFERENCES_.20
 ___block_descriptor_56_e8_32s40s48bs_e5_v8?0l
 ___block_descriptor_40_e8_32r_e8_v12?0B8l
-___block_descriptor_48_e8_32s40w_e8_v12?0B8l
+___block_descriptor_56_e8_32s40s48w_e8_v12?0B8l
 ___block_descriptor_64_e8_32s40r48r56w_e8_v12?0B8l
 ___block_descriptor_72_e8_32s40r48r56r64w_e17_v16?0"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.59
@@ -3226,7 +3233,7 @@ _OBJC_IVAR_$_SNREventsManager._isProcessingApplicationStartedEvent
 _OBJC_IVAR_$_SNREventsManager._isProcessingEvents
 _OBJC_IVAR_$_SNREventsManager._eventsApiService
 _OBJC_IVAR_$_SNREventsManager._eventController
-_OBJC_IVAR_$_SNREventsManager._applicationStartedEvent
+_OBJC_IVAR_$_SNREventsManager._applicationStartedEvents
 _OBJC_IVAR_$_SNREventsManager._inactivityTimer
 _OBJC_IVAR_$_SNREventsManager._newEventsCount
 __OBJC_$_INSTANCE_VARIABLES_SNREventsManager
@@ -3252,10 +3259,12 @@ __56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke.45
 __destroy_helper_block_e8_32s40r48r56w
 __copy_helper_block_e8_32s40r48r56w
 __56-[SNREventsManager executeSendEvents:completionHandler:]_block_invoke
-__51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.40
-__51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.35
-__51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke.32
-__51-[SNREventsManager executeApplicationStartedEvent:]_block_invoke
+__50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.40
+__50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.35
+__destroy_helper_block_e8_32s40s48w
+__copy_helper_block_e8_32s40s48w
+__50-[SNREventsManager executeApplicationStartedEvent]_block_invoke.32
+__50-[SNREventsManager executeApplicationStartedEvent]_block_invoke
 __56-[SNREventsManager sendEventsByForce:completionHandler:]_block_invoke
 __40-[SNREventsManager sendEventsIfPossible]_block_invoke
 __49-[SNREventsManager trackApplicationStartedEvent:]_block_invoke
@@ -3716,10 +3725,10 @@ SyneriseSDK/Core/Models/Loyalty/Promotions/PromotionIdentifier/SNRPromotionIdent
 -[SNRInAppDataController removeVariantsDataForCampaighHash:]
 -[SNRInAppDataController removeEventTriggerNamesDataForCampaighHash:]
 -[SNRInAppDataController removeAllExpiredData]
+-[SNRInAppDataController removeExpiredCoreDataModels:]
 -[SNRInAppDataController getUUIDStringforRequest]
 -[SNRInAppDataController makeExpirationDatetime:]
 -[SNRInAppDataController isDatetimeExpired:]
--[SNRInAppDataController removeExpiredCoreDataModels:]
 -[SNRInAppDataController dataStore]
 -[SNRInAppDataController .cxx_destruct]
 __OBJC_METACLASS_RO_$_SNRInAppDataController
@@ -4322,6 +4331,7 @@ SyneriseSDK/Core/Networking/Requests/AnonymousAuthentication/SNRAnonymousAuthent
 -[SNRSimplePushNotificationResolver resolveMainActionForSimplePushNotification:]
 -[SNRSimplePushNotificationResolver resolveButtonActionWithActionIdentifier:forSimplePushNotification:]
 -[SNRSimplePushNotificationResolver resolveRichMediaActionWithActionIdentifier:forSimplePushNotification:]
+-[SNRSimplePushNotificationResolver shouldPresentInAppNotificationAlertForSimplePushNotification:]
 -[SNRSimplePushNotificationResolver executeAction:]
 -[SNRSimplePushNotificationResolver executeActionWithURL:]
 -[SNRSimplePushNotificationResolver resolvedInForeground]
@@ -4508,6 +4518,9 @@ SyneriseSDK/Core/Models/Loyalty/Vouchers/VoucherCodesResponse/SNRVoucherCodesRes
 -[SNRInjectorInAppMessageWebViewController viewWillTransitionToSize:withTransitionCoordinator:]
 ___95-[SNRInjectorInAppMessageWebViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 -[SNRInjectorInAppMessageWebViewController viewDidLayoutSubviews]
+-[SNRInjectorInAppMessageWebViewController dismissViewControllerAnimated:completion:]
+___85-[SNRInjectorInAppMessageWebViewController dismissViewControllerAnimated:completion:]_block_invoke
+-[SNRInjectorInAppMessageWebViewController removeFromParentViewController]
 -[SNRInjectorInAppMessageWebViewController canPerformAction:withSender:]
 -[SNRInjectorInAppMessageWebViewController configureConstraintsWithSuperview:]
 -[SNRInjectorInAppMessageWebViewController preloadWebViewSynchronously]
@@ -4529,6 +4542,9 @@ ___55-[SNRInjectorInAppMessageWebViewController loadWebView]_block_invoke
 -[SNRInjectorInAppMessageWebViewController getSyneriseFunctionsScript]
 -[SNRInjectorInAppMessageWebViewController getZoomDisableScript]
 -[SNRInjectorInAppMessageWebViewController getStylesheetScript]
+-[SNRInjectorInAppMessageWebViewController hideAction]
+-[SNRInjectorInAppMessageWebViewController hideAndTriggerAction:]
+___65-[SNRInjectorInAppMessageWebViewController hideAndTriggerAction:]_block_invoke
 -[SNRInjectorInAppMessageWebViewController closeAction]
 -[SNRInjectorInAppMessageWebViewController closeAndTriggerAction:]
 ___66-[SNRInjectorInAppMessageWebViewController closeAndTriggerAction:]_block_invoke
@@ -4578,11 +4594,18 @@ _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._preloadSemaphore
 _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._isLoaded
 _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._timeoutHelper
 _OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
 _OBJC_CLASSLIST_REFERENCES_$_.53
+_OBJC_CLASSLIST_REFERENCES_$_.55
 _OBJC_CLASSLIST_REFERENCES_$_.56
 _OBJC_CLASSLIST_REFERENCES_$_.64
-_OBJC_CLASSLIST_REFERENCES_$_.68
-_OBJC_CLASSLIST_REFERENCES_$_.79
+___block_descriptor_40_e8_32r_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.76
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.87
 _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._presenter
 _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._queryParametersForURLActions
 _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._model
@@ -4621,7 +4644,9 @@ SyneriseSDK/Modules/Injector/Main/UI/ViewControllers/InAppMessage/SNRInjectorInA
 __72-[SNRInjectorInAppMessageWebViewController webView:didFinishNavigation:]_block_invoke
 __75-[SNRInjectorInAppMessageWebViewController timerDidFinishForTimeoutHelper:]_block_invoke
 __66-[SNRInjectorInAppMessageWebViewController closeAndTriggerAction:]_block_invoke
+__65-[SNRInjectorInAppMessageWebViewController hideAndTriggerAction:]_block_invoke
 __55-[SNRInjectorInAppMessageWebViewController loadWebView]_block_invoke
+__85-[SNRInjectorInAppMessageWebViewController dismissViewControllerAnimated:completion:]_block_invoke
 __95-[SNRInjectorInAppMessageWebViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 -[SNRContentWidgetBaseCollectionViewCell initWithCoder:]
 -[SNRContentWidgetBaseCollectionViewCell initWithFrame:]
@@ -4739,7 +4764,6 @@ ___61+[SNRInAppDefinition(Mapping) mappingWithNSDictionary:error:]_block_invoke
 +[SNRInAppDefinition(Mapping) classForCappingType:]
 -[SNRInAppDefinition(Mapping) mappingToNSDictionary]
 ___block_descriptor_40_e22_#16?0"NSDictionary"8l
-_OBJC_CLASSLIST_REFERENCES_$_.77
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRInAppDefinition_$_Mapping
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRInAppDefinition_$_Mapping
 __OBJC_$_CATEGORY_SNRInAppDefinition_$_Mapping
@@ -5018,6 +5042,8 @@ SyneriseSDK/Core/Models/UI/Templates/Common/Background/SNRTemplateContentBackgro
 -[SNRSimplePushNotificationAlertPresenter initWithModel:]
 -[SNRSimplePushNotificationAlertPresenter model]
 -[SNRSimplePushNotificationAlertPresenter isPresentationPossible]
+-[SNRSimplePushNotificationAlertPresenter hide]
+-[SNRSimplePushNotificationAlertPresenter hideWithCompletionBlock:]
 -[SNRSimplePushNotificationAlertPresenter getPresenterType]
 -[SNRSimplePushNotificationAlertPresenter prepareAlertController]
 -[SNRSimplePushNotificationAlertPresenter resolveAlertController]
@@ -5115,7 +5141,6 @@ SyneriseSDK/Modules/Tracker/Events/Session/SNRRecognizeClientEvent.m
 +[SNRClientApplicationInfoProvider arePushNotificationsEnabled]
 ___63+[SNRClientApplicationInfoProvider arePushNotificationsEnabled]_block_invoke
 +[SNRClientApplicationInfoProvider clientApplicationInfoDictionary]
-___block_descriptor_40_e8_32r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_SNRClientApplicationInfoProvider
 __OBJC_METACLASS_RO_$_SNRClientApplicationInfoProvider
 __OBJC_CLASS_RO_$_SNRClientApplicationInfoProvider
@@ -5427,6 +5452,7 @@ SyneriseSDK/Core/Services/MigrationService/Migrations/Base/SNRBaseMigration.h
 +[SNRInAppMessageEventFactory makeInAppMessageControlGroupEvent:]
 +[SNRInAppMessageEventFactory makeInAppMessageRenderFailEvent:params:]
 +[SNRInAppMessageEventFactory makeInAppMessageShowEvent:]
++[SNRInAppMessageEventFactory makeInAppMessageHideEvent:]
 +[SNRInAppMessageEventFactory makeInAppMessageDiscardEvent:]
 +[SNRInAppMessageEventFactory makeInAppMessageClickEvent:params:]
 +[SNRInAppMessageEventFactory makeInAppMessageCustomActionEvent:]
@@ -5574,7 +5600,6 @@ SyneriseSDK/Modules/Tracker/Main/CustomTrackers/ViewTracker/EventBuilders/SNRVie
 -[SNRMajorVersionTransferMigration encryptString:crypter:fallbackValue:]
 -[SNRMajorVersionTransferMigration makeOldKeychainLoadingQueryWithKey:]
 -[SNRMajorVersionTransferMigration makeNewTokenStringFromOldTokenString:crypter:]
-_OBJC_CLASSLIST_REFERENCES_$_.55
 __OBJC_METACLASS_RO_$_SNRMajorVersionTransferMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionTransferMigration
 __OBJC_CLASS_RO_$_SNRMajorVersionTransferMigration
@@ -5778,7 +5803,6 @@ _url_session_manager_completion_group
 ___url_session_manager_completion_group_block_invoke
 ___url_session_manager_processing_queue_block_invoke
 ___url_session_manager_creation_queue_block_invoke
-_OBJC_SELECTOR_REFERENCES_.46
 ___block_descriptor_48_e8_32s40r_e5_v8?0l
 ___block_descriptor_72_e8_32s40s48s56r64r_e5_v8?0l
 ___block_descriptor_80_e8_32s40s48s56s64r72r_e5_v8?0l
@@ -6011,8 +6035,6 @@ SyneriseSDK/Core/Models/Notifications/Payload/SNRBasicNotificationPayload.h
 -[SNRInAppDefinitionTempObject setAreEventTriggerNamesFromCache:]
 -[SNRInAppDefinitionTempObject eventTriggerNames]
 -[SNRInAppDefinitionTempObject setEventTriggerNames:]
--[SNRInAppDefinitionTempObject checkIsNeeded]
--[SNRInAppDefinitionTempObject setCheckIsNeeded:]
 -[SNRInAppDefinitionTempObject updateIsNeeded]
 -[SNRInAppDefinitionTempObject setUpdateIsNeeded:]
 -[SNRInAppDefinitionTempObject removeIsNeeded]
@@ -6023,7 +6045,6 @@ __OBJC_$_INSTANCE_METHODS_SNRInAppDefinitionTempObject
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._isDefinitionFromCache
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._isVariantIdentifierFromCache
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._areEventTriggerNamesFromCache
-_OBJC_IVAR_$_SNRInAppDefinitionTempObject._checkIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._updateIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._removeIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._definition
@@ -6208,6 +6229,7 @@ __OBJC_$_CATEGORY_SNRClientRegisterAccountContext_$_Mapping
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Client/ClientRegisterAccountContext/SNRClientRegisterAccountContext+Mapping.m
 SyneriseSDK/Core/Models/Client/ClientRegisterAccountContext/SNRClientRegisterAccountContext+Mapping.m
 -[SNRInAppDataStore init]
+-[SNRInAppDataStore isOperational]
 -[SNRInAppDataStore getManagedObjectContext]
 -[SNRInAppDataStore persistAsynchronouslyWithCompletionHandler:]
 ___64-[SNRInAppDataStore persistAsynchronouslyWithCompletionHandler:]_block_invoke
@@ -6432,6 +6454,7 @@ __OBJC_CLASS_RO_$_SNR_AFQueryStringPair
 _OBJC_SELECTOR_REFERENCES_.53
 _OBJC_CLASSLIST_REFERENCES_$_.65
 ___block_descriptor_40_e8_32s_e15_v32?08Q16^B24l
+_OBJC_CLASSLIST_REFERENCES_$_.79
 _SNR_AFHTTPRequestSerializerObserverContext
 _OBJC_SELECTOR_REFERENCES_.92
 _OBJC_SELECTOR_REFERENCES_.94
@@ -6773,6 +6796,7 @@ SyneriseSDK/Core/Networking/Requests/CheckInAppDefinitions/SNRCheckInAppDefiniti
 +[SNRInAppMessageEventUtils sendInAppMessageControlGroupEvent:]
 +[SNRInAppMessageEventUtils sendInAppMessageRenderFailEvent:params:]
 +[SNRInAppMessageEventUtils sendInAppMessageShowEvent:]
++[SNRInAppMessageEventUtils sendInAppMessageHideEvent:]
 +[SNRInAppMessageEventUtils sendInAppMessageDiscardEvent:]
 +[SNRInAppMessageEventUtils sendInAppMessageClickEvent:params:]
 +[SNRInAppMessageEventUtils sendInAppMessageCustomActionEvent:]
@@ -7332,7 +7356,6 @@ ___copy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s1
 ___destroy_helper_block_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s
 +[SNRApplicationStartedEvent parseParameters:]
 _OBJC_CLASSLIST_REFERENCES_$_.80
-_OBJC_CLASSLIST_REFERENCES_$_.87
 ___block_descriptor_192_e8_32s40s48s56s64s72s80s88s96s104s112s120s128s136s144s152s160s168s176s184s_e33_v16?0"SNRTrackerParamsBuilder"8l
 _OBJC_CLASSLIST_REFERENCES_$_.92
 _OBJC_CLASSLIST_REFERENCES_$_.95
@@ -7628,8 +7651,10 @@ SyneriseSDK/Core/DataSource/Persistent/Auth/SNRAuthCredentialsProvider.m
 -[SNRQ17Model dealloc]
 -[SNRQ17Model saveModel146]
 -[SNRQ17Model saveModel74]
--[SNRQ17Model executeOptions45:]
-___32-[SNRQ17Model executeOptions45:]_block_invoke
+-[SNRQ17Model executeOptions45:error:]
+___38-[SNRQ17Model executeOptions45:error:]_block_invoke
+-[SNRQ17Model o__destroySession]
+___32-[SNRQ17Model o__destroySession]_block_invoke
 -[SNRQ17Model prepareModel47:stateY129:modelG137:]
 -[SNRQ17Model executeState129:stateY129:modelG137:]
 -[SNRQ17Model saveModel56:nameR70:typeQ121:optionsU99:modelG137:]
@@ -7646,6 +7671,7 @@ ___28-[SNRQ17Model removeName160]_block_invoke
 -[SNRQ17Model delegate]
 -[SNRQ17Model setDelegate:]
 -[SNRQ17Model .cxx_destruct]
+_get_auth_client_queue
 ___get_auth_client_queue_block_invoke
 _OBJC_IVAR_$_SNRQ17Model._delegate
 __OBJC_METACLASS_RO_$_SNRQ17Model
@@ -7658,10 +7684,11 @@ _get_auth_client_queue.onceToken
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Networking/AuthService/Client/SNRClientProfileAuthService.m
 __get_auth_client_queue_block_invoke
 SyneriseSDK/Core/Networking/AuthService/Client/SNRClientProfileAuthService.m
+get_auth_client_queue
 SyneriseSDK/Core/Networking/AuthService/Client/SNRClientProfileAuthService.h
 __28-[SNRQ17Model removeName160]_block_invoke
-__32-[SNRQ17Model executeOptions45:]_block_invoke
-get_auth_client_queue
+__32-[SNRQ17Model o__destroySession]_block_invoke
+__38-[SNRQ17Model executeOptions45:error:]_block_invoke
 -[SNRToken initWithStoredToken:]
 -[SNRToken isNearExpiring]
 -[SNRToken tokenString]
@@ -7709,6 +7736,7 @@ SyneriseSDK/Core/Models/Notifications/RichMedia/SNRSyneriseNotificationRichMedia
 +[SNRErrorProvider webViewNotPreloadedError]
 +[SNRErrorProvider contentWidgetErrorWithDescription:]
 +[SNRErrorProvider notificationServiceExtensionErrorWithDescription:]
++[SNRErrorProvider objectConsistencyErrorWithDescription:]
 __OBJC_$_CLASS_METHODS_SNRErrorProvider
 __OBJC_$_CLASS_PROP_LIST_SNRErrorProvider
 __OBJC_METACLASS_RO_$_SNRErrorProvider
@@ -7930,6 +7958,7 @@ ___36-[SNRInAppService notifyAboutEvent:]_block_invoke
 -[SNRInAppService canStartTriggering]
 -[SNRInAppService queueEvent:]
 -[SNRInAppService flushQueueEvents]
+-[SNRInAppService removeQueueEvents]
 -[SNRInAppService cleanup]
 ___26-[SNRInAppService cleanup]_block_invoke
 -[SNRInAppService shouldLoadDefinitions]
@@ -7943,6 +7972,8 @@ ___42-[SNRInAppService loadDefinitionsRequired]_block_invoke
 -[SNRInAppService looadDefinitionsTimeoutIsEnabled:]
 -[SNRInAppService applicationWillEnterForeground]
 -[SNRInAppService applicationDidEnterBackground]
+-[SNRInAppService reinitializationIsBefore]
+-[SNRInAppService reinitializationIsAfter]
 -[SNRInAppService processingDidFinish]
 -[SNRInAppService eventDidStartTriggering:]
 -[SNRInAppService eventDidFinishTriggering:]
@@ -7963,7 +7994,7 @@ _get_in_app_processing_queue
 ___get_in_app_processing_queue_block_invoke
 _OBJC_SELECTOR_REFERENCES_.26
 _loadDefinitionsRequired.timer
-_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.55
 __OBJC_$_CLASS_METHODS_SNRInAppService
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNRInAppDefinitionProcessorDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_SNRInAppDefinitionProcessorDelegate
@@ -7991,7 +8022,7 @@ _get_in_app_triggering_queue.queue
 _get_in_app_triggering_queue.onceToken
 _get_in_app_processing_queue.queue
 _get_in_app_processing_queue.onceToken
-___block_literal_global.171
+___block_literal_global.177
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
 __get_in_app_processing_queue_block_invoke
 SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
@@ -9600,10 +9631,8 @@ SyneriseSDK/Core/Main/Misc/SNRInternalEventFactory.m
 -[SNRSyneriseApiRequest init]
 -[SNRSyneriseApiRequest initWithEndpoint:method:]
 -[SNRSyneriseApiRequest isSessionRequired]
--[SNRSyneriseApiRequest validateAnonymousSession]
--[SNRSyneriseApiRequest validateClientSession]
--[SNRSyneriseApiRequest getAnonymousSessionTokenString]
--[SNRSyneriseApiRequest getClientSessionTokenString]
+-[SNRSyneriseApiRequest getAnonymousTokenString]
+-[SNRSyneriseApiRequest getClientTokenString]
 -[SNRSyneriseApiRequest validateRequest]
 -[SNRSyneriseApiRequest prepareRequest]
 -[SNRSyneriseApiRequest mappingError:]
@@ -9754,7 +9783,8 @@ SyneriseSDK/Core/Models/Mappers/SNRModelMapper.m
 -[SNRF6Validator initLs2rTg9CR3:optionsS45:]
 -[SNRF6Validator executeConnection87:]
 -[SNRF6Validator removeType40]
--[SNRF6Validator executeOptions45:]
+-[SNRF6Validator executeOptions45:error:]
+-[SNRF6Validator o__destroySession]
 -[SNRF6Validator loadClient127:connectionF6:]
 -[SNRF6Validator executeOptions27:connectionF6:]
 -[SNRF6Validator invokeOptions72]
@@ -10104,6 +10134,7 @@ SyneriseSDK/Core/Networking/Requests/ConfirmClientPhoneNumber/SNRConfirmClientPh
 -[SNRMajorVersionCleanupMigration loadOldDataFromUserDefaultsForKey:]
 -[SNRMajorVersionCleanupMigration loadOldDataFromKeychainForKey:]
 -[SNRMajorVersionCleanupMigration makeOldKeychainLoadingQueryWithKey:]
+_OBJC_CLASSLIST_REFERENCES_$_.68
 __OBJC_METACLASS_RO_$_SNRMajorVersionCleanupMigration
 __OBJC_$_INSTANCE_METHODS_SNRMajorVersionCleanupMigration
 __OBJC_CLASS_RO_$_SNRMajorVersionCleanupMigration
@@ -11354,11 +11385,11 @@ SyneriseSDK/Core/Models/UI/Walkthrough/SNRWalkthrough+Mapping.m
 __57+[SNRWalkthrough(Mapping) mappingWithNSDictionary:error:]_block_invoke
 -[SNRInjectorInAppMessagePresenter initWithModel:]
 -[SNRInjectorInAppMessagePresenter model]
--[SNRInjectorInAppMessagePresenter isPresentationPossible]
 -[SNRInjectorInAppMessagePresenter prepareWithCompletionBlock:]
 -[SNRInjectorInAppMessagePresenter inAppMessageSizeDidChange]
 -[SNRInjectorInAppMessagePresenter inAppMessageRenderingTimeout]
 -[SNRInjectorInAppMessagePresenter inAppMessageViewed]
+-[SNRInjectorInAppMessagePresenter inAppMessageHidden]
 -[SNRInjectorInAppMessagePresenter inAppMessageClosed]
 -[SNRInjectorInAppMessagePresenter inAppMessageClickedWithURLAction:]
 -[SNRInjectorInAppMessagePresenter inAppMessageClickedWithDeeplinkAction:]
@@ -11374,8 +11405,8 @@ ___69-[SNRInjectorInAppMessagePresenter resolveActivityAction:completion:]_block
 -[SNRInjectorInAppMessagePresenter viewController]
 -[SNRInjectorInAppMessagePresenter .cxx_destruct]
 _OBJC_IVAR_$_SNRInjectorInAppMessagePresenter._inAppMessageModel
+_OBJC_SELECTOR_REFERENCES_.57
 _OBJC_SELECTOR_REFERENCES_.58
-_OBJC_SELECTOR_REFERENCES_.61
 _OBJC_IVAR_$_SNRInjectorInAppMessagePresenter._viewController
 __OBJC_METACLASS_RO_$_SNRInjectorInAppMessagePresenter
 __OBJC_$_INSTANCE_METHODS_SNRInjectorInAppMessagePresenter
@@ -11637,7 +11668,7 @@ ___39-[SNRSynerise pushRegistrationRequired]_block_invoke
 -[SNRSynerise executePushRegistrationRequired]
 -[SNRSynerise setupNotifications]
 ___33-[SNRSynerise setupNotifications]_block_invoke
-___33-[SNRSynerise setupNotifications]_block_invoke.80
+___33-[SNRSynerise setupNotifications]_block_invoke.81
 ___33-[SNRSynerise setupNotifications]_block_invoke_2
 ___33-[SNRSynerise setupNotifications]_block_invoke_3
 -[SNRSynerise configureInAppService]
@@ -11654,14 +11685,15 @@ ___33-[SNRSynerise setupNotifications]_block_invoke_3
 -[SNRSynerise .cxx_destruct]
 _settings.settings
 _settings.onceToken
-_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.67
 _pushRegistrationRequired.timer
-_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.78
 ___block_descriptor_40_e8_32r_e40_v16?0"SNRSyneriseNotificationPayload"8l
-_OBJC_CLASSLIST_REFERENCES_$_.81
+_OBJC_CLASSLIST_REFERENCES_$_.82
 ___block_descriptor_32_e40_v16?0"SNRSyneriseNotificationPayload"8l
-___block_literal_global.82
-___block_literal_global.84
+___block_literal_global.83
+___block_literal_global.85
 __OBJC_$_CLASS_METHODS_SNRSynerise
 __OBJC_CLASS_PROTOCOLS_$_SNRSynerise
 __OBJC_$_CLASS_PROP_LIST_SNRSynerise
@@ -11680,7 +11712,7 @@ __OBJC_CLASS_RO_$_SNRSynerise
 SyneriseSDK/Core/SNRSynerise.m
 __33-[SNRSynerise setupNotifications]_block_invoke_3
 __33-[SNRSynerise setupNotifications]_block_invoke_2
-__33-[SNRSynerise setupNotifications]_block_invoke.80
+__33-[SNRSynerise setupNotifications]_block_invoke.81
 __33-[SNRSynerise setupNotifications]_block_invoke
 __39-[SNRSynerise pushRegistrationRequired]_block_invoke
 __45-[SNRSynerise applicationWillEnterForeground]_block_invoke
