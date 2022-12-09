@@ -1542,8 +1542,7 @@ ___block_descriptor_48_e8_32s40s_e15_B32?08Q16^B24l
 _OBJC_SELECTOR_REFERENCES_.51
 _OBJC_CLASSLIST_REFERENCES_$_.57
 ___block_descriptor_56_e8_32s40r48r_e58_v28?0B8"SNRInAppVariantRenderResponse"12"SNRApiError"20l
-_OBJC_CLASSLIST_REFERENCES_$_.60
-_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_CLASSLIST_REFERENCES_$_.62
 __OBJC_METACLASS_RO_$_SNRInAppTriggering
 __OBJC_$_INSTANCE_METHODS_SNRInAppTriggering
 _OBJC_IVAR_$_SNRInAppTriggering._dataController
@@ -2086,10 +2085,10 @@ ___41-[SNRBaseApiRequest executeOnMainThread:]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.46
 ___block_descriptor_40_e8_32w_e33_v24?0"NSURLSessionDataTask"816l
 ___block_descriptor_40_e8_32s_e42_v24?0"NSURLSessionDataTask"8"NSError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.62
 _OBJC_SELECTOR_REFERENCES_.64
 ___block_descriptor_57_e8_32s40s48bs_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.67
 __OBJC_$_CLASS_METHODS_SNRBaseApiRequest
 __OBJC_METACLASS_RO_$_SNRBaseApiRequest
 __OBJC_$_INSTANCE_METHODS_SNRBaseApiRequest
@@ -3221,6 +3220,7 @@ ___block_descriptor_56_e8_32s40s48w_e8_v12?0B8l
 ___block_descriptor_64_e8_32s40r48r56w_e8_v12?0B8l
 ___block_descriptor_72_e8_32s40r48r56r64w_e17_v16?0"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.59
+_OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_SELECTOR_REFERENCES_.62
 _OBJC_CLASSLIST_REFERENCES_$_.63
 _didReceiveNotification:.isApplicationInBackground
@@ -6034,6 +6034,8 @@ SyneriseSDK/Core/Models/Notifications/Payload/SNRBasicNotificationPayload.h
 -[SNRInAppDefinitionTempObject setAreEventTriggerNamesFromCache:]
 -[SNRInAppDefinitionTempObject eventTriggerNames]
 -[SNRInAppDefinitionTempObject setEventTriggerNames:]
+-[SNRInAppDefinitionTempObject checkIsNeeded]
+-[SNRInAppDefinitionTempObject setCheckIsNeeded:]
 -[SNRInAppDefinitionTempObject updateIsNeeded]
 -[SNRInAppDefinitionTempObject setUpdateIsNeeded:]
 -[SNRInAppDefinitionTempObject removeIsNeeded]
@@ -6044,6 +6046,7 @@ __OBJC_$_INSTANCE_METHODS_SNRInAppDefinitionTempObject
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._isDefinitionFromCache
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._isVariantIdentifierFromCache
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._areEventTriggerNamesFromCache
+_OBJC_IVAR_$_SNRInAppDefinitionTempObject._checkIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._updateIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._removeIsNeeded
 _OBJC_IVAR_$_SNRInAppDefinitionTempObject._definition
@@ -7975,7 +7978,7 @@ _get_in_app_processing_queue
 ___get_in_app_processing_queue_block_invoke
 _OBJC_SELECTOR_REFERENCES_.26
 _loadDefinitionsRequired.timer
-_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.56
 __OBJC_$_CLASS_METHODS_SNRInAppService
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SNRInAppDefinitionProcessorDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_SNRInAppDefinitionProcessorDelegate
@@ -8003,7 +8006,7 @@ _get_in_app_triggering_queue.queue
 _get_in_app_triggering_queue.onceToken
 _get_in_app_processing_queue.queue
 _get_in_app_processing_queue.onceToken
-___block_literal_global.177
+___block_literal_global.178
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
 __get_in_app_processing_queue_block_invoke
 SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
@@ -8324,6 +8327,8 @@ ___42-[SNRSyneriseLauncher shouldExecuteLaunch]_block_invoke
 -[SNRSyneriseLauncher launchIsFirstLaunch]
 -[SNRSyneriseLauncher launchIsUpdateLaunch]
 -[SNRSyneriseLauncher executeMigrationsIfNeeded]
+-[SNRSyneriseLauncher dataInconsistencyOccured]
+-[SNRSyneriseLauncher signalReceived:parameters:]
 -[SNRSyneriseLauncher clientApiKey]
 -[SNRSyneriseLauncher setClientApiKey:]
 -[SNRSyneriseLauncher baseURL]
@@ -8345,6 +8350,7 @@ ___42-[SNRSyneriseLauncher shouldExecuteLaunch]_block_invoke
 _isSharedModeEnabled
 _kModules
 __OBJC_$_CLASS_METHODS_SNRSyneriseLauncher
+__OBJC_CLASS_PROTOCOLS_$_SNRSyneriseLauncher
 __OBJC_METACLASS_RO_$_SNRSyneriseLauncher
 __OBJC_$_INSTANCE_METHODS_SNRSyneriseLauncher
 _OBJC_IVAR_$_SNRSyneriseLauncher._isLaunchInvoked
@@ -10306,6 +10312,8 @@ __OBJC_CLASS_RO_$_SNRActivatePromotionsRequest
 SyneriseSDK/Core/Networking/Requests/ActivatePromotions/SNRActivatePromotionsRequest.m
 +[SNRDispatchUtils dispatchSyncBlockOnMainThread:]
 +[SNRDispatchUtils dispatchSyncBlockOnMainThread:ifMetCondition:]
++[SNRDispatchUtils dispatchSyncBlock:onQueue:]
+___46+[SNRDispatchUtils dispatchSyncBlock:onQueue:]_block_invoke
 +[SNRDispatchUtils dispatchAsyncBlockOnMainThread:]
 +[SNRDispatchUtils dispatchAsyncBlockOnMainThread:ifMetCondition:]
 +[SNRDispatchUtils dispatchAsyncBlockOnMainThread:withDelay:]
@@ -10321,6 +10329,7 @@ __OBJC_CLASS_RO_$_SNRDispatchUtils
 SyneriseSDK/Core/Helpers/Utils/SNRDispatchUtils.m
 __72+[SNRDispatchUtils dispatchAsyncBlockOnBackgroundThread:ifMetCondition:]_block_invoke
 __61+[SNRDispatchUtils dispatchAsyncBlockOnMainThread:withDelay:]_block_invoke
+__46+[SNRDispatchUtils dispatchSyncBlock:onQueue:]_block_invoke
 SNRDispatchUtils_conditionIfObjectRespondsToSelector
 +[SNRUserActionService sharedObject]
 ___36+[SNRUserActionService sharedObject]_block_invoke
@@ -10432,6 +10441,16 @@ __OBJC_$_PROP_LIST_SNRBaseModel
 __OBJC_CLASS_RO_$_SNRBaseModel
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Base/SNRBaseModel.m
 SyneriseSDK/Core/Models/Base/SNRBaseModel.m
++[SNRDataInconsistencySignal sharedSignal]
+___42+[SNRDataInconsistencySignal sharedSignal]_block_invoke
+-[SNRDataInconsistencySignal notifyDataInconsistency]
+__OBJC_$_CLASS_METHODS_SNRDataInconsistencySignal
+__OBJC_METACLASS_RO_$_SNRDataInconsistencySignal
+__OBJC_$_INSTANCE_METHODS_SNRDataInconsistencySignal
+__OBJC_CLASS_RO_$_SNRDataInconsistencySignal
+/Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Helpers/Signals/SNRDataInconsistencySignal.m
+SyneriseSDK/Core/Helpers/Signals/SNRDataInconsistencySignal.m
+__42+[SNRDataInconsistencySignal sharedSignal]_block_invoke
 +[SNRV22Utils removeClient10]
 ___29+[SNRV22Utils removeClient10]_block_invoke
 -[SNRV22Utils init]
@@ -10445,8 +10464,10 @@ ___29+[SNRV22Utils removeClient10]_block_invoke
 -[SNRV22Utils executeConnection123]
 -[SNRV22Utils removeName16]
 -[SNRV22Utils invokeState66]
+-[SNRV22Utils o__inconsistencySecretKey256Detected]
 -[SNRV22Utils saveModel92]
 -[SNRV22Utils invokeState138]
+-[SNRV22Utils o__regenerateSecretKey256]
 -[SNRV22Utils prepareModel119]
 -[SNRV22Utils executeState93]
 -[SNRV22Utils loadType121]
@@ -11112,6 +11133,8 @@ __OBJC_CLASS_RO_$_SNRClientModel
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Main/Client Management/SNRClientModel.m
 SyneriseSDK/Core/Main/Client Management/SNRClientModel.m
 SyneriseSDK/Core/Main/Client Management/SNRClientModel.h
+-[SNRInAppMessagingSettings maxDefinitionUpdateIntervalLimit]
+-[SNRInAppMessagingSettings setMaxDefinitionUpdateIntervalLimit:]
 -[SNRInAppMessagingSettings renderingTimeout]
 -[SNRInAppMessagingSettings setRenderingTimeout:]
 __OBJC_METACLASS_RO_$_SNRInAppMessagingSettings
