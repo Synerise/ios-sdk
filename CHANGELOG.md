@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.9.0] - 2022-12-09
+
+### Fixed
+- Issue that could have caused crash in some cases in networking session management.
+
+### Added
+- `Synerise.settings.inAppMessaging.maxDefinitionUpdateIntervalLimit` option in settings to set maximum interval between automatic In-app definition updates. The minimum and default value is 600 seconds (10 minutes).
+
+### Changed
+- The minimum value for `Synerise.settings.inAppMessaging.renderingTimeout` is changed to 1 second.
+- Optimalization of the In-app messaging module.
+- Optimalization of the SDK data management.
+- Improvements to stability.
+
+
 ## [4.8.1] - 2022-12-01
 
 ### Fixed
