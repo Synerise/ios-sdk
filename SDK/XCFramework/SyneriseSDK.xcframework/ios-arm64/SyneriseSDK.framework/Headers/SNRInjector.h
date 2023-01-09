@@ -152,7 +152,7 @@ NS_SWIFT_NAME(InjectorInAppMessageDelegate)
 - (void)SNR_inAppMessageHandledDeeplinkAction:(SNRInAppMessageData *)data deeplink:(NSString *)deeplink NS_SWIFT_NAME(snr_inAppMessageHandledAction(data:deeplink:));
 
 /**
- * This method is called when a custom action is handled from the in-app messages.
+ * This method is called when Synerise handles custom action from in-app messages.
  *
  * @param data Model representation of the in-app message.
  * @param name Custom action name for identification.
