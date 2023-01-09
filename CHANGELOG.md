@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.9.1] - 2023-01-09
+
+### Fixed
+- Formatting application name containing special chars to user-agent in networking requests.
+- Proper respecting `Synerise.settings.tracker.autoTracking.excludedViewTags` for view controllers in autotracking.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.9.0] - 2022-12-09
 
 ### Fixed
