@@ -158,3 +158,4 @@
 #import <SyneriseSDK/SNRNotificationServiceExtension.h>
 #import <SyneriseSDK/SNRSingleMediaContentExtensionViewController.h>
 #import <SyneriseSDK/SNRCarouselContentExtensionViewController.h>
+#import <SyneriseSDK/SNRNotificationInfo.h>

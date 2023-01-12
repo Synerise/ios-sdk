@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.10.0] - 2023-01-12
+
+### Fixed
+- Issue of an additional in-app alert not being displayed when a simple push with action buttons was received in the foreground (existed since version 4.8.0).
+
+### Added
+- `NotificationDelegate` for better handling of events from simple push notifications. These delegate methods are invoked when a notification is received, clicked, or dismissed. Additionally, these methods are invoked with a `NotificationInfo` object passed in them, which provides the payload and info about the campaign.
+
+
 ## [4.9.1] - 2023-01-09
 
 ### Fixed

@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(NotificationServiceExtensionDelegate)
 @protocol SNRNotificationServiceExtensionDelegate
 
-- (void)notificationServiceExtensionDidFailDecryptionWithError:(NSError *)error;
 - (void)notificationServiceExtensionDidFailProcessingWithError:(NSError *)error;
+- (void)notificationServiceExtensionDidFailDecryptionWithError:(NSError *)error;
 
 @end
 
@@ -35,6 +35,7 @@ NS_SWIFT_NAME(NotificationServiceExtension)
 - (instancetype)init NS_UNAVAILABLE;
 
 + (void)setDelegate:(nullable id<SNRNotificationServiceExtensionDelegate>)delegate;
++ (void)setNotificationDelegate:(id<SNRNotificationDelegate>)delegate;
 + (void)setDebugModeEnabled:(BOOL)enabled;
 
 + (void)setDecryptionFallbackNotificationTitle:(nullable NSString *)title andBody:(nullable NSString *)body NS_SWIFT_NAME(setDecryptionFallbackNotificationTitleAndBody(title:body:));
