@@ -268,9 +268,13 @@
 		<data>
 		S36bf3qrG1HMFkt7YCJnLSkrtaI=
 		</data>
+		<key>Headers/SNRNotificationInfo.h</key>
+		<data>
+		uUzypfbJCoSWWtZHMcdgpIhrI2I=
+		</data>
 		<key>Headers/SNRNotificationServiceExtension.h</key>
 		<data>
-		fgyo78pIDFcKYm2MHwRYhtxoN5A=
+		Epeaofujsw6JwcgAUpEgVZ3gMYY=
 		</data>
 		<key>Headers/SNRNotificationsSettings.h</key>
 		<data>
@@ -442,7 +446,7 @@
 		</data>
 		<key>Headers/SNRSynerise.h</key>
 		<data>
-		WhIWZqeSf5/ZKE1T7y34lKr/XJc=
+		V1P5t2qL3IdRnMrIy3T8QS+tCy0=
 		</data>
 		<key>Headers/SNRSyneriseActivity.h</key>
 		<data>
@@ -502,11 +506,11 @@
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		oRlmXasQ7T7J2E3mQ1RJjjjdcdQ=
+		e/lyZGKpQH2xHMwx8ESjb9x/E6o=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zDXjMGkUScXrTBdVxl63rMc0CcA=
+		IjRphxvG8PhiBEMB+gG2tmjoafc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1315,15 +1319,26 @@
 			YOAoTu6R71/PWItUjLHc0UrxsP6vhCLqFX2EANpL1U8=
 			</data>
 		</dict>
+		<key>Headers/SNRNotificationInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uUzypfbJCoSWWtZHMcdgpIhrI2I=
+			</data>
+			<key>hash2</key>
+			<data>
+			JlEy2NkWPF5k5FN1bhM9QKXMlyU5Hjw5XdIGH0YMSdo=
+			</data>
+		</dict>
 		<key>Headers/SNRNotificationServiceExtension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fgyo78pIDFcKYm2MHwRYhtxoN5A=
+			Epeaofujsw6JwcgAUpEgVZ3gMYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			S30PQpcL1heCD3t2A7l7Ji7ywbb2qLN0TTSOwVOO38M=
+			d2cD30jtHyaeqstGrmaLqW6njqrbPC3803H2Zx/I3ws=
 			</data>
 		</dict>
 		<key>Headers/SNRNotificationsSettings.h</key>
@@ -1792,11 +1807,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WhIWZqeSf5/ZKE1T7y34lKr/XJc=
+			V1P5t2qL3IdRnMrIy3T8QS+tCy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			c7xnNuX13tgwZU7RqfjMoe2QNin2Jgpl5fvyjklJntg=
+			0nCT1hHMPbbX5QIp0zjwIAf94hFMknkxiyf7PCCfmjg=
 			</data>
 		</dict>
 		<key>Headers/SNRSyneriseActivity.h</key>
@@ -1957,11 +1972,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oRlmXasQ7T7J2E3mQ1RJjjjdcdQ=
+			e/lyZGKpQH2xHMwx8ESjb9x/E6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Botb7tg3VizQyKp5mKKgKIJsVUSDS4c9dSKwZ3RBzUc=
+			Ya1Fb9MaBj2gITzdBCq58q7iL5C25bnrLCgxG5mWQoc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

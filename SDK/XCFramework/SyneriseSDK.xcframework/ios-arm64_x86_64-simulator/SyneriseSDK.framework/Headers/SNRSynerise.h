@@ -8,6 +8,7 @@
 
 #import <SyneriseSDK/SNRSyneriseActivity.h>
 #import <SyneriseSDK/SNRHostApplicationType.h>
+#import <SyneriseSDK/SNRNotificationInfo.h>
 
 @class SNRSettings;
 
@@ -88,6 +89,41 @@ NS_SWIFT_NAME(SyneriseDelegate)
 @end
 
 /**
+ * @protocol SNRNotificationDelegate
+ *
+ * A delegate to handle events from Synerise notifications.
+ *
+ * @note Note that all methods are optional.
+ */
+
+NS_SWIFT_NAME(NotificationDelegate)
+@protocol SNRNotificationDelegate
+
+@optional
+
+/**
+ * This method is called when a Synerise notification is received.
+ */
+- (void)SNR_notificationDidReceive:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationDidReceive(notificationInfo:));
+
+/**
+ * This method is called when a Synerise notification is dismissed.
+ */
+- (void)SNR_notificationDidDissmis:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationDidDissmis(notificationInfo:));
+
+/**
+ * This method is called when a Synerise notification is clicked.
+ */
+- (void)SNR_notificationClicked:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationClicked(notificationInfo:));
+
+/**
+ * This method is called when an action button is clicked in a Synerise notification.
+ */
+- (void)SNR_notificationActionButtonClicked:(SNRNotificationInfo *)notificationInfo actionButton:(NSString *)actionButton NS_SWIFT_NAME(snr_notificationClicked(notificationInfo:actionButton:));
+
+@end
+
+/**
  * @class SNRSynerise
  *
  * SNRSynerise is responsible for initialization the Synerise SDK and its main actions.
@@ -158,6 +194,13 @@ NS_SWIFT_NAME(Synerise)
  * @param delegate An object that implement SNRSyneriseDelegate protocol.
  */
 + (void)setDelegate:(id<SNRSyneriseDelegate>)delegate;
+
+/**
+ * Sets object for notification delegate methods.
+ *
+ * @param delegate An object that implement SNRNotificationDelegate protocol.
+ */
++ (void)setNotificationDelegate:(id<SNRNotificationDelegate>)delegate;
 
 /**
  * Checks if notification's sender is Synerise.
