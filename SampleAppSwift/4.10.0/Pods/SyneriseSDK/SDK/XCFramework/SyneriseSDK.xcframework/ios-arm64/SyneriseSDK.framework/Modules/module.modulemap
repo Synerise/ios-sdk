@@ -1,0 +1,6 @@
+framework module SyneriseSDK {
+  umbrella header "SyneriseSDK.h"
+
+  export *
+  module * { export * }
+}

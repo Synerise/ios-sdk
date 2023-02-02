@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSk-74-eob">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In With Email Client Table View Controller-->
+        <scene sceneID="5n8-ym-me6">
+            <objects>
+                <tableViewController id="RJq-hC-nZz" customClass="LogInWithEmailClientTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Qsj-c7-CaN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Email" id="fzp-h8-boK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="VUu-Bn-0Ma">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUu-Bn-0Ma" id="Pp9-eb-z8h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="example@synerise.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-fv-M9Q">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="3nx-FL-3SC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rB7-fv-M9Q" secondAttribute="trailing" constant="20" id="4q6-KY-ogv"/>
+                                                <constraint firstItem="rB7-fv-M9Q" firstAttribute="centerY" secondItem="Pp9-eb-z8h" secondAttribute="centerY" id="hda-di-2qe"/>
+                                                <constraint firstItem="rB7-fv-M9Q" firstAttribute="leading" secondItem="Pp9-eb-z8h" secondAttribute="leading" constant="20" id="t06-uy-uSo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Password" id="Sft-Tn-607">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Rvx-BP-uE1">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rvx-BP-uE1" id="sOx-bX-Y4T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testPass1!" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqV-8I-Vdo">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="lVY-Wx-DUZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cqV-8I-Vdo" secondAttribute="trailing" constant="16" id="5Ai-uP-CuH"/>
+                                                <constraint firstItem="cqV-8I-Vdo" firstAttribute="leading" secondItem="sOx-bX-Y4T" secondAttribute="leading" constant="16" id="TgE-Lp-TPV"/>
+                                                <constraint firstItem="cqV-8I-Vdo" firstAttribute="centerY" secondItem="sOx-bX-Y4T" secondAttribute="centerY" id="egA-ES-LPa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="dpE-EO-TjO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="H1J-uM-3XQ">
+                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1J-uM-3XQ" id="ih0-Gq-vxF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-MI-MZz" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="C5k-BF-3Kb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Login (legacy method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="logInWithLegacyMethodButtonWasPressed:" destination="RJq-hC-nZz" eventType="touchUpInside" id="vtJ-yD-hYE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fqi-MI-MZz" firstAttribute="leading" secondItem="ih0-Gq-vxF" secondAttribute="leading" constant="16" id="Fhs-Os-pln"/>
+                                                <constraint firstItem="fqi-MI-MZz" firstAttribute="centerY" secondItem="ih0-Gq-vxF" secondAttribute="centerY" id="mcS-P7-pmx"/>
+                                                <constraint firstAttribute="trailing" secondItem="fqi-MI-MZz" secondAttribute="trailing" constant="16" id="sqB-VD-6cf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="lgc-Bd-b9l">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="W7V-Ve-7RZ">
+                                        <rect key="frame" x="0.0" y="334.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W7V-Ve-7RZ" id="eFj-6r-L36">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad1-F4-hFy" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="C7C-Te-7R0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Login (consolidated method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="logInWithConsolidatedMethodButtonWasPressed:" destination="RJq-hC-nZz" eventType="touchUpInside" id="wLr-56-mH1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ad1-F4-hFy" firstAttribute="centerY" secondItem="eFj-6r-L36" secondAttribute="centerY" id="7O4-fP-gFa"/>
+                                                <constraint firstItem="ad1-F4-hFy" firstAttribute="leading" secondItem="eFj-6r-L36" secondAttribute="leading" constant="16" id="KNx-ad-gsW"/>
+                                                <constraint firstAttribute="trailing" secondItem="ad1-F4-hFy" secondAttribute="trailing" constant="16" id="mSa-gT-ZSD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="RJq-hC-nZz" id="PEQ-N2-dTF"/>
+                            <outlet property="delegate" destination="RJq-hC-nZz" id="IXK-Qf-scD"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="clientEmailTextField" destination="rB7-fv-M9Q" id="DeY-IC-dIM"/>
+                        <outlet property="clientPasswordTextField" destination="cqV-8I-Vdo" id="HX6-Qb-VhJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xe-rm-GM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="378"/>
+        </scene>
+        <!--Authorize WithO Auth Table View Controller-->
+        <scene sceneID="PqV-3p-2K0">
+            <objects>
+                <tableViewController id="2fk-JB-bJz" customClass="AuthorizeWithOAuthTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xzd-33-Ace">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Auth ID" id="wNm-WD-2H4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="eZY-wm-hmc">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eZY-wm-hmc" id="RAA-LJ-M5z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="authID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Nvq-XJ-bHO">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kVd-gZ-oy2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nvq-XJ-bHO" firstAttribute="leading" secondItem="RAA-LJ-M5z" secondAttribute="leading" constant="20" id="Riz-i7-7jp"/>
+                                                <constraint firstItem="Nvq-XJ-bHO" firstAttribute="centerY" secondItem="RAA-LJ-M5z" secondAttribute="centerY" id="dMd-VW-KxC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nvq-XJ-bHO" secondAttribute="trailing" constant="20" id="sdd-Dg-kVA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (legacy method)" id="MdN-dQ-nYB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="w0f-ty-Jmd">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w0f-ty-Jmd" id="X1V-OM-4dJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usq-gs-YyR" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Lbn-r8-XSM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (legacy method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithLegacyMethodButtonWasPressed:" destination="2fk-JB-bJz" eventType="touchUpInside" id="63z-5o-DwO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="usq-gs-YyR" firstAttribute="leading" secondItem="X1V-OM-4dJ" secondAttribute="leading" constant="16" id="16B-a3-V1R"/>
+                                                <constraint firstAttribute="trailing" secondItem="usq-gs-YyR" secondAttribute="trailing" constant="16" id="H7u-Kn-0Rl"/>
+                                                <constraint firstItem="usq-gs-YyR" firstAttribute="centerY" secondItem="X1V-OM-4dJ" secondAttribute="centerY" id="LpA-W9-16o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (consolidated method)" id="qIG-ng-5Nc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="QAp-Ea-5VH">
+                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QAp-Ea-5VH" id="gwe-LH-Yh2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-F1-noH" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="TDG-Qc-nWa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (consolidated  method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithConsolidatedMethodButtonWasPressed:" destination="2fk-JB-bJz" eventType="touchUpInside" id="NhU-qL-VXK"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cHx-F1-noH" firstAttribute="centerY" secondItem="gwe-LH-Yh2" secondAttribute="centerY" id="1wb-eC-jIg"/>
+                                                <constraint firstItem="cHx-F1-noH" firstAttribute="leading" secondItem="gwe-LH-Yh2" secondAttribute="leading" constant="16" id="WKJ-1f-1F3"/>
+                                                <constraint firstAttribute="trailing" secondItem="cHx-F1-noH" secondAttribute="trailing" constant="16" id="X0x-G3-yfS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2fk-JB-bJz" id="yWz-4i-nWM"/>
+                            <outlet property="delegate" destination="2fk-JB-bJz" id="Qde-tb-P6f"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="authIDTextField" destination="Nvq-XJ-bHO" id="uFj-kf-IHG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKO-Yv-Ns1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="1101"/>
+        </scene>
+        <!--Confirm Account Activation By Pin Table View Controller-->
+        <scene sceneID="1bW-G4-RYX">
+            <objects>
+                <tableViewController id="u4R-Xf-2o8" customClass="ConfirmAccountActivationByPinTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dL2-vz-xE3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Email" id="BLs-sr-TTx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="8tC-O9-YeU">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8tC-O9-YeU" id="hng-Vt-IEd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3R-M5-8CH">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="wkz-6m-7fQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T3R-M5-8CH" firstAttribute="leading" secondItem="hng-Vt-IEd" secondAttribute="leading" constant="20" id="BS3-wg-6wR"/>
+                                                <constraint firstAttribute="trailing" secondItem="T3R-M5-8CH" secondAttribute="trailing" constant="20" id="JW7-a5-QT7"/>
+                                                <constraint firstItem="T3R-M5-8CH" firstAttribute="centerY" secondItem="hng-Vt-IEd" secondAttribute="centerY" id="Q2f-cb-APw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Pin" id="qQG-w3-jXf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Izk-Pm-75c">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izk-Pm-75c" id="9cv-La-Kg8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PIN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1RR-Rt-jkv">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="DuK-oP-gwm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1RR-Rt-jkv" firstAttribute="leading" secondItem="9cv-La-Kg8" secondAttribute="leading" constant="20" id="8Vu-MX-xhY"/>
+                                                <constraint firstItem="1RR-Rt-jkv" firstAttribute="centerY" secondItem="9cv-La-Kg8" secondAttribute="centerY" id="MLa-Qv-SIK"/>
+                                                <constraint firstAttribute="trailing" secondItem="1RR-Rt-jkv" secondAttribute="trailing" constant="20" id="rvw-FA-OEd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="Sjj-Tw-yIC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="oK4-nI-mRl">
+                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oK4-nI-mRl" id="gKR-tC-sVI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-4v-pOL" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="gvZ-YN-VCx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Confirm Account Activation">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="confirmAccountActivationByPinButtonWasPressed:" destination="u4R-Xf-2o8" eventType="touchUpInside" id="BGV-SH-SUi"/>
+                                                        <action selector="logInWithLegacyMethodButtonWasPressed:" destination="RJq-hC-nZz" eventType="touchUpInside" id="L7t-or-tOb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="x5K-4v-pOL" firstAttribute="centerY" secondItem="gKR-tC-sVI" secondAttribute="centerY" id="3mV-vD-hyT"/>
+                                                <constraint firstItem="x5K-4v-pOL" firstAttribute="leading" secondItem="gKR-tC-sVI" secondAttribute="leading" constant="16" id="9R0-5Y-KoK"/>
+                                                <constraint firstAttribute="trailing" secondItem="x5K-4v-pOL" secondAttribute="trailing" constant="16" id="Cau-d3-8sf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="u4R-Xf-2o8" id="Dtq-fv-yPR"/>
+                            <outlet property="delegate" destination="u4R-Xf-2o8" id="ry5-56-Xcm"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="emailTextField" destination="T3R-M5-8CH" id="qE3-8u-PVr"/>
+                        <outlet property="pinCodeTextField" destination="1RR-Rt-jkv" id="hgr-L3-mFl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opo-hU-7jh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1726" y="890"/>
+        </scene>
+        <!--Client Authorization View Controller-->
+        <scene sceneID="pvV-nZ-C3i">
+            <objects>
+                <viewController id="CSk-74-eob" customClass="ClientAuthorizationViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dH-LM-Hnk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-Xo-rKR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AfS-Jv-gBE">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="585"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-El-SvQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fy-gY-lY7" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="GiY-4v-1gz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Auth by Email">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="RJq-hC-nZz" kind="show" id="3oj-cF-SYw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="7fy-gY-lY7" firstAttribute="centerY" secondItem="CMT-El-SvQ" secondAttribute="centerY" id="YGX-kY-It3"/>
+                                                    <constraint firstItem="7fy-gY-lY7" firstAttribute="leading" secondItem="CMT-El-SvQ" secondAttribute="leading" constant="16" id="dSY-nu-emf"/>
+                                                    <constraint firstAttribute="height" constant="65" id="gKf-rB-bEe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7fy-gY-lY7" secondAttribute="trailing" constant="16" id="xcL-9z-47l"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pR-Tn-Hgo">
+                                                <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-46-RUk" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5Id-Lk-ySP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Auth by Facebook">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="AVK-9A-XM8" kind="show" id="NhT-FI-rb6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Kj8-46-RUk" firstAttribute="centerY" secondItem="9pR-Tn-Hgo" secondAttribute="centerY" id="Sxj-hI-bFK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kj8-46-RUk" secondAttribute="trailing" constant="16" id="eoM-87-cIA"/>
+                                                    <constraint firstAttribute="height" constant="65" id="rip-g9-kQc"/>
+                                                    <constraint firstItem="Kj8-46-RUk" firstAttribute="leading" secondItem="9pR-Tn-Hgo" secondAttribute="leading" constant="16" id="tMX-i3-MMg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiL-vG-Ubt">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq1-Gm-9Pb" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="LQo-Yu-Ue6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Auth by OAuth">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="2fk-JB-bJz" kind="show" id="1fc-wJ-YpP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Xq1-Gm-9Pb" firstAttribute="centerY" secondItem="UiL-vG-Ubt" secondAttribute="centerY" id="GCj-T4-nvR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xq1-Gm-9Pb" secondAttribute="trailing" constant="16" id="pby-wZ-5bb"/>
+                                                    <constraint firstAttribute="height" constant="65" id="rfS-yT-0bM"/>
+                                                    <constraint firstItem="Xq1-Gm-9Pb" firstAttribute="leading" secondItem="UiL-vG-Ubt" secondAttribute="leading" constant="16" id="yA5-JA-h3z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-mN-fl6">
+                                                <rect key="frame" x="0.0" y="195" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-uY-fcM" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="qSv-UM-9oe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Auth by Apple">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="7Xu-KF-HPp" kind="show" id="f34-gL-gq5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="V9W-uY-fcM" firstAttribute="leading" secondItem="wTY-mN-fl6" secondAttribute="leading" constant="16" id="B3d-Gc-b70"/>
+                                                    <constraint firstItem="V9W-uY-fcM" firstAttribute="centerY" secondItem="wTY-mN-fl6" secondAttribute="centerY" id="Jci-PS-qMd"/>
+                                                    <constraint firstAttribute="height" constant="65" id="OCX-kH-AYQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="V9W-uY-fcM" secondAttribute="trailing" constant="16" id="cKn-0c-OYt"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0C-wM-9LP">
+                                                <rect key="frame" x="0.0" y="260" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-wh-W1B" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="gY9-al-kv7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Sign Out">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signOutButtonWasPressed:" destination="CSk-74-eob" eventType="touchUpInside" id="ejs-64-0ej"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="KHW-Lf-xsU"/>
+                                                    <constraint firstItem="IT6-wh-W1B" firstAttribute="leading" secondItem="F0C-wM-9LP" secondAttribute="leading" constant="16" id="Yww-SZ-GNy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IT6-wh-W1B" secondAttribute="trailing" constant="16" id="edB-rg-QcW"/>
+                                                    <constraint firstItem="IT6-wh-W1B" firstAttribute="centerY" secondItem="F0C-wM-9LP" secondAttribute="centerY" id="j6s-3Y-t6z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-5s-2M5">
+                                                <rect key="frame" x="0.0" y="325" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-BB-XLi" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Y9Z-LN-5nY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Sign Out (logout)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signOutModeLogoutButtonWasPressed:" destination="CSk-74-eob" eventType="touchUpInside" id="9ts-R9-lkW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ooX-BB-XLi" firstAttribute="leading" secondItem="WlW-5s-2M5" secondAttribute="leading" constant="16" id="6Gw-TD-vrm"/>
+                                                    <constraint firstAttribute="height" constant="65" id="a30-2N-uee"/>
+                                                    <constraint firstItem="ooX-BB-XLi" firstAttribute="centerY" secondItem="WlW-5s-2M5" secondAttribute="centerY" id="j4l-tB-M8O"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ooX-BB-XLi" secondAttribute="trailing" constant="16" id="peY-TA-UgO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUH-x8-p8a">
+                                                <rect key="frame" x="0.0" y="390" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9T-Pn-UBn" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="UBk-ci-MFE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <state key="normal" title="Sign Out (logoutWithSessionDestroy)">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signOutModeLogoutWithSessionButtonWasPressed:" destination="CSk-74-eob" eventType="touchUpInside" id="y77-4u-l81"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="E9T-Pn-UBn" firstAttribute="centerY" secondItem="xUH-x8-p8a" secondAttribute="centerY" id="97M-3y-htQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="E9T-Pn-UBn" secondAttribute="trailing" constant="16" id="ZIk-ls-SVv"/>
+                                                    <constraint firstAttribute="height" constant="65" id="kf2-fq-d9s"/>
+                                                    <constraint firstItem="E9T-Pn-UBn" firstAttribute="leading" secondItem="xUH-x8-p8a" secondAttribute="leading" constant="16" id="mUh-b3-dG0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rze-5x-AEH">
+                                                <rect key="frame" x="0.0" y="455" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-L2-k8b" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="VIP-4U-KVe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Request Account Activation By Pin">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="TbH-eN-kis" kind="show" id="Jkx-oo-P75"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="H8N-Rz-eax"/>
+                                                    <constraint firstItem="yYI-L2-k8b" firstAttribute="leading" secondItem="rze-5x-AEH" secondAttribute="leading" constant="16" id="TN5-DR-UuG"/>
+                                                    <constraint firstItem="yYI-L2-k8b" firstAttribute="centerY" secondItem="rze-5x-AEH" secondAttribute="centerY" id="UXN-qT-tCn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yYI-L2-k8b" secondAttribute="trailing" constant="16" id="wHe-A2-MSY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbF-a9-hHj">
+                                                <rect key="frame" x="0.0" y="520" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfo-TC-FRy" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Xy1-xY-sxq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Confirm Account Activation By Pin">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="u4R-Xf-2o8" kind="show" id="5NL-mz-2bq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="vfo-TC-FRy" secondAttribute="trailing" constant="16" id="G2p-BI-DWf"/>
+                                                    <constraint firstItem="vfo-TC-FRy" firstAttribute="leading" secondItem="KbF-a9-hHj" secondAttribute="leading" constant="16" id="az2-c2-epH"/>
+                                                    <constraint firstAttribute="height" constant="65" id="kvy-TN-k04"/>
+                                                    <constraint firstItem="vfo-TC-FRy" firstAttribute="centerY" secondItem="KbF-a9-hHj" secondAttribute="centerY" id="ns6-u1-Tcp"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AfS-Jv-gBE" firstAttribute="leading" secondItem="Q84-Xo-rKR" secondAttribute="leading" id="3QE-u3-bW5"/>
+                                    <constraint firstItem="AfS-Jv-gBE" firstAttribute="top" secondItem="Q84-Xo-rKR" secondAttribute="top" constant="24" id="QrR-bg-2Wm"/>
+                                    <constraint firstAttribute="bottom" secondItem="AfS-Jv-gBE" secondAttribute="bottom" id="bHP-NB-iUn"/>
+                                    <constraint firstItem="AfS-Jv-gBE" firstAttribute="width" secondItem="Q84-Xo-rKR" secondAttribute="width" id="cJm-Iu-uCE"/>
+                                    <constraint firstAttribute="trailing" secondItem="AfS-Jv-gBE" secondAttribute="trailing" id="yOV-ls-AZE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sYs-3J-odJ"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q84-Xo-rKR" firstAttribute="top" secondItem="8dH-LM-Hnk" secondAttribute="top" id="25L-nQ-9ft"/>
+                            <constraint firstAttribute="trailing" secondItem="Q84-Xo-rKR" secondAttribute="trailing" id="Heh-yZ-JcS"/>
+                            <constraint firstItem="sYs-3J-odJ" firstAttribute="bottom" secondItem="Q84-Xo-rKR" secondAttribute="bottom" id="Snm-Fq-5vQ"/>
+                            <constraint firstItem="Q84-Xo-rKR" firstAttribute="leading" secondItem="sYs-3J-odJ" secondAttribute="leading" id="UM4-xL-0bd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bys-9J-SZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-769" y="739"/>
+        </scene>
+        <!--Authorize With Facebook Table View Controller-->
+        <scene sceneID="rOJ-io-5Sv">
+            <objects>
+                <tableViewController id="AVK-9A-XM8" customClass="AuthorizeWithFacebookTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1iM-sD-sY0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Auth ID" id="Vdt-UB-Yh3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="oV0-6e-h8h">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oV0-6e-h8h" id="ON7-D2-7Gf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="authID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-LY-fTE">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="9Pv-ec-HQl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bEx-LY-fTE" firstAttribute="centerY" secondItem="ON7-D2-7Gf" secondAttribute="centerY" id="1iG-lA-ruz"/>
+                                                <constraint firstItem="bEx-LY-fTE" firstAttribute="leading" secondItem="ON7-D2-7Gf" secondAttribute="leading" constant="20" id="Wwr-HQ-IKD"/>
+                                                <constraint firstAttribute="trailing" secondItem="bEx-LY-fTE" secondAttribute="trailing" constant="20" id="tsV-x4-bAA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (legacy method)" id="UK9-gG-AYJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="IxP-hk-rRK">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IxP-hk-rRK" id="1Eq-Tn-88h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-br-PqW" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="QYW-Qx-LHK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (legacy method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithLegacyMethodButtonWasPressed:" destination="AVK-9A-XM8" eventType="touchUpInside" id="jrT-px-VBL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dJG-br-PqW" firstAttribute="centerY" secondItem="1Eq-Tn-88h" secondAttribute="centerY" id="1xL-mm-hgA"/>
+                                                <constraint firstItem="dJG-br-PqW" firstAttribute="leading" secondItem="1Eq-Tn-88h" secondAttribute="leading" constant="16" id="Pf8-BD-CeG"/>
+                                                <constraint firstAttribute="trailing" secondItem="dJG-br-PqW" secondAttribute="trailing" constant="16" id="Qny-qX-YC4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (consolidated method)" id="PDm-xG-Vst">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="8yK-pz-Uat">
+                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8yK-pz-Uat" id="6cJ-NX-4Gt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-5j-p0G" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="qJf-dZ-S5v"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (consolidated  method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithConsolidatedMethodButtonWasPressed:" destination="AVK-9A-XM8" eventType="touchUpInside" id="Sn4-l9-VvE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1sB-5j-p0G" firstAttribute="leading" secondItem="6cJ-NX-4Gt" secondAttribute="leading" constant="16" id="1M2-rP-BdS"/>
+                                                <constraint firstItem="1sB-5j-p0G" firstAttribute="centerY" secondItem="6cJ-NX-4Gt" secondAttribute="centerY" id="6w5-Je-Lg2"/>
+                                                <constraint firstAttribute="trailing" secondItem="1sB-5j-p0G" secondAttribute="trailing" constant="16" id="FUG-ZN-gRJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="ArN-Lv-5tO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="vQf-RA-KC6">
+                                        <rect key="frame" x="0.0" y="320.5" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQf-RA-KC6" id="U0N-Gt-A2f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AVK-9A-XM8" id="l8F-tb-Cac"/>
+                            <outlet property="delegate" destination="AVK-9A-XM8" id="5Mi-7Z-One"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="authIDTextField" destination="bEx-LY-fTE" id="bZk-kq-qOv"/>
+                        <outlet property="facebookLoginContainerView" destination="U0N-Gt-A2f" id="c2a-73-OqZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqs-qH-DYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="1794"/>
+        </scene>
+        <!--Request Client Account Activation By Pin Table View Controller-->
+        <scene sceneID="a2W-gm-gzR">
+            <objects>
+                <tableViewController id="TbH-eN-kis" customClass="RequestClientAccountActivationByPinTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3jD-PC-rll">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Email" id="2K2-PN-BPM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="9fG-h6-yeh">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fG-h6-yeh" id="37L-Wt-he4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-oD-XnQ">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="EsS-TP-WVF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3cd-oD-XnQ" firstAttribute="leading" secondItem="37L-Wt-he4" secondAttribute="leading" constant="20" id="1Iu-Bl-Bi2"/>
+                                                <constraint firstAttribute="trailing" secondItem="3cd-oD-XnQ" secondAttribute="trailing" constant="20" id="ggk-du-HGE"/>
+                                                <constraint firstItem="3cd-oD-XnQ" firstAttribute="centerY" secondItem="37L-Wt-he4" secondAttribute="centerY" id="p0x-du-dZV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method" id="8Fb-hD-o7w">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="HHe-Ue-6fd">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HHe-Ue-6fd" id="Vem-F0-TjI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-yK-y7C" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Ywu-wV-j6R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Request Account Activation">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="logInWithLegacyMethodButtonWasPressed:" destination="RJq-hC-nZz" eventType="touchUpInside" id="nvQ-Mr-Ufu"/>
+                                                        <action selector="requestAccountActivationByPinButtonWasPressed:" destination="TbH-eN-kis" eventType="touchUpInside" id="dhi-Ro-Lve"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JIK-yK-y7C" firstAttribute="centerY" secondItem="Vem-F0-TjI" secondAttribute="centerY" id="Jm2-bD-Vug"/>
+                                                <constraint firstItem="JIK-yK-y7C" firstAttribute="leading" secondItem="Vem-F0-TjI" secondAttribute="leading" constant="16" id="P7M-2b-qYw"/>
+                                                <constraint firstAttribute="trailing" secondItem="JIK-yK-y7C" secondAttribute="trailing" constant="16" id="xwU-mD-dCb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="TbH-eN-kis" id="ghY-wu-KMe"/>
+                            <outlet property="delegate" destination="TbH-eN-kis" id="M49-GY-sRL"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="emailTextField" destination="3cd-oD-XnQ" id="iKn-bz-B6j"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUT-tS-yal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2586" y="890"/>
+        </scene>
+        <!--Authorize With Apple Table View Controller-->
+        <scene sceneID="o2x-z5-ngV">
+            <objects>
+                <tableViewController id="7Xu-KF-HPp" customClass="AuthorizeWithAppleTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="R8x-NR-i7b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Auth ID" id="c2A-NC-6Qq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="jLm-Qc-crk">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jLm-Qc-crk" id="9LI-dv-DbV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="authID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-C9-gew">
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="EMx-Ui-KpS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lj0-C9-gew" firstAttribute="centerY" secondItem="9LI-dv-DbV" secondAttribute="centerY" id="DLM-GD-u9M"/>
+                                                <constraint firstAttribute="trailing" secondItem="lj0-C9-gew" secondAttribute="trailing" constant="20" id="Tfj-eT-get"/>
+                                                <constraint firstItem="lj0-C9-gew" firstAttribute="leading" secondItem="9LI-dv-DbV" secondAttribute="leading" constant="20" id="aVO-lt-hZZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (legacy method)" id="C7j-yE-n7d">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="x0t-ys-u6T">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0t-ys-u6T" id="vUi-Am-zoK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-h8-VfR" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kMO-u0-wiL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (legacy method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithLegacyMethodButtonWasPressed:" destination="7Xu-KF-HPp" eventType="touchUpInside" id="vBi-Ic-lAt"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="MaY-h8-VfR" secondAttribute="trailing" constant="16" id="ENg-et-oY4"/>
+                                                <constraint firstItem="MaY-h8-VfR" firstAttribute="centerY" secondItem="vUi-Am-zoK" secondAttribute="centerY" id="N9b-jm-RUu"/>
+                                                <constraint firstItem="MaY-h8-VfR" firstAttribute="leading" secondItem="vUi-Am-zoK" secondAttribute="leading" constant="16" id="nib-s4-X7t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Fire Method (consolidated method)" id="xDd-IT-bcD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="dvd-D9-DKG">
+                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dvd-D9-DKG" id="L0l-PB-UID">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-uK-t9B" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="2.5" width="343" height="40"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="f4U-e3-b9y"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Authorize (consolidated  method)">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="authorizeWithConsolidatedMethodButtonWasPressed:" destination="7Xu-KF-HPp" eventType="touchUpInside" id="fHW-S7-qUv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="sgg-uK-t9B" secondAttribute="trailing" constant="16" id="i1u-zR-D23"/>
+                                                <constraint firstItem="sgg-uK-t9B" firstAttribute="leading" secondItem="L0l-PB-UID" secondAttribute="leading" constant="16" id="pqD-9U-aHb"/>
+                                                <constraint firstItem="sgg-uK-t9B" firstAttribute="centerY" secondItem="L0l-PB-UID" secondAttribute="centerY" id="sBt-na-zw4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="PnR-OQ-6dB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="euN-qd-aLt">
+                                        <rect key="frame" x="0.0" y="320.5" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="euN-qd-aLt" id="bCI-xH-GB9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7Xu-KF-HPp" id="PAB-Z6-OAd"/>
+                            <outlet property="delegate" destination="7Xu-KF-HPp" id="0UP-8g-52m"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="appleLoginContainerView" destination="bCI-xH-GB9" id="OZt-Fo-oIO"/>
+                        <outlet property="authIDTextField" destination="lj0-C9-gew" id="U3a-gB-uWm"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6g-mD-b9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="1793"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1sB-5j-p0G">
+            <size key="intrinsicContentSize" width="288" height="34"/>
+        </designable>
+        <designable name="7fy-gY-lY7">
+            <size key="intrinsicContentSize" width="117" height="34"/>
+        </designable>
+        <designable name="E9T-Pn-UBn">
+            <size key="intrinsicContentSize" width="291" height="32"/>
+        </designable>
+        <designable name="IT6-wh-W1B">
+            <size key="intrinsicContentSize" width="74" height="34"/>
+        </designable>
+        <designable name="JIK-yK-y7C">
+            <size key="intrinsicContentSize" width="238" height="34"/>
+        </designable>
+        <designable name="Kj8-46-RUk">
+            <size key="intrinsicContentSize" width="154" height="34"/>
+        </designable>
+        <designable name="MaY-h8-VfR">
+            <size key="intrinsicContentSize" width="230" height="34"/>
+        </designable>
+        <designable name="V9W-uY-fcM">
+            <size key="intrinsicContentSize" width="121" height="34"/>
+        </designable>
+        <designable name="Xq1-Gm-9Pb">
+            <size key="intrinsicContentSize" width="125" height="34"/>
+        </designable>
+        <designable name="ad1-F4-hFy">
+            <size key="intrinsicContentSize" width="248" height="34"/>
+        </designable>
+        <designable name="cHx-F1-noH">
+            <size key="intrinsicContentSize" width="288" height="34"/>
+        </designable>
+        <designable name="dJG-br-PqW">
+            <size key="intrinsicContentSize" width="230" height="34"/>
+        </designable>
+        <designable name="fqi-MI-MZz">
+            <size key="intrinsicContentSize" width="194" height="34"/>
+        </designable>
+        <designable name="ooX-BB-XLi">
+            <size key="intrinsicContentSize" width="148" height="34"/>
+        </designable>
+        <designable name="sgg-uK-t9B">
+            <size key="intrinsicContentSize" width="288" height="34"/>
+        </designable>
+        <designable name="usq-gs-YyR">
+            <size key="intrinsicContentSize" width="230" height="34"/>
+        </designable>
+        <designable name="vfo-TC-FRy">
+            <size key="intrinsicContentSize" width="295" height="34"/>
+        </designable>
+        <designable name="x5K-4v-pOL">
+            <size key="intrinsicContentSize" width="237" height="34"/>
+        </designable>
+        <designable name="yYI-L2-k8b">
+            <size key="intrinsicContentSize" width="296" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

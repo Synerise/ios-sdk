@@ -1,0 +1,48 @@
+ [
+  {
+  "brand": "Apple",
+  "name": "iPhone X 64GB",
+  "sku": "9",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. ",
+  "image":"http://gate.net.pl/mobile/el-iphx.png",
+  "price": 999.99,
+  "rating": 5.0,
+  "ratingCount": 232,
+  "categories": "Phones"
+  },
+  {
+  "brand": "Samsung",
+  "name": "Samsung Galaxy S9",
+  "sku": "10",
+  "description": "Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+  "image":"http://gate.net.pl/mobile/el-gals9.png",
+  "price": 999.99,
+  "rating": 4.2,
+  "ratingCount": 514,
+  "categories": "Phones"
+  },
+  {
+  "brand": "Xiaomi",
+  "name": "Xiaomi Mi Mix 2",
+  "sku": "11",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Curabitur mollis, urna sed condimentum euismod, risus mi sollicitudin neque, in dictum nibh arcu sit amet nisi. Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+  "image":"http://gate.net.pl/mobile/el-mix2.png",
+  "price": 399.99,
+  "rating": 5.0,
+  "ratingCount": 343,
+  "categories": "Phones"
+  },
+  {
+  "brand": "Google",
+  "name": "Google Pixel 2 64GB",
+  "sku": "12",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Aliquam malesuada leo sed ante pharetra bibendum.",
+  "image":"http://gate.net.pl/mobile/el-pix2.png",
+  "price": 799.99,
+  "rating": 5.0,
+  "ratingCount": 111,
+  "categories": "Phones"
+  }
+  ]
+
+

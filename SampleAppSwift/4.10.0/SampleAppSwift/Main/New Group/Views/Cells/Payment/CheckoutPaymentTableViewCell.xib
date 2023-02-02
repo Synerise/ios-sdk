@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CheckoutPaymentTableViewCell" id="wLa-QJ-d1e" customClass="CheckoutPaymentTableViewCell" customModule="SampleAppSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLa-QJ-d1e" id="r53-Kp-hJB">
+                <rect key="frame" x="0.0" y="0.0" width="473" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKD-v6-d2v" customClass="DefaultImageView" customModule="SampleAppSwift" customModuleProvider="target">
+                        <rect key="frame" x="20" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="DG2-jd-WEL"/>
+                            <constraint firstAttribute="height" constant="40" id="T28-2T-Rzw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit card:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-wj-OUt">
+                        <rect key="frame" x="80" y="30.5" width="92.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4276 **** **** ****" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGv-Yk-Oba">
+                        <rect key="frame" x="192.5" y="30.5" width="142.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.58039215690000001" green="0.61960784310000006" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cS5-gw-dYm" customClass="CheckboxButton" customModule="SampleAppSwift" customModuleProvider="target">
+                        <rect key="frame" x="423" y="24" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8au-8c-Zab"/>
+                            <constraint firstAttribute="width" constant="30" id="wo5-aL-1HA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="containerColor">
+                                <color key="value" red="0.043137254899999998" green="0.40784313729999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="containerLineWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="checkLineWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="checkColor">
+                                <color key="value" red="0.043137254899999998" green="0.40784313729999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="containerFillsOnToggleOn" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="checkboxButtonValueChanged:" destination="wLa-QJ-d1e" eventType="valueChanged" id="G80-iV-jN6"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EGv-Yk-Oba" firstAttribute="leading" secondItem="c8c-wj-OUt" secondAttribute="trailing" constant="20" id="3mG-a5-Pyf"/>
+                    <constraint firstItem="c8c-wj-OUt" firstAttribute="centerY" secondItem="hKD-v6-d2v" secondAttribute="centerY" id="IYh-xW-TVz"/>
+                    <constraint firstItem="c8c-wj-OUt" firstAttribute="leading" secondItem="hKD-v6-d2v" secondAttribute="trailing" constant="20" id="Ltn-d4-hMs"/>
+                    <constraint firstAttribute="bottom" secondItem="hKD-v6-d2v" secondAttribute="bottom" constant="20" id="M5Y-Nc-p6J"/>
+                    <constraint firstItem="EGv-Yk-Oba" firstAttribute="centerY" secondItem="c8c-wj-OUt" secondAttribute="centerY" id="Sje-50-uIQ"/>
+                    <constraint firstAttribute="trailing" secondItem="cS5-gw-dYm" secondAttribute="trailing" constant="20" id="icI-lZ-OAT"/>
+                    <constraint firstItem="cS5-gw-dYm" firstAttribute="centerY" secondItem="r53-Kp-hJB" secondAttribute="centerY" id="nHv-Iu-o59"/>
+                    <constraint firstItem="hKD-v6-d2v" firstAttribute="leading" secondItem="r53-Kp-hJB" secondAttribute="leading" constant="20" id="rbS-LI-ubi"/>
+                    <constraint firstItem="hKD-v6-d2v" firstAttribute="top" secondItem="r53-Kp-hJB" secondAttribute="top" constant="20" id="svR-CB-ikn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="C4H-Pc-rcb"/>
+            <connections>
+                <outlet property="cardNumberLabel" destination="EGv-Yk-Oba" id="55Q-a5-Ih0"/>
+                <outlet property="checkboxButton" destination="cS5-gw-dYm" id="WC1-bp-3xz"/>
+                <outlet property="companyLogoImageView" destination="hKD-v6-d2v" id="bhg-Na-3ds"/>
+                <outlet property="companyNameLabel" destination="c8c-wj-OUt" id="S9B-mO-mbd"/>
+            </connections>
+            <point key="canvasLocation" x="150.5" y="121"/>
+        </tableViewCell>
+    </objects>
+</document>
