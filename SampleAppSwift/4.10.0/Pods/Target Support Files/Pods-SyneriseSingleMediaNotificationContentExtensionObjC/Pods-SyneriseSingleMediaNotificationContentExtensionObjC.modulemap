@@ -1,6 +1,0 @@
-framework module Pods_SyneriseSingleMediaNotificationContentExtensionObjC {
-  umbrella header "Pods-SyneriseSingleMediaNotificationContentExtensionObjC-umbrella.h"
-
-  export *
-  module * { export * }
-}

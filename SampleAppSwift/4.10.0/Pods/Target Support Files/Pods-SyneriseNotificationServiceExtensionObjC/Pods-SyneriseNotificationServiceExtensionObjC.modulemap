@@ -1,6 +1,0 @@
-framework module Pods_SyneriseNotificationServiceExtensionObjC {
-  umbrella header "Pods-SyneriseNotificationServiceExtensionObjC-umbrella.h"
-
-  export *
-  module * { export * }
-}

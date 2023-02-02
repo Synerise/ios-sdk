@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039CF945AB35C3C6C29899D0 /* Pods_SyneriseNotificationServiceExtensionObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3842F85CB402FB6FBBD518FA /* Pods_SyneriseNotificationServiceExtensionObjC.framework */; };
 		2D07E15320CFC967005E89D5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */; };
 		2D07E15520CFC9B7005E89D5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D07E15420CFC9B7005E89D5 /* MainViewController.xib */; };
 		2D07E15720CFC9DB005E89D5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E15620CFC9DB005E89D5 /* MainViewController.swift */; };
@@ -40,8 +39,6 @@
 		2DD999C6211C72A1007E24DC /* ClientGetPromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C5211C72A1007E24DC /* ClientGetPromotionTableViewController.swift */; };
 		2DD999C8211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */; };
 		2DF81EC720B8608D009AAC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF81EC620B8608D009AAC66 /* Assets.xcassets */; };
-		3673EE0B65BBC1B7C4424F98 /* Pods_SyneriseCarouselNotificationContentExtensionObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F91BE25148C998B6962FC45 /* Pods_SyneriseCarouselNotificationContentExtensionObjC.framework */; };
-		4BA4875C8A9156DD12C05255 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD99DA437C6E51E0AA159966 /* Pods_SampleAppSwift.framework */; };
 		6F1E02BC22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */; };
 		6F500D6A229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */; };
 		6F58377B228020FB001BD179 /* ContentAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F58377A228020FB001BD179 /* ContentAPIViewController.swift */; };
@@ -57,8 +54,6 @@
 		6FDB918C24053C8F00C7B6C4 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB918B24053C8F00C7B6C4 /* WalkthroughViewController.swift */; };
 		6FFD723C21BFE17D00A721B3 /* DeleteAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */; };
 		6FFD724321C001F000A721B3 /* ConfirmClientAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */; };
-		859BFEBEBEC37C99A64405B4 /* Pods_SyneriseNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE5C8B69E381821E36C600E /* Pods_SyneriseNotificationServiceExtension.framework */; };
-		98ED4F91EA8A181BD08F1340 /* Pods_SyneriseCarouselNotificationContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA59B9E972F1EB7513D4F8ED /* Pods_SyneriseCarouselNotificationContentExtension.framework */; };
 		A104C3D9212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */; };
 		A127138520F882CA00550CC0 /* CustomEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138420F882CA00550CC0 /* CustomEventViewController.swift */; };
 		A127138720F884BD00550CC0 /* CustomEventParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127138620F884BD00550CC0 /* CustomEventParameter.swift */; };
@@ -161,8 +156,6 @@
 		C16A827B286092B400256696 /* RecommendationsWidgetPlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A827A286092B400256696 /* RecommendationsWidgetPlaygroundViewController.swift */; };
 		C1E6ECD82885990F00DBA488 /* InAppMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6ECD72885990F00DBA488 /* InAppMessageViewController.swift */; };
 		C1E6ECDA28859F5900DBA488 /* InAppMessagesDictionaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6ECD928859F5900DBA488 /* InAppMessagesDictionaryData.swift */; };
-		DBE4222D7F64C5CF6E4BF013 /* Pods_SyneriseSingleMediaNotificationContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B293166C32C6C96563D306FD /* Pods_SyneriseSingleMediaNotificationContentExtension.framework */; };
-		DDF8B8E435A9C6AEA9BE8CD1 /* Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0416604449BFADAC30AC40 /* Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework */; };
 		FF068DEA20C1966800A508C3 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DE920C1966800A508C3 /* Administrator.swift */; };
 		FF068DEC20C1979900A508C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DEB20C1979900A508C3 /* Coordinator.swift */; };
 		FF068DEE20C1985500A508C3 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF068DED20C1985500A508C3 /* ApplicationController.swift */; };
@@ -381,11 +374,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C0416604449BFADAC30AC40 /* Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F91BE25148C998B6962FC45 /* Pods_SyneriseCarouselNotificationContentExtensionObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseCarouselNotificationContentExtensionObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FA4445AB5899FCE7667DB0B /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
-		257F6E7080873F3002365A3E /* Pods-SyneriseCarouselNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseCarouselNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-SyneriseCarouselNotificationContentExtension/Pods-SyneriseCarouselNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
-		299443FB8BBAEC3AFEFC26C2 /* Pods-SyneriseCarouselNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseCarouselNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseCarouselNotificationContentExtension/Pods-SyneriseCarouselNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		2D07E15220CFC967005E89D5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2D07E15420CFC9B7005E89D5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		2D07E15620CFC9DB005E89D5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -418,13 +406,6 @@
 		2DD999C7211C72BA007E24DC /* ClientActivatePromotionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientActivatePromotionTableViewController.swift; sourceTree = "<group>"; };
 		2DF81EBC20B8608B009AAC66 /* SDK Sample App Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Sample App Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF81EC620B8608D009AAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3842F85CB402FB6FBBD518FA /* Pods_SyneriseNotificationServiceExtensionObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseNotificationServiceExtensionObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		385A2A174BF9FD919021A686 /* Pods-SyneriseNotificationServiceExtensionObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseNotificationServiceExtensionObjC.release.xcconfig"; path = "Target Support Files/Pods-SyneriseNotificationServiceExtensionObjC/Pods-SyneriseNotificationServiceExtensionObjC.release.xcconfig"; sourceTree = "<group>"; };
-		53F3D606CBC4FF8DA1A28F3F /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseSingleMediaNotificationContentExtensionObjC.release.xcconfig"; path = "Target Support Files/Pods-SyneriseSingleMediaNotificationContentExtensionObjC/Pods-SyneriseSingleMediaNotificationContentExtensionObjC.release.xcconfig"; sourceTree = "<group>"; };
-		5FE5C8B69E381821E36C600E /* Pods_SyneriseNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6658FFF08E6BDC3C4AD29AA5 /* Pods-SyneriseNotificationServiceExtensionObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseNotificationServiceExtensionObjC.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseNotificationServiceExtensionObjC/Pods-SyneriseNotificationServiceExtensionObjC.debug.xcconfig"; sourceTree = "<group>"; };
-		6ACC275B4A14468DCA689842 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseCarouselNotificationContentExtensionObjC.release.xcconfig"; path = "Target Support Files/Pods-SyneriseCarouselNotificationContentExtensionObjC/Pods-SyneriseCarouselNotificationContentExtensionObjC.release.xcconfig"; sourceTree = "<group>"; };
-		6C5173774EF8304D59C92567 /* Pods-SyneriseNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-SyneriseNotificationServiceExtension/Pods-SyneriseNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6F1E02BB22A9309E00CF5AD4 /* RecommendationsWidgetAsFullScreenGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsFullScreenGridViewController.swift; sourceTree = "<group>"; };
 		6F500D69229D3ECA0053C7FE /* RecommendationsWidgetAsGridTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsGridTableViewController.swift; sourceTree = "<group>"; };
 		6F58377A228020FB001BD179 /* ContentAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPIViewController.swift; sourceTree = "<group>"; };
@@ -434,16 +415,12 @@
 		6F664E0721ECB82A00BCF749 /* DeleteAccountByFacebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountByFacebookTableViewController.swift; sourceTree = "<group>"; };
 		6F6A93B921CD1B2700F69007 /* NSURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		6F916FBF22AAAAEF00BAF136 /* RecommendationsWidgetViewControlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetViewControlerViewController.swift; sourceTree = "<group>"; };
-		6F935C69BF7F78E25A688255 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseCarouselNotificationContentExtensionObjC.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseCarouselNotificationContentExtensionObjC/Pods-SyneriseCarouselNotificationContentExtensionObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB1731823152833006C6A32 /* SDKCommandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCommandsViewController.swift; sourceTree = "<group>"; };
 		6FB885D822A9372B00ADE051 /* RecommendationsWidgetAsHalfScreenGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetAsHalfScreenGridViewController.swift; sourceTree = "<group>"; };
 		6FBCF6D622BA27CF0047C8DB /* CustomEmailAndCustomIdentifierTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmailAndCustomIdentifierTableViewController.swift; sourceTree = "<group>"; };
 		6FDB918B24053C8F00C7B6C4 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		6FFD723421BFD31100A721B3 /* ConfirmClientAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmClientAccountTableViewController.swift; sourceTree = "<group>"; };
 		6FFD723B21BFE17D00A721B3 /* DeleteAccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewController.swift; sourceTree = "<group>"; };
-		7D1498395DC9B208D1D7CBB0 /* Pods-SyneriseSingleMediaNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseSingleMediaNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-SyneriseSingleMediaNotificationContentExtension/Pods-SyneriseSingleMediaNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
-		8F30FAEBC0EDEE8692365A4D /* Pods-SyneriseSingleMediaNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseSingleMediaNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseSingleMediaNotificationContentExtension/Pods-SyneriseSingleMediaNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		A00B659180CFC19096717E5B /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A104C3D8212B29B9004FAC6C /* ChangeClientPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientPasswordTableViewController.swift; sourceTree = "<group>"; };
 		A109010320ECDD1B009A19E5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -539,19 +516,14 @@
 		A1E279FF20E6482A00E595B5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		A1E27A0120E64A8E00E595B5 /* SectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataSource.swift; sourceTree = "<group>"; };
 		A1E9F1AC211DEDD6003EE067 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
-		B293166C32C6C96563D306FD /* Pods_SyneriseSingleMediaNotificationContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseSingleMediaNotificationContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810EC8020C6902000218B93 /* SyneriseSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SyneriseSDK.xcodeproj; path = ../SyneriseSDK/SyneriseSDK.xcodeproj; sourceTree = "<group>"; };
 		B84F68CB20C7EBFC00A8ECBE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = SampleAppSwift/Internal/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
 		B84F68CE20C7EC4900A8ECBE /* UserRegistrationFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegistrationFormView.xib; sourceTree = "<group>"; };
 		B84F68D020C7EC9900A8ECBE /* UserRegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFormView.swift; sourceTree = "<group>"; };
 		B84F68E620C9374300A8ECBE /* DefaultLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabel.swift; sourceTree = "<group>"; };
-		BA59B9E972F1EB7513D4F8ED /* Pods_SyneriseCarouselNotificationContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyneriseCarouselNotificationContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1C23C26E965FE4CC724676 /* Pods-SyneriseNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseNotificationServiceExtension/Pods-SyneriseNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		BD99DA437C6E51E0AA159966 /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16A827A286092B400256696 /* RecommendationsWidgetPlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsWidgetPlaygroundViewController.swift; sourceTree = "<group>"; };
 		C1E6ECD72885990F00DBA488 /* InAppMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessageViewController.swift; sourceTree = "<group>"; };
 		C1E6ECD928859F5900DBA488 /* InAppMessagesDictionaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagesDictionaryData.swift; sourceTree = "<group>"; };
-		FB6FBEF2CECA999B3DD99B81 /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyneriseSingleMediaNotificationContentExtensionObjC.debug.xcconfig"; path = "Target Support Files/Pods-SyneriseSingleMediaNotificationContentExtensionObjC/Pods-SyneriseSingleMediaNotificationContentExtensionObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		FF068DE920C1966800A508C3 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
 		FF068DEB20C1979900A508C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FF068DED20C1985500A508C3 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -687,7 +659,6 @@
 				2D401F32214A687C0000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F10214A64180000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F0F214A64180000F229 /* UserNotifications.framework in Frameworks */,
-				DBE4222D7F64C5CF6E4BF013 /* Pods_SyneriseSingleMediaNotificationContentExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +669,6 @@
 				2D401F33214A68840000F229 /* SyneriseSDK.framework in Frameworks */,
 				2D401F24214A64430000F229 /* UserNotificationsUI.framework in Frameworks */,
 				2D401F23214A64430000F229 /* UserNotifications.framework in Frameworks */,
-				98ED4F91EA8A181BD08F1340 /* Pods_SyneriseCarouselNotificationContentExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +677,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B810EC8620C6904900218B93 /* SyneriseSDK.framework in Frameworks */,
-				4BA4875C8A9156DD12C05255 /* Pods_SampleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +687,6 @@
 				FF5FF8B025018052004554E7 /* UserNotificationsUI.framework in Frameworks */,
 				FF5FF8AF2501804D004554E7 /* UserNotifications.framework in Frameworks */,
 				FF5FF8AE25018044004554E7 /* SyneriseSDK.framework in Frameworks */,
-				859BFEBEBEC37C99A64405B4 /* Pods_SyneriseNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +697,6 @@
 				FF5FF8B325018060004554E7 /* UserNotificationsUI.framework in Frameworks */,
 				FF5FF8B22501805C004554E7 /* UserNotifications.framework in Frameworks */,
 				FF5FF8B125018057004554E7 /* SyneriseSDK.framework in Frameworks */,
-				039CF945AB35C3C6C29899D0 /* Pods_SyneriseNotificationServiceExtensionObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +707,6 @@
 				FFC037FE2422201600FDF7B0 /* UserNotificationsUI.framework in Frameworks */,
 				FFDCD6D9242222F300ACD670 /* SyneriseSDK.framework in Frameworks */,
 				FFC037FD2422201600FDF7B0 /* UserNotifications.framework in Frameworks */,
-				3673EE0B65BBC1B7C4424F98 /* Pods_SyneriseCarouselNotificationContentExtensionObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +717,6 @@
 				FFD3E71D2421158600AE7502 /* SyneriseSDK.framework in Frameworks */,
 				FFD3E70D242114F300AE7502 /* UserNotificationsUI.framework in Frameworks */,
 				FFD3E70C242114F300AE7502 /* UserNotifications.framework in Frameworks */,
-				DDF8B8E435A9C6AEA9BE8CD1 /* Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,7 +813,6 @@
 				2DF81EBD20B8608B009AAC66 /* Products */,
 				E16064DE79C651DF8B25B492 /* Frameworks */,
 				6FC7C80C22C35AEE00DBBDC4 /* Recovered References */,
-				AE03678F609D0A307C846CA4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1136,28 +1100,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		AE03678F609D0A307C846CA4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A00B659180CFC19096717E5B /* Pods-SampleAppSwift.debug.xcconfig */,
-				1FA4445AB5899FCE7667DB0B /* Pods-SampleAppSwift.release.xcconfig */,
-				299443FB8BBAEC3AFEFC26C2 /* Pods-SyneriseCarouselNotificationContentExtension.debug.xcconfig */,
-				257F6E7080873F3002365A3E /* Pods-SyneriseCarouselNotificationContentExtension.release.xcconfig */,
-				6F935C69BF7F78E25A688255 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.debug.xcconfig */,
-				6ACC275B4A14468DCA689842 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.release.xcconfig */,
-				BB1C23C26E965FE4CC724676 /* Pods-SyneriseNotificationServiceExtension.debug.xcconfig */,
-				6C5173774EF8304D59C92567 /* Pods-SyneriseNotificationServiceExtension.release.xcconfig */,
-				6658FFF08E6BDC3C4AD29AA5 /* Pods-SyneriseNotificationServiceExtensionObjC.debug.xcconfig */,
-				385A2A174BF9FD919021A686 /* Pods-SyneriseNotificationServiceExtensionObjC.release.xcconfig */,
-				8F30FAEBC0EDEE8692365A4D /* Pods-SyneriseSingleMediaNotificationContentExtension.debug.xcconfig */,
-				7D1498395DC9B208D1D7CBB0 /* Pods-SyneriseSingleMediaNotificationContentExtension.release.xcconfig */,
-				FB6FBEF2CECA999B3DD99B81 /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.debug.xcconfig */,
-				53F3D606CBC4FF8DA1A28F3F /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B810EC8120C6902000218B93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1172,13 +1114,6 @@
 			children = (
 				A109010320ECDD1B009A19E5 /* UserNotifications.framework */,
 				A109010520ECDD1B009A19E5 /* UserNotificationsUI.framework */,
-				BD99DA437C6E51E0AA159966 /* Pods_SampleAppSwift.framework */,
-				BA59B9E972F1EB7513D4F8ED /* Pods_SyneriseCarouselNotificationContentExtension.framework */,
-				1F91BE25148C998B6962FC45 /* Pods_SyneriseCarouselNotificationContentExtensionObjC.framework */,
-				5FE5C8B69E381821E36C600E /* Pods_SyneriseNotificationServiceExtension.framework */,
-				3842F85CB402FB6FBBD518FA /* Pods_SyneriseNotificationServiceExtensionObjC.framework */,
-				B293166C32C6C96563D306FD /* Pods_SyneriseSingleMediaNotificationContentExtension.framework */,
-				1C0416604449BFADAC30AC40 /* Pods_SyneriseSingleMediaNotificationContentExtensionObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1765,7 +1700,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D401F1B214A64180000F229 /* Build configuration list for PBXNativeTarget "SyneriseSingleMediaNotificationContentExtension" */;
 			buildPhases = (
-				2E596F9D42AE6396A81D8A50 /* [CP] Check Pods Manifest.lock */,
 				2D401F0A214A64180000F229 /* Sources */,
 				2D401F0B214A64180000F229 /* Frameworks */,
 				2D401F0C214A64180000F229 /* Resources */,
@@ -1783,7 +1717,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D401F2F214A64430000F229 /* Build configuration list for PBXNativeTarget "SyneriseCarouselNotificationContentExtension" */;
 			buildPhases = (
-				8CA14C80960C4C0E69B87CA0 /* [CP] Check Pods Manifest.lock */,
 				2D401F1E214A64430000F229 /* Sources */,
 				2D401F1F214A64430000F229 /* Frameworks */,
 				2D401F20214A64430000F229 /* Resources */,
@@ -1801,14 +1734,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF81EE420B8608D009AAC66 /* Build configuration list for PBXNativeTarget "SampleAppSwift" */;
 			buildPhases = (
-				F65EEA26BED6C85A3C31E12B /* [CP] Check Pods Manifest.lock */,
 				2DF81EB820B8608B009AAC66 /* Sources */,
 				2DF81EB920B8608B009AAC66 /* Frameworks */,
 				2DF81EBA20B8608B009AAC66 /* Resources */,
 				B810EC8A20C6904900218B93 /* Embed Frameworks */,
 				A12BE44A20D3C7DB00056A36 /* SwiftLint */,
 				A16AB8EC20EBD2E200B7282C /* Embed App Extensions */,
-				73761909D7C3763993EABE98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1830,7 +1761,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF5FF88C25017EB0004554E7 /* Build configuration list for PBXNativeTarget "SyneriseNotificationServiceExtension" */;
 			buildPhases = (
-				E229A9F11F94FEBB47BA6266 /* [CP] Check Pods Manifest.lock */,
 				FF5FF88025017EB0004554E7 /* Sources */,
 				FF5FF88125017EB0004554E7 /* Frameworks */,
 				FF5FF88225017EB0004554E7 /* Resources */,
@@ -1848,7 +1778,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF5FF89C25017EDC004554E7 /* Build configuration list for PBXNativeTarget "SyneriseNotificationServiceExtensionObjC" */;
 			buildPhases = (
-				263E26314159155593597AF7 /* [CP] Check Pods Manifest.lock */,
 				FF5FF88F25017EDC004554E7 /* Sources */,
 				FF5FF89025017EDC004554E7 /* Frameworks */,
 				FF5FF89125017EDC004554E7 /* Resources */,
@@ -1866,7 +1795,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC0380A2422201600FDF7B0 /* Build configuration list for PBXNativeTarget "SyneriseCarouselNotificationContentExtensionObjC" */;
 			buildPhases = (
-				B3EA1BBB05E790D44A143A97 /* [CP] Check Pods Manifest.lock */,
 				FFC037F82422201600FDF7B0 /* Sources */,
 				FFC037F92422201600FDF7B0 /* Frameworks */,
 				FFC037FA2422201600FDF7B0 /* Resources */,
@@ -1884,7 +1812,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFD3E71C242114F300AE7502 /* Build configuration list for PBXNativeTarget "SyneriseSingleMediaNotificationContentExtensionObjC" */;
 			buildPhases = (
-				0F2167CFA1A4D4EA2562922D /* [CP] Check Pods Manifest.lock */,
 				FFD3E707242114F300AE7502 /* Sources */,
 				FFD3E708242114F300AE7502 /* Frameworks */,
 				FFD3E709242114F300AE7502 /* Resources */,
@@ -2110,111 +2037,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F2167CFA1A4D4EA2562922D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseSingleMediaNotificationContentExtensionObjC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		263E26314159155593597AF7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseNotificationServiceExtensionObjC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E596F9D42AE6396A81D8A50 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseSingleMediaNotificationContentExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73761909D7C3763993EABE98 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8CA14C80960C4C0E69B87CA0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseCarouselNotificationContentExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A12BE44A20D3C7DB00056A36 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2228,72 +2050,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		B3EA1BBB05E790D44A143A97 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseCarouselNotificationContentExtensionObjC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E229A9F11F94FEBB47BA6266 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SyneriseNotificationServiceExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F65EEA26BED6C85A3C31E12B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleAppSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2595,7 +2351,6 @@
 /* Begin XCBuildConfiguration section */
 		2D401F1C214A64180000F229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F30FAEBC0EDEE8692365A4D /* Pods-SyneriseSingleMediaNotificationContentExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
@@ -2622,7 +2377,6 @@
 		};
 		2D401F1D214A64180000F229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D1498395DC9B208D1D7CBB0 /* Pods-SyneriseSingleMediaNotificationContentExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtension/SyneriseSingleMediaNotificationContentExtension.entitlements;
@@ -2649,7 +2403,6 @@
 		};
 		2D401F30214A64430000F229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 299443FB8BBAEC3AFEFC26C2 /* Pods-SyneriseCarouselNotificationContentExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
@@ -2675,7 +2428,6 @@
 		};
 		2D401F31214A64430000F229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 257F6E7080873F3002365A3E /* Pods-SyneriseCarouselNotificationContentExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtension/SyneriseCarouselNotificationContentExtension.entitlements;
@@ -2819,7 +2571,6 @@
 		};
 		2DF81EE520B8608D009AAC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00B659180CFC19096717E5B /* Pods-SampleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2862,7 +2613,6 @@
 		};
 		2DF81EE620B8608D009AAC66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA4445AB5899FCE7667DB0B /* Pods-SampleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -2892,7 +2642,6 @@
 		};
 		FF5FF88D25017EB0004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB1C23C26E965FE4CC724676 /* Pods-SyneriseNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
@@ -2921,7 +2670,6 @@
 		};
 		FF5FF88E25017EB0004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C5173774EF8304D59C92567 /* Pods-SyneriseNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtension/SyneriseNotificationServiceExtension.entitlements;
@@ -2949,7 +2697,6 @@
 		};
 		FF5FF89D25017EDC004554E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6658FFF08E6BDC3C4AD29AA5 /* Pods-SyneriseNotificationServiceExtensionObjC.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
@@ -2977,7 +2724,6 @@
 		};
 		FF5FF89E25017EDC004554E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 385A2A174BF9FD919021A686 /* Pods-SyneriseNotificationServiceExtensionObjC.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseNotificationServiceExtensionObjC/SyneriseNotificationServiceExtensionObjC.entitlements;
@@ -3004,7 +2750,6 @@
 		};
 		FFC0380B2422201600FDF7B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F935C69BF7F78E25A688255 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
@@ -3032,7 +2777,6 @@
 		};
 		FFC0380C2422201600FDF7B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ACC275B4A14468DCA689842 /* Pods-SyneriseCarouselNotificationContentExtensionObjC.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseCarouselNotificationContentExtensionObjC/SyneriseCarouselNotificationContentExtensionObjC.entitlements;
@@ -3059,7 +2803,6 @@
 		};
 		FFD3E719242114F300AE7502 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB6FBEF2CECA999B3DD99B81 /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;
@@ -3087,7 +2830,6 @@
 		};
 		FFD3E71A242114F300AE7502 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53F3D606CBC4FF8DA1A28F3F /* Pods-SyneriseSingleMediaNotificationContentExtensionObjC.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SyneriseSingleMediaNotificationContentExtensionObjC/SyneriseSingleMediaNotificationContentExtensionObjC.entitlements;

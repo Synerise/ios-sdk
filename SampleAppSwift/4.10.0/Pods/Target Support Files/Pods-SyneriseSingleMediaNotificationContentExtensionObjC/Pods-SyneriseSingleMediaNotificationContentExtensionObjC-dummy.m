@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_SyneriseSingleMediaNotificationContentExtensionObjC : NSObject
-@end
-@implementation PodsDummy_Pods_SyneriseSingleMediaNotificationContentExtensionObjC
-@end
