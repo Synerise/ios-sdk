@@ -39,11 +39,15 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ## [4.8.1] - 2022-12-01
 
+!!! THIS VERSION HAS BEEN REMOVED DUE TO THE POSSIBILITY OF A CRITICAL ERROR !!!
+
 ### Fixed
 - Optimization of networking requests setup to avoid issues with missing headers.
 
 
 ## [4.8.0] - 2022-11-30
+
+!!! THIS VERSION HAS BEEN REMOVED DUE TO THE POSSIBILITY OF A CRITICAL ERROR !!!
 
 ### Fixed
 - Potential In-app messaging issue which caused presenting in-app message when the user was not in the required segment.
