@@ -9,7 +9,7 @@
 import UserNotifications
 import SyneriseSDK
 
-class NotificationService: UNNotificationServiceExtension, NotificationServiceExtensionDelegate {
+class NotificationService: UNNotificationServiceExtension, NotificationServiceExtensionDelegate, NotificationDelegate {
     
     var contentHandler: ((UNNotificationContent) -> Void)?
     var receivedRequest: UNNotificationRequest?
@@ -25,6 +25,7 @@ class NotificationService: UNNotificationServiceExtension, NotificationServiceEx
             Synerise.settings.sdk.keychainGroupIdentifier = "34N2Z22TKH.keychainGroup"
             
             NotificationServiceExtension.setDelegate(self)
+            NotificationServiceExtension.setNotificationDelegate(self)
             
             #if DEBUG
             NotificationServiceExtension.setDebugModeEnabled(true)
@@ -66,5 +67,9 @@ class NotificationService: UNNotificationServiceExtension, NotificationServiceEx
 #if DEBUG
         self.bestAttemptContent?.title = error.localizedDescription
 #endif
+    }
+    
+    func snr_notificationDidReceive(notificationInfo: NotificationInfo) {
+        
     }
 }
