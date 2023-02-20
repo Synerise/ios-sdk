@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2022 Synerise. All rights reserved.
+//  Copyright (c) 2023 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRSyneriseActivity.h>
@@ -108,8 +108,15 @@ NS_SWIFT_NAME(NotificationDelegate)
 
 /**
  * This method is called when a Synerise notification is dismissed.
+ *
+ * @note This method is deprecated for backward compatibility and will be removed from the 5.0.0 version of the SDK.
  */
-- (void)SNR_notificationDidDissmis:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationDidDissmis(notificationInfo:));
+- (void)SNR_notificationDidDissmis:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationDidDissmis(notificationInfo:)) DEPRECATED_MSG_ATTRIBUTE("This method contains the spelling mistake in the name and it is deprecated. Use `snr_notificationDidDismiss(notificationInfo:)` instead.");
+
+/**
+ * This method is called when a Synerise notification is dismissed.
+ */
+- (void)SNR_notificationDidDismiss:(SNRNotificationInfo *)notificationInfo NS_SWIFT_NAME(snr_notificationDidDismiss(notificationInfo:));
 
 /**
  * This method is called when a Synerise notification is clicked.

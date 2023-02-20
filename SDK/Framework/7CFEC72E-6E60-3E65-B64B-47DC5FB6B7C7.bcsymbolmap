@@ -2,7 +2,7 @@ BCSymbolMap Version: 2.0
 Apple clang version 14.0.0 (clang-1400.0.29.102)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
 iPhoneOS16.0.sdk
-/Users/kurzy/Library/Developer/Xcode/DerivedData/SyneriseSDK-anxpkwetowuxlvbuqjduetimyjju/Build/Intermediates.noindex/ArchiveIntermediates/SyneriseSDK/IntermediateBuildFilesPath/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
+/Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/build/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK
 +[SNRCoreDataInAppDisplay entityName]
 +[SNRCoreDataInAppDisplay makeEntityWithCampaignHash:inContext:]
@@ -1996,7 +1996,7 @@ __55-[SNRContentWidgetRecommendationsDataProvider download]_block_invoke
 +[SNRBaseApiRequest saveEtag:]
 +[SNRBaseApiRequest loadResponseFromEtagCache]
 +[SNRBaseApiRequest saveResponseForEtagCache:]
--[SNRBaseApiRequest removeResponseForEtagIfExists]
++[SNRBaseApiRequest removeResponseForEtagIfExists]
 +[SNRBaseApiRequest makeEtagLiteralCacheKey]
 +[SNRBaseApiRequest makeEtagResponseCacheKey]
 -[SNRBaseApiRequest init]
@@ -4838,7 +4838,7 @@ SyneriseSDK/Modules/Tracker/Events/Misc/SNRVisitedScreenEvent.m
 -[SNRNotificationDelegateHelper initWithNotificationContent:]
 -[SNRNotificationDelegateHelper initWithModel:]
 -[SNRNotificationDelegateHelper invokeNotificationDidReceive]
--[SNRNotificationDelegateHelper invokeNotificationDidDimiss]
+-[SNRNotificationDelegateHelper invokeNotificationDidDismiss]
 -[SNRNotificationDelegateHelper invokeNotificationClicked]
 -[SNRNotificationDelegateHelper invokeNotificationActionButtonClicked:]
 -[SNRNotificationDelegateHelper prepareSimplePushNotificationModelWithNotificationContent:]
@@ -4856,7 +4856,6 @@ __OBJC_$_PROTOCOL_METHOD_TYPES_SNRNotificationInfoRepresentable
 __OBJC_PROTOCOL_$_SNRNotificationInfoRepresentable
 __OBJC_LABEL_PROTOCOL_$_SNRNotificationInfoRepresentable
 __OBJC_PROTOCOL_REFERENCE_$_SNRNotificationInfoRepresentable
-_OBJC_SELECTOR_REFERENCES_.33
 __OBJC_METACLASS_RO_$_SNRNotificationDelegateHelper
 __OBJC_$_INSTANCE_METHODS_SNRNotificationDelegateHelper
 _OBJC_IVAR_$_SNRNotificationDelegateHelper._notificationInfo
@@ -9614,6 +9613,8 @@ ___51-[SNRNotificationConfigurationHelper addCategories]_block_invoke
 -[SNRNotificationConfigurationHelper generateSingleImageAttachmentForNotificationContent:]
 -[SNRNotificationConfigurationHelper getCurrentNotificationCategoriesWithoutExcludedIdentifiers:]
 ___97-[SNRNotificationConfigurationHelper getCurrentNotificationCategoriesWithoutExcludedIdentifiers:]_block_invoke
+-[SNRNotificationConfigurationHelper getCurrentNotificationCategoryWithIdentifier:]
+___83-[SNRNotificationConfigurationHelper getCurrentNotificationCategoryWithIdentifier:]_block_invoke
 -[SNRNotificationConfigurationHelper generateTemporaryCategoryIdentifier]
 -[SNRNotificationConfigurationHelper downloadAndSaveFileWithURL:validMIMETypes:error:]
 ___86-[SNRNotificationConfigurationHelper downloadAndSaveFileWithURL:validMIMETypes:error:]_block_invoke
@@ -9647,6 +9648,7 @@ __OBJC_CLASS_RO_$_SNRNotificationConfigurationHelper
 /Users/kurzy/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Misc/Notification Helpers/SNRNotificationConfigurationHelper.m
 SyneriseSDK/Misc/Notification Helpers/SNRNotificationConfigurationHelper.m
 __86-[SNRNotificationConfigurationHelper downloadAndSaveFileWithURL:validMIMETypes:error:]_block_invoke
+__83-[SNRNotificationConfigurationHelper getCurrentNotificationCategoryWithIdentifier:]_block_invoke
 __97-[SNRNotificationConfigurationHelper getCurrentNotificationCategoriesWithoutExcludedIdentifiers:]_block_invoke
 __51-[SNRNotificationConfigurationHelper addCategories]_block_invoke
 -[SNRRecommendationResponseExtras contextItems]
@@ -11686,7 +11688,7 @@ __52-[SNRNotificationService isNotificationInBackground]_block_invoke
 __53-[SNRNotificationService isAppLaunchedByNotification]_block_invoke
 +[SNRClientUUIDChangeSignal sharedSignal]
 ___41+[SNRClientUUIDChangeSignal sharedSignal]_block_invoke
--[SNRClientUUIDChangeSignal notifyUUIDChanged]
+-[SNRClientUUIDChangeSignal notifyUUIDChangedWithReason:]
 __OBJC_$_CLASS_METHODS_SNRClientUUIDChangeSignal
 __OBJC_METACLASS_RO_$_SNRClientUUIDChangeSignal
 __OBJC_$_INSTANCE_METHODS_SNRClientUUIDChangeSignal
@@ -11722,7 +11724,7 @@ ___27+[SNRSynerise sharedObject]_block_invoke
 -[SNRSynerise setDelegate:]
 -[SNRSynerise initializeWithClientApiKey:andBaseUrl:]
 ___53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke
-___53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke.64
+___53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke.65
 -[SNRSynerise reinitializeWithClientApiKey:]
 ___44-[SNRSynerise reinitializeWithClientApiKey:]_block_invoke
 -[SNRSynerise setDebugModeEnabled:]
@@ -11739,7 +11741,7 @@ ___39-[SNRSynerise pushRegistrationRequired]_block_invoke
 -[SNRSynerise executePushRegistrationRequired]
 -[SNRSynerise setupNotifications]
 ___33-[SNRSynerise setupNotifications]_block_invoke
-___33-[SNRSynerise setupNotifications]_block_invoke.89
+___33-[SNRSynerise setupNotifications]_block_invoke.90
 ___33-[SNRSynerise setupNotifications]_block_invoke_2
 ___33-[SNRSynerise setupNotifications]_block_invoke_3
 -[SNRSynerise configureInAppService]
@@ -11756,14 +11758,16 @@ ___33-[SNRSynerise setupNotifications]_block_invoke_3
 -[SNRSynerise .cxx_destruct]
 _settings.settings
 _settings.onceToken
-_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_SELECTOR_REFERENCES_.76
 _pushRegistrationRequired.timer
-_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_CLASSLIST_REFERENCES_$_.81
+_OBJC_SELECTOR_REFERENCES_.87
 ___block_descriptor_40_e8_32r_e40_v16?0"SNRSyneriseNotificationPayload"8l
+_OBJC_CLASSLIST_REFERENCES_$_.91
 ___block_descriptor_32_e40_v16?0"SNRSyneriseNotificationPayload"8l
-___block_literal_global.91
-___block_literal_global.93
-_OBJC_CLASSLIST_REFERENCES_$_.94
+___block_literal_global.92
+___block_literal_global.94
+_OBJC_CLASSLIST_REFERENCES_$_.97
 __OBJC_$_CLASS_METHODS_SNRSynerise
 __OBJC_CLASS_PROTOCOLS_$_SNRSynerise
 __OBJC_$_CLASS_PROP_LIST_SNRSynerise
@@ -11782,12 +11786,12 @@ __OBJC_CLASS_RO_$_SNRSynerise
 SyneriseSDK/Core/SNRSynerise.m
 __33-[SNRSynerise setupNotifications]_block_invoke_3
 __33-[SNRSynerise setupNotifications]_block_invoke_2
-__33-[SNRSynerise setupNotifications]_block_invoke.89
+__33-[SNRSynerise setupNotifications]_block_invoke.90
 __33-[SNRSynerise setupNotifications]_block_invoke
 __39-[SNRSynerise pushRegistrationRequired]_block_invoke
 __45-[SNRSynerise applicationWillEnterForeground]_block_invoke
 __44-[SNRSynerise reinitializeWithClientApiKey:]_block_invoke
-__53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke.64
+__53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke.65
 __53-[SNRSynerise initializeWithClientApiKey:andBaseUrl:]_block_invoke
 __27+[SNRSynerise sharedObject]_block_invoke
 __23+[SNRSynerise settings]_block_invoke
