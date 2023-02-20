@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2022 Synerise. All rights reserved.
+//  Copyright (c) 2023 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRCartEvent.h>

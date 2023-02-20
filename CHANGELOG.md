@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.10.1] - 2023-02-20
+
+### Fixed
+- The issue that could have caused a crash in some cases in in-app cache operations when API returned error status.
+- The `snr_notificationDidDissmis(notificationInfo:)` method  in `NotificationDelegate` contains the spelling mistake in the name and it is replaced with a new method with a correct name  - `snr_notificationDidDismiss(notificationInfo:)`. The previous method is deprecated for backward compatibility and will be removed from the 5.0.0 version of the SDK.
+
+### Changed
+- Excess of anonymous log-in requests has been removed.
+- Improvements to stability.
+
+
 ## [4.10.0] - 2023-01-12
 
 ### Fixed
@@ -39,15 +50,11 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ## [4.8.1] - 2022-12-01
 
-!!! THIS VERSION HAS BEEN REMOVED DUE TO THE POSSIBILITY OF A CRITICAL ERROR !!!
-
 ### Fixed
 - Optimization of networking requests setup to avoid issues with missing headers.
 
 
 ## [4.8.0] - 2022-11-30
-
-!!! THIS VERSION HAS BEEN REMOVED DUE TO THE POSSIBILITY OF A CRITICAL ERROR !!!
 
 ### Fixed
 - Potential In-app messaging issue which caused presenting in-app message when the user was not in the required segment.
