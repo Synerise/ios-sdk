@@ -305,8 +305,23 @@ NS_SWIFT_NAME(Client)
 
 /**
  * Signs out the customer.
+ *
+ * @param mode Logout mode.
  */
-+ (void)signOutWithMode:(SNRClientSignOutMode)mode NS_SWIFT_NAME(signOut(mode:));
++ (void)signOutWithMode:(SNRClientSignOutMode)mode NS_SWIFT_NAME(signOut(mode:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.signOut(mode:fromAllDevices:success:failure:)` instead.");
+
+/**
+ * Signs out the customer.
+ *
+ * @param mode Logout mode.
+ * @param fromAllDevices Determines whether it should sign out all devices.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)signOutWithMode:(SNRClientSignOutMode)mode
+         fromAllDevices:(BOOL)fromAllDevices
+                success:(void (^)(void))success
+                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(signOut(mode:fromAllDevices:success:failure:));
 
 /**
  * Refreshes the customer's token.
