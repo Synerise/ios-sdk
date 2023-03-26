@@ -3,11 +3,20 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.11.0] - 2023-03-27
+
+### Changed
+- Creation time of an event is now updated when the event is passed to the SDK by `Tracker.send(_:)` method.
+
+### Added
+- We added a new `Client.signOut(mode:fromAllDevices:success:failure:)` method. It is analogous to `Client.signOut(mode:)`. It is an asynchronous method and notifies the backend that the client is signed out and determines if all other devices should be signed out too. Remember, `signOutWithSessionDestroy` mode clears the anonymous session and regenerates the client UUID. The `Client.signOut(mode:)` method is deprecated now.
+
+
 ## [4.10.1] - 2023-02-20
 
 ### Fixed
 - The issue that could have caused a crash in some cases in in-app cache operations when API returned error status.
-- The `snr_notificationDidDissmis(notificationInfo:)` method  in `NotificationDelegate` contains the spelling mistake in the name and it is replaced with a new method with a correct name  - `snr_notificationDidDismiss(notificationInfo:)`. The previous method is deprecated for backward compatibility and will be removed from the 5.0.0 version of the SDK.
+- The `snr_notificationDidDissmis(notificationInfo:)` method in `NotificationDelegate` contains the spelling mistake in the name and it is replaced with a new method with a correct name - `snr_notificationDidDismiss(notificationInfo:)`. The previous method is deprecated for backward compatibility and will be removed from the 5.0.0 version of the SDK.
 
 ### Changed
 - Excess of anonymous log-in requests has been removed.

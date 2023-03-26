@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SNRClient.h</key>
 		<data>
-		BAX7VHyp7L2a2yBhHE3Wl8HM7yw=
+		PxVRZcc/aCXlas0C080WxiWYoKo=
 		</data>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>Headers/SNRErrorCode.h</key>
 		<data>
-		DM1jKmbxgQjemKTjUZB7T8CXAng=
+		txl9O1s6ziuRZXaYiZwxxsaWya0=
 		</data>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<data>
@@ -510,7 +510,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EXgTRBFUqbAnc5AxXV8y1mk2eYc=
+		w0HwEOSvMuiNzAmNc7Omwxa7/iQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -576,7 +576,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fn8F8Y6KFFqwfclCRA/Sl7Z3Ttc=
+			DX0BZtcXXYfLkLkW6dl0GoC/Dc0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -585,7 +585,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncMcdIFKZbASzecwFKEhiMHnsko=
+			j8rP13018jSYW+WEOtRb67tbqPM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -696,11 +696,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BAX7VHyp7L2a2yBhHE3Wl8HM7yw=
+			PxVRZcc/aCXlas0C080WxiWYoKo=
 			</data>
 			<key>hash2</key>
 			<data>
-			5CJqlzWmUwY7Bts+JY9vt0fXfR7KoJN1t4Y/ENDs5sE=
+			y8mZaIWJjBwyXIqJuc0TTv1dKBFeQCumcPRQxayP8hk=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAccountInformation.h</key>
@@ -1125,11 +1125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DM1jKmbxgQjemKTjUZB7T8CXAng=
+			txl9O1s6ziuRZXaYiZwxxsaWya0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LKa5Chwy9gw5oljL2KhSUgMehC8r9n10LCalXBVhwFI=
+			hyI7F9IX3GPxDndTjQhyatxdRWMmv6Tmdy3/xjALNg0=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
@@ -2148,11 +2148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fn8F8Y6KFFqwfclCRA/Sl7Z3Ttc=
+			DX0BZtcXXYfLkLkW6dl0GoC/Dc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gvZ7Y6RjglnzeSdCZkbhIgShl4/HK9FM1WKMK2ZiXS4=
+			ZDOzWGlF1xGw8fVpNQaPNaziT9Zmd6GLglsFW4skTzs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2161,11 +2161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncMcdIFKZbASzecwFKEhiMHnsko=
+			j8rP13018jSYW+WEOtRb67tbqPM=
 			</data>
 			<key>hash2</key>
 			<data>
-			s599uT1Q8Mr5VSmdzCVEe6WjnuZ8qQPrRo7PIFoLUEQ=
+			WKObjiex/VUfiHvTQVrG8Nb/Fm/U7+zrwKHKd4m6wRw=
 			</data>
 			<key>optional</key>
 			<true/>
