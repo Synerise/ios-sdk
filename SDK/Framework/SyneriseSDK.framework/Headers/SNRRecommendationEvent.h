@@ -25,16 +25,6 @@ NS_SWIFT_NAME(RecommendationEvent)
 - (instancetype)initWithLabel:(nonnull NSString *)label andParams:(nullable SNRTrackerParams *)params NS_UNAVAILABLE;
 - (instancetype)initWithLabel:(nonnull NSString *)label NS_UNAVAILABLE;
 
-- (instancetype)initWithLabel:(NSString *)label
-                  productName:(NSString *)productName
-                    productId:(NSString *)productId
-                   campaignID:(NSString *)campaignID
-                 campaignHash:(NSString *)campaignHash
-                    andParams:(nullable SNRTrackerParams *)params NS_SWIFT_NAME(init(label:productName:productId:campaignID:campaignHash:params:));
-
-- (void)setCategory:(NSString *)category;
-- (void)setURL:(NSURL *)url;
-
 @end
 
 NS_ASSUME_NONNULL_END

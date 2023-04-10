@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.12.0] - 2023-04-11
+
+### Fixed
+- Added re-downloading in-app definitions after in-app cache operations fail after a HTTP 304 response from the API.
+- Reinitialization of the SDK is now synchronized with the SDK launch and can be invoked anytime.
+
+### Changed
+- Improvements to stability.
+
+### Added
+- `RecommendationViewEvent` for sending events with recommended item identifiers in one frame.
+- `recommendationEventType` property in `ContentWidgetRecommendationsOptions` to choose whether to send `RecommendationSeenEvent` for each recommendation separately or `RecommendationViewEvent` for all recommendations in one frame.
+
+
 ## [4.11.0] - 2023-03-27
 
 ### Changed
@@ -417,8 +431,8 @@ Remember, that the old way of distributing fat framework is still available and 
 
 ### Changed
 - `AddedProductToCartEvent` is changed to `ProductAddedToCartEvent`.
-- `RemovedProductFromCartEvent`  is changed to `ProductRemovedFromCartEvent`.
-- `AddedProductToFavoritesEvent`  is changed to `ProductAddedToFavoritesEvent`.
+- `RemovedProductFromCartEvent` is changed to `ProductRemovedFromCartEvent`.
+- `AddedProductToFavoritesEvent` is changed to `ProductAddedToFavoritesEvent`.
 - `ProductViewEvent` is changed to `ProductViewedEvent`.
 
 ### Added

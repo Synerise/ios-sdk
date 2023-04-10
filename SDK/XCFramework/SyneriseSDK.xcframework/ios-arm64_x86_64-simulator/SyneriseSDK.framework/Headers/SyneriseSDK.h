@@ -77,6 +77,7 @@
 #import <SyneriseSDK/SNRProductRemovedFromCartEvent.h>
 #import <SyneriseSDK/SNRProductAddedToFavoritesEvent.h>
 #import <SyneriseSDK/SNRProductViewedEvent.h>
+#import <SyneriseSDK/SNRRecommendationViewEvent.h>
 #import <SyneriseSDK/SNRRecommendationSeenEvent.h>
 #import <SyneriseSDK/SNRRecommendationClickEvent.h>
 #import <SyneriseSDK/SNRPushClickedEvent.h>
