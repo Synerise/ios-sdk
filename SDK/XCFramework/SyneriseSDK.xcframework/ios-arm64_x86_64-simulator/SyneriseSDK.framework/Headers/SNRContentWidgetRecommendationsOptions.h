@@ -13,6 +13,15 @@
 
 typedef SNRContentWidgetRecommendationDataModel * _Nullable (^ContentWidgetRecommendationsOptionsMappingBlock)(SNRRecommendation * _Nonnull model);
 
+/**
+ * @enum SNRContentWidgetPriceCurrencyPosition
+ */
+
+typedef NS_ENUM(NSUInteger, SNRContentWidgetRecommendationEventType) {
+    SNRContentWidgetRecommendationEventTypeSeen = 0,
+    SNRContentWidgetRecommendationEventTypeView
+} NS_SWIFT_NAME(ContentWidgetRecommendationEventType);
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -24,6 +33,8 @@ NS_SWIFT_NAME(ContentWidgetRecommendationsOptions)
 
 @property (copy, nonatomic, nullable, readwrite) NSString *slug;
 @property (copy, nonatomic, nullable, readwrite) NSString *productID;
+
+@property (assign, nonatomic, readwrite) SNRContentWidgetRecommendationEventType recommendationEventType;
 
 @property (copy, nonatomic, nonnull, readwrite) ContentWidgetRecommendationsOptionsMappingBlock mapping;
 

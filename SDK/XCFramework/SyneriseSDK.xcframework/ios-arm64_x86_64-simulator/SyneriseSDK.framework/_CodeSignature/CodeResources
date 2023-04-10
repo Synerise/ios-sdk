@@ -178,7 +178,7 @@
 		</data>
 		<key>Headers/SNRContentWidgetRecommendationsOptions.h</key>
 		<data>
-		QOIDCB0tM3B/X0xpQm3nt35Ub1w=
+		MVHK7ndy39UFPKaIhkKBPnn59/M=
 		</data>
 		<key>Headers/SNRCrashEvent.h</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>Headers/SNRErrorCode.h</key>
 		<data>
-		txl9O1s6ziuRZXaYiZwxxsaWya0=
+		oDNwy8zVO01QDZMahNTZhGEGOTc=
 		</data>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<data>
@@ -390,11 +390,11 @@
 		</data>
 		<key>Headers/SNRRecommendationClickEvent.h</key>
 		<data>
-		I3TZkF4X/b+juV14YWYgcVVJUps=
+		VPRn18EmF+hInqBwMKV+9c1nAQI=
 		</data>
 		<key>Headers/SNRRecommendationEvent.h</key>
 		<data>
-		3j6QlQ9Ezy4cRAccEQWqiEzQCys=
+		H4keZ3r60aaPuLd3QdusjQKuvoY=
 		</data>
 		<key>Headers/SNRRecommendationOptions.h</key>
 		<data>
@@ -414,7 +414,11 @@
 		</data>
 		<key>Headers/SNRRecommendationSeenEvent.h</key>
 		<data>
-		khpvYWKIVTOSSeIWzV75t63xHvw=
+		ndqgV+tbvZUjMfwKKuN+QllOCOY=
+		</data>
+		<key>Headers/SNRRecommendationViewEvent.h</key>
+		<data>
+		JC7bwpbuBXjaPHhKsEW5HbOEmE0=
 		</data>
 		<key>Headers/SNRRegisteredEvent.h</key>
 		<data>
@@ -506,11 +510,11 @@
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		GGUG52G//KYVRNp5e7A18Me3ovs=
+		1hal90rdbY6DWqQZyFK0iy0wtbA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w0HwEOSvMuiNzAmNc7Omwxa7/iQ=
+		6iVCUACBL6EYSklLEeqgeCtzhlA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1070,11 +1074,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QOIDCB0tM3B/X0xpQm3nt35Ub1w=
+			MVHK7ndy39UFPKaIhkKBPnn59/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Og1A5lC+aBAe4R+7Nfcf4Hi4zVWTTmr0gX9W8M0dYbw=
+			GMU3PCfS6qMZ6Q5xDhpgg8mCgWvzybba2urvuV8GcKE=
 			</data>
 		</dict>
 		<key>Headers/SNRCrashEvent.h</key>
@@ -1125,11 +1129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			txl9O1s6ziuRZXaYiZwxxsaWya0=
+			oDNwy8zVO01QDZMahNTZhGEGOTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			hyI7F9IX3GPxDndTjQhyatxdRWMmv6Tmdy3/xjALNg0=
+			SpQyZ4kXRLmi5SY4O9t+Jy0CgsjHby2pxpD/phjqXqU=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
@@ -1653,22 +1657,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I3TZkF4X/b+juV14YWYgcVVJUps=
+			VPRn18EmF+hInqBwMKV+9c1nAQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			b4YGUPsBEDWQmqWbPSha5/81pyi872PkilssNkKrNcw=
+			gf28ntIANlKxV7HY5tb4U+0X9SBkbD+hJRwaSNx+wII=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3j6QlQ9Ezy4cRAccEQWqiEzQCys=
+			H4keZ3r60aaPuLd3QdusjQKuvoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EV7cOrb+vW7SjTqXlGUNrMyWDk5q0ylyH2L4eBmEJAw=
+			HW8BSNLYsTXeXuiJVWgaei3ottzKaun7WWKij0siWNQ=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationOptions.h</key>
@@ -1719,11 +1723,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			khpvYWKIVTOSSeIWzV75t63xHvw=
+			ndqgV+tbvZUjMfwKKuN+QllOCOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			udp8etNfiIzSZC9oJ1eoQ5VR4BdVb4fGSDJPNRbvhA8=
+			z9F/lL9u1bHZop1o4otUDFSIbin9WKyeRVB1dAXUiYs=
+			</data>
+		</dict>
+		<key>Headers/SNRRecommendationViewEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JC7bwpbuBXjaPHhKsEW5HbOEmE0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lwf1lKg9dHTzhb0Bh0K3JMEBEUcLBCeg5pDWpWO53FM=
 			</data>
 		</dict>
 		<key>Headers/SNRRegisteredEvent.h</key>
@@ -1972,11 +1987,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GGUG52G//KYVRNp5e7A18Me3ovs=
+			1hal90rdbY6DWqQZyFK0iy0wtbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			e952KVxGlfEhmQ5/prhDAmszi3sHqAebC1V1V/QtaS0=
+			NIMC8L6yBNNJcGbpt6m69wSKAvOJ758wdlcpYCD/05g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
