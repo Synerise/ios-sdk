@@ -1,7 +1,7 @@
 BCSymbolMap Version: 2.0
-Apple clang version 14.0.0 (clang-1400.0.29.102)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk
-iPhoneOS16.0.sdk
+Apple clang version 14.0.3 (clang-1403.0.22.14.1)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk
+iPhoneOS16.4.sdk
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/build/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK
 +[SNRCoreDataInAppDisplay entityName]
@@ -249,7 +249,7 @@ __OBJC_CLASS_RO_$_SNRJ10Utils
 SyneriseSDK/Core/DataSource/SNRDataSource.m
 SyneriseSDK/Core/DataSource/SNRDataSource.h
 __29+[SNRJ10Utils removeClient10]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/include/dispatch/once.h
 -[SNRG7Service initLs2rTg9CR3:optionsS45:]
 -[SNRG7Service executeOptions45:error:]
 ___Block_byref_object_copy_
@@ -870,14 +870,16 @@ ___destroy_helper_block_e8_32r
 +[SNRViewUtils resolveTopViewControllerWithRootViewController:]
 +[SNRViewUtils colorWithHexString:]
 +[SNRViewUtils colorComponentFrom:start:length:]
++[SNRViewUtils colorWithHexString:].cold.1
 ___block_descriptor_48_e8_32r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_SNRViewUtils
 __OBJC_METACLASS_RO_$_SNRViewUtils
 __OBJC_CLASS_RO_$_SNRViewUtils
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Injector/Main/UI/Utils/SNRViewUtils.m
++[SNRViewUtils colorWithHexString:].cold.1
 SyneriseSDK/Modules/Injector/Main/UI/Utils/SNRViewUtils.m
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __destroy_helper_block_e8_32r
 __copy_helper_block_e8_32r
 __40+[SNRViewUtils resolveTopViewController]_block_invoke
@@ -2976,7 +2978,7 @@ SyneriseSDK/Misc/Notification Content Extensions/Carousel/SNRCarouselContextExte
 __61-[SNRCarouselContextExtensionCollectionViewCell setExpanded:]_block_invoke
 __77-[SNRCarouselContextExtensionCollectionViewCell retryDownloadImageWithModel:]_block_invoke
 dispatch_get_main_queue
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/usr/include/dispatch/queue.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/include/dispatch/queue.h
 __destroy_helper_block_e8_32s40w48w56w64w
 __copy_helper_block_e8_32s40w48w56w64w
 __copy_helper_block_e8_32s40s48s56s64s72s80s
@@ -7064,7 +7066,7 @@ __OBJC_CLASS_RO_$_SNRViewPresentationAnimator
 SyneriseSDK/Modules/Injector/Main/UI/Views/PresentationView/SNRPresentationViewAnimator.m
 SyneriseSDK/Modules/Injector/Main/UI/Views/PresentationView/SNRPresentationViewAnimator.h
 __CGSizeEqualToSize
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __34-[SNRViewPresentationAnimator pop]_block_invoke_2
 __34-[SNRViewPresentationAnimator pop]_block_invoke
 __35-[SNRViewPresentationAnimator land]_block_invoke_2

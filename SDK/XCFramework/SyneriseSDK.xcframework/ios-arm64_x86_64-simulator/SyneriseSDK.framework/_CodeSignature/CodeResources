@@ -514,7 +514,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6iVCUACBL6EYSklLEeqgeCtzhlA=
+		CuZKSrVizqX1cfyJg4iW4bj1QDE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -522,7 +522,7 @@
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
-		p0mNVeGXrrS86CiWRk4Q+iizoAw=
+		1BP1wqWbo//Yd06tDpA2XhBjCTI=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
 		<data>
@@ -570,7 +570,7 @@
 		</data>
 		<key>SNRTrackerEvents.momd/TrackerEvents.mom</key>
 		<data>
-		oBRNEheAfx4jneCZPcB6aEp1lZ0=
+		TeGq4w2/Hs0mHw7d2eFCvYlgwMQ=
 		</data>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>
 		<data>
@@ -2009,11 +2009,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p0mNVeGXrrS86CiWRk4Q+iizoAw=
+			1BP1wqWbo//Yd06tDpA2XhBjCTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8lKfU1xwnXcFw96aM/E8TQmLirobg2uy7cauJiF+j3o=
+			tWlll3joih0vk/Jcy5B6DP3WAYeZtr453TtMdNxiwb0=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
@@ -2141,11 +2141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oBRNEheAfx4jneCZPcB6aEp1lZ0=
+			TeGq4w2/Hs0mHw7d2eFCvYlgwMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			L2oybI/QL8+NXtAV9yxTOL+72vZww9WWsc4BBC3t+E4=
+			mqjznVLBJMnuPNk5w8skdmA+cTwCP2ur6IODGbPK7sY=
 			</data>
 		</dict>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>

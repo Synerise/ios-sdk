@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.12.1] - 2023-04-27
+
+### Changed
+- Default value of `recommendationEventType` property in `ContentWidgetRecommendationsOptions` to `.seen` for backward compatibility.
+
+
 ## [4.12.0] - 2023-04-11
 
 ### Fixed
