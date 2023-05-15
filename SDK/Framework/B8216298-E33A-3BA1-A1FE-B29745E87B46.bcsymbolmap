@@ -2,7 +2,7 @@ BCSymbolMap Version: 2.0
 Apple clang version 14.0.3 (clang-1403.0.22.14.1)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk
 iPhoneOS16.4.sdk
-/Users/kurzy/Library/Developer/Xcode/DerivedData/SyneriseSDK-ahamrqgjhfjofbahdhktzqeslaro/Build/Intermediates.noindex/ArchiveIntermediates/SyneriseSDK/IntermediateBuildFilesPath/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
+/Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/build/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK
 +[SNRCoreDataInAppDisplay entityName]
 +[SNRCoreDataInAppDisplay makeEntityWithCampaignHash:inContext:]
@@ -3732,15 +3732,25 @@ __OBJC_CLASS_RO_$_SNRPromotionIdentifier
 SyneriseSDK/Core/Models/Loyalty/Promotions/PromotionIdentifier/SNRPromotionIdentifier.m
 -[SNRInAppDataController init]
 -[SNRInAppDataController getDefinitions]
+___40-[SNRInAppDataController getDefinitions]_block_invoke
 -[SNRInAppDataController getVariants]
+___37-[SNRInAppDataController getVariants]_block_invoke
 -[SNRInAppDataController getEventTriggerNames]
+___46-[SNRInAppDataController getEventTriggerNames]_block_invoke
 -[SNRInAppDataController getDefinitionsTriggeredWithEventName:]
+___63-[SNRInAppDataController getDefinitionsTriggeredWithEventName:]_block_invoke
 -[SNRInAppDataController getVariantForCampaignHash:]
+___52-[SNRInAppDataController getVariantForCampaignHash:]_block_invoke
 -[SNRInAppDataController getDisplayDatesForCampaignHash:]
+___57-[SNRInAppDataController getDisplayDatesForCampaignHash:]_block_invoke
 -[SNRInAppDataController saveDefinitions:]
+___42-[SNRInAppDataController saveDefinitions:]_block_invoke
 -[SNRInAppDataController saveVariants:]
+___39-[SNRInAppDataController saveVariants:]_block_invoke
 -[SNRInAppDataController saveEventTriggerNames:]
+___48-[SNRInAppDataController saveEventTriggerNames:]_block_invoke
 -[SNRInAppDataController saveDisplayDate:forCampaignHash:]
+___58-[SNRInAppDataController saveDisplayDate:forCampaignHash:]_block_invoke
 -[SNRInAppDataController saveDisplayWithCurrentDateForCampaignHash:]
 -[SNRInAppDataController removeAllDataForCampaignHash:]
 -[SNRInAppDataController removeDefinitionsDataForCampaighHash:]
@@ -3748,11 +3758,17 @@ SyneriseSDK/Core/Models/Loyalty/Promotions/PromotionIdentifier/SNRPromotionIdent
 -[SNRInAppDataController removeEventTriggerNamesDataForCampaighHash:]
 -[SNRInAppDataController removeAllExpiredData]
 -[SNRInAppDataController removeExpiredCoreDataModels:]
+___54-[SNRInAppDataController removeExpiredCoreDataModels:]_block_invoke
 -[SNRInAppDataController getUUIDStringforRequest]
 -[SNRInAppDataController makeExpirationDatetime:]
 -[SNRInAppDataController isDatetimeExpired:]
 -[SNRInAppDataController dataStore]
 -[SNRInAppDataController .cxx_destruct]
+___block_descriptor_64_e8_32s40s48r56r_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_56_e8_32s40s48r_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_48_e8_32s40s_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_56_e8_32s40s48s_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_40_e8_32s_e32_v16?0"NSManagedObjectContext"8l
 __OBJC_METACLASS_RO_$_SNRInAppDataController
 __OBJC_$_INSTANCE_METHODS_SNRInAppDataController
 _OBJC_IVAR_$_SNRInAppDataController._dataStore
@@ -3761,6 +3777,17 @@ __OBJC_$_PROP_LIST_SNRInAppDataController
 __OBJC_CLASS_RO_$_SNRInAppDataController
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/InAppDataStore/SNRInAppDataController.m
 SyneriseSDK/Core/Services/InAppService/InAppDataStore/SNRInAppDataController.m
+__54-[SNRInAppDataController removeExpiredCoreDataModels:]_block_invoke
+__58-[SNRInAppDataController saveDisplayDate:forCampaignHash:]_block_invoke
+__48-[SNRInAppDataController saveEventTriggerNames:]_block_invoke
+__39-[SNRInAppDataController saveVariants:]_block_invoke
+__42-[SNRInAppDataController saveDefinitions:]_block_invoke
+__57-[SNRInAppDataController getDisplayDatesForCampaignHash:]_block_invoke
+__52-[SNRInAppDataController getVariantForCampaignHash:]_block_invoke
+__63-[SNRInAppDataController getDefinitionsTriggeredWithEventName:]_block_invoke
+__46-[SNRInAppDataController getEventTriggerNames]_block_invoke
+__37-[SNRInAppDataController getVariants]_block_invoke
+__40-[SNRInAppDataController getDefinitions]_block_invoke
 -[SNRInAppVerificator verifyForDefinition:]
 __OBJC_METACLASS_RO_$_SNRInAppVerificator
 __OBJC_$_INSTANCE_METHODS_SNRInAppVerificator
@@ -6287,30 +6314,31 @@ SyneriseSDK/Core/Models/Client/ClientRegisterAccountContext/SNRClientRegisterAcc
 -[SNRInAppDataStore init]
 -[SNRInAppDataStore isOperational]
 -[SNRInAppDataStore getManagedObjectContext]
--[SNRInAppDataStore persistAsynchronouslyWithCompletionHandler:]
-___64-[SNRInAppDataStore persistAsynchronouslyWithCompletionHandler:]_block_invoke
--[SNRInAppDataStore persistSynchronouslyWithCompletionHandler:]
-___63-[SNRInAppDataStore persistSynchronouslyWithCompletionHandler:]_block_invoke
--[SNRInAppDataStore fetchItemsWithFetchRequest:]
-___48-[SNRInAppDataStore fetchItemsWithFetchRequest:]_block_invoke
+-[SNRInAppDataStore performSynchronouslyChangesWithBlock:completion:]
+___69-[SNRInAppDataStore performSynchronouslyChangesWithBlock:completion:]_block_invoke
+-[SNRInAppDataStore performAsynchronouslyChangesWithBlock:completion:]
+___70-[SNRInAppDataStore performAsynchronouslyChangesWithBlock:completion:]_block_invoke
+-[SNRInAppDataStore performSynchronouslyOperationsWithBlock:]
+___61-[SNRInAppDataStore performSynchronouslyOperationsWithBlock:]_block_invoke
 -[SNRInAppDataStore executeBatchDeleteRequest:]
+___47-[SNRInAppDataStore executeBatchDeleteRequest:]_block_invoke
 -[SNRInAppDataStore persistentStoreURL]
 -[SNRInAppDataStore managedObjectModel]
 -[SNRInAppDataStore storeCoordinator]
--[SNRInAppDataStore managedObjectContext]
 -[SNRInAppDataStore .cxx_destruct]
 __OBJC_METACLASS_RO_$_SNRInAppDataStore
 __OBJC_$_INSTANCE_METHODS_SNRInAppDataStore
-_OBJC_IVAR_$_SNRInAppDataStore._storeCoordinator
 _OBJC_IVAR_$_SNRInAppDataStore._managedObjectContext
+_OBJC_IVAR_$_SNRInAppDataStore._storeCoordinator
 __OBJC_$_INSTANCE_VARIABLES_SNRInAppDataStore
 __OBJC_$_PROP_LIST_SNRInAppDataStore
 __OBJC_CLASS_RO_$_SNRInAppDataStore
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/InAppDataStore/SNRInAppDataStore.m
 SyneriseSDK/Core/Services/InAppService/InAppDataStore/SNRInAppDataStore.m
-__48-[SNRInAppDataStore fetchItemsWithFetchRequest:]_block_invoke
-__63-[SNRInAppDataStore persistSynchronouslyWithCompletionHandler:]_block_invoke
-__64-[SNRInAppDataStore persistAsynchronouslyWithCompletionHandler:]_block_invoke
+__47-[SNRInAppDataStore executeBatchDeleteRequest:]_block_invoke
+__61-[SNRInAppDataStore performSynchronouslyOperationsWithBlock:]_block_invoke
+__70-[SNRInAppDataStore performAsynchronouslyChangesWithBlock:completion:]_block_invoke
+__69-[SNRInAppDataStore performSynchronouslyChangesWithBlock:completion:]_block_invoke
 -[SNRClientConditionalAuthResult status]
 -[SNRClientConditionalAuthResult conditions]
 -[SNRClientConditionalAuthResult .cxx_destruct]
@@ -6710,15 +6738,22 @@ __OBJC_CLASS_RO_$_SNRInAppEventVerificator
 SyneriseSDK/Core/Services/InAppService/Triggering/Verificators/Event/SNRInAppEventVerificator.m
 -[SNRObjectCache initWithDependencies:sharedModeEnabled:]
 -[SNRObjectCache loadObjectForKey:]
--[SNRObjectCache loadObjectForKey:verifyClass:]
+-[SNRObjectCache loadObjectForKey:group:]
+-[SNRObjectCache loadObjectForKey:group:verifyClass:]
 -[SNRObjectCache saveObject:forKey:]
+-[SNRObjectCache saveObject:forKey:group:]
 -[SNRObjectCache removeItemForKey:]
+-[SNRObjectCache removeItemForKey:group:]
+-[SNRObjectCache removeItemsForGroup:]
 -[SNRObjectCache removeAllItems]
 -[SNRObjectCache isValidObject:]
--[SNRObjectCache filenameForKey:]
+-[SNRObjectCache filenameForKey:group:]
+-[SNRObjectCache prefixForGroup:]
 -[SNRObjectCache loadObjectDataWithFilename:]
 -[SNRObjectCache saveObjectData:withFilename:]
 -[SNRObjectCache removeItemFileForKey:]
+-[SNRObjectCache removeItemFileForKey:group:]
+-[SNRObjectCache removeAllItemFilesWithPrefix:]
 -[SNRObjectCache removeAllItemFiles]
 -[SNRObjectCache sharedModeEnabled]
 -[SNRObjectCache setSharedModeEnabled:]
@@ -8010,6 +8045,7 @@ ___36-[SNRInAppService notifyAboutEvent:]_block_invoke
 -[SNRInAppService flushQueueEvents]
 -[SNRInAppService removeQueueEvents]
 -[SNRInAppService cleanup]
+_get_in_app_processing_queue
 ___26-[SNRInAppService cleanup]_block_invoke
 -[SNRInAppService shouldLoadDefinitions]
 -[SNRInAppService saveLastDefinitionsLoad]
@@ -8040,7 +8076,6 @@ ___42-[SNRInAppService loadDefinitionsRequired]_block_invoke
 -[SNRInAppService setTimeoutHelper:]
 -[SNRInAppService .cxx_destruct]
 ___get_in_app_triggering_queue_block_invoke
-_get_in_app_processing_queue
 ___get_in_app_processing_queue_block_invoke
 _loadDefinitionsRequired.timer
 _OBJC_SELECTOR_REFERENCES_.56
@@ -8075,11 +8110,11 @@ ___block_literal_global.178
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
 __get_in_app_processing_queue_block_invoke
 SyneriseSDK/Core/Services/InAppService/SNRInAppService.m
-get_in_app_processing_queue
 __get_in_app_triggering_queue_block_invoke
 __42-[SNRInAppService loadDefinitionsRequired]_block_invoke
 __44-[SNRInAppService loadDefinitionsWithForce:]_block_invoke
 __26-[SNRInAppService cleanup]_block_invoke
+get_in_app_processing_queue
 __36-[SNRInAppService notifyAboutEvent:]_block_invoke
 get_in_app_triggering_queue
 __22-[SNRInAppService run]_block_invoke
@@ -11338,6 +11373,9 @@ SyneriseSDK/Modules/Injector/Main/UI/Views/Templates/BaseTemplate/SNRInjectorTem
 -[SNRSingleMediaContentExtensionViewController mappingUserInfo:]
 -[SNRSingleMediaContentExtensionViewController prepareContent]
 ___62-[SNRSingleMediaContentExtensionViewController prepareContent]_block_invoke
+-[SNRSingleMediaContentExtensionViewController processImage]
+___60-[SNRSingleMediaContentExtensionViewController processImage]_block_invoke
+-[SNRSingleMediaContentExtensionViewController getImageFromCache]
 -[SNRSingleMediaContentExtensionViewController downloadImage]
 ___61-[SNRSingleMediaContentExtensionViewController downloadImage]_block_invoke
 ___61-[SNRSingleMediaContentExtensionViewController downloadImage]_block_invoke_2
@@ -11423,6 +11461,7 @@ __59-[SNRSingleMediaContentExtensionViewController showContent]_block_invoke
 __66-[SNRSingleMediaContentExtensionViewController retryDownloadImage]_block_invoke
 __61-[SNRSingleMediaContentExtensionViewController downloadImage]_block_invoke_2
 __61-[SNRSingleMediaContentExtensionViewController downloadImage]_block_invoke
+__60-[SNRSingleMediaContentExtensionViewController processImage]_block_invoke
 __62-[SNRSingleMediaContentExtensionViewController prepareContent]_block_invoke
 -[SNRConfirmClientEmailRequest init]
 -[SNRConfirmClientEmailRequest setToken:]
