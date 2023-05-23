@@ -34,7 +34,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-ia-mAi" customClass="DefaultView" customModule="SDK_Sample" customModuleProvider="target">
                                     <rect key="frame" x="16" y="16" width="343" height="40"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Client API Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-Fa-DKa" customClass="BindingTextField" customModule="SDK_Sample" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Profile API Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-Fa-DKa" customClass="BindingTextField" customModule="SDK_Sample" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="327" height="24"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

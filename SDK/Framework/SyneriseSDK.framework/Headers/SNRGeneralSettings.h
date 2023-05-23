@@ -65,7 +65,7 @@ NS_SWIFT_NAME(GeneralSettings)
 @property (copy, nonatomic, nullable, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 
 /**
- * This parameter specifies if a session should be destroyed after client API key changes.
+ * This parameter specifies if a session should be destroyed after profile API key changes.
  *
  * The default value is true.
  */

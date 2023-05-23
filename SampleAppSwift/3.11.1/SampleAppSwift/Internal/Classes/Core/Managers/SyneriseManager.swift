@@ -54,7 +54,7 @@ class SyneriseManager {
         
         Synerise.settings.injector.automatic = true
                 
-        DebugUtils.print("SyneriseSDK initializing | Client API Key: \(clientApiKey)")
+        DebugUtils.print("SyneriseSDK initializing | Profile API Key: \(clientApiKey)")
         Synerise.initialize(clientApiKey: clientApiKey)
         
         Synerise.setDelegate(self)
