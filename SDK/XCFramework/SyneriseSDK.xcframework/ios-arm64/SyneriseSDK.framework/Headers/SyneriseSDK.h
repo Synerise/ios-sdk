@@ -32,11 +32,12 @@
 #import <SyneriseSDK/SNRInjector.h>
 #import <SyneriseSDK/SNRPromotions.h>
 
-// API Queries
+// API Queries & Options
 #import <SyneriseSDK/SNRApiQuerySortingOrder.h>
 #import <SyneriseSDK/SNRClientEventsApiQuery.h>
 #import <SyneriseSDK/SNRPromotionsApiQuery.h>
 #import <SyneriseSDK/SNRDocumentsApiQuery.h>
+#import <SyneriseSDK/SNRRecommendationOptions.h>
 
 // Exceptions
 #import <SyneriseSDK/SNRExceptionHandler.h>
@@ -131,13 +132,15 @@
 #import <SyneriseSDK/SNRAssignVoucherData.h>
 #import <SyneriseSDK/SNRVoucherCodesResponse.h>
 #import <SyneriseSDK/SNRVoucherCodesData.h>
-#import <SyneriseSDK/SNRRecommendationOptions.h>
+#import <SyneriseSDK/SNRDocument.h>
 #import <SyneriseSDK/SNRRecommendationResponse.h>
 #import <SyneriseSDK/SNRRecommendationResponseExtras.h>
 #import <SyneriseSDK/SNRRecommendationResponseExtrasSlot.h>
 #import <SyneriseSDK/SNRRecommendation.h>
 #import <SyneriseSDK/SNRScreenViewResponse.h>
 #import <SyneriseSDK/SNRScreenViewAudience.h>
+#import <SyneriseSDK/SNRScreenView.h>
+#import <SyneriseSDK/SNRScreenViewAudienceInfo.h>
 #import <SyneriseSDK/SNRInAppMessageData.h>
 
 // Content Widget

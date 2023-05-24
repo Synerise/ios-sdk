@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.13.0] - 2023-05-24
+
+### Added
+- We added a new `Content.generateDocument(slug:success:failure:)` method. It's analogous to `Content.getDocument(slug:success:failure:)`. The old method is deprecated. The new method generates the document that is defined for the provided slug.
+- We added a new `Content.getRecommendationsV2(options:success:failure:)` method. It's analogous to `Content.getRecommendations(options:success:failure:)`. The old method is deprecated. The new method gets recommendations that are defined for the options provided.
+- We added a new `Content.generateScreenView(feedSlug:success:failure:)` method. It's analogous to `Content.getScreenView(success:failure:)`. The old method is deprecated. The new method generates a customer's highest-priority screen view campaign that is defined for the provided slug.
+- We added models correlating with new methods: `ScreenView`, `Document`.
+
+### Changed
+- `Content.getDocument(slug:success:failure:)` is deprecated now.
+- `Content.getDocuments(apiQuery:success:failure:)` is deprecated now.
+- `Content.getRecommendations(options:success:failure:)` is deprecated now.
+- `Content.getScreenView(success:failure:)` is deprecated now.
+
+
 ## [4.12.2] - 2023-05-15
 
 ### Changed
