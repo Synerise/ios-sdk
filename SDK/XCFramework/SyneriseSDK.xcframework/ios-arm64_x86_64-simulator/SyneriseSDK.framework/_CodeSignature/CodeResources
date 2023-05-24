@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/SNRContent.h</key>
 		<data>
-		hP7qH8rPUA+OxCrmxubekS9WxD8=
+		d3mxgiDATq3e53qRrUJqLRng2xw=
 		</data>
 		<key>Headers/SNRContentWidget.h</key>
 		<data>
@@ -187,6 +187,10 @@
 		<key>Headers/SNRCustomEvent.h</key>
 		<data>
 		uy/16Ze27qGSvoctyYYEUUsWFH4=
+		</data>
+		<key>Headers/SNRDocument.h</key>
+		<data>
+		WtPfD8y3fcGdArXyE/CSH940ckQ=
 		</data>
 		<key>Headers/SNRDocumentsApiQuery.h</key>
 		<data>
@@ -424,9 +428,17 @@
 		<data>
 		/T8nytxT9IYDrusSSowiUjUMuWA=
 		</data>
+		<key>Headers/SNRScreenView.h</key>
+		<data>
+		zCmxWizlIKPcI0bZrq0xLpwyRvg=
+		</data>
 		<key>Headers/SNRScreenViewAudience.h</key>
 		<data>
 		20BoOHcvpTTvpm5sPlLVzOQ2m0Y=
+		</data>
+		<key>Headers/SNRScreenViewAudienceInfo.h</key>
+		<data>
+		2UMhkdGYD0Qk6EDL1yKdaSvqJtU=
 		</data>
 		<key>Headers/SNRScreenViewResponse.h</key>
 		<data>
@@ -510,11 +522,11 @@
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		1hal90rdbY6DWqQZyFK0iy0wtbA=
+		PSR2+BljumT0gKqBMy6FaMj/0kM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Pj1cwI47bbnaB0FNc9bYXE63htA=
+		0++9ZKv+P/mOvQsx7Z1WqGZHK6o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -920,11 +932,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hP7qH8rPUA+OxCrmxubekS9WxD8=
+			d3mxgiDATq3e53qRrUJqLRng2xw=
 			</data>
 			<key>hash2</key>
 			<data>
-			sUh4CNv4MMgpLpMeZa3xpHyaR0TuEgGs3qmi9w89dGI=
+			V22C5pfAJ09R7btTf5YhojK7bUsU0R3gvnp7v2/x6V0=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidget.h</key>
@@ -1101,6 +1113,17 @@
 			<key>hash2</key>
 			<data>
 			ANW9BaffM6jiG69tjCkgJejajv/TeeNnjvLyE23S96Y=
+			</data>
+		</dict>
+		<key>Headers/SNRDocument.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WtPfD8y3fcGdArXyE/CSH940ckQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			80YROW3YC/Dk54FivQPvsAeLjy/7GDS7qzmjugKuQkc=
 			</data>
 		</dict>
 		<key>Headers/SNRDocumentsApiQuery.h</key>
@@ -1752,6 +1775,17 @@
 			NWDR8oScpLOmx62Tfn41WgyzVdGheqts4GJQzWoMKSo=
 			</data>
 		</dict>
+		<key>Headers/SNRScreenView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zCmxWizlIKPcI0bZrq0xLpwyRvg=
+			</data>
+			<key>hash2</key>
+			<data>
+			PqVY6LjiQDlKJeo/S9c99DoMLU0FonL5qpIssc6FiSA=
+			</data>
+		</dict>
 		<key>Headers/SNRScreenViewAudience.h</key>
 		<dict>
 			<key>hash</key>
@@ -1761,6 +1795,17 @@
 			<key>hash2</key>
 			<data>
 			+QK7vWIod832PXIB0W2f9PDPf8cDW4BV+qAdzuEKps4=
+			</data>
+		</dict>
+		<key>Headers/SNRScreenViewAudienceInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2UMhkdGYD0Qk6EDL1yKdaSvqJtU=
+			</data>
+			<key>hash2</key>
+			<data>
+			lNBuLCAhGkkAEuHETZ1NaYbQQlH6c+w6UePjuXtoUJU=
 			</data>
 		</dict>
 		<key>Headers/SNRScreenViewResponse.h</key>
@@ -1987,11 +2032,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1hal90rdbY6DWqQZyFK0iy0wtbA=
+			PSR2+BljumT0gKqBMy6FaMj/0kM=
 			</data>
 			<key>hash2</key>
 			<data>
-			NIMC8L6yBNNJcGbpt6m69wSKAvOJ758wdlcpYCD/05g=
+			iMZYdkX9Q9/3+of/52F6YHWZqIwHzPRlLT6DuWHzzrs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
