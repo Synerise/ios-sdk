@@ -307,6 +307,8 @@ NS_SWIFT_NAME(Client)
  * Signs out the customer.
  *
  * @param mode Logout mode.
+ *
+ * @deprecated Deprecated in version 4.11.0
  */
 + (void)signOutWithMode:(SNRClientSignOutMode)mode NS_SWIFT_NAME(signOut(mode:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.signOut(mode:fromAllDevices:success:failure:)` instead.");
 

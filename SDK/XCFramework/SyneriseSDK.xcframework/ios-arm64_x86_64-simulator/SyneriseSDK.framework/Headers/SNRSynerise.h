@@ -147,7 +147,7 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Initializes Synerise SDK.
  *
- * @param clientApiKey Synerise Client API Key.
+ * @param clientApiKey Synerise Profile API Key.
  *
  * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
  */
@@ -156,7 +156,7 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Initializes Synerise SDK with custom environment settings.
  *
- * @param clientApiKey Synerise Client API Key.
+ * @param clientApiKey Synerise Profile API Key.
  * @param baseUrl Synerise API custom environment base URL.
  *
  * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
@@ -164,9 +164,9 @@ NS_SWIFT_NAME(Synerise)
 + (void)initializeWithClientApiKey:(NSString *)clientApiKey andBaseUrl:(nullable NSString *)baseUrl NS_SWIFT_NAME(initialize(clientApiKey:baseUrl:));
 
 /**
- * Changes Client API Key dynamically.
+ * Changes Profile API Key dynamically.
  *
- * @param clientApiKey Synerise Client API Key.
+ * @param clientApiKey Synerise Profile API Key.
  */
 + (void)changeClientApiKey:(NSString *)clientApiKey;
 
