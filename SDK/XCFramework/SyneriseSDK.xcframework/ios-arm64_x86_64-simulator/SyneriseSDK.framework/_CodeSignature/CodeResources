@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CHANGELOG.md</key>
+		<data>
+		j0d/wu/h2pgzEOW2Nm+bguYd6TI=
+		</data>
 		<key>Headers/SNRApiError.h</key>
 		<data>
 		D/NRg6yMULaSFfjwfhufeiBHUPA=
@@ -42,7 +46,7 @@
 		</data>
 		<key>Headers/SNRClient.h</key>
 		<data>
-		PxVRZcc/aCXlas0C080WxiWYoKo=
+		jMXRkEWNyChSgsqzp4mXWYghDv4=
 		</data>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<data>
@@ -222,7 +226,7 @@
 		</data>
 		<key>Headers/SNRGeneralSettings.h</key>
 		<data>
-		ouBtXD28K6//gTcbVONMr+P4yKo=
+		glJL1f/0BXVYDBJ8ho8C4IhedqI=
 		</data>
 		<key>Headers/SNRHitTimerEvent.h</key>
 		<data>
@@ -462,7 +466,7 @@
 		</data>
 		<key>Headers/SNRSynerise.h</key>
 		<data>
-		HsrGs/fGFT2scOdYzzsvhm3RqPM=
+		F9jtmFcA7O73Z8aq/ahIjvXXgDg=
 		</data>
 		<key>Headers/SNRSyneriseActivity.h</key>
 		<data>
@@ -526,11 +530,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0++9ZKv+P/mOvQsx7Z1WqGZHK6o=
+		MCmKWH3KOC5sOB9ShY0hy1mo5Pw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		nFkBuzFoDI7g1BGmESBTnAB7Mr0=
+		</data>
+		<key>README.md</key>
+		<data>
+		l7xHeVIh5Tb+fjgAPuUu5GnYQzk=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -609,6 +617,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CHANGELOG.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j0d/wu/h2pgzEOW2Nm+bguYd6TI=
+			</data>
+			<key>hash2</key>
+			<data>
+			xValdzbc9tSAjP3xU03xFPB7vYogQzFMj3Nq9A8Q09s=
+			</data>
+		</dict>
 		<key>Headers/SNRApiError.h</key>
 		<dict>
 			<key>hash</key>
@@ -712,11 +731,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PxVRZcc/aCXlas0C080WxiWYoKo=
+			jMXRkEWNyChSgsqzp4mXWYghDv4=
 			</data>
 			<key>hash2</key>
 			<data>
-			y8mZaIWJjBwyXIqJuc0TTv1dKBFeQCumcPRQxayP8hk=
+			7cBlJDDCpBOBGti0Dn9KXJhus8WKQtC1WDum2zHAn7c=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAccountInformation.h</key>
@@ -1207,11 +1226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ouBtXD28K6//gTcbVONMr+P4yKo=
+			glJL1f/0BXVYDBJ8ho8C4IhedqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2o7MmZ+PmPVKt6/cuteFWCOB1LTr4+WCVWJ4W0QVphU=
+			FFH6WgS8cJqVMvvVYo1MDp8p48kJk9sO5+tz94OE83c=
 			</data>
 		</dict>
 		<key>Headers/SNRHitTimerEvent.h</key>
@@ -1867,11 +1886,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HsrGs/fGFT2scOdYzzsvhm3RqPM=
+			F9jtmFcA7O73Z8aq/ahIjvXXgDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZBtpHwQYpF4qn+7zxXz/wJQg2MqqjDbnp6yFmCPbWc=
+			C57TgTgbu6In5lLR3BJrbzys4W+G97xo91DXN+KA1k4=
 			</data>
 		</dict>
 		<key>Headers/SNRSyneriseActivity.h</key>
@@ -2048,6 +2067,17 @@
 			<key>hash2</key>
 			<data>
 			JO1BzE8/mB0Ku4JjP4OKMCOLFBZuOHYQzqqc0LCsNQs=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l7xHeVIh5Tb+fjgAPuUu5GnYQzk=
+			</data>
+			<key>hash2</key>
+			<data>
+			dtdJ3VtClIlijXFHe0/VHqJ1Gr9W0pGVOl+BZR46NXU=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>

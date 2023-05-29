@@ -2,7 +2,7 @@ BCSymbolMap Version: 2.0
 Apple clang version 14.0.3 (clang-1403.0.22.14.1)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk
 iPhoneOS16.4.sdk
-/Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/build/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
+/Users/kurzy/Library/Developer/Xcode/DerivedData/SyneriseSDK-ahamrqgjhfjofbahdhktzqeslaro/Build/Intermediates.noindex/ArchiveIntermediates/SyneriseSDK/IntermediateBuildFilesPath/SyneriseSDK.build/Release-iphoneos/SyneriseSDK.build/DerivedSources/SyneriseSDK_vers.c
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK
 +[SNRCoreDataInAppDisplay entityName]
 +[SNRCoreDataInAppDisplay makeEntityWithCampaignHash:inContext:]
@@ -1543,15 +1543,21 @@ ___33-[SNRInAppTriggering checkEvent:]_block_invoke
 ___86-[SNRInAppTriggering renderVariantForDefinition:variantIdentifier:event:shouldRender:]_block_invoke
 ___copy_helper_block_e8_32s40r48r
 ___destroy_helper_block_e8_32s40r48r
+-[SNRInAppTriggering sendInAppCappingEventWithDefinition:]
+-[SNRInAppTriggering sendInAppControlGroupEventWithDefinition:]
+-[SNRInAppTriggering sendInAppRenderFailEventWithDefinition:params:]
+-[SNRInAppTriggering eventInfoWithDefinition:]
 -[SNRInAppTriggering dataController]
 -[SNRInAppTriggering delegate]
 -[SNRInAppTriggering setDelegate:]
 -[SNRInAppTriggering .cxx_destruct]
 ___block_descriptor_48_e8_32s40s_e15_B32?08Q16^B24l
-_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_CLASSLIST_REFERENCES_$_.56
 _OBJC_CLASSLIST_REFERENCES_$_.57
 ___block_descriptor_56_e8_32s40r48r_e58_v28?0B8"SNRInAppVariantRenderResponse"12"SNRApiError"20l
-_OBJC_CLASSLIST_REFERENCES_$_.62
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.67
 __OBJC_METACLASS_RO_$_SNRInAppTriggering
 __OBJC_$_INSTANCE_METHODS_SNRInAppTriggering
 _OBJC_IVAR_$_SNRInAppTriggering._dataController
@@ -2101,13 +2107,11 @@ ___41-[SNRBaseApiRequest executeOnMainThread:]_block_invoke
 -[SNRBaseApiRequest setCompletionBlock:]
 -[SNRBaseApiRequest .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.55
-_OBJC_CLASSLIST_REFERENCES_$_.56
 ___block_descriptor_40_e8_32w_e33_v24?0"NSURLSessionDataTask"816l
 ___block_descriptor_40_e8_32s_e42_v24?0"NSURLSessionDataTask"8"NSError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.62
 _OBJC_SELECTOR_REFERENCES_.64
 ___block_descriptor_57_e8_32s40s48bs_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.66
-_OBJC_CLASSLIST_REFERENCES_$_.67
 __OBJC_$_CLASS_METHODS_SNRBaseApiRequest
 __OBJC_METACLASS_RO_$_SNRBaseApiRequest
 __OBJC_$_INSTANCE_METHODS_SNRBaseApiRequest
@@ -4678,7 +4682,6 @@ _OBJC_IVAR_$_SNRInjectorInAppMessageWebViewController._timeoutHelper
 _OBJC_SELECTOR_REFERENCES_.44
 _OBJC_SELECTOR_REFERENCES_.46
 _OBJC_SELECTOR_REFERENCES_.48
-_OBJC_SELECTOR_REFERENCES_.50
 _OBJC_SELECTOR_REFERENCES_.52
 _OBJC_CLASSLIST_REFERENCES_$_.53
 _OBJC_CLASSLIST_REFERENCES_$_.64
@@ -5591,8 +5594,7 @@ SyneriseSDK/Core/Services/MigrationService/Migrations/Base/SNRBaseMigration.h
 +[SNRInAppMessageEventFactory makeInAppMessageDiscardEvent:]
 +[SNRInAppMessageEventFactory makeInAppMessageClickEvent:params:]
 +[SNRInAppMessageEventFactory makeInAppMessageCustomActionEvent:]
-+[SNRInAppMessageEventFactory eventWithInAppMessageModel:action:label:params:]
-+[SNRInAppMessageEventFactory eventWithDefinition:action:label:params:]
++[SNRInAppMessageEventFactory eventWithInAppEventInfo:action:label:params:]
 +[SNRInAppMessageEventFactory setParams:inEvent:]
 __OBJC_$_CLASS_METHODS_SNRInAppMessageEventFactory
 __OBJC_METACLASS_RO_$_SNRInAppMessageEventFactory
@@ -8517,6 +8519,7 @@ ___36-[SNRSyneriseLauncher executeLaunch]_block_invoke
 -[SNRSyneriseLauncher reloadNetworking]
 -[SNRSyneriseLauncher setupNetworking]
 -[SNRSyneriseLauncher setupNetworkingWithClientApiKey:andBaseURL:isReinitialization:]
+-[SNRSyneriseLauncher normalizeClientApiKey:]
 -[SNRSyneriseLauncher prepareModules]
 -[SNRSyneriseLauncher invokeSelector:inModules:]
 -[SNRSyneriseLauncher isFirstLaunched]
@@ -10601,6 +10604,27 @@ __OBJC_CLASS_RO_$_SNRScreenViewAudienceInfo
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Content/ScreenView/ScreenViewAudienceInfo/SNRScreenViewAudienceInfo.m
 SyneriseSDK/Core/Models/Content/ScreenView/ScreenViewAudienceInfo/SNRScreenViewAudienceInfo.m
 SyneriseSDK/Core/Models/Content/ScreenView/ScreenViewAudienceInfo/SNRScreenViewAudienceInfo.h
+-[SNRInAppEventInfo identifier]
+-[SNRInAppEventInfo setIdentifier:]
+-[SNRInAppEventInfo variantId]
+-[SNRInAppEventInfo setVariantId:]
+-[SNRInAppEventInfo additionalParameters]
+-[SNRInAppEventInfo setAdditionalParameters:]
+-[SNRInAppEventInfo isTestMessage]
+-[SNRInAppEventInfo setIsTestMessage:]
+-[SNRInAppEventInfo .cxx_destruct]
+__OBJC_METACLASS_RO_$_SNRInAppEventInfo
+__OBJC_$_INSTANCE_METHODS_SNRInAppEventInfo
+_OBJC_IVAR_$_SNRInAppEventInfo._isTestMessage
+_OBJC_IVAR_$_SNRInAppEventInfo._identifier
+_OBJC_IVAR_$_SNRInAppEventInfo._variantId
+_OBJC_IVAR_$_SNRInAppEventInfo._additionalParameters
+__OBJC_$_INSTANCE_VARIABLES_SNRInAppEventInfo
+__OBJC_$_PROP_LIST_SNRInAppEventInfo
+__OBJC_CLASS_RO_$_SNRInAppEventInfo
+/Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Main/Campaigns/SNRInAppEventInfo.m
+SyneriseSDK/Core/Main/Campaigns/SNRInAppEventInfo.m
+SyneriseSDK/Core/Main/Campaigns/SNRInAppEventInfo.h
 +[SNRUserActionService sharedObject]
 ___36+[SNRUserActionService sharedObject]_block_invoke
 +[SNRUserActionService enable:]
@@ -11715,6 +11739,7 @@ __57+[SNRWalkthrough(Mapping) mappingWithNSDictionary:error:]_block_invoke
 -[SNRInjectorInAppMessagePresenter inAppMessageHandledCustomAction:parameters:]
 -[SNRInjectorInAppMessagePresenter getPresenterType]
 -[SNRInjectorInAppMessagePresenter prepareViewController]
+-[SNRInjectorInAppMessagePresenter eventInfoWithInAppMessage:]
 -[SNRInjectorInAppMessagePresenter shouldConfigureConstraints]
 -[SNRInjectorInAppMessagePresenter configureConstraintsWithSuperview:]
 -[SNRInjectorInAppMessagePresenter getBackgroundColorForPresentingController:]
