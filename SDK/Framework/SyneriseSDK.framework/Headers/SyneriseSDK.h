@@ -107,7 +107,6 @@
 #import <SyneriseSDK/SNRClientPasswordResetRequestContext.h>
 #import <SyneriseSDK/SNRClientPasswordResetConfirmationContext.h>
 #import <SyneriseSDK/SNRClientUpdateAccountContext.h>
-#import <SyneriseSDK/SNRClientSimpleAuthenticationData.h>
 #import <SyneriseSDK/SNRClientAccountInformation.h>
 #import <SyneriseSDK/SNRClientEventData.h>
 #import <SyneriseSDK/SNRTokenOrigin.h>

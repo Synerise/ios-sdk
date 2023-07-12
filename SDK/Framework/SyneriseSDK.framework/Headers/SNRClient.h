@@ -20,7 +20,6 @@
 @class SNRClientFacebookAuthenticationContext;
 @class SNRClientAppleSignInAuthenticationContext;
 @class SNRClientConditionalAuthResult;
-@class SNRClientSimpleAuthenticationData;
 @class SNRClientAccountInformation;
 @class SNRClientEventData;
 @class SNRClientUpdateAccountContext;
@@ -295,38 +294,17 @@ NS_SWIFT_NAME(Client)
                                            failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
- * Signs in a customer with Simple Authentication.
- * Note, that to use this method you have to set request validation salt by `Synerise.setRequestValidationSalt(_:)` method.
- *
- * @param data `SNRClientSimpleAuthenticationData` object with client's data information to be modified. Fields that are not provided are not modified.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)simpleAuthentication:(SNRClientSimpleAuthenticationData *)data
-                      authID:(NSString *)authID
-                     success:(void (^)(void))success
-                     failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(simpleAuthentication(data:authID:success:failure:));
-
-/**
- * Checks if a customer is signed in via Synerise, External Provider or OAuth (if client's token is not expired).
+ * Checks if a customer is signed in (if client's token not expired).
  */
 + (BOOL)isSignedIn;
 
 /**
- * Checks if a customer is signed in via Simple Authentication (if anonymous's token is not expired and its origin is .simpleAuth).
- */
-+ (BOOL)isSignedInViaSimpleAuthentication;
-
-/**
  * Signs out the customer.
- * Note that this operation signs out a customer of any type authentication (via Synerise, External Provider, OAuth or Simple Authentication).
- *
  */
 + (void)signOut NS_SWIFT_NAME(signOut());
 
 /**
  * Signs out the customer.
- * Note that this operation signs out a customer of any type authentication (via Synerise, External Provider, OAuth or Simple Authentication).
  *
  * @param mode Logout mode.
  *
@@ -336,7 +314,6 @@ NS_SWIFT_NAME(Client)
 
 /**
  * Signs out the customer.
- * Note that this operation signs out a customer of any type authentication (via Synerise, External Provider, OAuth or Simple Authentication).
  *
  * @param mode Logout mode.
  * @param fromAllDevices Determines whether it should sign out all devices.
@@ -616,16 +593,6 @@ clientIdentityProvider:(SNRClientIdentityProvider)clientIdentityProvider
                      customIdentify:(nullable NSString *)customIdentify
                          parameters:(nullable NSDictionary *)parameters NS_SWIFT_NAME(recognizeAnonymous(email:customIdentify:parameters:));
 
-/**
- * Registers user for Push Notifications.
- *
- * @param registrationToken Firebase FCM Token returned after successful push notifications registration from Firebase.
- * @param success A block object to be executed when the operation finishes successfully.
- * @param failure A block object to be executed when the operation finishes unsuccessfully.
- */
-+ (void)registerForPush:(NSString *)registrationToken
-                success:(void (^)(BOOL isSuccess))success
-                failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(registerForPush(registrationToken:success:failure:));
 
 /**
  * Registers user for Push Notifications.

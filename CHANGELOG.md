@@ -3,17 +3,6 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.14.0] - 2023-07-12
-
-### Added
-- New authentication mechanism - Simple Authentication. It allows identification of customers without implementing more complicated processes such as RaaS, OAuth, or authenticating by third party services, for example Facebook or Apple. Simple Authentication needs only two methods - `Client.simpleAuthentication(data:authID:success:failure:)` to recognize a customer and `Client.isSignedInViaSimpleAuthentication()` to check if the customer is signed in and uses the Simple Authentication feature. The `Client.signOut()` method and similar methods are a common way to sign out and clear the user context.
-- We added a new `Client.registerForPush(registrationToken:success:failure:)` method. It is analogous to `Client.registerForPush(registrationToken:mobilePushAgreement:success:failure:)`, but doesn't require the`mobilePushAgreement` parameter and thanks to that, it doesn't update the customer in the database.
-
-### Changed
-- We changed the behavior when a customer context changes. Now, events that were queued before the context change are force-sent to the previous client profile.
-- Improvements to stability.
-
-
 ## [4.13.1] - 2023-05-29
 
 ### Fixed
