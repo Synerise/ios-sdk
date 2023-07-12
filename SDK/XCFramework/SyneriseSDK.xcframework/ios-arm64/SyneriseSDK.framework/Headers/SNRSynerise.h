@@ -171,6 +171,13 @@ NS_SWIFT_NAME(Synerise)
 + (void)changeClientApiKey:(NSString *)clientApiKey;
 
 /**
+ * Sets salt string for request validation.
+ *
+ * @param string Synerise Profile salt string for request validation.
+ */
++ (void)setRequestValidationSalt:(NSString *)string;
+
+/**
  * Enables/Disables console logs from Synerise SDK.
  *
  * @param enabled Specifies that console logs are enabled/disabled.

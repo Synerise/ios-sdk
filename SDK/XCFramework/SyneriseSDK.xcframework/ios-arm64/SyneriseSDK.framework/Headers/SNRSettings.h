@@ -33,14 +33,14 @@ NS_SWIFT_NAME(Settings)
 @property (strong, nonatomic, nonnull, readonly) SNRNotificationsSettings *notifications;
 
 /**
- * In-App Messaging settings of the SDK
- */
-@property (strong, nonatomic, nonnull, readonly) SNRInAppMessagingSettings *inAppMessaging;
-
-/**
  * Settings for the Tracker module
  */
 @property (strong, nonatomic, nonnull, readonly) SNRTrackerSettings *tracker;
+
+/**
+ * In-App Messaging settings of the SDK
+ */
+@property (strong, nonatomic, nonnull, readonly) SNRInAppMessagingSettings *inAppMessaging;
 
 /**
  * Settings for the Injector module
