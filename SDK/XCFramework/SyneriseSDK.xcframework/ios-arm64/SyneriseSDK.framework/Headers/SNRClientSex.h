@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, SNRClientSex) {
     SNRClientSexOther,
 } NS_SWIFT_NAME(ClientSex);
 
-NSString * SNR_ClientSexToString(SNRClientSex type);
+NSString * SNR_ClientSexToString(SNRClientSex clientSex);
 SNRClientSex SNR_StringToClientSex(NSString * _Nullable string);
 
 NS_ASSUME_NONNULL_END
