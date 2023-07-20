@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.13.2] - 2023-07-20
+
+### Added
+- We have introduced new extra parameters within the internal screen.content event. This event is sent whenever a screen view is generated, providing information about the specific screen view such as document UUIDs, document slugs, and crucial meta parameters of a document used in a screen view.
+
+
 ## [4.13.1] - 2023-05-29
 
 ### Fixed

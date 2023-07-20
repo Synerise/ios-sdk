@@ -5411,14 +5411,23 @@ __OBJC_CATEGORY_PROTOCOLS_$_SNRInternalCommandObject_$_Mapping
 __OBJC_$_CATEGORY_SNRInternalCommandObject_$_Mapping
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Services/InternalCommandService/Model/SNRInternalCommandObject+Mapping.m
 SyneriseSDK/Core/Services/InternalCommandService/Model/SNRInternalCommandObject+Mapping.m
++[SNRBaseModel(Mapping) mappingResponseRawDataForModel:dictionary:]
++[SNRBaseModel(Mapping) generateResponseRawOrderedDictionaryFromResponseRawData:]
++[SNRBaseModel(Mapping) removeUnwantedCharactersInJSONString:]
++[SNRBaseModel(Mapping) addPrefixForKeysInJSONString:]
++[SNRBaseModel(Mapping) processJSONObjectWithJSONObject:]
++[SNRBaseModel(Mapping) sortedKeysFromDictionary:]
+___50+[SNRBaseModel(Mapping) sortedKeysFromDictionary:]_block_invoke
 +[SNRBaseModel(Mapping) mappingWithNSDictionary:error:]
 -[SNRBaseModel(Mapping) mappingToNSDictionary]
+___block_descriptor_32_e11_q24?0816l
 __OBJC_$_CATEGORY_INSTANCE_METHODS_SNRBaseModel_$_Mapping
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRBaseModel_$_Mapping
 __OBJC_CATEGORY_PROTOCOLS_$_SNRBaseModel_$_Mapping
 __OBJC_$_CATEGORY_SNRBaseModel_$_Mapping
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Models/Base/SNRBaseModel+Mapping.m
 SyneriseSDK/Core/Models/Base/SNRBaseModel+Mapping.m
+__50+[SNRBaseModel(Mapping) sortedKeysFromDictionary:]_block_invoke
 -[SNRLocationHelper init]
 -[SNRLocationHelper areLocationServicesAvailable]
 -[SNRLocationHelper getLocationWithCompletionBlock:]
@@ -8464,6 +8473,15 @@ SNR_AFCertificateTrustChainForServerTrust
 SNR_AFServerTrustIsValid
 SNR_AFPublicKeyForCertificate
 __49+[SNR_AFSecurityPolicy defaultPinnedCertificates]_block_invoke
+-[NSDictionary(SNR_Ordered) getOrderedKeys]
+-[NSDictionary(SNR_Ordered) setOrderedKeys:]
+-[NSDictionary(SNR_Ordered) addOrderedKey:]
+-[NSDictionary(SNR_Ordered) allOrderedKeys]
+_orderedKeysKey
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_SNR_Ordered
+__OBJC_$_CATEGORY_NSDictionary_$_SNR_Ordered
+/Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Core/Common/Categories/NSDictionary+SNR_Ordered.m
+SyneriseSDK/Core/Common/Categories/NSDictionary+SNR_Ordered.m
 +[SNRInAppSchedule(Mapping) SNRModelMapper_requiredKeys]
 +[SNRInAppSchedule(Mapping) SNRModelMapper_requiredProperties]
 +[SNRInAppSchedule(Mapping) SNRModelMapper_requiredTypes]
@@ -9937,8 +9955,10 @@ ___80+[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenViewRespo
 ___copy_helper_block_e8_32s40s48s56s64s
 +[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenView:]
 ___72+[SNRInternalEvent(ScreenContent) makeScreenContentEventWithScreenView:]_block_invoke
++[SNRInternalEvent(ScreenContent) generateSpecialParametersFromScreenViewModel:builder:]
++[SNRInternalEvent(ScreenContent) aggregateSpecialParamatersFromObject:path:index:]
 ___block_descriptor_80_e8_32s40s48s56s64s_e33_v16?0"SNRTrackerParamsBuilder"8l
-___block_descriptor_72_e8_32s40s48s56s_e33_v16?0"SNRTrackerParamsBuilder"8l
+___block_descriptor_88_e8_32s40s48s56s64s_e33_v16?0"SNRTrackerParamsBuilder"8l
 __OBJC_$_CATEGORY_CLASS_METHODS_SNRInternalEvent_$_ScreenContent
 __OBJC_$_CATEGORY_SNRInternalEvent_$_ScreenContent
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/Modules/Tracker/Events/Internal/SNRInternalEvent+ScreenContent.m
@@ -10202,13 +10222,12 @@ _OBJC_IVAR_$_SNR_AFHTTPResponseSerializer._acceptableContentTypes
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFHTTPResponseSerializer
 __OBJC_$_PROP_LIST_SNR_AFHTTPResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFHTTPResponseSerializer
-_OBJC_CLASSLIST_REFERENCES_$_.120
-_OBJC_CLASSLIST_REFERENCES_$_.127
+_OBJC_CLASSLIST_REFERENCES_$_.122
 _OBJC_CLASSLIST_REFERENCES_$_.129
-_OBJC_SELECTOR_REFERENCES_.130
 _OBJC_CLASSLIST_REFERENCES_$_.131
-_OBJC_SELECTOR_REFERENCES_.133
-_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_CLASSLIST_REFERENCES_$_.133
+_OBJC_SELECTOR_REFERENCES_.138
 _OBJC_IVAR_$_SNR_AFJSONResponseSerializer._readingOptions
 _OBJC_IVAR_$_SNR_AFJSONResponseSerializer._removesKeysWithNullValues
 __OBJC_$_CLASS_METHODS_SNR_AFJSONResponseSerializer
@@ -10217,14 +10236,14 @@ __OBJC_$_INSTANCE_METHODS_SNR_AFJSONResponseSerializer
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFJSONResponseSerializer
 __OBJC_$_PROP_LIST_SNR_AFJSONResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFJSONResponseSerializer
-_OBJC_CLASSLIST_REFERENCES_$_.156
+_OBJC_CLASSLIST_REFERENCES_$_.158
 __OBJC_$_CLASS_METHODS_SNR_AFXMLParserResponseSerializer
 __OBJC_METACLASS_RO_$_SNR_AFXMLParserResponseSerializer
 __OBJC_$_INSTANCE_METHODS_SNR_AFXMLParserResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFXMLParserResponseSerializer
-_OBJC_CLASSLIST_REFERENCES_$_.161
-_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_SELECTOR_REFERENCES_.165
+_OBJC_SELECTOR_REFERENCES_.167
 _OBJC_IVAR_$_SNR_AFPropertyListResponseSerializer._format
 _OBJC_IVAR_$_SNR_AFPropertyListResponseSerializer._readOptions
 __OBJC_$_CLASS_METHODS_SNR_AFPropertyListResponseSerializer
@@ -10235,13 +10254,13 @@ __OBJC_$_PROP_LIST_SNR_AFPropertyListResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFPropertyListResponseSerializer
 _imageLock
 _SNR_af_safeImageWithData:.onceToken
-_OBJC_CLASSLIST_REFERENCES_$_.178
-_OBJC_CLASSLIST_REFERENCES_$_.179
+_OBJC_CLASSLIST_REFERENCES_$_.180
+_OBJC_CLASSLIST_REFERENCES_$_.181
 __OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_SNR_AFNetworkingSafeImageLoading
 __OBJC_$_CATEGORY_UIImage_$_SNR_AFNetworkingSafeImageLoading
-_OBJC_CLASSLIST_REFERENCES_$_.203
-_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_CLASSLIST_REFERENCES_$_.205
 _OBJC_SELECTOR_REFERENCES_.207
+_OBJC_SELECTOR_REFERENCES_.209
 _OBJC_IVAR_$_SNR_AFImageResponseSerializer._imageScale
 _OBJC_IVAR_$_SNR_AFImageResponseSerializer._automaticallyInflatesResponseImage
 __OBJC_METACLASS_RO_$_SNR_AFImageResponseSerializer
@@ -10249,10 +10268,10 @@ __OBJC_$_INSTANCE_METHODS_SNR_AFImageResponseSerializer
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFImageResponseSerializer
 __OBJC_$_PROP_LIST_SNR_AFImageResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFImageResponseSerializer
-_OBJC_CLASSLIST_REFERENCES_$_.220
-_OBJC_SELECTOR_REFERENCES_.222
-_OBJC_CLASSLIST_REFERENCES_$_.223
-_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_CLASSLIST_REFERENCES_$_.222
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_CLASSLIST_REFERENCES_$_.225
+_OBJC_SELECTOR_REFERENCES_.227
 _OBJC_IVAR_$_SNR_AFCompoundResponseSerializer._responseSerializers
 __OBJC_$_CLASS_METHODS_SNR_AFCompoundResponseSerializer
 __OBJC_METACLASS_RO_$_SNR_AFCompoundResponseSerializer
@@ -10260,8 +10279,6 @@ __OBJC_$_INSTANCE_METHODS_SNR_AFCompoundResponseSerializer
 __OBJC_$_INSTANCE_VARIABLES_SNR_AFCompoundResponseSerializer
 __OBJC_$_PROP_LIST_SNR_AFCompoundResponseSerializer
 __OBJC_CLASS_RO_$_SNR_AFCompoundResponseSerializer
-_OBJC_CLASSLIST_REFERENCES_$_.234
-_OBJC_CLASSLIST_REFERENCES_$_.235
 _OBJC_CLASSLIST_REFERENCES_$_.236
 /Users/kurzy/Desktop/synerise-ios-sdk/builds/EfLSNyAz/0/Mobile/synerise-ios-sdk/SyneriseSDK/SyneriseSDK/External/AFNetworking/SNR_AFURLResponseSerialization.m
 SyneriseSDK/External/AFNetworking/SNR_AFURLResponseSerialization.m
@@ -10271,6 +10288,7 @@ SNR_AFInflatedImageFromResponseWithDataAtScale
 __70+[UIImage(SNR_AFNetworkingSafeImageLoading) SNR_af_safeImageWithData:]_block_invoke
 SNR_AFJSONObjectByRemovingKeysWithNullValues
 SNR_AFErrorOrUnderlyingErrorHasCodeInDomain
+SNR_AFJSONObjectByAddingOriginalRawResponse
 SNR_AFErrorWithUnderlyingError
 -[SNRRegisterClientAccountRequest init]
 -[SNRRegisterClientAccountRequest setContext:]
@@ -10721,6 +10739,10 @@ __71-[SNRZ26Helper prepareModel29:nameP16:o_headers:typeI139:connectionF6:]_bloc
 -[SNRBaseModel enablePropertyChangeObserving]
 -[SNRBaseModel isPropertyChangedForKeyPath:]
 -[SNRBaseModel propertyDidChangeForKeyPath:]
+-[SNRBaseModel responseRawData]
+-[SNRBaseModel setResponseRawData:]
+-[SNRBaseModel responseRawDictionary]
+-[SNRBaseModel setResponseRawDictionary:]
 -[SNRBaseModel propertyChangeObservingEnabled]
 -[SNRBaseModel setPropertyChangeObservingEnabled:]
 -[SNRBaseModel propertiesChanged]
@@ -10729,6 +10751,8 @@ __OBJC_$_CLASS_METHODS_SNRBaseModel
 __OBJC_METACLASS_RO_$_SNRBaseModel
 __OBJC_$_INSTANCE_METHODS_SNRBaseModel
 _OBJC_IVAR_$_SNRBaseModel._propertyChangeObservingEnabled
+_OBJC_IVAR_$_SNRBaseModel._responseRawData
+_OBJC_IVAR_$_SNRBaseModel._responseRawDictionary
 _OBJC_IVAR_$_SNRBaseModel._propertiesChanged
 __OBJC_$_INSTANCE_VARIABLES_SNRBaseModel
 __OBJC_$_PROP_LIST_SNRBaseModel
