@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.14.0] - 2023-07-12
+## [4.14.0] - 2023-07-26
 
 ### Added
 - New authentication mechanism - Simple Authentication. It allows identification of customers without implementing more complicated processes such as RaaS, OAuth, or authenticating by third party services, for example Facebook or Apple. Simple Authentication needs only two methods - `Client.simpleAuthentication(data:authID:success:failure:)` to recognize a customer and `Client.isSignedInViaSimpleAuthentication()` to check if the customer is signed in and uses the Simple Authentication feature. The `Client.signOut()` method and similar methods are a common way to sign out and clear the user context.
@@ -12,6 +12,12 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 ### Changed
 - We changed the behavior when a customer context changes. Now, events that were queued before the context change are force-sent to the previous client profile.
 - Improvements to stability.
+
+
+## [4.13.2] - 2023-07-20
+
+### Added
+- We have introduced new extra parameters within the internal screen.content event. This event is sent whenever a screen view is generated, providing information about the specific screen view such as document UUIDs, document slugs, and crucial meta parameters of a document used in a screen view.
 
 
 ## [4.13.1] - 2023-05-29
