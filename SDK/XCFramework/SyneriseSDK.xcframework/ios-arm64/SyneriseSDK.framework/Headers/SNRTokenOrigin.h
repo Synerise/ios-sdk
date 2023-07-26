@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, SNRTokenOrigin) {
     SNRTokenOriginUnknown,
     SNRTokenOriginSynerise,
-    SNRTokenOriginFacebook,
+    SNRTokenOriginSimpleAuth,
     SNRTokenOriginOauth,
+    SNRTokenOriginFacebook,
     SNRTokenOriginApple
 } NS_SWIFT_NAME(TokenOrigin);
 
