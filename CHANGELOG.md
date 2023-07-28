@@ -3,7 +3,15 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
-## [4.14.0] - 2023-07-26
+## [4.14.1] - 2023-07-28
+
+### Fixed
+- `Promotion` model mapping caused in previous versions (3.13.2 and 3.14.0).
+- Potential issues related to validating models from the SDK due to redundant data (if result model is Dictionary).
+- AutoTracking `.plain` mode that sent other events than it should (now, it send only `screen.view` events).
+
+
+## [4.14.0] - 2023-07-12
 
 ### Added
 - New authentication mechanism - Simple Authentication. It allows identification of customers without implementing more complicated processes such as RaaS, OAuth, or authenticating by third party services, for example Facebook or Apple. Simple Authentication needs only two methods - `Client.simpleAuthentication(data:authID:success:failure:)` to recognize a customer and `Client.isSignedInViaSimpleAuthentication()` to check if the customer is signed in and uses the Simple Authentication feature. The `Client.signOut()` method and similar methods are a common way to sign out and clear the user context.
