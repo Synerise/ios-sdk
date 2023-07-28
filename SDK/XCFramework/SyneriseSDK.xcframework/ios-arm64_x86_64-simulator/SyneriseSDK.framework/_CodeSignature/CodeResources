@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		ShjPxIxKBmVHzR/aZVhFZ5w0bWY=
+		3yfpzpCSnO/pwYwsOhGuJnMZdN0=
 		</data>
 		<key>Headers/SNRApiError.h</key>
 		<data>
@@ -534,7 +534,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q8pHlUMElhNxenZfT+aABbKmKbs=
+		UX/AxdYISiurdLsAKfN99By7fts=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -542,7 +542,7 @@
 		</data>
 		<key>README.md</key>
 		<data>
-		tOTopH28hR4weJ6UOels7dF37FI=
+		RwJDkM7dKq2NXnlCX4eLSc0vHXQ=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -625,11 +625,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ShjPxIxKBmVHzR/aZVhFZ5w0bWY=
+			3yfpzpCSnO/pwYwsOhGuJnMZdN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			vgx4pNTzViGfP4tDvAUksefvgCy665svXNUuE73y20s=
+			Vi43wTIXeJqlb56uUnfWycNUsogD1EfjgK1hqnJGWdQ=
 			</data>
 		</dict>
 		<key>Headers/SNRApiError.h</key>
@@ -2088,11 +2088,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tOTopH28hR4weJ6UOels7dF37FI=
+			RwJDkM7dKq2NXnlCX4eLSc0vHXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			SZLOQd1R4ROQsly7FEtMMKAjDRMTj8VYtSp8MF2+bGk=
+			wxz/kkd6Jj6ULjfqd023+eWGwjn4UY5mGiFaWgNtwok=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
