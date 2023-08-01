@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.2] - 2023-08-01
+
+### Fixed
+- The issue that could have caused a customer sign out in some cases when a customer context was changed.
+- Potential issues with sharing data sources related to using `Synerise.setRequestValidationSalt(_:)` before SDK initialization.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.1] - 2023-07-28
 
 ### Fixed
