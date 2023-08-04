@@ -40,6 +40,7 @@ NS_SWIFT_NAME(ClientSimpleAuthenticationData)
 @property (copy, nonatomic, nullable, readwrite) SNRClientAgreements *agreements;
 
 @property (copy, nonatomic, nullable, readwrite) NSDictionary *attributes;
+@property (copy, nonatomic, nullable, readwrite) NSArray<NSString *> *tags;
 
 @end
 

@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.3] - 2023-08-04
+
+### Fixed
+- The issue that could have caused incorrect sorting of in-app messages.
+- Potential issues with Simple Authentication requests.
+
+### Added
+- `tags` property in the `ClientSimpleAuthenticationData` model.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.2] - 2023-08-01
 
 ### Fixed

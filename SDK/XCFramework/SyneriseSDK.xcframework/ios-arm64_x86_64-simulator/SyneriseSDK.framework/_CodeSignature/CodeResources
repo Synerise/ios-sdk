@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		HwIlyGibWXLkGbjMynfDasC1b9E=
+		peJqU1z98UNc151DNKN9n6TdQxg=
 		</data>
 		<key>Headers/SNRApiError.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/SNRClientSimpleAuthenticationData.h</key>
 		<data>
-		E5Rj7Jo+ViKfJJoTUWcTQWznHbI=
+		mYB1db0WqAcnFtIUaRPvyr9shNk=
 		</data>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
 		<data>
@@ -534,7 +534,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CQs03B6IelVmHiVqTvAzumOmYoQ=
+		nzi/dpqVVG2z91ruXEYdqWsBUOU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -542,7 +542,7 @@
 		</data>
 		<key>README.md</key>
 		<data>
-		VE6D4KvhBwx26Fd520VzyYdyxpw=
+		2S9d5tfB3HH/FxFUM9gSSbqFh4s=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -625,11 +625,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HwIlyGibWXLkGbjMynfDasC1b9E=
+			peJqU1z98UNc151DNKN9n6TdQxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			iGsmHrxh3kRUuSSjy8h2Lvxfi2C5EpnN4pDGyMxA6dg=
+			MlBnlBgHMVAqpMiOPlDBH28WFRkQNcIESr9jGBjxSfw=
 			</data>
 		</dict>
 		<key>Headers/SNRApiError.h</key>
@@ -944,11 +944,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E5Rj7Jo+ViKfJJoTUWcTQWznHbI=
+			mYB1db0WqAcnFtIUaRPvyr9shNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			oQ8D4OPiKK7dp4U1nAlmkPxWzRSpwk3wQIJ3ngSflpc=
+			S8zKoozPg9ugm0ZH6YaA1o8pByDEQddHX5PETwxNwsU=
 			</data>
 		</dict>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
@@ -2088,11 +2088,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VE6D4KvhBwx26Fd520VzyYdyxpw=
+			2S9d5tfB3HH/FxFUM9gSSbqFh4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			eRCRBuv3TJ0Sv9gBilUOXycllqW1D5Tbf/v+jJhzkFI=
+			3MJRx0DKnfjuyLm/6aV3+UWMIRcdwdogCjMsdigPGn8=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
