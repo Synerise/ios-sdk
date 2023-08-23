@@ -1,0 +1,46 @@
+ [
+  {
+  "brand": "Black Sabbath",
+  "name": "Sabbath Bloody Sabbath",
+  "sku": "40",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac.",
+  "image":"http://gate.net.pl/mobile/cul-sabb.png",
+  "price": 5.19,
+  "rating": 4.5,
+  "ratingCount": 19
+  },
+  {
+  "brand": "Kansas",
+  "name": "Leftoverture",
+  "sku": "41",
+  "description": "Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+  "image":"http://gate.net.pl/mobile/cul-kans.png",
+  "price": 4.99,
+  "rating": 4.4,
+  "ratingCount": 84
+  },
+  {
+  "brand": "Above and Beyond",
+  "name": "Common Ground",
+  "sku": "42",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Curabitur mollis, urna sed condimentum euismod, risus mi sollicitudin neque, in dictum nibh arcu sit amet nisi. Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus. Praesent ut aliquam urna, quis imperdiet velit. Morbi imperdiet est sit amet dui semper, quis dapibus libero placerat. Cras id efficitur leo, id vehicula nisi. Aliquam malesuada leo sed ante pharetra bibendum.",
+  "image":"http://gate.net.pl/mobile/cul-above.png",
+  "price": 7.99,
+  "rating": 4.6,
+  "ratingCount": 89,
+  "categories": "Music"
+  },
+  {
+  "brand": "Ellie Goulding",
+  "name": "Halcyon",
+  "sku": "43",
+  "description": "Curabitur mollis, urna sed condimentum euismod, risus mi sollicitudin neque, in dictum nibh arcu sit amet nisi. Curabitur vel neque metus. Vestibulum mattis eros non erat dictum, ac rhoncus ligula malesuada. Aenean id eleifend nulla. Donec eleifend libero ac neque ornare maximus. Pellentesque non odio velit. Cras tellus mauris, tempus at ultrices ac, molestie quis velit. Nunc lectus arcu, iaculis a eleifend eu, egestas sed lectus.",
+  "image":"http://gate.net.pl/mobile/cul-ellie.png",
+  "price": 7.79,
+  "rating": 4.8,
+  "ratingCount": 78,
+  "categories": "Music"
+  }
+  ]
+
+

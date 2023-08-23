@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SampleAppSwift
+
+  Created by Yaroslav Satsyuk on 6/6/18.
+  
+*/
+
+
+"VIEW_CONTROLLER_REGISTRATION_TITLE" = "Registration"

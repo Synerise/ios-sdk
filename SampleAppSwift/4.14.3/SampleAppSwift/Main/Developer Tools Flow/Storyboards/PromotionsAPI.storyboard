@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pkU-8Y-YMS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Promotions-->
+        <scene sceneID="qKh-IZ-Pr0">
+            <objects>
+                <viewController title="Promotions" id="pkU-8Y-YMS" customClass="PromotionsAPIViewController" customModule="SampleAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIg-ip-cqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-3V-pPX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rTt-Va-yjo">
+                                        <rect key="frame" x="0.0" y="24" width="375" height="140"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0n-O7-MFh">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N18-0o-rda" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="biR-Dg-hlo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Promotions">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="hXp-di-y1w" kind="show" id="K5C-fH-eHd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="N18-0o-rda" secondAttribute="trailing" constant="16" id="72q-Wq-Llf"/>
+                                                    <constraint firstItem="N18-0o-rda" firstAttribute="centerY" secondItem="G0n-O7-MFh" secondAttribute="centerY" id="NBC-6e-pbf"/>
+                                                    <constraint firstAttribute="height" constant="65" id="QOZ-1i-t9F"/>
+                                                    <constraint firstItem="N18-0o-rda" firstAttribute="leading" secondItem="G0n-O7-MFh" secondAttribute="leading" constant="16" id="eG2-7A-XrN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ktu-Nu-mIf">
+                                                <rect key="frame" x="0.0" y="75" width="375" height="65"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-0S-E8u" customClass="DefaultButton" customModule="SampleAppSwift" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="12.5" width="343" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="srB-Of-RSP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Vouchers">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="XgW-23-MdN" kind="show" id="52P-7w-4Lr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="n4q-0S-E8u" secondAttribute="trailing" constant="16" id="H2I-LW-tjR"/>
+                                                    <constraint firstAttribute="height" constant="65" id="fE4-FW-NDf"/>
+                                                    <constraint firstItem="n4q-0S-E8u" firstAttribute="leading" secondItem="Ktu-Nu-mIf" secondAttribute="leading" constant="16" id="o58-Ll-i8b"/>
+                                                    <constraint firstItem="n4q-0S-E8u" firstAttribute="centerY" secondItem="Ktu-Nu-mIf" secondAttribute="centerY" id="pT8-jd-3Pt"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rTt-Va-yjo" firstAttribute="top" secondItem="Ks2-3V-pPX" secondAttribute="top" constant="24" id="0Np-09-rOW"/>
+                                    <constraint firstAttribute="trailing" secondItem="rTt-Va-yjo" secondAttribute="trailing" id="A05-N0-4XH"/>
+                                    <constraint firstItem="rTt-Va-yjo" firstAttribute="width" secondItem="Ks2-3V-pPX" secondAttribute="width" id="JDV-vI-Wfz"/>
+                                    <constraint firstAttribute="bottom" secondItem="rTt-Va-yjo" secondAttribute="bottom" id="MF1-Rt-s8v"/>
+                                    <constraint firstItem="rTt-Va-yjo" firstAttribute="leading" secondItem="Ks2-3V-pPX" secondAttribute="leading" id="XJB-ez-bVX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ks2-3V-pPX" firstAttribute="leading" secondItem="FR1-H8-4p4" secondAttribute="leading" id="72d-Os-JFj"/>
+                            <constraint firstItem="Ks2-3V-pPX" firstAttribute="bottom" secondItem="FR1-H8-4p4" secondAttribute="bottom" id="78J-7k-yE9"/>
+                            <constraint firstItem="Ks2-3V-pPX" firstAttribute="top" secondItem="FR1-H8-4p4" secondAttribute="top" id="dYY-Eu-0wa"/>
+                            <constraint firstItem="Ks2-3V-pPX" firstAttribute="trailing" secondItem="FR1-H8-4p4" secondAttribute="trailing" id="e0n-ha-eeR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FR1-H8-4p4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfc-m8-9YY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-25"/>
+        </scene>
+        <!--PromotionsAPI_Promotions-->
+        <scene sceneID="QPD-mV-25x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PromotionsAPI_Promotions" id="hXp-di-y1w" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dx-4e-UcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="-376"/>
+        </scene>
+        <!--PromotionsAPI_Vouchers-->
+        <scene sceneID="syQ-kI-Iee">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PromotionsAPI_Vouchers" id="XgW-23-MdN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMs-gt-tsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="-88"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,48 @@
+[
+ {
+ "brand": "LG",
+ "name": "LG 65UJ670V",
+ "sku": "1",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac",
+ "image":"http://gate.net.pl/mobile/el-65UJ670V.png",
+ "price": 199.99,
+ "rating": 3.5,
+ "ratingCount": 33,
+ "categories": "HD TV"
+ },
+ {
+ "brand": "Sony",
+ "name": "SONY KD55A1",
+ "sku": "2",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam.",
+ "image":"http://gate.net.pl/mobile/el-KD55A1.png",
+ "price": 244.99,
+ "rating": 2.9,
+ "ratingCount": 11,
+ "categories": "HD TV"
+ },
+ {
+ "brand": "Samsung",
+ "name": "SAMSUNG UE75MU6172",
+ "sku": "3",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam. Proin luctus eros ligula. Proin nulla dolor, gravida quis nisi hendrerit, pretium commodo nisi. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac. Cras varius libero eget condimentum lobortis. Praesent sed ex magna. Ut semper tincidunt tortor, nec lacinia metus venenatis ac.",
+ "image":"http://gate.net.pl/mobile/el-UE75MU6172.png",
+ "price": 211.99,
+ "rating": 4.9,
+ "ratingCount": 14,
+ "categories": "HD TV"
+ },
+ {
+ "brand": "Philips",
+ "name": "PHILIPS 49PUS6432",
+ "sku": "4",
+ "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque congue dictum. Aliquam nec felis vitae odio tempor tincidunt at vitae diam. Vivamus convallis massa a volutpat congue. Duis vitae imperdiet quam.",
+ "image":"http://gate.net.pl/mobile/el-49PUS6432.png",
+ "price": 266.99,
+ "rating": 4.3,
+ "ratingCount": 54,
+ "categories": "HD TV"
+ }
+]
+ 
+ 

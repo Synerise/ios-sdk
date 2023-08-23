@@ -1,0 +1,74 @@
+platform :ios, '13.0'
+use_frameworks!
+
+target 'SampleAppSwift' do
+
+  pod 'Firebase/Core', '8.4.0'
+  pod 'Firebase/Messaging', '8.4.0'
+  pod 'Firebase/Analytics', '8.4.0'
+  pod 'Firebase/Crashlytics', '8.4.0'
+  pod 'Swinject', '~> 2.1.0'
+  pod 'ReachabilitySwift', '~> 5.0.0'
+  pod 'SwiftLint', '0.25.1'
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireImage', '~> 3.3'
+  pod 'SwiftyJSON', '~> 4.1'
+  pod 'AnimatedCollectionViewLayout', '~> 1.1.0'
+  pod 'Cosmos', '~> 16.0.0'
+  pod 'FBSDKLoginKit', '~> 11.0.1'
+  pod 'SwiftMessages', '~> 9.0.5'
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+  post_install do |pi|
+    pi.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        # config.build_settings['DEVELOPMENT_TEAM'] = ''
+        config.build_settings['CODE_SIGNING_REQUIRED'] = 'NO'
+        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+      end
+          
+      if target.respond_to?(:product_type) and target.product_type != "com.apple.product-type.bundle"
+          target.build_configurations.each do |config|
+            config.build_settings['GENERATE_INFOPLIST_FILE'] = 'YES'
+          end
+      end
+    end
+  end
+end
+
+target 'SyneriseNotificationServiceExtension' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
+
+target 'SyneriseNotificationServiceExtensionObjC' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
+
+target 'SyneriseSingleMediaNotificationContentExtension' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
+
+target 'SyneriseSingleMediaNotificationContentExtensionObjC' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
+
+target 'SyneriseCarouselNotificationContentExtension' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
+
+target 'SyneriseCarouselNotificationContentExtensionObjC' do
+  
+  pod 'SyneriseSDK', '~> 4.14.3'
+
+end
