@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSk-74-eob">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSk-74-eob">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Log In With Email Client Table View Controller-->
         <scene sceneID="5n8-ym-me6">
             <objects>
-                <tableViewController id="RJq-hC-nZz" customClass="LogInWithEmailClientTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RJq-hC-nZz" customClass="LogInWithEmailClientTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Qsj-c7-CaN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                             <tableViewSection headerTitle="Email" id="fzp-h8-boK">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="VUu-Bn-0Ma">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUu-Bn-0Ma" id="Pp9-eb-z8h">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -49,13 +49,13 @@
                             <tableViewSection headerTitle="Password" id="Sft-Tn-607">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Rvx-BP-uE1">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rvx-BP-uE1" id="sOx-bX-Y4T">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testPass1!" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqV-8I-Vdo">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqV-8I-Vdo">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="lVY-Wx-DUZ"/>
@@ -77,13 +77,13 @@
                             <tableViewSection headerTitle="Fire Method" id="dpE-EO-TjO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="H1J-uM-3XQ">
-                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1J-uM-3XQ" id="ih0-Gq-vxF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-MI-MZz" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-MI-MZz" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -116,13 +116,13 @@
                             <tableViewSection headerTitle="Fire Method" id="lgc-Bd-b9l">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="W7V-Ve-7RZ">
-                                        <rect key="frame" x="0.0" y="334.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="358.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W7V-Ve-7RZ" id="eFj-6r-L36">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad1-F4-hFy" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad1-F4-hFy" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -170,7 +170,7 @@
         <!--Authorize WithO Auth Table View Controller-->
         <scene sceneID="PqV-3p-2K0">
             <objects>
-                <tableViewController id="2fk-JB-bJz" customClass="AuthorizeWithOAuthTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2fk-JB-bJz" customClass="AuthorizeWithOAuthTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xzd-33-Ace">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
                             <tableViewSection headerTitle="Auth ID" id="wNm-WD-2H4">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="eZY-wm-hmc">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eZY-wm-hmc" id="RAA-LJ-M5z">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -207,13 +207,13 @@
                             <tableViewSection headerTitle="Fire Method (legacy method)" id="MdN-dQ-nYB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="w0f-ty-Jmd">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w0f-ty-Jmd" id="X1V-OM-4dJ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usq-gs-YyR" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usq-gs-YyR" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -246,13 +246,13 @@
                             <tableViewSection headerTitle="Fire Method (consolidated method)" id="qIG-ng-5Nc">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="QAp-Ea-5VH">
-                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QAp-Ea-5VH" id="gwe-LH-Yh2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-F1-noH" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-F1-noH" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -299,7 +299,7 @@
         <!--Confirm Account Activation By Pin Table View Controller-->
         <scene sceneID="1bW-G4-RYX">
             <objects>
-                <tableViewController id="u4R-Xf-2o8" customClass="ConfirmAccountActivationByPinTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="u4R-Xf-2o8" customClass="ConfirmAccountActivationByPinTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dL2-vz-xE3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,7 +308,7 @@
                             <tableViewSection headerTitle="Email" id="BLs-sr-TTx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="8tC-O9-YeU">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8tC-O9-YeU" id="hng-Vt-IEd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -336,7 +336,7 @@
                             <tableViewSection headerTitle="Pin" id="qQG-w3-jXf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Izk-Pm-75c">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izk-Pm-75c" id="9cv-La-Kg8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -364,13 +364,13 @@
                             <tableViewSection headerTitle="Fire Method" id="Sjj-Tw-yIC">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="oK4-nI-mRl">
-                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oK4-nI-mRl" id="gKR-tC-sVI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-4v-pOL" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-4v-pOL" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -419,7 +419,7 @@
         <!--Client Authorization View Controller-->
         <scene sceneID="pvV-nZ-C3i">
             <objects>
-                <viewController id="CSk-74-eob" customClass="ClientAuthorizationViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CSk-74-eob" customClass="ClientAuthorizationViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dH-LM-Hnk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -433,7 +433,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-El-SvQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fy-gY-lY7" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fy-gY-lY7" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -464,7 +464,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pR-Tn-Hgo">
                                                 <rect key="frame" x="0.0" y="65" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-46-RUk" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-46-RUk" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -495,7 +495,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiL-vG-Ubt">
                                                 <rect key="frame" x="0.0" y="130" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq1-Gm-9Pb" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq1-Gm-9Pb" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -526,7 +526,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-mN-fl6">
                                                 <rect key="frame" x="0.0" y="195" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-uY-fcM" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-uY-fcM" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -557,7 +557,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0C-wM-9LP">
                                                 <rect key="frame" x="0.0" y="260" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-wh-W1B" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-wh-W1B" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -588,7 +588,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-5s-2M5">
                                                 <rect key="frame" x="0.0" y="325" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-BB-XLi" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-BB-XLi" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -619,7 +619,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUH-x8-p8a">
                                                 <rect key="frame" x="0.0" y="390" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9T-Pn-UBn" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9T-Pn-UBn" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -650,7 +650,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rze-5x-AEH">
                                                 <rect key="frame" x="0.0" y="455" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-L2-k8b" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-L2-k8b" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -681,7 +681,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbF-a9-hHj">
                                                 <rect key="frame" x="0.0" y="520" width="375" height="65"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfo-TC-FRy" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfo-TC-FRy" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="12.5" width="343" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -739,7 +739,7 @@
         <!--Authorize With Facebook Table View Controller-->
         <scene sceneID="rOJ-io-5Sv">
             <objects>
-                <tableViewController id="AVK-9A-XM8" customClass="AuthorizeWithFacebookTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AVK-9A-XM8" customClass="AuthorizeWithFacebookTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1iM-sD-sY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -748,7 +748,7 @@
                             <tableViewSection headerTitle="Auth ID" id="Vdt-UB-Yh3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="oV0-6e-h8h">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oV0-6e-h8h" id="ON7-D2-7Gf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -776,13 +776,13 @@
                             <tableViewSection headerTitle="Fire Method (legacy method)" id="UK9-gG-AYJ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="IxP-hk-rRK">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IxP-hk-rRK" id="1Eq-Tn-88h">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-br-PqW" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-br-PqW" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -815,13 +815,13 @@
                             <tableViewSection headerTitle="Fire Method (consolidated method)" id="PDm-xG-Vst">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="8yK-pz-Uat">
-                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8yK-pz-Uat" id="6cJ-NX-4Gt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-5j-p0G" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-5j-p0G" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -854,7 +854,7 @@
                             <tableViewSection id="ArN-Lv-5tO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="vQf-RA-KC6">
-                                        <rect key="frame" x="0.0" y="320.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="338.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQf-RA-KC6" id="U0N-Gt-A2f">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -882,7 +882,7 @@
         <!--Request Client Account Activation By Pin Table View Controller-->
         <scene sceneID="a2W-gm-gzR">
             <objects>
-                <tableViewController id="TbH-eN-kis" customClass="RequestClientAccountActivationByPinTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TbH-eN-kis" customClass="RequestClientAccountActivationByPinTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3jD-PC-rll">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -891,7 +891,7 @@
                             <tableViewSection headerTitle="Email" id="2K2-PN-BPM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="9fG-h6-yeh">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fG-h6-yeh" id="37L-Wt-he4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -919,13 +919,13 @@
                             <tableViewSection headerTitle="Fire Method" id="8Fb-hD-o7w">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="HHe-Ue-6fd">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HHe-Ue-6fd" id="Vem-F0-TjI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-yK-y7C" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-yK-y7C" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -973,7 +973,7 @@
         <!--Authorize With Apple Table View Controller-->
         <scene sceneID="o2x-z5-ngV">
             <objects>
-                <tableViewController id="7Xu-KF-HPp" customClass="AuthorizeWithAppleTableViewController" customModule="SDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7Xu-KF-HPp" customClass="AuthorizeWithAppleTableViewController" customModule="SDK_Sample_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="R8x-NR-i7b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -982,7 +982,7 @@
                             <tableViewSection headerTitle="Auth ID" id="c2A-NC-6Qq">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="45" id="jLm-Qc-crk">
-                                        <rect key="frame" x="0.0" y="49.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jLm-Qc-crk" id="9LI-dv-DbV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -1010,13 +1010,13 @@
                             <tableViewSection headerTitle="Fire Method (legacy method)" id="C7j-yE-n7d">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="x0t-ys-u6T">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0t-ys-u6T" id="vUi-Am-zoK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-h8-VfR" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-h8-VfR" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1049,13 +1049,13 @@
                             <tableViewSection headerTitle="Fire Method (consolidated method)" id="xDd-IT-bcD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="dvd-D9-DKG">
-                                        <rect key="frame" x="0.0" y="239.5" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dvd-D9-DKG" id="L0l-PB-UID">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-uK-t9B" customClass="DefaultButton" customModule="SDK_Sample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-uK-t9B" customClass="DefaultButton" customModule="SDK_Sample_App_Swift" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="2.5" width="343" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1088,7 +1088,7 @@
                             <tableViewSection id="PnR-OQ-6dB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="euN-qd-aLt">
-                                        <rect key="frame" x="0.0" y="320.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="338.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="euN-qd-aLt" id="bCI-xH-GB9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
