@@ -30,8 +30,8 @@ class SyneriseManager {
         let clientApiKey = self.clientApiKey
 
         Synerise.settings.sdk.enabled = settingsService.get(.sdkEnabledKey) ?? true
-        Synerise.settings.sdk.appGroupIdentifier = "group.com.synerise.sdk.sample-swift"
-        Synerise.settings.sdk.keychainGroupIdentifier = "34N2Z22TKH.keychainGroup"
+        Synerise.settings.sdk.appGroupIdentifier = ""
+        Synerise.settings.sdk.keychainGroupIdentifier = ""
         Synerise.settings.sdk.shouldDestroySessionOnApiKeyChange = false
 
         Synerise.settings.notifications.enabled = settingsService.get(.notificationsEnabledKey) ?? true
@@ -52,7 +52,7 @@ class SyneriseManager {
 
         DebugUtils.print("SyneriseSDK initializing | Profile API Key: \(clientApiKey)")
         Synerise.initialize(clientApiKey: clientApiKey)
-        Synerise.setRequestValidationSalt("xjmwfqmr")
+        Synerise.setRequestValidationSalt("")
         Synerise.setDebugModeEnabled(true)
         Synerise.setCrashHandlingEnabled(true)
         
