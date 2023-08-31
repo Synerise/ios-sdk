@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		peJqU1z98UNc151DNKN9n6TdQxg=
+		75MT5v/UYLEgbBUsUx6AVMKDkhs=
 		</data>
 		<key>Headers/SNRApiError.h</key>
 		<data>
@@ -482,7 +482,7 @@
 		</data>
 		<key>Headers/SNRTokenOrigin.h</key>
 		<data>
-		Hnx+RX06EZ2WDUDLzPhahevHQik=
+		HWiIoAQt0xWQ8PkryFykUlkCgt8=
 		</data>
 		<key>Headers/SNRTracker.h</key>
 		<data>
@@ -490,7 +490,7 @@
 		</data>
 		<key>Headers/SNRTrackerAutoTrackingSettings.h</key>
 		<data>
-		SkJ+Dhac5jXzKTepJl37qn189iw=
+		sKwVLy3U9Y6SK4KoJDGDt0Gp74o=
 		</data>
 		<key>Headers/SNRTrackerDeclarativeTrackingSettings.h</key>
 		<data>
@@ -534,7 +534,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nzi/dpqVVG2z91ruXEYdqWsBUOU=
+		MfrC0knsrizZb3GySVGqlNTjfvo=
+		</data>
+		<key>LICENSE</key>
+		<data>
+		zBGfwHg328Y9Wc2EKFLHXht4FjU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -542,7 +546,7 @@
 		</data>
 		<key>README.md</key>
 		<data>
-		2S9d5tfB3HH/FxFUM9gSSbqFh4s=
+		tJGpcevV7rGVuI1fV/x+smIA6D4=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -625,11 +629,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			peJqU1z98UNc151DNKN9n6TdQxg=
+			75MT5v/UYLEgbBUsUx6AVMKDkhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			MlBnlBgHMVAqpMiOPlDBH28WFRkQNcIESr9jGBjxSfw=
+			UfpjJPLQDJtHSDDlpU1IszyKY8mxr4oNtE6MBYimDVU=
 			</data>
 		</dict>
 		<key>Headers/SNRApiError.h</key>
@@ -1934,11 +1938,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hnx+RX06EZ2WDUDLzPhahevHQik=
+			HWiIoAQt0xWQ8PkryFykUlkCgt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dgD75qcT+SR0+dYUb+kkFPkg1+UZmau/vIOYTHEJcbw=
+			kF1zMBY9rH6w6/664G96Qcd3YgzVfBqebv2oHhQ7ffA=
 			</data>
 		</dict>
 		<key>Headers/SNRTracker.h</key>
@@ -1956,11 +1960,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SkJ+Dhac5jXzKTepJl37qn189iw=
+			sKwVLy3U9Y6SK4KoJDGDt0Gp74o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Boz8ysD2uEidOTDwSxYqYBvlw43TsBpfTK7hhhfV/WY=
+			VbokP/+yyTDNjt6LrzfE3JP27xtcTc0Ex+w2jPhCKfM=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerDeclarativeTrackingSettings.h</key>
@@ -2073,6 +2077,17 @@
 			PbxUa0icJLWI9asZWIs3v/Uvcaf2nuqEkJ+sWMRp7aY=
 			</data>
 		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zBGfwHg328Y9Wc2EKFLHXht4FjU=
+			</data>
+			<key>hash2</key>
+			<data>
+			UeGnIhM+TXwGrH4pjKU6l4gG6ZbFGR0kDC2JvAq21kU=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -2088,11 +2103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2S9d5tfB3HH/FxFUM9gSSbqFh4s=
+			tJGpcevV7rGVuI1fV/x+smIA6D4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3MJRx0DKnfjuyLm/6aV3+UWMIRcdwdogCjMsdigPGn8=
+			tRmuXEsUOpv4s9uI4HQ2DxRr4tRWL0/Q/HmkCxpEeIQ=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
