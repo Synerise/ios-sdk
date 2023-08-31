@@ -15,12 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, SNRTrackerAutoTrackMode) {
     
     /// Autotracking is set to on touch events only.
-    SNRTrackerAutoTrackModeEager,
+    SNRTrackerAutoTrackModeEager __attribute__((deprecated)),
     
-    /// Autotracking is set to on-click events only.
+    /// Autotracking is set to track screen-visits only.
     SNRTrackerAutoTrackModePlain,
     
-    /// Autotracking is set to attached to nearly everything in your app (even to activities and the `viewDidAppear:` method which records Visited Screen events).
+    /// Autotracking is set to attached to nearly everything in your app (even to activities and the `viewDidAppear:` method which records `screen.view` events).
     SNRTrackerAutoTrackModeFine,
     
     /// Autotracking is disabled.

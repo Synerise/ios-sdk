@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.4] - 2023-08-31
+
+### Added
+- `.anonymous` and `.google` in `TokenOrigin` enumeration type.
+- LICENCE for the SDK.
+
+### Changed
+- `ClientStateDelegate` for handling client sign-in state is also invoked when a customer uses Simple Authentication.
+- The `snr_notificationDidReceive(notificationInfo:)` method in `NotificationDelegate` is also invoked in foreground state and in the host app after clicking on notification and move to app.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.3] - 2023-08-04
 
 ### Fixed

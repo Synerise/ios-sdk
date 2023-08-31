@@ -14,11 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, SNRTokenOrigin) {
     SNRTokenOriginUnknown,
+    SNRTokenOriginAnonymous,
     SNRTokenOriginSynerise,
     SNRTokenOriginSimpleAuth,
     SNRTokenOriginOauth,
     SNRTokenOriginFacebook,
-    SNRTokenOriginApple
+    SNRTokenOriginApple,
+    SNRTokenOriginGoogle
 } NS_SWIFT_NAME(TokenOrigin);
 
 NSString * SNR_TokenOriginToString(SNRTokenOrigin type);
