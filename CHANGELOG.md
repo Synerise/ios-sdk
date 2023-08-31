@@ -7,13 +7,11 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ### Added
 - `.anonymous` and `.google` in `TokenOrigin` enumeration type.
-- LICENCE for the SDK.
+- LICENSE for the SDK.
 
 ### Changed
 - `ClientStateDelegate` for handling client sign-in state is also invoked when a customer uses Simple Authentication.
-- The `snr_notificationDidReceive(notificationInfo:)` method in `NotificationDelegate` is also invoked in foreground state and in the host app after clicking on notification and move to app.
-
-### Changed
+- The `snr_notificationDidReceive(notificationInfo:)` method in `NotificationDelegate` is also invoked in the foreground state and in the host app after clicking on a notification and moving to the app.
 - Improvements to stability.
 
 
