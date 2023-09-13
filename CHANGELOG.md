@@ -3,15 +3,23 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.5] - 2023-09-12
+
+### Fixed
+- Potential in-app messaging issue that could have caused blank screen after dismissing a modal displayed over an in-app message. This problem occurred in a specific view hierarchy and modal presentation style when the in-app message template was `TOP_BAR` or `BOTTOM_BAR`.
+
+
 ## [4.14.4] - 2023-08-31
 
 ### Added
 - `.anonymous` and `.google` in `TokenOrigin` enumeration type.
-- LICENSE for the SDK.
+- LICENCE for the SDK.
 
 ### Changed
 - `ClientStateDelegate` for handling client sign-in state is also invoked when a customer uses Simple Authentication.
-- The `snr_notificationDidReceive(notificationInfo:)` method in `NotificationDelegate` is also invoked in the foreground state and in the host app after clicking on a notification and moving to the app.
+- The `snr_notificationDidReceive(notificationInfo:)` method in `NotificationDelegate` is also invoked in foreground state and in the host app after clicking on notification and move to app.
+
+### Changed
 - Improvements to stability.
 
 

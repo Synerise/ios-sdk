@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>CHANGELOG.md</key>
-		<data>
-		75MT5v/UYLEgbBUsUx6AVMKDkhs=
-		</data>
 		<key>Headers/SNRApiError.h</key>
 		<data>
 		D/NRg6yMULaSFfjwfhufeiBHUPA=
@@ -534,19 +530,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MfrC0knsrizZb3GySVGqlNTjfvo=
-		</data>
-		<key>LICENSE</key>
-		<data>
-		zBGfwHg328Y9Wc2EKFLHXht4FjU=
+		/90e4BYisoA1y+Kee5aQ/c5SSlw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		nFkBuzFoDI7g1BGmESBTnAB7Mr0=
-		</data>
-		<key>README.md</key>
-		<data>
-		tJGpcevV7rGVuI1fV/x+smIA6D4=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -625,17 +613,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>CHANGELOG.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			75MT5v/UYLEgbBUsUx6AVMKDkhs=
-			</data>
-			<key>hash2</key>
-			<data>
-			UfpjJPLQDJtHSDDlpU1IszyKY8mxr4oNtE6MBYimDVU=
-			</data>
-		</dict>
 		<key>Headers/SNRApiError.h</key>
 		<dict>
 			<key>hash</key>
@@ -2077,17 +2054,6 @@
 			PbxUa0icJLWI9asZWIs3v/Uvcaf2nuqEkJ+sWMRp7aY=
 			</data>
 		</dict>
-		<key>LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zBGfwHg328Y9Wc2EKFLHXht4FjU=
-			</data>
-			<key>hash2</key>
-			<data>
-			UeGnIhM+TXwGrH4pjKU6l4gG6ZbFGR0kDC2JvAq21kU=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -2097,17 +2063,6 @@
 			<key>hash2</key>
 			<data>
 			JO1BzE8/mB0Ku4JjP4OKMCOLFBZuOHYQzqqc0LCsNQs=
-			</data>
-		</dict>
-		<key>README.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tJGpcevV7rGVuI1fV/x+smIA6D4=
-			</data>
-			<key>hash2</key>
-			<data>
-			tRmuXEsUOpv4s9uI4HQ2DxRr4tRWL0/Q/HmkCxpEeIQ=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
