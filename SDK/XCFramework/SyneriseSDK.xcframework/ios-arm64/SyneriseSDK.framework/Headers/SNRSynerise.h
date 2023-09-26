@@ -197,10 +197,18 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Sets Synerise SDK host application type.
  *
- * @param type Specifies type of host application.
+ * @param type Specifies the type of the host application.
  *
  */
 + (void)setHostApplicationType:(SNRHostApplicationType)type;
+
+/**
+ * Sets Synerise SDK plugin version of the host application.
+ *
+ * @param version Specifies the version of the Synerise SDK plugin in the host application.
+ *
+ */
++ (void)setHostApplicationSDKPluginVersion:(NSString *)version;
 
 /**
  * Sets object for Synerise delegate methods.
