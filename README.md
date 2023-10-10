@@ -11,7 +11,7 @@
 ---
 
 ## About
-[Synerise](http://www.synerise.com) iOS SDK.
+[Synerise](http://www.synerise.com) SDK for iOS.
 
 ## Documentation
 Most up-to-date documentation is available at [Synerise Help Center - iOS SDK](https://help.synerise.com/developers/ios-sdk).
