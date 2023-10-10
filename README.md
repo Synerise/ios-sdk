@@ -3,7 +3,7 @@
 [![Synerise](https://img.shields.io/badge/platform-iOS-green.svg)](https://synerise.com)
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk-blue.svg)](https://github.com/Synerise/ios-sdk/releases) 
+[![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg)](https://github.com/Synerise/ios-sdk/releases) 
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.6-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Documentation](https://img.shields.io/badge/docs-latest-green.svg)](https://help.synerise.com/)
