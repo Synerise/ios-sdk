@@ -1,11 +1,11 @@
 # Synerise iOS SDK (v4.14.6)
 
-[![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg)](https://github.com/Synerise/ios-sdk/releases) 
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.6-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
+[![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
 [![Documentation](https://img.shields.io/badge/docs-latest-green.svg)](https://help.synerise.com/)
 
 ---
@@ -17,7 +17,8 @@ Synerise iOS SDK for Synerise platform (http://www.synerise.com).
 Most up-to-date documentation is available at [Synerise Help Center - iOS SDK](https://help.synerise.com/developers/ios-sdk).
 
 ## Requirements
-
+* Access to workspace
+* A Profile API Key
 * Xcode 15 and iOS SDK 17
 * iOS 9.0+ minimum deployment target
 * Valid architectures: arm64 devices and arm64, x86_64 simulators
@@ -40,7 +41,6 @@ target YOUR_PROJECT_TARGET do
   pod 'SyneriseSDK'
 end
 ```
-
 
 ## Install Synerise SDK from Carthage
 
@@ -75,21 +75,6 @@ import SyneriseSDK
 
 In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
-
-## Setup
-
-1. Under your application targets "Build Settings" configuration find the "Other Linker Flags" property and set it to "-ObjC".
-2. In your application plist file (often called "Info.plist") add a row for "Required background modes" of type Array. It then needs: "App downloads content in response to push notifications".
-3. If you are going to use http addresses (instead only https), you will need to change whitelist domains in your app by adding the following to your application's plist (often called "Info.plist"):
-
-```
-<key>NSAppTransportSecurity</key>
-<dict>
-	<key>NSAllowsArbitraryLoads</key><true/>
-</dict>
-```
-
-
 ## Initialization
 
 First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Profile API Key`.
@@ -105,7 +90,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	let clientApiKey = "YOUR_CLIENT_API_KEY"
 
 	Synerise.initialize(clientApiKey: clientApiKey)
-	Synerise.setDebugModeEnabled(true)
 }
 ```
 
@@ -115,6 +99,5 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
 
 	[SNRSynerise initializeWithClientApiKey:clientApiKey];
-	[SNRSynerise setDebugModeEnabled:YES];
 }
 ```
