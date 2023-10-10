@@ -77,7 +77,7 @@ In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
 ## Initialization
 
-First of all, you need to initialize Synerise iOS SDK in your AppDelegate and provide `Profile API Key`.
+First of all, you need to initialize Synerise iOS SDK and provide `Profile API Key`.
 
 To get `Profile API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
 Then, generate new `API Key` for `Profile` audience.
