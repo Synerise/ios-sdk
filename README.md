@@ -1,21 +1,24 @@
-# Synerise iOS SDK (v4.14.5) - User documentation
+# Synerise iOS SDK (v4.14.5)
 
+[![Synerise](https://img.shields.io/badge/platform-iOS-green.svg)](https://synerise.com)
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
-[![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg?style=flat-square)](https://github.com/Synerise/ios-sdk/releases) 
+[![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk-blue.svg)](https://github.com/Synerise/ios-sdk/releases) 
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.5-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat-square)](https://help.synerise.com/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
+[![Documentation](https://img.shields.io/badge/docs-latest-green.svg)](https://help.synerise.com/)
 
 ---
 
-## Documentation
+## About
+Synerise iOS SDK for Synerise platform (http://www.synerise.com).
 
+## Documentation
 Most up-to-date documentation is available at [Synerise Help Center - iOS SDK](https://help.synerise.com/developers/ios-sdk).
 
 ## Requirements
 
-* Xcode 14 and iOS SDK 16
+* Xcode 15 and iOS SDK 17
 * iOS 9.0+ minimum deployment target
 * Valid architectures: arm64 devices and arm64, x86_64 simulators
 
@@ -30,7 +33,7 @@ gem install cocoapods
 Once you have CocoaPods installed you should add below code into your Podfile in Xcode:
 
 ```
-platform :ios, '9.0'
+platform :ios, '14.0'
 use_frameworks!
 
 target YOUR_PROJECT_TARGET do
@@ -115,5 +118,3 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRSynerise setDebugModeEnabled:YES];
 }
 ```
-
-**IMPORTANT**: It is not recommended to use debug mode in a release version of your application.
