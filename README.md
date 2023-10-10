@@ -1,6 +1,6 @@
 # Synerise iOS SDK (v4.14.6)
 
-[![Synerise](https://img.shields.io/badge/platform-iOS-green.svg)](https://synerise.com)
+[![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg)](https://github.com/Synerise/ios-sdk/releases) 
