@@ -101,3 +101,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 	[SNRSynerise initializeWithClientApiKey:clientApiKey];
 }
 ```
+
+## Author
+Synerise, developer@synerise.com. If you need support please feel free to contact us.
