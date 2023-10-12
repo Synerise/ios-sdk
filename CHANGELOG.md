@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.7] - 2023-10-12
+
+### Fixed
+- The `notificationServiceExtensionDidFailDecryptionWithError(_ error:)` method in `NotificationServiceExtensionDelegate` was not invoked in some cases when decryption failed.
+- The `push.decryptionFailed` event was not sent in some cases when decryption failed.
+
+### Added
+- `Synerise.settings.inAppMessaging.shouldSendInAppCappingEvent` option in settings to enable or disable sending `inApp.capping` event by the SDK.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.6] - 2023-09-26
 
 ### Added

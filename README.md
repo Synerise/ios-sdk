@@ -1,9 +1,9 @@
-# Synerise iOS SDK (v4.14.6)
+# Synerise iOS SDK (v4.14.7)
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/synerise/ios-sdk)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg)](https://github.com/Synerise/ios-sdk/releases) 
-[![CocoaPods](https://img.shields.io/badge/pod-v4.14.6-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v4.14.7-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://help.synerise.com/)
@@ -87,18 +87,18 @@ Configuration for **Synerise SDK** should be completely resolved before the end 
 **Swift:**
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-	let clientApiKey = "YOUR_CLIENT_API_KEY"
+    let clientApiKey = "YOUR_CLIENT_API_KEY"
 
-	Synerise.initialize(clientApiKey: clientApiKey)
+    Synerise.initialize(clientApiKey: clientApiKey)
 }
 ```
 
 **Objective-C:**
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
+    static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
 
-	[SNRSynerise initializeWithClientApiKey:clientApiKey];
+    [SNRSynerise initializeWithClientApiKey:clientApiKey];
 }
 ```
 
