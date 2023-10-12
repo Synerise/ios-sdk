@@ -242,7 +242,7 @@
 		</data>
 		<key>Headers/SNRInAppMessagingSettings.h</key>
 		<data>
-		iNzXNVoUNd2oob60NgK0ycc5Ing=
+		tD2D+dOAa23l/zPkYykHlahdYls=
 		</data>
 		<key>Headers/SNRInjector.h</key>
 		<data>
@@ -530,67 +530,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kXiuwqeNhP9zt8eCLf8Xj5Lb3vc=
+		OI0+Jor0KanZBJi6P0G7rdRD+XU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		nFkBuzFoDI7g1BGmESBTnAB7Mr0=
+		OiECs1ZmJD1tm4FQTCVoCw6lY7c=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
-		1BP1wqWbo//Yd06tDpA2XhBjCTI=
+		XgGl6nU7UVjtEV9AcnVAzBdof24=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
 		<data>
-		GNZhWrGcn8KS+L2wEsawI9x+2E4=
+		9kcZfPi+hzdW5kIamO+vqOA3lFA=
 		</data>
 		<key>SNRInjectorTemplateBannerViewController.nib</key>
 		<data>
-		xafOvVORvx/0umTuYdITwj1D8TU=
+		8FwPAU0wJyxvYIN/fyej/lQs/FU=
 		</data>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/objects-11.0+.nib</key>
 		<data>
-		61eS1UD2fbtI9JHD4Xug21asJ70=
+		BLIUfViDlg5z5DYjc26zGuSIM6s=
 		</data>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/runtime.nib</key>
 		<data>
-		MI8lJ3BrXROVvEXyNuQpEwtxs9M=
+		LpmbBPcK89ZZwSXQj2yFHh6iHcM=
 		</data>
 		<key>SNRInjectorTemplateImageAsBackgroundView.nib</key>
 		<data>
-		fhwMP17ViyUopppzHFacdnh4iZY=
+		KcZgx0sNUt27sH3Uce4cqfuLqSk=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/objects-11.0+.nib</key>
 		<data>
-		hDD+hpVVtT9CLsD1mNksgItxsMg=
+		sFw3Uiv7Iy2uWOmVkNzCWFPXXCQ=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/runtime.nib</key>
 		<data>
-		CaGzkXXtoglHy+f2Gq5kfBx+dkI=
+		KS3Tj6dtMy2SgOzVFXcmo7VnOks=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/objects-11.0+.nib</key>
 		<data>
-		lW8WZrl9nggsQP7mz8+bKDMqeH4=
+		ieeYSiWVbhAWUDxwMbpeoBZkMUQ=
 		</data>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/runtime.nib</key>
 		<data>
-		9UBY3lus3yslhuv1vLq0rTzt/VE=
+		2Sn5nPYIvsJzTjqNmeszHCuJTvI=
 		</data>
 		<key>SNRInjectorWalkthroughViewController.nib/objects-11.0+.nib</key>
 		<data>
-		/Z03gZrs1XEQUqg2bEB9JBAWvd8=
+		P35Jh9xKHYFzy4xPwu1QVOpNYOg=
 		</data>
 		<key>SNRInjectorWalkthroughViewController.nib/runtime.nib</key>
 		<data>
-		7xXy/2R/zyhZJiNFNFX/zoVCvE8=
+		ncqnmo3iRm2h2+GrnEK8C4Lt8b0=
 		</data>
 		<key>SNRTrackerEvents.momd/TrackerEvents.mom</key>
 		<data>
-		TeGq4w2/Hs0mHw7d2eFCvYlgwMQ=
+		8GtxpSog3qKPlV8B5oclc2/OUqo=
 		</data>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>
 		<data>
-		TJlIBSVQNRQLCGTu/P8jMu49uUk=
+		OROLFhfhCJg2Ul+0dy+a80w+SaI=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -1266,11 +1266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iNzXNVoUNd2oob60NgK0ycc5Ing=
+			tD2D+dOAa23l/zPkYykHlahdYls=
 			</data>
 			<key>hash2</key>
 			<data>
-			9FoQr8IbA82D47Mh5M3Xu/alNDbyDMxXWE7PscD0xNY=
+			YgWONyVz6M+U29XYMMQqpMpPErw6y8yPCBjQA4nJiDA=
 			</data>
 		</dict>
 		<key>Headers/SNRInjector.h</key>
@@ -2058,165 +2058,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nFkBuzFoDI7g1BGmESBTnAB7Mr0=
+			OiECs1ZmJD1tm4FQTCVoCw6lY7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			JO1BzE8/mB0Ku4JjP4OKMCOLFBZuOHYQzqqc0LCsNQs=
+			hxZ/LJL4b+VD6eYntgUiQhpDR8+G9kJ8DcHxsX9hjkk=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1BP1wqWbo//Yd06tDpA2XhBjCTI=
+			XgGl6nU7UVjtEV9AcnVAzBdof24=
 			</data>
 			<key>hash2</key>
 			<data>
-			tWlll3joih0vk/Jcy5B6DP3WAYeZtr453TtMdNxiwb0=
+			dXl0L+oJCtYMp5iF6oTCeoFqi7/nmWy4fYbnsPMUsbU=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNZhWrGcn8KS+L2wEsawI9x+2E4=
+			9kcZfPi+hzdW5kIamO+vqOA3lFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			I0mipCT1A01TPYGAbOaeuDqiDBfW2M2ToZcTCMfbj7I=
+			JspIPN0l5U0lOyntd/4mWNp9J0kfFZ1P6bjIhRP7nLA=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateBannerViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xafOvVORvx/0umTuYdITwj1D8TU=
+			8FwPAU0wJyxvYIN/fyej/lQs/FU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4NLwpmKHYtLyJk5R9rRqlSVZyeDPkVqIdW9CmX/iT+8=
+			pAoraZylohSVhkVoOn4sNg60nKikdcuzsCbRBtbDzXQ=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			61eS1UD2fbtI9JHD4Xug21asJ70=
+			BLIUfViDlg5z5DYjc26zGuSIM6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			bMUVZ1ThqnvTek/XAJ+tvGnCCMj9LZ4tx7exQgkzNks=
+			5MZq83NkoUkM2/hE1ukccLwJl5+JPu6qUF1m/bfbi6Y=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateColorAsBackgroundView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MI8lJ3BrXROVvEXyNuQpEwtxs9M=
+			LpmbBPcK89ZZwSXQj2yFHh6iHcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			AfC4n40wDC2TW7BJEA22k8PdpoxqAwMYGHdHNT0A/t4=
+			B59QpezESCSlT0vZUbCdMk4iQyfXFsxfr4EwIaIh0ks=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageAsBackgroundView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fhwMP17ViyUopppzHFacdnh4iZY=
+			KcZgx0sNUt27sH3Uce4cqfuLqSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			U6HbUi9x6+q4OWVtyeKf7uvle/6ZiXC3EcJAPSL+UzA=
+			rNFIaquGM7SkXRs3Q9zMbtiWJF4ZT2KQi7A9Uq49boc=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hDD+hpVVtT9CLsD1mNksgItxsMg=
+			sFw3Uiv7Iy2uWOmVkNzCWFPXXCQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rG0LYTrr/LKyslp8xlGrDrAr8J2me8OXld03Q/xk1H0=
+			wJU/+WD+wvnqGQSj6fuuz9N2lz+PUjZmT3lexY32djk=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextAtopView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CaGzkXXtoglHy+f2Gq5kfBx+dkI=
+			KS3Tj6dtMy2SgOzVFXcmo7VnOks=
 			</data>
 			<key>hash2</key>
 			<data>
-			xiPyEgUdnmikto7pztDnI/XB+eZq6ljeg9kQLu0geRk=
+			hz+FEpmK1P1nfH5h1e3GmQ1QTOWj774YhlTpkHq4Il0=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lW8WZrl9nggsQP7mz8+bKDMqeH4=
+			ieeYSiWVbhAWUDxwMbpeoBZkMUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			K9MpUNy4iIhXVTJDE2NHIej5W2lCkLBCOK/x7RWwMGM=
+			UXgLbzgVjUo+nsTV8FfFp9kZ9RZeeVhxPkG0bGVfcB4=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateImageWithTextBelowView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9UBY3lus3yslhuv1vLq0rTzt/VE=
+			2Sn5nPYIvsJzTjqNmeszHCuJTvI=
 			</data>
 			<key>hash2</key>
 			<data>
-			lkWh2F6uV5DrD+coLQ4VmBM3l62GvhO2RxHfuPKe+lI=
+			97rBcKLtXqX3yoRjJdbHQptFCT03olcflOhg4+R7TUk=
 			</data>
 		</dict>
 		<key>SNRInjectorWalkthroughViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/Z03gZrs1XEQUqg2bEB9JBAWvd8=
+			P35Jh9xKHYFzy4xPwu1QVOpNYOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			YOk9Gx7qJrbozHqlrkwN53Diu6Upn0qvg9g2p2SRDuo=
+			+4bUj6lMMBbG0NGglu+/5d7TqTDOAiy8Joz4HT4ctUo=
 			</data>
 		</dict>
 		<key>SNRInjectorWalkthroughViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7xXy/2R/zyhZJiNFNFX/zoVCvE8=
+			ncqnmo3iRm2h2+GrnEK8C4Lt8b0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3uZe0KYqcRhZ/l6l485y55bRT6/8r+xaR34JXOeZDvw=
+			0SlEQ+mM+03SjMKw8/imJdn4FiJwhyVfIUn8/IDS3g0=
 			</data>
 		</dict>
 		<key>SNRTrackerEvents.momd/TrackerEvents.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TeGq4w2/Hs0mHw7d2eFCvYlgwMQ=
+			8GtxpSog3qKPlV8B5oclc2/OUqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			mqjznVLBJMnuPNk5w8skdmA+cTwCP2ur6IODGbPK7sY=
+			WVE40JPegon4cfAbt+Eu1sMDWm4DkD8JYQc7wcgKQC0=
 			</data>
 		</dict>
 		<key>SNRTrackerEvents.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TJlIBSVQNRQLCGTu/P8jMu49uUk=
+			OROLFhfhCJg2Ul+0dy+a80w+SaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mINJjj5aeIWd8QQBNOykdGz7Ly+qgUoF0uTvLVrKPsw=
+			r1ESp3ifv4L52ih0yPNYlxJHVkOQdWGNOgfJaKYJqYU=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

@@ -31,6 +31,13 @@ NS_SWIFT_NAME(InAppMessagingSettings)
  */
 @property (assign, nonatomic, readwrite) NSTimeInterval renderingTimeout;
 
+/**
+ * This parameter specifies if the SDK should send the `inApp.capping` event.
+ *
+ * The default value is true.
+ */
+@property (assign, nonatomic, readwrite) BOOL shouldSendInAppCappingEvent;
+
 @end
 
 NS_ASSUME_NONNULL_END
