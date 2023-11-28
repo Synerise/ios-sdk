@@ -226,7 +226,7 @@
 		</data>
 		<key>Headers/SNRGeneralSettings.h</key>
 		<data>
-		glJL1f/0BXVYDBJ8ho8C4IhedqI=
+		R7ig1SNac8JAleoLNOtnjX7dTgE=
 		</data>
 		<key>Headers/SNRHitTimerEvent.h</key>
 		<data>
@@ -466,7 +466,7 @@
 		</data>
 		<key>Headers/SNRSynerise.h</key>
 		<data>
-		9SmDGb3k6E4JdPh4h4i+mKBVhNI=
+		5fcIE1qbq/F93FGMQniXpikS4qo=
 		</data>
 		<key>Headers/SNRSyneriseActivity.h</key>
 		<data>
@@ -530,7 +530,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OI0+Jor0KanZBJi6P0G7rdRD+XU=
+		v6xDWyaNS1F58I0g8ZyEvD1ZC14=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1222,11 +1222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			glJL1f/0BXVYDBJ8ho8C4IhedqI=
+			R7ig1SNac8JAleoLNOtnjX7dTgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			FFH6WgS8cJqVMvvVYo1MDp8p48kJk9sO5+tz94OE83c=
+			ahRfXLzVx8idX8UmCiNzziGljXouseH2M+fiNahveWU=
 			</data>
 		</dict>
 		<key>Headers/SNRHitTimerEvent.h</key>
@@ -1882,11 +1882,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9SmDGb3k6E4JdPh4h4i+mKBVhNI=
+			5fcIE1qbq/F93FGMQniXpikS4qo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VF7g3cL20KXN4clggy0WmAprOqLRkjonISovmy6L/W8=
+			6XGyOLg2B1+LoLCDKTBOHOhdh4XtVenpMkzPlpqJ/qk=
 			</data>
 		</dict>
 		<key>Headers/SNRSyneriseActivity.h</key>

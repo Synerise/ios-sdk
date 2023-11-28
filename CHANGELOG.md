@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.8] - 2023-11-28
+
+### Changed
+- The `Synerise.setRequestValidationSalt(_:)` method accepts nil now. `RequestValidationSalt` is not required for Simple Authentication, but we recommend using it for improved security (it needs to be enabled in the Synerise portal first).
+
 ## [4.14.7] - 2023-10-12
 
 ### Fixed

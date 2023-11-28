@@ -147,7 +147,7 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Initializes Synerise SDK.
  *
- * @param clientApiKey Synerise Profile API Key.
+ * @param clientApiKey Synerise Profile API Key (formerly Client API Key).
  *
  * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
  */
@@ -156,7 +156,7 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Initializes Synerise SDK with custom environment settings.
  *
- * @param clientApiKey Synerise Profile API Key.
+ * @param clientApiKey Synerise Profile API Key (formerly Client API Key).
  * @param baseUrl Synerise API custom environment base URL.
  *
  * @note This method needs to be called before any other method of Synerise SDK and only once during application lifecycle.
@@ -166,16 +166,32 @@ NS_SWIFT_NAME(Synerise)
 /**
  * Changes Profile API Key dynamically.
  *
- * @param clientApiKey Synerise Profile API Key.
+ * @param clientApiKey Synerise Profile API Key (formerly Client API Key).
  */
 + (void)changeClientApiKey:(NSString *)clientApiKey;
 
 /**
  * Sets salt string for request validation.
  *
- * @param string Synerise Profile salt string for request validation.
+ * @param salt Synerise Profile salt string for request validation.
  */
-+ (void)setRequestValidationSalt:(NSString *)string;
++ (void)setRequestValidationSalt:(nullable NSString *)salt;
+
+/**
+ * Sets the Synerise SDK host application type.
+ *
+ * @param type Specifies the type of the host application.
+ *
+ */
++ (void)setHostApplicationType:(SNRHostApplicationType)type;
+
+/**
+ * Sets the Synerise SDK plugin version of the host application.
+ *
+ * @param version Specifies the version of the Synerise SDK plugin in the host application.
+ *
+ */
++ (void)setHostApplicationSDKPluginVersion:(NSString *)version;
 
 /**
  * Enables/Disables console logs from Synerise SDK.
@@ -193,22 +209,6 @@ NS_SWIFT_NAME(Synerise)
  *
  */
 + (void)setCrashHandlingEnabled:(BOOL)enabled;
-
-/**
- * Sets Synerise SDK host application type.
- *
- * @param type Specifies the type of the host application.
- *
- */
-+ (void)setHostApplicationType:(SNRHostApplicationType)type;
-
-/**
- * Sets Synerise SDK plugin version of the host application.
- *
- * @param version Specifies the version of the Synerise SDK plugin in the host application.
- *
- */
-+ (void)setHostApplicationSDKPluginVersion:(NSString *)version;
 
 /**
  * Sets object for Synerise delegate methods.
