@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.9] - 2023-12-04
+
+IMPORTANT: 
+Due to changes in the handling of actions for URLs and deep links in Synerise campaigns, we strongly recommend comparing your configuration with the SDK documentation. Review the changes from the previous SDK version integrated into your application here: 
+https://hub.synerise.com/developers/mobile-sdk/campaigns/action-handling/
+
+### Fixed
+- Issue with location of some SDK files in the Documents directory. The old location caused the SDK files to be visible in the shared documents directory if the host application file sharing was enabled.
+- Potential issue with native notification buttons when Simple Push campaign contained Rich Media (Single Media) or had a custom notification category identifier.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.8] - 2023-11-28
 
 ### Changed
