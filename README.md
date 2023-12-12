@@ -6,7 +6,7 @@
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.9-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
-[![Documentation](https://img.shields.io/badge/docs-mobile%20sdk-brightgreen.svg)](https://hub.synerise.com)
+[![Documentation](https://img.shields.io/badge/docs-mobile%20sdk-brightgreen.svg)](https://hub.synerise.com/developers/mobile-sdk/)
 
 ---
 
