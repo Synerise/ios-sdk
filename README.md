@@ -6,15 +6,15 @@
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.9-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://help.synerise.com/)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://hub.synerise.com)
 
 ---
 
 ## About
-[Synerise](http://www.synerise.com) SDK for iOS.
+[Synerise](https://www.synerise.com) SDK for iOS.
 
 ## Documentation
-Most up-to-date documentation is available at [Synerise Help Center - Mobile SDK](https://help.synerise.com/developers/mobile-sdk).
+Most up-to-date documentation is available at [Developer Guide - Mobile SDK](https://hub.synerise.com/developers/mobile-sdk).
 
 ## Requirements
 * Access to workspace
@@ -79,7 +79,7 @@ In Objective-C, you can either include it in your AppName-Prefix.pch file.
 
 First of all, you need to initialize Synerise iOS SDK and provide `Profile API Key`.
 
-To get `Profile API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/api](https://app.synerise.com/api).
+To get `Profile API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/settings/apikeys](https://app.synerise.com/settings/apikeys).
 Then, generate new `API Key` for `Profile` audience.
 
 Configuration for **Synerise SDK** should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
@@ -87,7 +87,7 @@ Configuration for **Synerise SDK** should be completely resolved before the end 
 **Swift:**
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    let clientApiKey = "YOUR_CLIENT_API_KEY"
+    let clientApiKey = "YOUR_PROFILE_API_KEY"
 
     Synerise.initialize(clientApiKey: clientApiKey)
 }
@@ -96,7 +96,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 **Objective-C:**
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    static NSString *clientApiKey = @"YOUR_CLIENT_API_KEY";
+    static NSString *clientApiKey = @"YOUR_PROFILE_API_KEY";
 
     [SNRSynerise initializeWithClientApiKey:clientApiKey];
 }
