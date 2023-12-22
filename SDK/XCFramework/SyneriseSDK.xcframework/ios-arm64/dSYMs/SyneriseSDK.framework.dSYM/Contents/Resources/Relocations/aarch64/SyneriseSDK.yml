@@ -99,8 +99,8 @@ relocations:
   - { offsetInCU: 0x50A, offset: 0x5F86, size: 0x8, addend: 0x0, symName: '-[SNRTemplateBanner .cxx_destruct]', symObjAddr: 0x84, symBinAddr: 0x5A88, symSize: 0x68 }
   - { offsetInCU: 0x27, offset: 0x601C, size: 0x8, addend: 0x0, symName: '+[SNRj36Validator invokeOptions144]', symObjAddr: 0x0, symBinAddr: 0x5AF0, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0x6087, size: 0x8, addend: 0x0, symName: '+[SNRj36Validator invokeOptions144]', symObjAddr: 0x0, symBinAddr: 0x5AF0, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x60B0, size: 0x8, addend: 0x0, symName: _invokeOptions144.instance, symObjAddr: 0xB700, symBinAddr: 0x19AC90, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x60C5, size: 0x8, addend: 0x0, symName: _invokeOptions144.onceToken, symObjAddr: 0xB708, symBinAddr: 0x19AC98, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x60B0, size: 0x8, addend: 0x0, symName: _invokeOptions144.instance, symObjAddr: 0xB700, symBinAddr: 0x19ACB0, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x60C5, size: 0x8, addend: 0x0, symName: _invokeOptions144.onceToken, symObjAddr: 0xB708, symBinAddr: 0x19ACB8, symSize: 0x0 }
   - { offsetInCU: 0x831, offset: 0x6826, size: 0x8, addend: 0x0, symName: '___35+[SNRj36Validator invokeOptions144]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x5B64, symSize: 0x30 }
   - { offsetInCU: 0x86D, offset: 0x6862, size: 0x8, addend: 0x0, symName: '-[SNRj36Validator init]', symObjAddr: 0xA4, symBinAddr: 0x5B94, symSize: 0xC8 }
   - { offsetInCU: 0x8BE, offset: 0x68B3, size: 0x8, addend: 0x0, symName: '-[SNRj36Validator symbolD134]', symObjAddr: 0x16C, symBinAddr: 0x5C5C, symSize: 0xC }
@@ -109,8 +109,8 @@ relocations:
   - { offsetInCU: 0x95A, offset: 0x694F, size: 0x8, addend: 0x0, symName: '-[SNRj36Validator .cxx_destruct]', symObjAddr: 0x190, symBinAddr: 0x5C80, symSize: 0x3C }
   - { offsetInCU: 0x27, offset: 0x6B69, size: 0x8, addend: 0x0, symName: '-[SNRb28Utils initWithApiKey:stateH138:]', symObjAddr: 0x0, symBinAddr: 0x5CBC, symSize: 0x60 }
   - { offsetInCU: 0x92, offset: 0x6BD4, size: 0x8, addend: 0x0, symName: _get_auth_anonymous_queue, symObjAddr: 0x5A4, symBinAddr: 0x6260, symSize: 0x40 }
-  - { offsetInCU: 0xB7, offset: 0x6BF9, size: 0x8, addend: 0x0, symName: _get_auth_anonymous_queue.queue, symObjAddr: 0x19A70, symBinAddr: 0x19ACA0, symSize: 0x0 }
-  - { offsetInCU: 0xCC, offset: 0x6C0E, size: 0x8, addend: 0x0, symName: _get_auth_anonymous_queue.onceToken, symObjAddr: 0x19A78, symBinAddr: 0x19ACA8, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x6BF9, size: 0x8, addend: 0x0, symName: _get_auth_anonymous_queue.queue, symObjAddr: 0x19A70, symBinAddr: 0x19ACC0, symSize: 0x0 }
+  - { offsetInCU: 0xCC, offset: 0x6C0E, size: 0x8, addend: 0x0, symName: _get_auth_anonymous_queue.onceToken, symObjAddr: 0x19A78, symBinAddr: 0x19ACC8, symSize: 0x0 }
   - { offsetInCU: 0x4D0, offset: 0x7012, size: 0x8, addend: 0x0, symName: '-[SNRb28Utils initWithApiKey:stateH138:]', symObjAddr: 0x0, symBinAddr: 0x5CBC, symSize: 0x60 }
   - { offsetInCU: 0x522, offset: 0x7064, size: 0x8, addend: 0x0, symName: '-[SNRb28Utils loadClient145:error:]', symObjAddr: 0x60, symBinAddr: 0x5D1C, symSize: 0x1E4 }
   - { offsetInCU: 0x5BC, offset: 0x70FE, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x244, symBinAddr: 0x5F00, symSize: 0x10 }
@@ -165,11 +165,11 @@ relocations:
   - { offsetInCU: 0x6BF, offset: 0x93DF, size: 0x8, addend: 0x0, symName: '-[SNRClientSignOutRequest setClientSignOutMode:]', symObjAddr: 0x108, symBinAddr: 0x7464, symSize: 0x34 }
   - { offsetInCU: 0x27, offset: 0x9474, size: 0x8, addend: 0x0, symName: '+[SNRServerTimeManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x7498, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0x94DF, size: 0x8, addend: 0x0, symName: '+[SNRServerTimeManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x7498, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x9508, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x14D28, symBinAddr: 0x19ACB0, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x951D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x14D30, symBinAddr: 0x19ACB8, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x9508, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x14D28, symBinAddr: 0x19ACD0, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x951D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x14D30, symBinAddr: 0x19ACD8, symSize: 0x0 }
   - { offsetInCU: 0x15A, offset: 0x95A7, size: 0x8, addend: 0x0, symName: _get_fetch_server_time_queue, symObjAddr: 0x488, symBinAddr: 0x7920, symSize: 0x40 }
-  - { offsetInCU: 0x17F, offset: 0x95CC, size: 0x8, addend: 0x0, symName: _get_fetch_server_time_queue.queue, symObjAddr: 0x14D38, symBinAddr: 0x19ACC0, symSize: 0x0 }
-  - { offsetInCU: 0x194, offset: 0x95E1, size: 0x8, addend: 0x0, symName: _get_fetch_server_time_queue.onceToken, symObjAddr: 0x14D40, symBinAddr: 0x19ACC8, symSize: 0x0 }
+  - { offsetInCU: 0x17F, offset: 0x95CC, size: 0x8, addend: 0x0, symName: _get_fetch_server_time_queue.queue, symObjAddr: 0x14D38, symBinAddr: 0x19ACE0, symSize: 0x0 }
+  - { offsetInCU: 0x194, offset: 0x95E1, size: 0x8, addend: 0x0, symName: _get_fetch_server_time_queue.onceToken, symObjAddr: 0x14D40, symBinAddr: 0x19ACE8, symSize: 0x0 }
   - { offsetInCU: 0x4E3, offset: 0x9930, size: 0x8, addend: 0x0, symName: '___36+[SNRServerTimeManager sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x750C, symSize: 0x30 }
   - { offsetInCU: 0x51F, offset: 0x996C, size: 0x8, addend: 0x0, symName: '-[SNRServerTimeManager init]', symObjAddr: 0xA4, symBinAddr: 0x753C, symSize: 0x50 }
   - { offsetInCU: 0x553, offset: 0x99A0, size: 0x8, addend: 0x0, symName: '-[SNRServerTimeManager dealloc]', symObjAddr: 0xF4, symBinAddr: 0x758C, symSize: 0x44 }
@@ -269,14 +269,14 @@ relocations:
   - { offsetInCU: 0x9BE, offset: 0xCE9A, size: 0x8, addend: 0x0, symName: '-[SNRClientAccountInformation .cxx_destruct]', symObjAddr: 0x9C4, symBinAddr: 0x9824, symSize: 0x194 }
   - { offsetInCU: 0x27, offset: 0xCF50, size: 0x8, addend: 0x0, symName: '+[SNRInjector setWalkthroughDelegate:]', symObjAddr: 0x0, symBinAddr: 0x99B8, symSize: 0x50 }
   - { offsetInCU: 0x92, offset: 0xCFBB, size: 0x8, addend: 0x0, symName: '+[SNRInjector initializeModule]', symObjAddr: 0x26C, symBinAddr: 0x9C24, symSize: 0x78 }
-  - { offsetInCU: 0xB7, offset: 0xCFE0, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x33258, symBinAddr: 0x19ACD8, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0xCFE0, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x33258, symBinAddr: 0x19ACF8, symSize: 0x0 }
   - { offsetInCU: 0x122, offset: 0xD04B, size: 0x8, addend: 0x0, symName: '+[SNRInjector sharedObject]', symObjAddr: 0x368, symBinAddr: 0x9D20, symSize: 0x74 }
-  - { offsetInCU: 0x14B, offset: 0xD074, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x33260, symBinAddr: 0x19ACE0, symSize: 0x0 }
-  - { offsetInCU: 0x160, offset: 0xD089, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x33268, symBinAddr: 0x19ACE8, symSize: 0x0 }
-  - { offsetInCU: 0x1CE, offset: 0xD0F7, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x33250, symBinAddr: 0x19ACD0, symSize: 0x0 }
+  - { offsetInCU: 0x14B, offset: 0xD074, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x33260, symBinAddr: 0x19AD00, symSize: 0x0 }
+  - { offsetInCU: 0x160, offset: 0xD089, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x33268, symBinAddr: 0x19AD08, symSize: 0x0 }
+  - { offsetInCU: 0x1CE, offset: 0xD0F7, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x33250, symBinAddr: 0x19ACF0, symSize: 0x0 }
   - { offsetInCU: 0x1F0, offset: 0xD119, size: 0x8, addend: 0x0, symName: _get_module_queue, symObjAddr: 0xCB0, symBinAddr: 0xA60C, symSize: 0x40 }
-  - { offsetInCU: 0x215, offset: 0xD13E, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x33270, symBinAddr: 0x19ACF0, symSize: 0x0 }
-  - { offsetInCU: 0x22A, offset: 0xD153, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x33278, symBinAddr: 0x19ACF8, symSize: 0x0 }
+  - { offsetInCU: 0x215, offset: 0xD13E, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x33270, symBinAddr: 0x19AD10, symSize: 0x0 }
+  - { offsetInCU: 0x22A, offset: 0xD153, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x33278, symBinAddr: 0x19AD18, symSize: 0x0 }
   - { offsetInCU: 0x7CE, offset: 0xD6F7, size: 0x8, addend: 0x0, symName: '+[SNRInjector setWalkthroughDelegate:]', symObjAddr: 0x0, symBinAddr: 0x99B8, symSize: 0x50 }
   - { offsetInCU: 0x80D, offset: 0xD736, size: 0x8, addend: 0x0, symName: '+[SNRInjector setBannerDelegate:]', symObjAddr: 0x50, symBinAddr: 0x9A08, symSize: 0x50 }
   - { offsetInCU: 0x84C, offset: 0xD775, size: 0x8, addend: 0x0, symName: '+[SNRInjector setInAppMessageDelegate:]', symObjAddr: 0xA0, symBinAddr: 0x9A58, symSize: 0x80 }
@@ -442,8 +442,8 @@ relocations:
   - { offsetInCU: 0xE65, offset: 0x14780, size: 0x8, addend: 0x0, symName: '+[SNRViewUtils colorComponentFrom:start:length:]', symObjAddr: 0x664, symBinAddr: 0xDDCC, symSize: 0xDC }
   - { offsetInCU: 0x27, offset: 0x17EB2, size: 0x8, addend: 0x0, symName: '-[SNRKeychainStorageConfig attributeService]', symObjAddr: 0x0, symBinAddr: 0xDEA8, symSize: 0x8 }
   - { offsetInCU: 0x92, offset: 0x17F1D, size: 0x8, addend: 0x0, symName: _get_keychain_processing_queue, symObjAddr: 0xA60, symBinAddr: 0xE908, symSize: 0x40 }
-  - { offsetInCU: 0xB7, offset: 0x17F42, size: 0x8, addend: 0x0, symName: _get_keychain_processing_queue.queue, symObjAddr: 0x224E0, symBinAddr: 0x19AD00, symSize: 0x0 }
-  - { offsetInCU: 0xCC, offset: 0x17F57, size: 0x8, addend: 0x0, symName: _get_keychain_processing_queue.onceToken, symObjAddr: 0x224E8, symBinAddr: 0x19AD08, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x17F42, size: 0x8, addend: 0x0, symName: _get_keychain_processing_queue.queue, symObjAddr: 0x224E0, symBinAddr: 0x19AD20, symSize: 0x0 }
+  - { offsetInCU: 0xCC, offset: 0x17F57, size: 0x8, addend: 0x0, symName: _get_keychain_processing_queue.onceToken, symObjAddr: 0x224E8, symBinAddr: 0x19AD28, symSize: 0x0 }
   - { offsetInCU: 0x409, offset: 0x18294, size: 0x8, addend: 0x0, symName: '-[SNRKeychainStorageConfig attributeService]', symObjAddr: 0x0, symBinAddr: 0xDEA8, symSize: 0x8 }
   - { offsetInCU: 0x43D, offset: 0x182C8, size: 0x8, addend: 0x0, symName: '-[SNRKeychainStorageConfig setAttributeService:]', symObjAddr: 0x8, symBinAddr: 0xDEB0, symSize: 0x8 }
   - { offsetInCU: 0x478, offset: 0x18303, size: 0x8, addend: 0x0, symName: '-[SNRKeychainStorageConfig attributeAccessGroup]', symObjAddr: 0x10, symBinAddr: 0xDEB8, symSize: 0x8 }
@@ -580,7 +580,7 @@ relocations:
   - { offsetInCU: 0x1B5, offset: 0x21A7B, size: 0x8, addend: 0x0, symName: '-[SNRPromotionDiscountModeDetails discountUsageTrigger]', symObjAddr: 0x10, symBinAddr: 0x11A88, symSize: 0x10 }
   - { offsetInCU: 0x1E9, offset: 0x21AAF, size: 0x8, addend: 0x0, symName: '-[SNRPromotionDiscountModeDetails .cxx_destruct]', symObjAddr: 0x20, symBinAddr: 0x11A98, symSize: 0x14 }
   - { offsetInCU: 0x26, offset: 0x21B22, size: 0x8, addend: 0x0, symName: _DoAssert, symObjAddr: 0x0, symBinAddr: 0x11AAC, symSize: 0x14 }
-  - { offsetInCU: 0x40, offset: 0x21B3C, size: 0x8, addend: 0x0, symName: _g_assert_hander, symObjAddr: 0x58, symBinAddr: 0x199D70, symSize: 0x0 }
+  - { offsetInCU: 0x40, offset: 0x21B3C, size: 0x8, addend: 0x0, symName: _g_assert_hander, symObjAddr: 0x58, symBinAddr: 0x199D90, symSize: 0x0 }
   - { offsetInCU: 0xCD, offset: 0x21BC9, size: 0x8, addend: 0x0, symName: _DoAssert, symObjAddr: 0x0, symBinAddr: 0x11AAC, symSize: 0x14 }
   - { offsetInCU: 0x125, offset: 0x21C21, size: 0x8, addend: 0x0, symName: _SetDomainRegistryAssertHandler, symObjAddr: 0x14, symBinAddr: 0x11AC0, symSize: 0xC }
   - { offsetInCU: 0x149, offset: 0x21C45, size: 0x8, addend: 0x0, symName: _DefaultAssertHandler, symObjAddr: 0x20, symBinAddr: 0x11ACC, symSize: 0x34 }
@@ -589,8 +589,8 @@ relocations:
   - { offsetInCU: 0x196, offset: 0x21E1F, size: 0x8, addend: 0x0, symName: _SNR_StringToInAppEventParameterRuleOperation, symObjAddr: 0x28, symBinAddr: 0x11B28, symSize: 0x220 }
   - { offsetInCU: 0x27, offset: 0x21E7A, size: 0x8, addend: 0x0, symName: '+[SNRAutomationService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x11D48, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0x21EE5, size: 0x8, addend: 0x0, symName: '+[SNRAutomationService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x11D48, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x21F0E, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xCAA8, symBinAddr: 0x19AD10, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x21F23, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xCAB0, symBinAddr: 0x19AD18, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x21F0E, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xCAA8, symBinAddr: 0x19AD30, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x21F23, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xCAB0, symBinAddr: 0x19AD38, symSize: 0x0 }
   - { offsetInCU: 0x2F7, offset: 0x2214A, size: 0x8, addend: 0x0, symName: '___36+[SNRAutomationService sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x11DBC, symSize: 0x30 }
   - { offsetInCU: 0x333, offset: 0x22186, size: 0x8, addend: 0x0, symName: '-[SNRAutomationService init]', symObjAddr: 0xA4, symBinAddr: 0x11DEC, symSize: 0x64 }
   - { offsetInCU: 0x367, offset: 0x221BA, size: 0x8, addend: 0x0, symName: '-[SNRAutomationService isAutomationModel:]', symObjAddr: 0x108, symBinAddr: 0x11E50, symSize: 0x74 }
@@ -612,14 +612,14 @@ relocations:
   - { offsetInCU: 0x223, offset: 0x22B3F, size: 0x8, addend: 0x0, symName: '-[SNRBaseDateFormatter stringWithISO8601FormatFromDate:]', symObjAddr: 0x15C, symBinAddr: 0x123F0, symSize: 0x74 }
   - { offsetInCU: 0x27, offset: 0x22BF0, size: 0x8, addend: 0x0, symName: '+[SNRClient initialize]', symObjAddr: 0x0, symBinAddr: 0x12464, symSize: 0xD8 }
   - { offsetInCU: 0x92, offset: 0x22C5B, size: 0x8, addend: 0x0, symName: '+[SNRClient initializeModule]', symObjAddr: 0x276C, symBinAddr: 0x14BD0, symSize: 0x78 }
-  - { offsetInCU: 0xB9, offset: 0x22C82, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x5E8C8, symBinAddr: 0x19AD28, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0x22C82, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x5E8C8, symBinAddr: 0x19AD48, symSize: 0x0 }
   - { offsetInCU: 0x127, offset: 0x22CF0, size: 0x8, addend: 0x0, symName: '+[SNRClient sharedObject]', symObjAddr: 0x2868, symBinAddr: 0x14CCC, symSize: 0x74 }
-  - { offsetInCU: 0x152, offset: 0x22D1B, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x5E8D0, symBinAddr: 0x19AD30, symSize: 0x0 }
-  - { offsetInCU: 0x169, offset: 0x22D32, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x5E8D8, symBinAddr: 0x19AD38, symSize: 0x0 }
-  - { offsetInCU: 0x1DA, offset: 0x22DA3, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x5E8C0, symBinAddr: 0x19AD20, symSize: 0x0 }
+  - { offsetInCU: 0x152, offset: 0x22D1B, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x5E8D0, symBinAddr: 0x19AD50, symSize: 0x0 }
+  - { offsetInCU: 0x169, offset: 0x22D32, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x5E8D8, symBinAddr: 0x19AD58, symSize: 0x0 }
+  - { offsetInCU: 0x1DA, offset: 0x22DA3, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x5E8C0, symBinAddr: 0x19AD40, symSize: 0x0 }
   - { offsetInCU: 0x1FC, offset: 0x22DC5, size: 0x8, addend: 0x0, symName: _get_module_queue, symObjAddr: 0x2A9C, symBinAddr: 0x14F00, symSize: 0x40 }
-  - { offsetInCU: 0x221, offset: 0x22DEA, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x5E8E0, symBinAddr: 0x19AD40, symSize: 0x0 }
-  - { offsetInCU: 0x236, offset: 0x22DFF, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x5E8E8, symBinAddr: 0x19AD48, symSize: 0x0 }
+  - { offsetInCU: 0x221, offset: 0x22DEA, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x5E8E0, symBinAddr: 0x19AD60, symSize: 0x0 }
+  - { offsetInCU: 0x236, offset: 0x22DFF, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x5E8E8, symBinAddr: 0x19AD68, symSize: 0x0 }
   - { offsetInCU: 0x5FB, offset: 0x231C4, size: 0x8, addend: 0x0, symName: '+[SNRClient initialize]', symObjAddr: 0x0, symBinAddr: 0x12464, symSize: 0xD8 }
   - { offsetInCU: 0x62B, offset: 0x231F4, size: 0x8, addend: 0x0, symName: '+[SNRClient setClientStateDelegate:]', symObjAddr: 0xD8, symBinAddr: 0x1253C, symSize: 0x50 }
   - { offsetInCU: 0x66A, offset: 0x23233, size: 0x8, addend: 0x0, symName: '+[SNRClient registerAccount:success:failure:]', symObjAddr: 0x128, symBinAddr: 0x1258C, symSize: 0x90 }
@@ -781,14 +781,14 @@ relocations:
   - { offsetInCU: 0x2D4, offset: 0x298BD, size: 0x8, addend: 0x0, symName: '+[SNRf32Helper executeOptions153:]', symObjAddr: 0x23C, symBinAddr: 0x18DEC, symSize: 0xC8 }
   - { offsetInCU: 0x27, offset: 0x29A54, size: 0x8, addend: 0x0, symName: '+[SNRTracker initialize]', symObjAddr: 0x0, symBinAddr: 0x18EB4, symSize: 0x88 }
   - { offsetInCU: 0x92, offset: 0x29ABF, size: 0x8, addend: 0x0, symName: '+[SNRTracker initializeModule]', symObjAddr: 0x218, symBinAddr: 0x190CC, symSize: 0x78 }
-  - { offsetInCU: 0xB7, offset: 0x29AE4, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x26920, symBinAddr: 0x19AD58, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x29AE4, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x26920, symBinAddr: 0x19AD78, symSize: 0x0 }
   - { offsetInCU: 0x122, offset: 0x29B4F, size: 0x8, addend: 0x0, symName: '+[SNRTracker sharedObject]', symObjAddr: 0x314, symBinAddr: 0x191C8, symSize: 0x74 }
-  - { offsetInCU: 0x14B, offset: 0x29B78, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x26928, symBinAddr: 0x19AD60, symSize: 0x0 }
-  - { offsetInCU: 0x160, offset: 0x29B8D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x26930, symBinAddr: 0x19AD68, symSize: 0x0 }
-  - { offsetInCU: 0x1CE, offset: 0x29BFB, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x26918, symBinAddr: 0x19AD50, symSize: 0x0 }
+  - { offsetInCU: 0x14B, offset: 0x29B78, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x26928, symBinAddr: 0x19AD80, symSize: 0x0 }
+  - { offsetInCU: 0x160, offset: 0x29B8D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x26930, symBinAddr: 0x19AD88, symSize: 0x0 }
+  - { offsetInCU: 0x1CE, offset: 0x29BFB, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x26918, symBinAddr: 0x19AD70, symSize: 0x0 }
   - { offsetInCU: 0x1F0, offset: 0x29C1D, size: 0x8, addend: 0x0, symName: _get_module_queue, symObjAddr: 0x878, symBinAddr: 0x1972C, symSize: 0x40 }
-  - { offsetInCU: 0x215, offset: 0x29C42, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x26938, symBinAddr: 0x19AD70, symSize: 0x0 }
-  - { offsetInCU: 0x22A, offset: 0x29C57, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x26940, symBinAddr: 0x19AD78, symSize: 0x0 }
+  - { offsetInCU: 0x215, offset: 0x29C42, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x26938, symBinAddr: 0x19AD90, symSize: 0x0 }
+  - { offsetInCU: 0x22A, offset: 0x29C57, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x26940, symBinAddr: 0x19AD98, symSize: 0x0 }
   - { offsetInCU: 0x574, offset: 0x29FA1, size: 0x8, addend: 0x0, symName: '+[SNRTracker initialize]', symObjAddr: 0x0, symBinAddr: 0x18EB4, symSize: 0x88 }
   - { offsetInCU: 0x5A4, offset: 0x29FD1, size: 0x8, addend: 0x0, symName: '+[SNRTracker setDelegate:]', symObjAddr: 0x88, symBinAddr: 0x18F3C, symSize: 0x50 }
   - { offsetInCU: 0x5E3, offset: 0x2A010, size: 0x8, addend: 0x0, symName: '+[SNRTracker setCustomIdentifier:]', symObjAddr: 0xD8, symBinAddr: 0x18F8C, symSize: 0x50 }
@@ -892,13 +892,13 @@ relocations:
   - { offsetInCU: 0x27, offset: 0x2D3EA, size: 0x8, addend: 0x0, symName: '+[NSObject(SNR_Aspects) SNR_aspect_hookSelector:withOptions:usingBlock:error:]', symObjAddr: 0x0, symBinAddr: 0x1BF70, symSize: 0x14 }
   - { offsetInCU: 0xA3, offset: 0x2D466, size: 0x8, addend: 0x0, symName: _SNR_AspectErrorDomain, symObjAddr: 0x3EF0, symBinAddr: 0x135160, symSize: 0x0 }
   - { offsetInCU: 0xD9, offset: 0x2D49C, size: 0x8, addend: 0x0, symName: _SNR_aspect_performLocked, symObjAddr: 0x1BC8, symBinAddr: 0x1DB38, symSize: 0x48 }
-  - { offsetInCU: 0xFB, offset: 0x2D4BE, size: 0x8, addend: 0x0, symName: _SNR_aspect_performLocked.aspect_lock, symObjAddr: 0x3C0D0, symBinAddr: 0x19AD80, symSize: 0x0 }
+  - { offsetInCU: 0xFB, offset: 0x2D4BE, size: 0x8, addend: 0x0, symName: _SNR_aspect_performLocked.aspect_lock, symObjAddr: 0x3C0D0, symBinAddr: 0x19ADA0, symSize: 0x0 }
   - { offsetInCU: 0x199, offset: 0x2D55C, size: 0x8, addend: 0x0, symName: _SNR_aspect_getSwizzledClassesDict, symObjAddr: 0x2654, symBinAddr: 0x1E554, symSize: 0x40 }
-  - { offsetInCU: 0x1C1, offset: 0x2D584, size: 0x8, addend: 0x0, symName: _SNR_aspect_getSwizzledClassesDict.swizzledClassesDict, symObjAddr: 0x3C0E8, symBinAddr: 0x19AD98, symSize: 0x0 }
-  - { offsetInCU: 0x1D8, offset: 0x2D59B, size: 0x8, addend: 0x0, symName: _SNR_aspect_getSwizzledClassesDict.pred, symObjAddr: 0x3C0F0, symBinAddr: 0x19ADA0, symSize: 0x0 }
+  - { offsetInCU: 0x1C1, offset: 0x2D584, size: 0x8, addend: 0x0, symName: _SNR_aspect_getSwizzledClassesDict.swizzledClassesDict, symObjAddr: 0x3C0E8, symBinAddr: 0x19ADB8, symSize: 0x0 }
+  - { offsetInCU: 0x1D8, offset: 0x2D59B, size: 0x8, addend: 0x0, symName: _SNR_aspect_getSwizzledClassesDict.pred, symObjAddr: 0x3C0F0, symBinAddr: 0x19ADC0, symSize: 0x0 }
   - { offsetInCU: 0x230, offset: 0x2D5F3, size: 0x8, addend: 0x0, symName: _SNR__aspect_modifySwizzledClasses, symObjAddr: 0x28E8, symBinAddr: 0x1E7E8, symSize: 0x9C }
-  - { offsetInCU: 0x254, offset: 0x2D617, size: 0x8, addend: 0x0, symName: _SNR__aspect_modifySwizzledClasses.swizzledClasses, symObjAddr: 0x3C0F8, symBinAddr: 0x19ADA8, symSize: 0x0 }
-  - { offsetInCU: 0x26B, offset: 0x2D62E, size: 0x8, addend: 0x0, symName: _SNR__aspect_modifySwizzledClasses.pred, symObjAddr: 0x3C100, symBinAddr: 0x19ADB0, symSize: 0x0 }
+  - { offsetInCU: 0x254, offset: 0x2D617, size: 0x8, addend: 0x0, symName: _SNR__aspect_modifySwizzledClasses.swizzledClasses, symObjAddr: 0x3C0F8, symBinAddr: 0x19ADC8, symSize: 0x0 }
+  - { offsetInCU: 0x26B, offset: 0x2D62E, size: 0x8, addend: 0x0, symName: _SNR__aspect_modifySwizzledClasses.pred, symObjAddr: 0x3C100, symBinAddr: 0x19ADD0, symSize: 0x0 }
   - { offsetInCU: 0x6E5, offset: 0x2DAA8, size: 0x8, addend: 0x0, symName: '+[NSObject(SNR_Aspects) SNR_aspect_hookSelector:withOptions:usingBlock:error:]', symObjAddr: 0x0, symBinAddr: 0x1BF70, symSize: 0x14 }
   - { offsetInCU: 0x760, offset: 0x2DB23, size: 0x8, addend: 0x0, symName: _SNR_aspect_add, symObjAddr: 0x14, symBinAddr: 0x1BF84, symSize: 0x148 }
   - { offsetInCU: 0x7E6, offset: 0x2DBA9, size: 0x8, addend: 0x0, symName: '-[NSObject(SNR_Aspects) SNR_aspect_hookSelector:withOptions:usingBlock:error:]', symObjAddr: 0x15C, symBinAddr: 0x1C0CC, symSize: 0x14 }
@@ -1252,14 +1252,14 @@ relocations:
   - { offsetInCU: 0x85D, offset: 0x39ED3, size: 0x8, addend: 0x0, symName: '-[SNRPlistCache .cxx_destruct]', symObjAddr: 0x780, symBinAddr: 0x24E00, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0x3A014, size: 0x8, addend: 0x0, symName: '+[SNRContent getDocument:success:failure:]', symObjAddr: 0x0, symBinAddr: 0x24E30, symSize: 0xC8 }
   - { offsetInCU: 0x92, offset: 0x3A07F, size: 0x8, addend: 0x0, symName: '+[SNRContent initializeModule]', symObjAddr: 0x47C, symBinAddr: 0x252AC, symSize: 0x78 }
-  - { offsetInCU: 0xB7, offset: 0x3A0A4, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x19FE0, symBinAddr: 0x19ADC0, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x3A0A4, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x19FE0, symBinAddr: 0x19ADE0, symSize: 0x0 }
   - { offsetInCU: 0x122, offset: 0x3A10F, size: 0x8, addend: 0x0, symName: '+[SNRContent sharedObject]', symObjAddr: 0x578, symBinAddr: 0x253A8, symSize: 0x74 }
-  - { offsetInCU: 0x14B, offset: 0x3A138, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x19FE8, symBinAddr: 0x19ADC8, symSize: 0x0 }
-  - { offsetInCU: 0x160, offset: 0x3A14D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x19FF0, symBinAddr: 0x19ADD0, symSize: 0x0 }
-  - { offsetInCU: 0x1CE, offset: 0x3A1BB, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x19FD8, symBinAddr: 0x19ADB8, symSize: 0x0 }
+  - { offsetInCU: 0x14B, offset: 0x3A138, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x19FE8, symBinAddr: 0x19ADE8, symSize: 0x0 }
+  - { offsetInCU: 0x160, offset: 0x3A14D, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x19FF0, symBinAddr: 0x19ADF0, symSize: 0x0 }
+  - { offsetInCU: 0x1CE, offset: 0x3A1BB, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x19FD8, symBinAddr: 0x19ADD8, symSize: 0x0 }
   - { offsetInCU: 0x1F0, offset: 0x3A1DD, size: 0x8, addend: 0x0, symName: _get_module_queue, symObjAddr: 0x7AC, symBinAddr: 0x255DC, symSize: 0x40 }
-  - { offsetInCU: 0x215, offset: 0x3A202, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x19FF8, symBinAddr: 0x19ADD8, symSize: 0x0 }
-  - { offsetInCU: 0x22A, offset: 0x3A217, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x1A000, symBinAddr: 0x19ADE0, symSize: 0x0 }
+  - { offsetInCU: 0x215, offset: 0x3A202, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x19FF8, symBinAddr: 0x19ADF8, symSize: 0x0 }
+  - { offsetInCU: 0x22A, offset: 0x3A217, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x1A000, symBinAddr: 0x19AE00, symSize: 0x0 }
   - { offsetInCU: 0x467, offset: 0x3A454, size: 0x8, addend: 0x0, symName: '+[SNRContent getDocument:success:failure:]', symObjAddr: 0x0, symBinAddr: 0x24E30, symSize: 0xC8 }
   - { offsetInCU: 0x4C4, offset: 0x3A4B1, size: 0x8, addend: 0x0, symName: '+[SNRContent generateDocument:success:failure:]', symObjAddr: 0xC8, symBinAddr: 0x24EF8, symSize: 0xC8 }
   - { offsetInCU: 0x521, offset: 0x3A50E, size: 0x8, addend: 0x0, symName: '+[SNRContent getDocumentsWithApiQuery:success:failure:]', symObjAddr: 0x190, symBinAddr: 0x24FC0, symSize: 0x90 }
@@ -1382,8 +1382,8 @@ relocations:
   - { offsetInCU: 0xB0, offset: 0x42B84, size: 0x8, addend: 0x0, symName: '-[SNRAlgorithmRSAKeystore o__convertKeyForJavaServer:]', symObjAddr: 0x10E0, symBinAddr: 0x295B4, symSize: 0x1CC }
   - { offsetInCU: 0xDB, offset: 0x42BAF, size: 0x8, addend: 0x0, symName: '_o__convertKeyForJavaServer:._encodedRSAEncryptionOID', symObjAddr: 0x1878, symBinAddr: 0xE403B, symSize: 0x0 }
   - { offsetInCU: 0x211, offset: 0x42CE5, size: 0x8, addend: 0x0, symName: _get_rsa_keystore_processing_queue, symObjAddr: 0x19C, symBinAddr: 0x28778, symSize: 0x40 }
-  - { offsetInCU: 0x236, offset: 0x42D0A, size: 0x8, addend: 0x0, symName: _get_rsa_keystore_processing_queue.queue, symObjAddr: 0x18E00, symBinAddr: 0x19ADE8, symSize: 0x0 }
-  - { offsetInCU: 0x24B, offset: 0x42D1F, size: 0x8, addend: 0x0, symName: _get_rsa_keystore_processing_queue.onceToken, symObjAddr: 0x18E08, symBinAddr: 0x19ADF0, symSize: 0x0 }
+  - { offsetInCU: 0x236, offset: 0x42D0A, size: 0x8, addend: 0x0, symName: _get_rsa_keystore_processing_queue.queue, symObjAddr: 0x18E00, symBinAddr: 0x19AE08, symSize: 0x0 }
+  - { offsetInCU: 0x24B, offset: 0x42D1F, size: 0x8, addend: 0x0, symName: _get_rsa_keystore_processing_queue.onceToken, symObjAddr: 0x18E08, symBinAddr: 0x19AE10, symSize: 0x0 }
   - { offsetInCU: 0x42F, offset: 0x42F03, size: 0x8, addend: 0x0, symName: '-[SNRAlgorithmRSAKeystore initWithIdentifier__o:]', symObjAddr: 0x0, symBinAddr: 0x285DC, symSize: 0x80 }
   - { offsetInCU: 0x472, offset: 0x42F46, size: 0x8, addend: 0x0, symName: '-[SNRAlgorithmRSAKeystore o__isKeyPairGenerated]', symObjAddr: 0x80, symBinAddr: 0x2865C, symSize: 0x34 }
   - { offsetInCU: 0x4A6, offset: 0x42F7A, size: 0x8, addend: 0x0, symName: '-[SNRAlgorithmRSAKeystore o__generateKeyPair]', symObjAddr: 0xB4, symBinAddr: 0x28690, symSize: 0xE8 }
@@ -1620,8 +1620,8 @@ relocations:
   - { offsetInCU: 0xE0, offset: 0x4C4DE, size: 0x8, addend: 0x0, symName: '-[SNRClientFacebookAuthenticationContext(Mapping) mappingToNSDictionary]', symObjAddr: 0x0, symBinAddr: 0x2CF84, symSize: 0xD4 }
   - { offsetInCU: 0x27, offset: 0x4C64B, size: 0x8, addend: 0x0, symName: '+[SNRPushRegistrationRequiredSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0x2D058, symSize: 0x74 }
   - { offsetInCU: 0x70, offset: 0x4C694, size: 0x8, addend: 0x0, symName: '+[SNRPushRegistrationRequiredSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0x2D058, symSize: 0x74 }
-  - { offsetInCU: 0x99, offset: 0x4C6BD, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6DB0, symBinAddr: 0x19ADF8, symSize: 0x0 }
-  - { offsetInCU: 0xAE, offset: 0x4C6D2, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6DB8, symBinAddr: 0x19AE00, symSize: 0x0 }
+  - { offsetInCU: 0x99, offset: 0x4C6BD, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6DB0, symBinAddr: 0x19AE18, symSize: 0x0 }
+  - { offsetInCU: 0xAE, offset: 0x4C6D2, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6DB8, symBinAddr: 0x19AE20, symSize: 0x0 }
   - { offsetInCU: 0x293, offset: 0x4C8B7, size: 0x8, addend: 0x0, symName: '___49+[SNRPushRegistrationRequiredSignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x2D0CC, symSize: 0x30 }
   - { offsetInCU: 0x2CF, offset: 0x4C8F3, size: 0x8, addend: 0x0, symName: '-[SNRPushRegistrationRequiredSignal notifyPushRegistrationIsNeeded]', symObjAddr: 0xA4, symBinAddr: 0x2D0FC, symSize: 0x110 }
   - { offsetInCU: 0x27, offset: 0x4CA14, size: 0x8, addend: 0x0, symName: '+[SNRInjectorTemplateImageWithTextBelowView createView]', symObjAddr: 0x0, symBinAddr: 0x2D20C, symSize: 0xB8 }
@@ -1841,13 +1841,13 @@ relocations:
   - { offsetInCU: 0x6E5, offset: 0x5A5AB, size: 0x8, addend: 0x0, symName: '-[SNRRecommendationOptions .cxx_destruct]', symObjAddr: 0x144, symBinAddr: 0x31F30, symSize: 0x6C }
   - { offsetInCU: 0x27, offset: 0x5A647, size: 0x8, addend: 0x0, symName: '-[SNREventsManager init]', symObjAddr: 0x0, symBinAddr: 0x31F9C, symSize: 0xB0 }
   - { offsetInCU: 0x92, offset: 0x5A6B2, size: 0x8, addend: 0x0, symName: '-[SNREventsManager didReceiveNotification:]', symObjAddr: 0x1C30, symBinAddr: 0x33AB8, symSize: 0x164 }
-  - { offsetInCU: 0xB9, offset: 0x5A6D9, size: 0x8, addend: 0x0, symName: '_didReceiveNotification:.isApplicationInBackground', symObjAddr: 0x30DD0, symBinAddr: 0x19AE08, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0x5A6D9, size: 0x8, addend: 0x0, symName: '_didReceiveNotification:.isApplicationInBackground', symObjAddr: 0x30DD0, symBinAddr: 0x19AE28, symSize: 0x0 }
   - { offsetInCU: 0x11D, offset: 0x5A73D, size: 0x8, addend: 0x0, symName: _get_events_sending_queue, symObjAddr: 0x3BC, symBinAddr: 0x32358, symSize: 0x40 }
-  - { offsetInCU: 0x142, offset: 0x5A762, size: 0x8, addend: 0x0, symName: _get_events_sending_queue.queue, symObjAddr: 0x30DD8, symBinAddr: 0x19AE10, symSize: 0x0 }
-  - { offsetInCU: 0x157, offset: 0x5A777, size: 0x8, addend: 0x0, symName: _get_events_sending_queue.onceToken, symObjAddr: 0x30DE0, symBinAddr: 0x19AE18, symSize: 0x0 }
+  - { offsetInCU: 0x142, offset: 0x5A762, size: 0x8, addend: 0x0, symName: _get_events_sending_queue.queue, symObjAddr: 0x30DD8, symBinAddr: 0x19AE30, symSize: 0x0 }
+  - { offsetInCU: 0x157, offset: 0x5A777, size: 0x8, addend: 0x0, symName: _get_events_sending_queue.onceToken, symObjAddr: 0x30DE0, symBinAddr: 0x19AE38, symSize: 0x0 }
   - { offsetInCU: 0x1C0, offset: 0x5A7E0, size: 0x8, addend: 0x0, symName: _get_events_processing_queue, symObjAddr: 0x1A10, symBinAddr: 0x33898, symSize: 0x40 }
-  - { offsetInCU: 0x1E5, offset: 0x5A805, size: 0x8, addend: 0x0, symName: _get_events_processing_queue.queue, symObjAddr: 0x30DE8, symBinAddr: 0x19AE20, symSize: 0x0 }
-  - { offsetInCU: 0x1FA, offset: 0x5A81A, size: 0x8, addend: 0x0, symName: _get_events_processing_queue.onceToken, symObjAddr: 0x30DF0, symBinAddr: 0x19AE28, symSize: 0x0 }
+  - { offsetInCU: 0x1E5, offset: 0x5A805, size: 0x8, addend: 0x0, symName: _get_events_processing_queue.queue, symObjAddr: 0x30DE8, symBinAddr: 0x19AE40, symSize: 0x0 }
+  - { offsetInCU: 0x1FA, offset: 0x5A81A, size: 0x8, addend: 0x0, symName: _get_events_processing_queue.onceToken, symObjAddr: 0x30DF0, symBinAddr: 0x19AE48, symSize: 0x0 }
   - { offsetInCU: 0x616, offset: 0x5AC36, size: 0x8, addend: 0x0, symName: '-[SNREventsManager init]', symObjAddr: 0x0, symBinAddr: 0x31F9C, symSize: 0xB0 }
   - { offsetInCU: 0x64A, offset: 0x5AC6A, size: 0x8, addend: 0x0, symName: '-[SNREventsManager dealloc]', symObjAddr: 0xB0, symBinAddr: 0x3204C, symSize: 0x44 }
   - { offsetInCU: 0x67A, offset: 0x5AC9A, size: 0x8, addend: 0x0, symName: '-[SNREventsManager startObserving]', symObjAddr: 0xF4, symBinAddr: 0x32090, symSize: 0x124 }
@@ -2098,14 +2098,14 @@ relocations:
   - { offsetInCU: 0x55C, offset: 0x64B1C, size: 0x8, addend: 0x0, symName: '-[SNRInternetConnectionHelper stringWithRadioAccessTechnology:]', symObjAddr: 0x260, symBinAddr: 0x39724, symSize: 0x160 }
   - { offsetInCU: 0x27, offset: 0x64E12, size: 0x8, addend: 0x0, symName: '+[SNRPromotions getPromotionsWithSuccess:failure:]', symObjAddr: 0x0, symBinAddr: 0x39884, symSize: 0x78 }
   - { offsetInCU: 0x92, offset: 0x64E7D, size: 0x8, addend: 0x0, symName: '+[SNRPromotions initializeModule]', symObjAddr: 0x984, symBinAddr: 0x3A208, symSize: 0x78 }
-  - { offsetInCU: 0xB7, offset: 0x64EA2, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x23DF0, symBinAddr: 0x19AE38, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x64EA2, size: 0x8, addend: 0x0, symName: _initializeModule.onceToken, symObjAddr: 0x23DF0, symBinAddr: 0x19AE58, symSize: 0x0 }
   - { offsetInCU: 0x122, offset: 0x64F0D, size: 0x8, addend: 0x0, symName: '+[SNRPromotions sharedObject]', symObjAddr: 0xA80, symBinAddr: 0x3A304, symSize: 0x74 }
-  - { offsetInCU: 0x14B, offset: 0x64F36, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x23DF8, symBinAddr: 0x19AE40, symSize: 0x0 }
-  - { offsetInCU: 0x160, offset: 0x64F4B, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x23E00, symBinAddr: 0x19AE48, symSize: 0x0 }
-  - { offsetInCU: 0x1CE, offset: 0x64FB9, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x23DE8, symBinAddr: 0x19AE30, symSize: 0x0 }
+  - { offsetInCU: 0x14B, offset: 0x64F36, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x23DF8, symBinAddr: 0x19AE60, symSize: 0x0 }
+  - { offsetInCU: 0x160, offset: 0x64F4B, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x23E00, symBinAddr: 0x19AE68, symSize: 0x0 }
+  - { offsetInCU: 0x1CE, offset: 0x64FB9, size: 0x8, addend: 0x0, symName: _module_is_initialized, symObjAddr: 0x23DE8, symBinAddr: 0x19AE50, symSize: 0x0 }
   - { offsetInCU: 0x1F0, offset: 0x64FDB, size: 0x8, addend: 0x0, symName: _get_module_queue, symObjAddr: 0xCB4, symBinAddr: 0x3A538, symSize: 0x40 }
-  - { offsetInCU: 0x215, offset: 0x65000, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x23E08, symBinAddr: 0x19AE50, symSize: 0x0 }
-  - { offsetInCU: 0x22A, offset: 0x65015, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x23E10, symBinAddr: 0x19AE58, symSize: 0x0 }
+  - { offsetInCU: 0x215, offset: 0x65000, size: 0x8, addend: 0x0, symName: _get_module_queue.queue, symObjAddr: 0x23E08, symBinAddr: 0x19AE70, symSize: 0x0 }
+  - { offsetInCU: 0x22A, offset: 0x65015, size: 0x8, addend: 0x0, symName: _get_module_queue.onceToken, symObjAddr: 0x23E10, symBinAddr: 0x19AE78, symSize: 0x0 }
   - { offsetInCU: 0x568, offset: 0x65353, size: 0x8, addend: 0x0, symName: '+[SNRPromotions getPromotionsWithSuccess:failure:]', symObjAddr: 0x0, symBinAddr: 0x39884, symSize: 0x78 }
   - { offsetInCU: 0x5B6, offset: 0x653A1, size: 0x8, addend: 0x0, symName: '+[SNRPromotions getPromotionsWithApiQuery:success:failure:]', symObjAddr: 0x78, symBinAddr: 0x398FC, symSize: 0xC8 }
   - { offsetInCU: 0x613, offset: 0x653FE, size: 0x8, addend: 0x0, symName: '+[SNRPromotions activatePromotionByUuid:success:failure:]', symObjAddr: 0x140, symBinAddr: 0x399C4, symSize: 0xC8 }
@@ -2259,8 +2259,8 @@ relocations:
   - { offsetInCU: 0x875, offset: 0x6F0A9, size: 0x8, addend: 0x0, symName: '-[SNREventController .cxx_destruct]', symObjAddr: 0xA8C, symBinAddr: 0x3FD4C, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0x6FF46, size: 0x8, addend: 0x0, symName: '+[SNRSettingsService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x3FD7C, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0x6FFB1, size: 0x8, addend: 0x0, symName: '+[SNRSettingsService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x3FD7C, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x6FFDA, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xCEA8, symBinAddr: 0x19AE60, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x6FFEF, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xCEB0, symBinAddr: 0x19AE68, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x6FFDA, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xCEA8, symBinAddr: 0x19AE80, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x6FFEF, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xCEB0, symBinAddr: 0x19AE88, symSize: 0x0 }
   - { offsetInCU: 0x2FC, offset: 0x7021B, size: 0x8, addend: 0x0, symName: '___34+[SNRSettingsService sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x3FDF0, symSize: 0x30 }
   - { offsetInCU: 0x338, offset: 0x70257, size: 0x8, addend: 0x0, symName: '-[SNRSettingsService init]', symObjAddr: 0xA4, symBinAddr: 0x3FE20, symSize: 0x70 }
   - { offsetInCU: 0x36C, offset: 0x7028B, size: 0x8, addend: 0x0, symName: '-[SNRSettingsService dealloc]', symObjAddr: 0x114, symBinAddr: 0x3FE90, symSize: 0x44 }
@@ -2283,7 +2283,7 @@ relocations:
   - { offsetInCU: 0xCD, offset: 0x70802, size: 0x8, addend: 0x0, symName: _SNRCarouselContentExtensionViewControllerNextItemIdentifier, symObjAddr: 0x2AF0, symBinAddr: 0x135BB0, symSize: 0x0 }
   - { offsetInCU: 0xE2, offset: 0x70817, size: 0x8, addend: 0x0, symName: _SNRCarouselContentExtensionViewControllerChooseItemIdentifier, symObjAddr: 0x2AF8, symBinAddr: 0x135BB8, symSize: 0x0 }
   - { offsetInCU: 0xEB, offset: 0x70820, size: 0x8, addend: 0x0, symName: '-[SNRCarouselContentExtensionViewController trackImageTimeoutEvent]', symObjAddr: 0x2400, symBinAddr: 0x425AC, symSize: 0x6C }
-  - { offsetInCU: 0x112, offset: 0x70847, size: 0x8, addend: 0x0, symName: _trackImageTimeoutEvent.onceToken, symObjAddr: 0x51900, symBinAddr: 0x19AE70, symSize: 0x0 }
+  - { offsetInCU: 0x112, offset: 0x70847, size: 0x8, addend: 0x0, symName: _trackImageTimeoutEvent.onceToken, symObjAddr: 0x51900, symBinAddr: 0x19AE90, symSize: 0x0 }
   - { offsetInCU: 0x2FE7, offset: 0x7371C, size: 0x8, addend: 0x0, symName: '-[SNRCarouselContentExtensionViewController init]', symObjAddr: 0x0, symBinAddr: 0x4020C, symSize: 0xB4 }
   - { offsetInCU: 0x301B, offset: 0x73750, size: 0x8, addend: 0x0, symName: '-[SNRCarouselContentExtensionViewController loadView]', symObjAddr: 0xB4, symBinAddr: 0x402C0, symSize: 0x54 }
   - { offsetInCU: 0x304B, offset: 0x73780, size: 0x8, addend: 0x0, symName: '-[SNRCarouselContentExtensionViewController viewDidLoad]', symObjAddr: 0x108, symBinAddr: 0x40314, symSize: 0x64 }
@@ -2642,8 +2642,8 @@ relocations:
   - { offsetInCU: 0x2950, offset: 0x8E595, size: 0x8, addend: 0x0, symName: '-[SNRContentWidgetView .cxx_destruct]', symObjAddr: 0x100C, symBinAddr: 0x49C44, symSize: 0x7C }
   - { offsetInCU: 0x27, offset: 0x8F36C, size: 0x8, addend: 0x0, symName: '+[SNRCampaignManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x49CC0, symSize: 0x74 }
   - { offsetInCU: 0x97, offset: 0x8F3DC, size: 0x8, addend: 0x0, symName: '+[SNRCampaignManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x49CC0, symSize: 0x74 }
-  - { offsetInCU: 0xC0, offset: 0x8F405, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x15A00, symBinAddr: 0x19AE78, symSize: 0x0 }
-  - { offsetInCU: 0xD5, offset: 0x8F41A, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x15A08, symBinAddr: 0x19AE80, symSize: 0x0 }
+  - { offsetInCU: 0xC0, offset: 0x8F405, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x15A00, symBinAddr: 0x19AE98, symSize: 0x0 }
+  - { offsetInCU: 0xD5, offset: 0x8F41A, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x15A08, symBinAddr: 0x19AEA0, symSize: 0x0 }
   - { offsetInCU: 0x349, offset: 0x8F68E, size: 0x8, addend: 0x0, symName: '___34+[SNRCampaignManager sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x49D34, symSize: 0x30 }
   - { offsetInCU: 0x385, offset: 0x8F6CA, size: 0x8, addend: 0x0, symName: '-[SNRCampaignManager init]', symObjAddr: 0xA4, symBinAddr: 0x49D64, symSize: 0x80 }
   - { offsetInCU: 0x3B9, offset: 0x8F6FE, size: 0x8, addend: 0x0, symName: '-[SNRCampaignManager dealloc]', symObjAddr: 0x124, symBinAddr: 0x49DE4, symSize: 0x44 }
@@ -2800,7 +2800,7 @@ relocations:
   - { offsetInCU: 0x2F9, offset: 0x995F0, size: 0x8, addend: 0x0, symName: '-[SNRAutoDisappear timeout]', symObjAddr: 0x10, symBinAddr: 0x4F088, symSize: 0x10 }
   - { offsetInCU: 0x32D, offset: 0x99624, size: 0x8, addend: 0x0, symName: '-[SNRAutoDisappear .cxx_destruct]', symObjAddr: 0x20, symBinAddr: 0x4F098, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0x99698, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseCrashHandler setEnabled:]', symObjAddr: 0x0, symBinAddr: 0x4F0AC, symSize: 0x48 }
-  - { offsetInCU: 0x9E, offset: 0x9970F, size: 0x8, addend: 0x0, symName: _previousExceptionHandler, symObjAddr: 0xB9C0, symBinAddr: 0x19AE88, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0x9970F, size: 0x8, addend: 0x0, symName: _previousExceptionHandler, symObjAddr: 0xB9C0, symBinAddr: 0x19AEA8, symSize: 0x0 }
   - { offsetInCU: 0x257, offset: 0x998C8, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseCrashHandler setEnabled:]', symObjAddr: 0x0, symBinAddr: 0x4F0AC, symSize: 0x48 }
   - { offsetInCU: 0x2AE, offset: 0x9991F, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseCrashHandler syneriseInitialized]', symObjAddr: 0x48, symBinAddr: 0x4F0F4, symSize: 0x4 }
   - { offsetInCU: 0x2DC, offset: 0x9994D, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseCrashHandler disposeCrashLogIfExists]', symObjAddr: 0x4C, symBinAddr: 0x4F0F8, symSize: 0x48 }
@@ -2822,7 +2822,7 @@ relocations:
   - { offsetInCU: 0x137, offset: 0x99DAF, size: 0x8, addend: 0x0, symName: _SNR_kTSKAlgorithmRsa4096, symObjAddr: 0x2B8, symBinAddr: 0x135CE0, symSize: 0x0 }
   - { offsetInCU: 0x14C, offset: 0x99DC4, size: 0x8, addend: 0x0, symName: _SNR_kTSKAlgorithmEcDsaSecp256r1, symObjAddr: 0x2C0, symBinAddr: 0x135CE8, symSize: 0x0 }
   - { offsetInCU: 0x161, offset: 0x99DD9, size: 0x8, addend: 0x0, symName: _SNR_kTSKAlgorithmEcDsaSecp384r1, symObjAddr: 0x2C8, symBinAddr: 0x135CF0, symSize: 0x0 }
-  - { offsetInCU: 0x176, offset: 0x99DEE, size: 0x8, addend: 0x0, symName: __loggerBlock, symObjAddr: 0x5780, symBinAddr: 0x19B0E8, symSize: 0x0 }
+  - { offsetInCU: 0x176, offset: 0x99DEE, size: 0x8, addend: 0x0, symName: __loggerBlock, symObjAddr: 0x5780, symBinAddr: 0x19B108, symSize: 0x0 }
   - { offsetInCU: 0x250, offset: 0x99EC8, size: 0x8, addend: 0x0, symName: _SNR_TSKLog, symObjAddr: 0x0, symBinAddr: 0x4F708, symSize: 0x84 }
   - { offsetInCU: 0x27, offset: 0x99F78, size: 0x8, addend: 0x0, symName: '+[SNRAction(Mapping) SNRModelMapper_requiredKeys]', symObjAddr: 0x0, symBinAddr: 0x4F78C, symSize: 0x6C }
   - { offsetInCU: 0x11B, offset: 0x9A06C, size: 0x8, addend: 0x0, symName: '+[SNRAction(Mapping) SNRModelMapper_requiredKeys]', symObjAddr: 0x0, symBinAddr: 0x4F78C, symSize: 0x6C }
@@ -2929,8 +2929,8 @@ relocations:
   - { offsetInCU: 0x27, offset: 0x9F257, size: 0x8, addend: 0x0, symName: '+[SNRClientSignOutSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0x52820, symSize: 0x74 }
   - { offsetInCU: 0xA3, offset: 0x9F2D3, size: 0x8, addend: 0x0, symName: _SNRClientSignOutSignalReasonKey, symObjAddr: 0x258, symBinAddr: 0x135DB8, symSize: 0x0 }
   - { offsetInCU: 0xAC, offset: 0x9F2DC, size: 0x8, addend: 0x0, symName: '+[SNRClientSignOutSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0x52820, symSize: 0x74 }
-  - { offsetInCU: 0xD5, offset: 0x9F305, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x7C20, symBinAddr: 0x19AE90, symSize: 0x0 }
-  - { offsetInCU: 0xEA, offset: 0x9F31A, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x7C28, symBinAddr: 0x19AE98, symSize: 0x0 }
+  - { offsetInCU: 0xD5, offset: 0x9F305, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x7C20, symBinAddr: 0x19AEB0, symSize: 0x0 }
+  - { offsetInCU: 0xEA, offset: 0x9F31A, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x7C28, symBinAddr: 0x19AEB8, symSize: 0x0 }
   - { offsetInCU: 0x30D, offset: 0x9F53D, size: 0x8, addend: 0x0, symName: '___38+[SNRClientSignOutSignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x52894, symSize: 0x30 }
   - { offsetInCU: 0x349, offset: 0x9F579, size: 0x8, addend: 0x0, symName: '-[SNRClientSignOutSignal notifySignOutWithReason:]', symObjAddr: 0xA4, symBinAddr: 0x528C4, symSize: 0x160 }
   - { offsetInCU: 0x27, offset: 0x9F6F5, size: 0x8, addend: 0x0, symName: '-[SNRClientPasswordResetConfirmationContext(Mapping) mappingToNSDictionary]', symObjAddr: 0x0, symBinAddr: 0x52A24, symSize: 0xBC }
@@ -3130,7 +3130,7 @@ relocations:
   - { offsetInCU: 0xF4, offset: 0xABC4B, size: 0x8, addend: 0x0, symName: '+[SNRBaseModel(Mapping) mappingWithNSDictionary:error:]', symObjAddr: 0x0, symBinAddr: 0x58080, symSize: 0x74 }
   - { offsetInCU: 0x170, offset: 0xABCC7, size: 0x8, addend: 0x0, symName: '-[SNRBaseModel(Mapping) mappingToNSDictionary]', symObjAddr: 0x74, symBinAddr: 0x580F4, symSize: 0x74 }
   - { offsetInCU: 0x27, offset: 0xABE9F, size: 0x8, addend: 0x0, symName: '-[SNRLocationHelper init]', symObjAddr: 0x0, symBinAddr: 0x58168, symSize: 0x9C }
-  - { offsetInCU: 0xCA, offset: 0xABF42, size: 0x8, addend: 0x0, symName: _locationUpdated, symObjAddr: 0x11D8A, symBinAddr: 0x19AEA0, symSize: 0x0 }
+  - { offsetInCU: 0xCA, offset: 0xABF42, size: 0x8, addend: 0x0, symName: _locationUpdated, symObjAddr: 0x11D8A, symBinAddr: 0x19AEC0, symSize: 0x0 }
   - { offsetInCU: 0x6AC, offset: 0xAC524, size: 0x8, addend: 0x0, symName: '-[SNRLocationHelper init]', symObjAddr: 0x0, symBinAddr: 0x58168, symSize: 0x9C }
   - { offsetInCU: 0x6E0, offset: 0xAC558, size: 0x8, addend: 0x0, symName: '-[SNRLocationHelper areLocationServicesAvailable]', symObjAddr: 0x9C, symBinAddr: 0x58204, symSize: 0x3C }
   - { offsetInCU: 0x710, offset: 0xAC588, size: 0x8, addend: 0x0, symName: '-[SNRLocationHelper getLocationWithCompletionBlock:]', symObjAddr: 0xD8, symBinAddr: 0x58240, symSize: 0x30 }
@@ -3340,8 +3340,8 @@ relocations:
   - { offsetInCU: 0x14B, offset: 0xBC7D1, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingTaskDidCompleteErrorKey, symObjAddr: 0x6058, symBinAddr: 0x135EC8, symSize: 0x0 }
   - { offsetInCU: 0x160, offset: 0xBC7E6, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingTaskDidCompleteAssetPathKey, symObjAddr: 0x6060, symBinAddr: 0x135ED0, symSize: 0x0 }
   - { offsetInCU: 0x17B, offset: 0xBC801, size: 0x8, addend: 0x0, symName: _url_session_manager_completion_group, symObjAddr: 0x56C0, symBinAddr: 0x63E8C, symSize: 0x40 }
-  - { offsetInCU: 0x1A1, offset: 0xBC827, size: 0x8, addend: 0x0, symName: _url_session_manager_completion_group.af_url_session_manager_completion_group, symObjAddr: 0x72E10, symBinAddr: 0x19AEA8, symSize: 0x0 }
-  - { offsetInCU: 0x1B6, offset: 0xBC83C, size: 0x8, addend: 0x0, symName: _url_session_manager_completion_group.onceToken, symObjAddr: 0x72E18, symBinAddr: 0x19AEB0, symSize: 0x0 }
+  - { offsetInCU: 0x1A1, offset: 0xBC827, size: 0x8, addend: 0x0, symName: _url_session_manager_completion_group.af_url_session_manager_completion_group, symObjAddr: 0x72E10, symBinAddr: 0x19AEC8, symSize: 0x0 }
+  - { offsetInCU: 0x1B6, offset: 0xBC83C, size: 0x8, addend: 0x0, symName: _url_session_manager_completion_group.onceToken, symObjAddr: 0x72E18, symBinAddr: 0x19AED0, symSize: 0x0 }
   - { offsetInCU: 0x2052, offset: 0xBE6D8, size: 0x8, addend: 0x0, symName: '-[SNR_AFURLSessionManagerTaskDelegate initWithTask:]', symObjAddr: 0x0, symBinAddr: 0x5E920, symSize: 0x3C8 }
   - { offsetInCU: 0x20EB, offset: 0xBE771, size: 0x8, addend: 0x0, symName: '___52-[SNR_AFURLSessionManagerTaskDelegate initWithTask:]_block_invoke', symObjAddr: 0x3C8, symBinAddr: 0x5ECE8, symSize: 0x2C }
   - { offsetInCU: 0x2123, offset: 0xBE7A9, size: 0x8, addend: 0x0, symName: '___52-[SNR_AFURLSessionManagerTaskDelegate initWithTask:]_block_invoke.40', symObjAddr: 0x408, symBinAddr: 0x5ED14, symSize: 0x2C }
@@ -3619,7 +3619,7 @@ relocations:
   - { offsetInCU: 0x7CD, offset: 0xC78AB, size: 0x8, addend: 0x0, symName: '-[SNRDeleteAccountByIdentityProviderRequest setCustomID:]', symObjAddr: 0x23C, symBinAddr: 0x64CB4, symSize: 0x10 }
   - { offsetInCU: 0x808, offset: 0xC78E6, size: 0x8, addend: 0x0, symName: '-[SNRDeleteAccountByIdentityProviderRequest setUUID:]', symObjAddr: 0x24C, symBinAddr: 0x64CC4, symSize: 0x10 }
   - { offsetInCU: 0x843, offset: 0xC7921, size: 0x8, addend: 0x0, symName: '-[SNRDeleteAccountByIdentityProviderRequest setDeviceID:]', symObjAddr: 0x25C, symBinAddr: 0x64CD4, symSize: 0x10 }
-  - { offsetInCU: 0x93, offset: 0xC7A15, size: 0x8, addend: 0x0, symName: _SNRErrorDomain, symObjAddr: 0x38, symBinAddr: 0x19A618, symSize: 0x0 }
+  - { offsetInCU: 0x93, offset: 0xC7A15, size: 0x8, addend: 0x0, symName: _SNRErrorDomain, symObjAddr: 0x38, symBinAddr: 0x19A638, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0xC7AC0, size: 0x8, addend: 0x0, symName: '-[SNRGetClientAccountInformationRequest init]', symObjAddr: 0x0, symBinAddr: 0x64CE4, symSize: 0xC8 }
   - { offsetInCU: 0x638, offset: 0xC80D1, size: 0x8, addend: 0x0, symName: '-[SNRGetClientAccountInformationRequest init]', symObjAddr: 0x0, symBinAddr: 0x64CE4, symSize: 0xC8 }
   - { offsetInCU: 0x6A4, offset: 0xC813D, size: 0x8, addend: 0x0, symName: '-[SNRGetClientAccountInformationRequest mappingClass]', symObjAddr: 0xC8, symBinAddr: 0x64DAC, symSize: 0xC }
@@ -3686,8 +3686,8 @@ relocations:
   - { offsetInCU: 0x277, offset: 0xCA0D0, size: 0x8, addend: 0x0, symName: '-[SNRPromotionDiscountTypeDetails .cxx_destruct]', symObjAddr: 0x40, symBinAddr: 0x662D4, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0xCA144, size: 0x8, addend: 0x0, symName: '+[SNRImageProvider sharedObject]', symObjAddr: 0x0, symBinAddr: 0x662E8, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0xCA1AF, size: 0x8, addend: 0x0, symName: '+[SNRImageProvider sharedObject]', symObjAddr: 0x0, symBinAddr: 0x662E8, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0xCA1D8, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x18A10, symBinAddr: 0x19AED8, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0xCA1ED, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x18A18, symBinAddr: 0x19AEE0, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0xCA1D8, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x18A10, symBinAddr: 0x19AEF8, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0xCA1ED, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x18A18, symBinAddr: 0x19AF00, symSize: 0x0 }
   - { offsetInCU: 0x737, offset: 0xCA854, size: 0x8, addend: 0x0, symName: '___32+[SNRImageProvider sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x6635C, symSize: 0x30 }
   - { offsetInCU: 0x773, offset: 0xCA890, size: 0x8, addend: 0x0, symName: '-[SNRImageProvider init]', symObjAddr: 0xA4, symBinAddr: 0x6638C, symSize: 0x64 }
   - { offsetInCU: 0x7A7, offset: 0xCA8C4, size: 0x8, addend: 0x0, symName: '-[SNRImageProvider getCachedImageForURL:]', symObjAddr: 0x108, symBinAddr: 0x663F0, symSize: 0x4 }
@@ -3761,9 +3761,9 @@ relocations:
   - { offsetInCU: 0x1D1, offset: 0xCFBFF, size: 0x8, addend: 0x0, symName: _SNR_kAFUploadStream3GSuggestedPacketSize, symObjAddr: 0xB5B0, symBinAddr: 0xE4390, symSize: 0x0 }
   - { offsetInCU: 0x1E8, offset: 0xCFC16, size: 0x8, addend: 0x0, symName: _SNR_kAFUploadStream3GSuggestedDelay, symObjAddr: 0xB5B8, symBinAddr: 0xE4398, symSize: 0x0 }
   - { offsetInCU: 0x209, offset: 0xCFC37, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObservedKeyPaths, symObjAddr: 0x6180, symBinAddr: 0x6E050, symSize: 0x40 }
-  - { offsetInCU: 0x22F, offset: 0xCFC5D, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObservedKeyPaths._SNR_AFHTTPRequestSerializerObservedKeyPaths, symObjAddr: 0x727F0, symBinAddr: 0x19AEE8, symSize: 0x0 }
-  - { offsetInCU: 0x244, offset: 0xCFC72, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObservedKeyPaths.onceToken, symObjAddr: 0x727F8, symBinAddr: 0x19AEF0, symSize: 0x0 }
-  - { offsetInCU: 0x2BD, offset: 0xCFCEB, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObserverContext, symObjAddr: 0xB2D0, symBinAddr: 0x19A620, symSize: 0x0 }
+  - { offsetInCU: 0x22F, offset: 0xCFC5D, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObservedKeyPaths._SNR_AFHTTPRequestSerializerObservedKeyPaths, symObjAddr: 0x727F0, symBinAddr: 0x19AF08, symSize: 0x0 }
+  - { offsetInCU: 0x244, offset: 0xCFC72, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObservedKeyPaths.onceToken, symObjAddr: 0x727F8, symBinAddr: 0x19AF10, symSize: 0x0 }
+  - { offsetInCU: 0x2BD, offset: 0xCFCEB, size: 0x8, addend: 0x0, symName: _SNR_AFHTTPRequestSerializerObserverContext, symObjAddr: 0xB2D0, symBinAddr: 0x19A640, symSize: 0x0 }
   - { offsetInCU: 0x11F6, offset: 0xD0C24, size: 0x8, addend: 0x0, symName: '-[SNR_AFQueryStringPair initWithField:value:]', symObjAddr: 0x150, symBinAddr: 0x681EC, symSize: 0xA8 }
   - { offsetInCU: 0x1248, offset: 0xD0C76, size: 0x8, addend: 0x0, symName: '-[SNR_AFQueryStringPair URLEncodedStringValue]', symObjAddr: 0x1F8, symBinAddr: 0x68294, symSize: 0x1A4 }
   - { offsetInCU: 0x12A3, offset: 0xD0CD1, size: 0x8, addend: 0x0, symName: '-[SNR_AFQueryStringPair field]', symObjAddr: 0x39C, symBinAddr: 0x68438, symSize: 0x8 }
@@ -4445,8 +4445,8 @@ relocations:
   - { offsetInCU: 0x1852, offset: 0xF138D, size: 0x8, addend: 0x0, symName: '-[SNRContentWidgetRecommendationCellModel setCampaignHash:]', symObjAddr: 0xF98, symBinAddr: 0x7B840, symSize: 0xC }
   - { offsetInCU: 0x188D, offset: 0xF13C8, size: 0x8, addend: 0x0, symName: '-[SNRContentWidgetRecommendationCellModel .cxx_destruct]', symObjAddr: 0xFA4, symBinAddr: 0x7B84C, symSize: 0xCC }
   - { offsetInCU: 0x27, offset: 0xF27FC, size: 0x8, addend: 0x0, symName: '+[SNRViewTracker initialize]', symObjAddr: 0x0, symBinAddr: 0x7B918, symSize: 0x13C }
-  - { offsetInCU: 0x9E, offset: 0xF2873, size: 0x8, addend: 0x0, symName: _SNRViewTrackerClassesForEventBuildersDictionary, symObjAddr: 0x1DA40, symBinAddr: 0x19AEF8, symSize: 0x0 }
-  - { offsetInCU: 0xD5, offset: 0xF28AA, size: 0x8, addend: 0x0, symName: _kDefaultExcludedClasses, symObjAddr: 0x1DA48, symBinAddr: 0x19AF00, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0xF2873, size: 0x8, addend: 0x0, symName: _SNRViewTrackerClassesForEventBuildersDictionary, symObjAddr: 0x1DA40, symBinAddr: 0x19AF18, symSize: 0x0 }
+  - { offsetInCU: 0xD5, offset: 0xF28AA, size: 0x8, addend: 0x0, symName: _kDefaultExcludedClasses, symObjAddr: 0x1DA48, symBinAddr: 0x19AF20, symSize: 0x0 }
   - { offsetInCU: 0x76C, offset: 0xF2F41, size: 0x8, addend: 0x0, symName: '+[SNRViewTracker initialize]', symObjAddr: 0x0, symBinAddr: 0x7B918, symSize: 0x13C }
   - { offsetInCU: 0x798, offset: 0xF2F6D, size: 0x8, addend: 0x0, symName: '+[SNRViewTracker load]', symObjAddr: 0x13C, symBinAddr: 0x7BA54, symSize: 0xE4 }
   - { offsetInCU: 0x7C4, offset: 0xF2F99, size: 0x8, addend: 0x0, symName: '-[SNRViewTracker initWithDelegate:]', symObjAddr: 0x220, symBinAddr: 0x7BB38, symSize: 0x78 }
@@ -4469,9 +4469,9 @@ relocations:
   - { offsetInCU: 0x6A4, offset: 0xF4E12, size: 0x8, addend: 0x0, symName: '-[SNRGetAssignedVouchersRequest mappingClass]', symObjAddr: 0xC4, symBinAddr: 0x7C6CC, symSize: 0xC }
   - { offsetInCU: 0x27, offset: 0xF4E8F, size: 0x8, addend: 0x0, symName: '+[SNR_AFNetworkActivityLogger sharedLogger]', symObjAddr: 0x0, symBinAddr: 0x7C6D8, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0xF4EFA, size: 0x8, addend: 0x0, symName: '+[SNR_AFNetworkActivityLogger sharedLogger]', symObjAddr: 0x0, symBinAddr: 0x7C6D8, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0xF4F23, size: 0x8, addend: 0x0, symName: _sharedLogger._sharedLogger, symObjAddr: 0x11E60, symBinAddr: 0x19AF08, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0xF4F38, size: 0x8, addend: 0x0, symName: _sharedLogger.onceToken, symObjAddr: 0x11E68, symBinAddr: 0x19AF10, symSize: 0x0 }
-  - { offsetInCU: 0x1BA, offset: 0xF5022, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkRequestStartDate, symObjAddr: 0xAE8, symBinAddr: 0x19A868, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0xF4F23, size: 0x8, addend: 0x0, symName: _sharedLogger._sharedLogger, symObjAddr: 0x11E60, symBinAddr: 0x19AF28, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0xF4F38, size: 0x8, addend: 0x0, symName: _sharedLogger.onceToken, symObjAddr: 0x11E68, symBinAddr: 0x19AF30, symSize: 0x0 }
+  - { offsetInCU: 0x1BA, offset: 0xF5022, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkRequestStartDate, symObjAddr: 0xAE8, symBinAddr: 0x19A888, symSize: 0x0 }
   - { offsetInCU: 0xC4C, offset: 0xF5AB4, size: 0x8, addend: 0x0, symName: '___43+[SNR_AFNetworkActivityLogger sharedLogger]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x7C74C, symSize: 0x2C }
   - { offsetInCU: 0xC88, offset: 0xF5AF0, size: 0x8, addend: 0x0, symName: '-[SNR_AFNetworkActivityLogger init]', symObjAddr: 0xA0, symBinAddr: 0x7C778, symSize: 0xA8 }
   - { offsetInCU: 0xCCB, offset: 0xF5B33, size: 0x8, addend: 0x0, symName: '-[SNR_AFNetworkActivityLogger loggers]', symObjAddr: 0x148, symBinAddr: 0x7C820, symSize: 0x4 }
@@ -4534,8 +4534,8 @@ relocations:
   - { offsetInCU: 0x333, offset: 0xF7B3B, size: 0x8, addend: 0x0, symName: '-[SNRS19Service o__synchronizeSharedData]', symObjAddr: 0x1B0, symBinAddr: 0x7DE4C, symSize: 0xAC }
   - { offsetInCU: 0x27, offset: 0xF7BAF, size: 0x8, addend: 0x0, symName: '-[SNRg33Generator initWithApiKey:stateH138:]', symObjAddr: 0x0, symBinAddr: 0x7DEF8, symSize: 0x68 }
   - { offsetInCU: 0x92, offset: 0xF7C1A, size: 0x8, addend: 0x0, symName: _get_auth_client_queue, symObjAddr: 0x61C, symBinAddr: 0x7E47C, symSize: 0x40 }
-  - { offsetInCU: 0xB7, offset: 0xF7C3F, size: 0x8, addend: 0x0, symName: _get_auth_client_queue.queue, symObjAddr: 0x19160, symBinAddr: 0x19AF18, symSize: 0x0 }
-  - { offsetInCU: 0xCC, offset: 0xF7C54, size: 0x8, addend: 0x0, symName: _get_auth_client_queue.onceToken, symObjAddr: 0x19168, symBinAddr: 0x19AF20, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0xF7C3F, size: 0x8, addend: 0x0, symName: _get_auth_client_queue.queue, symObjAddr: 0x19160, symBinAddr: 0x19AF38, symSize: 0x0 }
+  - { offsetInCU: 0xCC, offset: 0xF7C54, size: 0x8, addend: 0x0, symName: _get_auth_client_queue.onceToken, symObjAddr: 0x19168, symBinAddr: 0x19AF40, symSize: 0x0 }
   - { offsetInCU: 0x4C3, offset: 0xF804B, size: 0x8, addend: 0x0, symName: '-[SNRg33Generator initWithApiKey:stateH138:]', symObjAddr: 0x0, symBinAddr: 0x7DEF8, symSize: 0x68 }
   - { offsetInCU: 0x515, offset: 0xF809D, size: 0x8, addend: 0x0, symName: '-[SNRg33Generator dealloc]', symObjAddr: 0x68, symBinAddr: 0x7DF60, symSize: 0x44 }
   - { offsetInCU: 0x545, offset: 0xF80CD, size: 0x8, addend: 0x0, symName: '-[SNRg33Generator prepareModel173]', symObjAddr: 0xAC, symBinAddr: 0x7DFA4, symSize: 0x58 }
@@ -4599,7 +4599,7 @@ relocations:
   - { offsetInCU: 0x8FB, offset: 0xFA1C9, size: 0x8, addend: 0x0, symName: '+[SNRErrorProvider notificationServiceExtensionErrorWithDescription:]', symObjAddr: 0x12F0, symBinAddr: 0x8060C, symSize: 0xD8 }
   - { offsetInCU: 0x958, offset: 0xFA226, size: 0x8, addend: 0x0, symName: '+[SNRErrorProvider objectConsistencyErrorWithDescription:]', symObjAddr: 0x13C8, symBinAddr: 0x806E4, symSize: 0xD8 }
   - { offsetInCU: 0x27, offset: 0xFA2C2, size: 0x8, addend: 0x0, symName: '+[SNRDependencyContainer container]', symObjAddr: 0x0, symBinAddr: 0x807BC, symSize: 0x48 }
-  - { offsetInCU: 0x9E, offset: 0xFA339, size: 0x8, addend: 0x0, symName: _container, symObjAddr: 0x82D8, symBinAddr: 0x19AF28, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0xFA339, size: 0x8, addend: 0x0, symName: _container, symObjAddr: 0x82D8, symBinAddr: 0x19AF48, symSize: 0x0 }
   - { offsetInCU: 0x16A, offset: 0xFA405, size: 0x8, addend: 0x0, symName: '+[SNRDependencyContainer container]', symObjAddr: 0x0, symBinAddr: 0x807BC, symSize: 0x48 }
   - { offsetInCU: 0x19A, offset: 0xFA435, size: 0x8, addend: 0x0, symName: '-[SNRDependencyContainer initContainer]', symObjAddr: 0x48, symBinAddr: 0x80804, symSize: 0x64 }
   - { offsetInCU: 0x1CE, offset: 0xFA469, size: 0x8, addend: 0x0, symName: '-[SNRDependencyContainer registerObject:withClass:]', symObjAddr: 0xAC, symBinAddr: 0x80868, symSize: 0x88 }
@@ -4625,10 +4625,10 @@ relocations:
   - { offsetInCU: 0x62A, offset: 0xFB6EF, size: 0x8, addend: 0x0, symName: '-[SNRResetClientPasswordRequest init]', symObjAddr: 0x0, symBinAddr: 0x810B0, symSize: 0xC4 }
   - { offsetInCU: 0x696, offset: 0xFB75B, size: 0x8, addend: 0x0, symName: '-[SNRResetClientPasswordRequest setContext:]', symObjAddr: 0xC4, symBinAddr: 0x81174, symSize: 0x40 }
   - { offsetInCU: 0x27, offset: 0xFB819, size: 0x8, addend: 0x0, symName: '+[SNRClientManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x811B4, symSize: 0x40 }
-  - { offsetInCU: 0x9E, offset: 0xFB890, size: 0x8, addend: 0x0, symName: _recoveredClientUuid, symObjAddr: 0x13938, symBinAddr: 0x19AF30, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0xFB890, size: 0x8, addend: 0x0, symName: _recoveredClientUuid, symObjAddr: 0x13938, symBinAddr: 0x19AF50, symSize: 0x0 }
   - { offsetInCU: 0xC9, offset: 0xFB8BB, size: 0x8, addend: 0x0, symName: '+[SNRClientManager sharedObject]', symObjAddr: 0x0, symBinAddr: 0x811B4, symSize: 0x40 }
-  - { offsetInCU: 0xF2, offset: 0xFB8E4, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x13940, symBinAddr: 0x19AF38, symSize: 0x0 }
-  - { offsetInCU: 0x107, offset: 0xFB8F9, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x13948, symBinAddr: 0x19AF40, symSize: 0x0 }
+  - { offsetInCU: 0xF2, offset: 0xFB8E4, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x13940, symBinAddr: 0x19AF58, symSize: 0x0 }
+  - { offsetInCU: 0x107, offset: 0xFB8F9, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x13948, symBinAddr: 0x19AF60, symSize: 0x0 }
   - { offsetInCU: 0x398, offset: 0xFBB8A, size: 0x8, addend: 0x0, symName: '___32+[SNRClientManager sharedObject]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x811F4, symSize: 0x30 }
   - { offsetInCU: 0x3BD, offset: 0xFBBAF, size: 0x8, addend: 0x0, symName: '+[SNRClientManager setRecoveredClientUuid:]', symObjAddr: 0x70, symBinAddr: 0x81224, symSize: 0x10 }
   - { offsetInCU: 0x3F8, offset: 0xFBBEA, size: 0x8, addend: 0x0, symName: '+[SNRClientManager getRecoveredClientUuid]', symObjAddr: 0x80, symBinAddr: 0x81234, symSize: 0xC }
@@ -4725,13 +4725,13 @@ relocations:
   - { offsetInCU: 0x7C2, offset: 0xFF270, size: 0x8, addend: 0x0, symName: '-[SNRUpdateClientEmailRequest setDeviceID:]', symObjAddr: 0x1FC, symBinAddr: 0x83554, symSize: 0x10 }
   - { offsetInCU: 0x27, offset: 0xFF2F8, size: 0x8, addend: 0x0, symName: '+[SNRInAppService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x83564, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0xFF363, size: 0x8, addend: 0x0, symName: '+[SNRInAppService sharedObject]', symObjAddr: 0x0, symBinAddr: 0x83564, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0xFF38C, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x25E78, symBinAddr: 0x19AF48, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0xFF3A1, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x25E80, symBinAddr: 0x19AF50, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0xFF38C, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x25E78, symBinAddr: 0x19AF68, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0xFF3A1, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x25E80, symBinAddr: 0x19AF70, symSize: 0x0 }
   - { offsetInCU: 0x186, offset: 0xFF457, size: 0x8, addend: 0x0, symName: '-[SNRInAppService loadDefinitionsRequired]', symObjAddr: 0x10FC, symBinAddr: 0x84600, symSize: 0x78 }
-  - { offsetInCU: 0x1AD, offset: 0xFF47E, size: 0x8, addend: 0x0, symName: _loadDefinitionsRequired.timer, symObjAddr: 0x25E88, symBinAddr: 0x19AF58, symSize: 0x0 }
+  - { offsetInCU: 0x1AD, offset: 0xFF47E, size: 0x8, addend: 0x0, symName: _loadDefinitionsRequired.timer, symObjAddr: 0x25E88, symBinAddr: 0x19AF78, symSize: 0x0 }
   - { offsetInCU: 0x27A, offset: 0xFF54B, size: 0x8, addend: 0x0, symName: _get_in_app_processing_queue, symObjAddr: 0xCA0, symBinAddr: 0x841A4, symSize: 0x40 }
-  - { offsetInCU: 0x29F, offset: 0xFF570, size: 0x8, addend: 0x0, symName: _get_in_app_processing_queue.queue, symObjAddr: 0x25EA0, symBinAddr: 0x19AF70, symSize: 0x0 }
-  - { offsetInCU: 0x2B4, offset: 0xFF585, size: 0x8, addend: 0x0, symName: _get_in_app_processing_queue.onceToken, symObjAddr: 0x25EA8, symBinAddr: 0x19AF78, symSize: 0x0 }
+  - { offsetInCU: 0x29F, offset: 0xFF570, size: 0x8, addend: 0x0, symName: _get_in_app_processing_queue.queue, symObjAddr: 0x25EA0, symBinAddr: 0x19AF90, symSize: 0x0 }
+  - { offsetInCU: 0x2B4, offset: 0xFF585, size: 0x8, addend: 0x0, symName: _get_in_app_processing_queue.onceToken, symObjAddr: 0x25EA8, symBinAddr: 0x19AF98, symSize: 0x0 }
   - { offsetInCU: 0x619, offset: 0xFF8EA, size: 0x8, addend: 0x0, symName: '___31+[SNRInAppService sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x835D8, symSize: 0x30 }
   - { offsetInCU: 0x655, offset: 0xFF926, size: 0x8, addend: 0x0, symName: '+[SNRInAppService enable:]', symObjAddr: 0xA4, symBinAddr: 0x83608, symSize: 0x38 }
   - { offsetInCU: 0x694, offset: 0xFF965, size: 0x8, addend: 0x0, symName: '-[SNRInAppService init]', symObjAddr: 0xDC, symBinAddr: 0x83640, symSize: 0x120 }
@@ -4809,11 +4809,11 @@ relocations:
   - { offsetInCU: 0x234, offset: 0x10639D, size: 0x8, addend: 0x0, symName: '-[SNRRecommendationClickEvent setCategory:]', symObjAddr: 0x26C, symBinAddr: 0x85918, symSize: 0xC }
   - { offsetInCU: 0x26F, offset: 0x1063D8, size: 0x8, addend: 0x0, symName: '-[SNRRecommendationClickEvent setURL:]', symObjAddr: 0x278, symBinAddr: 0x85924, symSize: 0x48 }
   - { offsetInCU: 0x26, offset: 0x1067DD, size: 0x8, addend: 0x0, symName: _FindRegistryNode, symObjAddr: 0x0, symBinAddr: 0x8596C, symSize: 0x1B8 }
-  - { offsetInCU: 0x4E, offset: 0x106805, size: 0x8, addend: 0x0, symName: _g_string_table, symObjAddr: 0x73B8, symBinAddr: 0x19AF80, symSize: 0x0 }
-  - { offsetInCU: 0x6D, offset: 0x106824, size: 0x8, addend: 0x0, symName: _g_node_table, symObjAddr: 0x73C0, symBinAddr: 0x19AF88, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x106887, size: 0x8, addend: 0x0, symName: _g_leaf_node_table, symObjAddr: 0x73C8, symBinAddr: 0x19AF90, symSize: 0x0 }
-  - { offsetInCU: 0x101, offset: 0x1068B8, size: 0x8, addend: 0x0, symName: _g_num_root_children, symObjAddr: 0x73D0, symBinAddr: 0x19AF98, symSize: 0x0 }
-  - { offsetInCU: 0x128, offset: 0x1068DF, size: 0x8, addend: 0x0, symName: _g_leaf_node_table_offset, symObjAddr: 0x73D8, symBinAddr: 0x19AFA0, symSize: 0x0 }
+  - { offsetInCU: 0x4E, offset: 0x106805, size: 0x8, addend: 0x0, symName: _g_string_table, symObjAddr: 0x73B8, symBinAddr: 0x19AFA0, symSize: 0x0 }
+  - { offsetInCU: 0x6D, offset: 0x106824, size: 0x8, addend: 0x0, symName: _g_node_table, symObjAddr: 0x73C0, symBinAddr: 0x19AFA8, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x106887, size: 0x8, addend: 0x0, symName: _g_leaf_node_table, symObjAddr: 0x73C8, symBinAddr: 0x19AFB0, symSize: 0x0 }
+  - { offsetInCU: 0x101, offset: 0x1068B8, size: 0x8, addend: 0x0, symName: _g_num_root_children, symObjAddr: 0x73D0, symBinAddr: 0x19AFB8, symSize: 0x0 }
+  - { offsetInCU: 0x128, offset: 0x1068DF, size: 0x8, addend: 0x0, symName: _g_leaf_node_table_offset, symObjAddr: 0x73D8, symBinAddr: 0x19AFC0, symSize: 0x0 }
   - { offsetInCU: 0x187, offset: 0x10693E, size: 0x8, addend: 0x0, symName: _FindRegistryNode, symObjAddr: 0x0, symBinAddr: 0x8596C, symSize: 0x1B8 }
   - { offsetInCU: 0x2E5, offset: 0x106A9C, size: 0x8, addend: 0x0, symName: _FindNodeInRange, symObjAddr: 0x1E0, symBinAddr: 0x85B4C, symSize: 0x160 }
   - { offsetInCU: 0x3CB, offset: 0x106B82, size: 0x8, addend: 0x0, symName: _StrDupExceptionComponent, symObjAddr: 0x340, symBinAddr: 0x85CAC, symSize: 0x60 }
@@ -4885,8 +4885,8 @@ relocations:
   - { offsetInCU: 0x13D, offset: 0x10A0F2, size: 0x8, addend: 0x0, symName: '-[SNRBaseApiService performApiRequest:]', symObjAddr: 0x0, symBinAddr: 0x87368, symSize: 0x54 }
   - { offsetInCU: 0x27, offset: 0x10A5F5, size: 0x8, addend: 0x0, symName: '+[SNR_AFSecurityPolicy certificatesInBundle:]', symObjAddr: 0x0, symBinAddr: 0x873BC, symSize: 0x194 }
   - { offsetInCU: 0x97, offset: 0x10A665, size: 0x8, addend: 0x0, symName: '+[SNR_AFSecurityPolicy defaultPinnedCertificates]', symObjAddr: 0x194, symBinAddr: 0x87550, symSize: 0x74 }
-  - { offsetInCU: 0xC0, offset: 0x10A68E, size: 0x8, addend: 0x0, symName: _defaultPinnedCertificates._defaultPinnedCertificates, symObjAddr: 0x1AC08, symBinAddr: 0x19AFA8, symSize: 0x0 }
-  - { offsetInCU: 0xD5, offset: 0x10A6A3, size: 0x8, addend: 0x0, symName: _defaultPinnedCertificates.onceToken, symObjAddr: 0x1AC10, symBinAddr: 0x19AFB0, symSize: 0x0 }
+  - { offsetInCU: 0xC0, offset: 0x10A68E, size: 0x8, addend: 0x0, symName: _defaultPinnedCertificates._defaultPinnedCertificates, symObjAddr: 0x1AC08, symBinAddr: 0x19AFC8, symSize: 0x0 }
+  - { offsetInCU: 0xD5, offset: 0x10A6A3, size: 0x8, addend: 0x0, symName: _defaultPinnedCertificates.onceToken, symObjAddr: 0x1AC10, symBinAddr: 0x19AFD0, symSize: 0x0 }
   - { offsetInCU: 0x3C1, offset: 0x10A98F, size: 0x8, addend: 0x0, symName: '+[SNR_AFSecurityPolicy certificatesInBundle:]', symObjAddr: 0x0, symBinAddr: 0x873BC, symSize: 0x194 }
   - { offsetInCU: 0x4F9, offset: 0x10AAC7, size: 0x8, addend: 0x0, symName: '___49+[SNR_AFSecurityPolicy defaultPinnedCertificates]_block_invoke', symObjAddr: 0x208, symBinAddr: 0x875C4, symSize: 0x70 }
   - { offsetInCU: 0x552, offset: 0x10AB20, size: 0x8, addend: 0x0, symName: '+[SNR_AFSecurityPolicy defaultPolicy]', symObjAddr: 0x278, symBinAddr: 0x87634, symSize: 0x30 }
@@ -4911,7 +4911,7 @@ relocations:
   - { offsetInCU: 0x1382, offset: 0x10B950, size: 0x8, addend: 0x0, symName: '-[SNR_AFSecurityPolicy setPinnedPublicKeys:]', symObjAddr: 0x10C8, symBinAddr: 0x88484, symSize: 0xC }
   - { offsetInCU: 0x13BF, offset: 0x10B98D, size: 0x8, addend: 0x0, symName: '-[SNR_AFSecurityPolicy .cxx_destruct]', symObjAddr: 0x10D4, symBinAddr: 0x88490, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0x10BF0A, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SNR_Ordered) getOrderedKeys]', symObjAddr: 0x0, symBinAddr: 0x884C0, symSize: 0x58 }
-  - { offsetInCU: 0x9E, offset: 0x10BF81, size: 0x8, addend: 0x0, symName: _orderedKeysKey, symObjAddr: 0x60D4, symBinAddr: 0x19AFB8, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0x10BF81, size: 0x8, addend: 0x0, symName: _orderedKeysKey, symObjAddr: 0x60D4, symBinAddr: 0x19AFD8, symSize: 0x0 }
   - { offsetInCU: 0x150, offset: 0x10C033, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SNR_Ordered) getOrderedKeys]', symObjAddr: 0x0, symBinAddr: 0x884C0, symSize: 0x58 }
   - { offsetInCU: 0x1DC, offset: 0x10C0BF, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SNR_Ordered) setOrderedKeys:]', symObjAddr: 0x58, symBinAddr: 0x88518, symSize: 0x10 }
   - { offsetInCU: 0x24D, offset: 0x10C130, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SNR_Ordered) addOrderedKey:]', symObjAddr: 0x68, symBinAddr: 0x88528, symSize: 0x9C }
@@ -4935,8 +4935,8 @@ relocations:
   - { offsetInCU: 0x366, offset: 0x10CC12, size: 0x8, addend: 0x0, symName: '-[SNRContentWidgetBaseDataProvider .cxx_destruct]', symObjAddr: 0x2D0, symBinAddr: 0x88D18, symSize: 0x8 }
   - { offsetInCU: 0x27, offset: 0x10CEC5, size: 0x8, addend: 0x0, symName: _is_synerise_sdk_in_shared_mode, symObjAddr: 0x0, symBinAddr: 0x88D20, symSize: 0xC }
   - { offsetInCU: 0x9E, offset: 0x10CF3C, size: 0x8, addend: 0x0, symName: _SNRMajorVersionNumber, symObjAddr: 0x25B8, symBinAddr: 0xF7938, symSize: 0x0 }
-  - { offsetInCU: 0xF6, offset: 0x10CF94, size: 0x8, addend: 0x0, symName: _isSharedModeEnabled, symObjAddr: 0x2D350, symBinAddr: 0x19AFC0, symSize: 0x0 }
-  - { offsetInCU: 0x11D, offset: 0x10CFBB, size: 0x8, addend: 0x0, symName: _kModules, symObjAddr: 0x2D358, symBinAddr: 0x19AFC8, symSize: 0x0 }
+  - { offsetInCU: 0xF6, offset: 0x10CF94, size: 0x8, addend: 0x0, symName: _isSharedModeEnabled, symObjAddr: 0x2D350, symBinAddr: 0x19AFE0, symSize: 0x0 }
+  - { offsetInCU: 0x11D, offset: 0x10CFBB, size: 0x8, addend: 0x0, symName: _kModules, symObjAddr: 0x2D358, symBinAddr: 0x19AFE8, symSize: 0x0 }
   - { offsetInCU: 0x50D, offset: 0x10D3AB, size: 0x8, addend: 0x0, symName: _is_synerise_sdk_in_shared_mode, symObjAddr: 0x0, symBinAddr: 0x88D20, symSize: 0xC }
   - { offsetInCU: 0x527, offset: 0x10D3C5, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseLauncher initialize]', symObjAddr: 0xC, symBinAddr: 0x88D2C, symSize: 0xC4 }
   - { offsetInCU: 0x553, offset: 0x10D3F1, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseLauncher prepareDefaultSettings]', symObjAddr: 0xD0, symBinAddr: 0x88DF0, symSize: 0x5F4 }
@@ -5033,7 +5033,7 @@ relocations:
   - { offsetInCU: 0x131, offset: 0x10FC9D, size: 0x8, addend: 0x0, symName: _SNR_ClientConditionalAuthStatusToString, symObjAddr: 0x0, symBinAddr: 0x8B79C, symSize: 0x24 }
   - { offsetInCU: 0x15A, offset: 0x10FCC6, size: 0x8, addend: 0x0, symName: _SNR_StringToClientConditionalAuthStatus, symObjAddr: 0x24, symBinAddr: 0x8B7C0, symSize: 0x104 }
   - { offsetInCU: 0x27, offset: 0x10FD21, size: 0x8, addend: 0x0, symName: '-[SNRi35Model modelW101]', symObjAddr: 0x0, symBinAddr: 0x8B8C4, symSize: 0x8 }
-  - { offsetInCU: 0x9E, offset: 0x10FD98, size: 0x8, addend: 0x0, symName: _instance, symObjAddr: 0x194E8, symBinAddr: 0x19AFD0, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0x10FD98, size: 0x8, addend: 0x0, symName: _instance, symObjAddr: 0x194E8, symBinAddr: 0x19AFF0, symSize: 0x0 }
   - { offsetInCU: 0x80A, offset: 0x110504, size: 0x8, addend: 0x0, symName: '-[SNRi35Model modelW101]', symObjAddr: 0x0, symBinAddr: 0x8B8C4, symSize: 0x8 }
   - { offsetInCU: 0x83E, offset: 0x110538, size: 0x8, addend: 0x0, symName: '-[SNRi35Model nameC133]', symObjAddr: 0x8, symBinAddr: 0x8B8CC, symSize: 0x8 }
   - { offsetInCU: 0x872, offset: 0x11056C, size: 0x8, addend: 0x0, symName: '-[SNRi35Model setModelW101:]', symObjAddr: 0x10, symBinAddr: 0x8B8D4, symSize: 0x8 }
@@ -5107,7 +5107,7 @@ relocations:
   - { offsetInCU: 0x5B0, offset: 0x113499, size: 0x8, addend: 0x0, symName: '-[SNRk37Service modelU47]', symObjAddr: 0x604, symBinAddr: 0x8DBE8, symSize: 0x10 }
   - { offsetInCU: 0x5E4, offset: 0x1134CD, size: 0x8, addend: 0x0, symName: '-[SNRk37Service .cxx_destruct]', symObjAddr: 0x614, symBinAddr: 0x8DBF8, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0x11358B, size: 0x8, addend: 0x0, symName: '+[SNRLogger setUserDebugModeEnabled:]', symObjAddr: 0x0, symBinAddr: 0x8DC0C, symSize: 0xC }
-  - { offsetInCU: 0x9E, offset: 0x113602, size: 0x8, addend: 0x0, symName: __userDebugModeEnabled, symObjAddr: 0x87EC, symBinAddr: 0x19AFD8, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0x113602, size: 0x8, addend: 0x0, symName: __userDebugModeEnabled, symObjAddr: 0x87EC, symBinAddr: 0x19AFF8, symSize: 0x0 }
   - { offsetInCU: 0x140, offset: 0x1136A4, size: 0x8, addend: 0x0, symName: '+[SNRLogger setUserDebugModeEnabled:]', symObjAddr: 0x0, symBinAddr: 0x8DC0C, symSize: 0xC }
   - { offsetInCU: 0x177, offset: 0x1136DB, size: 0x8, addend: 0x0, symName: '+[SNRLogger userDebugModeEnabled]', symObjAddr: 0xC, symBinAddr: 0x8DC18, symSize: 0xC }
   - { offsetInCU: 0x1A7, offset: 0x11370B, size: 0x8, addend: 0x0, symName: '+[SNRLogger userDebug:]', symObjAddr: 0x18, symBinAddr: 0x8DC24, symSize: 0x7C }
@@ -5132,8 +5132,8 @@ relocations:
   - { offsetInCU: 0xA3, offset: 0x1144F0, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingReachabilityDidChangeNotification, symObjAddr: 0xB10, symBinAddr: 0x1366D8, symSize: 0x0 }
   - { offsetInCU: 0xB8, offset: 0x114505, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingReachabilityNotificationStatusItem, symObjAddr: 0xB18, symBinAddr: 0x1366E0, symSize: 0x0 }
   - { offsetInCU: 0xC1, offset: 0x11450E, size: 0x8, addend: 0x0, symName: '+[SNR_AFNetworkReachabilityManager sharedManager]', symObjAddr: 0x0, symBinAddr: 0x8E1B8, symSize: 0x74 }
-  - { offsetInCU: 0xEA, offset: 0x114537, size: 0x8, addend: 0x0, symName: _sharedManager._sharedManager, symObjAddr: 0x17250, symBinAddr: 0x19AFE0, symSize: 0x0 }
-  - { offsetInCU: 0xFF, offset: 0x11454C, size: 0x8, addend: 0x0, symName: _sharedManager.onceToken, symObjAddr: 0x17258, symBinAddr: 0x19AFE8, symSize: 0x0 }
+  - { offsetInCU: 0xEA, offset: 0x114537, size: 0x8, addend: 0x0, symName: _sharedManager._sharedManager, symObjAddr: 0x17250, symBinAddr: 0x19B000, symSize: 0x0 }
+  - { offsetInCU: 0xFF, offset: 0x11454C, size: 0x8, addend: 0x0, symName: _sharedManager.onceToken, symObjAddr: 0x17258, symBinAddr: 0x19B008, symSize: 0x0 }
   - { offsetInCU: 0x52A, offset: 0x114977, size: 0x8, addend: 0x0, symName: '___49+[SNR_AFNetworkReachabilityManager sharedManager]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x8E22C, symSize: 0x30 }
   - { offsetInCU: 0x566, offset: 0x1149B3, size: 0x8, addend: 0x0, symName: '+[SNR_AFNetworkReachabilityManager managerForDomain:]', symObjAddr: 0xA4, symBinAddr: 0x8E25C, symSize: 0x64 }
   - { offsetInCU: 0x636, offset: 0x114A83, size: 0x8, addend: 0x0, symName: '+[SNR_AFNetworkReachabilityManager managerForAddress:]', symObjAddr: 0x108, symBinAddr: 0x8E2C0, symSize: 0x54 }
@@ -5586,8 +5586,8 @@ relocations:
   - { offsetInCU: 0x4F2, offset: 0x12DA12, size: 0x8, addend: 0x0, symName: '-[SNRP16Utils .cxx_destruct]', symObjAddr: 0x4D8, symBinAddr: 0x99EB8, symSize: 0x40 }
   - { offsetInCU: 0x27, offset: 0x12DAAE, size: 0x8, addend: 0x0, symName: '+[SNRNotificationServiceExtension setDelegate:]', symObjAddr: 0x0, symBinAddr: 0x99EF8, symSize: 0x50 }
   - { offsetInCU: 0x92, offset: 0x12DB19, size: 0x8, addend: 0x0, symName: '+[SNRNotificationServiceExtension sharedObject]', symObjAddr: 0x260, symBinAddr: 0x9A158, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x12DB42, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x20948, symBinAddr: 0x19AFF0, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x12DB57, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x20950, symBinAddr: 0x19AFF8, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x12DB42, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x20948, symBinAddr: 0x19B010, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x12DB57, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x20950, symBinAddr: 0x19B018, symSize: 0x0 }
   - { offsetInCU: 0x8A2, offset: 0x12E329, size: 0x8, addend: 0x0, symName: '+[SNRNotificationServiceExtension setDelegate:]', symObjAddr: 0x0, symBinAddr: 0x99EF8, symSize: 0x50 }
   - { offsetInCU: 0x8E1, offset: 0x12E368, size: 0x8, addend: 0x0, symName: '+[SNRNotificationServiceExtension setNotificationDelegate:]', symObjAddr: 0x50, symBinAddr: 0x99F48, symSize: 0x5C }
   - { offsetInCU: 0x91C, offset: 0x12E3A3, size: 0x8, addend: 0x0, symName: '+[SNRNotificationServiceExtension setDebugModeEnabled:]', symObjAddr: 0xAC, symBinAddr: 0x99FA4, symSize: 0x38 }
@@ -5904,9 +5904,9 @@ relocations:
   - { offsetInCU: 0xB8, offset: 0x13C403, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingOperationFailingURLResponseErrorKey, symObjAddr: 0x2E78, symBinAddr: 0x136C00, symSize: 0x0 }
   - { offsetInCU: 0xCD, offset: 0x13C418, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingOperationFailingURLResponseDataErrorKey, symObjAddr: 0x2E80, symBinAddr: 0x136C08, symSize: 0x0 }
   - { offsetInCU: 0xE2, offset: 0x13C42D, size: 0x8, addend: 0x0, symName: _SNR_AFNetworkingOperationResponseRawDataKey, symObjAddr: 0x2E88, symBinAddr: 0x136C10, symSize: 0x0 }
-  - { offsetInCU: 0x106, offset: 0x13C451, size: 0x8, addend: 0x0, symName: _imageLock, symObjAddr: 0x3A080, symBinAddr: 0x19B000, symSize: 0x0 }
+  - { offsetInCU: 0x106, offset: 0x13C451, size: 0x8, addend: 0x0, symName: _imageLock, symObjAddr: 0x3A080, symBinAddr: 0x19B020, symSize: 0x0 }
   - { offsetInCU: 0x132, offset: 0x13C47D, size: 0x8, addend: 0x0, symName: '+[UIImage(SNR_AFNetworkingSafeImageLoading) SNR_af_safeImageWithData:]', symObjAddr: 0x1C04, symBinAddr: 0xA5D08, symSize: 0x90 }
-  - { offsetInCU: 0x15D, offset: 0x13C4A8, size: 0x8, addend: 0x0, symName: '_SNR_af_safeImageWithData:.onceToken', symObjAddr: 0x3A088, symBinAddr: 0x19B008, symSize: 0x0 }
+  - { offsetInCU: 0x15D, offset: 0x13C4A8, size: 0x8, addend: 0x0, symName: '_SNR_af_safeImageWithData:.onceToken', symObjAddr: 0x3A088, symBinAddr: 0x19B028, symSize: 0x0 }
   - { offsetInCU: 0xCC5, offset: 0x13D010, size: 0x8, addend: 0x0, symName: '+[SNR_AFHTTPResponseSerializer serializer]', symObjAddr: 0x0, symBinAddr: 0xA4104, symSize: 0x18 }
   - { offsetInCU: 0xCF9, offset: 0x13D044, size: 0x8, addend: 0x0, symName: '-[SNR_AFHTTPResponseSerializer init]', symObjAddr: 0x18, symBinAddr: 0xA411C, symSize: 0x98 }
   - { offsetInCU: 0xD2D, offset: 0x13D078, size: 0x8, addend: 0x0, symName: '-[SNR_AFHTTPResponseSerializer validateResponse:data:error:]', symObjAddr: 0xB0, symBinAddr: 0xA41B4, symSize: 0x598 }
@@ -6167,8 +6167,8 @@ relocations:
   - { offsetInCU: 0xCD, offset: 0x14A18E, size: 0x8, addend: 0x0, symName: _SNRUserActionSenderKey, symObjAddr: 0x8A0, symBinAddr: 0x136CB0, symSize: 0x0 }
   - { offsetInCU: 0xE2, offset: 0x14A1A3, size: 0x8, addend: 0x0, symName: _SNRUserActionActivityKey, symObjAddr: 0x8A8, symBinAddr: 0x136CB8, symSize: 0x0 }
   - { offsetInCU: 0xEB, offset: 0x14A1AC, size: 0x8, addend: 0x0, symName: '+[SNRUserActionService sharedObject]', symObjAddr: 0x0, symBinAddr: 0xAA7DC, symSize: 0x74 }
-  - { offsetInCU: 0x114, offset: 0x14A1D5, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xE448, symBinAddr: 0x19B010, symSize: 0x0 }
-  - { offsetInCU: 0x129, offset: 0x14A1EA, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xE450, symBinAddr: 0x19B018, symSize: 0x0 }
+  - { offsetInCU: 0x114, offset: 0x14A1D5, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0xE448, symBinAddr: 0x19B030, symSize: 0x0 }
+  - { offsetInCU: 0x129, offset: 0x14A1EA, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0xE450, symBinAddr: 0x19B038, symSize: 0x0 }
   - { offsetInCU: 0x3C9, offset: 0x14A48A, size: 0x8, addend: 0x0, symName: '___36+[SNRUserActionService sharedObject]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xAA850, symSize: 0x30 }
   - { offsetInCU: 0x405, offset: 0x14A4C6, size: 0x8, addend: 0x0, symName: '+[SNRUserActionService enable:]', symObjAddr: 0xA4, symBinAddr: 0xAA880, symSize: 0x38 }
   - { offsetInCU: 0x444, offset: 0x14A505, size: 0x8, addend: 0x0, symName: '-[SNRUserActionService init]', symObjAddr: 0xDC, symBinAddr: 0xAA8B8, symSize: 0x88 }
@@ -6250,14 +6250,14 @@ relocations:
   - { offsetInCU: 0xC92, offset: 0x14DFDE, size: 0x8, addend: 0x0, symName: '-[SNRBaseModel .cxx_destruct]', symObjAddr: 0x11DC, symBinAddr: 0xAD89C, symSize: 0x3C }
   - { offsetInCU: 0x27, offset: 0x14E3E4, size: 0x8, addend: 0x0, symName: '+[SNRDataInconsistencySignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xAD8D8, symSize: 0x74 }
   - { offsetInCU: 0x70, offset: 0x14E42D, size: 0x8, addend: 0x0, symName: '+[SNRDataInconsistencySignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xAD8D8, symSize: 0x74 }
-  - { offsetInCU: 0x99, offset: 0x14E456, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6C78, symBinAddr: 0x19B020, symSize: 0x0 }
-  - { offsetInCU: 0xAE, offset: 0x14E46B, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6C80, symBinAddr: 0x19B028, symSize: 0x0 }
+  - { offsetInCU: 0x99, offset: 0x14E456, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6C78, symBinAddr: 0x19B040, symSize: 0x0 }
+  - { offsetInCU: 0xAE, offset: 0x14E46B, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6C80, symBinAddr: 0x19B048, symSize: 0x0 }
   - { offsetInCU: 0x293, offset: 0x14E650, size: 0x8, addend: 0x0, symName: '___42+[SNRDataInconsistencySignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xAD94C, symSize: 0x30 }
   - { offsetInCU: 0x2CF, offset: 0x14E68C, size: 0x8, addend: 0x0, symName: '-[SNRDataInconsistencySignal notifyDataInconsistency]', symObjAddr: 0xA4, symBinAddr: 0xAD97C, symSize: 0x110 }
   - { offsetInCU: 0x27, offset: 0x14E7AD, size: 0x8, addend: 0x0, symName: '+[SNRC3Generator invokeOptions144]', symObjAddr: 0x0, symBinAddr: 0xADA8C, symSize: 0x74 }
   - { offsetInCU: 0x92, offset: 0x14E818, size: 0x8, addend: 0x0, symName: '+[SNRC3Generator invokeOptions144]', symObjAddr: 0x0, symBinAddr: 0xADA8C, symSize: 0x74 }
-  - { offsetInCU: 0xBB, offset: 0x14E841, size: 0x8, addend: 0x0, symName: _invokeOptions144.instance, symObjAddr: 0x182D8, symBinAddr: 0x19B030, symSize: 0x0 }
-  - { offsetInCU: 0xD0, offset: 0x14E856, size: 0x8, addend: 0x0, symName: _invokeOptions144.onceToken, symObjAddr: 0x182E0, symBinAddr: 0x19B038, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x14E841, size: 0x8, addend: 0x0, symName: _invokeOptions144.instance, symObjAddr: 0x182D8, symBinAddr: 0x19B050, symSize: 0x0 }
+  - { offsetInCU: 0xD0, offset: 0x14E856, size: 0x8, addend: 0x0, symName: _invokeOptions144.onceToken, symObjAddr: 0x182E0, symBinAddr: 0x19B058, symSize: 0x0 }
   - { offsetInCU: 0x385, offset: 0x14EB0B, size: 0x8, addend: 0x0, symName: '___34+[SNRC3Generator invokeOptions144]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xADB00, symSize: 0x30 }
   - { offsetInCU: 0x3C1, offset: 0x14EB47, size: 0x8, addend: 0x0, symName: '-[SNRC3Generator init]', symObjAddr: 0xA4, symBinAddr: 0xADB30, symSize: 0x50 }
   - { offsetInCU: 0x3F5, offset: 0x14EB7B, size: 0x8, addend: 0x0, symName: '-[SNRC3Generator dealloc]', symObjAddr: 0xF4, symBinAddr: 0xADB80, symSize: 0x44 }
@@ -6405,8 +6405,8 @@ relocations:
   - { offsetInCU: 0x948, offset: 0x1575DE, size: 0x8, addend: 0x0, symName: '-[SNRClientAuthenticationRequest mappingClass]', symObjAddr: 0x2F8, symBinAddr: 0xB190C, symSize: 0xC }
   - { offsetInCU: 0x27, offset: 0x1576FD, size: 0x8, addend: 0x0, symName: '+[SNRClientSignInSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xB1918, symSize: 0x74 }
   - { offsetInCU: 0x70, offset: 0x157746, size: 0x8, addend: 0x0, symName: '+[SNRClientSignInSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xB1918, symSize: 0x74 }
-  - { offsetInCU: 0x99, offset: 0x15776F, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6B88, symBinAddr: 0x19B040, symSize: 0x0 }
-  - { offsetInCU: 0xAE, offset: 0x157784, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6B90, symBinAddr: 0x19B048, symSize: 0x0 }
+  - { offsetInCU: 0x99, offset: 0x15776F, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x6B88, symBinAddr: 0x19B060, symSize: 0x0 }
+  - { offsetInCU: 0xAE, offset: 0x157784, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x6B90, symBinAddr: 0x19B068, symSize: 0x0 }
   - { offsetInCU: 0x293, offset: 0x157969, size: 0x8, addend: 0x0, symName: '___37+[SNRClientSignInSignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xB198C, symSize: 0x30 }
   - { offsetInCU: 0x2CF, offset: 0x1579A5, size: 0x8, addend: 0x0, symName: '-[SNRClientSignInSignal notifySignIn]', symObjAddr: 0xA4, symBinAddr: 0xB19BC, symSize: 0x110 }
   - { offsetInCU: 0x93, offset: 0x157B32, size: 0x8, addend: 0x0, symName: _kSNRPublicKeyPinningAlgorithmRsa2048, symObjAddr: 0x108, symBinAddr: 0x136DB8, symSize: 0x0 }
@@ -6568,8 +6568,8 @@ relocations:
   - { offsetInCU: 0xDA4, offset: 0x15FF31, size: 0x8, addend: 0x0, symName: '+[SNRLayoutUtils leftAnchor:safeArea:]', symObjAddr: 0xE80, symBinAddr: 0xB5F24, symSize: 0x9C }
   - { offsetInCU: 0xDF2, offset: 0x15FF7F, size: 0x8, addend: 0x0, symName: '+[SNRLayoutUtils rightAnchor:safeArea:]', symObjAddr: 0xF1C, symBinAddr: 0xB5FC0, symSize: 0x9C }
   - { offsetInCU: 0x27, offset: 0x161874, size: 0x8, addend: 0x0, symName: '+[SNRFileLogger setEnabled:]', symObjAddr: 0x0, symBinAddr: 0xB605C, symSize: 0xC }
-  - { offsetInCU: 0x9E, offset: 0x1618EB, size: 0x8, addend: 0x0, symName: __enabled, symObjAddr: 0xFCF0, symBinAddr: 0x19B050, symSize: 0x0 }
-  - { offsetInCU: 0xC5, offset: 0x161912, size: 0x8, addend: 0x0, symName: __logfileName, symObjAddr: 0xFCF8, symBinAddr: 0x19B058, symSize: 0x0 }
+  - { offsetInCU: 0x9E, offset: 0x1618EB, size: 0x8, addend: 0x0, symName: __enabled, symObjAddr: 0xFCF0, symBinAddr: 0x19B070, symSize: 0x0 }
+  - { offsetInCU: 0xC5, offset: 0x161912, size: 0x8, addend: 0x0, symName: __logfileName, symObjAddr: 0xFCF8, symBinAddr: 0x19B078, symSize: 0x0 }
   - { offsetInCU: 0x1A8, offset: 0x1619F5, size: 0x8, addend: 0x0, symName: '+[SNRFileLogger setEnabled:]', symObjAddr: 0x0, symBinAddr: 0xB605C, symSize: 0xC }
   - { offsetInCU: 0x1DF, offset: 0x161A2C, size: 0x8, addend: 0x0, symName: '+[SNRFileLogger enabled]', symObjAddr: 0xC, symBinAddr: 0xB6068, symSize: 0xC }
   - { offsetInCU: 0x20F, offset: 0x161A5C, size: 0x8, addend: 0x0, symName: '+[SNRFileLogger setLogfileName:]', symObjAddr: 0x18, symBinAddr: 0xB6074, symSize: 0x10 }
@@ -6763,7 +6763,7 @@ relocations:
   - { offsetInCU: 0x27, offset: 0x171ADB, size: 0x8, addend: 0x0, symName: '-[SNRSingleMediaContentExtensionViewController init]', symObjAddr: 0x0, symBinAddr: 0xBACA8, symSize: 0x78 }
   - { offsetInCU: 0xA3, offset: 0x171B57, size: 0x8, addend: 0x0, symName: _SNRSingleMediaContentExtensionViewControllerCategoryIdentifier, symObjAddr: 0x2408, symBinAddr: 0x136F80, symSize: 0x0 }
   - { offsetInCU: 0x117, offset: 0x171BCB, size: 0x8, addend: 0x0, symName: '-[SNRSingleMediaContentExtensionViewController trackImageTimeoutEvent]', symObjAddr: 0x1E74, symBinAddr: 0xBCAF8, symSize: 0x6C }
-  - { offsetInCU: 0x13E, offset: 0x171BF2, size: 0x8, addend: 0x0, symName: _trackImageTimeoutEvent.onceToken, symObjAddr: 0x40630, symBinAddr: 0x19B070, symSize: 0x0 }
+  - { offsetInCU: 0x13E, offset: 0x171BF2, size: 0x8, addend: 0x0, symName: _trackImageTimeoutEvent.onceToken, symObjAddr: 0x40630, symBinAddr: 0x19B090, symSize: 0x0 }
   - { offsetInCU: 0x2C18, offset: 0x1746CC, size: 0x8, addend: 0x0, symName: '-[SNRSingleMediaContentExtensionViewController init]', symObjAddr: 0x0, symBinAddr: 0xBACA8, symSize: 0x78 }
   - { offsetInCU: 0x2C4C, offset: 0x174700, size: 0x8, addend: 0x0, symName: '-[SNRSingleMediaContentExtensionViewController loadView]', symObjAddr: 0x78, symBinAddr: 0xBAD20, symSize: 0x5C }
   - { offsetInCU: 0x2C7C, offset: 0x174730, size: 0x8, addend: 0x0, symName: '-[SNRSingleMediaContentExtensionViewController viewDidLoad]', symObjAddr: 0xD4, symBinAddr: 0xBAD7C, symSize: 0x64 }
@@ -7033,8 +7033,8 @@ relocations:
   - { offsetInCU: 0xB8, offset: 0x180FB5, size: 0x8, addend: 0x0, symName: _SNRClientUUIDChangeSignalCurrentUUIDKey, symObjAddr: 0x4A8, symBinAddr: 0x136FE0, symSize: 0x0 }
   - { offsetInCU: 0xCD, offset: 0x180FCA, size: 0x8, addend: 0x0, symName: _SNRClientUUIDChangeSignalReasonKey, symObjAddr: 0x4B0, symBinAddr: 0x136FE8, symSize: 0x0 }
   - { offsetInCU: 0xD6, offset: 0x180FD3, size: 0x8, addend: 0x0, symName: '+[SNRClientUUIDChangeSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xC2CF4, symSize: 0x74 }
-  - { offsetInCU: 0xFF, offset: 0x180FFC, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x8978, symBinAddr: 0x19B078, symSize: 0x0 }
-  - { offsetInCU: 0x114, offset: 0x181011, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x8980, symBinAddr: 0x19B080, symSize: 0x0 }
+  - { offsetInCU: 0xFF, offset: 0x180FFC, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x8978, symBinAddr: 0x19B098, symSize: 0x0 }
+  - { offsetInCU: 0x114, offset: 0x181011, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x8980, symBinAddr: 0x19B0A0, symSize: 0x0 }
   - { offsetInCU: 0x312, offset: 0x18120F, size: 0x8, addend: 0x0, symName: '___41+[SNRClientUUIDChangeSignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xC2D68, symSize: 0x30 }
   - { offsetInCU: 0x34E, offset: 0x18124B, size: 0x8, addend: 0x0, symName: '-[SNRClientUUIDChangeSignal notifyUUIDChangedIsBeforeWithCurrentUUIDString:]', symObjAddr: 0xA4, symBinAddr: 0xC2D98, symSize: 0x184 }
   - { offsetInCU: 0x3B1, offset: 0x1812AE, size: 0x8, addend: 0x0, symName: '-[SNRClientUUIDChangeSignal notifyUUIDChangedWithReason:]', symObjAddr: 0x228, symBinAddr: 0xC2F1C, symSize: 0x194 }
@@ -7043,13 +7043,13 @@ relocations:
   - { offsetInCU: 0xB8, offset: 0x1814BB, size: 0x8, addend: 0x0, symName: _SNRSyneriseBundleIdentifier, symObjAddr: 0x1CC8, symBinAddr: 0x136FF8, symSize: 0x0 }
   - { offsetInCU: 0xCD, offset: 0x1814D0, size: 0x8, addend: 0x0, symName: _SNRSyneriseVersion, symObjAddr: 0x1CD0, symBinAddr: 0x137000, symSize: 0x0 }
   - { offsetInCU: 0xD6, offset: 0x1814D9, size: 0x8, addend: 0x0, symName: '+[SNRSynerise settings]', symObjAddr: 0xC, symBinAddr: 0xC30BC, symSize: 0x40 }
-  - { offsetInCU: 0xFF, offset: 0x181502, size: 0x8, addend: 0x0, symName: _settings.settings, symObjAddr: 0x2A0C0, symBinAddr: 0x19B088, symSize: 0x0 }
-  - { offsetInCU: 0x114, offset: 0x181517, size: 0x8, addend: 0x0, symName: _settings.onceToken, symObjAddr: 0x2A0C8, symBinAddr: 0x19B090, symSize: 0x0 }
+  - { offsetInCU: 0xFF, offset: 0x181502, size: 0x8, addend: 0x0, symName: _settings.settings, symObjAddr: 0x2A0C0, symBinAddr: 0x19B0A8, symSize: 0x0 }
+  - { offsetInCU: 0x114, offset: 0x181517, size: 0x8, addend: 0x0, symName: _settings.onceToken, symObjAddr: 0x2A0C8, symBinAddr: 0x19B0B0, symSize: 0x0 }
   - { offsetInCU: 0x42D, offset: 0x181830, size: 0x8, addend: 0x0, symName: '+[SNRSynerise sharedObject]', symObjAddr: 0x4F8, symBinAddr: 0xC35A8, symSize: 0x74 }
-  - { offsetInCU: 0x456, offset: 0x181859, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x2A0D0, symBinAddr: 0x19B098, symSize: 0x0 }
-  - { offsetInCU: 0x46B, offset: 0x18186E, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x2A0D8, symBinAddr: 0x19B0A0, symSize: 0x0 }
+  - { offsetInCU: 0x456, offset: 0x181859, size: 0x8, addend: 0x0, symName: _sharedObject.instance, symObjAddr: 0x2A0D0, symBinAddr: 0x19B0B8, symSize: 0x0 }
+  - { offsetInCU: 0x46B, offset: 0x18186E, size: 0x8, addend: 0x0, symName: _sharedObject.onceToken, symObjAddr: 0x2A0D8, symBinAddr: 0x19B0C0, symSize: 0x0 }
   - { offsetInCU: 0x4CD, offset: 0x1818D0, size: 0x8, addend: 0x0, symName: '-[SNRSynerise pushRegistrationRequired]', symObjAddr: 0x1108, symBinAddr: 0xC418C, symSize: 0x78 }
-  - { offsetInCU: 0x4F4, offset: 0x1818F7, size: 0x8, addend: 0x0, symName: _pushRegistrationRequired.timer, symObjAddr: 0x2A0E0, symBinAddr: 0x19B0A8, symSize: 0x0 }
+  - { offsetInCU: 0x4F4, offset: 0x1818F7, size: 0x8, addend: 0x0, symName: _pushRegistrationRequired.timer, symObjAddr: 0x2A0E0, symBinAddr: 0x19B0C8, symSize: 0x0 }
   - { offsetInCU: 0xA24, offset: 0x181E27, size: 0x8, addend: 0x0, symName: '+[SNRSynerise load]', symObjAddr: 0x0, symBinAddr: 0xC30B0, symSize: 0xC }
   - { offsetInCU: 0xAF2, offset: 0x181EF5, size: 0x8, addend: 0x0, symName: '___23+[SNRSynerise settings]_block_invoke', symObjAddr: 0x4C, symBinAddr: 0xC30FC, symSize: 0x2C }
   - { offsetInCU: 0xB17, offset: 0x181F1A, size: 0x8, addend: 0x0, symName: '+[SNRSynerise initializeWithClientApiKey:]', symObjAddr: 0x78, symBinAddr: 0xC3128, symSize: 0x8 }
@@ -7171,8 +7171,8 @@ relocations:
   - { offsetInCU: 0x27, offset: 0x18911A, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseReinitializationSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xC662C, symSize: 0x74 }
   - { offsetInCU: 0xA3, offset: 0x189196, size: 0x8, addend: 0x0, symName: _SNRSyneriseReinitializationSignalStateKey, symObjAddr: 0x3B8, symBinAddr: 0x1370B8, symSize: 0x0 }
   - { offsetInCU: 0xAC, offset: 0x18919F, size: 0x8, addend: 0x0, symName: '+[SNRSyneriseReinitializationSignal sharedSignal]', symObjAddr: 0x0, symBinAddr: 0xC662C, symSize: 0x74 }
-  - { offsetInCU: 0xD5, offset: 0x1891C8, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x81A8, symBinAddr: 0x19B0B0, symSize: 0x0 }
-  - { offsetInCU: 0xEA, offset: 0x1891DD, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x81B0, symBinAddr: 0x19B0B8, symSize: 0x0 }
+  - { offsetInCU: 0xD5, offset: 0x1891C8, size: 0x8, addend: 0x0, symName: _sharedSignal.instance, symObjAddr: 0x81A8, symBinAddr: 0x19B0D0, symSize: 0x0 }
+  - { offsetInCU: 0xEA, offset: 0x1891DD, size: 0x8, addend: 0x0, symName: _sharedSignal.onceToken, symObjAddr: 0x81B0, symBinAddr: 0x19B0D8, symSize: 0x0 }
   - { offsetInCU: 0x2CF, offset: 0x1893C2, size: 0x8, addend: 0x0, symName: '___49+[SNRSyneriseReinitializationSignal sharedSignal]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xC66A0, symSize: 0x30 }
   - { offsetInCU: 0x30B, offset: 0x1893FE, size: 0x8, addend: 0x0, symName: '-[SNRSyneriseReinitializationSignal notifyReinitializationIsBefore]', symObjAddr: 0xA4, symBinAddr: 0xC66D0, symSize: 0x15C }
   - { offsetInCU: 0x35F, offset: 0x189452, size: 0x8, addend: 0x0, symName: '-[SNRSyneriseReinitializationSignal notifyReinitializationIsAfter]', symObjAddr: 0x200, symBinAddr: 0xC682C, symSize: 0x15C }
