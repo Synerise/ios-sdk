@@ -4,6 +4,7 @@
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/synerise/ios-sdk)
 [![GitHub release](https://img.shields.io/github/release/Synerise/ios-sdk.svg)](https://github.com/Synerise/ios-sdk/releases) 
 [![CocoaPods](https://img.shields.io/badge/pod-v4.14.10-green.svg)](https://cocoapods.org/pods/SyneriseSDK)
+[![SPM compatible](https://img.shields.io/badge/SPM-Compatible-green.svg)](https://www.swift.org/package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Synerise](https://img.shields.io/badge/www-synerise-green.svg)](https://synerise.com)
 [![Documentation](https://img.shields.io/badge/docs-mobile%20sdk-brightgreen.svg)](https://hub.synerise.com/developers/mobile-sdk/)
