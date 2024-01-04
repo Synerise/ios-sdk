@@ -24,7 +24,7 @@ Most up-to-date documentation is available at [Developer Guide - Mobile SDK](htt
 * iOS 9.0+ minimum deployment target
 * Valid architectures: arm64 devices and arm64, x86_64 simulators
 
-## Install Synerise SDK from CocoaPods
+## Installing Synerise SDK with CocoaPods
 
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -43,7 +43,19 @@ target YOUR_PROJECT_TARGET do
 end
 ```
 
-## Install Synerise SDK from Carthage
+## Installing Synerise SDK with Swift Package Manager (SPM)
+
+Swift Package Manager (SPM) is a dependency manager built into Xcode.
+  
+1. Go to Xcode project’s settings and navigate to the Package Dependencies tab.
+2. Click on the add button below the packages list.
+2. Enter the URL of Synerise SDK repository (**https://github.com/Synerise/ios-sdk**) in the search text field.
+3. Under the Dependency Rule section, select the SDK version. Finally, click **Add Package**.
+3. Select the package that best suits your needs and click **Add Package**.
+
+## Installing Synerise SDK with Carthage
+
+Carthage is a simple, decentralized dependency manager for iOS projects.
 
 Add following line to your Cartfile:
 ```
