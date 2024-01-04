@@ -48,7 +48,7 @@ end
 Swift Package Manager (SPM) is a dependency manager built into Xcode.
   
 1. Go to Xcode project’s settings and navigate to the Package Dependencies tab.
-2. Click on the add button below the packages list.
+2. Below the packages list, click the Add button.
 2. Enter the URL of Synerise SDK repository (**https://github.com/Synerise/ios-sdk**) in the search text field.
 3. Under the Dependency Rule section, select the SDK version. Finally, click **Add Package**.
 3. Select the package that best suits your needs and click **Add Package**.
