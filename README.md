@@ -114,8 +114,6 @@ First of all, you need to initialize Synerise iOS SDK and provide `Profile API K
 To get `Profile API Key`, please sign in to your Synerise account and visit [https://app.synerise.com/settings/apikeys](https://app.synerise.com/settings/apikeys).
 Then, generate new `API Key` for `Profile` audience.
 
-Configuration for **Synerise SDK** should be completely resolved before the end of `AppDelegate` `didFinishLaunchingWithOptions` method.
-
 **Swift:**
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -135,7 +133,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 ## Changelog
-Release notes can be found [here](./CHANGELOG.md).
+Changelog can be found [here](./CHANGELOG.md).
 
 ## Author
 Synerise, developer@synerise.com. If you need support please feel free to contact us.
