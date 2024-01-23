@@ -26,7 +26,9 @@ Most up-to-date documentation is available at [Developer Guide - Mobile SDK](htt
 
 ## Installing Synerise SDK with CocoaPods
 
-1. CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
+CocoaPods is a dependency manager for Cocoa projects.
+  
+1. You can install it with the following command:
 
 ```
 gem install cocoapods
@@ -67,7 +69,9 @@ Swift Package Manager (SPM) is a dependency manager built into Xcode.
 
 ## Installing Synerise SDK with Carthage
 
-1. Carthage is a simple, decentralized dependency manager for iOS projects. You can install it with the following command:
+Carthage is a simple, decentralized dependency manager for iOS projects.
+  
+1. You can install it with the following command:
 
 ```
 brew install carthage
