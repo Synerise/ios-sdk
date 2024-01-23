@@ -134,5 +134,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+## Changelog
+Release notes can be found [here](./CHANGELOG.md).
+
 ## Author
 Synerise, developer@synerise.com. If you need support please feel free to contact us.
