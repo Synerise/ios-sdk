@@ -26,13 +26,13 @@ Most up-to-date documentation is available at [Developer Guide - Mobile SDK](htt
 
 ## Installing Synerise SDK with CocoaPods
 
-CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
+1. CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```
 gem install cocoapods
 ```
 
-Once you have CocoaPods installed you should add below code into your Podfile in Xcode:
+2. Once you have CocoaPods installed you should add below code into your Podfile in Xcode:
 
 ```
 platform :ios, '14.0'
@@ -43,33 +43,48 @@ target YOUR_PROJECT_TARGET do
 end
 ```
 
+3. To install the Synerise SDK, run the following command in the directory of your Xcode app project:
+
+```
+pod install
+```
+
+4. When you want to upload to the latest version, execute the following command:
+
+```
+pod update
+```
+
 ## Installing Synerise SDK with Swift Package Manager (SPM)
 
 Swift Package Manager (SPM) is a dependency manager built into Xcode.
   
 1. Go to Xcode project’s settings and navigate to the Package Dependencies tab.
-2. Below the packages list, click the Add button.
+2. Click on the add button below the packages list.
 2. Enter the URL of Synerise SDK repository (**https://github.com/Synerise/ios-sdk**) in the search text field.
 3. Under the Dependency Rule section, select the SDK version. Finally, click **Add Package**.
 3. Select the package that best suits your needs and click **Add Package**.
 
 ## Installing Synerise SDK with Carthage
 
-Carthage is a simple, decentralized dependency manager for iOS projects.
+1. Carthage is a simple, decentralized dependency manager for iOS projects. You can install it with the following command:
 
-Add following line to your Cartfile:
+```
+brew install carthage
+```
+
+2. Once you have CocoaPods installed you should add following line to your Cartfile:
+
 ```
 github "synerise/ios-sdk"
 ```
 
-After that please update carthage:
+3. To install the Synerise SDK, run the following command in the directory of your Xcode app project:
 ```
-carthage update
+carthage update --use-xcframeworks --platform ios
 ```
 
-Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SyneriseSDK.framework` to the "Embedded Binaries" section in Xcode.
-
-Make sure `Copy items if needed` is selected and click `Finish`.
+4. Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SyneriseSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
 
 
 ## Import Synerise SDK
