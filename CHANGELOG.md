@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.11] - 2024-02-06
+
+### Fixed
+- Issue with non-scrolling in-app messages.
+
+### Changed
+- The delegate method `snr_registerForPushNotificationsIsNeeded()` is invoked when the SDK is initialized completely.
+- When the `Client.registerForPush(registrationToken:mobilePushAgreement:success:failure:)` method fails, it invokes the `snr_registerForPushNotificationsIsNeeded()` delegate method after a short delay.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.10] - 2023-12-22
 
 ### Added
