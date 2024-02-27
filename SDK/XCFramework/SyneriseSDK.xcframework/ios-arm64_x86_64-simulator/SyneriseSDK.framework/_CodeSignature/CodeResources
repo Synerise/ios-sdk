@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SNRCarouselContentExtensionViewController.h</key>
 		<data>
-		KaMbyJpY37I2hkvxbhClxaZm5DY=
+		YK0Ndxg85O3th/dA9BiisXndQlE=
 		</data>
 		<key>Headers/SNRCartEvent.h</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Headers/SNRGeneralSettings.h</key>
 		<data>
-		R7ig1SNac8JAleoLNOtnjX7dTgE=
+		BluBGMf9wLPapxOLN7s5OhPPs9A=
 		</data>
 		<key>Headers/SNRHitTimerEvent.h</key>
 		<data>
@@ -462,7 +462,7 @@
 		</data>
 		<key>Headers/SNRSingleMediaContentExtensionViewController.h</key>
 		<data>
-		cz8dL/eqZhuMmwUa619dT4OyBgY=
+		l95vaZlUaIGM3CP5v3p9IWZuyQk=
 		</data>
 		<key>Headers/SNRSynerise.h</key>
 		<data>
@@ -530,7 +530,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8uv34SqpCqp3KqsPc26LtN0J9j0=
+		Zh68GoPZ0AgoSI3YP8EBBHcQQDk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -596,7 +596,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96iYv/ShpL31KieIO7+WpIMY6UU=
+			wtRm28uCL+01GPs5UPTLkzAeinU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -605,7 +605,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYe8d20ju7nSN8PMYVgc+cAKkfs=
+			jzV//u20S0uGVt3yjKL+xpAebKg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -694,11 +694,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KaMbyJpY37I2hkvxbhClxaZm5DY=
+			YK0Ndxg85O3th/dA9BiisXndQlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			za7h+2BjEelbzKwbGQiVjokMv406gtqzvledcM12/kQ=
+			EidwdYUBvgFCjSQpZOsdabKTQ4d3vc/8kRPXNfjW29o=
 			</data>
 		</dict>
 		<key>Headers/SNRCartEvent.h</key>
@@ -1222,11 +1222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R7ig1SNac8JAleoLNOtnjX7dTgE=
+			BluBGMf9wLPapxOLN7s5OhPPs9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			ahRfXLzVx8idX8UmCiNzziGljXouseH2M+fiNahveWU=
+			FtsnoOW9gjHYDLglayf67NuqsDXq96lJqxYNL5biQCQ=
 			</data>
 		</dict>
 		<key>Headers/SNRHitTimerEvent.h</key>
@@ -1871,11 +1871,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cz8dL/eqZhuMmwUa619dT4OyBgY=
+			l95vaZlUaIGM3CP5v3p9IWZuyQk=
 			</data>
 			<key>hash2</key>
 			<data>
-			kfPogsXtmi57P7hiQ+7MrHM4KcqFDNQBMNvQYIg17UY=
+			2bSC6ODrwTxNxL2wYFgYGsj7SOdC7CxqL9RQpJjPaLk=
 			</data>
 		</dict>
 		<key>Headers/SNRSynerise.h</key>
@@ -2223,11 +2223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96iYv/ShpL31KieIO7+WpIMY6UU=
+			wtRm28uCL+01GPs5UPTLkzAeinU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ON5RgHB+DmBZ94Y3hah9wUwo18mhdi06/At1coAiNX4=
+			saXhGP1M+RF/6g8Ps1kCGBdxUgnYxlVjk0O2ph3BQYo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2236,11 +2236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYe8d20ju7nSN8PMYVgc+cAKkfs=
+			jzV//u20S0uGVt3yjKL+xpAebKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			30nQ11T8syk3Q3aHKGKqmOQ1TvTKXg6VAgmZPrLsPks=
+			vHnIzP8y1JlrJPilvj2Fb3WXrAVR3WUWlxCoyFSJcZs=
 			</data>
 			<key>optional</key>
 			<true/>

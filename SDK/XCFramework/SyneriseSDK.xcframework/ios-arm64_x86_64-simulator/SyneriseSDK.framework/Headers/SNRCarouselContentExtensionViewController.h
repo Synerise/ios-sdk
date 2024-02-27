@@ -32,6 +32,8 @@ NS_SWIFT_NAME(CarouselContentExtensionViewController)
  */
 @property (assign, nonatomic, readwrite) UIViewContentMode imageContentMode;
 
+- (void)setDebugModeEnabled:(BOOL)enabled;
+
 - (void)setSyneriseNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
 - (void)setSyneriseNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion API_AVAILABLE(ios(10.0));
 
