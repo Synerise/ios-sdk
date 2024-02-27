@@ -11,6 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * @typedef SNRLocalizableStringKey
+ */
+
+NS_SWIFT_NAME(LocalizableStringKey)
+typedef NSString * SNRLocalizableStringKey;
+
+FOUNDATION_EXPORT SNRLocalizableStringKey const SNR_LOCALIZABLE_STRING_KEY_OK;
+FOUNDATION_EXPORT SNRLocalizableStringKey const SNR_LOCALIZABLE_STRING_KEY_CANCEL;
+
+/**
  * @class SNRGeneralSettings
  */
 
@@ -70,6 +80,15 @@ NS_SWIFT_NAME(GeneralSettings)
  * The default value is true.
  */
 @property (assign, nonatomic, readwrite) BOOL shouldDestroySessionOnApiKeyChange;
+
+/**
+ * This parameter specifies the localization of some strings occurring in the SDK.
+ * When this option isn't used, the SDK uses default strings.
+ * We recommend updating the property when you change the language in the Host App.
+ *
+ * The default value is nil.
+ */
+@property (copy, nonatomic, nullable, readwrite) NSDictionary<SNRLocalizableStringKey, NSString *> *localizable;
 
 @end
 

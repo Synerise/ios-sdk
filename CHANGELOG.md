@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.14.12] - 2024-02-27
+
+### Fixed
+- Some potential issues with notification processing in `NotificationServiceExtension`.
+
+### Added
+- `Synerise.settings.sdk.localizable` option in settings to let you localize some strings displayed by the SDK.
+
+### Changed
+- Improvements to stability.
+
+
 ## [4.14.11] - 2024-02-06
 
 ### Fixed
