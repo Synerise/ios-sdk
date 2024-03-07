@@ -23,6 +23,8 @@ NS_SWIFT_NAME(Token)
 
 @property (copy, nonatomic, nonnull, readonly) NSString *rlm;
 @property (assign, nonatomic, readonly) SNRTokenOrigin origin;
+
+@property (copy, nonatomic, nonnull, readonly) NSString *clientId;
 @property (copy, nonatomic, nullable, readonly) NSString *customId;
 
 - (BOOL)isNearExpiring;

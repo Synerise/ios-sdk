@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SNRClient.h</key>
 		<data>
-		s8aPQZ6JO5ZlTuyRUuOu+dn3PaE=
+		agFSOOJgZVhwgu676D+N+2SFR8E=
 		</data>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Headers/SNRErrorCode.h</key>
 		<data>
-		oDNwy8zVO01QDZMahNTZhGEGOTc=
+		jx2tWr5g39qEHAI89hZwgHJNxVU=
 		</data>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>Headers/SNRInAppMessagingSettings.h</key>
 		<data>
-		tD2D+dOAa23l/zPkYykHlahdYls=
+		SP4TpW1jGCzLvzEnKTSxYI7ymP8=
 		</data>
 		<key>Headers/SNRInjector.h</key>
 		<data>
@@ -474,11 +474,15 @@
 		</data>
 		<key>Headers/SNRToken.h</key>
 		<data>
-		nj4WqPZ6Y7SrIRvbcyHqimquwwU=
+		j9FIQ5Gww4mZKGb8Ru4wyh+e1aQ=
 		</data>
 		<key>Headers/SNRTokenOrigin.h</key>
 		<data>
 		HWiIoAQt0xWQ8PkryFykUlkCgt8=
+		</data>
+		<key>Headers/SNRTokenPayload.h</key>
+		<data>
+		9D5nfmM1XAym/Y7IEV2LKWliE2Y=
 		</data>
 		<key>Headers/SNRTracker.h</key>
 		<data>
@@ -526,11 +530,11 @@
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		v/cfv6BeKTE31RkER4nkbpLJ1DQ=
+		tUEb+gaNxvL40Ct/oSyqnUiTlmk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Zh68GoPZ0AgoSI3YP8EBBHcQQDk=
+		DQD84dtO43vVGiR2EB8py/UysE0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -538,11 +542,11 @@
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
-		AfzSk2FXQGMzrHrANgYLkJyQIfc=
+		7m4US6tYoFIHIhO1wsM+s60PWHM=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
 		<data>
-		9kcZfPi+hzdW5kIamO+vqOA3lFA=
+		TAU3Ux6cgW90U1MzZIMoDASpWuM=
 		</data>
 		<key>SNRInjectorTemplateBannerViewController.nib</key>
 		<data>
@@ -596,7 +600,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wtRm28uCL+01GPs5UPTLkzAeinU=
+			f/sCgEEFAlJ/dpXjIj5Qg39BHH0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -605,7 +609,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jzV//u20S0uGVt3yjKL+xpAebKg=
+			+HiP9Y9FuTp9WGMt70pwEHJZcfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -716,11 +720,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s8aPQZ6JO5ZlTuyRUuOu+dn3PaE=
+			agFSOOJgZVhwgu676D+N+2SFR8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			rkk66eP0GWdZuaQc8/lAuHhmAz9ZY/FAzLFwDESX8jU=
+			ACCACg5g82ZkEavG5tLN9W9ODIbb8BVgz09uwdiFNv8=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAccountInformation.h</key>
@@ -1167,11 +1171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oDNwy8zVO01QDZMahNTZhGEGOTc=
+			jx2tWr5g39qEHAI89hZwgHJNxVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			SpQyZ4kXRLmi5SY4O9t+Jy0CgsjHby2pxpD/phjqXqU=
+			S4VmLsWOq1HZT59GmfdNX761fvuB/dXqUwxoYZUezzw=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
@@ -1266,11 +1270,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tD2D+dOAa23l/zPkYykHlahdYls=
+			SP4TpW1jGCzLvzEnKTSxYI7ymP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YgWONyVz6M+U29XYMMQqpMpPErw6y8yPCBjQA4nJiDA=
+			bkP7vo2vROymW4FkMiRX1x1bY4QgZYUU6EtxGv9h4KQ=
 			</data>
 		</dict>
 		<key>Headers/SNRInjector.h</key>
@@ -1904,11 +1908,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nj4WqPZ6Y7SrIRvbcyHqimquwwU=
+			j9FIQ5Gww4mZKGb8Ru4wyh+e1aQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1m6UxhF7KL9QU4nsg3Hj+JoZm4WpayOD0FhHk2x/7j0=
+			pWtHv4PENv6q6lOElW90upgr+pvSiC2a7te7UM2xF/0=
 			</data>
 		</dict>
 		<key>Headers/SNRTokenOrigin.h</key>
@@ -1920,6 +1924,17 @@
 			<key>hash2</key>
 			<data>
 			kF1zMBY9rH6w6/664G96Qcd3YgzVfBqebv2oHhQ7ffA=
+			</data>
+		</dict>
+		<key>Headers/SNRTokenPayload.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9D5nfmM1XAym/Y7IEV2LKWliE2Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			5HwAdpDsBCqaGeqoRzTy8AobyxSw8Iz7m+wqQKmafIw=
 			</data>
 		</dict>
 		<key>Headers/SNRTracker.h</key>
@@ -2047,11 +2062,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v/cfv6BeKTE31RkER4nkbpLJ1DQ=
+			tUEb+gaNxvL40Ct/oSyqnUiTlmk=
 			</data>
 			<key>hash2</key>
 			<data>
-			PbxUa0icJLWI9asZWIs3v/Uvcaf2nuqEkJ+sWMRp7aY=
+			PCYXbML13idp968B9bAlUDWASw69wx55n6u95fa+9P4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2069,22 +2084,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AfzSk2FXQGMzrHrANgYLkJyQIfc=
+			7m4US6tYoFIHIhO1wsM+s60PWHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0/n78G5rFEr51JcZ0+LX6+1ORMH2zoNmb318SgU4yK4=
+			qSkYvtw4vZ5dnqQU7lqA3IGfipP6H4hk0Px/P900iBw=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9kcZfPi+hzdW5kIamO+vqOA3lFA=
+			TAU3Ux6cgW90U1MzZIMoDASpWuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			JspIPN0l5U0lOyntd/4mWNp9J0kfFZ1P6bjIhRP7nLA=
+			M3d6Cg6+tsmPzEIykI0GLwmPF9uNzROKjq0pEsMTp5U=
 			</data>
 		</dict>
 		<key>SNRInjectorTemplateBannerViewController.nib</key>
@@ -2223,11 +2238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wtRm28uCL+01GPs5UPTLkzAeinU=
+			f/sCgEEFAlJ/dpXjIj5Qg39BHH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			saXhGP1M+RF/6g8Ps1kCGBdxUgnYxlVjk0O2ph3BQYo=
+			iBp4Fc6NG1aAMCZmxvOSRan6SR2G3sjiAeyKsvQB5XI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2236,11 +2251,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jzV//u20S0uGVt3yjKL+xpAebKg=
+			+HiP9Y9FuTp9WGMt70pwEHJZcfw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vHnIzP8y1JlrJPilvj2Fb3WXrAVR3WUWlxCoyFSJcZs=
+			VhEdrmb1EpEhY9lGJyBQrg+1UF1/xzFnQMzMF5+M1lI=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -16,6 +16,13 @@ NS_SWIFT_NAME(InAppMessagingSettings)
 @interface SNRInAppMessagingSettings : NSObject
 
 /**
+ * This parameter specifies if global control groups should be checked immediately after in-app definitions are fetched.
+ *
+ * The default value is false.
+ */
+@property (assign, nonatomic, readwrite) BOOL checkGlobalControlGroupsOnDefinitionsFetch;
+
+/**
  * This parameter sets the maximum interval between automatic In-app definition updates.
  * That minimum value for this parameter is 600 seconds (10 minutes).
  *
