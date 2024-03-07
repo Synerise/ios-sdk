@@ -27,6 +27,7 @@
 @class SNRClientPasswordResetRequestContext;
 @class SNRClientPasswordResetConfirmationContext;
 @class SNRToken;
+@class SNRTokenPayload;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -295,6 +296,16 @@ NS_SWIFT_NAME(Client)
                                            failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticateByAppleSignInIfRegistered(identityToken:authID:success:failure:)) DEPRECATED_MSG_ATTRIBUTE("Use `Client.authenticateConditionally(token:clientIdentityProvider:authID:context:success:failure:)` instead.");
 
 /**
+ * Signs in a customer in with the provided token payload.
+ *
+ * @param tokenPayload `SNRTokenPayload` object with a token's payload.
+ * @param authID Authorization custom identity.
+ * @param success A block object to be executed when the operation finishes successfully.
+ * @param failure A block object to be executed when the operation finishes unsuccessfully.
+ */
++ (void)authenticateWithTokenPayload:(SNRTokenPayload *)tokenPayload authID:(NSString *)authID success:(void (^)(void))success failure:(void (^)(SNRApiError *error))failure NS_SWIFT_NAME(authenticate(tokenPayload:authID:success:failure:));
+
+/**
  * Signs in a customer with Simple Authentication.
  * Note, that to use this method you have to set request validation salt by `Synerise.setRequestValidationSalt(_:)` method.
  *
@@ -370,13 +381,23 @@ NS_SWIFT_NAME(Client)
 + (NSString *)getUUID;
 
 /**
- * Regenerates the customer's UUID and clears authentication token, login (if applicable), custom email, and custom identifier.
+ * Retrieves the current UUID or generates a new one from a seed (`authID`).
+ * Note that this operation doesn't affect the customer session in the SDK.
+ *
+ * @param authID A seed for UUID generation.
+ */
++ (NSString *)getUUIDForAuthenticationWithAuthID:(NSString *)authID NS_SWIFT_NAME(getUUIDForAuthentication(authID:));
+
+/**
+ * Regenerates the customer's UUID.
+ * This operation clears authentication token, login (if applicable), custom email and custom identifier.
  * Note that this operation works only if the customer is anonymous.
  */
 + (BOOL)regenerateUUID;
 
 /**
- * Regenerates the customer's UUID and clear authentication token, login (if applicable), custom email and custom identifier.
+ * Regenerates the customer's UUID from a seed (`clientIdentifier`).
+ * This operation clears authentication token, login (if applicable), custom email and custom identifier.
  * Note that this operation works only if the customer is anonymous.
  *
  * @param clientIdentifier A seed for UUID generation.

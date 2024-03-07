@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, SNRErrorCode) {
     SNRErrorCodeInvalidRequestSessionApiError = -104,
     SNRErrorCodeInvalidResponseApiError = -106,
     SNRErrorCodeInvalidEtagCacheResponseApiError = -107,
+    SNRErrorCodeRequestBlockedByCircuitBreakerApiError = -108,
     SNRErrorCodeClientSessionUnauthorizedApiError = 3200,
     SNRErrorCodeClientSessionExpiredApiError = 3210,
     SNRErrorCodeClientSessionAlreadySignedOutApiError = 3220,

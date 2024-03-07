@@ -112,6 +112,7 @@
 #import <SyneriseSDK/SNRClientEventData.h>
 #import <SyneriseSDK/SNRTokenOrigin.h>
 #import <SyneriseSDK/SNRToken.h>
+#import <SyneriseSDK/SNRTokenPayload.h>
 #import <SyneriseSDK/SNRPromotionIdentifier.h>
 #import <SyneriseSDK/SNRPromotionDiscountModeDetails.h>
 #import <SyneriseSDK/SNRPromotionDiscountStep.h>
