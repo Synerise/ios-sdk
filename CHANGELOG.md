@@ -5,9 +5,6 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 
 ## [4.16.0] - 2024-03-25
 
-### Fixed
-- Some potential issues with checking the setting for `systemPushConsent` parameter in `client.applicationStarted` event.
-
 ### Changed
 - Improved mechanism for checking capping in in-app messages. The number of views no longer resets when the account's UUID changes.
 
