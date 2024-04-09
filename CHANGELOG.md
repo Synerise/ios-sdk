@@ -3,12 +3,16 @@ All notable changes to this project will be documented in this file.
 
 Note that Objective-C class names are prefixed by `SNR`. In the changelog below, these are names used in Swift, without the prefix.
 
+## [4.16.1] - 2024-04-09
+
+### Fixed
+- Nullability of `clientId` property in the `Token` model.
+
+
 ## [4.16.0] - 2024-03-25
 
 ### Changed
 - Improved mechanism for checking capping in in-app messages. The number of views no longer resets when the account's UUID changes.
-
-### Changed
 - Improvements to stability.
 
 
