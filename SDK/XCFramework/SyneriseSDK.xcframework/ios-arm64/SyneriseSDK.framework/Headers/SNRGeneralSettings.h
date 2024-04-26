@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2023 Synerise. All rights reserved.
+//  Copyright (c) 2024 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRPublicKeyPinningAlgorithm.h>
@@ -35,7 +35,7 @@ NS_SWIFT_NAME(GeneralSettings)
 @property (assign, nonatomic, readwrite) BOOL enabled;
 
 /**
- * Identifies the app group that your app and its extensions belong to.
+ * This parameter identifies the app group that your app and its extensions belong to.
  * This property is required to allow the SDK to share data with the Host App and its extensions.
  *
  * The default value is nil.
@@ -70,7 +70,7 @@ NS_SWIFT_NAME(GeneralSettings)
  * This parameter specifies the supported algorithms for generating the SSL pins' certificates.
  * This option is only required for proper SSL Pinning support for system versions before iOS 10.
  *
- * The default value is an array containing the `kSNRPublicKeyPinningAlgorithmRsa2048` value.
+ * The default value is an array containing the `kSNRPublicKeyPinningAlgorithmRsa2048` values.
  */
 @property (copy, nonatomic, nullable, readwrite) NSArray<SNRPublicKeyPinningAlgorithm> *SSLPinningPublicKeySupportedAlgorithms;
 

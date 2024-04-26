@@ -6,479 +6,479 @@
 	<dict>
 		<key>Headers/SNRApiError.h</key>
 		<data>
-		D/NRg6yMULaSFfjwfhufeiBHUPA=
+		lSYaOuSggSUMPEnmdzYm9QBTFCM=
 		</data>
 		<key>Headers/SNRApiQuerySortingOrder.h</key>
 		<data>
-		b89t1q50FVA+sAaaQRuVkNeNwkg=
+		Mo0mPwGlzYRcsiuKUIF0Of14YDQ=
 		</data>
 		<key>Headers/SNRAppearedInLocationEvent.h</key>
 		<data>
-		VndNPnnGHjZ9GhDdDJ7D5jPTq74=
+		qE7FQ9FhAjlc/7XaQTwuD/o2TEk=
 		</data>
 		<key>Headers/SNRAssignVoucherData.h</key>
 		<data>
-		taoABOEKOTBEF9D3c0uzoyQUsac=
+		HbZCN+yJ0Dmco5ihE3nlz3NckX0=
 		</data>
 		<key>Headers/SNRAssignVoucherResponse.h</key>
 		<data>
-		A4SqEP6Gr/zlUC5ZLEFqhD8yv1M=
+		SLKcpWcydiJu7xYg4R3Y1MxHcrI=
 		</data>
 		<key>Headers/SNRBaseModel.h</key>
 		<data>
-		1nG2GyhiAL6eHIC3sIum5H1QhoI=
+		2qSqOB2cSOUxYqYqBds/3kF69YA=
 		</data>
 		<key>Headers/SNRCacheManager.h</key>
 		<data>
-		KnTecKMfWOo46iCk3cSf12xPJ3U=
+		r0GS16+c1rvY+T+LkDPCNiYYefU=
 		</data>
 		<key>Headers/SNRCarouselContentExtensionViewController.h</key>
 		<data>
-		YK0Ndxg85O3th/dA9BiisXndQlE=
+		zBgtDFDALfXiSCLifex2AhVUfwM=
 		</data>
 		<key>Headers/SNRCartEvent.h</key>
 		<data>
-		IER/HhjOK/GYyBG15UVihXOpFok=
+		F3Ec19CZv0QKVkuL8/RuAoP39eA=
 		</data>
 		<key>Headers/SNRClient.h</key>
 		<data>
-		agFSOOJgZVhwgu676D+N+2SFR8E=
+		yF5MhcXVgSf9yLSr59rRw6rgDrI=
 		</data>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<data>
-		Ci9GaaftxVFlELF7y/BMQd2Qv1o=
+		oGGZYevs0MMV6PdRmncczWP7J5s=
 		</data>
 		<key>Headers/SNRClientAgreements.h</key>
 		<data>
-		dqUUfZ3Zl9fhI5E7b68o3RCkMAo=
+		KzIBTNB4UEdHRgQ4DNFXoBh4KmQ=
 		</data>
 		<key>Headers/SNRClientAppleSignInAuthenticationContext.h</key>
 		<data>
-		0mP9g7l+/tARsR+iP+6GEHVB91c=
+		8/AA5eqUtV3WpdArRJEkVNy0GBY=
 		</data>
 		<key>Headers/SNRClientAuthenticationContext.h</key>
 		<data>
-		e+JhJqsCIeU3VE22Mh6k+tA3pQI=
+		DVLAm9MCXLRH0uFGKLYQ5lTEZTA=
 		</data>
 		<key>Headers/SNRClientConditionalAuthResult.h</key>
 		<data>
-		9x2cA90q49UA87f6nalO4SNYJYE=
+		rwEnSdRUWychLk2olXcdWVZ4xRM=
 		</data>
 		<key>Headers/SNRClientConditionalAuthStatus.h</key>
 		<data>
-		jNQlC8+nR5pMVcpMlSq27cyFnE4=
+		bfHUmA/KLpG1Za2Lh4YebJr3Rag=
 		</data>
 		<key>Headers/SNRClientConditionalAuthenticationContext.h</key>
 		<data>
-		OfM4PvVDfci7X8aLbrVk4kM7LSo=
+		CRtV4NePLSLtyxyJUldA1tq1fpQ=
 		</data>
 		<key>Headers/SNRClientEventData.h</key>
 		<data>
-		3hhKIOaVefPofhYHn/+F5N6ZCO4=
+		hV4FM/R+H8DWQKVGTiPFioBQTgg=
 		</data>
 		<key>Headers/SNRClientEventsApiQuery.h</key>
 		<data>
-		gNC/z+5cFMPwV03bwRMpgNYGN+k=
+		DmnQtay58GyQQJIZ7qWE39d0id4=
 		</data>
 		<key>Headers/SNRClientFacebookAuthenticationContext.h</key>
 		<data>
-		Ay0wcSAcNd93TQOrKuWiFzzz6zk=
+		ab71qE/fStFdkkSSWHgkUTwBSiI=
 		</data>
 		<key>Headers/SNRClientIdentityProvider.h</key>
 		<data>
-		GF5ZDHlLrXF/JdmxapAIDQSMn1M=
+		U06yrDKC5fp9xiSkbzHE3Ry3gHs=
 		</data>
 		<key>Headers/SNRClientOAuthAuthenticationContext.h</key>
 		<data>
-		7mAo/x1kYabgl7n9eoKEGClkam8=
+		mIUEOOaawBfoau/ddlMdJgAFnP8=
 		</data>
 		<key>Headers/SNRClientPasswordResetConfirmationContext.h</key>
 		<data>
-		2ARcv2wvccKpR+fZgLli1ohsFEU=
+		mL1l9MnNangSLYxLY5MtfNJQv78=
 		</data>
 		<key>Headers/SNRClientPasswordResetRequestContext.h</key>
 		<data>
-		IOEVO6JUqXgsN5UObmam+XPeE9A=
+		ppQoJgE7MILXS3RHGemVlIB3/Fk=
 		</data>
 		<key>Headers/SNRClientRegisterAccountContext.h</key>
 		<data>
-		01ndxHC4edppO53hgVSg2NFediM=
+		mI3z+M62LrCMpRI3/Z/L8KjwbCI=
 		</data>
 		<key>Headers/SNRClientSessionEndReason.h</key>
 		<data>
-		PGSQpyooeba6cWVONXBfvDiENHY=
+		E7j7pcXQ7l2f2wjcLI5EWV1jEtg=
 		</data>
 		<key>Headers/SNRClientSex.h</key>
 		<data>
-		jfWEeHTxmOoAzMJBaszGjOMALkY=
+		OUja6mMB501gUU9iXbUuD1SaxWQ=
 		</data>
 		<key>Headers/SNRClientSignOutMode.h</key>
 		<data>
-		bXKP6UT5Ya/AKAUOxgA/aQwPQ7A=
+		C7zfXnyPzMgBzd/8aNqwlVis/SU=
 		</data>
 		<key>Headers/SNRClientSimpleAuthenticationData.h</key>
 		<data>
-		mYB1db0WqAcnFtIUaRPvyr9shNk=
+		fT3gp/+DyBvvWzXRhGIAW/1pMhw=
 		</data>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
 		<data>
-		ru/jl2FPALLyfRdKGB4EabCOC94=
+		fESw7yDDScP2BW/XD4fVbrkvNGE=
 		</data>
 		<key>Headers/SNRContent.h</key>
 		<data>
-		d3mxgiDATq3e53qRrUJqLRng2xw=
+		aKyPOKeLK9mBx0PLZpQgy2Cshl0=
 		</data>
 		<key>Headers/SNRContentWidget.h</key>
 		<data>
-		cL7tf1Rz8tdM3xu8+ykkPSpfYn4=
+		/9VPMuAtMNrN35mqFIX/7yYYS3g=
 		</data>
 		<key>Headers/SNRContentWidgetAppearance.h</key>
 		<data>
-		aU6Ypb+oEQ0/pMTNmxCusx+9lbQ=
+		Q4mlhEpB7gUy9NapMJZGM8EMZJw=
 		</data>
 		<key>Headers/SNRContentWidgetBadgeDataModel.h</key>
 		<data>
-		h/3wdL5jOXY1vMvl7V4KGTGrO04=
+		FGqD5/y6s9p/+tJ9eHyiFsLOMOQ=
 		</data>
 		<key>Headers/SNRContentWidgetBadgeItemLayoutPartial.h</key>
 		<data>
-		I/Lv1KiIipACpKJ2FidqNAa5FKQ=
+		7/gyfwhBc08UDzWFkjRfsRKA0dY=
 		</data>
 		<key>Headers/SNRContentWidgetBaseCustomAction.h</key>
 		<data>
-		YmlRIYZuHxBdIXMUhvpa8nHdcDQ=
+		Ras+ayn1hRn+Z61IKaITcgTTUKI=
 		</data>
 		<key>Headers/SNRContentWidgetBasicProductItemLayout.h</key>
 		<data>
-		lXBudPXkieHJAvJupAUswfloK1A=
+		j7dqAJvfML4u/sYb71XHX5mMi/0=
 		</data>
 		<key>Headers/SNRContentWidgetGridLayout.h</key>
 		<data>
-		Ttbz04BYirB44Z1QyytzNXVNTDY=
+		GjdXcDTKsiXrpYjT/Yiu4K4rO38=
 		</data>
 		<key>Headers/SNRContentWidgetHorizontalSliderLayout.h</key>
 		<data>
-		1FCofU92qsc3lo2Ey2OiCELI5kg=
+		DSbM4uSrLBO0QSgNPjKrdlfX9PM=
 		</data>
 		<key>Headers/SNRContentWidgetImageButtonCustomAction.h</key>
 		<data>
-		slRS/sMcP/8+7GZeoduqZ73N6N0=
+		bLXLFpXIHJ6V0U81UOKAEnHgDBE=
 		</data>
 		<key>Headers/SNRContentWidgetItemLayout.h</key>
 		<data>
-		Zo6712BQQ06+sctFdkWsxSX5OaA=
+		fVAmSQVlc3nXRw1sVskJVHRmRwg=
 		</data>
 		<key>Headers/SNRContentWidgetLayout.h</key>
 		<data>
-		3KooBUopetSh+6SIkKCkct6taoM=
+		2oqqq5NYeP8eD3uOhdsQNmzqAcs=
 		</data>
 		<key>Headers/SNRContentWidgetOptions.h</key>
 		<data>
-		5j6ASDUgo19R2rS9Nkyw7oBu9ps=
+		YEmHYbdDsWKQ5iRfQ/GuDOEMggQ=
 		</data>
 		<key>Headers/SNRContentWidgetRecommendationDataModel.h</key>
 		<data>
-		ABjn/qzG8HyS8u2amxVjNztfH0s=
+		rjlow6XAKjp5sWby15yPhuouVYo=
 		</data>
 		<key>Headers/SNRContentWidgetRecommendationsOptions.h</key>
 		<data>
-		MVHK7ndy39UFPKaIhkKBPnn59/M=
+		aH6s3y3XKOAdnapH+myBJXXvj/M=
 		</data>
 		<key>Headers/SNRCrashEvent.h</key>
 		<data>
-		cwJiVIStlHXpc/tv8Cb2l890wB4=
+		aNMm1EQ+TmS3HqaN49ob2Xg4gss=
 		</data>
 		<key>Headers/SNRCustomEvent.h</key>
 		<data>
-		uy/16Ze27qGSvoctyYYEUUsWFH4=
+		7B5JxgPxqeFlKjvxwGwab2Ba9YY=
 		</data>
 		<key>Headers/SNRDocument.h</key>
 		<data>
-		WtPfD8y3fcGdArXyE/CSH940ckQ=
+		nl5Kw6ADH/ld9OFqKzRgiLiFCME=
 		</data>
 		<key>Headers/SNRDocumentsApiQuery.h</key>
 		<data>
-		rRzqEobFleaM1fVYfCKrXkvm8xQ=
+		Y8HeOKaIIR7F3VrZarNBCPjbrwY=
 		</data>
 		<key>Headers/SNRError.h</key>
 		<data>
-		ALjnC0mBZWERsgrRyny16e01A4w=
+		83moWunaREZnQHPi84PxNJPt2Lc=
 		</data>
 		<key>Headers/SNRErrorCode.h</key>
 		<data>
-		jx2tWr5g39qEHAI89hZwgHJNxVU=
+		S0yNKGMgBCt2BUpfoybjruLErW4=
 		</data>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<data>
-		FoAQsKOV7R6WR+QsgFEKIay/tz0=
+		xjYpZDXvj6SLzqqRb/MZ1VFf/fE=
 		</data>
 		<key>Headers/SNREvent.h</key>
 		<data>
-		n++d/pZ3CoWmxnFvs9kXe2H9wHM=
+		XXw9jUjwjZ0vbu4eiyl6vdsVe4E=
 		</data>
 		<key>Headers/SNRException.h</key>
 		<data>
-		vHCFnz7vsct+6O4a8gg1N8Xs1lo=
+		TgGO+dJtJa4e1nwhGaCSizl6j2w=
 		</data>
 		<key>Headers/SNRExceptionHandler.h</key>
 		<data>
-		BAJTqGQMITywTQKnL9n1iFK6pr0=
+		M67lh6UjfCmuv+bc2UEO0iRAA6E=
 		</data>
 		<key>Headers/SNRGeneralSettings.h</key>
 		<data>
-		BluBGMf9wLPapxOLN7s5OhPPs9A=
+		Go0tf5KZwq7B/C5CmejxCNss95k=
 		</data>
 		<key>Headers/SNRHitTimerEvent.h</key>
 		<data>
-		Y6bDIRoR4t0DCAUNv+0/Ki5E8R4=
+		3cswQqAayDRmwxhcZvtl0bRj5NM=
 		</data>
 		<key>Headers/SNRHostApplicationType.h</key>
 		<data>
-		qugwhzc+7azXEiVlytOtoBZ+LxQ=
+		a7pn7pP928VwR8Gq6Rm/aLu11MU=
 		</data>
 		<key>Headers/SNRInAppMessageData.h</key>
 		<data>
-		v9q+Aij6lmJSreCZG2m4Gh/dL9k=
+		OSteVK/VQ/v6Eln8/QLBRzaWAwI=
 		</data>
 		<key>Headers/SNRInAppMessagingSettings.h</key>
 		<data>
-		SP4TpW1jGCzLvzEnKTSxYI7ymP8=
+		iyx+EXw81OFqDbfzgEDySZsNIVI=
 		</data>
 		<key>Headers/SNRInjector.h</key>
 		<data>
-		ff73HysllHB4kCbK3Jw5x2OpEpQ=
+		ZyAUwwUZA+GTm81aefaNojeqdVw=
 		</data>
 		<key>Headers/SNRInjectorSettings.h</key>
 		<data>
-		+VO2cXrg9B1A7voh98G1O02dxcw=
+		caNgmgdbdZLRZI940uJT75kJuRE=
 		</data>
 		<key>Headers/SNRInternalInconsistencyError.h</key>
 		<data>
-		/0H5olwvuDlLPbGtgB7prYfDIyA=
+		Zcl41gAiiWUVdj9iKLXwtfD3644=
 		</data>
 		<key>Headers/SNRInternalInconsistencyException.h</key>
 		<data>
-		5akGAsMM1o39gdTDQ8ryEEKZ7cc=
+		3Jy7904YFh9dn73DJ3lIHMcsntQ=
 		</data>
 		<key>Headers/SNRInvalidArgumentError.h</key>
 		<data>
-		+u4JIU8D4VqMZDmC1ymShJUz+S0=
+		upaFJr+LGtS9nnXtj1kBAKfDbyA=
 		</data>
 		<key>Headers/SNRInvalidArgumentException.h</key>
 		<data>
-		a7je8S8mqdXuKrIysXd44PJwW5Q=
+		tBcJ2oRYH0y+V7OWDFrGJWLpwTQ=
 		</data>
 		<key>Headers/SNRLoggedInEvent.h</key>
 		<data>
-		CtSHlfl9QrffylSoSfOhyoS0KCs=
+		hpaG3Oc6kwID43xkswWMY9jF4eo=
 		</data>
 		<key>Headers/SNRLoggedOutEvent.h</key>
 		<data>
-		Pjd6w6JwZ+4ovoWVFV8SEw3zRzI=
+		0J0BpWO/ayAK9UvuqBcxerT3Rr8=
 		</data>
 		<key>Headers/SNRNotificationInfo.h</key>
 		<data>
-		uUzypfbJCoSWWtZHMcdgpIhrI2I=
+		0LCP4D71GuUM2OPs6iDQAhbA0BU=
 		</data>
 		<key>Headers/SNRNotificationServiceExtension.h</key>
 		<data>
-		yFhI5OYrB87pF42MPUjvK48Cbmk=
+		txvArRC9C1+t9dufpwf5sT/1sXU=
 		</data>
 		<key>Headers/SNRNotificationsSettings.h</key>
 		<data>
-		oYdcCyC3akPdMiPTK0rjMlKnBHY=
+		x0B4EbpPYygf9NAPh7qysdXSYzY=
 		</data>
 		<key>Headers/SNRProductAddedToCartEvent.h</key>
 		<data>
-		93RwBSOzvN63e24deBZH2u6Yj70=
+		NxGPAZbvZqBAwGMzr+hJAmsoB4M=
 		</data>
 		<key>Headers/SNRProductAddedToFavoritesEvent.h</key>
 		<data>
-		yU0bURpD7Bhkr57ghhGrUa/DFrI=
+		79lPsI014F9QnDKxTsmgrPFSHbs=
 		</data>
 		<key>Headers/SNRProductRemovedFromCartEvent.h</key>
 		<data>
-		XMFKu5GFvvcJU3TkTf6bkJEPVhg=
+		qaCNvzy5gOWmkizts/wT5WMrz80=
 		</data>
 		<key>Headers/SNRProductViewedEvent.h</key>
 		<data>
-		zutp1ckhWgxyCsMoIfLna6KxAOM=
+		ZI4TFfTCiaoxVNDPYYLb1HU7EgA=
 		</data>
 		<key>Headers/SNRPromotion.h</key>
 		<data>
-		OZ3k1Ke59yME4SHoD9Ckt48MN+s=
+		2AbIRGPqlUeoKOsBctbaWAv2njk=
 		</data>
 		<key>Headers/SNRPromotionDetails.h</key>
 		<data>
-		ocjCuyYjQVfbx2JYWkbkrkSdc2A=
+		k+WngJLgqxoCnMYXc8LbQe6gQ4U=
 		</data>
 		<key>Headers/SNRPromotionDiscountMode.h</key>
 		<data>
-		aEFvf69U5ocDn8vAasmXjgPhAP4=
+		g20tHjDEG7vxzDt5V6wjKlM5nQA=
 		</data>
 		<key>Headers/SNRPromotionDiscountModeDetails.h</key>
 		<data>
-		9jyo9OB5HIE1KiQg+6w5mC6sYy4=
+		Fh1Om3BC3iMAl6nlyP5T0cowUi4=
 		</data>
 		<key>Headers/SNRPromotionDiscountStep.h</key>
 		<data>
-		djK3+P5Ngr74TipomQOKs7YBq2Q=
+		7uSjY8UAd9qpPiVg6kQX/0WqEKE=
 		</data>
 		<key>Headers/SNRPromotionDiscountType.h</key>
 		<data>
-		X4zo670sxfcVqt21n4RkAAI8lUw=
+		4f1aqZqYlwEMq0rok4JEdnN9rRg=
 		</data>
 		<key>Headers/SNRPromotionDiscountTypeDetails.h</key>
 		<data>
-		+uiHYEtqv284ywB78m5UVcR2gWs=
+		+OdpHUgqitZYX52udZdGz0Qt94w=
 		</data>
 		<key>Headers/SNRPromotionDiscountUsageTrigger.h</key>
 		<data>
-		dlwIzLkBU2lFypKj9LZYTprqTL8=
+		slK3NT0luvx3OMSMHq6AzKYFw3M=
 		</data>
 		<key>Headers/SNRPromotionIdentifier.h</key>
 		<data>
-		QF526JuUFhMhP2msGoZx2u+uaEA=
+		Jt/Akn9jikkURw5W0P23jZmM7To=
 		</data>
 		<key>Headers/SNRPromotionImage.h</key>
 		<data>
-		a0VJx2iLf2OGv6oZtOipnLOS3Mo=
+		cci9atAH/iMAGkqF3DjorCdSwDw=
 		</data>
 		<key>Headers/SNRPromotionImageType.h</key>
 		<data>
-		DwfuQ788vfsrZZ5X4oklicVJWpE=
+		7NgkM6UVtZI1yuBLT2f/zFf+jGE=
 		</data>
 		<key>Headers/SNRPromotionItemScope.h</key>
 		<data>
-		RgCfTmKnbS5Jxy6950QNDVArgkg=
+		VVs0B3QRfPERWjOUpypHUhcT3Vw=
 		</data>
 		<key>Headers/SNRPromotionResponse.h</key>
 		<data>
-		gMi0I/vgIu3EQ5VIGAyXorzGh3o=
+		q27sDvHuPWsqpo6ckYKDbUdJ/0k=
 		</data>
 		<key>Headers/SNRPromotionResponseMetadata.h</key>
 		<data>
-		poOIJYXhsF2tvthAEzG3AlFKSpA=
+		Q4TLeT8+cvOBvUQJFiBXwdMGC1c=
 		</data>
 		<key>Headers/SNRPromotionStatus.h</key>
 		<data>
-		YOI3SF+46+KjqByAkQMVq56fJGo=
+		574ji9siVb8gOvZMfM2/gGE3eo0=
 		</data>
 		<key>Headers/SNRPromotionType.h</key>
 		<data>
-		CebqL7zaBdpRMwggPiQ8ytXfaec=
+		0bWlBX4f4KB4vd1+gZ5OArXOj7Y=
 		</data>
 		<key>Headers/SNRPromotions.h</key>
 		<data>
-		O2R1+Rnf/boGjfn21KqGL9BpYP4=
+		WvRPzgDwQsrYWRud9ZG9yUopKg8=
 		</data>
 		<key>Headers/SNRPromotionsApiQuery.h</key>
 		<data>
-		OkyGlTHrMmDidq6YAmLoMJe9Ook=
+		p02rhJzIlg1r8FgpT4eAyPlNVGM=
 		</data>
 		<key>Headers/SNRPublicKeyPinningAlgorithm.h</key>
 		<data>
-		RWole4qmmy78GgshjlwJ67TZun0=
+		5cDvg9470wQPBjqaN8nkAwkonsk=
 		</data>
 		<key>Headers/SNRPushCancelledEvent.h</key>
 		<data>
-		sjbju96tZ7mocl1bteDxNgOw928=
+		fK4qAbxVGIHGUitMck3JMWq9Q0A=
 		</data>
 		<key>Headers/SNRPushClickedEvent.h</key>
 		<data>
-		ejrf3VPs0fHawvxL7XxHdZE1Y5s=
+		3qoP9niSE8yFYysveLqIyzx6ORU=
 		</data>
 		<key>Headers/SNRPushViewedEvent.h</key>
 		<data>
-		zhvXuH+zPiSnjmSb1DO+YDcCizo=
+		YEoHeWsuEs4aWJ6EVy213qeoLt0=
 		</data>
 		<key>Headers/SNRRecommendation.h</key>
 		<data>
-		XFO0zFxt+FTD+tLffGZp/kyOxzM=
+		4C+XSrK1yJ2HoIjhgsJau2zBooI=
 		</data>
 		<key>Headers/SNRRecommendationClickEvent.h</key>
 		<data>
-		VPRn18EmF+hInqBwMKV+9c1nAQI=
+		8XVF6j2C3/lzxVi6J5IeVd7Dgbo=
 		</data>
 		<key>Headers/SNRRecommendationEvent.h</key>
 		<data>
-		H4keZ3r60aaPuLd3QdusjQKuvoY=
+		gnbph19WZNjqfwtKcXZr0PL6HTM=
 		</data>
 		<key>Headers/SNRRecommendationOptions.h</key>
 		<data>
-		C+w98z5qXQuyIAXAyv5A97hpTGE=
+		SQzGL2jiKuVfZ9s25nyn4TuZwE0=
 		</data>
 		<key>Headers/SNRRecommendationResponse.h</key>
 		<data>
-		zoBYtER+L1fzbaqV+E6vq2odvu8=
+		SUeSLtIkUr/q6DqxaOnJD2bthPI=
 		</data>
 		<key>Headers/SNRRecommendationResponseExtras.h</key>
 		<data>
-		+QEZLHI8wFhX4waZcM+szd6NGis=
+		n29Z3rb5z0CMNTXgUEdvV6xhlmI=
 		</data>
 		<key>Headers/SNRRecommendationResponseExtrasSlot.h</key>
 		<data>
-		3HUDk6C2xvj3f6Gow5DZ3rI68nI=
+		amTIGs0ExKzRwmJPVdwDO91WG1E=
 		</data>
 		<key>Headers/SNRRecommendationSeenEvent.h</key>
 		<data>
-		ndqgV+tbvZUjMfwKKuN+QllOCOY=
+		8R+Hn+VN1J9MNKdA1578eoJJkLw=
 		</data>
 		<key>Headers/SNRRecommendationViewEvent.h</key>
 		<data>
-		JC7bwpbuBXjaPHhKsEW5HbOEmE0=
+		ZO4RoNPrIRtifg3kOJ2mziMIReU=
 		</data>
 		<key>Headers/SNRRegisteredEvent.h</key>
 		<data>
-		/T8nytxT9IYDrusSSowiUjUMuWA=
+		Yl+mzeOazD7n9wmvuqGycKHAiRU=
 		</data>
 		<key>Headers/SNRScreenView.h</key>
 		<data>
-		zCmxWizlIKPcI0bZrq0xLpwyRvg=
+		r5wuPjT5/mnTnZ+tFk6nJWonETg=
 		</data>
 		<key>Headers/SNRScreenViewAudience.h</key>
 		<data>
-		20BoOHcvpTTvpm5sPlLVzOQ2m0Y=
+		1fxk34NBw2tQnOn4rHxPx6+zmC0=
 		</data>
 		<key>Headers/SNRScreenViewAudienceInfo.h</key>
 		<data>
-		2UMhkdGYD0Qk6EDL1yKdaSvqJtU=
+		7fY7ht+B7TeOVrHqPRr3QQVuHxs=
 		</data>
 		<key>Headers/SNRScreenViewResponse.h</key>
 		<data>
-		y112ZgLaC6svxGrnfedj/3sbThk=
+		n+ZXGMe1fHE25RPvW3Y4BYzTv00=
 		</data>
 		<key>Headers/SNRSearchedEvent.h</key>
 		<data>
-		Ufhna5PxeWuN8ZEtNsRqKb7EoDc=
+		j69EXkycHF9z87CV7wV/V3gBRPw=
 		</data>
 		<key>Headers/SNRSettings.h</key>
 		<data>
-		7J9AO9QLAa7LT1K/7ZU4I2EfbPQ=
+		IV54QxPCMeWjiqRqaZsdekM4UL8=
 		</data>
 		<key>Headers/SNRSharedEvent.h</key>
 		<data>
-		XQQJnT1sYWp1iB46WEQDDuAyFFU=
+		0dfkWB5wXQeV1bqR8sIGS8QLQjE=
 		</data>
 		<key>Headers/SNRSingleMediaContentExtensionViewController.h</key>
 		<data>
-		l95vaZlUaIGM3CP5v3p9IWZuyQk=
+		lXTIlUlBurVJ31yxFteYNujLQiw=
 		</data>
 		<key>Headers/SNRSynerise.h</key>
 		<data>
-		5fcIE1qbq/F93FGMQniXpikS4qo=
+		Hw457sqUGCpeHWfQF1Sf190pG1k=
 		</data>
 		<key>Headers/SNRSyneriseActivity.h</key>
 		<data>
-		pYIpmOHxvOwZET7itq9O0oG0ldk=
+		P9/DBh07zCswYar9rV4+pxZsadE=
 		</data>
 		<key>Headers/SNRToken.h</key>
 		<data>
-		UmgUvxRmVuyta6Ned5YPJYc3rRk=
+		OS9AnH468wJvaa7LvMqBI+Gtmdw=
 		</data>
 		<key>Headers/SNRTokenOrigin.h</key>
 		<data>
-		HWiIoAQt0xWQ8PkryFykUlkCgt8=
+		L1fM/nXJT0bdkLEFjgpbNrzI+i8=
 		</data>
 		<key>Headers/SNRTokenPayload.h</key>
 		<data>
@@ -486,59 +486,63 @@
 		</data>
 		<key>Headers/SNRTracker.h</key>
 		<data>
-		yudKgXM/XdacniVaMNCVyER3gT4=
+		SKobL6aXEgfbQ6q2MHSmyFjxQcY=
 		</data>
 		<key>Headers/SNRTrackerAutoTrackingSettings.h</key>
 		<data>
-		sKwVLy3U9Y6SK4KoJDGDt0Gp74o=
+		KWvj+rD0TDTMFcWTi+yEcxOtVJU=
 		</data>
 		<key>Headers/SNRTrackerDeclarativeTrackingSettings.h</key>
 		<data>
-		BPVpeMzx5hC+TYjkMyZVKoYKbRg=
+		c5BxpBsxk+AnNGGkTJRccdN2gD4=
 		</data>
 		<key>Headers/SNRTrackerParams.h</key>
 		<data>
-		j7N8vzlNrZ5clghhxBtwHYIj/3E=
+		vSNTmUfIbf6zN7G+3xExgsGKnCM=
 		</data>
 		<key>Headers/SNRTrackerParamsBuilder.h</key>
 		<data>
-		I3YFmE23qMucixQeXumrY5W+PZI=
+		US3zQbnT/7HxTeD7o0E5FctIQjA=
 		</data>
 		<key>Headers/SNRTrackerSettings.h</key>
 		<data>
-		/u4tEigFAX61vCX1BzZjnsZEAQo=
+		VOGvgbsAlr3eRwhXKTZl9+QubLY=
 		</data>
 		<key>Headers/SNRUnitPrice.h</key>
 		<data>
-		triPyrxD3zRhrzkPhvW7DDnvFus=
+		aad2LLiO/60TMoLOUOh6VNM0T+o=
 		</data>
 		<key>Headers/SNRVisitedScreenEvent.h</key>
 		<data>
-		jwS3TWIfgjMy/zZRHs6SoRLQ+YQ=
+		YCAy0but0obIIvM2VY1R5Bq9VRE=
 		</data>
 		<key>Headers/SNRVoucherCodeStatus.h</key>
 		<data>
-		VI4ObeirZML/tYQ2UXgvtmxM/Ow=
+		tuRU9VOe4X5gfFbUh94VwyDEfZA=
 		</data>
 		<key>Headers/SNRVoucherCodesData.h</key>
 		<data>
-		fmFxRPLWTD8BZEWIox1Ws7Alm+g=
+		+r+9J3zHcQtYEgLp1KkaJFNQrpY=
 		</data>
 		<key>Headers/SNRVoucherCodesResponse.h</key>
 		<data>
-		J/0XVjybdHg+xJRU6UpgSMgrb8E=
+		UhuJ1JJRiG5ajXGzHiSyxw7XuRs=
 		</data>
 		<key>Headers/SyneriseSDK.h</key>
 		<data>
-		tUEb+gaNxvL40Ct/oSyqnUiTlmk=
+		zowrkh+xjie7iKcGNAk335lB3p0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WC3+V5UP82eFMGymmPaFA0xAZPE=
+		0+FOUnsuhTfbwx5Uv1MMuqgXQEs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		OiECs1ZmJD1tm4FQTCVoCw6lY7c=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		46pBj7Ywmbq74+/AYeKjtcO7ENk=
 		</data>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
 		<data>
@@ -621,1309 +625,1309 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D/NRg6yMULaSFfjwfhufeiBHUPA=
+			lSYaOuSggSUMPEnmdzYm9QBTFCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fnOY/BQmhfw4hakrbv1HRAyFmKIAhU4H3QGjxAPDanY=
+			FbHFL1aY92Cc6H1eAfSCV+0KaQ+2DhF66fQ4fR/3Tak=
 			</data>
 		</dict>
 		<key>Headers/SNRApiQuerySortingOrder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b89t1q50FVA+sAaaQRuVkNeNwkg=
+			Mo0mPwGlzYRcsiuKUIF0Of14YDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			UgND5MP7AKanojguwWYypbJ44qqtabRmUOd6fhXtmWs=
+			Z9bARG17h7aN9UudLB8bqKg3yr6eXe8isQnXZxbe8R8=
 			</data>
 		</dict>
 		<key>Headers/SNRAppearedInLocationEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VndNPnnGHjZ9GhDdDJ7D5jPTq74=
+			qE7FQ9FhAjlc/7XaQTwuD/o2TEk=
 			</data>
 			<key>hash2</key>
 			<data>
-			T2MXdMNJmbAIrK/zAIH32NcCM1GN5rgSc3wXDvbIunI=
+			w3nXqtcPw5lJ74ToySb/psIAzPN0MiCKRRp1SrGyoQ4=
 			</data>
 		</dict>
 		<key>Headers/SNRAssignVoucherData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			taoABOEKOTBEF9D3c0uzoyQUsac=
+			HbZCN+yJ0Dmco5ihE3nlz3NckX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			KsKXbMFfk6O4S2onI3ciH2NUfZfPGKyjtg4nxc23zpc=
+			Ys/R7w53Xsfp2/LNbyZJR1vOJ1uLyRIUnpF0tMHIxNM=
 			</data>
 		</dict>
 		<key>Headers/SNRAssignVoucherResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A4SqEP6Gr/zlUC5ZLEFqhD8yv1M=
+			SLKcpWcydiJu7xYg4R3Y1MxHcrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rLycMsUo8hCogABj/982aAyBj8RwTDWDEQL0CZdpX+s=
+			ngr01MbSSirb64SIerLVvnbrH3W4a4dBcHBpAa/vSRU=
 			</data>
 		</dict>
 		<key>Headers/SNRBaseModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1nG2GyhiAL6eHIC3sIum5H1QhoI=
+			2qSqOB2cSOUxYqYqBds/3kF69YA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU9jYvhgbB7FJf6dkVYvWToGjOlV193mxHXvVHPhv8g=
+			THEtz9Pxiu6dXD3FROTr22WnM9liz+LtS6kjITD6Pak=
 			</data>
 		</dict>
 		<key>Headers/SNRCacheManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KnTecKMfWOo46iCk3cSf12xPJ3U=
+			r0GS16+c1rvY+T+LkDPCNiYYefU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cbbwv+4YTP/KJ3vAUztTu+n+Cf1HjvEaegxBryUdkK8=
+			Z8EVAkFHIH2Q1FdEPVOX70vUspYr1TK1UmnHOK8bAwU=
 			</data>
 		</dict>
 		<key>Headers/SNRCarouselContentExtensionViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YK0Ndxg85O3th/dA9BiisXndQlE=
+			zBgtDFDALfXiSCLifex2AhVUfwM=
 			</data>
 			<key>hash2</key>
 			<data>
-			EidwdYUBvgFCjSQpZOsdabKTQ4d3vc/8kRPXNfjW29o=
+			3TE13psXn9lFBiEJH89I50+e9P1Ld2pxinPYel24Egk=
 			</data>
 		</dict>
 		<key>Headers/SNRCartEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IER/HhjOK/GYyBG15UVihXOpFok=
+			F3Ec19CZv0QKVkuL8/RuAoP39eA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JilZbGVY+nd9homZgpRP2ZULbs+Zxc6+lJzi4gGlxOo=
+			/xEySbBbpDSJU6eNN0r6S2mBAsCHZGbujpSVznaC2OI=
 			</data>
 		</dict>
 		<key>Headers/SNRClient.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			agFSOOJgZVhwgu676D+N+2SFR8E=
+			yF5MhcXVgSf9yLSr59rRw6rgDrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ACCACg5g82ZkEavG5tLN9W9ODIbb8BVgz09uwdiFNv8=
+			KoRQ6d9VV16CSQg7xLCd6FWNCRwbhnSlkXmNxnWUb7o=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAccountInformation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ci9GaaftxVFlELF7y/BMQd2Qv1o=
+			oGGZYevs0MMV6PdRmncczWP7J5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			DvFr9vubn/Bp+7dXxqLnwn0jlOOwwnuFhhO7ebTYOwI=
+			rIXIGfm74WwmIOtbLUX+2g9+avIH/W7IEbBDc9QX6qw=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAgreements.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dqUUfZ3Zl9fhI5E7b68o3RCkMAo=
+			KzIBTNB4UEdHRgQ4DNFXoBh4KmQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bv25rMtehe1f9xj9r0EsYEBVdD5uaHUnrClGE6mOkL4=
+			ZhI+Q40TxHwfBiQINY9NK42Ruk8CrRvx20ZTjEA7ynY=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAppleSignInAuthenticationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0mP9g7l+/tARsR+iP+6GEHVB91c=
+			8/AA5eqUtV3WpdArRJEkVNy0GBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			rlnZtbDG+1zilgDdpldrqPQ2HW7RYHSt5i08EAHpiD4=
+			kPJWULFBed9LB7IB+wCDT6KOBxUNNEyLckokNWJbzcc=
 			</data>
 		</dict>
 		<key>Headers/SNRClientAuthenticationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e+JhJqsCIeU3VE22Mh6k+tA3pQI=
+			DVLAm9MCXLRH0uFGKLYQ5lTEZTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dRZFTeIme/wMjHBxST8SSIjc9lsLXItcTLWxk7Whlmo=
+			32bfBRZfo8Zmg6L41ituT4fpX9EP0LZn5WznvN9qNfc=
 			</data>
 		</dict>
 		<key>Headers/SNRClientConditionalAuthResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9x2cA90q49UA87f6nalO4SNYJYE=
+			rwEnSdRUWychLk2olXcdWVZ4xRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zFJ8XOIgiOBvKfjmVV1T1ZK3JjyFs6zoiqjTmXNECcc=
+			ttImi6ag0ZRXyyVol0vUByfUWdSHXBE+BU1VWfqSk2o=
 			</data>
 		</dict>
 		<key>Headers/SNRClientConditionalAuthStatus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNQlC8+nR5pMVcpMlSq27cyFnE4=
+			bfHUmA/KLpG1Za2Lh4YebJr3Rag=
 			</data>
 			<key>hash2</key>
 			<data>
-			esPaTtBTjAY6PihTZE+CqctLMmhT/HC5ysMUlsAFqz4=
+			yYMHIuLpFvskBOMaCOYfItiN4JkvNaO3O45SgO14SD4=
 			</data>
 		</dict>
 		<key>Headers/SNRClientConditionalAuthenticationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OfM4PvVDfci7X8aLbrVk4kM7LSo=
+			CRtV4NePLSLtyxyJUldA1tq1fpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ifInB8+DrIILYnrEo7JdfkrZIxj+hESpVo5q47wun2c=
+			gWp93HdfGZMIIAfHFnc4uttWKnLhetPinWp6eb+OtPw=
 			</data>
 		</dict>
 		<key>Headers/SNRClientEventData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3hhKIOaVefPofhYHn/+F5N6ZCO4=
+			hV4FM/R+H8DWQKVGTiPFioBQTgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			piGKyNp0Iq+wBtZuV9QsGOto9Iej9tJb3bkDRe1ScRg=
+			ZQjHpyDrQCBtMqjjrIGI9fgkbeOjha9ctywbAZnEChU=
 			</data>
 		</dict>
 		<key>Headers/SNRClientEventsApiQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gNC/z+5cFMPwV03bwRMpgNYGN+k=
+			DmnQtay58GyQQJIZ7qWE39d0id4=
 			</data>
 			<key>hash2</key>
 			<data>
-			YNiwWyOGgTIKu5qrF+fz0sexSzN7xwH6TLsQdOtFUmU=
+			98Fipy+3hl0dbGL2JNkubuF7mQuoSC21ImZwFRGJJzg=
 			</data>
 		</dict>
 		<key>Headers/SNRClientFacebookAuthenticationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ay0wcSAcNd93TQOrKuWiFzzz6zk=
+			ab71qE/fStFdkkSSWHgkUTwBSiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			CC8rcDS4wv+MCtwQ6/wXSPoNo0akEcgKPum8X5Zpab4=
+			EjYD72Ly9PmhXwVgOFOxPrjL3m/mvDb+AgKxSJQfNKo=
 			</data>
 		</dict>
 		<key>Headers/SNRClientIdentityProvider.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GF5ZDHlLrXF/JdmxapAIDQSMn1M=
+			U06yrDKC5fp9xiSkbzHE3Ry3gHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			BG24hAFR8SqKBf0FRnqKhKVj8LKyfwFF7EJdzRADouI=
+			KaQJo5Uec3MClXGA9aiXCVZzHSKvxF/rTTY/BT1YjYM=
 			</data>
 		</dict>
 		<key>Headers/SNRClientOAuthAuthenticationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7mAo/x1kYabgl7n9eoKEGClkam8=
+			mIUEOOaawBfoau/ddlMdJgAFnP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bz2QWAQw4O3yHEj+8NG1dgLuWvVEq9ovsFpSX0uocfQ=
+			/OoXzxtVYyfIAMnJ060koCXNULgXj3MxTCMyeuBgF6c=
 			</data>
 		</dict>
 		<key>Headers/SNRClientPasswordResetConfirmationContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2ARcv2wvccKpR+fZgLli1ohsFEU=
+			mL1l9MnNangSLYxLY5MtfNJQv78=
 			</data>
 			<key>hash2</key>
 			<data>
-			r2K+hiLQysmro8DuhQE67nKd8sDo8YNndPvLVxumFoo=
+			aQNie1umPSvNQ4Dh1hbFbMfvVEB0RfZEnrdwZFQydcE=
 			</data>
 		</dict>
 		<key>Headers/SNRClientPasswordResetRequestContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IOEVO6JUqXgsN5UObmam+XPeE9A=
+			ppQoJgE7MILXS3RHGemVlIB3/Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			GpO3hcEpVAQo+KVPVoWdKx6dr6IHupfmhS0IBugIeEg=
+			kbCg9Uth1i5knWGSGCBPjhSdBiX/klc11lvngClIUr0=
 			</data>
 		</dict>
 		<key>Headers/SNRClientRegisterAccountContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			01ndxHC4edppO53hgVSg2NFediM=
+			mI3z+M62LrCMpRI3/Z/L8KjwbCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6AeMG/MzFrsmzKAWFk5RTSK2sB7UU++SJKlCD3tKy0g=
+			qlVIQVhcfXpnmUSOsiEKFJEk70/bjeLzXVN5uG31EJA=
 			</data>
 		</dict>
 		<key>Headers/SNRClientSessionEndReason.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PGSQpyooeba6cWVONXBfvDiENHY=
+			E7j7pcXQ7l2f2wjcLI5EWV1jEtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			I/hU/1GlY0s+UrxAHaHi/RQffCZJ05Rorgw8wwwZDvE=
+			GrI3tnUJgbMuBk2QUeRpdWtglboq6lSIom0EDhMFNOk=
 			</data>
 		</dict>
 		<key>Headers/SNRClientSex.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jfWEeHTxmOoAzMJBaszGjOMALkY=
+			OUja6mMB501gUU9iXbUuD1SaxWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			U3xK86eAtiK0kx5qQ0KB28+oOkIAEYSz0JDYQg+fpps=
+			T6W4MVygFPpwmMXMeUK/hIcJFeKF7ubqPcTiIuGfiYw=
 			</data>
 		</dict>
 		<key>Headers/SNRClientSignOutMode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bXKP6UT5Ya/AKAUOxgA/aQwPQ7A=
+			C7zfXnyPzMgBzd/8aNqwlVis/SU=
 			</data>
 			<key>hash2</key>
 			<data>
-			BkESJvgIH1tIP5hJ/6vLxcdcpz8j420RyfpYtE6CFe4=
+			iD3Tuy78S9hCRrr/HZKkkEOOIHdSj6GY8UcCnDr6XNk=
 			</data>
 		</dict>
 		<key>Headers/SNRClientSimpleAuthenticationData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mYB1db0WqAcnFtIUaRPvyr9shNk=
+			fT3gp/+DyBvvWzXRhGIAW/1pMhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			S8zKoozPg9ugm0ZH6YaA1o8pByDEQddHX5PETwxNwsU=
+			3T9bVh+QuYZdHFtUU/O6u9b4O0gUOC1oHLl3vhS2+JE=
 			</data>
 		</dict>
 		<key>Headers/SNRClientUpdateAccountContext.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ru/jl2FPALLyfRdKGB4EabCOC94=
+			fESw7yDDScP2BW/XD4fVbrkvNGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			14ypkGfZHk+rqIqVyzKy1Y8MNnCcU1SOxCIu54Hily8=
+			Nc1I2UbgV/KgW89/KB6zXhUWTzT6qGRhOeG273tAQpg=
 			</data>
 		</dict>
 		<key>Headers/SNRContent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d3mxgiDATq3e53qRrUJqLRng2xw=
+			aKyPOKeLK9mBx0PLZpQgy2Cshl0=
 			</data>
 			<key>hash2</key>
 			<data>
-			V22C5pfAJ09R7btTf5YhojK7bUsU0R3gvnp7v2/x6V0=
+			hwVwF/iVr6N29PUk4m3yk4BKZn6W26DtSkFGA72sbRg=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidget.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cL7tf1Rz8tdM3xu8+ykkPSpfYn4=
+			/9VPMuAtMNrN35mqFIX/7yYYS3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			UkzTPhi2PMqLarJpUdf5LmXkeuUajGPqpDxhMCB1JYg=
+			NJbjPcGPQyaheUfCH3B4h4duC6W6ncK+fNh63hRwfdg=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetAppearance.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aU6Ypb+oEQ0/pMTNmxCusx+9lbQ=
+			Q4mlhEpB7gUy9NapMJZGM8EMZJw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jAY5EHPSY4+c1CxDSZYO8zzQ0EfbND86aHeuxihw0RY=
+			JQtSquj0iZ4dDvFNU/yNnhbO1JDnVsjoL3Vq53Yvnzk=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetBadgeDataModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h/3wdL5jOXY1vMvl7V4KGTGrO04=
+			FGqD5/y6s9p/+tJ9eHyiFsLOMOQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ybRs23lDJCmqXDWiwM+3LzoYcBYBe13SHUwifaRpVtc=
+			0eZWZmF9pISxh9NiRoEHLmQuvf0ro3Sj8WHsdDlC5Kg=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetBadgeItemLayoutPartial.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I/Lv1KiIipACpKJ2FidqNAa5FKQ=
+			7/gyfwhBc08UDzWFkjRfsRKA0dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mpMLEc1wZMZ2ocFkI0VhZHJOCVyMH/EFwbqJSXfGwhI=
+			umlF5HtQQcvOveTaozyzmzZqqVz7hHl8D4rnebVsXdE=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetBaseCustomAction.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YmlRIYZuHxBdIXMUhvpa8nHdcDQ=
+			Ras+ayn1hRn+Z61IKaITcgTTUKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rdc0b1VW7OrmX8H1139JdebEf6/Gd1ySfeb3EwGYr4o=
+			SyzWzPUxQzB5K6Zc4+huwoyyoAZt712BkSFj16L86EM=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetBasicProductItemLayout.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lXBudPXkieHJAvJupAUswfloK1A=
+			j7dqAJvfML4u/sYb71XHX5mMi/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			X25EKaxxLe+po9i9DFfq3tiK4ZtZbbZKq3OPRaC46gc=
+			PIXtAracy69LLstp/PXmYCbls8eKS1ZEm3KNqZJVl+0=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetGridLayout.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ttbz04BYirB44Z1QyytzNXVNTDY=
+			GjdXcDTKsiXrpYjT/Yiu4K4rO38=
 			</data>
 			<key>hash2</key>
 			<data>
-			9ZcvieoLkWaxPIAIxbW0VmSf6RPrBjl+vR55iii/l5A=
+			QR8/V19hPcNnLMZG3EWeUjzbyWDAYdIGKmgvD9J1THY=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetHorizontalSliderLayout.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1FCofU92qsc3lo2Ey2OiCELI5kg=
+			DSbM4uSrLBO0QSgNPjKrdlfX9PM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fLoR5xPNAjlCG/SkhdSUxWkLe+CioadiVOFy8rNouYc=
+			v7FW1eRc+3cbvBHXQFdud7X7ct7ajIiNOguNXdVkmE0=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetImageButtonCustomAction.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			slRS/sMcP/8+7GZeoduqZ73N6N0=
+			bLXLFpXIHJ6V0U81UOKAEnHgDBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			oxCVANGHgmLrmAFLcnCHGcZDA1l4F0RWS5bSlTlNb80=
+			UkAML84e1yaB6Bc4l7u8nOVGTv6w5PpfsEmvyUaMxco=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetItemLayout.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zo6712BQQ06+sctFdkWsxSX5OaA=
+			fVAmSQVlc3nXRw1sVskJVHRmRwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cDycQm21beFKybRBVsDo4YQ4GywdPHHLCqmwwgleHWg=
+			KD+nNWE5RTzw/ln7hLJIxmVQIjJRNCVQWdVoLAw2y+Y=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetLayout.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3KooBUopetSh+6SIkKCkct6taoM=
+			2oqqq5NYeP8eD3uOhdsQNmzqAcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			rGLMocCQdGiou+ACcG6JtEBLihZfR0q9V+FaD2CW4bg=
+			XjO8CPCIYFXhLoGNiENbHhUTFAvhGmeRq2dQhqDAI4k=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5j6ASDUgo19R2rS9Nkyw7oBu9ps=
+			YEmHYbdDsWKQ5iRfQ/GuDOEMggQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			FchE9fdnvgBQ8EnXXEmaxgt4wSUCyimWJH6cnjX4qnM=
+			pu2DWkLsOrm/Yp/zm6/EGfZJL4MUCb+8Nm1/JT2nceo=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetRecommendationDataModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ABjn/qzG8HyS8u2amxVjNztfH0s=
+			rjlow6XAKjp5sWby15yPhuouVYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			C2E9QjkhUTuJpPQYzTjDW1UY5xfe5BXsB4uNSuLj2W4=
+			LSpgcpEU1ZhbDyRRjuJZTVgRQQnuvFsMoweMNjMJ+uI=
 			</data>
 		</dict>
 		<key>Headers/SNRContentWidgetRecommendationsOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MVHK7ndy39UFPKaIhkKBPnn59/M=
+			aH6s3y3XKOAdnapH+myBJXXvj/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMU3PCfS6qMZ6Q5xDhpgg8mCgWvzybba2urvuV8GcKE=
+			mcqd58htdJGOKh9HTu2kxwWEEQ4Ma4eh4CRdPgVZ6A8=
 			</data>
 		</dict>
 		<key>Headers/SNRCrashEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cwJiVIStlHXpc/tv8Cb2l890wB4=
+			aNMm1EQ+TmS3HqaN49ob2Xg4gss=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZyZwhu9MkiOULMXDJlj6m+Jg2m5YnNU3+BEQLJUdyQQ=
+			9Ipvf5eZRvVaczInbZh+sekYMLhOr232nIT2k0URrpA=
 			</data>
 		</dict>
 		<key>Headers/SNRCustomEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uy/16Ze27qGSvoctyYYEUUsWFH4=
+			7B5JxgPxqeFlKjvxwGwab2Ba9YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANW9BaffM6jiG69tjCkgJejajv/TeeNnjvLyE23S96Y=
+			u7QJuFzQABUgRljtM7p3elFWHkfNrmHy4N/4lv/kAlE=
 			</data>
 		</dict>
 		<key>Headers/SNRDocument.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WtPfD8y3fcGdArXyE/CSH940ckQ=
+			nl5Kw6ADH/ld9OFqKzRgiLiFCME=
 			</data>
 			<key>hash2</key>
 			<data>
-			80YROW3YC/Dk54FivQPvsAeLjy/7GDS7qzmjugKuQkc=
+			cxsj1byWO/jaXKU2o4jEabV9Tl1cq0eMaaFEvMUuSEk=
 			</data>
 		</dict>
 		<key>Headers/SNRDocumentsApiQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rRzqEobFleaM1fVYfCKrXkvm8xQ=
+			Y8HeOKaIIR7F3VrZarNBCPjbrwY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kuApUpluf2RdGRmDr6fhLIXEGIvUUF7jJ/XdrEPcf7s=
+			ozIPvBJsWEucUGF/oMBdIBUVjkmOVwI9GcLsJtSXNFc=
 			</data>
 		</dict>
 		<key>Headers/SNRError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ALjnC0mBZWERsgrRyny16e01A4w=
+			83moWunaREZnQHPi84PxNJPt2Lc=
 			</data>
 			<key>hash2</key>
 			<data>
-			oGPTCqz8u1k1c0FMxeZ8pYEaS8qycKub0mX9iq6+IJU=
+			NW0/J9w5mm9e28dROcduVylM6pjkGaVxz0mJVGlXDOk=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorCode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jx2tWr5g39qEHAI89hZwgHJNxVU=
+			S0yNKGMgBCt2BUpfoybjruLErW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4VmLsWOq1HZT59GmfdNX761fvuB/dXqUwxoYZUezzw=
+			1iXiq9NtzixfFdzdlS+RZHlf3bQmCi/OTP7NPxIU2wA=
 			</data>
 		</dict>
 		<key>Headers/SNRErrorUserInfoKey.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FoAQsKOV7R6WR+QsgFEKIay/tz0=
+			xjYpZDXvj6SLzqqRb/MZ1VFf/fE=
 			</data>
 			<key>hash2</key>
 			<data>
-			FAR0/8H7N+85rLObRQ1+vxS9vNiF5qV9QPAG/HkGKdw=
+			SawFQFCvys4KDazZLtJSTioaPtN0rbdgf2YKBfplfy0=
 			</data>
 		</dict>
 		<key>Headers/SNREvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n++d/pZ3CoWmxnFvs9kXe2H9wHM=
+			XXw9jUjwjZ0vbu4eiyl6vdsVe4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nwzb6uhokkBTLCz59zNlIded9bgl4ZWEXB8aNVhs0yw=
+			vbBtr/P09TdCY/VeCpeUNL6YpaHrgro3TwbWINvu+9Y=
 			</data>
 		</dict>
 		<key>Headers/SNRException.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vHCFnz7vsct+6O4a8gg1N8Xs1lo=
+			TgGO+dJtJa4e1nwhGaCSizl6j2w=
 			</data>
 			<key>hash2</key>
 			<data>
-			G8j9YXUPcqjCSX0QHU0ID8JKK2YewTLXCSesza7IY1k=
+			tldR85vOf/kWJbTPsC2QXgDQ8mHGcnU7yo2CBCEG7pI=
 			</data>
 		</dict>
 		<key>Headers/SNRExceptionHandler.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BAJTqGQMITywTQKnL9n1iFK6pr0=
+			M67lh6UjfCmuv+bc2UEO0iRAA6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			I+Xp6twuqMP+sa5iEtA1h+fTI3QsSn3pbT3B4IyM8fo=
+			q/G7Vcf/xQCa1JTNI91+M4RG32KUWZ8XPLPBhzARw2o=
 			</data>
 		</dict>
 		<key>Headers/SNRGeneralSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BluBGMf9wLPapxOLN7s5OhPPs9A=
+			Go0tf5KZwq7B/C5CmejxCNss95k=
 			</data>
 			<key>hash2</key>
 			<data>
-			FtsnoOW9gjHYDLglayf67NuqsDXq96lJqxYNL5biQCQ=
+			Cz6p6+t8pSVUmcij0s/7B2MGsnoAii100p9rjbYojls=
 			</data>
 		</dict>
 		<key>Headers/SNRHitTimerEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y6bDIRoR4t0DCAUNv+0/Ki5E8R4=
+			3cswQqAayDRmwxhcZvtl0bRj5NM=
 			</data>
 			<key>hash2</key>
 			<data>
-			TxpOn9EaR+2Rfl+2xzb6TPqi9mHFOd7Akak+pks+jMU=
+			Kdq2v8sVgHl6eqPGZq/xD2OSzTXIWzjIoOt/RkPMaLQ=
 			</data>
 		</dict>
 		<key>Headers/SNRHostApplicationType.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qugwhzc+7azXEiVlytOtoBZ+LxQ=
+			a7pn7pP928VwR8Gq6Rm/aLu11MU=
 			</data>
 			<key>hash2</key>
 			<data>
-			79kIIHbz+o0zrt6L99waUkHTZ7QhDZKX74EBu23vMz8=
+			0VoLizQLRCEp80IqDvq1tIYx2t/tu3L9IZpfkWRZbp4=
 			</data>
 		</dict>
 		<key>Headers/SNRInAppMessageData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v9q+Aij6lmJSreCZG2m4Gh/dL9k=
+			OSteVK/VQ/v6Eln8/QLBRzaWAwI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Grqllp3N3PiGSN3xZm3dkBZRaxM2XEkKKQ2W5rfYRpU=
+			mq7R+JBnbZqkL53A+/+7uCP6ZOUMlWUbSfh6n57aRjc=
 			</data>
 		</dict>
 		<key>Headers/SNRInAppMessagingSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SP4TpW1jGCzLvzEnKTSxYI7ymP8=
+			iyx+EXw81OFqDbfzgEDySZsNIVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			bkP7vo2vROymW4FkMiRX1x1bY4QgZYUU6EtxGv9h4KQ=
+			hsKe0KkXzCho9JWlHNvugGekd3nm457dbH8+B8Zhelc=
 			</data>
 		</dict>
 		<key>Headers/SNRInjector.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ff73HysllHB4kCbK3Jw5x2OpEpQ=
+			ZyAUwwUZA+GTm81aefaNojeqdVw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XhDwzE8OAuUaUaiNTxplPcV6hZQw83C9ajDJPSbtuXU=
+			oajhTwzqrVMBXZ+IWsVCG/SWBXCAJfi+7xcgBMhBltA=
 			</data>
 		</dict>
 		<key>Headers/SNRInjectorSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+VO2cXrg9B1A7voh98G1O02dxcw=
+			caNgmgdbdZLRZI940uJT75kJuRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			foq4Z8nLxb8a02yzcpKuhT4BEiiDVTv05zwidA0fcfc=
+			lZ+OqROCxmLRufhKDRvedIwiporCB8GH9PimD56ZIrs=
 			</data>
 		</dict>
 		<key>Headers/SNRInternalInconsistencyError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/0H5olwvuDlLPbGtgB7prYfDIyA=
+			Zcl41gAiiWUVdj9iKLXwtfD3644=
 			</data>
 			<key>hash2</key>
 			<data>
-			98TcWER2KfH1Ijj6lYDhhDfEaG2DPmYmJY9LZw9zpAY=
+			9pNk+KZ7nyg0ldsOVpOv2thGGhTTGjxbKX2IjdY2ZQk=
 			</data>
 		</dict>
 		<key>Headers/SNRInternalInconsistencyException.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5akGAsMM1o39gdTDQ8ryEEKZ7cc=
+			3Jy7904YFh9dn73DJ3lIHMcsntQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rdVpXter0gsY9Y6fwwTQPqpyKSu/+ZY5Ngu1tNgiiLY=
+			MwXmIAGUoyam2Io7RPKWGkSTTCYb6cBhlAKcnBjNMoc=
 			</data>
 		</dict>
 		<key>Headers/SNRInvalidArgumentError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+u4JIU8D4VqMZDmC1ymShJUz+S0=
+			upaFJr+LGtS9nnXtj1kBAKfDbyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			805ZeG0cI6wcA1A9uWJ1ioW9veMiOn9r3RiuqyYU50s=
+			YLAieUnQ41gKcUMcPdyZGs1G86nEyJ1QslWvreMjUZw=
 			</data>
 		</dict>
 		<key>Headers/SNRInvalidArgumentException.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a7je8S8mqdXuKrIysXd44PJwW5Q=
+			tBcJ2oRYH0y+V7OWDFrGJWLpwTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			J2l1HkvGA32wEUg6jTHHkitlX4MB+xBFMVv53kXc+HI=
+			e4EDhIyJWgFZ81DFb30e/C5RdV5Yz1nUfFLbfvz1UTc=
 			</data>
 		</dict>
 		<key>Headers/SNRLoggedInEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CtSHlfl9QrffylSoSfOhyoS0KCs=
+			hpaG3Oc6kwID43xkswWMY9jF4eo=
 			</data>
 			<key>hash2</key>
 			<data>
-			s3TgodL+mHol9eQOT9OYC3qYoz3sHzAg1K55vqHGMSY=
+			d4DGkwnLbEGJQsNVl4hDmhk2udr3S0yHjmFR75E2lpM=
 			</data>
 		</dict>
 		<key>Headers/SNRLoggedOutEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pjd6w6JwZ+4ovoWVFV8SEw3zRzI=
+			0J0BpWO/ayAK9UvuqBcxerT3Rr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			03mt74p38d7QTpek8mg92gZUU5j65MB2IjTX57TAp/Q=
+			MSFuZ/olohvMSKz3J2c5yK8mfvnrlTEFTUCZA5mA6qE=
 			</data>
 		</dict>
 		<key>Headers/SNRNotificationInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uUzypfbJCoSWWtZHMcdgpIhrI2I=
+			0LCP4D71GuUM2OPs6iDQAhbA0BU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JlEy2NkWPF5k5FN1bhM9QKXMlyU5Hjw5XdIGH0YMSdo=
+			fJcOeB8ZfrpWiZenEk8zqw3ljmWL2xSRsHYieOa8u6U=
 			</data>
 		</dict>
 		<key>Headers/SNRNotificationServiceExtension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yFhI5OYrB87pF42MPUjvK48Cbmk=
+			txvArRC9C1+t9dufpwf5sT/1sXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			KQhe16nFCn/LYNsvrDp3ld1MeLTBZPhe2ZQ5HZayExA=
+			k5ssidUt1pzIVlgk6oGg/8qVd0UuKGaslA8bdrT9B7Q=
 			</data>
 		</dict>
 		<key>Headers/SNRNotificationsSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oYdcCyC3akPdMiPTK0rjMlKnBHY=
+			x0B4EbpPYygf9NAPh7qysdXSYzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1ansLdhRWjtjMFnD//bjIgwSi1lZaq2qrVjbK7NCx+M=
+			ovtuwI7QCwqZE/CBDrOrSbZgEuKGn4qnJhIKCwYwORY=
 			</data>
 		</dict>
 		<key>Headers/SNRProductAddedToCartEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			93RwBSOzvN63e24deBZH2u6Yj70=
+			NxGPAZbvZqBAwGMzr+hJAmsoB4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			OJ5ENftihUbWtUOZnZQ2y4QdQ60iwzkyDRXxvGlSOUg=
+			iUnnjwnsbIBUipy6ZqfFonX2TDOaxaRc0F5QzTBbqXM=
 			</data>
 		</dict>
 		<key>Headers/SNRProductAddedToFavoritesEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yU0bURpD7Bhkr57ghhGrUa/DFrI=
+			79lPsI014F9QnDKxTsmgrPFSHbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fcamj92bUHNZaCrN6omjjf18zPgpArwkr4OdoaC3a34=
+			B0NrurL6xTxbh93mKHz4ddfjMT6Be36Pchchi9cofMc=
 			</data>
 		</dict>
 		<key>Headers/SNRProductRemovedFromCartEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XMFKu5GFvvcJU3TkTf6bkJEPVhg=
+			qaCNvzy5gOWmkizts/wT5WMrz80=
 			</data>
 			<key>hash2</key>
 			<data>
-			59Yyadzj7H3VdO71TT9R5zlibHmiluMF5+nPvATw3Rw=
+			bx7DiUhBFXVaLu/MYR+YT4kwT9PguSUcqoPGfJxd0NM=
 			</data>
 		</dict>
 		<key>Headers/SNRProductViewedEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zutp1ckhWgxyCsMoIfLna6KxAOM=
+			ZI4TFfTCiaoxVNDPYYLb1HU7EgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			OQpPB7szNezs5MwdoZZCKXtDuuLx2krRQwEvAoPBu/0=
+			z/vOe/1fiyltB8liXv/3aed2T/vPiKFpvKDiUcJvnT0=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotion.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OZ3k1Ke59yME4SHoD9Ckt48MN+s=
+			2AbIRGPqlUeoKOsBctbaWAv2njk=
 			</data>
 			<key>hash2</key>
 			<data>
-			R4pvdiFaohVyh+yk+qzC0w/aYZcENB4gv/TyfmnROOk=
+			pfBvS/4D29NcbtSjyEDpKZ3nPFaR7aS48pp/SCjMbYI=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ocjCuyYjQVfbx2JYWkbkrkSdc2A=
+			k+WngJLgqxoCnMYXc8LbQe6gQ4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			i8f7HrRiq8dp9N45/zZfTSxSfsj5e40DDgCTyHO1sJk=
+			uktqJeqa7hxTJX42+rlBq7uojQr6Zs5yrrqJc84SxKI=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountMode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aEFvf69U5ocDn8vAasmXjgPhAP4=
+			g20tHjDEG7vxzDt5V6wjKlM5nQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ahAvxx10bCGoT+19cYLTLuaLrW2HSPzEZfkG7dkHHrk=
+			GoRDte1nZbyWqqJQtNRx6oGrd8rId36Tbfksq4ZdXIM=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountModeDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9jyo9OB5HIE1KiQg+6w5mC6sYy4=
+			Fh1Om3BC3iMAl6nlyP5T0cowUi4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ity9+YhUrSFgyf8PhYX8sbE2pUkXsF1NWxy34SCb5A8=
+			faiOZi+JgYJ3LqFCVH+rWFYpoWag79SBUoREElzwI3c=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountStep.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			djK3+P5Ngr74TipomQOKs7YBq2Q=
+			7uSjY8UAd9qpPiVg6kQX/0WqEKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			UKCdmFxwnqNr4TRI/sB5dpf9rpLUHCyXZ48pXta3nAI=
+			BteIJ83lfsuR/NGoITnuwnB3kRaykKxwbTeXQl60Lnw=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountType.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X4zo670sxfcVqt21n4RkAAI8lUw=
+			4f1aqZqYlwEMq0rok4JEdnN9rRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JHXeRq7XUk1qPriPPzMuyWf/0vGNKBAvZeb8tiorL2E=
+			IKabRuKf2nIXNosRuQeafvU1tHddWFbK5WfgjSm/oGw=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountTypeDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+uiHYEtqv284ywB78m5UVcR2gWs=
+			+OdpHUgqitZYX52udZdGz0Qt94w=
 			</data>
 			<key>hash2</key>
 			<data>
-			HJKETHNTymkPL0ldKwT12pNgZJirBGe/2BWEKsukyCo=
+			JkVazo73ikEsg2cIuVIxW53+tjM0Kgxke7yKMfdll8A=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionDiscountUsageTrigger.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dlwIzLkBU2lFypKj9LZYTprqTL8=
+			slK3NT0luvx3OMSMHq6AzKYFw3M=
 			</data>
 			<key>hash2</key>
 			<data>
-			YHSBo2zsTdnL39kbbZcxKotdGCuAmO9J0c8ilv4Sx2k=
+			pCdnMfSDPWt5O3vY/RIwRv2LTl4eIMkr8VCCn+ubKDc=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionIdentifier.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QF526JuUFhMhP2msGoZx2u+uaEA=
+			Jt/Akn9jikkURw5W0P23jZmM7To=
 			</data>
 			<key>hash2</key>
 			<data>
-			A/GxvfQ8fua9dDl9Fer56S3z04JJUbpBwvppH041Hnk=
+			FKrtniUjcEZjRzc0VPRgQcyPvX0snOyma/b+mygupkU=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionImage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a0VJx2iLf2OGv6oZtOipnLOS3Mo=
+			cci9atAH/iMAGkqF3DjorCdSwDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			x/OiBLa551IP+7Do+v5qtFvG34m5ANiwLpqYQtnpfuM=
+			sI7Bcy1iMwBr2cJE8P7jT3jxxZeEdVBARLl63qukEcU=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionImageType.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DwfuQ788vfsrZZ5X4oklicVJWpE=
+			7NgkM6UVtZI1yuBLT2f/zFf+jGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1GPxJUL5TNcCQW25dG5JgRHlDHsqeLO0rSNUNiuxeDE=
+			6BssT5wnpwBPoAA9wxKx4xPnvTY4AMLYJrh8qjqpuW4=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionItemScope.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RgCfTmKnbS5Jxy6950QNDVArgkg=
+			VVs0B3QRfPERWjOUpypHUhcT3Vw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XC76iZ8iT3t/6ol4AskcnZi4BS2Aj/WVevLr9fbh7No=
+			gbnCPAerlGOdVzj40F6TxpGmrx+CrcU8GoWcpj6Gy6c=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gMi0I/vgIu3EQ5VIGAyXorzGh3o=
+			q27sDvHuPWsqpo6ckYKDbUdJ/0k=
 			</data>
 			<key>hash2</key>
 			<data>
-			OFCpK9mE/tS60WSu3kWD2gld12CEPVzKt/O07jSdHAE=
+			r0+DiUiLBmU6flnwgRnfEWcZJw/QwmER4GiLCwGzi6Y=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionResponseMetadata.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			poOIJYXhsF2tvthAEzG3AlFKSpA=
+			Q4TLeT8+cvOBvUQJFiBXwdMGC1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			IZh8GrEKYD8Ey/EmFKkh33VsQluVlD8IybBFpruScXo=
+			BbYJlLI7R9EfhXCOxHwgrhfJWAfZ8OBZMz1pO1PGjHk=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionStatus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YOI3SF+46+KjqByAkQMVq56fJGo=
+			574ji9siVb8gOvZMfM2/gGE3eo0=
 			</data>
 			<key>hash2</key>
 			<data>
-			MA7Uu6IDyjEtXx9cd6foDzObLXgScVWrlsevVLmjYrI=
+			rgTPqkUXZD1PVf68tIVHHZ/nUq8EYnPd95cRyD9094Q=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionType.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CebqL7zaBdpRMwggPiQ8ytXfaec=
+			0bWlBX4f4KB4vd1+gZ5OArXOj7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			QcszkBWVEaYUQ7sPFg6bFvqj5Eb979IsByUjIoBwAlQ=
+			93eXYo/ax1pHBUpd1cOtYtDPf6MJhzNYLKYxJhVaFJk=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O2R1+Rnf/boGjfn21KqGL9BpYP4=
+			WvRPzgDwQsrYWRud9ZG9yUopKg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HDX5cqQtqiA+znHcEoE2wED48W6PJvZyvP/qVMc1KgU=
+			/kbKlaMzwC4IQWCrjdP+fOrJ+52JnQjoQu1GLv4hoCc=
 			</data>
 		</dict>
 		<key>Headers/SNRPromotionsApiQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OkyGlTHrMmDidq6YAmLoMJe9Ook=
+			p02rhJzIlg1r8FgpT4eAyPlNVGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			uNtCTl5ouxdHBrUPUnvOCEsrIVYVSEaVlDnsLRUN7N4=
+			I9UORZZb5+YTDRGunZetG+D917TxyuDAsrrbv38LI7E=
 			</data>
 		</dict>
 		<key>Headers/SNRPublicKeyPinningAlgorithm.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RWole4qmmy78GgshjlwJ67TZun0=
+			5cDvg9470wQPBjqaN8nkAwkonsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			p2B1p/QVDHFFETqUCo2Pyd4FfpW1/kaVc5XGf/Whl/g=
+			AsbsxY2W1MtSH2k785nV+oUW49+SFV55yRRCckfQQto=
 			</data>
 		</dict>
 		<key>Headers/SNRPushCancelledEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sjbju96tZ7mocl1bteDxNgOw928=
+			fK4qAbxVGIHGUitMck3JMWq9Q0A=
 			</data>
 			<key>hash2</key>
 			<data>
-			CLdYQRtmhmlDMzNqq1dpFcjXcmfKcyW2ohd4CzkknZ4=
+			axaQGNq93EUYemF6rLNyLsscc7GeZhoMmwEmyP//5dw=
 			</data>
 		</dict>
 		<key>Headers/SNRPushClickedEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ejrf3VPs0fHawvxL7XxHdZE1Y5s=
+			3qoP9niSE8yFYysveLqIyzx6ORU=
 			</data>
 			<key>hash2</key>
 			<data>
-			BILiatnZ2yaKsHVRqMVGY+NkynLF5rRbj7jmSX1IpPw=
+			puzFzNLGVoWedikntUeXuSVC/Hx+w/Fx/NF7I1fWlqk=
 			</data>
 		</dict>
 		<key>Headers/SNRPushViewedEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zhvXuH+zPiSnjmSb1DO+YDcCizo=
+			YEoHeWsuEs4aWJ6EVy213qeoLt0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XxcUbQ6kiyUNdNEKGU0YS9DN2QqvtAKzwhBHiE7bqnY=
+			+ZHuZagOuW0UcpchrKnBV3g7/8UWDx2o8f0mV1Fi0VI=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XFO0zFxt+FTD+tLffGZp/kyOxzM=
+			4C+XSrK1yJ2HoIjhgsJau2zBooI=
 			</data>
 			<key>hash2</key>
 			<data>
-			PouJ4UcbEOzXjaf1vbHhgqQCvx7aHD4CD+I4MN6KB3Y=
+			xSTMEGU6SLbD+LxuihR159FV4fJrPqVkgwKdcQ8NJgs=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationClickEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VPRn18EmF+hInqBwMKV+9c1nAQI=
+			8XVF6j2C3/lzxVi6J5IeVd7Dgbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gf28ntIANlKxV7HY5tb4U+0X9SBkbD+hJRwaSNx+wII=
+			o43O9t2E0mKl0FPeHPXRlznM9HbEWJj8owC6Z3Rdh3g=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H4keZ3r60aaPuLd3QdusjQKuvoY=
+			gnbph19WZNjqfwtKcXZr0PL6HTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			HW8BSNLYsTXeXuiJVWgaei3ottzKaun7WWKij0siWNQ=
+			u671V4q6Pp//36siPT36NOvT6QV4DYg5KxH3YepAE8U=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C+w98z5qXQuyIAXAyv5A97hpTGE=
+			SQzGL2jiKuVfZ9s25nyn4TuZwE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9MXPzJ/v1b5gkU2LmvseUuARXQWRoejLzHuG31EBoXs=
+			bsMhcCJ+DXVnhUyQ1HLzsXq+UkzpwVZYDjZP8mpa+WY=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zoBYtER+L1fzbaqV+E6vq2odvu8=
+			SUeSLtIkUr/q6DqxaOnJD2bthPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oN+Z3Oyp53J5ODBtQUgpHUv43CmQCL/tB1WCGyqkSDE=
+			x3yneLeAD9NlrcoK1HK35Q/KXyjUmqwm5FuGWvTqknI=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationResponseExtras.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+QEZLHI8wFhX4waZcM+szd6NGis=
+			n29Z3rb5z0CMNTXgUEdvV6xhlmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			i9sMBiWyUC4BiMDLdAjer8qz4qifNFZgLk00Hdg6Ol4=
+			+pfONEPRukkbfjOgRk2vmYJOoAaOlTHdgqFI0VTOpYk=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationResponseExtrasSlot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3HUDk6C2xvj3f6Gow5DZ3rI68nI=
+			amTIGs0ExKzRwmJPVdwDO91WG1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dbdnde3OlBjXg5QDfEPh2F7LymLggTAwKK5Q12cRwzY=
+			kClOpotLBJ++y0UuAbtlWcl6/EDLp7APi278M+nQFRM=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationSeenEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ndqgV+tbvZUjMfwKKuN+QllOCOY=
+			8R+Hn+VN1J9MNKdA1578eoJJkLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			z9F/lL9u1bHZop1o4otUDFSIbin9WKyeRVB1dAXUiYs=
+			NQ6Ya5+4S2V5LKsrVeS3pblaCR+xUl+KF+DwmpYkzMI=
 			</data>
 		</dict>
 		<key>Headers/SNRRecommendationViewEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JC7bwpbuBXjaPHhKsEW5HbOEmE0=
+			ZO4RoNPrIRtifg3kOJ2mziMIReU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lwf1lKg9dHTzhb0Bh0K3JMEBEUcLBCeg5pDWpWO53FM=
+			phIotv5yYlQoZzaLAktVMoJYO4IGk6WhH9hb/B9oVBc=
 			</data>
 		</dict>
 		<key>Headers/SNRRegisteredEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/T8nytxT9IYDrusSSowiUjUMuWA=
+			Yl+mzeOazD7n9wmvuqGycKHAiRU=
 			</data>
 			<key>hash2</key>
 			<data>
-			NWDR8oScpLOmx62Tfn41WgyzVdGheqts4GJQzWoMKSo=
+			BUJVcSpbCoJaydZAbTlvNWKP+5wAhFglAff4aVIJBr8=
 			</data>
 		</dict>
 		<key>Headers/SNRScreenView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zCmxWizlIKPcI0bZrq0xLpwyRvg=
+			r5wuPjT5/mnTnZ+tFk6nJWonETg=
 			</data>
 			<key>hash2</key>
 			<data>
-			PqVY6LjiQDlKJeo/S9c99DoMLU0FonL5qpIssc6FiSA=
+			L9PQZMBlH2HepmuhUo1+JFDtsMaC8eQn2X4llQmYL6Y=
 			</data>
 		</dict>
 		<key>Headers/SNRScreenViewAudience.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			20BoOHcvpTTvpm5sPlLVzOQ2m0Y=
+			1fxk34NBw2tQnOn4rHxPx6+zmC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			+QK7vWIod832PXIB0W2f9PDPf8cDW4BV+qAdzuEKps4=
+			DaNRqy0FdAG9qsDHpg/Yx04lSx7fPY3CQpKHyJkxe1o=
 			</data>
 		</dict>
 		<key>Headers/SNRScreenViewAudienceInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2UMhkdGYD0Qk6EDL1yKdaSvqJtU=
+			7fY7ht+B7TeOVrHqPRr3QQVuHxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			lNBuLCAhGkkAEuHETZ1NaYbQQlH6c+w6UePjuXtoUJU=
+			1qzO3XSq/kr4Ck3i5VZecnWNHUjd00SZvcBdOBMB8tM=
 			</data>
 		</dict>
 		<key>Headers/SNRScreenViewResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y112ZgLaC6svxGrnfedj/3sbThk=
+			n+ZXGMe1fHE25RPvW3Y4BYzTv00=
 			</data>
 			<key>hash2</key>
 			<data>
-			xJi7TaGv+a6Z1ik6Eg3yS4f2M816AwVuMEEn4j724mE=
+			MQeGGuL33BCHb/pHNjr+kcsW5zt5IDW4sDtoP1aI5oY=
 			</data>
 		</dict>
 		<key>Headers/SNRSearchedEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ufhna5PxeWuN8ZEtNsRqKb7EoDc=
+			j69EXkycHF9z87CV7wV/V3gBRPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y8UfkGeL7bfqhlwyyiwdausb/m/eAlbMNbe1Hr+jq5k=
+			+wnDOzhqqm7Am3cHr+wLSTfdaUN7cGdl2MWDwz7ATwY=
 			</data>
 		</dict>
 		<key>Headers/SNRSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7J9AO9QLAa7LT1K/7ZU4I2EfbPQ=
+			IV54QxPCMeWjiqRqaZsdekM4UL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dtC3qkTPIafR+xMYXRGs7QMmIQjQc5w+xXdQOChtdDw=
+			Cq/pdRKSpNRaBOXZUjxT1QYDfYXjPEKdTas6d9eIBOM=
 			</data>
 		</dict>
 		<key>Headers/SNRSharedEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XQQJnT1sYWp1iB46WEQDDuAyFFU=
+			0dfkWB5wXQeV1bqR8sIGS8QLQjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			W7yuR+0nlHafLn86sdR3ul+gs46GUm5VG0MjzC/dAy0=
+			5xyD8mI+NPL3vXMv+behVyBudiVCw7ymwWJhBDODSKc=
 			</data>
 		</dict>
 		<key>Headers/SNRSingleMediaContentExtensionViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l95vaZlUaIGM3CP5v3p9IWZuyQk=
+			lXTIlUlBurVJ31yxFteYNujLQiw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2bSC6ODrwTxNxL2wYFgYGsj7SOdC7CxqL9RQpJjPaLk=
+			8Hmi2esEb+1eX7/Msr/1QURMtpwsoZfH9EtUhTqFSSc=
 			</data>
 		</dict>
 		<key>Headers/SNRSynerise.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5fcIE1qbq/F93FGMQniXpikS4qo=
+			Hw457sqUGCpeHWfQF1Sf190pG1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			6XGyOLg2B1+LoLCDKTBOHOhdh4XtVenpMkzPlpqJ/qk=
+			yEYVStDyPE1oaaOSlwYaqU3CkZrwLKwln7lRrtX9oJ8=
 			</data>
 		</dict>
 		<key>Headers/SNRSyneriseActivity.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pYIpmOHxvOwZET7itq9O0oG0ldk=
+			P9/DBh07zCswYar9rV4+pxZsadE=
 			</data>
 			<key>hash2</key>
 			<data>
-			HonYhymZGe1+vNEUHJS9ckjOzO+KNiwoDeKm9NHGwcc=
+			OrCtObw4uodFfn8xk265wh7YsyBP3yvx6JP7ddfLwxI=
 			</data>
 		</dict>
 		<key>Headers/SNRToken.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UmgUvxRmVuyta6Ned5YPJYc3rRk=
+			OS9AnH468wJvaa7LvMqBI+Gtmdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			U+sGIkzWumX6GQMC0TS4JjlQsQmHmav3WxL6a+R5zNs=
+			+eX2pEyE2/djofDp0hLM3GaY5soaclE1nkFAwSYI0aw=
 			</data>
 		</dict>
 		<key>Headers/SNRTokenOrigin.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HWiIoAQt0xWQ8PkryFykUlkCgt8=
+			L1fM/nXJT0bdkLEFjgpbNrzI+i8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kF1zMBY9rH6w6/664G96Qcd3YgzVfBqebv2oHhQ7ffA=
+			PHI2x/kPI1BCK9tDTNXobtmmXL/yia9RPxNBNdm039Q=
 			</data>
 		</dict>
 		<key>Headers/SNRTokenPayload.h</key>
@@ -1941,132 +1945,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yudKgXM/XdacniVaMNCVyER3gT4=
+			SKobL6aXEgfbQ6q2MHSmyFjxQcY=
 			</data>
 			<key>hash2</key>
 			<data>
-			035OnWS3oGDAVbqTaF0TqCec08M8asqSFczetpTZwpM=
+			sMW9yfQuy90z5bwsIXCR9I+hzJ/r9XgIDUNp//4jCXk=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerAutoTrackingSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sKwVLy3U9Y6SK4KoJDGDt0Gp74o=
+			KWvj+rD0TDTMFcWTi+yEcxOtVJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VbokP/+yyTDNjt6LrzfE3JP27xtcTc0Ex+w2jPhCKfM=
+			7iMVYk4wv4GpZT5rLSiyrvr/y6U+/FRXDpr+9KxMxM4=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerDeclarativeTrackingSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BPVpeMzx5hC+TYjkMyZVKoYKbRg=
+			c5BxpBsxk+AnNGGkTJRccdN2gD4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/wgwkp4qyNStFoydAAn/7pGIJEdANHoryWuHsSApzII=
+			/ZYbWbuuMreBCPqqz/R1MewEsrPwCzqDx4IOeL74gRQ=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j7N8vzlNrZ5clghhxBtwHYIj/3E=
+			vSNTmUfIbf6zN7G+3xExgsGKnCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2yEJK1CmCGAhDc5lkJ09NcMs3PbATfTi+jOYcVdUkiI=
+			6GXX3zP2IbBMbvZjabYWhyHgsbcX/QUxb86QK/mplxQ=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerParamsBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I3YFmE23qMucixQeXumrY5W+PZI=
+			US3zQbnT/7HxTeD7o0E5FctIQjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JVRQgylr+M7yCjRcAN9gSEK+qItamv2LarVq57Z9CY8=
+			eYeD9WMpsXWtzsZx+8ZEZyZFaXNuYatTJQkRAbcWQ58=
 			</data>
 		</dict>
 		<key>Headers/SNRTrackerSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/u4tEigFAX61vCX1BzZjnsZEAQo=
+			VOGvgbsAlr3eRwhXKTZl9+QubLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			C9R8OLaDXs4gCmuBf012oiO6NlCxZ/1/qXhPg1lF40M=
+			N2TcGOOIuxPkJatdon+7asJfRz+RANcAm3pNciyiZwY=
 			</data>
 		</dict>
 		<key>Headers/SNRUnitPrice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			triPyrxD3zRhrzkPhvW7DDnvFus=
+			aad2LLiO/60TMoLOUOh6VNM0T+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Av2e4CENrCR4cRfi7JRkmcYpfDMYwEQKHmYflv9iZSU=
+			z8m4E059TuI/ni0IMATZ/94J0CQZyl1bILDOjPqv6pg=
 			</data>
 		</dict>
 		<key>Headers/SNRVisitedScreenEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jwS3TWIfgjMy/zZRHs6SoRLQ+YQ=
+			YCAy0but0obIIvM2VY1R5Bq9VRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EsE+N8VdfvMrFCUTWkk7uDbZj2JJrWXJ3ZNdU1XQ0f8=
+			nOlze716MFThJCD01harIuUd/MISIVKC5Fw4BA/13H0=
 			</data>
 		</dict>
 		<key>Headers/SNRVoucherCodeStatus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VI4ObeirZML/tYQ2UXgvtmxM/Ow=
+			tuRU9VOe4X5gfFbUh94VwyDEfZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UqxEykbJgz1Qbf5gyLXER41jzWWfbz6ZyYzY6HY6msc=
+			pDJOXYrc7O42kH5NPnPqc88X1RoPCD3cPZ9gKOA4ux0=
 			</data>
 		</dict>
 		<key>Headers/SNRVoucherCodesData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fmFxRPLWTD8BZEWIox1Ws7Alm+g=
+			+r+9J3zHcQtYEgLp1KkaJFNQrpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			rwyTBm8Rgk9u8TNrPiSeZn2hOx43bUUJQFstNxJw+x4=
+			FTATDu8WMJm9cFPOb/oM0dm3tkewgI0NjwSodcyTHhM=
 			</data>
 		</dict>
 		<key>Headers/SNRVoucherCodesResponse.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J/0XVjybdHg+xJRU6UpgSMgrb8E=
+			UhuJ1JJRiG5ajXGzHiSyxw7XuRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DK+DmniqTDvoMzQq1SScuSCIgkRTYYZzgt/JSnVEV0=
+			2k6NtzWDhOpj8osczeAzwJfayUv7rWgeQ3ThM3hdagE=
 			</data>
 		</dict>
 		<key>Headers/SyneriseSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tUEb+gaNxvL40Ct/oSyqnUiTlmk=
+			zowrkh+xjie7iKcGNAk335lB3p0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PCYXbML13idp968B9bAlUDWASw69wx55n6u95fa+9P4=
+			NyAVGq8blxu+9C8QMl7SbxCKwHer+eadTSNlGdPC4kU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2078,6 +2082,17 @@
 			<key>hash2</key>
 			<data>
 			hxZ/LJL4b+VD6eYntgUiQhpDR8+G9kJ8DcHxsX9hjkk=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			46pBj7Ywmbq74+/AYeKjtcO7ENk=
+			</data>
+			<key>hash2</key>
+			<data>
+			70tPPbNpvkLzIlYXgNPsB8AkspdAQ2IVEUaW80bfTqQ=
 			</data>
 		</dict>
 		<key>SNRInAppDataModelScheme.momd/SNRInAppDataScheme.mom</key>
