@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2023 Synerise. All rights reserved.
+//  Copyright (c) 2024 Synerise. All rights reserved.
 //
 
 #import <UserNotifications/UserNotifications.h>

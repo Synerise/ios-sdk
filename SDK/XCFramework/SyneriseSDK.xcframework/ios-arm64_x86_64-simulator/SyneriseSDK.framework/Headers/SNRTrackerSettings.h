@@ -3,7 +3,7 @@
 //  SyneriseSDK
 //
 //  Created by Synerise
-//  Copyright (c) 2023 Synerise. All rights reserved.
+//  Copyright (c) 2024 Synerise. All rights reserved.
 //
 
 #import <SyneriseSDK/SNRTrackerAutoTrackingSettings.h>
@@ -30,7 +30,7 @@ NS_SWIFT_NAME(TrackerSettings)
 @property (assign, nonatomic, readwrite) BOOL isBackendTimeSyncRequired;
 
 /**
- * Sets the minimum number of events in queue required to send them.
+ * This parameter sets the minimum number of events in queue required to send them.
  * Adding any event to queue runs auto flush, in which case the SDK attempts to send the queue regardless if the minimum number of events is queued.
  * The maximum value for this parameter is 100.
  *
@@ -39,7 +39,7 @@ NS_SWIFT_NAME(TrackerSettings)
 @property (assign, nonatomic, readwrite) NSInteger minBatchSize;
 
 /**
- * Sets the maximum number of events which may be sent in a single batch.
+ * This parameter sets the maximum number of events which may be sent in a single batch.
  * The maximum value for this parameter is 100.
  *
  * The default value is 100.
@@ -55,6 +55,13 @@ NS_SWIFT_NAME(TrackerSettings)
  * The default value is 5 seconds.
  */
 @property (assign, nonatomic, readwrite) NSTimeInterval autoFlushTimeout;
+
+/**
+ * This parameter sets an array of event 'action' values which trigger the flush mechanism.
+ *
+ * The default value is an array of event 'action' values. Default array contains only push event's actions.
+ */
+@property (strong, nonatomic, nonnull, readwrite) NSArray *eventsTriggeringFlush;
 
 /**
  * This parameter specifies if sending location events is automatic.
