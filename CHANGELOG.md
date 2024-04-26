@@ -12,6 +12,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 - `Synerise.settings.tracker.eventsTriggeringFlush` option in settings to let you set the list of event actions which will trigger instant sending of all events in the queue. The default array contains only push event's actions.
 
 ### Changed
+- All events connected with push campaigns will flush the queue and send events immediately.
 - Improvements to push notifications registration.
 - Improvements to stability.
 
