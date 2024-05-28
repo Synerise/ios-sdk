@@ -6,7 +6,7 @@ Note that Objective-C class names are prefixed by `SNR`. In the changelog below,
 ## [4.17.0] - 2024-04-26
 
 ### Fixed
-- Some potential issues with retrieving system push consent by the SDK.
+- Some potential issues with retrieving system push consent by the SDK. The SDK set the constent to false when the general consent for the application was enabled, but at least one of the following options was disabled: alerts, sounds, badges.
 
 ### Added
 - `Synerise.settings.tracker.eventsTriggeringFlush` option in settings to let you set the list of event actions which will trigger instant sending of all events in the queue. The default array contains only push event's actions.
