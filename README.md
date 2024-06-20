@@ -21,7 +21,7 @@ The Synerise iOS SDK is no longer live on this address. All new releases will on
 ## About
 [Synerise](https://www.synerise.com) SDK for iOS.
 
-> ⚠️ For versions higher than 4.17.0, please refer to this repository: https://github.com/synerise/synerise-ios-sdk
+> ⚠️ For versions higher than 4.17.0, please refer to this repository: [Synerise iOS SDK](https://github.com/synerise/synerise-ios-sdk)
 
 ## Documentation
 Most up-to-date documentation is available at [Developer Guide - Mobile SDK](https://hub.synerise.com/developers/mobile-sdk).
