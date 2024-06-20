@@ -1,8 +1,9 @@
-# ⚠ The repository is migrated to [Synerise iOS SDK](https://github.com/synerise/synerise-ios-sdk)!
+# ⚠ The repository is migrated to [Synerise iOS SDK](https://github.com/synerise/synerise-ios-sdk)! ⚠
 
-The Synerise iOS SDK is no longer live on this address. All new releases will only be published on the new [Synerise iOS SDK](https://github.com/synerise/synerise-ios-sdk). Any further updates the Appboy iOS SDK receives will only address security or critical bugs. After March 1, 2024 this repository will no longer be maintained.
+The Synerise iOS SDK is no longer live on this address. All new releases will only be published on the new [Synerise iOS SDK](https://github.com/synerise/synerise-ios-sdk). After June 20, 2024 this repository will no longer be maintained.
 
-</br>
+---
+---
 
 # Synerise iOS SDK (v4.17.0)
 
@@ -20,7 +21,7 @@ The Synerise iOS SDK is no longer live on this address. All new releases will on
 ## About
 [Synerise](https://www.synerise.com) SDK for iOS.
 
-> ⚠️ For versions prior to 4.17.0, please reference the repo here: https://github.com/synerise/synerise-ios-sdk
+> ⚠️ For versions higher than 4.17.0, please refer to this repository: https://github.com/synerise/synerise-ios-sdk
 
 ## Documentation
 Most up-to-date documentation is available at [Developer Guide - Mobile SDK](https://hub.synerise.com/developers/mobile-sdk).
